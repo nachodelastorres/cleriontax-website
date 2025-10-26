@@ -276,12 +276,49 @@
     "contact": {
       "title": "Contact | Request Your Quote | Cleriontax",
       "description": "Request a personalized quote for your crypto tax return. Response within a few hours. No commitment."
+    },
+    "blog": {
+      "title": "Taxation & Investment Blog | Crypto, Stocks & Data Analysis Guides | Cleriontax",
+      "description": "Comprehensive guides, analysis and news on cryptocurrency taxation, traditional market investments and financial data analysis in Spain. Learn about Income Tax, model 100, 720, tax optimization and updated AEAT regulations."
     }
   },
   "common": {
     "included": "Included",
     "notIncluded": "Not Included",
     "popular": "Most Popular",
-    "unlimited": "Unlimited"
+    "unlimited": "Unlimited",
+    "languages": {
+      "es": "Spanish",
+      "en": "English",
+      "ca": "Catalan"
+    },
+    "socialNetworks": {
+      "linkedin": "LinkedIn"
+    }
+  },
+  "serviceInclusions": {
+    "allInclude": "All services include review by a certified tax advisor"
+  },
+  "blog": {
+    "hero": {
+      "badge": "Taxation, Investment and Data Analysis Blog",
+      "title": "Guides, News and Analysis for Investors",
+      "subtitle": "Everything you need to know about cryptocurrency taxation, traditional market investments and financial data analysis. Regulatory updates, practical cases and tax optimization strategies.",
+      "stats": {
+        "articles": "Articles",
+        "categories": "Categories"
+      }
+    },
+    "featured": {
+      "title": "Featured Articles",
+      "subtitle": "The most comprehensive and up-to-date content on investment taxation and data analysis"
+    },
+    "allArticles": {
+      "title": "All Articles",
+      "subtitle": "Explore our complete library of resources for investors"
+    },
+    "categories": {
+      "title": "Browse by categories"
+    }
   }
 }

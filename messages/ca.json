@@ -276,12 +276,49 @@
     "contact": {
       "title": "Contacte | Sol·licita el teu Pressupost | Cleriontax",
       "description": "Sol·licita un pressupost personalitzat per a la declaració fiscal dels teus criptoactius. Resposta en poques hores. Sense compromís."
+    },
+    "blog": {
+      "title": "Blog de Fiscalitat i Inversió | Guies Crypto, Accions i Anàlisi de Dades | Cleriontax",
+      "description": "Guies completes, anàlisis i actualitat sobre la fiscalitat de criptomonedes, inversions en mercats tradicionals i anàlisi de dades financeres a Espanya. Aprèn sobre IRPF, model 100, 720, optimització fiscal i normativa AEAT actualitzada."
     }
   },
   "common": {
     "included": "Inclòs",
     "notIncluded": "No inclòs",
     "popular": "Més popular",
-    "unlimited": "Il·limitat"
+    "unlimited": "Il·limitat",
+    "languages": {
+      "es": "Espanyol",
+      "en": "Anglès",
+      "ca": "Català"
+    },
+    "socialNetworks": {
+      "linkedin": "LinkedIn"
+    }
+  },
+  "serviceInclusions": {
+    "allInclude": "Tots els serveis inclouen revisió per assessor fiscal col·legiat"
+  },
+  "blog": {
+    "hero": {
+      "badge": "Blog de Fiscalitat, Inversió i Anàlisi de Dades",
+      "title": "Guies, Notícies i Anàlisis per a Inversors",
+      "subtitle": "Tot el que necessites saber sobre la fiscalitat de criptomonedes, inversions en mercats tradicionals i anàlisi de dades financeres. Actualitzacions normatives, casos pràctics i estratègies d'optimització fiscal.",
+      "stats": {
+        "articles": "Articles",
+        "categories": "Categories"
+      }
+    },
+    "featured": {
+      "title": "Articles destacats",
+      "subtitle": "Els continguts més complets i actualitzats sobre fiscalitat d'inversions i anàlisi de dades"
+    },
+    "allArticles": {
+      "title": "Tots els articles",
+      "subtitle": "Explora la nostra biblioteca completa de recursos per a inversors"
+    },
+    "categories": {
+      "title": "Explora per categories"
+    }
   }
 }

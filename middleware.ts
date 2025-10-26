@@ -9,9 +9,10 @@ export default createMiddleware({
   defaultLocale,
 
   // Estrategia de prefijo de locale en URLs
-  // 'as-needed' = solo mostrar prefijo para idiomas no predeterminados
-  // 'always' = siempre mostrar prefijo (recomendado para SEO)
-  localePrefix: 'always'
+  localePrefix: 'always',
+
+  // Habilitar detección de locale
+  localeDetection: true
 });
 
 export const config = {
@@ -19,5 +20,6 @@ export const config = {
   // - API routes
   // - _next (archivos estáticos de Next.js)
   // - archivos con extensión (favicon.ico, etc.)
-  matcher: ['/((?!api|_next|.*\\..*).*)']
+  // - archivos estáticos en public
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)']
 };
