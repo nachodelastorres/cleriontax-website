@@ -1,0 +1,287 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "openMenu": "Open Menu"
+  },
+  "hero": {
+    "badge": "Investment Tax Experts • Crypto & Stocks",
+    "title": "We transform your data into tax reports ready for the Tax Agency",
+    "subtitle": "Professional data analysis and specialized tax advice for investors with asset and cryptoasset portfolios.",
+    "primaryCTA": "Request your tax report",
+    "secondaryCTA": "View services",
+    "stats": {
+      "clients": {
+        "value": "500+",
+        "label": "Satisfied Clients"
+      },
+      "transactions": {
+        "value": "10K+",
+        "label": "Transactions Processed"
+      },
+      "accuracy": {
+        "value": "99%",
+        "label": "Tax Accuracy"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Why Choose Cleriontax?",
+    "subtitle": "We combine data analytics technology with tax expertise to provide you with the best service on the market.",
+    "items": {
+      "precision": {
+        "title": "Guaranteed Tax Accuracy",
+        "description": "Thorough analysis of all your operations applying the latest Spanish tax regulations. Full compliance with AEAT requirements."
+      },
+      "time": {
+        "title": "Save Time and Effort",
+        "description": "Forget complex calculations and endless spreadsheets. We handle the entire process from start to finish."
+      },
+      "optimization": {
+        "title": "Tax Optimization",
+        "description": "We identify legal optimization opportunities to reduce your tax burden by correctly applying deductions and exemptions."
+      },
+      "support": {
+        "title": "Personalized Support",
+        "description": "A dedicated tax advisor to resolve all your questions throughout the process. Direct communication and clear answers."
+      }
+    }
+  },
+  "process": {
+    "title": "How Does Our Service Work?",
+    "subtitle": "A simple and transparent 4-step process to get your tax report without complications.",
+    "steps": {
+      "diagnosis": {
+        "number": "01",
+        "title": "Initial Diagnosis",
+        "description": "We analyze your specific case: used exchanges, operation types, transaction volume, and tax objectives."
+      },
+      "cleaning": {
+        "number": "02",
+        "title": "Data Cleaning",
+        "description": "We process and clean all your CSV files, fixing errors, identifying duplicates, and unifying formats from different platforms."
+      },
+      "calculation": {
+        "number": "03",
+        "title": "Tax Calculation",
+        "description": "We apply the FIFO method, calculate capital gains and losses, and determine the taxable base according to AEAT regulations."
+      },
+      "delivery": {
+        "number": "04",
+        "title": "Delivery and Support",
+        "description": "You receive a complete report with all necessary annexes for your tax return, plus a review session with our tax advisor."
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Plans designed to suit your transaction volume and specific needs.",
+    "plans": {
+      "basic": {
+        "name": "Basic Plan",
+        "price": "From €600",
+        "description": "Ideal for occasional investors with simple operations",
+        "features": {
+          "transactions": "Up to 500 transactions",
+          "exchanges": "1–2 exchanges or platforms",
+          "report": "Basic tax report",
+          "calculations": "Gain/loss calculation",
+          "model100": "Annex for Model 100 (Income Tax)",
+          "reviews": "1 review with advisor",
+          "support": "Email support"
+        },
+        "notIncluded": {
+          "staking": "Staking and yields",
+          "defi": "DeFi and complex operations",
+          "optimization": "Advanced tax optimization"
+        }
+      },
+      "advanced": {
+        "name": "Advanced Plan",
+        "price": "From €1,500",
+        "description": "For active traders using multiple platforms",
+        "popular": true,
+        "features": {
+          "transactions": "Up to 2,000 transactions",
+          "exchanges": "3–5 exchanges or platforms",
+          "report": "Comprehensive tax report",
+          "calculations": "Gains/losses + yield calculations",
+          "staking": "Staking, lending, and airdrops",
+          "models": "Model 100 + Model 720 (if applicable)",
+          "reviews": "2 reviews with advisor",
+          "support": "Priority support",
+          "optimization": "Optimization recommendations"
+        },
+        "notIncluded": {
+          "defi": "Complex DeFi (yield farming, LP tokens)",
+          "nfts": "NFTs"
+        }
+      },
+      "premium": {
+        "name": "Premium Plan",
+        "price": "From €3,500",
+        "description": "Comprehensive solution for complex portfolios",
+        "features": {
+          "transactions": "Unlimited transactions",
+          "exchanges": "Unlimited exchanges and wallets",
+          "report": "Premium tax report",
+          "operations": "All types of operations",
+          "defi": "DeFi: yield farming, liquidity pools, NFTs",
+          "models": "Models 100, 720, and others if applicable",
+          "reviews": "Unlimited reviews",
+          "advisor": "Dedicated tax advisor",
+          "optimization": "Personalized optimization plan",
+          "support": "24/7 campaign support",
+          "followup": "Annual follow-up included"
+        }
+      }
+    },
+    "comparison": {
+      "features": {
+        "transactions": "Number of transactions",
+        "exchanges": "Exchanges / Platforms",
+        "trading": "Basic trading (buy/sell)",
+        "staking": "Staking and lending",
+        "defi": "DeFi (yield farming, LP)",
+        "nfts": "NFTs",
+        "model100": "Model 100 (Income Tax)",
+        "model720": "Model 720 (International)",
+        "reviews": "Advisor reviews",
+        "optimization": "Tax optimization",
+        "support": "Support"
+      },
+      "values": {
+        "basic": {
+          "transactions": "Up to 500",
+          "exchanges": "1–2",
+          "reviews": "1",
+          "optimization": "Basic",
+          "support": "Email"
+        },
+        "advanced": {
+          "transactions": "Up to 2,000",
+          "exchanges": "3–5",
+          "reviews": "2",
+          "optimization": "Advanced",
+          "support": "Priority"
+        },
+        "premium": {
+          "transactions": "Unlimited",
+          "exchanges": "Unlimited",
+          "reviews": "Unlimited",
+          "optimization": "Premium",
+          "support": "24/7"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "About Cleriontax",
+    "subtitle": "Data Expertise + Tax Knowledge = Your Peace of Mind",
+    "mission": {
+      "title": "Our Mission",
+      "content": "To make crypto taxation accessible, understandable, and efficient for all Spanish investors. We believe technical complexity should never be a barrier to tax compliance."
+    },
+    "story": {
+      "title": "Who We Are",
+      "content": "Cleriontax was born from the collaboration between data analysts and tax advisors specialized in cryptoassets. With over 10 years of combined experience in financial data analysis and tax consulting, we’ve developed a unique methodology that blends technological automation with expert human review."
+    },
+    "partnership": {
+      "title": "Collaboration with Tax Advisory Firm",
+      "content": "We work closely with a tax advisory firm specialized in new technologies and digital assets. All our reports are reviewed and validated by certified tax advisors, ensuring full compliance with AEAT regulations."
+    },
+    "expertise": {
+      "title": "Data Analysis Expertise",
+      "content": "Our technical team has extensive experience processing large volumes of financial data. We have developed proprietary algorithms for cleaning, reconciliation, and tax calculation of crypto transactions, compatible with more than 50 exchanges and platforms."
+    },
+    "values": {
+      "transparency": {
+        "title": "Transparency",
+        "description": "Clear pricing, explained processes, no hidden fees or surprises."
+      },
+      "precision": {
+        "title": "Precision",
+        "description": "Every transaction counts. Our commitment is 100% accuracy."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "We handle your data with maximum security and absolute confidentiality."
+      }
+    }
+  },
+  "contact": {
+    "title": "Request Your Quote",
+    "subtitle": "Tell us about your case and we'll send you a personalized quote within a few hours.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "service": "Type of service",
+      "message": "Tell us about your case",
+      "file": "Attach file (optional)",
+      "submit": "Send request",
+      "submitting": "Sending..."
+    },
+    "info": {
+      "title": "Prefer to contact us directly?",
+      "email": "info@cleriontax.com",
+      "phone": "+34 900 000 000",
+      "schedule": "Monday to Friday, 9:00 – 18:00"
+    }
+  },
+  "cta": {
+    "title": "Ready to Simplify Your Tax Return?",
+    "subtitle": "Thousands of investors already trust Cleriontax to manage their tax obligations. Join them and forget the hassle.",
+    "primary": "Request a Free Quote",
+    "secondary": "View Plans & Pricing",
+    "badges": {
+      "noCommitment": "No commitment",
+      "response24h": "Response within a few hours",
+      "secure": "100% secure and confidential"
+    }
+  },
+  "footer": {
+    "description": "Specialists in data analysis and tax consulting for investors.",
+    "sections": {
+      "company": "Company",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "links": {
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "legal": "Legal Notice",
+      "cookies": "Cookies"
+    },
+    "copyright": "All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "Cleriontax | Data Analysis & Tax Solutions for Investors",
+      "description": "Experts in data analysis and tax consulting for investors with asset and cryptoasset portfolios. We transform your data into tax reports ready for the Spanish Tax Agency."
+    },
+    "services": {
+      "title": "Services & Pricing | Cleriontax",
+      "description": "Personalized plans starting at €600 for your crypto tax return. Basic, Advanced, and Premium options. Choose the one that best fits your trading volume."
+    },
+    "about": {
+      "title": "About Us | Cleriontax",
+      "description": "A team specialized in data analysis and tax advisory. Direct collaboration with certified tax advisors to ensure full compliance with AEAT regulations."
+    },
+    "contact": {
+      "title": "Contact | Request Your Quote | Cleriontax",
+      "description": "Request a personalized quote for your crypto tax return. Response within a few hours. No commitment."
+    }
+  },
+  "common": {
+    "included": "Included",
+    "notIncluded": "Not Included",
+    "popular": "Most Popular",
+    "unlimited": "Unlimited"
+  }
+}

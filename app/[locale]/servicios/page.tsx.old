@@ -1,0 +1,78 @@
+import { getTranslations } from 'next-intl/server';
+import Container from "@/components/ui/Container";
+import PricingCard from "@/components/services/PricingCard";
+import ComparisonTable from "@/components/services/ComparisonTable";
+import CTASection from "@/components/home/CTASection";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'seo.services' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `/${locale}/servicios`,
+      languages: {
+        'es': '/es/servicios',
+        'en': '/en/servicios',
+        'ca': '/ca/servicios',
+      },
+    },
+  };
+}
+
+export default async function ServiciosPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations('services');
+
+  const plans = ['basic', 'advanced', 'premium'] as const;
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-neutral-50 to-white">
+        <Container>
+          <div className="space-y-6 text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl font-bold text-primary md:text-5xl lg:text-6xl">
+              {t('title')}
+            </h1>
+            <p className="text-lg text-neutral-600 md:text-xl">
+              {t('subtitle')}
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Pricing Cards */}
+      <section className="py-16 md:py-24 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {plans.map((plan, index) => (
+              <PricingCard key={plan} plan={plan} index={index} />
+            ))}
+          </div>
+
+          {/* Additional info */}
+          <div className="mt-12 text-center">
+            <p className="text-sm text-neutral-600">
+              * Los precios son orientativos y pueden variar según la complejidad del caso.
+              <br />
+              Solicita un presupuesto personalizado sin compromiso.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Comparison Table */}
+      <ComparisonTable />
+
+      {/* CTA */}
+      <CTASection />
+    </>
+  );
+}

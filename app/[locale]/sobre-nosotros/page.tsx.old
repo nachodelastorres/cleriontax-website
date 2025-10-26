@@ -1,0 +1,119 @@
+import { getTranslations } from 'next-intl/server';
+import Container from "@/components/ui/Container";
+import Card from "@/components/ui/Card";
+import CTASection from "@/components/home/CTASection";
+import { Target, Users, Handshake, BarChart } from "lucide-react";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'seo.about' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `/${locale}/sobre-nosotros`,
+      languages: {
+        'es': '/es/sobre-nosotros',
+        'en': '/en/sobre-nosotros',
+        'ca': '/ca/sobre-nosotros',
+      },
+    },
+  };
+}
+
+const sections = [
+  { key: 'mission', icon: Target, color: 'blue' },
+  { key: 'story', icon: Users, color: 'purple' },
+  { key: 'partnership', icon: Handshake, color: 'green' },
+  { key: 'expertise', icon: BarChart, color: 'accent' },
+] as const;
+
+const values = ['transparency', 'precision', 'trust'] as const;
+
+export default async function SobreNosotrosPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations('about');
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-neutral-50 to-white">
+        <Container>
+          <div className="space-y-6 text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl font-bold text-primary md:text-5xl lg:text-6xl">
+              {t('title')}
+            </h1>
+            <p className="text-lg text-neutral-600 md:text-xl">
+              {t('subtitle')}
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-16 md:py-24 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {sections.map(({ key, icon: Icon, color }) => (
+              <Card key={key} className="p-8">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-lg ${
+                    color === 'blue' ? 'bg-blue-50' :
+                    color === 'purple' ? 'bg-purple-50' :
+                    color === 'green' ? 'bg-green-50' :
+                    'bg-accent/10'
+                  } shrink-0`}>
+                    <Icon className={`h-6 w-6 ${
+                      color === 'blue' ? 'text-blue-600' :
+                      color === 'purple' ? 'text-purple-600' :
+                      color === 'green' ? 'text-green-600' :
+                      'text-accent'
+                    }`} />
+                  </div>
+                  <h2 className="text-2xl font-bold text-primary">
+                    {t(`${key}.title`)}
+                  </h2>
+                </div>
+                <p className="text-neutral-700 leading-relaxed">
+                  {t(`${key}.content`)}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Values */}
+      <section className="py-16 md:py-24 bg-neutral-50">
+        <Container>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary md:text-4xl mb-4">
+              Nuestros Valores
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {values.map((value) => (
+              <Card key={value} hover className="p-8 text-center">
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  {t(`values.${value}.title`)}
+                </h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  {t(`values.${value}.description`)}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA */}
+      <CTASection />
+    </>
+  );
+}

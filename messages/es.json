@@ -1,0 +1,419 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "blog": "Blog",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "requestQuote": "Solicitar presupuesto",
+    "openMenu": "Abrir menú"
+  },
+  "hero": {
+    "badge": "Expertos en Fiscalidad de Inversiones • Crypto & Acciones",
+    "title": "Del caos de datos al informe fiscal perfecto",
+    "subtitle": "Convertimos miles de operaciones dispersas en exchanges y wallets en informes fiscales claros, precisos y listos para presentar ante la AEAT.",
+    "primaryCTA": "Solicita tu informe fiscal",
+    "secondaryCTA": "Ver servicios",
+    "stats": {
+      "clients": {
+        "value": "500+",
+        "label": "Inversores atendidos"
+      },
+      "transactions": {
+        "value": "1M+",
+        "label": "Operaciones analizadas"
+      },
+      "accuracy": {
+        "value": "100%",
+        "label": "Precisión en cálculos"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Por qué los inversores eligen Cleriontax",
+    "subtitle": "Cuando tienes cientos o miles de operaciones en múltiples plataformas, necesitas más que una hoja de cálculo. Necesitas claridad, precisión y control.",
+    "items": {
+      "precision": {
+        "title": "Visibilidad total de tus operaciones",
+        "description": "Dejamos atrás el caos de CSVs dispersos. Unificamos todos tus datos de exchanges, wallets y brokers en un único informe visual que te permite entender realmente tu actividad inversora y tus resultados fiscales."
+      },
+      "time": {
+        "title": "Datos estructurados y verificables",
+        "description": "Procesamos miles de transacciones aplicando conciliaciones automáticas, detección de duplicados y validación cruzada. Cada operación queda trazable, ordenada y lista para justificar ante Hacienda."
+      },
+      "optimization": {
+        "title": "Cálculos fiscales precisos y auditables",
+        "description": "Aplicamos FIFO, calculamos ganancias y pérdidas con metodología certificada y generamos los anexos exactos que necesitas para el modelo 100, 720 y 721. Sin errores, sin aproximaciones."
+      },
+      "support": {
+        "title": "Cumplimiento con confianza",
+        "description": "Nuestros informes están revisados por asesores fiscales colegiados especializados en criptoactivos. Declaras sabiendo que cada cifra está respaldada por análisis experto y normativa actualizada."
+      }
+    }
+  },
+  "process": {
+    "title": "Cómo convertimos tus datos en tu declaración",
+    "subtitle": "Un proceso profesional en 4 fases. De la dispersión total a la claridad fiscal absoluta.",
+    "steps": {
+      "diagnosis": {
+        "number": "01",
+        "title": "Diagnóstico de fuentes",
+        "description": "Identificamos todas tus plataformas: exchanges CEX y DEX, wallets on-chain, brokers, staking pools. Evaluamos volumen de operaciones, tipos de activos y complejidad fiscal para diseñar tu hoja de ruta."
+      },
+      "cleaning": {
+        "number": "02",
+        "title": "Análisis y limpieza de datos",
+        "description": "Importamos y procesamos todos tus archivos CSV, APIs y registros blockchain. Reconciliamos saldos, identificamos duplicados, corregimos errores de formato y unificamos nomenclaturas entre plataformas."
+      },
+      "calculation": {
+        "number": "03",
+        "title": "Cálculo fiscal certificado",
+        "description": "Aplicamos metodología FIFO conforme a criterio AEAT, calculamos bases imponibles de ganancias y pérdidas patrimoniales, rendimientos de capital mobiliario (staking, lending) y otros incrementos patrimoniales según normativa vigente."
+      },
+      "delivery": {
+        "number": "04",
+        "title": "Informe final y revisión",
+        "description": "Entregamos informe fiscal completo con anexos para tu declaración de Renta, desglose visual de operaciones y sesión de revisión personalizada con nuestro equipo. Todo explicado, todo justificado."
+      }
+    }
+  },
+  "services": {
+    "title": "Servicios de Asesoría Fiscal para Inversiones en Criptomonedas y Acciones",
+    "subtitle": "Análisis personalizado de tu caso en 24-48h. Presupuesto claro sin compromiso. Cada inversor es único, cada solución también.",
+    "process": {
+      "title": "Cómo trabajamos contigo",
+      "subtitle": "Proceso transparente de principio a fin. Sabrás exactamente qué esperar en cada fase.",
+      "steps": {
+        "diagnosis": {
+          "number": "01",
+          "title": "Diagnóstico Gratuito",
+          "description": "Envíanos información básica sobre tus plataformas, volumen de operaciones y tipo de activos. Te respondemos en 24-48h con un análisis inicial sin compromiso.",
+          "time": "24-48 horas"
+        },
+        "analysis": {
+          "number": "02",
+          "title": "Análisis de Complejidad",
+          "description": "Evaluamos la complejidad de tu caso: número de exchanges, tipos de operaciones (trading, staking, DeFi), años fiscales a procesar y requisitos especiales.",
+          "time": "48 horas"
+        },
+        "proposal": {
+          "number": "03",
+          "title": "Presupuesto Personalizado",
+          "description": "Recibes presupuesto detallado con precio fijo, alcance del trabajo, timeline de ejecución y entregables específicos. Sin sorpresas ni costes ocultos.",
+          "time": "Inmediato"
+        },
+        "execution": {
+          "number": "04",
+          "title": "Ejecución del Servicio",
+          "description": "Procesamos tus datos, realizamos cálculos fiscales certificados y preparamos informes auditables. Revisión por asesor fiscal colegiado incluida.",
+          "time": "1-3 semanas"
+        },
+        "delivery": {
+          "number": "05",
+          "title": "Entrega y Soporte",
+          "description": "Recibes informe fiscal completo, modelos oficiales listos para presentar y sesión de revisión. Soporte post-entrega incluido durante la campaña de Renta.",
+          "time": "Continuo"
+        }
+      }
+    },
+    "offerings": {
+      "title": "Qué servicios fiscales ofrecemos",
+      "subtitle": "Cobertura completa para todas tus necesidades fiscales relacionadas con inversiones digitales y tradicionales",
+      "items": {
+        "dataAnalysis": {
+          "number": "01",
+          "title": "Análisis y Conciliación de Datos",
+          "description": "Procesamos transacciones de más de 50 exchanges y blockchains diferentes. Conciliación automática, detección de duplicados, limpieza de datos y trazabilidad completa de cada operación.",
+          "keywords": "exchanges, wallets, blockchain, datos fiscales"
+        },
+        "taxCalculations": {
+          "number": "02",
+          "title": "Cálculos Fiscales Certificados",
+          "description": "Aplicación de metodología FIFO para ganancias y pérdidas patrimoniales. Cálculo de rendimientos de capital mobiliario (staking, lending). Modelos 100, 720 y 721 generados automáticamente.",
+          "keywords": "FIFO, ganancias, pérdidas, IRPF, modelo 100"
+        },
+        "optimization": {
+          "number": "03",
+          "title": "Optimización Fiscal Estratégica",
+          "description": "Análisis de oportunidades de compensación de pérdidas, planificación fiscal para futuros ejercicios y estrategias de optimización dentro del marco legal vigente.",
+          "keywords": "optimización fiscal, planificación tributaria"
+        },
+        "advisory": {
+          "number": "04",
+          "title": "Asesoría Fiscal Continuada",
+          "description": "Revisión por asesores fiscales colegiados especializados en criptoactivos. Soporte durante presentación ante AEAT. Seguimiento de cambios normativos y criterios DGT.",
+          "keywords": "asesor fiscal, AEAT, normativa cripto"
+        }
+      }
+    },
+    "inclusions": {
+      "title": "Qué incluye nuestro servicio fiscal",
+      "items": {
+        "dataProcessing": "Conciliación de datos de todos tus exchanges, wallets y brokers",
+        "calculations": "Cálculo certificado de ganancias, pérdidas y rendimientos",
+        "models": "Generación de modelos oficiales (100, 720, 721) listos para presentar",
+        "review": "Revisión obligatoria por asesor fiscal colegiado",
+        "report": "Informe fiscal detallado y auditable con trazabilidad completa",
+        "session": "Sesión de revisión online para resolver dudas",
+        "support": "Soporte durante campaña de Renta (abril-junio)",
+        "updates": "Actualizaciones si detectamos errores post-entrega"
+      }
+    }
+  },
+  "about": {
+    "title": "Donde la Asesoría Fiscal Tradicional Encuentra la Innovación Tecnológica",
+    "subtitle": "Somos el puente entre dos mundos: la experiencia fiscal colegiada y el análisis de datos de última generación. Cleriontax combina lo mejor de ambos para ofrecerte un servicio fiscal sin precedentes.",
+    "hero": {
+      "tagline": "Expertise Fiscal × Innovación Tecnológica",
+      "stats": {
+        "experience": {
+          "value": "500+",
+          "label": "Inversores atendidos"
+        },
+        "transactions": {
+          "value": "1M+",
+          "label": "Operaciones analizadas"
+        },
+        "accuracy": {
+          "value": "100%",
+          "label": "Precisión en cálculos"
+        }
+      }
+    },
+    "duality": {
+      "title": "La Combinación Perfecta: Asesoría + Tecnología",
+      "subtitle": "Dos equipos, una misión: transformar la complejidad fiscal en claridad absoluta",
+      "fiscal": {
+        "title": "Equipo Fiscal",
+        "subtitle": "Experiencia y Normativa",
+        "description": "Asesores fiscales colegiados especializados en fiscalidad de activos digitales. Conocimiento profundo de normativa AEAT, criterios DGT y jurisprudencia aplicable. Actualizados con cada cambio normativo.",
+        "points": [
+          "Asesores fiscales colegiados certificados",
+          "Especialización en criptoactivos y finanzas digitales",
+          "Conocimiento exhaustivo de modelos 100, 720 y 721",
+          "Experiencia en inspecciones y requerimientos AEAT",
+          "Formación continua en normativa fiscal crypto"
+        ]
+      },
+      "tech": {
+        "title": "Equipo Tecnológico",
+        "subtitle": "Innovación y Precisión",
+        "description": "Ingenieros de datos y desarrolladores especializados en procesamiento masivo de transacciones blockchain. Algoritmos propios de conciliación, automatización de cálculos y validación cruzada de datos.",
+        "points": [
+          "Procesamiento automatizado de millones de transacciones",
+          "Integración con 50+ exchanges y blockchains",
+          "Algoritmos propios de detección de duplicados",
+          "Conciliación automática multicadena",
+          "Stack tecnológico moderno y escalable"
+        ]
+      }
+    },
+    "methodology": {
+      "title": "Metodología Híbrida: Lo Mejor de Dos Mundos",
+      "subtitle": "Combinamos rigor fiscal tradicional con eficiencia tecnológica moderna",
+      "steps": {
+        "automation": {
+          "number": "01",
+          "title": "Automatización Inteligente",
+          "description": "Nuestros sistemas procesan automáticamente tus transacciones, aplicando algoritmos de limpieza de datos, detección de duplicados y conciliación entre plataformas. Reducimos errores humanos al mínimo.",
+          "tech": "Tecnología"
+        },
+        "validation": {
+          "number": "02",
+          "title": "Validación Fiscal Experta",
+          "description": "Cada resultado automatizado pasa por revisión de nuestros asesores fiscales. Verificamos interpretación normativa, aplicación correcta de criterios DGT y coherencia fiscal del resultado final.",
+          "tech": "Asesoría Fiscal"
+        },
+        "continuous": {
+          "number": "03",
+          "title": "Mejora Continua",
+          "description": "Cada caso nos ayuda a mejorar nuestros algoritmos y procesos. Feedback del equipo fiscal alimenta mejoras tecnológicas. Innovación constante sin perder rigor profesional.",
+          "tech": "Híbrido"
+        }
+      }
+    },
+    "why": {
+      "title": "Por Qué Somos Diferentes",
+      "subtitle": "No somos una asesoría tradicional ni una startup tech. Somos la evolución necesaria del servicio fiscal.",
+      "items": {
+        "noOldSchool": {
+          "title": "Adiós a los Procesos Obsoletos",
+          "description": "Nada de hojas de cálculo manuales propensas a errores. Nada de procesos lentos y opacos. Utilizamos tecnología moderna para hacer en horas lo que otros tardan semanas, sin sacrificar precisión.",
+          "keywords": "automatización fiscal, tecnología financiera, procesos modernos"
+        },
+        "noBlackBox": {
+          "title": "Transparencia Total, No Cajas Negras",
+          "description": "A diferencia de software fiscal genérico, cada cálculo tiene supervisión humana experta. No confiamos ciegamente en algoritmos. Cada resultado está validado por profesionales colegiados.",
+          "keywords": "asesor fiscal experto, validación profesional, transparencia"
+        },
+        "speed": {
+          "title": "Rapidez Sin Comprometer Calidad",
+          "description": "Automatizamos lo automatizable (procesamiento de datos, cálculos matemáticos, generación de informes) para que nuestros asesores se concentren en lo importante: interpretación normativa y estrategia fiscal.",
+          "keywords": "servicio rápido, eficiencia, análisis experto"
+        },
+        "scalable": {
+          "title": "Escalable a Cualquier Volumen",
+          "description": "Da igual si tienes 50 o 50,000 operaciones. Nuestra infraestructura tecnológica escala sin perder precisión. Mismo rigor fiscal independientemente del volumen.",
+          "keywords": "escalabilidad, alto volumen, precisión garantizada"
+        }
+      }
+    },
+    "team": {
+      "title": "Un Equipo Multidisciplinar Único",
+      "fiscal": "Asesores Fiscales Colegiados",
+      "tech": "Ingenieros de Datos",
+      "analysts": "Analistas Blockchain",
+      "developers": "Desarrolladores Full Stack"
+    },
+    "values": {
+      "title": "Nuestros Principios",
+      "innovation": {
+        "title": "Innovación Constante",
+        "description": "Invertimos en tecnología, formación y metodologías para estar siempre a la vanguardia del servicio fiscal digital."
+      },
+      "precision": {
+        "title": "Precisión Absoluta",
+        "description": "100% de precisión no es una meta, es un requisito mínimo. Cada decimal cuenta cuando se trata de tu declaración fiscal."
+      },
+      "partnership": {
+        "title": "Colaboración Real",
+        "description": "No somos un proveedor externo. Somos tu socio fiscal tecnológico. Te acompañamos en cada paso del proceso."
+      }
+    }
+  },
+  "contact": {
+    "title": "Solicita tu presupuesto sin compromiso",
+    "subtitle": "Cuéntanos tu caso: exchanges que usas, volumen de operaciones y tipos de activos. Te enviamos presupuesto personalizado en pocas horas.",
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+34 600 000 000",
+      "service": "Tipo de servicio",
+      "message": "Cuéntanos sobre tu caso: plataformas, volumen, tipos de operaciones",
+      "messagePlaceholder": "Describe tu caso: número aproximado de transacciones, exchanges utilizados, tipo de operaciones...",
+      "file": "Adjuntar archivo (opcional)",
+      "fileDragText": "Arrastra tu archivo CSV o Excel aquí",
+      "fileClickText": "o haz clic para seleccionar (máx. 10MB)",
+      "fileErrorType": "Por favor, selecciona un archivo CSV o Excel",
+      "fileErrorSize": "El archivo es demasiado grande. Máximo 10MB",
+      "submit": "Enviar solicitud",
+      "submitting": "Enviando...",
+      "successMessage": "¡Mensaje enviado correctamente! Te responderemos en pocas horas.",
+      "errorMessage": "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contáctanos por email.",
+      "privacyText": "Al enviar este formulario aceptas nuestra",
+      "privacyLink": "Política de Privacidad"
+    },
+    "info": {
+      "title": "¿Prefieres contactarnos directamente?",
+      "email": "info@cleriontax.com",
+      "phone": "+34 900 000 000",
+      "schedule": "Lunes a Viernes, 9:00 - 18:00",
+      "offHoursText": "¿Fuera de horario? Llama o escribe, responderemos pronto",
+      "emailLabel": "Email",
+      "phoneLabel": "Teléfono",
+      "scheduleLabel": "Horario",
+      "quickResponseTitle": "Respuesta rápida",
+      "quickResponseText": "Normalmente respondemos a todas las consultas en pocas horas laborables. Si tu caso es urgente, indícalo en el mensaje.",
+      "infoToIncludeTitle": "¿Qué información incluir?",
+      "infoToInclude": {
+        "transactions": "Número aproximado de transacciones",
+        "exchanges": "Exchanges o plataformas utilizadas",
+        "operations": "Tipo de operaciones (trading, staking, DeFi, etc.)",
+        "year": "Año fiscal a declarar"
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Listo para tener claridad fiscal sobre tus inversiones?",
+    "subtitle": "Cientos de inversores ya han convertido sus datos dispersos en informes fiscales precisos con Cleriontax. Declara con confianza, cumple sin estrés.",
+    "primary": "Solicitar presupuesto gratuito",
+    "secondary": "Ver servicios",
+    "badges": {
+      "noCommitment": "Sin compromiso",
+      "response24h": "Respuesta en pocas horas",
+      "secure": "Confidencial y seguro"
+    }
+  },
+  "footer": {
+    "description": "Firma boutique de análisis de datos y asesoría fiscal especializada en criptoactivos e inversiones globales.",
+    "sections": {
+      "company": "Empresa",
+      "legal": "Legal",
+      "contact": "Contacto"
+    },
+    "links": {
+      "about": "Sobre nosotros",
+      "services": "Servicios",
+      "blog": "Blog",
+      "contact": "Contacto",
+      "privacy": "Política de privacidad",
+      "legal": "Aviso legal",
+      "cookies": "Cookies"
+    },
+    "copyright": "Todos los derechos reservados."
+  },
+  "seo": {
+    "home": {
+      "title": "Cleriontax | Informe Fiscal Cripto y Análisis de Datos para Inversores en España",
+      "description": "Convertimos tus operaciones cripto dispersas en informes fiscales precisos para la AEAT. Análisis de datos profesional + asesoría fiscal experta. Declaración IRPF, modelo 720, modelo 721. Especialistas en fiscalidad de criptoactivos en España."
+    },
+    "services": {
+      "title": "Servicios Fiscales Cripto | Declaración Renta Criptoactivos | Cleriontax",
+      "description": "Planes desde 600€ para tu declaración fiscal cripto. Informe IRPF, modelo 100, modelo 720/721. Trading, staking, DeFi, NFTs. Análisis de datos + asesoría fiscal especializada para inversores en criptomonedas en España."
+    },
+    "about": {
+      "title": "Sobre Cleriontax | Expertos en Fiscalidad Cripto y Análisis de Datos España",
+      "description": "Boutique especializada en análisis de datos y asesoría fiscal para inversores cripto. Equipo de analistas de datos + asesores fiscales colegiados. Experiencia en fiscalidad de criptoactivos según normativa AEAT."
+    },
+    "contact": {
+      "title": "Contacto | Presupuesto Declaración Fiscal Cripto | Cleriontax",
+      "description": "Solicita presupuesto personalizado para tu declaración de criptoactivos. Informe fiscal para IRPF, modelo 720, modelo 721. Respuesta en pocas horas. Asesoría fiscal cripto en España sin compromiso."
+    },
+    "blog": {
+      "title": "Blog Fiscalidad e Inversión | Guías Crypto, Acciones y Análisis de Datos | Cleriontax",
+      "description": "Guías completas, análisis y actualidad sobre la fiscalidad de criptomonedas, inversiones en mercados tradicionales y análisis de datos financieros en España. Aprende sobre IRPF, modelo 100, 720, optimización fiscal y normativa AEAT actualizada."
+    }
+  },
+  "common": {
+    "included": "Incluido",
+    "notIncluded": "No incluido",
+    "popular": "Más popular",
+    "unlimited": "Ilimitado",
+    "languages": {
+      "es": "Español",
+      "en": "English",
+      "ca": "Català"
+    },
+    "socialNetworks": {
+      "linkedin": "LinkedIn"
+    }
+  },
+  "serviceInclusions": {
+    "allInclude": "Todos los servicios incluyen revisión por asesor fiscal colegiado"
+  },
+  "blog": {
+    "hero": {
+      "badge": "Blog de Fiscalidad, Inversión y Análisis de Datos",
+      "title": "Guías, Noticias y Análisis para Inversores",
+      "subtitle": "Todo lo que necesitas saber sobre la fiscalidad de criptomonedas, inversiones en mercados tradicionales y análisis de datos financieros. Actualizaciones normativas, casos prácticos y estrategias de optimización fiscal.",
+      "stats": {
+        "articles": "Artículos",
+        "categories": "Categorías"
+      }
+    },
+    "featured": {
+      "title": "Artículos destacados",
+      "subtitle": "Los contenidos más completos y actualizados sobre fiscalidad de inversiones y análisis de datos"
+    },
+    "allArticles": {
+      "title": "Todos los artículos",
+      "subtitle": "Explora nuestra biblioteca completa de recursos para inversores"
+    },
+    "categories": {
+      "title": "Explora por categorías"
+    }
+  }
+}
