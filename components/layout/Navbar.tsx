@@ -140,7 +140,7 @@ export default function Navbar() {
                 {/* Mobile Language Selector */}
                 <div className="border-t border-neutral-200 pt-2 mt-2">
                   <div className="px-3 py-2 text-sm font-semibold text-neutral-500">
-                    Idioma
+                    {tCommon('language')}
                   </div>
                   {languages.map((lang) => (
                     <button

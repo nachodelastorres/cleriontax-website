@@ -46,7 +46,7 @@ export default function ContactForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Error al enviar el formulario");
+        throw new Error(t('submitError'));
       }
 
       setStatus("success");

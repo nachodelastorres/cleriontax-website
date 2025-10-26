@@ -6,246 +6,350 @@
     "about": "Sobre nosaltres",
     "contact": "Contacte",
     "requestQuote": "Sol·licita pressupost",
-    "openMenu": "Obre el menú"
+    "openMenu": "Obrir menú"
   },
   "hero": {
-    "badge": "Experts en Fiscalitat d'Inversions • Crypto & Accions",
-    "title": "Transformem les teves dades en informes fiscals llestos per a Hisenda",
-    "subtitle": "Anàlisi de dades professional i assessorament fiscal especialitzat per a inversors amb carteres d’actius i criptoactius.",
+    "badge": "Experts en Fiscalitat d’Inversions • Crypto i Accions",
+    "title": "Del caos de dades a l’informe fiscal perfecte",
+    "subtitle": "Convertim milers d’operacions disperses entre exchanges i wallets en informes fiscals clars, precisos i llestos per presentar davant l’AEAT.",
     "primaryCTA": "Sol·licita el teu informe fiscal",
     "secondaryCTA": "Veure serveis",
     "stats": {
       "clients": {
         "value": "500+",
-        "label": "Clients satisfets"
+        "label": "Inversors atesos"
       },
       "transactions": {
-        "value": "10K+",
-        "label": "Transaccions processades"
+        "value": "1M+",
+        "label": "Operacions analitzades"
       },
       "accuracy": {
-        "value": "99%",
-        "label": "Precisió fiscal"
+        "value": "100%",
+        "label": "Precisió en els càlculs"
       }
     }
   },
   "benefits": {
-    "title": "Per què triar Cleriontax?",
-    "subtitle": "Combinen la tecnologia d’anàlisi de dades amb l’experiència fiscal per oferir-te el millor servei del mercat.",
+    "title": "Per què els inversors trien Cleriontax",
+    "subtitle": "Quan tens centenars o milers d’operacions en múltiples plataformes, necessites més que un full de càlcul. Necessites claredat, precisió i control.",
     "items": {
       "precision": {
-        "title": "Precisió fiscal garantida",
-        "description": "Anàlisi exhaustiva de totes les teves operacions aplicant la normativa fiscal espanyola més actualitzada. Compliment total amb els requisits de l’AEAT."
+        "title": "Visibilitat total de les teves operacions",
+        "description": "Deixem enrere el caos dels CSV dispersos. Unifiquem totes les teves dades d’exchanges, wallets i brokers en un únic informe visual que et permet entendre realment la teva activitat inversora i els teus resultats fiscals."
       },
       "time": {
-        "title": "Estalvia temps i esforç",
-        "description": "Oblida’t de càlculs complexos i fulls de càlcul interminables. Ens encarreguem de tot el procés de principi a fi."
+        "title": "Dades estructurades i verificables",
+        "description": "Processem milers de transaccions aplicant conciliacions automàtiques, detecció de duplicats i validació creuada. Cada operació és traçable, ordenada i llesta per justificar davant Hisenda."
       },
       "optimization": {
-        "title": "Optimització fiscal",
-        "description": "Identifiquem oportunitats legals d’optimització per reduir la teva càrrega fiscal, aplicant correctament deduccions i exempcions."
+        "title": "Càlculs fiscals precisos i auditables",
+        "description": "Apliquem FIFO, calculem guanys i pèrdues amb metodologia certificada i generem els annexos exactes que necessites per als models 100, 720 i 721. Sense errors, sense aproximacions."
       },
       "support": {
-        "title": "Suport personalitzat",
-        "description": "Assessor fiscal dedicat per resoldre tots els teus dubtes durant tot el procés. Comunicació directa i respostes clares."
+        "title": "Compliment amb confiança",
+        "description": "Els nostres informes són revisats per assessors fiscals col·legiats especialitzats en criptoactius. Declares sabent que cada xifra està avalada per anàlisi expert i normativa actualitzada."
       }
     }
   },
   "process": {
-    "title": "Com funciona el nostre servei?",
-    "subtitle": "Un procés simple i transparent en 4 passos per obtenir la teva declaració fiscal sense complicacions.",
+    "title": "Com convertim les teves dades en la teva declaració",
+    "subtitle": "Un procés professional en 4 fases. De la dispersió total a la claredat fiscal absoluta.",
     "steps": {
       "diagnosis": {
         "number": "01",
-        "title": "Diagnosi inicial",
-        "description": "Analitzem el teu cas particular: exchanges utilitzats, tipus d’operacions, volum de transaccions i objectius fiscals."
+        "title": "Diagnosi de fonts",
+        "description": "Identifiquem totes les teves plataformes: exchanges CEX i DEX, wallets on-chain, brokers, staking pools. Avaluem el volum d’operacions, tipus d’actius i complexitat fiscal per dissenyar la teva fulla de ruta."
       },
       "cleaning": {
         "number": "02",
-        "title": "Neteja de dades",
-        "description": "Processem i netegem tots els teus arxius CSV, corregint errors, identificant duplicats i unificant formats de diferents plataformes."
+        "title": "Anàlisi i neteja de dades",
+        "description": "Importem i processem tots els teus fitxers CSV, APIs i registres blockchain. Reconciliem saldos, identifiquem duplicats, corregim errors de format i unifiquem nomenclatures entre plataformes."
       },
       "calculation": {
         "number": "03",
-        "title": "Càlcul fiscal",
-        "description": "Apliquem la metodologia FIFO, calculem guanys i pèrdues patrimonials i determinem la base imposable segons la normativa de l’AEAT."
+        "title": "Càlcul fiscal certificat",
+        "description": "Apliquem la metodologia FIFO d’acord amb el criteri de l’AEAT, calculem les bases imposables de guanys i pèrdues patrimonials, rendiments de capital mobiliari (staking, lending) i altres increments patrimonials segons la normativa vigent."
       },
       "delivery": {
         "number": "04",
-        "title": "Lliurament i suport",
-        "description": "Reps un informe complet amb tots els annexos necessaris per a la teva declaració, a més d’una sessió de revisió amb el nostre assessor fiscal."
+        "title": "Informe final i revisió",
+        "description": "Lliurem un informe fiscal complet amb annexos per a la teva declaració de renda, desglossament visual d’operacions i sessió de revisió personalitzada amb el nostre equip. Tot explicat, tot justificat."
       }
     }
   },
   "services": {
-    "title": "Els nostres serveis",
-    "subtitle": "Plans dissenyats per adaptar-se al teu volum d’operacions i necessitats específiques.",
-    "plans": {
-      "basic": {
-        "name": "Pla Bàsic",
-        "price": "Des de 600€",
-        "description": "Ideal per a inversors ocasionals amb operativa senzilla",
-        "features": {
-          "transactions": "Fins a 500 transaccions",
-          "exchanges": "1-2 exchanges o plataformes",
-          "report": "Informe fiscal bàsic",
-          "calculations": "Càlcul de guanys/pèrdues",
-          "model100": "Annex per al model 100 (IRPF)",
-          "reviews": "1 revisió amb assessor",
-          "support": "Suport per correu electrònic"
+    "title": "Serveis d'Assessoria Fiscal per a Inversions en Criptomonedes i Accions",
+    "subtitle": "Anàlisi personalitzada del teu cas en 24-48h. Pressupost clar i sense compromís. Cada inversor és únic, cada solució també.",
+    "trustIndicators": {
+      "freeAnalysis": "Anàlisi gratuït 24-48h",
+      "certifiedAdvisors": "Assessors fiscals col·legiats",
+      "supportedExchanges": "50+ exchanges suportats"
+    },
+    "process": {
+      "title": "Com treballem amb tu",
+      "subtitle": "Procés transparent de principi a fi. Sabràs exactament què esperar en cada fase.",
+      "steps": {
+        "diagnosis": {
+          "number": "01",
+          "title": "Diagnosi Gratuïta",
+          "description": "Envia’ns informació bàsica sobre les teves plataformes, volum d’operacions i tipus d’actius. Et respondrem en 24-48h amb una anàlisi inicial sense compromís.",
+          "time": "24-48 hores"
         },
-        "notIncluded": {
-          "staking": "Staking i rendiments",
-          "defi": "DeFi i operacions complexes",
-          "optimization": "Optimització fiscal avançada"
-        }
-      },
-      "advanced": {
-        "name": "Pla Avançat",
-        "price": "Des de 1.500€",
-        "description": "Per a traders actius amb múltiples plataformes",
-        "popular": true,
-        "features": {
-          "transactions": "Fins a 2.000 transaccions",
-          "exchanges": "3-5 exchanges o plataformes",
-          "report": "Informe fiscal complet",
-          "calculations": "Càlcul de guanys/pèrdues + rendiments",
-          "staking": "Staking, lending i airdrops",
-          "models": "Model 100 + Model 720 (si s’aplica)",
-          "reviews": "2 revisions amb assessor",
-          "support": "Suport prioritari",
-          "optimization": "Recomanacions d’optimització"
+        "analysis": {
+          "number": "02",
+          "title": "Anàlisi de Complexitat",
+          "description": "Avaluem la complexitat del teu cas: nombre d’exchanges, tipus d’operacions (trading, staking, DeFi), anys fiscals a processar i requisits especials.",
+          "time": "48 hores"
         },
-        "notIncluded": {
-          "defi": "DeFi complex (yield farming, LP tokens)",
-          "nfts": "NFTs"
-        }
-      },
-      "premium": {
-        "name": "Pla Premium",
-        "price": "Des de 3.500€",
-        "description": "Solució integral per a carteres complexes",
-        "features": {
-          "transactions": "Transaccions il·limitades",
-          "exchanges": "Exchanges i wallets il·limitats",
-          "report": "Informe fiscal premium",
-          "operations": "Tots els tipus d’operacions",
-          "defi": "DeFi: yield farming, liquidity pools, NFTs",
-          "models": "Models 100, 720 i altres si s’aplica",
-          "reviews": "Revisions il·limitades",
-          "advisor": "Assessor fiscal dedicat",
-          "optimization": "Pla d’optimització personalitzat",
-          "support": "Suport 24/7 durant la campanya",
-          "followup": "Seguiment anual inclòs"
+        "proposal": {
+          "number": "03",
+          "title": "Pressupost Personalitzat",
+          "description": "Reps un pressupost detallat amb preu fix, abast del treball, cronograma d’execució i lliurables específics. Sense sorpreses ni costos ocults.",
+          "time": "Immediat"
+        },
+        "execution": {
+          "number": "04",
+          "title": "Execució del Servei",
+          "description": "Processem les teves dades, realitzem càlculs fiscals certificats i preparem informes auditables. Revisió per assessor fiscal col·legiat inclosa.",
+          "time": "1-3 setmanes"
+        },
+        "delivery": {
+          "number": "05",
+          "title": "Lliurament i Suport",
+          "description": "Reps l’informe fiscal complet, models oficials llestos per presentar i sessió de revisió. Suport post-lliurament inclòs durant la campanya de la Renda.",
+          "time": "Continu"
         }
       }
     },
-    "comparison": {
-      "features": {
-        "transactions": "Nombre de transaccions",
-        "exchanges": "Exchanges / Plataformes",
-        "trading": "Trading bàsic (compra/venda)",
-        "staking": "Staking i lending",
-        "defi": "DeFi (yield farming, LP)",
-        "nfts": "NFTs",
-        "model100": "Model 100 (IRPF)",
-        "model720": "Model 720 (internacional)",
-        "reviews": "Revisions amb assessor",
-        "optimization": "Optimització fiscal",
-        "support": "Suport"
-      },
-      "values": {
-        "basic": {
-          "transactions": "Fins a 500",
-          "exchanges": "1-2",
-          "reviews": "1",
-          "optimization": "Bàsica",
-          "support": "Correu electrònic"
+    "offerings": {
+      "title": "Quins serveis fiscals oferim",
+      "subtitle": "Cobertura completa per a totes les teves necessitats fiscals relacionades amb inversions digitals i tradicionals",
+      "items": {
+        "dataAnalysis": {
+          "number": "01",
+          "title": "Anàlisi i Conciliació de Dades",
+          "description": "Processem transaccions de més de 50 exchanges i blockchains diferents. Conciliació automàtica, detecció de duplicats, neteja de dades i traçabilitat completa de cada operació.",
+          "keywords": "exchanges, wallets, blockchain, dades fiscals"
         },
-        "advanced": {
-          "transactions": "Fins a 2.000",
-          "exchanges": "3-5",
-          "reviews": "2",
-          "optimization": "Avançada",
-          "support": "Prioritari"
+        "taxCalculations": {
+          "number": "02",
+          "title": "Càlculs Fiscals Certificats",
+          "description": "Aplicació de la metodologia FIFO per a guanys i pèrdues patrimonials. Càlcul de rendiments de capital mobiliari (staking, lending). Models 100, 720 i 721 generats automàticament.",
+          "keywords": "FIFO, guanys, pèrdues, IRPF, model 100"
         },
-        "premium": {
-          "transactions": "Il·limitades",
-          "exchanges": "Il·limitades",
-          "reviews": "Il·limitades",
-          "optimization": "Premium",
-          "support": "24/7"
+        "optimization": {
+          "number": "03",
+          "title": "Optimització Fiscal Estratègica",
+          "description": "Anàlisi d’oportunitats de compensació de pèrdues, planificació fiscal per a futurs exercicis i estratègies d’optimització dins del marc legal vigent.",
+          "keywords": "optimització fiscal, planificació tributària"
+        },
+        "advisory": {
+          "number": "04",
+          "title": "Assessoria Fiscal Continuada",
+          "description": "Revisió per assessors fiscals col·legiats especialitzats en criptoactius. Suport durant la presentació davant l’AEAT. Seguiment de canvis normatius i criteris de la DGT.",
+          "keywords": "assessor fiscal, AEAT, normativa cripto"
         }
+      }
+    },
+    "inclusions": {
+      "title": "Què inclou el nostre servei fiscal",
+      "items": {
+        "dataProcessing": "Conciliació de dades de tots els teus exchanges, wallets i brokers",
+        "calculations": "Càlcul certificat de guanys, pèrdues i rendiments",
+        "models": "Generació de models oficials (100, 720, 721) llestos per presentar",
+        "review": "Revisió obligatòria per assessor fiscal col·legiat",
+        "report": "Informe fiscal detallat i auditable amb traçabilitat completa",
+        "session": "Sessió de revisió en línia per resoldre dubtes",
+        "support": "Suport durant la campanya de la Renda (abril-juny)",
+        "updates": "Actualitzacions si es detecten errors després del lliurament"
       }
     }
   },
   "about": {
-    "title": "Sobre Cleriontax",
-    "subtitle": "Experiència en dades + expertesa fiscal = La teva tranquil·litat",
-    "mission": {
-      "title": "La nostra missió",
-      "content": "Fer que la fiscalitat dels criptoactius sigui accessible, comprensible i eficient per a tots els inversors espanyols. Creiem que la complexitat tècnica no hauria de ser un obstacle per complir correctament amb les obligacions fiscals."
+    "title": "On l’Assessoria Fiscal Tradicional es Troba amb la Innovació Tecnològica",
+    "subtitle": "Som el pont entre dos mons: l’experiència fiscal col·legiada i l’anàlisi de dades d’última generació. Cleriontax combina el millor de tots dos per oferir-te un servei fiscal sense precedents.",
+    "hero": {
+      "tagline": "Expertesa Fiscal × Innovació Tecnològica",
+      "stats": {
+        "experience": {
+          "value": "500+",
+          "label": "Inversors atesos"
+        },
+        "transactions": {
+          "value": "1M+",
+          "label": "Operacions analitzades"
+        },
+        "accuracy": {
+          "value": "100%",
+          "label": "Precisió en els càlculs"
+        }
+      }
     },
-    "story": {
-      "title": "Qui som?",
-      "content": "Cleriontax neix de la col·laboració entre professionals de l’anàlisi de dades i assessors fiscals especialitzats en criptoactius. Amb més de 10 anys d’experiència combinada en anàlisi de dades financeres i assessorament fiscal, hem desenvolupat una metodologia única que combina automatització tecnològica amb revisió humana experta."
+    "duality": {
+      "title": "La Combinació Perfecta: Assessoria + Tecnologia",
+      "subtitle": "Dos equips, una missió: transformar la complexitat fiscal en claredat absoluta",
+      "fiscal": {
+        "title": "Equip Fiscal",
+        "subtitle": "Experiència i Normativa",
+        "description": "Assessors fiscals col·legiats especialitzats en la fiscalitat d’actius digitals. Coneixement profund de la normativa de l’AEAT, criteris de la DGT i jurisprudència aplicable. Sempre actualitzats amb cada canvi normatiu.",
+        "points": [
+          "Assessors fiscals col·legiats certificats",
+          "Especialització en criptoactius i finances digitals",
+          "Coneixement exhaustiu dels models 100, 720 i 721",
+          "Experiència en inspeccions i requeriments de l’AEAT",
+          "Formació contínua en normativa fiscal cripto"
+        ]
+      },
+      "tech": {
+        "title": "Equip Tecnològic",
+        "subtitle": "Innovació i Precisió",
+        "description": "Enginyers de dades i desenvolupadors especialitzats en el processament massiu de transaccions blockchain. Algoritmes propis de conciliació, automatització de càlculs i validació creuada de dades.",
+        "points": [
+          "Processament automatitzat de milions de transaccions",
+          "Integració amb més de 50 exchanges i blockchains",
+          "Algoritmes propis de detecció de duplicats",
+          "Conciliació automàtica multicanaç",
+          "Stack tecnològic modern i escalable"
+        ]
+      }
     },
-    "partnership": {
-      "title": "Col·laboració amb assessoria fiscal",
-      "content": "Treballem en estreta col·laboració amb un despatx fiscal especialitzat en noves tecnologies i actius digitals. Tots els nostres informes són revisats i validats per assessors fiscals col·legiats, garantint el compliment total amb la normativa de l’AEAT."
+    "methodology": {
+      "title": "Metodologia Híbrida: El Millor dels Dos Mons",
+      "subtitle": "Combinen el rigor fiscal tradicional amb l’eficiència tecnològica moderna",
+      "steps": {
+        "automation": {
+          "number": "01",
+          "title": "Automatització Intel·ligent",
+          "description": "Els nostres sistemes processen automàticament les teves transaccions, aplicant algoritmes de neteja de dades, detecció de duplicats i conciliació entre plataformes. Reduïm els errors humans al mínim.",
+          "tech": "Tecnologia"
+        },
+        "validation": {
+          "number": "02",
+          "title": "Validació Fiscal Experta",
+          "description": "Cada resultat automatitzat passa per la revisió dels nostres assessors fiscals. Verifiquem la interpretació normativa, l’aplicació correcta dels criteris de la DGT i la coherència fiscal del resultat final.",
+          "tech": "Assessoria Fiscal"
+        },
+        "continuous": {
+          "number": "03",
+          "title": "Millora Contínua",
+          "description": "Cada cas ens ajuda a millorar els nostres algoritmes i processos. El feedback de l’equip fiscal alimenta les millores tecnològiques. Innovació constant sense perdre el rigor professional.",
+          "tech": "Híbrid"
+        }
+      }
     },
-    "expertise": {
-      "title": "Experiència en anàlisi de dades",
-      "content": "El nostre equip tècnic compta amb una àmplia experiència en el processament de grans volums de dades financeres. Hem desenvolupat algoritmes propis per a la neteja, conciliació i càlcul fiscal d’operacions amb criptoactius, compatibles amb més de 50 exchanges i plataformes diferents."
+    "why": {
+      "title": "Per Què Som Diferents",
+      "subtitle": "No som una assessoria tradicional ni una startup tecnològica. Som l’evolució necessària del servei fiscal.",
+      "items": {
+        "noOldSchool": {
+          "title": "Adéu als Processos Obsolets",
+          "description": "Res de fulls de càlcul manuals propensos a errors. Res de processos lents i opacs. Utilitzem tecnologia moderna per fer en hores el que altres triguen setmanes, sense sacrificar precisió.",
+          "keywords": "automatització fiscal, tecnologia financera, processos moderns"
+        },
+        "noBlackBox": {
+          "title": "Transparència Total, No Caixes Negres",
+          "description": "A diferència del programari fiscal genèric, cada càlcul té supervisió humana experta. No confiem cegament en algoritmes. Cada resultat és validat per professionals col·legiats.",
+          "keywords": "assessor fiscal expert, validació professional, transparència"
+        },
+        "speed": {
+          "title": "Rapidesa Sense Comprometre la Qualitat",
+          "description": "Automatitzem el que es pot automatitzar (processament de dades, càlculs matemàtics, generació d’informes) perquè els nostres assessors es concentrin en el més important: la interpretació normativa i l’estratègia fiscal.",
+          "keywords": "servei ràpid, eficiència, anàlisi expert"
+        },
+        "scalable": {
+          "title": "Escalable a Qualsevol Volum",
+          "description": "Tant si tens 50 com 50.000 operacions, la nostra infraestructura tecnològica escala sense perdre precisió. El mateix rigor fiscal independentment del volum.",
+          "keywords": "escalabilitat, alt volum, precisió garantida"
+        }
+      }
+    },
+    "team": {
+      "title": "Un Equip Multidisciplinari Únic",
+      "fiscal": "Assessors Fiscals Col·legiats",
+      "tech": "Enginyers de Dades",
+      "analysts": "Analistes Blockchain",
+      "developers": "Desenvolupadors Full Stack"
     },
     "values": {
-      "transparency": {
-        "title": "Transparència",
-        "description": "Preus clars, processos explicats, sense costos ocults ni sorpreses."
+      "title": "Els Nostres Principis",
+      "innovation": {
+        "title": "Innovació Constant",
+        "description": "Invertim en tecnologia, formació i metodologies per estar sempre a l’avantguarda del servei fiscal digital."
       },
       "precision": {
-        "title": "Precisió",
-        "description": "Cada transacció compta. El nostre compromís és el 100% de precisió."
+        "title": "Precisió Absoluta",
+        "description": "El 100% de precisió no és un objectiu, és un requisit mínim. Cada decimal compta quan es tracta de la teva declaració fiscal."
       },
-      "trust": {
-        "title": "Confiança",
-        "description": "Tractem les teves dades amb la màxima seguretat i confidencialitat absoluta."
+      "partnership": {
+        "title": "Col·laboració Real",
+        "description": "No som un proveïdor extern. Som el teu soci fiscal tecnològic. T’acompanyem en cada pas del procés."
       }
     }
   },
   "contact": {
-    "title": "Sol·licita el teu pressupost",
-    "subtitle": "Explica'ns el teu cas i t'enviarem un pressupost personalitzat en poques hores.",
+    "title": "Sol·licita el teu pressupost sense compromís",
+    "subtitle": "Explica'ns el teu cas: exchanges que utilitzes, volum d'operacions i tipus d'actius. T'enviarem un pressupost personalitzat en poques hores.",
+    "trustIndicators": {
+      "freeAnalysis": "Anàlisi gratuït 24-48h",
+      "certifiedAdvisors": "Assessors fiscals col·legiats",
+      "supportedExchanges": "50+ exchanges suportats"
+    },
     "form": {
       "name": "Nom complet",
+      "namePlaceholder": "Joan Pérez",
       "email": "Correu electrònic",
-      "phone": "Telèfon (opcional)",
+      "emailPlaceholder": "el.teu@email.com",
+      "phone": "Telèfon",
+      "phonePlaceholder": "+34 600 000 000",
       "service": "Tipus de servei",
-      "message": "Explica’ns el teu cas",
+      "message": "Explica’ns el teu cas: plataformes, volum, tipus d’operacions",
+      "messagePlaceholder": "Descriu el teu cas: nombre aproximat de transaccions, exchanges utilitzats, tipus d’operacions...",
       "file": "Adjunta un fitxer (opcional)",
-      "submit": "Envia la sol·licitud",
-      "submitting": "Enviant..."
+      "fileDragText": "Arrossega el teu fitxer CSV o Excel aquí",
+      "fileClickText": "o fes clic per seleccionar (màx. 10MB)",
+      "fileErrorType": "Si us plau, selecciona un fitxer CSV o Excel",
+      "fileErrorSize": "El fitxer és massa gran. Màxim 10MB",
+      "submit": "Enviar sol·licitud",
+      "submitting": "Enviant...",
+      "submitError": "Error en enviar el formulari",
+      "successMessage": "Missatge enviat correctament! Et respondrem en poques hores.",
+      "errorMessage": "Hi ha hagut un error en enviar el missatge. Si us plau, torna-ho a provar o contacta’ns per correu.",
+      "privacyText": "En enviar aquest formulari acceptes la nostra",
+      "privacyLink": "Política de Privacitat"
     },
     "info": {
       "title": "Prefereixes contactar-nos directament?",
       "email": "info@cleriontax.com",
       "phone": "+34 900 000 000",
-      "schedule": "De dilluns a divendres, 9:00 - 18:00"
+      "schedule": "Dilluns a Divendres, 9:00 - 18:00",
+      "offHoursText": "Fora d’horari? Truca o escriu-nos, et respondrem aviat.",
+      "emailLabel": "Correu electrònic",
+      "phoneLabel": "Telèfon",
+      "scheduleLabel": "Horari",
+      "quickResponseTitle": "Resposta ràpida",
+      "quickResponseText": "Normalment responem totes les consultes en poques hores laborables. Si el teu cas és urgent, indica-ho al missatge.",
+      "infoToIncludeTitle": "Quina informació incloure?",
+      "infoToInclude": {
+        "transactions": "Nombre aproximat de transaccions",
+        "exchanges": "Exchanges o plataformes utilitzades",
+        "operations": "Tipus d’operacions (trading, staking, DeFi, etc.)",
+        "year": "Any fiscal a declarar"
+      }
     }
   },
   "cta": {
-    "title": "Preparat per simplificar la teva declaració fiscal?",
-    "subtitle": "Milers d’inversors ja confien en Cleriontax per gestionar les seves obligacions fiscals. Uneix-t’hi i oblida’t de les complicacions.",
+    "title": "Preparat per tenir claredat fiscal sobre les teves inversions?",
+    "subtitle": "Centenars d’inversors ja han convertit les seves dades disperses en informes fiscals precisos amb Cleriontax. Declara amb confiança, compleix sense estrès.",
     "primary": "Sol·licita pressupost gratuït",
-    "secondary": "Veure plans i preus",
+    "secondary": "Veure serveis",
     "badges": {
       "noCommitment": "Sense compromís",
       "response24h": "Resposta en poques hores",
-      "secure": "100% segur i confidencial"
+      "secure": "Confidencial i segur"
     }
   },
   "footer": {
-    "description": "Especialistes en anàlisi de dades i assessorament fiscal per a inversors.",
+    "description": "Firma boutique d’anàlisi de dades i assessoria fiscal especialitzada en criptoactius i inversions globals.",
     "sections": {
       "company": "Empresa",
       "legal": "Legal",
@@ -264,24 +368,24 @@
   },
   "seo": {
     "home": {
-      "title": "Cleriontax | Anàlisi de dades i fiscalitat per a inversors",
-      "description": "Especialistes en anàlisi de dades i assessorament fiscal per a inversors amb carteres d’actius i criptoactius. Transformem les teves dades en informes fiscals llestos per a Hisenda."
+      "title": "Cleriontax | Informe Fiscal Cripto i Anàlisi de Dades per a Inversors a Espanya",
+      "description": "Convertim les teves operacions cripto disperses en informes fiscals precisos per a l’AEAT. Anàlisi de dades professional + assessoria fiscal experta. Declaració IRPF, model 720, model 721. Especialistes en fiscalitat de criptoactius a Espanya."
     },
     "services": {
-      "title": "Serveis i Preus | Cleriontax",
-      "description": "Plans personalitzats des de 600€ per a la declaració fiscal dels teus criptoactius. Bàsic, Avançat i Premium. Tria el que millor s’adapti al teu volum d’operacions."
+      "title": "Serveis Fiscals Cripto | Declaració Renda Criptoactius | Cleriontax",
+      "description": "Plans des de 600€ per a la teva declaració fiscal cripto. Informe IRPF, model 100, models 720/721. Trading, staking, DeFi, NFTs. Anàlisi de dades + assessoria fiscal especialitzada per a inversors en criptomonedes a Espanya."
     },
     "about": {
-      "title": "Sobre Nosaltres | Cleriontax",
-      "description": "Equip especialitzat en anàlisi de dades i assessorament fiscal. Col·laboració directa amb assessoria fiscal col·legiada per garantir el compliment amb l’AEAT."
+      "title": "Sobre Cleriontax | Experts en Fiscalitat Cripto i Anàlisi de Dades a Espanya",
+      "description": "Boutique especialitzada en anàlisi de dades i assessoria fiscal per a inversors cripto. Equip d’analistes de dades + assessors fiscals col·legiats. Experiència en fiscalitat de criptoactius segons la normativa AEAT."
     },
     "contact": {
-      "title": "Contacte | Sol·licita el teu Pressupost | Cleriontax",
-      "description": "Sol·licita un pressupost personalitzat per a la declaració fiscal dels teus criptoactius. Resposta en poques hores. Sense compromís."
+      "title": "Contacte | Pressupost Declaració Fiscal Cripto | Cleriontax",
+      "description": "Sol·licita un pressupost personalitzat per a la teva declaració de criptoactius. Informe fiscal per a IRPF, model 720, model 721. Resposta ràpida. Assessoria fiscal cripto a Espanya sense compromís."
     },
     "blog": {
-      "title": "Blog de Fiscalitat i Inversió | Guies Crypto, Accions i Anàlisi de Dades | Cleriontax",
-      "description": "Guies completes, anàlisis i actualitat sobre la fiscalitat de criptomonedes, inversions en mercats tradicionals i anàlisi de dades financeres a Espanya. Aprèn sobre IRPF, model 100, 720, optimització fiscal i normativa AEAT actualitzada."
+      "title": "Blog Fiscalitat i Inversió | Guies Crypto, Accions i Anàlisi de Dades | Cleriontax",
+      "description": "Guies completes, anàlisi i actualitat sobre la fiscalitat de criptomonedes, inversions tradicionals i anàlisi de dades financeres a Espanya. Aprèn sobre IRPF, model 100, 720, optimització fiscal i normativa AEAT actualitzada."
     }
   },
   "common": {
@@ -294,18 +398,19 @@
       "en": "Anglès",
       "ca": "Català"
     },
+    "language": "Idioma",
     "socialNetworks": {
       "linkedin": "LinkedIn"
     }
   },
   "serviceInclusions": {
-    "allInclude": "Tots els serveis inclouen revisió per assessor fiscal col·legiat"
+    "allInclude": "Tots els serveis inclouen revisió per un assessor fiscal col·legiat"
   },
   "blog": {
     "hero": {
       "badge": "Blog de Fiscalitat, Inversió i Anàlisi de Dades",
-      "title": "Guies, Notícies i Anàlisis per a Inversors",
-      "subtitle": "Tot el que necessites saber sobre la fiscalitat de criptomonedes, inversions en mercats tradicionals i anàlisi de dades financeres. Actualitzacions normatives, casos pràctics i estratègies d'optimització fiscal.",
+      "title": "Guies, Notícies i Anàlisi per a Inversors",
+      "subtitle": "Tot el que necessites saber sobre la fiscalitat de criptomonedes, inversions en mercats tradicionals i anàlisi de dades financeres. Actualitzacions normatives, casos pràctics i estratègies d’optimització fiscal.",
       "stats": {
         "articles": "Articles",
         "categories": "Categories"
@@ -313,7 +418,8 @@
     },
     "featured": {
       "title": "Articles destacats",
-      "subtitle": "Els continguts més complets i actualitzats sobre fiscalitat d'inversions i anàlisi de dades"
+      "subtitle": "Els continguts més complets i actualitzats sobre fiscalitat d'inversions i anàlisi de dades",
+      "badge": "Destacat"
     },
     "allArticles": {
       "title": "Tots els articles",
@@ -321,6 +427,9 @@
     },
     "categories": {
       "title": "Explora per categories"
-    }
+    },
+    "readMore": "Llegir més"
   }
+
+
 }

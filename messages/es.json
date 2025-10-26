@@ -80,6 +80,11 @@
   "services": {
     "title": "Servicios de Asesoría Fiscal para Inversiones en Criptomonedas y Acciones",
     "subtitle": "Análisis personalizado de tu caso en 24-48h. Presupuesto claro sin compromiso. Cada inversor es único, cada solución también.",
+    "trustIndicators": {
+      "freeAnalysis": "Análisis gratuito 24-48h",
+      "certifiedAdvisors": "Asesores fiscales colegiados",
+      "supportedExchanges": "50+ exchanges soportados"
+    },
     "process": {
       "title": "Cómo trabajamos contigo",
       "subtitle": "Proceso transparente de principio a fin. Sabrás exactamente qué esperar en cada fase.",
@@ -284,6 +289,11 @@
   "contact": {
     "title": "Solicita tu presupuesto sin compromiso",
     "subtitle": "Cuéntanos tu caso: exchanges que usas, volumen de operaciones y tipos de activos. Te enviamos presupuesto personalizado en pocas horas.",
+    "trustIndicators": {
+      "freeAnalysis": "Análisis gratuito 24-48h",
+      "certifiedAdvisors": "Asesores fiscales colegiados",
+      "supportedExchanges": "50+ exchanges soportados"
+    },
     "form": {
       "name": "Nombre completo",
       "namePlaceholder": "Juan Pérez",
@@ -301,6 +311,7 @@
       "fileErrorSize": "El archivo es demasiado grande. Máximo 10MB",
       "submit": "Enviar solicitud",
       "submitting": "Enviando...",
+      "submitError": "Error al enviar el formulario",
       "successMessage": "¡Mensaje enviado correctamente! Te responderemos en pocas horas.",
       "errorMessage": "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contáctanos por email.",
       "privacyText": "Al enviar este formulario aceptas nuestra",
@@ -387,6 +398,7 @@
       "en": "English",
       "ca": "Català"
     },
+    "language": "Idioma",
     "socialNetworks": {
       "linkedin": "LinkedIn"
     }
@@ -406,7 +418,8 @@
     },
     "featured": {
       "title": "Artículos destacados",
-      "subtitle": "Los contenidos más completos y actualizados sobre fiscalidad de inversiones y análisis de datos"
+      "subtitle": "Los contenidos más completos y actualizados sobre fiscalidad de inversiones y análisis de datos",
+      "badge": "Destacado"
     },
     "allArticles": {
       "title": "Todos los artículos",
@@ -414,6 +427,7 @@
     },
     "categories": {
       "title": "Explora por categorías"
-    }
+    },
+    "readMore": "Leer más"
   }
 }

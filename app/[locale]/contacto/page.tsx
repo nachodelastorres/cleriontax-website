@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Container from "@/components/ui/Container";
+import PageHero from "@/components/layout/PageHero";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 
@@ -32,18 +33,7 @@ export default async function ContactoPage({ params }: Props) {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-neutral-50 to-white">
-        <Container>
-          <div className="space-y-6 text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold text-primary md:text-5xl lg:text-6xl">
-              {t('title')}
-            </h1>
-            <p className="text-lg text-neutral-600 md:text-xl">
-              {t('subtitle')}
-            </p>
-          </div>
-        </Container>
-      </section>
+      <PageHero namespace="contact" />
 
       {/* Contact Form and Info */}
       <section className="py-16 md:py-24 bg-white">

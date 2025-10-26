@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Calendar, Clock, Tag, ArrowRight } from "lucide-react";
 import { BlogPost } from "@/lib/blog";
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -14,6 +14,7 @@ interface BlogCardProps {
 
 export default function BlogCard({ post, index = 0, featured = false }: BlogCardProps) {
   const locale = useLocale();
+  const t = useTranslations('blog');
   const slug = post.slugTranslations[locale as keyof typeof post.slugTranslations] || post.slug;
 
   return (
@@ -51,7 +52,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             <div className="absolute top-4 right-4 z-10">
               <span className="px-4 py-1.5 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wide shadow-lg flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                Destacado
+                {t('featured.badge')}
               </span>
             </div>
           )}
@@ -64,7 +65,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             <div className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" />
               <time dateTime={post.publishedAt}>
-                {new Date(post.publishedAt).toLocaleDateString('es-ES', {
+                {new Date(post.publishedAt).toLocaleDateString(locale === 'en' ? 'en-US' : locale === 'ca' ? 'ca-ES' : 'es-ES', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric'
@@ -122,7 +123,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             </div>
 
             <div className="flex items-center gap-2 text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-300">
-              <span>Leer más</span>
+              <span>{t('readMore')}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </div>
           </div>

@@ -25,7 +25,11 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(nslookup:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(curl:*)",
+      "Bash(cat:*)",
+      "Bash(/dev/null)",
+      "Bash(node -e:*)"
     ],
     "deny": [],
     "ask": []

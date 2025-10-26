@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Container from "@/components/ui/Container";
+import PageHero from "@/components/layout/PageHero";
 import ProcessTimeline from "@/components/services/ProcessTimeline";
 import ServicesGrid from "@/components/services/ServicesGrid";
 import ServiceInclusions from "@/components/services/ServiceInclusions";
@@ -72,32 +73,8 @@ export default async function ServiciosPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      {/* Hero Section - SEO Optimized */}
-      <section className="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-b from-neutral-50 to-white">
-        <Container>
-          <div className="space-y-6 text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-800 via-primary-600 to-accent bg-clip-text text-transparent md:text-5xl lg:text-6xl leading-tight">
-              {t('title')}
-            </h1>
-            <p className="text-lg text-neutral-600 md:text-xl leading-relaxed">
-              {t('subtitle')}
-            </p>
-
-            {/* SEO-friendly trust indicators */}
-            <div className="flex flex-wrap justify-center gap-4 pt-4">
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10">
-                <span className="text-sm font-medium text-primary-700">✓ Análisis gratuito 24-48h</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/5 border border-accent/10">
-                <span className="text-sm font-medium text-accent-dark">✓ Asesores fiscales colegiados</span>
-              </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10">
-                <span className="text-sm font-medium text-primary-700">✓ 50+ exchanges soportados</span>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+      {/* Hero Section */}
+      <PageHero namespace="services" />
 
       {/* Process Timeline */}
       <ProcessTimeline />
