@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from 'next-intl/server';
-import { getBlogPostBySlug, getAllBlogPosts } from "@/lib/blog";
+import { getBlogPostBySlug, getAllBlogPosts, getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogContent from "@/components/blog/BlogContent";
 import BlogCard from "@/components/blog/BlogCard";
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
-  const post = getBlogPostBySlug(slug, locale);
+  const post = await getBlogPostBySlug(slug, locale);
 
   if (!post) {
     return {
@@ -82,14 +82,16 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params;
-  const post = getBlogPostBySlug(slug, locale);
+
+  const post = await getBlogPostBySlug(slug, locale);
 
   if (!post) {
     notFound();
   }
 
-  const allPosts = getAllBlogPosts();
-  const relatedPosts = allPosts
+  // Cargar posts relacionados con contenido
+  const allPostsWithContent = await getAllBlogPostsWithContent(locale);
+  const relatedPosts = allPostsWithContent
     .filter(p => p.slug !== post.slug && (
       p.category === post.category ||
       p.tags.some(tag => post.tags.includes(tag))

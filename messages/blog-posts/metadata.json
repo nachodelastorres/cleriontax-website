@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": "guia-completa-declaracion-fiscal-criptomonedas-2025",
+      "slugTranslations": {
+        "es": "guia-completa-declaracion-fiscal-criptomonedas-2025",
+        "en": "complete-guide-cryptocurrency-tax-declaration-2025",
+        "ca": "guia-completa-declaracio-fiscal-criptomonedes-2025"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto/Investor y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-05T09:00:00Z",
+      "updatedAt": "2025-10-08T14:30:00Z",
+      "readingTime": 10,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Declaración IRPF",
+        "Fiscalidad Crypto",
+        "Fiscalidad Inversiones",
+        "Modelo 100",
+        "Modelo 720",
+        "FIFO",
+        "Ganancias Patrimoniales",
+        "Staking",
+        "AEAT",
+        "Análisis de Datos",
+        "Guía Fiscal 2025"
+      ],
+      "image": {
+        "url": "https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1200&h=630&fit=crop",
+        "alt": "Guía completa de declaración fiscal de criptomonedas e inversiones en España 2025"
+      },
+      "seo": {
+        "metaTitle": "Guía Completa Declaración Fiscal Criptomonedas e Inversiones España 2025 | IRPF, FIFO",
+        "metaDescription": "Guía definitiva para declarar criptomonedas e inversiones ante la AEAT en 2025. Aprende a calcular ganancias con FIFO, modelo 100, 720, staking y optimización fiscal. Incluye ejemplos prácticos y casos resueltos por expertos en análisis de datos.",
+        "keywords": [
+          "declaración fiscal criptomonedas 2025",
+          "fiscalidad crypto inversiones",
+          "criptomonedas IRPF 2025",
+          "modelo 100 criptomonedas",
+          "modelo 720 criptomonedas",
+          "FIFO criptomonedas",
+          "ganancias patrimoniales crypto",
+          "declarar bitcoin españa",
+          "impuestos criptomonedas AEAT",
+          "staking fiscalidad",
+          "análisis datos fiscales",
+          "fiscalidad mercado acciones",
+          "optimización fiscal inversiones"
+        ],
+        "ogImage": "https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1200&h=630&fit=crop"
+      },
+      "featured": true
+    }
+  ]
+}

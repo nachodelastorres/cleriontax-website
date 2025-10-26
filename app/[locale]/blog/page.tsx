@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { getAllBlogPosts, getFeaturedBlogPosts, getAllCategories } from "@/lib/blog";
+import { getAllBlogPostsWithContent, getAllCategories } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogCard from "@/components/blog/BlogCard";
 import { FileText, TrendingUp } from "lucide-react";
@@ -38,8 +38,9 @@ export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations('blog');
 
-  const allPosts = getAllBlogPosts();
-  const featuredPosts = getFeaturedBlogPosts();
+  // Cargar todos los posts con su contenido en el idioma actual
+  const allPosts = await getAllBlogPostsWithContent(locale);
+  const featuredPosts = allPosts.filter(post => post.featured);
   const categories = getAllCategories();
 
   // Structured Data for SEO
