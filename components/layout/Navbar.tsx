@@ -34,8 +34,11 @@ export default function Navbar() {
   ];
 
   const switchLanguage = (newLocale: string) => {
-    const currentPath = pathname.replace(`/${locale}`, '');
-    router.push(`/${newLocale}${currentPath}`);
+    // Extraer el path sin el locale actual
+    const pathWithoutLocale = pathname.replace(new RegExp(`^/${locale}`), '');
+    // Construir la nueva URL con el nuevo locale
+    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    router.push(newPath);
     setLangMenuOpen(false);
   };
 
