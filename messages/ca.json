@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inici",
     "services": "Serveis",
+    "blog": "Blog",
     "about": "Sobre nosaltres",
     "contact": "Contacte",
     "requestQuote": "Sol·licita pressupost",
@@ -253,6 +254,7 @@
     "links": {
       "about": "Sobre nosaltres",
       "services": "Serveis",
+      "blog": "Blog",
       "contact": "Contacte",
       "privacy": "Política de privacitat",
       "legal": "Avís legal",

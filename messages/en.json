@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "blog": "Blog",
     "about": "About Us",
     "contact": "Contact",
     "requestQuote": "Request a Quote",
@@ -253,6 +254,7 @@
     "links": {
       "about": "About Us",
       "services": "Services",
+      "blog": "Blog",
       "contact": "Contact",
       "privacy": "Privacy Policy",
       "legal": "Legal Notice",
