@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation';
+import LanguageRedirect from '@/components/LanguageRedirect';
 
 export default function RootPage() {
-  redirect('/es');
+  return <LanguageRedirect />;
 }
