@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
@@ -74,12 +76,17 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  // Obtener mensajes para el idioma actual
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

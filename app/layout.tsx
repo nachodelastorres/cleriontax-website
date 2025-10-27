@@ -1,23 +1,9 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "Cleriontax",
-  description: "Expertos en fiscalidad de criptomonedas e inversiones",
-};
-
+// Este layout raíz solo pasa children al layout localizado
+// No debe renderizar <html> ni <body> porque el layout [locale] lo hace
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html>
-      <body className={inter.className}>
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }

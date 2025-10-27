@@ -49,10 +49,20 @@ async function loadBlogPostContent(postId: string, locale: string): Promise<{ ti
         const content = await import(`@/messages/blog-posts/es/${postId}.json`);
         return content.default;
       } catch (fallbackError) {
-        throw new Error(`Blog post ${postId} not found in any language`);
+        // Si falla completamente, devolver valores por defecto
+        return {
+          title: 'Post no disponible',
+          excerpt: 'Este contenido no está disponible.',
+          content: 'Este contenido no está disponible en este idioma.'
+        };
       }
     }
-    throw error;
+    // Si falla en español, devolver valores por defecto
+    return {
+      title: 'Post no disponible',
+      excerpt: 'Este contenido no está disponible.',
+      content: 'Este contenido no está disponible.'
+    };
   }
 }
 
