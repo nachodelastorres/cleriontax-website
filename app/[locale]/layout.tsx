@@ -1,13 +1,12 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
 import { Inter } from "next/font/google";
 import { notFound } from 'next/navigation';
-import { locales, type Locale } from '@/i18n/request';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const locales = ['es', 'en', 'ca'];
 
 type Props = {
   children: React.ReactNode;
@@ -20,11 +19,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'seo.home' });
 
   return {
-    title: t('title'),
-    description: t('description'),
+    title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
+    description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
     keywords: [
       'fiscalidad criptomonedas',
       'declaración fiscal cripto',
@@ -41,8 +39,8 @@ export async function generateMetadata({ params }: Props) {
       apple: '/images/logos/icono_fondo_transparente.png',
     },
     openGraph: {
-      title: t('title'),
-      description: t('description'),
+      title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
+      description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
       type: 'website',
       locale: locale,
       images: [
@@ -72,21 +70,16 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Validar que el locale es válido
-  if (!locales.includes(locale as Locale)) {
+  if (!locales.includes(locale)) {
     notFound();
   }
-
-  // Obtener los mensajes para el locale actual
-  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );
