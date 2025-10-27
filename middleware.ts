@@ -5,10 +5,7 @@ export default createMiddleware({
   locales: ['es', 'en', 'ca'],
 
   // Used when no locale matches
-  defaultLocale: 'es',
-
-  // Always show locale prefix in URL
-  localePrefix: 'always'
+  defaultLocale: 'es'
 });
 
 export const config = {

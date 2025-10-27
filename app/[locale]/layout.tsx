@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { Inter } from "next/font/google";
 import { notFound } from 'next/navigation';
-import { locales, type Locale } from '@/i18n';
+import { locales, type Locale } from '@/i18n/request';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
