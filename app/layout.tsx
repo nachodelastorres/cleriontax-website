@@ -1,5 +1,5 @@
-// Este layout raíz solo pasa children al layout localizado
-// No debe renderizar <html> ni <body> porque el layout [locale] lo hace
+// Root layout - must not render <html> and <body> when using [locale] pattern
+// The locale-specific layout handles these
 export default function RootLayout({
   children,
 }: {
