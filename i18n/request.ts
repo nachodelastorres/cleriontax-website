@@ -1,22 +1,18 @@
 import { getRequestConfig } from 'next-intl/server';
 import { locales, defaultLocale, type Locale } from '../locales';
+import { notFound } from 'next/navigation';
 
 // Re-export locales and Locale type for use in other files
 export { locales, type Locale };
 
 export default getRequestConfig(async ({ locale }) => {
-  // Handle Next.js 16 params as Promise
-  const resolvedLocale = await locale;
-  
-  if (!resolvedLocale || !locales.includes(resolvedLocale as Locale)) {
-    return {
-      locale: defaultLocale,
-      messages: (await import(`../messages/${defaultLocale}.json`)).default
-    };
+  // Validate that the incoming locale is valid
+  if (!locale || !locales.includes(locale as Locale)) {
+    notFound();
   }
 
   return {
-    locale: resolvedLocale,
-    messages: (await import(`../messages/${resolvedLocale}.json`)).default
+    locale,
+    messages: (await import(`../messages/${locale}.json`)).default
   };
 });

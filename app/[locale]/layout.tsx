@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
 
   return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com'),
     title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
     description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
     keywords: [
