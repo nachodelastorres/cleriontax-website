@@ -34,10 +34,10 @@ export default function Navbar() {
   ];
 
   const switchLanguage = (newLocale: string) => {
-    // Extraer el path sin el locale actual
-    const pathWithoutLocale = pathname.replace(new RegExp(`^/${locale}`), '');
+    // Remover cualquier locale del inicio del path (es, en, ca)
+    const pathWithoutLocale = pathname.replace(/^\/(es|en|ca)/, '');
     // Construir la nueva URL con el nuevo locale
-    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    const newPath = `/${newLocale}${pathWithoutLocale || ''}`;
     router.push(newPath);
     setLangMenuOpen(false);
   };
