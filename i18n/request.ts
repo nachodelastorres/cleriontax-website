@@ -7,12 +7,13 @@ export { locales, type Locale };
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming locale is valid
-  if (!locale || !locales.includes(locale as Locale)) {
-    notFound();
-  }
+  // Use defaultLocale as fallback instead of notFound() to avoid 404 during build
+  const validLocale = (locale && locales.includes(locale as Locale))
+    ? locale
+    : defaultLocale;
 
   return {
-    locale,
-    messages: (await import(`../messages/${locale}.json`)).default
+    locale: validLocale,
+    messages: (await import(`../messages/${validLocale}.json`)).default
   };
 });
