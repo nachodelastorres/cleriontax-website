@@ -41,7 +41,7 @@ export default function Logo({
     'dark-cropped': '/images/logos/logo_recortado_fondo_transparente.svg',
     'transparent-full': '/images/logos/logo_fondo_transparente.svg',
     'transparent-icon': '/images/logos/icono_fondo_transparente.svg',
-    'transparent-cropped': '/images/logos/logo_recortado_fondo_transparente.svg',
+    'transparent-cropped': '/images/logos/logo_recortado_transparente_blanco.svg',
   };
 
   const logoKey = `${variant}-${type}` as keyof typeof logoMap;

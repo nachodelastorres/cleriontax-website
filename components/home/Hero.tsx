@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslations, useLocale } from 'next-intl';
+import Image from "next/image";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 
@@ -11,111 +12,89 @@ export default function Hero() {
   const locale = useLocale();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-primary-50/10 to-accent-50/10 pt-24 pb-16 md:pt-32 md:pb-24">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -right-1/4 h-[500px] w-[500px] rounded-full bg-accent/5 blur-3xl" />
-        <div className="absolute -bottom-1/2 -left-1/4 h-[500px] w-[500px] rounded-full bg-primary/5 blur-3xl" />
+    <section className="relative min-h-[600px] md:min-h-[85vh] lg:min-h-[90vh] flex items-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/illustrations/office_building2.webp"
+          alt="Asesoría fiscal para criptomonedas y DeFi - Cleriontax"
+          fill
+          priority
+          className="object-cover object-center"
+          quality={90}
+          sizes="100vw"
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-darker/95 via-navy/90 to-navy/70" />
       </div>
 
-      <Container className="relative">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          {/* Left content */}
+      <Container className="relative z-10 py-20 md:py-32">
+        <div className="max-w-4xl">
+          {/* Content */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-8"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="space-y-6 md:space-y-8 text-center md:text-left"
           >
-            <div className="space-y-4">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 border border-accent/20 backdrop-blur-sm"
-              >
-                <div className="flex items-center gap-1.5">
-                  <div className="w-2 h-2 rounded-full bg-gradient-to-r from-accent to-accent-dark animate-pulse"></div>
-                  <span className="text-xs font-semibold text-primary-700 tracking-wide uppercase">
-                    {t('badge')}
-                  </span>
-                </div>
-              </motion.div>
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="inline-flex items-center gap-3"
+            >
+              <div className="w-[3px] h-10 bg-red" />
+              <span className="text-xs font-semibold text-white tracking-wider uppercase">
+                {t('badge')}
+              </span>
+            </motion.div>
 
-              <h1 className="text-4xl font-bold leading-tight tracking-tight bg-gradient-to-r from-primary-800 via-primary-600 to-accent bg-clip-text text-transparent md:text-5xl lg:text-6xl">
-                {t('title')}
-              </h1>
+            {/* H1 - Main Title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.7 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-white"
+            >
+              {t('title')}
+            </motion.h1>
 
-              <p className="text-lg text-neutral-600 md:text-xl">
-                {t('subtitle')}
-              </p>
-            </div>
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.7 }}
+              className="text-lg md:text-xl text-gray-blue-light leading-relaxed max-w-3xl"
+            >
+              {t('subtitle')}
+            </motion.p>
 
+            {/* CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex flex-col gap-4 sm:flex-row"
+              transition={{ delay: 0.5, duration: 0.7 }}
+              className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <ButtonLink variant="secondary" size="lg" href={`/${locale}/contacto`} className="group">
+              <ButtonLink
+                variant="secondary"
+                size="lg"
+                href={`/${locale}/contacto`}
+                className="group shadow-xl hover:shadow-2xl"
+              >
                 {t('primaryCTA')}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </ButtonLink>
-              <ButtonLink variant="outline" size="lg" href={`/${locale}/servicios`}>
+              <ButtonLink
+                variant="outline"
+                size="lg"
+                href={`/${locale}/servicios`}
+                className="border-white text-white hover:border-gray-blue-light hover:text-gray-blue-light"
+              >
                 {t('secondaryCTA')}
-                <FileText className="ml-2 h-5 w-5" />
               </ButtonLink>
             </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-              className="grid grid-cols-3 gap-6 border-t border-gradient-to-r from-transparent via-accent/30 to-transparent pt-8"
-            >
-              <div className="group relative">
-                <div className="text-3xl font-bold bg-gradient-to-br from-primary via-accent to-primary-700 bg-clip-text text-transparent">
-                  {t('stats.clients.value')}
-                </div>
-                <div className="text-sm text-neutral-600 font-medium">{t('stats.clients.label')}</div>
-              </div>
-              <div className="group relative">
-                <div className="text-3xl font-bold bg-gradient-to-br from-accent via-primary to-accent-700 bg-clip-text text-transparent">
-                  {t('stats.transactions.value')}
-                </div>
-                <div className="text-sm text-neutral-600 font-medium">{t('stats.transactions.label')}</div>
-              </div>
-              <div className="group relative">
-                <div className="text-3xl font-bold bg-gradient-to-br from-primary-700 via-accent to-primary bg-clip-text text-transparent">
-                  {t('stats.accuracy.value')}
-                </div>
-                <div className="text-sm text-neutral-600 font-medium">{t('stats.accuracy.label')}</div>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Right illustration */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="relative hidden lg:block"
-          >
-            <div className="relative aspect-square">
-              {/* Illustration */}
-              <div className="flex h-full w-full items-center justify-center p-8">
-                <img
-                  src="/images/illustrations/9.png"
-                  alt="Crypto Tax Analysis"
-                  className="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-accent/20 blur-3xl animate-pulse" />
-              <div className="absolute -bottom-4 -left-4 h-40 w-40 rounded-full bg-primary/20 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-            </div>
           </motion.div>
         </div>
       </Container>

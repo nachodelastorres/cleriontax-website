@@ -60,7 +60,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-primary-800 transition-colors hover:text-accent"
+                className="text-sm font-medium text-navy transition-colors hover:text-gray-blue"
               >
                 {item.name}
               </Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center space-x-1 text-sm font-medium text-primary-800 transition-colors hover:text-accent"
+                className="flex items-center space-x-1 text-sm font-medium text-navy transition-colors hover:text-gray-blue"
               >
                 <Languages className="h-4 w-4" />
                 <span>{locale.toUpperCase()}</span>
@@ -82,8 +82,8 @@ export default function Navbar() {
                     <button
                       key={lang.code}
                       onClick={() => switchLanguage(lang.code)}
-                      className={`block w-full px-4 py-2 text-left text-sm hover:bg-accent-50 first:rounded-t-lg last:rounded-b-lg transition-colors ${
-                        locale === lang.code ? 'bg-accent/10 text-accent font-medium' : 'text-primary-800'
+                      className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-blue-light/10 first:rounded-t-lg last:rounded-b-lg transition-colors ${
+                        locale === lang.code ? 'bg-navy/10 text-navy font-medium' : 'text-gray-blue'
                       }`}
                     >
                       {lang.name}
@@ -130,7 +130,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block rounded-lg px-3 py-2 text-base font-medium text-primary-800 hover:bg-primary-50 transition-colors"
+                    className="block rounded-lg px-3 py-2 text-base font-medium text-navy hover:bg-gray-blue-light/10 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -139,7 +139,7 @@ export default function Navbar() {
 
                 {/* Mobile Language Selector */}
                 <div className="border-t border-neutral-200 pt-2 mt-2">
-                  <div className="px-3 py-2 text-sm font-semibold text-neutral-500">
+                  <div className="px-3 py-2 text-sm font-semibold text-gray-blue">
                     {tCommon('language')}
                   </div>
                   {languages.map((lang) => (
@@ -149,8 +149,8 @@ export default function Navbar() {
                         switchLanguage(lang.code);
                         setMobileMenuOpen(false);
                       }}
-                      className={`block w-full rounded-lg px-3 py-2 text-left text-base font-medium hover:bg-accent-50 transition-colors ${
-                        locale === lang.code ? 'text-accent' : 'text-primary-800'
+                      className={`block w-full rounded-lg px-3 py-2 text-left text-base font-medium hover:bg-gray-blue-light/10 transition-colors ${
+                        locale === lang.code ? 'text-navy' : 'text-gray-blue'
                       }`}
                     >
                       {lang.name}

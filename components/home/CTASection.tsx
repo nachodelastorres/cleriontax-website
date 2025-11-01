@@ -13,11 +13,11 @@ export default function CTASection() {
   const badgeKeys = ['noCommitment', 'response24h', 'secure'] as const;
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-navy via-navy to-navy-darker relative overflow-hidden">
       {/* Decorative elements with metallic shine */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-accent/30 to-accent/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-accent/20 to-primary-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-accent/5 to-transparent"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-gray-blue-light/10 to-transparent rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-red/10 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-navy-darker/50 to-transparent"></div>
 
       <Container className="relative z-10">
         <motion.div
@@ -28,10 +28,10 @@ export default function CTASection() {
           className="text-center max-w-3xl mx-auto space-y-8"
         >
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white via-accent-100 to-white bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               {t('title')}
             </h2>
-            <p className="text-lg md:text-xl text-white/90 font-medium">
+            <p className="text-lg md:text-xl text-gray-blue-light font-medium">
               {t('subtitle')}
             </p>
           </div>
@@ -71,10 +71,10 @@ export default function CTASection() {
           >
             {badgeKeys.map((key) => (
               <div key={key} className="flex items-center gap-2 group">
-                <div className="p-1 rounded-full bg-accent/20 group-hover:bg-accent/30 transition-colors duration-300">
-                  <Check className="w-4 h-4 text-accent-100" />
+                <div className="p-1 rounded-full bg-gray-blue-light/20 group-hover:bg-gray-blue-light/30 transition-colors duration-300">
+                  <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="font-medium">{t(`badges.${key}`)}</span>
+                <span className="font-medium text-white">{t(`badges.${key}`)}</span>
               </div>
             ))}
           </motion.div>

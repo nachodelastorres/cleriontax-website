@@ -9,23 +9,91 @@
     "openMenu": "Abrir menú"
   },
   "hero": {
-    "badge": "Expertos en Fiscalidad de Inversiones • Crypto & Acciones",
-    "title": "Del caos de datos al informe fiscal perfecto",
-    "subtitle": "Convertimos miles de operaciones dispersas en exchanges y wallets en informes fiscales claros, precisos y listos para presentar ante la AEAT.",
+    "badge": "Expertos en fiscalidad de inversiones • Crypto & DeFi",
+    "title": "Asesoría fiscal experta en criptomonedas, DeFi y carteras complejas de inversión",
+    "subtitle": "Convertimos miles de transacciones en exchanges, wallets y blockchains en un informe fiscal claro, verificado y 100% compatible con la AEAT.",
     "primaryCTA": "Solicita tu informe fiscal",
-    "secondaryCTA": "Ver servicios",
-    "stats": {
-      "clients": {
-        "value": "500+",
-        "label": "Inversores atendidos"
+    "secondaryCTA": "Ver servicios"
+  },
+  "howWeWork": {
+    "title": "Cómo convertimos el caos de datos en un informe fiscal exacto",
+    "subtitle": "Unimos ingeniería de datos y asesoramiento fiscal para analizar cada transacción con precisión.",
+    "intro": "En Cleriontax transformamos la forma de gestionar tus datos fiscales. No usamos software genéricos de terceros: aplicamos un proceso propio de limpieza, reconciliación y clasificación fiscal que nos permite ofrecer informes 100% verificados y listos para la AEAT.",
+    "steps": {
+      "step1": {
+        "title": "Recepción y consolidación de datos",
+        "description": "Reunimos tus archivos de exchanges, wallets y plataformas DeFi para unificarlos en una estructura única y coherente."
       },
-      "transactions": {
-        "value": "1M+",
-        "label": "Operaciones analizadas"
+      "step2": {
+        "title": "Limpieza y reconciliación avanzada",
+        "description": "Detectamos duplicidades, movimientos internos y errores que los programas automáticos no reconocen."
       },
-      "accuracy": {
-        "value": "100%",
-        "label": "Precisión en cálculos"
+      "step3": {
+        "title": "Clasificación fiscal experta",
+        "description": "Analizamos cada operación según los criterios fiscales españoles: rendimientos, pérdidas, staking, swaps, airdrops, etc."
+      },
+      "step4": {
+        "title": "Informe verificable y presentación AEAT",
+        "description": "Generamos un informe fiscal trazable, claro y justificado, listo para declarar con total seguridad."
+      }
+    },
+    "cta": "Solicita tu informe fiscal"
+  },
+  "whyChooseUs": {
+    "title": "Por qué Cleriontax es diferente",
+    "subtitle": "No usamos software automático de terceros. Analizamos tus datos desde cero para garantizar precisión, trazabilidad y cumplimiento fiscal total.",
+    "intro": "Nuestro equipo combina experiencia fiscal y analítica de datos para ofrecer resultados que ninguna herramienta automatizada puede igualar. Procesamos millones de transacciones multichain con rigor técnico, interpretando cada una según los criterios de la AEAT. Así, transformamos datos caóticos en informes fiscales 100% fiables, verificables y auditables.",
+    "reasons": {
+      "reason1": {
+        "title": "Análisis fiscal real, no automatizado",
+        "description": "No dependemos de software automático. Clasificamos y verificamos cada operación según la normativa fiscal española."
+      },
+      "reason2": {
+        "title": "Cobertura DeFi y multichain",
+        "description": "Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis... Entendemos cada ecosistema y su impacto fiscal."
+      },
+      "reason3": {
+        "title": "Informes trazables y auditables",
+        "description": "Cada cifra se justifica con su origen. Total transparencia ante Hacienda."
+      },
+      "reason4": {
+        "title": "Seguridad y confidencialidad",
+        "description": "Procesamos los datos en entornos propios y seguros, sin subirlos a servidores externos."
+      },
+      "reason5": {
+        "title": "Soporte personalizado",
+        "description": "Te acompañamos durante todo el proceso, explicando cada resultado de forma comprensible y fiscalmente sólida."
+      },
+      "reason6": {
+        "title": "Ingeniería de datos aplicada",
+        "description": "Limpieza, normalización y reconciliación avanzada de datos. Procesamos archivos CSV complejos, APIs y registros blockchain con precisión técnica."
+      }
+    },
+    "cta": "Descubre cómo podemos ayudarte"
+  },
+  "servicesSection": {
+    "title": "Nuestros servicios",
+    "subtitle": "Soluciones fiscales personalizadas para cada tipo de inversor crypto.",
+    "services": {
+      "service1": {
+        "title": "Informe fiscal de criptomonedas y DeFi",
+        "description": "Analizamos tus operaciones en exchanges, wallets y plataformas DeFi para generar un informe fiscal completo, verificado y 100% compatible con la AEAT.",
+        "cta": "Ver más"
+      },
+      "service2": {
+        "title": "Declaración de la renta con activos digitales",
+        "description": "Integramos tus resultados en criptomonedas, acciones y otros activos para elaborar una declaración fiscal precisa, sin errores ni riesgos ante Hacienda.",
+        "cta": "Ver más"
+      },
+      "service3": {
+        "title": "Asesoramiento fiscal personalizado",
+        "description": "Ofrecemos un acompañamiento fiscal experto para resolver tus dudas, revisar tus informes y planificar tu estrategia tributaria en activos digitales.",
+        "cta": "Ver más"
+      },
+      "service4": {
+        "title": "Corrección de informes fiscales automatizados",
+        "description": "Revisamos y corregimos informes automáticos generados por software de terceros, aplicando criterios fiscales reales y verificando cada operación.",
+        "cta": "Ver más"
       }
     }
   },
@@ -429,5 +497,49 @@
       "title": "Explora por categorías"
     },
     "readMore": "Leer más"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes sobre fiscalidad de criptomonedas",
+    "subtitle": "Resolvemos las dudas más comunes sobre la declaración de activos digitales en España.",
+    "questions": {
+      "q1": {
+        "question": "¿Tengo que declarar mis criptomonedas aunque no las haya vendido?",
+        "answer": "Sí, si tienes criptomonedas en el extranjero por valor superior a 50.000€, debes declararlas en el modelo 720. Además, cualquier venta, intercambio o uso de criptomonedas genera una alteración patrimonial que debe declararse en el IRPF, independientemente de si retiras el dinero o no."
+      },
+      "q2": {
+        "question": "¿Cómo calcula la AEAT las ganancias y pérdidas en criptomonedas?",
+        "answer": "La AEAT aplica el criterio FIFO (First In, First Out): las primeras criptomonedas que compraste son las primeras que se consideran vendidas. Cada venta o intercambio genera una ganancia o pérdida patrimonial que debe calcularse con el precio de adquisición y el de transmisión. Nosotros aplicamos este criterio de forma exacta en todos nuestros informes."
+      },
+      "q3": {
+        "question": "¿Las operaciones DeFi (staking, pools de liquidez, farming) tributan?",
+        "answer": "Sí. Los rewards de staking y farming se consideran rendimientos del capital mobiliario. Los swaps entre tokens, aunque sean en DeFi, son permutas que generan ganancias o pérdidas patrimoniales. La provisión de liquidez puede implicar hechos imponibles según cómo se estructure. En Cleriontax analizamos cada protocolo DeFi para clasificar fiscalmente cada operación."
+      },
+      "q4": {
+        "question": "¿Por qué los software automáticos dan resultados incorrectos?",
+        "answer": "Las herramientas automáticas no entienden el contexto fiscal español ni reconcilian correctamente movimientos entre wallets, duplicados o transferencias internas. Además, no clasifican correctamente operaciones DeFi complejas (como wrapping, bridging o staking multichain). En Cleriontax revisamos manualmente cada operación y corregimos estos errores para garantizar un informe 100% preciso."
+      },
+      "q5": {
+        "question": "¿Qué información necesito para encargar mi informe fiscal?",
+        "answer": "Necesitamos los archivos CSV de todos tus exchanges (Binance, Kraken, Coinbase, etc.), las direcciones de tus wallets on-chain (MetaMask, Ledger, etc.) y cualquier registro de operaciones en plataformas DeFi. También es útil que nos indiques las fechas aproximadas de compra de tus primeros activos si no tienes registros completos."
+      },
+      "q6": {
+        "question": "¿Cuánto tiempo tarda el proceso y cuál es el precio?",
+        "answer": "El tiempo depende del volumen de operaciones: desde 3-5 días para casos simples hasta 2-3 semanas para carteras muy complejas con miles de transacciones DeFi. El precio se ajusta según complejidad, número de plataformas y volumen de datos. Solicita tu presupuesto sin compromiso y te daremos una estimación precisa en 24-48h."
+      }
+    },
+    "cta": {
+      "text": "¿Tienes más dudas?",
+      "button": "Contáctanos"
+    }
+  },
+  "finalCTA": {
+    "title": "¿Listo para poner orden en tus operaciones?",
+    "subtitle": "Solicita tu informe fiscal y olvídate del caos de datos, los errores y las dudas ante Hacienda.",
+    "button": "Solicita tu informe fiscal",
+    "trust": {
+      "security": "Procesamiento 100% seguro y confidencial",
+      "clients": "Más de 500 inversores ya confían en Cleriontax"
+    },
+    "seoText": "Asesoría fiscal especializada en criptomonedas, DeFi y carteras complejas de inversión. Informes fiscales verificados, personalizados y 100% compatibles con la AEAT."
   }
 }

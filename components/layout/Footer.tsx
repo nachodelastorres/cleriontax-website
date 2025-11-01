@@ -27,21 +27,21 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-neutral-300 bg-gradient-to-br from-neutral-100 to-neutral-200">
+    <footer className="border-t border-neutral-300 bg-gradient-to-br from-navy via-navy to-navy-darker">
       <Container>
         <div className="py-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
             {/* Brand */}
             <div className="space-y-2">
               <Logo variant="transparent" type="cropped" />
-              <p className="text-sm text-neutral-600">
+              <p className="text-sm text-gray-blue-light">
                 {t('description')}
               </p>
             </div>
 
             {/* Empresa */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
                 {t('sections.company')}
               </h3>
               <ul className="space-y-2">
@@ -49,7 +49,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-neutral-600 transition-colors hover:text-accent"
+                      className="text-sm text-gray-blue-light transition-colors hover:text-white"
                     >
                       {link.name}
                     </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Legal */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
                 {t('sections.legal')}
               </h3>
               <ul className="space-y-2">
@@ -68,7 +68,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-neutral-600 transition-colors hover:text-accent"
+                      className="text-sm text-gray-blue-light transition-colors hover:text-white"
                     >
                       {link.name}
                     </Link>
@@ -79,14 +79,14 @@ export default function Footer() {
 
             {/* Contacto */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
                 {t('sections.contact')}
               </h3>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="mailto:info@cleriontax.com"
-                    className="flex items-center space-x-2 text-sm text-neutral-600 transition-colors hover:text-accent group"
+                    className="flex items-center space-x-2 text-sm text-gray-blue-light transition-colors hover:text-white group"
                   >
                     <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
                     <span>info@cleriontax.com</span>
@@ -95,7 +95,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="tel:+34900000000"
-                    className="flex items-center space-x-2 text-sm text-neutral-600 transition-colors hover:text-accent group"
+                    className="flex items-center space-x-2 text-sm text-gray-blue-light transition-colors hover:text-white group"
                   >
                     <Phone className="h-4 w-4 group-hover:scale-110 transition-transform" />
                     <span>+34 900 000 000</span>
@@ -106,7 +106,7 @@ export default function Footer() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-sm text-neutral-600 transition-colors hover:text-accent group"
+                    className="flex items-center space-x-2 text-sm text-gray-blue-light transition-colors hover:text-white group"
                   >
                     <Linkedin className="h-4 w-4 group-hover:scale-110 transition-transform" />
                     <span>{tCommon('linkedin')}</span>
@@ -117,8 +117,8 @@ export default function Footer() {
           </div>
 
           {/* Bottom */}
-          <div className="mt-8 border-t border-neutral-200 pt-6 text-center">
-            <p className="text-sm text-neutral-600">
+          <div className="mt-8 border-t border-gray-blue pt-6 text-center">
+            <p className="text-sm text-gray-blue-light">
               © {currentYear} Cleriontax. {t('copyright')}
             </p>
           </div>
