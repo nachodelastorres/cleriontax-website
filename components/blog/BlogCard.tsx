@@ -24,12 +24,12 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
       viewport={{ once: true }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
       className={`group relative overflow-hidden rounded-2xl bg-white border border-neutral-200 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 ${
-        featured ? 'lg:col-span-2 lg:row-span-2' : ''
+        featured ? 'lg:col-span-2' : ''
       }`}
     >
-      <Link href={`/${locale}/blog/${slug}`} className="block">
+      <Link href={`/${locale}/blog/${slug}`} className={`block ${featured ? 'lg:flex lg:flex-row' : ''}`}>
         {/* Image */}
-        <div className="relative overflow-hidden aspect-[16/9]">
+        <div className={`relative overflow-hidden ${featured ? 'lg:w-1/2 aspect-[16/9] lg:aspect-auto' : 'aspect-[16/9]'}`}>
           <div
             className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 group-hover:scale-105 transition-transform duration-700"
             style={{
@@ -59,55 +59,57 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
         </div>
 
         {/* Content */}
-        <div className={`p-6 ${featured ? 'lg:p-8' : ''}`}>
-          {/* Meta information */}
-          <div className="flex items-center gap-4 text-sm text-neutral-500 mb-4">
-            <div className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4" />
-              <time dateTime={post.publishedAt}>
-                {new Date(post.publishedAt).toLocaleDateString(locale === 'en' ? 'en-US' : locale === 'ca' ? 'ca-ES' : 'es-ES', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </time>
+        <div className={`p-6 ${featured ? 'lg:p-8 lg:w-1/2 flex flex-col justify-between' : ''}`}>
+          <div>
+            {/* Meta information */}
+            <div className="flex items-center gap-4 text-sm text-neutral-500 mb-4">
+              <div className="flex items-center gap-1.5">
+                <Calendar className="w-4 h-4" />
+                <time dateTime={post.publishedAt}>
+                  {new Date(post.publishedAt).toLocaleDateString(locale === 'en' ? 'en-US' : locale === 'ca' ? 'ca-ES' : 'es-ES', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </time>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Clock className="w-4 h-4" />
+                <span>{post.readingTime} min</span>
+              </div>
             </div>
-            <div className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" />
-              <span>{post.readingTime} min</span>
+
+            {/* Title */}
+            <h3 className={`font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300 ${
+              featured ? 'text-2xl lg:text-3xl' : 'text-xl'
+            }`}>
+              {post.title}
+            </h3>
+
+            {/* Excerpt */}
+            <p className={`text-neutral-600 leading-relaxed mb-4 ${
+              featured ? 'text-base lg:text-lg' : 'text-sm'
+            }`}>
+              {post.excerpt}
+            </p>
+
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {post.tags.slice(0, 3).map((tag, i) => (
+                <span
+                  key={i}
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/5 text-primary text-xs font-medium"
+                >
+                  <Tag className="w-3 h-3" />
+                  {tag}
+                </span>
+              ))}
+              {post.tags.length > 3 && (
+                <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-600 text-xs font-medium">
+                  +{post.tags.length - 3}
+                </span>
+              )}
             </div>
-          </div>
-
-          {/* Title */}
-          <h3 className={`font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300 ${
-            featured ? 'text-2xl lg:text-3xl' : 'text-xl'
-          }`}>
-            {post.title}
-          </h3>
-
-          {/* Excerpt */}
-          <p className={`text-neutral-600 leading-relaxed mb-4 ${
-            featured ? 'text-base lg:text-lg' : 'text-sm'
-          }`}>
-            {post.excerpt}
-          </p>
-
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2 mb-4">
-            {post.tags.slice(0, 3).map((tag, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/5 text-primary text-xs font-medium"
-              >
-                <Tag className="w-3 h-3" />
-                {tag}
-              </span>
-            ))}
-            {post.tags.length > 3 && (
-              <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-600 text-xs font-medium">
-                +{post.tags.length - 3}
-              </span>
-            )}
           </div>
 
           {/* Author & CTA */}
