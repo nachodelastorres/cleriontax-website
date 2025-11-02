@@ -37,7 +37,9 @@ export default function ContactInfo() {
             <div>
               <p className="text-sm font-medium text-neutral-700 mb-1">{t('phoneLabel')}</p>
               <a
-                href={`tel:${t('phone').replace(/\s/g, "")}`}
+                href={`https://wa.me/${t('phone').replace(/[^0-9]/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-accent hover:underline"
               >
                 {t('phone')}
