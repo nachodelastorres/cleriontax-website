@@ -1,6 +1,267 @@
 {
   "posts": [
     {
+      "id": "modelo-721-criptomonedas",
+      "slugTranslations": {
+        "es": "modelo-721-criptomonedas",
+        "en": "model-721-cryptocurrencies",
+        "ca": "model-721-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-22T09:00:00Z",
+      "readingTime": 12,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Modelo 721",
+        "Criptomonedas Extranjero",
+        "DeFi",
+        "AEAT",
+        "Obligaciones Fiscales",
+        "Declaración Internacional",
+        "Exchanges Extranjeros",
+        "Wallets No Custodiales",
+        "Transparencia Fiscal",
+        "Sanciones Hacienda"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/blockchain-criptomonedas-impuesto.webp",
+        "alt": "Modelo 721 para declarar criptomonedas en el extranjero y DeFi - Guía completa sobre obligaciones fiscales internacionales ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Modelo 721 criptomonedas: cómo declarar activos digitales en el extranjero | Cleriontax",
+        "metaDescription": "Todo lo que debes saber sobre el modelo 721 para declarar criptomonedas en el extranjero o en DeFi. Guía 2025 elaborada por expertos en fiscalidad crypto.",
+        "keywords": [
+          "modelo 721 criptomonedas",
+          "declarar criptomonedas extranjero",
+          "obligaciones fiscales crypto AEAT",
+          "fiscalidad criptomonedas España",
+          "modelo 721 AEAT",
+          "declarar DeFi Hacienda",
+          "exchanges extranjeros fiscalidad",
+          "wallets no custodiales declaración"
+        ],
+        "ogImage": "/images/illustrations/blog/blockchain-criptomonedas-impuesto.webp",
+        "ogImageAlt": "Modelo 721 para declarar criptomonedas en el extranjero y DeFi - Guía completa sobre obligaciones fiscales internacionales ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine"
+    },
+    {
+      "id": "clasificar-operaciones-criptomonedas",
+      "slugTranslations": {
+        "es": "clasificar-operaciones-criptomonedas",
+        "en": "classify-cryptocurrency-operations",
+        "ca": "classificar-operacions-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-18T09:00:00Z",
+      "readingTime": 11,
+      "category": "Clasificación y Metodología",
+      "tags": [
+        "Clasificación Fiscal",
+        "AEAT",
+        "Metodología",
+        "Ganancias Patrimoniales",
+        "Rendimientos Capital",
+        "Operaciones Crypto",
+        "FIFO",
+        "Análisis de Datos",
+        "Trazabilidad",
+        "Informes Fiscales"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/fiscalidad-cripto-espana.webp",
+        "alt": "Clasificación de operaciones de criptomonedas según criterios AEAT - Guía metodológica para identificar tipos de transacciones crypto",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo clasificar operaciones de criptomonedas según la AEAT | Metodología 2025 | Cleriontax",
+        "metaDescription": "Aprende cómo clasificar correctamente tus operaciones de criptomonedas según los criterios de la AEAT. Guía metodológica para identificar ganancias patrimoniales, rendimientos y movimientos internos.",
+        "keywords": [
+          "clasificar operaciones criptomonedas",
+          "tipos transacciones crypto AEAT",
+          "ganancias patrimoniales crypto",
+          "rendimientos capital mobiliario",
+          "metodología clasificación fiscal",
+          "FIFO criptomonedas",
+          "operaciones no sujetas crypto",
+          "análisis transacciones blockchain"
+        ],
+        "ogImage": "/images/illustrations/blog/fiscalidad-cripto-espana.webp",
+        "ogImageAlt": "Clasificación de operaciones de criptomonedas según criterios AEAT - Guía metodológica para identificar tipos de transacciones crypto",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "minimal"
+    },
+    {
+      "id": "errores-declarar-criptomonedas",
+      "slugTranslations": {
+        "es": "errores-declarar-criptomonedas",
+        "en": "common-mistakes-declaring-cryptocurrencies",
+        "ca": "errors-declarar-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-15T09:00:00Z",
+      "readingTime": 10,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Errores Fiscales",
+        "Declaración AEAT",
+        "Fiscalidad Crypto",
+        "Sanciones Hacienda",
+        "FIFO",
+        "Revisión Fiscal",
+        "Modelo 100",
+        "Impuestos Criptomonedas",
+        "Asesoría Fiscal"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/tributacion-fiscal-cripto.webp",
+        "alt": "Errores comunes al declarar criptomonedas ante Hacienda - Guía completa para evitar sanciones AEAT 2025",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Errores al declarar criptomonedas ante Hacienda | Guía 2025 | Cleriontax",
+        "metaDescription": "Conoce los errores más comunes al declarar criptomonedas ante la AEAT y aprende cómo evitarlos o corregirlos con ayuda de expertos en fiscalidad crypto.",
+        "keywords": [
+          "errores declaración criptomonedas AEAT",
+          "fallos declaración crypto",
+          "renta 2025 criptomonedas",
+          "revisión informe fiscal criptomonedas",
+          "fiscalidad crypto España",
+          "declarar cripto Hacienda"
+        ],
+        "ogImage": "/images/illustrations/blog/tributacion-fiscal-cripto.webp",
+        "ogImageAlt": "Errores comunes al declarar criptomonedas ante Hacienda - Guía completa para evitar sanciones AEAT 2025",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "storytelling"
+    },
+    {
+      "id": "fiscalidad-defi-espana",
+      "slugTranslations": {
+        "es": "fiscalidad-defi-espana",
+        "en": "defi-taxation-spain",
+        "ca": "fiscalitat-defi-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-09T09:00:00Z",
+      "readingTime": 9,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Fiscalidad DeFi",
+        "Staking",
+        "Yield Farming",
+        "Airdrops",
+        "Rendimientos Crypto",
+        "AEAT",
+        "Modelo 100",
+        "Multichain",
+        "Protocolos DeFi"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/defi-wallet-crypto.webp",
+        "alt": "Wallet de criptomonedas DeFi con tokens y protocolos descentralizados - Fiscalidad DeFi España 2025",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Fiscalidad DeFi en España 2025: cómo tributan tus rendimientos | Cleriontax",
+        "metaDescription": "Guía completa sobre fiscalidad DeFi en España. Aprende cómo declarar tus rendimientos de staking, farming y airdrops en la renta 2025 según la AEAT.",
+        "keywords": [
+          "fiscalidad DeFi",
+          "tributar DeFi España",
+          "renta 2025 DeFi",
+          "declarar staking crypto",
+          "rendimientos DeFi AEAT",
+          "impuesto criptomonedas DeFi"
+        ],
+        "ogImage": "/images/illustrations/blog/defi-wallet-crypto.webp",
+        "ogImageAlt": "Wallet de criptomonedas DeFi con tokens y protocolos descentralizados - Fiscalidad DeFi España 2025",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "minimal"
+    },
+    {
+      "id": "como-declarar-criptomonedas-renta-2025",
+      "slugTranslations": {
+        "es": "como-declarar-criptomonedas-renta-2025",
+        "en": "how-to-declare-cryptocurrencies-tax-return-2025",
+        "ca": "com-declarar-criptomonedes-renda-2025"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-01T09:00:00Z",
+      "readingTime": 8,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Declaración Renta",
+        "Fiscalidad Crypto",
+        "AEAT",
+        "Modelo 100",
+        "FIFO",
+        "Ganancias Patrimoniales",
+        "Staking",
+        "Modelo 721",
+        "Impuestos Criptomonedas"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/declaracion-renta-criptomonedas.webp",
+        "alt": "Cómo declarar criptomonedas en la renta 2025 - Guía paso a paso para la declaración IRPF de Bitcoin, Ethereum y otras criptomonedas ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo declarar criptomonedas en la renta 2025 paso a paso | Cleriontax",
+        "metaDescription": "Aprende cómo declarar tus criptomonedas en la renta 2025 según la normativa de la AEAT. Guía paso a paso elaborada por expertos en fiscalidad crypto.",
+        "keywords": [
+          "declarar criptomonedas AEAT",
+          "renta 2025 criptomonedas",
+          "fiscalidad crypto España",
+          "impuesto criptomonedas",
+          "cómo declarar cripto AEAT",
+          "informes fiscales criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/declaracion-renta-criptomonedas.webp",
+        "ogImageAlt": "Cómo declarar criptomonedas en la renta 2025 - Guía paso a paso para la declaración IRPF de Bitcoin, Ethereum y otras criptomonedas ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine"
+    },
+    {
       "id": "guia-completa-declaracion-fiscal-criptomonedas-2025",
       "slugTranslations": {
         "es": "guia-completa-declaracion-fiscal-criptomonedas-2025",
@@ -31,7 +292,9 @@
       ],
       "image": {
         "url": "https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1200&h=630&fit=crop",
-        "alt": "Guía completa de declaración fiscal de criptomonedas e inversiones en España 2025"
+        "alt": "Guía completa de declaración fiscal de criptomonedas e inversiones en España 2025 - Calculadora, gráficos y documentos fiscales IRPF",
+        "width": 1200,
+        "height": 630
       },
       "seo": {
         "metaTitle": "Guía Completa Declaración Fiscal Criptomonedas e Inversiones España 2025 | IRPF, FIFO",
@@ -51,9 +314,13 @@
           "fiscalidad mercado acciones",
           "optimización fiscal inversiones"
         ],
-        "ogImage": "https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1200&h=630&fit=crop"
+        "ogImage": "https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1200&h=630&fit=crop",
+        "ogImageAlt": "Guía completa de declaración fiscal de criptomonedas e inversiones en España 2025 - Calculadora, gráficos y documentos fiscales IRPF",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
       },
-      "featured": true
+      "featured": true,
+      "layoutType": "magazine"
     }
   ]
 }

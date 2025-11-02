@@ -148,6 +148,13 @@
   "services": {
     "title": "Servicios de Asesoría Fiscal para Inversiones en Criptomonedas y Acciones",
     "subtitle": "Análisis personalizado de tu caso en 24-48h. Presupuesto claro sin compromiso. Cada inversor es único, cada solución también.",
+    "hero": {
+      "badge": "Expertos en fiscalidad crypto y activos digitales",
+      "title": "Servicios fiscales personalizados para inversores en criptomonedas y DeFi",
+      "subtitle": "Desde informes fiscales verificables hasta asesoramiento especializado, te ayudamos a cumplir con la AEAT con precisión, transparencia y confianza.",
+      "cta": "Solicita tu informe fiscal",
+      "seoText": "Asesoría fiscal en criptomonedas, DeFi, NFTs y activos digitales. Cleriontax combina ingeniería de datos y experiencia fiscal para ofrecer soluciones integrales adaptadas a cada tipo de inversor."
+    },
     "trustIndicators": {
       "freeAnalysis": "Análisis gratuito 24-48h",
       "certifiedAdvisors": "Asesores fiscales colegiados",
@@ -237,6 +244,10 @@
     "title": "Donde la Asesoría Fiscal Tradicional Encuentra la Innovación Tecnológica",
     "subtitle": "Somos el puente entre dos mundos: la experiencia fiscal colegiada y el análisis de datos de última generación. Cleriontax combina lo mejor de ambos para ofrecerte un servicio fiscal sin precedentes.",
     "hero": {
+      "badge": "Expertise Fiscal × Innovación Tecnológica",
+      "title": "Donde la Asesoría Fiscal Tradicional Encuentra la Innovación Tecnológica",
+      "subtitle": "Somos el puente entre dos mundos: la experiencia fiscal colegiada y el análisis de datos de última generación. Cleriontax combina lo mejor de ambos para ofrecerte un servicio fiscal sin precedentes.",
+      "cta": "Conoce nuestro equipo",
       "tagline": "Expertise Fiscal × Innovación Tecnológica",
       "stats": {
         "experience": {
@@ -357,6 +368,12 @@
   "contact": {
     "title": "Solicita tu presupuesto sin compromiso",
     "subtitle": "Cuéntanos tu caso: exchanges que usas, volumen de operaciones y tipos de activos. Te enviamos presupuesto personalizado en pocas horas.",
+    "hero": {
+      "badge": "Asesoría Fiscal Especializada",
+      "title": "¿Necesitas ayuda con la fiscalidad de tus criptomonedas?",
+      "subtitle": "Nuestro equipo de asesores fiscales colegiados especializados en blockchain te ayudará a declarar correctamente tus inversiones en crypto. Respuesta en menos de 24 horas.",
+      "cta": "Solicitar presupuesto"
+    },
     "trustIndicators": {
       "freeAnalysis": "Análisis gratuito 24-48h",
       "certifiedAdvisors": "Asesores fiscales colegiados",

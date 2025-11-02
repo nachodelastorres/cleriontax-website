@@ -80,6 +80,13 @@
   "services": {
     "title": "Tax Advisory Services for Cryptocurrency and Stock Investments",
     "subtitle": "Personalized case analysis within 24–48h. Clear quote with no obligation. Every investor is unique, every solution too.",
+    "hero": {
+      "badge": "Experts in crypto and digital asset taxation",
+      "title": "Personalized tax services for cryptocurrency and DeFi investors",
+      "subtitle": "From verifiable tax reports to specialized advisory, we help you comply with AEAT with precision, transparency, and confidence.",
+      "cta": "Request your tax report",
+      "seoText": "Tax advisory for cryptocurrencies, DeFi, NFTs, and digital assets. Cleriontax combines data engineering and tax expertise to offer comprehensive solutions tailored to each type of investor."
+    },
     "trustIndicators": {
       "freeAnalysis": "Free analysis 24-48h",
       "certifiedAdvisors": "Certified tax advisors",
@@ -169,6 +176,10 @@
     "title": "Where Traditional Tax Advisory Meets Technological Innovation",
     "subtitle": "We are the bridge between two worlds: certified tax expertise and next-generation data analysis. Cleriontax combines the best of both to deliver an unprecedented tax service.",
     "hero": {
+      "badge": "Tax Expertise × Technological Innovation",
+      "title": "Where Traditional Tax Advisory Meets Technological Innovation",
+      "subtitle": "We are the bridge between two worlds: certified tax expertise and next-generation data analysis. Cleriontax combines the best of both to deliver an unprecedented tax service.",
+      "cta": "Meet our team",
       "tagline": "Tax Expertise × Technological Innovation",
       "stats": {
         "experience": {
@@ -289,6 +300,12 @@
   "contact": {
     "title": "Request your quote with no obligation",
     "subtitle": "Tell us about your case: exchanges you use, transaction volume, and types of assets. We'll send you a personalized quote within a few hours.",
+    "hero": {
+      "badge": "Specialized Tax Advisory",
+      "title": "Need help with your cryptocurrency taxes?",
+      "subtitle": "Our team of certified tax advisors specialized in blockchain will help you correctly declare your crypto investments. Response in less than 24 hours.",
+      "cta": "Request quote"
+    },
     "trustIndicators": {
       "freeAnalysis": "Free analysis 24-48h",
       "certifiedAdvisors": "Certified tax advisors",

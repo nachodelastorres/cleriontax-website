@@ -1,9 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 import Container from "@/components/ui/Container";
+import HeroAbout from "@/components/about/HeroAbout";
 import DualitySection from "@/components/about/DualitySection";
-import WhyDifferent from "@/components/about/WhyDifferent";
 import CTASection from "@/components/home/CTASection";
-import { TrendingUp, Zap, Users, Lightbulb, Target, Handshake } from "lucide-react";
+import { Lightbulb, Target, Handshake } from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -62,12 +62,6 @@ export default async function SobreNosotrosPage({ params }: Props) {
     ]
   };
 
-  const stats = [
-    { value: t('hero.stats.experience.value'), label: t('hero.stats.experience.label'), icon: TrendingUp },
-    { value: t('hero.stats.transactions.value'), label: t('hero.stats.transactions.label'), icon: Zap },
-    { value: t('hero.stats.accuracy.value'), label: t('hero.stats.accuracy.label'), icon: Users },
-  ];
-
   const valueIcons = [Lightbulb, Target, Handshake];
 
   return (
@@ -78,99 +72,63 @@ export default async function SobreNosotrosPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      {/* Hero Section - Magazine Style */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 bg-gradient-to-br from-white via-primary-50/30 to-accent-50/20 overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 overflow-hidden opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-        </div>
-
-        <Container className="relative z-10">
-          <div className="max-w-5xl mx-auto">
-            {/* Tagline */}
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-accent/20 mb-8">
-              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-accent to-accent-dark animate-pulse"></div>
-              <span className="text-sm font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent uppercase tracking-wide">
-                {t('hero.tagline')}
-              </span>
-            </div>
-
-            {/* Main title - Magazine style */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                {t('title')}
-              </span>
-            </h1>
-
-            <p className="text-lg md:text-2xl text-neutral-600 leading-relaxed max-w-4xl mb-12">
-              {t('subtitle')}
-            </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div key={index} className="group relative">
-                    <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-neutral-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-xl hover:shadow-accent/10">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-accent-dark p-0.5 flex-shrink-0">
-                        <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-accent" />
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-1">
-                          {stat.value}
-                        </div>
-                        <div className="text-sm text-neutral-600 font-medium">
-                          {stat.label}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </Container>
-      </section>
+      {/* Hero Section */}
+      <HeroAbout />
 
       {/* Duality Section */}
       <DualitySection />
 
-      {/* Why Different */}
-      <WhyDifferent />
-
-      {/* Values - Minimalist */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-primary-50/10">
+      {/* Values Section - SEO Optimized */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-neutral-50 to-white">
         <Container>
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-16">
-              {t('values.title')}
-            </h2>
+          <div className="max-w-6xl mx-auto">
+            {/* Header with SEO-rich content */}
+            <div className="text-center mb-16 space-y-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-6">
+                {t('values.title')}
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-blue max-w-4xl mx-auto leading-relaxed">
+                En <strong className="text-navy">Cleriontax</strong>, nuestra <strong className="text-navy">asesoría fiscal especializada en criptomonedas</strong> se fundamenta
+                en tres pilares que nos distinguen como <strong className="text-navy">asesores fiscales tecnológicos</strong> líderes en el sector de <strong className="text-navy">activos digitales</strong> en España.
+              </p>
+              <p className="text-base md:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Nuestra combinación única de <strong>experiencia fiscal colegiada</strong> y <strong>tecnología avanzada de análisis de datos blockchain</strong> nos
+                permite ofrecer servicios de <strong>declaración IRPF crypto</strong>, <strong>modelo 100 criptomonedas</strong>, y <strong>optimización fiscal de criptoactivos</strong> con
+                precisión y transparencia absolutas.
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Values Grid with SEO-enriched content */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
               {['innovation', 'precision', 'partnership'].map((key, index) => {
                 const Icon = valueIcons[index];
                 return (
-                  <div key={key} className="text-center group">
-                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent to-accent-dark p-0.5 shadow-lg">
-                        <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
-                          <Icon className="w-8 h-8 text-accent" strokeWidth={2} />
-                        </div>
+                  <div key={key} className="group">
+                    <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 h-full border border-neutral-200 hover:border-accent/30">
+                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-white shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-8 h-8 text-accent" strokeWidth={2} />
                       </div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-navy mb-4">
+                        {t(`values.${key}.title`)}
+                      </h3>
+                      <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
+                        {t(`values.${key}.description`)}
+                      </p>
                     </div>
-                    <h3 className="text-2xl font-bold text-primary mb-4">
-                      {t(`values.${key}.title`)}
-                    </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      {t(`values.${key}.description`)}
-                    </p>
                   </div>
                 );
               })}
+            </div>
+
+            {/* Additional SEO-rich paragraph */}
+            <div className="bg-navy/5 rounded-2xl p-8 md:p-12 border border-navy/10">
+              <p className="text-base md:text-lg text-neutral-700 leading-relaxed text-center max-w-5xl mx-auto">
+                Como <strong className="text-navy">asesores fiscales colegiados especializados en blockchain</strong>, procesamos más de un millón de transacciones anuales
+                utilizando <strong className="text-navy">algoritmos propios de conciliación fiscal</strong> y <strong className="text-navy">metodología FIFO certificada</strong>.
+                Nuestro equipo multidisciplinar combina <strong className="text-navy">expertise en normativa AEAT</strong> con <strong className="text-navy">ingeniería de datos financieros</strong>,
+                garantizando <strong className="text-navy">informes fiscales auditables</strong> y 100% compatibles con los requisitos de la <strong className="text-navy">Agencia Tributaria Española</strong> para
+                la <strong className="text-navy">declaración de criptoactivos</strong>, <strong className="text-navy">modelo 720</strong>, y <strong className="text-navy">modelo 721</strong>.
+              </p>
             </div>
           </div>
         </Container>

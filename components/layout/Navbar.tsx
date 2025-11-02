@@ -14,7 +14,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const t = useTranslations('nav');
-  const tCommon = useTranslations('common.languages');
+  const tCommon = useTranslations('common');
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -28,9 +28,9 @@ export default function Navbar() {
   ];
 
   const languages = [
-    { code: 'es', name: tCommon('es') },
-    { code: 'en', name: tCommon('en') },
-    { code: 'ca', name: tCommon('ca') },
+    { code: 'es', name: tCommon('languages.es') },
+    { code: 'en', name: tCommon('languages.en') },
+    { code: 'ca', name: tCommon('languages.ca') },
   ];
 
   const switchLanguage = (newLocale: string) => {

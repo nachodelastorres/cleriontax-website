@@ -12,12 +12,7 @@ export default function DualitySection() {
   const techPoints = t.raw('tech.points') as string[];
 
   return (
-    <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-br from-primary to-transparent"></div>
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-accent to-transparent"></div>
-      </div>
+    <section className="py-16 md:py-24 bg-navy relative overflow-hidden">
 
       <Container className="relative z-10">
         <motion.div
@@ -27,10 +22,10 @@ export default function DualitySection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             {t('title')}
           </h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-blue-light max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </motion.div>
@@ -45,7 +40,7 @@ export default function DualitySection() {
             transition={{ duration: 0.6 }}
             className="relative group"
           >
-            <div className="p-8 md:p-12 h-full bg-gradient-to-br from-primary/5 to-transparent border-r-2 border-accent/20 hover:border-accent/40 transition-all duration-500">
+            <div className="p-8 md:p-12 h-full bg-white border-r-2 border-accent/30 hover:border-accent/50 transition-all duration-500 rounded-l-2xl">
               {/* Large decorative icon */}
               <div className="absolute top-8 right-8 opacity-5">
                 <Scale className="w-64 h-64 text-primary" strokeWidth={0.5} />
@@ -55,10 +50,8 @@ export default function DualitySection() {
                 {/* Header */}
                 <div className="mb-8">
                   <div className="inline-flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-700 p-0.5 shadow-lg">
-                      <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
-                        <Scale className="w-6 h-6 text-primary" />
-                      </div>
+                    <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+                      <Scale className="w-6 h-6 text-primary" />
                     </div>
                     <div className="h-px flex-1 bg-gradient-to-r from-primary to-transparent"></div>
                   </div>
@@ -110,7 +103,7 @@ export default function DualitySection() {
             transition={{ duration: 0.6 }}
             className="relative group"
           >
-            <div className="p-8 md:p-12 h-full bg-gradient-to-bl from-accent/5 to-transparent hover:border-accent/40 transition-all duration-500">
+            <div className="p-8 md:p-12 h-full bg-white border-l-2 border-accent/30 hover:border-accent/50 transition-all duration-500 rounded-r-2xl">
               {/* Large decorative icon */}
               <div className="absolute top-8 left-8 opacity-5">
                 <Cpu className="w-64 h-64 text-accent" strokeWidth={0.5} />
@@ -121,10 +114,8 @@ export default function DualitySection() {
                 <div className="mb-8">
                   <div className="inline-flex items-center gap-3 mb-4">
                     <div className="h-px flex-1 bg-gradient-to-l from-accent to-transparent"></div>
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-accent-dark p-0.5 shadow-lg">
-                      <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
-                        <Cpu className="w-6 h-6 text-accent" />
-                      </div>
+                    <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+                      <Cpu className="w-6 h-6 text-accent" />
                     </div>
                   </div>
 
@@ -170,10 +161,8 @@ export default function DualitySection() {
 
         {/* Center dividing line with icon */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden lg:flex items-center justify-center z-20">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary via-accent to-accent-dark p-0.5 shadow-2xl shadow-accent/50">
-            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">×</span>
-            </div>
+          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">×</span>
           </div>
         </div>
       </Container>

@@ -3,15 +3,43 @@
 import { motion } from "framer-motion";
 import { Clock, Search, FileCheck, FileText, Cog, CheckCircle } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Container from "@/components/ui/Container";
 
 const icons = [Search, FileCheck, FileText, Cog, CheckCircle];
+
+// Imágenes optimizadas para SEO con nombres descriptivos
 const images = [
-  '/images/illustrations/5.png',
-  '/images/illustrations/6.png',
-  '/images/illustrations/7.png',
-  '/images/illustrations/8.png',
-  '/images/illustrations/10.png',
+  {
+    src: '/images/illustrations/services/timeline/tax-diagnosis-data.webp',
+    alt: 'Diagnóstico fiscal de datos de criptomonedas y análisis de carteras digitales',
+    width: 600,
+    height: 600
+  },
+  {
+    src: '/images/illustrations/services/timeline/data-analysis-tax.webp',
+    alt: 'Análisis de complejidad fiscal para operaciones en exchanges y DeFi',
+    width: 600,
+    height: 600
+  },
+  {
+    src: '/images/illustrations/services/timeline/crypto-investment-tax.webp',
+    alt: 'Presupuesto personalizado de servicios fiscales para inversores crypto',
+    width: 600,
+    height: 600
+  },
+  {
+    src: '/images/illustrations/services/timeline/defi-blockchain-data.webp',
+    alt: 'Procesamiento de datos blockchain y cálculos fiscales certificados FIFO',
+    width: 600,
+    height: 600
+  },
+  {
+    src: '/images/illustrations/services/timeline/tax-report-crypto.webp',
+    alt: 'Informe fiscal completo de criptoactivos verificado y compatible con AEAT',
+    width: 600,
+    height: 600
+  }
 ];
 
 export default function ProcessTimeline() {
@@ -29,7 +57,7 @@ export default function ProcessTimeline() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-primary-800 via-primary-600 to-accent bg-clip-text text-transparent md:text-4xl mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
@@ -40,14 +68,14 @@ export default function ProcessTimeline() {
         {/* Horizontal Timeline - Desktop */}
         <div className="hidden lg:block relative">
           {/* Horizontal connecting line */}
-          <div className="absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-accent/20 via-accent/60 to-accent/20">
-            <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary blur-sm opacity-40"></div>
+          <div className="absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-navy/20 via-navy/60 to-navy/20">
+            <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy-darker blur-sm opacity-40"></div>
           </div>
 
           <div className="grid grid-cols-5 gap-4">
             {stepKeys.map((key, index) => {
               const Icon = icons[index];
-              const imageSrc = images[index];
+              const imageData = images[index];
 
               return (
                 <motion.div
@@ -65,10 +93,14 @@ export default function ProcessTimeline() {
                       transition={{ duration: 0.3 }}
                       className="w-32 h-32 relative"
                     >
-                      <img
-                        src={imageSrc}
-                        alt={t(`steps.${key}.title`)}
+                      <Image
+                        src={imageData.src}
+                        alt={imageData.alt}
+                        width={imageData.width}
+                        height={imageData.height}
+                        loading={index === 0 ? "eager" : "lazy"}
                         className="w-full h-full object-contain drop-shadow-2xl"
+                        title={imageData.alt}
                       />
                     </motion.div>
                   </div>
@@ -98,7 +130,7 @@ export default function ProcessTimeline() {
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-primary-700 bg-clip-text text-transparent min-h-[3.5rem] flex items-center justify-center">
+                    <h3 className="text-lg font-bold text-primary min-h-[3.5rem] flex items-center justify-center">
                       {t(`steps.${key}.title`)}
                     </h3>
 
@@ -107,11 +139,13 @@ export default function ProcessTimeline() {
                     </p>
 
                     {/* Time badge */}
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 border border-accent/20">
-                      <Clock className="w-3 h-3 text-accent" />
-                      <span className="text-xs font-medium text-accent-dark">
-                        {t(`steps.${key}.time`)}
-                      </span>
+                    <div className="inline-flex flex-col items-center gap-2 mt-4 pt-4 border-t border-neutral-200">
+                      <div className="inline-flex items-center gap-2">
+                        <Clock className="w-3 h-3 text-neutral-500" />
+                        <span className="text-xs font-medium text-neutral-600">
+                          {t(`steps.${key}.time`)}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -124,7 +158,7 @@ export default function ProcessTimeline() {
         <div className="lg:hidden space-y-12">
           {stepKeys.map((key, index) => {
             const Icon = icons[index];
-            const imageSrc = images[index];
+            const imageData = images[index];
 
             return (
               <motion.div
@@ -143,18 +177,22 @@ export default function ProcessTimeline() {
                     </div>
                   </div>
                   {index < stepKeys.length - 1 && (
-                    <div className="w-0.5 flex-1 bg-gradient-to-b from-accent/60 to-accent/20 mt-2"></div>
+                    <div className="w-0.5 flex-1 bg-gradient-to-b from-navy/60 to-navy/20 mt-2"></div>
                   )}
                 </div>
 
                 {/* Right side - Content */}
                 <div className="flex-1 pb-8">
                   {/* Image */}
-                  <div className="mb-4 w-24 h-24">
-                    <img
-                      src={imageSrc}
-                      alt={t(`steps.${key}.title`)}
+                  <div className="mb-4 w-24 h-24 relative">
+                    <Image
+                      src={imageData.src}
+                      alt={imageData.alt}
+                      width={imageData.width}
+                      height={imageData.height}
+                      loading={index === 0 ? "eager" : "lazy"}
                       className="w-full h-full object-contain drop-shadow-xl"
+                      title={imageData.alt}
                     />
                   </div>
 
@@ -164,19 +202,21 @@ export default function ProcessTimeline() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-primary-700 bg-clip-text text-transparent mb-2 min-h-[3.5rem] flex items-center">
+                  <h3 className="text-xl font-bold text-primary mb-2 min-h-[3.5rem] flex items-center">
                     {t(`steps.${key}.title`)}
                   </h3>
 
-                  <p className="text-sm text-neutral-600 leading-relaxed mb-3">
+                  <p className="text-sm text-neutral-600 leading-relaxed mb-4">
                     {t(`steps.${key}.description`)}
                   </p>
 
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 border border-accent/20">
-                    <Clock className="w-3 h-3 text-accent" />
-                    <span className="text-xs font-medium text-accent-dark">
-                      {t(`steps.${key}.time`)}
-                    </span>
+                  <div className="pt-4 border-t border-neutral-200">
+                    <div className="inline-flex items-center gap-2">
+                      <Clock className="w-3 h-3 text-neutral-500" />
+                      <span className="text-xs font-medium text-neutral-600">
+                        {t(`steps.${key}.time`)}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </motion.div>

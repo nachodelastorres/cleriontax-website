@@ -41,7 +41,7 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex justify-center items-center"
           >
             <ButtonLink
               variant="secondary"
@@ -51,13 +51,6 @@ export default function CTASection() {
             >
               {t('primary')}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </ButtonLink>
-            <ButtonLink
-              variant="outline"
-              size="lg"
-              href={`/${locale}/servicios`}
-            >
-              {t('secondary')}
             </ButtonLink>
           </motion.div>
 

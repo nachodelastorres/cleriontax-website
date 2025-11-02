@@ -26,14 +26,20 @@ export interface BlogPost {
   image: {
     url: string;
     alt: string;
+    width?: number;
+    height?: number;
   };
   seo: {
     metaTitle: string;
     metaDescription: string;
     keywords: string[];
     ogImage?: string;
+    ogImageAlt?: string;
+    ogImageWidth?: number;
+    ogImageHeight?: number;
   };
   featured: boolean;
+  layoutType?: 'magazine' | 'minimal' | 'storytelling';
 }
 
 // Función para cargar el contenido de un blog post en un idioma específico
@@ -80,6 +86,7 @@ export function getAllBlogPosts(): Array<Omit<BlogPost, 'title' | 'excerpt' | 'c
     image: post.image,
     seo: post.seo,
     featured: post.featured,
+    layoutType: (post as any).layoutType || 'magazine',
     title: '', // Se cargará dinámicamente
     excerpt: '', // Se cargará dinámicamente
     content: '' // Se cargará dinámicamente
@@ -127,7 +134,8 @@ export async function getBlogPostBySlug(slug: string, locale: string = 'es'): Pr
       tags: postMetadata.tags,
       image: postMetadata.image,
       seo: postMetadata.seo,
-      featured: postMetadata.featured
+      featured: postMetadata.featured,
+      layoutType: (postMetadata as any).layoutType || 'magazine'
     };
   } catch (error) {
     console.error(`Error loading blog post ${postMetadata.id}:`, error);

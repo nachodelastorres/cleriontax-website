@@ -2,7 +2,10 @@ import { notFound } from "next/navigation";
 import { getTranslations } from 'next-intl/server';
 import { getBlogPostBySlug, getAllBlogPosts, getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
-import BlogContent from "@/components/blog/BlogContent";
+import BlogContentMagazine from "@/components/blog/BlogContentMagazine";
+import BlogContentMinimal from "@/components/blog/BlogContentMinimal";
+import BlogContentStorytelling from "@/components/blog/BlogContentStorytelling";
+import TableOfContents from "@/components/blog/TableOfContents";
 import BlogCard from "@/components/blog/BlogCard";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { Calendar, Clock, Tag, Share2, ArrowLeft } from "lucide-react";
@@ -240,12 +243,59 @@ export default async function BlogPostPage({ params }: Props) {
           </Container>
         </section>
 
-        {/* Article Content */}
+        {/* Article Content with Table of Contents */}
         <section className="py-16 bg-white">
           <Container>
-            <div className="max-w-4xl mx-auto">
-              <BlogContent content={post.content} />
-            </div>
+            {post.layoutType === 'minimal' ? (
+              // Layout Minimalista - Sin sidebar
+              <div className="max-w-3xl mx-auto">
+                <BlogContentMinimal
+                  content={post.content}
+                  metadata={{
+                    publishedAt: post.publishedAt,
+                    readingTime: post.readingTime,
+                    category: post.category,
+                    author: post.author
+                  }}
+                />
+              </div>
+            ) : post.layoutType === 'storytelling' ? (
+              // Layout Storytelling - Visual immersive
+              <div className="max-w-5xl mx-auto">
+                <BlogContentStorytelling
+                  content={post.content}
+                  metadata={{
+                    publishedAt: post.publishedAt,
+                    readingTime: post.readingTime,
+                    category: post.category,
+                    author: post.author
+                  }}
+                />
+              </div>
+            ) : (
+              // Layout Magazine - Con sidebar (default)
+              <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                  {/* Main Content */}
+                  <div className="lg:col-span-8">
+                    <BlogContentMagazine
+                      content={post.content}
+                      metadata={{
+                        publishedAt: post.publishedAt,
+                        readingTime: post.readingTime,
+                        category: post.category,
+                        tags: post.tags
+                      }}
+                    />
+                  </div>
+
+                  {/* Table of Contents Sidebar - Hidden on mobile */}
+                  <aside className="hidden lg:block lg:col-span-4">
+                    <TableOfContents content={post.content} />
+                  </aside>
+                </div>
+              </div>
+            )}
           </Container>
         </section>
 

@@ -80,6 +80,13 @@
   "services": {
     "title": "Serveis d'Assessoria Fiscal per a Inversions en Criptomonedes i Accions",
     "subtitle": "Anàlisi personalitzada del teu cas en 24-48h. Pressupost clar i sense compromís. Cada inversor és únic, cada solució també.",
+    "hero": {
+      "badge": "Experts en fiscalitat crypto i actius digitals",
+      "title": "Serveis fiscals personalitzats per a inversors en criptomonedes i DeFi",
+      "subtitle": "Des d'informes fiscals verificables fins a assessorament especialitzat, t'ajudem a complir amb l'AEAT amb precisió, transparència i confiança.",
+      "cta": "Sol·licita el teu informe fiscal",
+      "seoText": "Assessoria fiscal en criptomonedes, DeFi, NFTs i actius digitals. Cleriontax combina enginyeria de dades i experiència fiscal per oferir solucions integrals adaptades a cada tipus d'inversor."
+    },
     "trustIndicators": {
       "freeAnalysis": "Anàlisi gratuït 24-48h",
       "certifiedAdvisors": "Assessors fiscals col·legiats",
@@ -169,6 +176,10 @@
     "title": "On l’Assessoria Fiscal Tradicional es Troba amb la Innovació Tecnològica",
     "subtitle": "Som el pont entre dos mons: l’experiència fiscal col·legiada i l’anàlisi de dades d’última generació. Cleriontax combina el millor de tots dos per oferir-te un servei fiscal sense precedents.",
     "hero": {
+      "badge": "Expertesa Fiscal × Innovació Tecnològica",
+      "title": "On l'Assessoria Fiscal Tradicional es Troba amb la Innovació Tecnològica",
+      "subtitle": "Som el pont entre dos mons: l'experiència fiscal col·legiada i l'anàlisi de dades d'última generació. Cleriontax combina el millor de tots dos per oferir-te un servei fiscal sense precedents.",
+      "cta": "Coneix el nostre equip",
       "tagline": "Expertesa Fiscal × Innovació Tecnològica",
       "stats": {
         "experience": {
@@ -289,6 +300,12 @@
   "contact": {
     "title": "Sol·licita el teu pressupost sense compromís",
     "subtitle": "Explica'ns el teu cas: exchanges que utilitzes, volum d'operacions i tipus d'actius. T'enviarem un pressupost personalitzat en poques hores.",
+    "hero": {
+      "badge": "Assessoria Fiscal Especialitzada",
+      "title": "Necessites ajuda amb la fiscalitat de les teves criptomonedes?",
+      "subtitle": "El nostre equip d'assessors fiscals col·legiats especialitzats en blockchain t'ajudarà a declarar correctament les teves inversions en crypto. Resposta en menys de 24 hores.",
+      "cta": "Sol·licitar pressupost"
+    },
     "trustIndicators": {
       "freeAnalysis": "Anàlisi gratuït 24-48h",
       "certifiedAdvisors": "Assessors fiscals col·legiats",

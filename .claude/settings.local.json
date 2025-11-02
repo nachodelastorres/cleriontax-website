@@ -29,7 +29,10 @@
       "Bash(curl:*)",
       "Bash(cat:*)",
       "Bash(/dev/null)",
-      "Bash(node -e:*)"
+      "Bash(node -e:*)",
+      "Bash(vercel --version:*)",
+      "Bash(vercel:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

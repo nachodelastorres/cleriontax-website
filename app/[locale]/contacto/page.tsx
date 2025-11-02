@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Container from "@/components/ui/Container";
-import PageHero from "@/components/layout/PageHero";
+import HeroContact from "@/components/contact/HeroContact";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 
@@ -33,10 +33,10 @@ export default async function ContactoPage({ params }: Props) {
   return (
     <>
       {/* Hero Section */}
-      <PageHero namespace="contact" />
+      <HeroContact />
 
       {/* Contact Form and Info */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="contact-form" className="py-16 md:py-24 bg-white">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form - 2/3 width */}

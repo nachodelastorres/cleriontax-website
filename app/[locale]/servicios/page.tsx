@@ -1,9 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 import Container from "@/components/ui/Container";
-import PageHero from "@/components/layout/PageHero";
+import HeroServices from "@/components/services/HeroServices";
+import MainServicesSection from "@/components/services/MainServicesSection";
 import ProcessTimeline from "@/components/services/ProcessTimeline";
-import ServicesGrid from "@/components/services/ServicesGrid";
-import ServiceInclusions from "@/components/services/ServiceInclusions";
+import WhyChooseUsServices from "@/components/services/WhyChooseUsServices";
 import CTASection from "@/components/home/CTASection";
 
 type Props = {
@@ -62,7 +62,39 @@ export default async function ServiciosPage({ params }: Props) {
       "@type": "Organization",
       "name": "Cleriontax",
       "url": "https://cleriontax.com"
-    }
+    },
+    "image": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/tax-diagnosis-data.webp",
+        "description": "Diagnóstico fiscal de datos de criptomonedas y análisis de carteras digitales",
+        "name": "Diagnóstico fiscal crypto - Cleriontax"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/data-analysis-tax.webp",
+        "description": "Análisis de complejidad fiscal para operaciones en exchanges y DeFi",
+        "name": "Análisis fiscal DeFi - Cleriontax"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/crypto-investment-tax.webp",
+        "description": "Presupuesto personalizado de servicios fiscales para inversores crypto",
+        "name": "Presupuesto fiscal crypto - Cleriontax"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/defi-blockchain-data.webp",
+        "description": "Procesamiento de datos blockchain y cálculos fiscales certificados FIFO",
+        "name": "Cálculos FIFO blockchain - Cleriontax"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/tax-report-crypto.webp",
+        "description": "Informe fiscal completo de criptoactivos verificado y compatible con AEAT",
+        "name": "Informe fiscal AEAT - Cleriontax"
+      }
+    ]
   };
 
   return (
@@ -74,38 +106,16 @@ export default async function ServiciosPage({ params }: Props) {
       />
 
       {/* Hero Section */}
-      <PageHero namespace="services" />
+      <HeroServices />
 
       {/* Process Timeline */}
       <ProcessTimeline />
 
-      {/* Services Grid - Magazine Style */}
-      <ServicesGrid />
+      {/* Main Services Section */}
+      <MainServicesSection />
 
-      {/* Service Inclusions */}
-      <ServiceInclusions />
-
-      {/* SEO Content Section - Hidden visually but crawlable */}
-      <section className="sr-only" aria-label="Información adicional para buscadores">
-        <Container>
-          <h2>Asesoría Fiscal Especializada en Criptomonedas y Activos Digitales</h2>
-          <p>
-            Cleriontax ofrece servicios de asesoría fiscal especializada para inversores en criptomonedas,
-            Bitcoin, Ethereum y otros criptoactivos. Realizamos la declaración de la renta (IRPF)
-            con cálculo de ganancias y pérdidas patrimoniales mediante metodología FIFO, preparamos
-            los modelos 100, 720 y 721, y ofrecemos asesoramiento fiscal continuado.
-          </p>
-          <h3>Servicios de Declaración Fiscal para Crypto</h3>
-          <ul>
-            <li>Cálculo de ganancias y pérdidas patrimoniales con método FIFO</li>
-            <li>Preparación modelo 100 (IRPF) para criptomonedas</li>
-            <li>Modelo 720 para declaración de activos en el extranjero</li>
-            <li>Modelo 721 para criptoactivos situados en el extranjero</li>
-            <li>Asesoramiento en staking, lending, DeFi y NFTs</li>
-            <li>Optimización fiscal dentro del marco legal vigente</li>
-          </ul>
-        </Container>
-      </section>
+      {/* Why Choose Us - Editorial Layout */}
+      <WhyChooseUsServices />
 
       {/* CTA */}
       <CTASection />
