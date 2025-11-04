@@ -44,20 +44,14 @@ export default async function ServiciosPage({ params }: Props) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Cleriontax - Asesoría Fiscal Criptomonedas y Acciones",
-    "description": "Servicios de asesoría fiscal especializada en criptomonedas, acciones y activos digitales. Cálculos FIFO, modelos 100, 720 y 721.",
+    "name": t('structuredData.name'),
+    "description": t('structuredData.description'),
     "url": `https://cleriontax.com/${locale}/servicios`,
     "areaServed": {
       "@type": "Country",
-      "name": "España"
+      "name": t('structuredData.areaServed')
     },
-    "serviceType": [
-      "Asesoría Fiscal Criptomonedas",
-      "Declaración IRPF Crypto",
-      "Cálculo Ganancias Patrimoniales",
-      "Modelo 100 Criptoactivos",
-      "Modelo 720 Activos Digitales"
-    ],
+    "serviceType": t.raw('structuredData.serviceTypes') as string[],
     "provider": {
       "@type": "Organization",
       "name": "Cleriontax",
@@ -67,32 +61,32 @@ export default async function ServiciosPage({ params }: Props) {
       {
         "@type": "ImageObject",
         "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/tax-diagnosis-data.webp",
-        "description": "Diagnóstico fiscal de datos de criptomonedas y análisis de carteras digitales",
-        "name": "Diagnóstico fiscal crypto - Cleriontax"
+        "description": t('structuredData.images.diagnosis.description'),
+        "name": t('structuredData.images.diagnosis.name')
       },
       {
         "@type": "ImageObject",
         "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/data-analysis-tax.webp",
-        "description": "Análisis de complejidad fiscal para operaciones en exchanges y DeFi",
-        "name": "Análisis fiscal DeFi - Cleriontax"
+        "description": t('structuredData.images.analysis.description'),
+        "name": t('structuredData.images.analysis.name')
       },
       {
         "@type": "ImageObject",
         "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/crypto-investment-tax.webp",
-        "description": "Presupuesto personalizado de servicios fiscales para inversores crypto",
-        "name": "Presupuesto fiscal crypto - Cleriontax"
+        "description": t('structuredData.images.budget.description'),
+        "name": t('structuredData.images.budget.name')
       },
       {
         "@type": "ImageObject",
         "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/defi-blockchain-data.webp",
-        "description": "Procesamiento de datos blockchain y cálculos fiscales certificados FIFO",
-        "name": "Cálculos FIFO blockchain - Cleriontax"
+        "description": t('structuredData.images.processing.description'),
+        "name": t('structuredData.images.processing.name')
       },
       {
         "@type": "ImageObject",
         "contentUrl": "https://cleriontax.com/images/illustrations/services/timeline/tax-report-crypto.webp",
-        "description": "Informe fiscal completo de criptoactivos verificado y compatible con AEAT",
-        "name": "Informe fiscal AEAT - Cleriontax"
+        "description": t('structuredData.images.report.description'),
+        "name": t('structuredData.images.report.name')
       }
     ]
   };

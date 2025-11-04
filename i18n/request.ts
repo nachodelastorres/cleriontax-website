@@ -6,14 +6,16 @@ import { notFound } from 'next/navigation';
 export { locales, type Locale };
 
 export default getRequestConfig(async ({ locale }) => {
-  // Validate that the incoming locale is valid
-  // Use defaultLocale as fallback instead of notFound() to avoid 404 during build
-  const validLocale = (locale && locales.includes(locale as Locale))
-    ? locale
-    : defaultLocale;
+  // Validate that the incoming `locale` parameter is valid
+  if (!locale || !locales.includes(locale as Locale)) {
+    return {
+      locale: defaultLocale,
+      messages: (await import(`../messages/${defaultLocale}.json`)).default
+    };
+  }
 
   return {
-    locale: validLocale,
-    messages: (await import(`../messages/${validLocale}.json`)).default
+    locale,
+    messages: (await import(`../messages/${locale}.json`)).default
   };
 });

@@ -2,11 +2,12 @@
 
 import Image from 'next/image';
 import { FileText, CheckCircle, TrendingUp, ArrowRight } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import ButtonLink from '@/components/ui/ButtonLink';
 
 export default function MainServicesSection() {
   const locale = useLocale();
+  const t = useTranslations('services.mainSection');
 
   return (
     <section id="main-services" className="relative py-32 overflow-hidden">
@@ -25,10 +26,10 @@ export default function MainServicesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Nuestros servicios fiscales especializados
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-blue max-w-3xl mx-auto">
-            Soluciones integrales en fiscalidad crypto y activos digitales, adaptadas a cada tipo de inversor.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -40,9 +41,7 @@ export default function MainServicesSection() {
               <FileText className="w-6 h-6 text-accent" />
             </div>
             <p className="flex-1">
-              En Cleriontax combinamos análisis fiscal y ciencia de datos para ofrecer un servicio integral y transparente.
-              Nuestro equipo aborda cada cartera de inversión —ya sea en criptomonedas, DeFi o activos digitales tradicionales—
-              con la precisión que requiere la normativa vigente.
+              {t('paragraph1')}
             </p>
           </div>
 
@@ -51,12 +50,7 @@ export default function MainServicesSection() {
             <div className="flex-shrink-0 mt-1">
               <CheckCircle className="w-6 h-6 text-accent" />
             </div>
-            <p className="flex-1">
-              Trabajamos con una metodología propia que garantiza la trazabilidad completa de las operaciones,
-              la clasificación fiscal correcta y la generación de informes claros, auditables y 100% compatibles con la AEAT.
-              Cada <strong>informe fiscal</strong> es revisado por profesionales especializados en <strong>fiscalidad crypto</strong>,
-              asegurando exactitud en los cálculos y coherencia en la presentación.
-            </p>
+            <p className="flex-1" dangerouslySetInnerHTML={{ __html: t('paragraph2') }} />
           </div>
 
           {/* Paragraph 3 with Icon */}
@@ -64,12 +58,7 @@ export default function MainServicesSection() {
             <div className="flex-shrink-0 mt-1">
               <TrendingUp className="w-6 h-6 text-accent" />
             </div>
-            <p className="flex-1">
-              Además, ofrecemos <strong>acompañamiento personalizado</strong> durante todo el proceso fiscal:
-              desde la revisión inicial hasta la entrega de modelos oficiales y soporte post-presentación.
-              Nuestro objetivo es que cada cliente declare con seguridad y sin incertidumbre,
-              respaldado por una <strong>asesoría fiscal criptomonedas</strong> de máxima calidad.
-            </p>
+            <p className="flex-1" dangerouslySetInnerHTML={{ __html: t('paragraph3') }} />
           </div>
         </div>
 
@@ -81,7 +70,7 @@ export default function MainServicesSection() {
             href={`/${locale}/contacto`}
             className="group"
           >
-            Solicita tu informe fiscal
+            {t('cta')}
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </ButtonLink>
         </div>

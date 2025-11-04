@@ -32,7 +32,10 @@
       "Bash(node -e:*)",
       "Bash(vercel --version:*)",
       "Bash(vercel:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(awk:*)",
+      "WebSearch",
+      "Bash(xargs:*)"
     ],
     "deny": [],
     "ask": []

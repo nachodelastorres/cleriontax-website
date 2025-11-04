@@ -78,12 +78,12 @@ export default async function LocaleLayout({
   }
 
   // Obtener mensajes para el idioma actual
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />

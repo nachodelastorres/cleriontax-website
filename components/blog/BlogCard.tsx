@@ -17,6 +17,18 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
   const t = useTranslations('blog');
   const slug = post.slugTranslations[locale as keyof typeof post.slugTranslations] || post.slug;
 
+  // Traducir categoría, tags y autor
+  const categoryTranslations = t.raw('categoryTranslations') as Record<string, string> || {};
+  const tagTranslations = t.raw('tagTranslations') as Record<string, string> || {};
+  const authorTranslations = t.raw('authorTranslations') as Record<string, { name: string; role: string }> || {};
+
+  const translatedCategory = categoryTranslations[post.category] || post.category;
+  const translateTag = (tag: string) => tagTranslations[tag] || tag;
+  const translatedAuthor = authorTranslations[post.author.name] || {
+    name: post.author.name,
+    role: post.author.role
+  };
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -43,7 +55,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
           {/* Category badge */}
           <div className="absolute top-4 left-4 z-10">
             <span className="px-4 py-1.5 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wide shadow-lg">
-              {post.category}
+              {translatedCategory}
             </span>
           </div>
 
@@ -101,7 +113,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
                   className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/5 text-primary text-xs font-medium"
                 >
                   <Tag className="w-3 h-3" />
-                  {tag}
+                  {translateTag(tag)}
                 </span>
               ))}
               {post.tags.length > 3 && (
@@ -116,11 +128,11 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
           <div className="flex items-center justify-between pt-4 border-t border-neutral-200">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">
-                {post.author.name.charAt(0)}
+                {translatedAuthor.name.charAt(0)}
               </div>
               <div>
-                <p className="text-sm font-semibold text-primary">{post.author.name}</p>
-                <p className="text-xs text-neutral-500">{post.author.role}</p>
+                <p className="text-sm font-semibold text-primary">{translatedAuthor.name}</p>
+                <p className="text-xs text-neutral-500">{translatedAuthor.role}</p>
               </div>
             </div>
 

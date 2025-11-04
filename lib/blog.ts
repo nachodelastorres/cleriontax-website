@@ -42,8 +42,20 @@ export interface BlogPost {
   layoutType?: 'magazine' | 'minimal' | 'storytelling';
 }
 
+// Interfaz para el contenido traducido del blog
+interface BlogPostContent {
+  title: string;
+  excerpt: string;
+  content: string;
+  seo?: {
+    metaTitle: string;
+    metaDescription: string;
+    keywords: string[];
+  };
+}
+
 // Función para cargar el contenido de un blog post en un idioma específico
-async function loadBlogPostContent(postId: string, locale: string): Promise<{ title: string; excerpt: string; content: string }> {
+async function loadBlogPostContent(postId: string, locale: string): Promise<BlogPostContent> {
   try {
     const content = await import(`@/messages/blog-posts/${locale}/${postId}.json`);
     return content.default;
@@ -120,6 +132,9 @@ export async function getBlogPostBySlug(slug: string, locale: string = 'es'): Pr
     // Determinar el slug correcto según el idioma
     const localizedSlug = postMetadata.slugTranslations[locale as keyof typeof postMetadata.slugTranslations] || postMetadata.slugTranslations.es;
 
+    // Usar SEO del contenido traducido si existe, sino usar el del metadata
+    const seo = content.seo || postMetadata.seo;
+
     return {
       slug: localizedSlug,
       slugTranslations: postMetadata.slugTranslations,
@@ -133,7 +148,7 @@ export async function getBlogPostBySlug(slug: string, locale: string = 'es'): Pr
       category: postMetadata.category,
       tags: postMetadata.tags,
       image: postMetadata.image,
-      seo: postMetadata.seo,
+      seo: seo,
       featured: postMetadata.featured,
       layoutType: (postMetadata as any).layoutType || 'magazine'
     };

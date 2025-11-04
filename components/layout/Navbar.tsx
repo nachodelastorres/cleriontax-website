@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from 'next-intl';
-import { Menu, X, Languages } from "lucide-react";
+import { Menu, X, Languages, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { usePathname, useRouter } from 'next/navigation';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
@@ -13,18 +12,35 @@ import Logo from "@/components/ui/Logo";
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const langMenuRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('nav');
   const tCommon = useTranslations('common');
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
 
+  // Close language menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
+        setLangMenuOpen(false);
+      }
+    }
+
+    if (langMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }
+  }, [langMenuOpen]);
+
   const navigation = [
-    { name: t('home'), href: `/${locale}` },
-    { name: t('services'), href: `/${locale}/servicios` },
-    { name: t('blog'), href: `/${locale}/blog` },
-    { name: t('about'), href: `/${locale}/sobre-nosotros` },
-    { name: t('contact'), href: `/${locale}/contacto` },
+    { name: t('home'), href: '/' },
+    { name: t('services'), href: '/servicios' },
+    { name: t('blog'), href: '/blog' },
+    { name: t('about'), href: '/sobre-nosotros' },
+    { name: t('contact'), href: '/contacto' },
   ];
 
   const languages = [
@@ -34,11 +50,7 @@ export default function Navbar() {
   ];
 
   const switchLanguage = (newLocale: string) => {
-    // Remover cualquier locale del inicio del path (es, en, ca)
-    const pathWithoutLocale = pathname.replace(/^\/(es|en|ca)/, '');
-    // Construir la nueva URL con el nuevo locale
-    const newPath = `/${newLocale}${pathWithoutLocale || ''}`;
-    router.push(newPath);
+    router.replace(pathname, { locale: newLocale });
     setLangMenuOpen(false);
   };
 
@@ -67,33 +79,53 @@ export default function Navbar() {
             ))}
 
             {/* Language Selector */}
-            <div className="relative">
+            <div className="relative" ref={langMenuRef}>
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
                 className="flex items-center space-x-1 text-sm font-medium text-navy transition-colors hover:text-gray-blue"
+                aria-label="Select language"
               >
                 <Languages className="h-4 w-4" />
                 <span>{locale.toUpperCase()}</span>
               </button>
 
-              {langMenuOpen && (
-                <div className="absolute right-0 mt-2 w-32 rounded-lg border border-neutral-200 bg-white shadow-lg">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => switchLanguage(lang.code)}
-                      className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-blue-light/10 first:rounded-t-lg last:rounded-b-lg transition-colors ${
-                        locale === lang.code ? 'bg-navy/10 text-navy font-medium' : 'text-gray-blue'
-                      }`}
-                    >
-                      {lang.name}
-                    </button>
-                  ))}
-                </div>
-              )}
+              <AnimatePresence>
+                {langMenuOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 mt-2 w-32 rounded-lg border border-neutral-200 bg-white shadow-lg z-50"
+                  >
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => switchLanguage(lang.code)}
+                        className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-blue-light/10 first:rounded-t-lg last:rounded-b-lg transition-colors ${
+                          locale === lang.code ? 'bg-navy/10 text-navy font-medium' : 'text-gray-blue'
+                        }`}
+                      >
+                        {lang.name}
+                      </button>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
 
-            <ButtonLink variant="secondary" size="sm" href={`/${locale}/contacto`}>
+            {/* WhatsApp Button */}
+            <a
+              href="https://wa.me/34663482301"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 rounded-lg bg-green-500 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-green-600 hover:shadow-md"
+            >
+              <MessageCircle className="h-4 w-4" />
+              <span>WhatsApp</span>
+            </a>
+
+            <ButtonLink variant="secondary" size="sm" href="/contacto">
               {t('requestQuote')}
             </ButtonLink>
           </div>
@@ -150,7 +182,7 @@ export default function Navbar() {
                         setMobileMenuOpen(false);
                       }}
                       className={`block w-full rounded-lg px-3 py-2 text-left text-base font-medium hover:bg-gray-blue-light/10 transition-colors ${
-                        locale === lang.code ? 'text-navy' : 'text-gray-blue'
+                        locale === lang.code ? 'text-navy bg-navy/10' : 'text-gray-blue'
                       }`}
                     >
                       {lang.name}
@@ -158,8 +190,21 @@ export default function Navbar() {
                   ))}
                 </div>
 
+                {/* Mobile WhatsApp Button */}
                 <div className="pt-2">
-                  <ButtonLink variant="secondary" size="sm" href={`/${locale}/contacto`} className="w-full">
+                  <a
+                    href="https://wa.me/34663482301"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center space-x-2 rounded-lg bg-green-500 px-4 py-2.5 text-base font-medium text-white transition-all hover:bg-green-600 w-full"
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+
+                <div className="pt-2">
+                  <ButtonLink variant="secondary" size="sm" href="/contacto" className="w-full">
                     {t('requestQuote')}
                   </ButtonLink>
                 </div>

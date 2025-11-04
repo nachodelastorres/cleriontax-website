@@ -36,12 +36,15 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
-  const t = await getTranslations('blog');
+  const t = await getTranslations({ locale, namespace: 'blog' });
 
   // Cargar todos los posts con su contenido en el idioma actual
   const allPosts = await getAllBlogPostsWithContent(locale);
   const featuredPosts = allPosts.filter(post => post.featured);
   const categories = getAllCategories();
+
+  // Obtener traducciones de categorías
+  const categoryTranslations = t.raw('categoryTranslations') as Record<string, string> || {};
 
   // Structured Data for SEO
   const structuredData = {
@@ -161,7 +164,7 @@ export default async function BlogPage({ params }: Props) {
                   className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/5 to-accent/5 border border-accent/20 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 cursor-pointer group"
                 >
                   <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors duration-300">
-                    {category}
+                    {categoryTranslations[category] || category}
                   </span>
                 </div>
               ))}

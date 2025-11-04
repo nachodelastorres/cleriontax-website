@@ -7,10 +7,10 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 
 export default function CTASection() {
-  const t = useTranslations('cta');
+  const t = useTranslations('finalCTA');
   const locale = useLocale();
 
-  const badgeKeys = ['noCommitment', 'response24h', 'secure'] as const;
+  const trustKeys = ['security', 'clients'] as const;
 
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-navy via-navy to-navy-darker relative overflow-hidden">
@@ -49,7 +49,7 @@ export default function CTASection() {
               href={`/${locale}/contacto`}
               className="group shadow-xl hover:shadow-2xl"
             >
-              {t('primary')}
+              {t('button')}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </ButtonLink>
           </motion.div>
@@ -62,12 +62,12 @@ export default function CTASection() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="pt-8 flex flex-col sm:flex-row gap-6 justify-center items-center text-white/80 text-sm"
           >
-            {badgeKeys.map((key) => (
+            {trustKeys.map((key) => (
               <div key={key} className="flex items-center gap-2 group">
                 <div className="p-1 rounded-full bg-gray-blue-light/20 group-hover:bg-gray-blue-light/30 transition-colors duration-300">
                   <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="font-medium text-white">{t(`badges.${key}`)}</span>
+                <span className="font-medium text-white">{t(`trust.${key}`)}</span>
               </div>
             ))}
           </motion.div>
