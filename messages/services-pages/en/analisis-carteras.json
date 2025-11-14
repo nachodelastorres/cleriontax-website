@@ -1,0 +1,153 @@
+{
+  "title": "Analysis of Complex Investment Portfolios",
+  "slug": "analisis-carteras",
+  "excerpt": "Integration, cleaning and consolidation of data from all necessary sources: exchanges, brokers, wallets and DeFi protocols. We turn dispersed portfolios into unified, traceable and auditable reports with no complexity limit.",
+  "hero": {
+    "h1": "Analysis of Complex Investment Portfolios",
+    "subheading": "We integrate data from all necessary sources, process high-complexity operations and generate consolidated reports with complete traceability. Ideal for portfolios with DeFi operations, multichain staking, airdrops and decentralized structures.",
+    "cta": {
+      "label": "Request a free evaluation",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "que-incluye", "label": "What's included" },
+    { "id": "como-trabajamos", "label": "How we work" },
+    { "id": "por-que-elegirnos", "label": "Why choose us" },
+    { "id": "casos-uso", "label": "Use cases" },
+    { "id": "faq", "label": "Frequently asked questions" },
+    { "id": "cta", "label": "Request evaluation" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introduction",
+      "body": "Complex portfolio analysis is our most technical and specialized service. It is designed for investors who operate across multiple platforms simultaneously, manage high-complexity operations and need to consolidate dispersed data from exchanges, brokers, on-chain wallets and DeFi protocols. We apply advanced data engineering to integrate heterogeneous sources, detect duplicates, reconcile internal movements and generate consolidated reports with complete traceability. This service is not direct tax filing: it is the essential preliminary step when your data is too complex for automated tools and you need a solid foundation before preparing your tax obligations. If your portfolio presents high operational complexity, multiple blockchain ecosystems or sophisticated investment structures, this is the service you need. Shall we talk?"
+    },
+    {
+      "id": "que-incluye",
+      "h2": "What the service includes",
+      "bullets": [
+        "<strong>Multi-source integration:</strong> we connect and consolidate data from centralized exchanges, traditional brokers, on-chain wallets, DeFi protocols, own nodes, third-party APIs and manual CSV files.",
+        "<strong>Data normalization and cleaning:</strong> we standardize heterogeneous formats, correct timestamp errors, unify asset nomenclature and remove corrupt or incomplete records.",
+        "<strong>Advanced reconciliation:</strong> we detect and eliminate duplicate transactions, identify internal movements between your own wallets and exchanges, and reconstruct fragmented operation chains.",
+        "<strong>Operational classification:</strong> we categorize each transaction according to its nature (trading, staking, airdrops, fees, gas, bridging, wrapping, swaps, liquidity pools) to facilitate subsequent analysis.",
+        "<strong>Consolidated reporting:</strong> we generate global performance reports, balances by asset and platform, staking rewards analysis, airdrop tracking, fee breakdown and any custom view you need.",
+        "<strong>Complete deliverables:</strong> clean datasets in CSV/Excel/JSON ready for audits, technical documentation of applied methodology, traceability of adjustments and review session to resolve doubts."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "How we work",
+      "steps": [
+        {
+          "title": "Source ingestion and mapping",
+          "body": "We receive your CSV files, read-only API credentials or on-chain wallet addresses. We map each data source, identify formats, validate integrity and detect possible structural inconsistencies before processing."
+        },
+        {
+          "title": "Modeling and normalization",
+          "body": "We apply ETL transformations to unify heterogeneous data into a common model. We standardize timestamps to UTC, normalize asset symbols, convert units and correct encoding or format errors."
+        },
+        {
+          "title": "Cross-validation and reconciliation",
+          "body": "We cross transactions between platforms to detect duplicates and internal movements. We validate final balances against real balances on exchanges and blockchains. We identify discrepancies and document them for joint review."
+        },
+        {
+          "title": "Report generation and delivery",
+          "body": "We produce consolidated reports with views by asset, platform, operation type and time period. We deliver clean datasets, technical documentation and review session to resolve doubts about applied methodology."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Why choose us",
+      "bullets": [
+        "<strong>Experience in high complexity:</strong> we have processed portfolios with numerous data sources and massive annual transaction volumes, including complex DeFi operations on Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis and multiple additional networks.",
+        "<strong>Total traceability:</strong> every adjustment, duplicate removal or reclassification is documented with technical justification and possibility of subsequent audit.",
+        "<strong>No dependency on third-party software:</strong> we do not subcontract processing to automated tools. All analysis is performed with our own infrastructure and expert human judgment.",
+        "<strong>Tax compatibility:</strong> the generated reports are directly usable for preparing tax settlements, internal audits or Tax Agency requirements.",
+        "<strong>Continuous technical support:</strong> we include post-delivery follow-up to resolve doubts about consolidated data or make adjustments if you detect discrepancies."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Use cases",
+      "items": [
+        {
+          "title": "DeFi investor with operations on 15 blockchains",
+          "body": "Client with active positions on Uniswap, Aave, Curve, PancakeSwap, Raydium, Osmosis and 20 other protocols. More than 200,000 on-chain transactions over 3 years. Needed to consolidate all their DeFi activity, calculate real staking and liquidity pool rewards, and prepare database for tax settlement. We integrated data from subgraphs, protocol APIs, own nodes and blockchain explorers. Result: consolidated report with complete traceability and dataset ready for tax filing."
+        },
+        {
+          "title": "Institutional trader with 50+ exchange accounts",
+          "body": "Investment fund with accounts on Binance, Kraken, Coinbase, Bitfinex, OKX, Bybit and 45 more exchanges. Volume of 300,000 annual operations between spot, futures and options. Required global consolidation for internal reporting and quarterly audits. We processed APIs from all exchanges, reconciled inter-exchange transfers and generated consolidated views by trading strategy. We delivered custom dashboards and auditable datasets."
+        },
+        {
+          "title": "Early adopter with history since 2013",
+          "body": "Investor with first Bitcoin purchases in 2013, operations on now-defunct exchanges, old wallets without complete records and migration between multiple hardware wallets. Needed to reconstruct complete history to comply with form 721 and prepare income tax return. We applied blockchain forensics techniques, recovered data from closed exchanges through client backups and reconstructed complete history with traceability. Result: verifiable historical database for their entire crypto tax life."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What data formats do you support?",
+          "a": "We support CSV from exchanges (Binance, Kraken, Coinbase, etc.), read-only APIs, on-chain wallet addresses for extraction via explorers or nodes, data from The Graph subgraphs, traditional broker files and any structured source containing transaction information. If you have a proprietary or legacy format, we can adapt after evaluation."
+        },
+        {
+          "q": "How long does analysis of a complex portfolio take?",
+          "a": "It depends on the volume and complexity of your specific case. Portfolios with moderate complexity are usually processed in 1-2 weeks. Portfolios with high complexity, multiple sources and massive volumes may require between 3 and 5 weeks. In the initial evaluation we will give you a precise timeline based on your portfolio characteristics."
+        },
+        {
+          "q": "What exactly do you deliver at the end of the service?",
+          "a": "We deliver clean datasets in CSV/Excel/JSON format with all your consolidated and classified transactions, analysis report with key metrics (performance, balances, fees, staking rewards), technical documentation of applied methodology, traceability of adjustments made and online review session to resolve doubts. Optionally, we can generate interactive dashboards if you require."
+        },
+        {
+          "q": "Does this service include tax preparation or only data analysis?",
+          "a": "This service is exclusively data analysis. It does not include tax calculations, AEAT forms or tax advice. Its objective is to consolidate and clean your data so you have a solid foundation. If you need subsequent tax filing, we offer our Tax Settlements service as a natural complement after completing portfolio analysis."
+        },
+        {
+          "q": "Can you integrate data from exotic or little-known DeFi protocols?",
+          "a": "Yes. We work with any protocol that has verifiable on-chain data or via APIs. We have integrated protocols on Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis, Avalanche, Arbitrum, Optimism and other networks. If the protocol has a subgraph on The Graph, verified contract or public API, we can extract the data. In very specific cases, we can deploy own nodes if necessary."
+        },
+        {
+          "q": "What guarantees do you offer on the integrity of processed data?",
+          "a": "We apply cross-validation between sources, verify final balances against real balances on blockchain and exchanges, document every transformation applied and offer complete traceability. If you detect discrepancies post-delivery, we review and correct them at no additional cost. All original datasets are kept intact during the process."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Shall we talk?",
+      "body": "If you have a portfolio with high operational complexity, operate on multiple blockchains or have received automated reports with reconciliation errors, we can help you. Tell us about your portfolio: number of platforms, transaction volume, asset types and any technical particularity. We send you an initial evaluation within 24-48 hours.",
+      "button": {
+        "label": "Request a free evaluation",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Back to all services", "href": "/servicios" },
+    { "label": "Tax Settlements", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Portfolio Tracking", "href": "/servicios/seguimiento-cartera" },
+    { "label": "Tax Advisory", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Analysis of Complex Investment Portfolios | Cleriontax",
+    "description": "Integration and consolidation of data from multiple exchanges, wallets and DeFi protocols. Processing of complex operations with complete traceability.",
+    "keywords": ["crypto portfolio analysis", "exchange data consolidation", "DeFi transaction reconciliation", "blockchain data engineering", "complex portfolio reports", "crypto tax traceability"],
+    "canonical": "https://cleriontax.com/servicios/analisis-carteras"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Analysis of Complex Investment Portfolios",
+    "serviceType": "Financial Data Analysis and Portfolio Consolidation",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Spain",
+    "description": "Specialized service in integration, cleaning and consolidation of data from multiple exchanges, brokers, wallets and DeFi protocols. Processing of portfolios with high operational complexity and complete traceability."
+  }
+}
+

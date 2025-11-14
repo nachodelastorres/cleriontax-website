@@ -1,0 +1,152 @@
+{
+  "title": "Liquidaciones Fiscales y Modelos AEAT",
+  "slug": "liquidaciones-fiscales",
+  "excerpt": "Cálculo de plusvalías, pérdidas y rendimientos con criterio FIFO. Preparación de modelos 100, 721 y 714 con documentación completa y revisión por asesores fiscales colegiados.",
+  "hero": {
+    "h1": "Liquidaciones Fiscales y Modelos AEAT",
+    "subheading": "Calculamos tus obligaciones fiscales con criterio FIFO, aplicamos normativa DGT vigente y generamos modelos listos para presentar. Incluye simulaciones de escenarios, documentación de soporte y revisión por asesores fiscales colegiados.",
+    "cta": {
+      "label": "Solicitar evaluación gratuita",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducción" },
+    { "id": "que-incluye", "label": "Qué incluye" },
+    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
+    { "id": "por-que-elegirnos", "label": "Por qué elegirnos" },
+    { "id": "casos-uso", "label": "Casos de uso" },
+    { "id": "faq", "label": "Preguntas frecuentes" },
+    { "id": "cta", "label": "Solicitar evaluación" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducción",
+      "body": "La preparación de liquidaciones fiscales es el paso final tras consolidar y analizar tus datos. Este servicio está diseñado para inversores que necesitan cumplir con sus obligaciones tributarias aplicando correctamente los criterios de la AEAT y la DGT. Calculamos plusvalías y pérdidas patrimoniales mediante criterio FIFO, clasificamos rendimientos del capital mobiliario (staking, lending, airdrops), preparamos modelos 100, 721 y 714, y generamos documentación de soporte auditable para cualquier requerimiento de Hacienda. No ofrecemos asesoramiento de inversión ni recomendaciones sobre qué activos comprar o vender: nuestro enfoque es exclusivamente técnico-fiscal. Trabajamos contigo para optimizar tu declaración dentro del marco legal, aplicando todas las compensaciones de pérdidas permitidas y simulando escenarios alternativos cuando corresponda. Si tienes operaciones complejas en criptomonedas, acciones internacionales o estructuras fiscales multinivel, este es el servicio que necesitas. ¿Tienes dudas sobre cómo declarar tus criptoactivos este año? Hablemos."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Qué incluye el servicio",
+      "bullets": [
+        "<strong>Cálculo FIFO de plusvalías y pérdidas:</strong> aplicamos el criterio FIFO (First In, First Out) para determinar el coste de adquisición de cada venta o permuta, calculando ganancias y pérdidas con precisión decimal.",
+        "<strong>Clasificación de rendimientos:</strong> identificamos y cuantificamos rewards de staking, intereses de lending, airdrops, hard forks y cualquier rendimiento que tribute como capital mobiliario según normativa vigente.",
+        "<strong>Preparación de modelos AEAT:</strong> generamos modelo 100 (IRPF) con casillas correctamente cumplimentadas, modelo 721 (criptomonedas en el extranjero) si superas umbrales, y modelo 714 (patrimonio) cuando corresponda.",
+        "<strong>Simulaciones de escenarios fiscales:</strong> calculamos diferentes escenarios de declaración (ej. venta escalonada vs venta única, compensación de pérdidas, imputación temporal) para identificar la estrategia fiscal más eficiente dentro del marco legal.",
+        "<strong>Revisión profesional y documentación:</strong> todos los cálculos son revisados por asesores fiscales colegiados especializados en criptoactivos. Entregamos dossier completo con detalle de cada operación, justificación de cálculos y referencias normativas.",
+        "<strong>Soporte y sesión de revisión:</strong> incluimos sesión online para revisar los modelos generados, explicar criterios aplicados y resolver cualquier duda sobre tu declaración. Trazabilidad total para auditorías."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo trabajamos",
+      "steps": [
+        {
+          "title": "Consolidación de datos fiscales",
+          "body": "Recibimos tus datos consolidados (si has usado nuestro servicio de análisis de carteras) o procesamos tus archivos desde cero. Validamos integridad, identificamos operaciones fiscalmente relevantes y clasificamos según naturaleza tributaria."
+        },
+        {
+          "title": "Aplicación de reglas fiscales FIFO",
+          "body": "Calculamos el coste de adquisición de cada venta mediante FIFO, determinamos fechas de adquisición y transmisión, clasificamos entre ganancias a corto/largo plazo si aplica y generamos detalle transaccional completo. Aplicamos criterios DGT actualizados."
+        },
+        {
+          "title": "Simulación de escenarios y optimización",
+          "body": "Evaluamos diferentes estrategias de declaración, simulamos impacto fiscal de compensaciones de pérdidas, analizamos imputación temporal de operaciones y te presentamos opciones con pros/contras fiscales de cada escenario."
+        },
+        {
+          "title": "Generación de modelos y dossier fiscal",
+          "body": "Producimos modelos AEAT listos para importar en Renta Web o presentar mediante certificado digital. Generamos dossier fiscal con anexos, justificaciones, cálculos detallados y referencias normativas. Revisión final por asesor colegiado antes de entrega."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Por qué elegirnos",
+      "bullets": [
+        "<strong>Criterio fiscal real, no automatizado:</strong> cada operación es revisada con criterio fiscal humano. No confiamos ciegamente en algoritmos automáticos que generan errores en casos complejos.",
+        "<strong>Conocimiento profundo de normativa crypto:</strong> seguimos de cerca consultas vinculantes de la DGT, criterios de la AEAT y jurisprudencia aplicable a criptoactivos. Aplicamos interpretación normativa actualizada.",
+        "<strong>Trazabilidad y auditabilidad total:</strong> cada cálculo incluye justificación técnica, referencia a operaciones origen y posibilidad de auditoría completa. Documentación lista para requerimientos de Hacienda.",
+        "<strong>Simulaciones fiscales estratégicas:</strong> no nos limitamos a calcular. Analizamos escenarios alternativos, identificamos oportunidades de optimización legal y te ayudamos a tomar decisiones informadas.",
+        "<strong>Revisión por profesionales colegiados:</strong> todos los informes fiscales son validados por asesores fiscales colegiados especializados en criptoactivos antes de entrega. Garantía de calidad profesional."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos de uso",
+      "items": [
+        {
+          "title": "Trader activo con miles de operaciones FIFO",
+          "body": "Cliente con 15.000 operaciones de compra/venta de criptomonedas en 2024, múltiples exchanges, operaciones en diferentes años fiscales. Necesitaba cálculo FIFO preciso, compensación de pérdidas de ejercicios anteriores y optimización de imputación temporal. Procesamos todas las operaciones, aplicamos FIFO histórico desde primeras compras, simulamos escenarios de declaración y generamos modelo 100 con anexos justificativos. Resultado: declaración optimizada legalmente con ahorro fiscal significativo por correcta aplicación de compensaciones."
+        },
+        {
+          "title": "Inversor DeFi con rendimientos complejos",
+          "body": "Cliente con posiciones de staking en Ethereum 2.0, yield farming en Curve y Aave, liquidity pools en Uniswap y airdrops diversos. Necesitaba clasificar correctamente cada tipo de rendimiento según normativa fiscal española. Identificamos rendimientos de capital mobiliario (staking rewards), ganancias patrimoniales (swaps de tokens), variaciones de valor en LP tokens y airdrops. Generamos modelo 100 con correcta imputación en cada casilla y dossier justificativo. Resultado: declaración fiscalmente coherente con criterios DGT aplicables a DeFi."
+        },
+        {
+          "title": "Inversor internacional con obligaciones 721 y 714",
+          "body": "Cliente con criptomonedas en exchanges extranjeros por valor superior a 50.000€, necesitaba cumplir con modelo 721. También tenía patrimonio total superior a umbrales de modelo 714. Procesamos balances a 31 de diciembre, valoramos activos según criterios AEAT, preparamos modelo 721 con detalle de saldos por exchange y modelo 714 con valoración patrimonial correcta. Incluimos simulación de posibles sanciones por no declarar y justificación de valoración aplicada. Resultado: cumplimiento completo de obligaciones informativas internacionales."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Qué diferencia hay entre los modelos 100, 721 y 714?",
+          "a": "Modelo 100 es la declaración de la renta (IRPF), donde declaras todas tus ganancias, pérdidas y rendimientos del ejercicio fiscal. Modelo 721 es informativo: declaras saldos de criptomonedas en el extranjero si superan 50.000€ a 31 de diciembre. Modelo 714 también es informativo: declaras tu patrimonio total si superas ciertos umbrales. Cada uno tiene plazos y requisitos diferentes. Te asesoramos sobre cuáles aplican a tu caso."
+        },
+        {
+          "q": "¿Qué documentación necesito aportar para preparar mi liquidación fiscal?",
+          "a": "Necesitamos archivos CSV de todos tus exchanges con histórico completo de operaciones, direcciones de wallets on-chain para extraer transacciones, información de compras iniciales si tienes activos desde hace años, y cualquier documento que justifique operaciones especiales (airdrops, hard forks, ingresos por minería). Si ya tienes datos consolidados de nuestro servicio de análisis de carteras, es suficiente con eso."
+        },
+        {
+          "q": "¿Cómo aplicáis el criterio FIFO si tengo operaciones desde 2015?",
+          "a": "Reconstruimos tu histórico completo desde la primera compra documentada. Aplicamos FIFO estricto: las primeras unidades compradas son las primeras vendidas. Si tienes gaps en tus registros históricos, aplicamos métodos conservadores de valoración y documentamos supuestos aplicados. En casos de exchanges cerrados o wallets antiguas sin registros, trabajamos con la información disponible y justificamos metodología."
+        },
+        {
+          "q": "¿Puedo optimizar fiscalmente mi declaración de forma legal?",
+          "a": "Sí. Dentro del marco legal, existen estrategias de optimización: compensación de pérdidas patrimoniales con ganancias, imputación temporal de operaciones en ejercicios diferentes si es posible, aprovechamiento de deducciones aplicables, y planificación de ventas escalonadas para evitar saltos de tramo. Te simulamos escenarios y explicamos pros/contras de cada opción. No ofrecemos elusión fiscal ni estrategias ilegales."
+        },
+        {
+          "q": "¿Qué pasa si la AEAT me requiere tras presentar mi declaración?",
+          "a": "Todos nuestros informes incluyen documentación de soporte completa y trazabilidad total de cálculos. Si recibes un requerimiento, te ayudamos a preparar la respuesta aportando justificación técnica, detalle de operaciones y referencias normativas aplicadas. Ofrecemos soporte post-presentación durante toda la campaña de Renta sin coste adicional si el requerimiento se refiere a datos que procesamos."
+        },
+        {
+          "q": "¿Este servicio incluye la presentación efectiva de los modelos ante la AEAT?",
+          "a": "No. Preparamos todos los modelos listos para presentar, pero la presentación efectiva mediante certificado digital o Cl@ve PIN la realizas tú o tu asesor fiscal de confianza. Te entregamos archivos importables en Renta Web, PDFs listos para firma y guía paso a paso de presentación. Si necesitas que un asesor fiscal presente por ti, podemos coordinarlo mediante nuestro servicio de asesoría."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "¿Hablamos?",
+      "body": "Si tienes operaciones complejas en criptomonedas, necesitas preparar tu IRPF o cumplir con modelos 721/714, podemos ayudarte. Cuéntanos sobre tu caso: volumen de operaciones, tipos de activos, si tienes pérdidas de ejercicios anteriores y cualquier particularidad fiscal relevante. Te enviamos una evaluación inicial en 24-48 horas con presupuesto detallado.",
+      "button": {
+        "label": "Solicitar evaluación gratuita",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Volver a todos los servicios", "href": "/servicios" },
+    { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
+    { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" },
+    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Liquidaciones Fiscales Criptomonedas | Modelo 100, 721, 714 | Cleriontax",
+    "description": "Cálculo FIFO de plusvalías, preparación de modelos AEAT y simulaciones fiscales. Revisión por asesores colegiados. Cumple con Hacienda sin errores.",
+    "keywords": ["liquidación fiscal criptomonedas", "modelo 100 crypto", "modelo 721 AEAT", "modelo 714 patrimonio", "FIFO criptoactivos", "declaración renta cripto", "asesoría fiscal AEAT"],
+    "canonical": "https://cleriontax.com/servicios/liquidaciones-fiscales"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Liquidaciones Fiscales y Modelos AEAT",
+    "serviceType": "Preparación de Liquidaciones Fiscales para Criptoactivos",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "España",
+    "description": "Servicio especializado en cálculo de plusvalías y pérdidas con criterio FIFO, preparación de modelos 100, 721 y 714, simulaciones fiscales y documentación completa para cumplimiento ante la AEAT."
+  }
+}

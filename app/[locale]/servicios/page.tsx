@@ -3,7 +3,9 @@ import Container from "@/components/ui/Container";
 import HeroServices from "@/components/services/HeroServices";
 import MainServicesSection from "@/components/services/MainServicesSection";
 import ProcessTimeline from "@/components/services/ProcessTimeline";
+import IndividualServicesShowcase from "@/components/services/IndividualServicesShowcase";
 import WhyChooseUsServices from "@/components/services/WhyChooseUsServices";
+import BlogScrollSection from "@/components/home/BlogScrollSection";
 import CTASection from "@/components/home/CTASection";
 
 type Props = {
@@ -101,6 +103,12 @@ export default async function ServiciosPage({ params }: Props) {
 
       {/* Hero Section */}
       <HeroServices />
+
+      {/* Individual Services Showcase */}
+      <IndividualServicesShowcase />
+
+      {/* Blog Scroll Section */}
+      <BlogScrollSection />
 
       {/* Process Timeline */}
       <ProcessTimeline />

@@ -1,6 +1,304 @@
 {
   "posts": [
     {
+      "id": "stablecoins-tributacion-espana-mito",
+      "slugTranslations": {
+        "es": "stablecoins-tributacion-espana-mito",
+        "en": "stablecoins-taxation-spain-myth",
+        "ca": "stablecoins-tributacio-espanya-mite"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-11-13T09:00:00Z",
+      "readingTime": 16,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Stablecoins",
+        "USDT",
+        "USDC",
+        "Fiscalidad Stablecoins",
+        "Tributación USDT",
+        "Ganancias Patrimoniales",
+        "Modelo 721",
+        "AEAT",
+        "Permuta Criptomonedas",
+        "Error Fiscal",
+        "DAI",
+        "Tether"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/analisis-carteras-inversion-compleja.webp",
+        "alt": "Stablecoins y fiscalidad en España - Por qué convertir Bitcoin a USDT sí tributa ante la AEAT - Guía completa sobre el mito del refugio fiscal",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Stablecoins y Fiscalidad España 2025: Por Qué BTC a USDT Sí Tributa | Cleriontax",
+        "metaDescription": "El error fiscal más costoso: miles creen que convertir BTC a USDT no tributa. Descubre por qué las stablecoins NO son refugio fiscal y cómo evitar sanciones de hasta el 150% ante la AEAT.",
+        "keywords": [
+          "USDT tributa España",
+          "fiscalidad stablecoins España",
+          "BTC a USDT impuestos",
+          "declarar USDT Hacienda",
+          "USDC fiscalidad AEAT",
+          "stablecoins modelo 721",
+          "tributación Tether España",
+          "convertir crypto a USDT tributa",
+          "DAI impuestos España",
+          "error fiscal stablecoins",
+          "permuta criptomonedas AEAT",
+          "stablecoins ganancias patrimoniales"
+        ],
+        "ogImage": "/images/illustrations/blog/analisis-carteras-inversion-compleja.webp",
+        "ogImageAlt": "Stablecoins y fiscalidad en España - Por qué convertir Bitcoin a USDT sí tributa ante la AEAT - Guía completa sobre el mito del refugio fiscal",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "minimal"
+    },
+    {
+      "id": "modelos-100-721-714-criptomonedas",
+      "slugTranslations": {
+        "es": "modelos-100-721-714-criptomonedas",
+        "en": "forms-100-721-714-cryptocurrencies",
+        "ca": "models-100-721-714-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-11-05T09:00:00Z",
+      "readingTime": 15,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Modelo 100",
+        "Modelo 721",
+        "Modelo 714",
+        "AEAT",
+        "Declaración IRPF",
+        "Criptomonedas Extranjero",
+        "Obligaciones Fiscales",
+        "Sanciones Hacienda",
+        "Ganancias Patrimoniales",
+        "Patrimonio en el Extranjero",
+        "Fiscalidad Internacional",
+        "Informes Fiscales"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/declaracion-renta-acciones.webp",
+        "alt": "Modelos 100, 721 y 714 para declarar criptomonedas en España - Guía completa sobre obligaciones fiscales ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Modelos 100, 721 y 714 para Criptomonedas: Guía Completa AEAT 2025 | Cleriontax",
+        "metaDescription": "Guía definitiva sobre los modelos 100, 721 y 714 para declarar criptomonedas ante la AEAT. Aprende las diferencias, cuándo presentar cada modelo, plazos y cómo evitar sanciones de hasta 150.000€.",
+        "keywords": [
+          "modelo 721 AEAT",
+          "modelo 100 criptomonedas",
+          "modelo 714 patrimonio extranjero",
+          "declarar criptomonedas extranjero",
+          "modelo 721 criptomonedas 2025",
+          "obligaciones fiscales crypto España",
+          "sanciones modelo 721",
+          "IRPF criptomonedas",
+          "declaración patrimonio extranjero crypto",
+          "diferencias modelo 100 721 714",
+          "cuándo presentar modelo 721",
+          "multas no presentar modelo 721 AEAT"
+        ],
+        "ogImage": "/images/illustrations/blog/declaracion-renta-acciones.webp",
+        "ogImageAlt": "Modelos 100, 721 y 714 para declarar criptomonedas en España - Guía completa sobre obligaciones fiscales ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "minimal"
+    },
+    {
+      "id": "herramientas-rastrear-criptomonedas",
+      "slugTranslations": {
+        "es": "herramientas-rastrear-criptomonedas",
+        "en": "tools-track-cryptocurrencies",
+        "ca": "eines-rastrejar-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-11-01T09:00:00Z",
+      "readingTime": 12,
+      "category": "Clasificación y Metodología",
+      "tags": [
+        "Herramientas Crypto",
+        "Portfolio Tracking",
+        "DeBank",
+        "Zerion",
+        "CoinTracking",
+        "Rastreador Wallet",
+        "Análisis Blockchain",
+        "Gestión Portfolio",
+        "Fiscalidad Crypto",
+        "AEAT",
+        "Koinly",
+        "Informes Fiscales"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/software-crypto-mejores-informe.webp",
+        "alt": "Herramientas para rastrear criptomonedas: DeBank, Zerion, CoinTracking - Guía comparativa de los mejores portfolio trackers y software fiscal crypto",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Mejores Herramientas para Rastrear Criptomonedas: DeBank, Zerion, CoinTracking | Cleriontax",
+        "metaDescription": "Guía completa de herramientas para rastrear y gestionar tu portfolio crypto. Comparativa de DeBank, Zerion, CoinTracking, Koinly y más. Descubre cuál es mejor para fiscalidad en España.",
+        "keywords": [
+          "mejor tracker crypto impuestos",
+          "rastrear wallet Ethereum Hacienda",
+          "CoinTracking España",
+          "DeBank portfolio tracker",
+          "Zerion crypto portfolio",
+          "herramientas portfolio crypto",
+          "rastreador transacciones blockchain",
+          "tracker criptomonedas España",
+          "Koinly fiscalidad España",
+          "software declaración crypto AEAT",
+          "gestión portfolio criptomonedas",
+          "herramientas fiscalidad crypto"
+        ],
+        "ogImage": "/images/illustrations/blog/software-crypto-mejores-informe.webp",
+        "ogImageAlt": "Herramientas para rastrear criptomonedas: DeBank, Zerion, CoinTracking - Guía comparativa de los mejores portfolio trackers y software fiscal crypto",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "minimal"
+    },
+    {
+      "id": "mineria-criptomonedas-fiscalidad-espana",
+      "slugTranslations": {
+        "es": "mineria-criptomonedas-fiscalidad-espana",
+        "en": "cryptocurrency-mining-taxation-spain",
+        "ca": "mineria-criptomonedes-fiscalitat-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-30T09:00:00Z",
+      "readingTime": 14,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Minería Criptomonedas",
+        "Mining Bitcoin",
+        "Fiscalidad Mining",
+        "IAE Minería",
+        "Autónomo Crypto",
+        "AEAT",
+        "Actividad Económica",
+        "Modelo 036",
+        "Modelo 130",
+        "Rendimientos Actividad",
+        "RETA",
+        "Deducciones Mining"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/patrimonio-crypto-acciones.webp",
+        "alt": "Minería de criptomonedas en España - Guía completa sobre fiscalidad, IAE y obligaciones como autónomo ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Minería de Criptomonedas en España: Fiscalidad, IAE y Obligaciones 2025 | Cleriontax",
+        "metaDescription": "Guía completa sobre la fiscalidad de la minería de criptomonedas en España. Aprende sobre el alta en IAE, RETA, modelo 130, deducciones y cómo tributar correctamente ante la AEAT.",
+        "keywords": [
+          "fiscalidad mining España",
+          "minería criptomonedas autónomo",
+          "IAE minería crypto",
+          "tributación minado bitcoin",
+          "mining criptomonedas impuestos",
+          "alta autónomo minería crypto",
+          "modelo 130 mining",
+          "deducciones minería bitcoin",
+          "RETA minero criptomonedas",
+          "actividad económica mining",
+          "declarar minería AEAT"
+        ],
+        "ogImage": "/images/illustrations/blog/patrimonio-crypto-acciones.webp",
+        "ogImageAlt": "Minería de criptomonedas en España - Guía completa sobre fiscalidad, IAE y obligaciones como autónomo ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine"
+    },
+    {
+      "id": "fiscalidad-nfts-espana-2025",
+      "slugTranslations": {
+        "es": "fiscalidad-nfts-espana-2025",
+        "en": "nft-taxation-spain-2025",
+        "ca": "fiscalitat-nfts-espanya-2025"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-10-28T09:00:00Z",
+      "readingTime": 13,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "NFTs",
+        "Fiscalidad NFT",
+        "Tokens No Fungibles",
+        "AEAT",
+        "IVA",
+        "ITP",
+        "Ganancias Patrimoniales",
+        "Rendimientos Actividad Económica",
+        "Arte Digital",
+        "Coleccionables Digitales",
+        "Modelo 100",
+        "Creadores NFT"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/modelo-impositivo-criptoactivos.webp",
+        "alt": "Fiscalidad de NFTs en España 2025 - Guía completa sobre cómo tributan los tokens no fungibles ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Fiscalidad de NFTs en España 2025: Cómo Tributan ante la AEAT | Cleriontax",
+        "metaDescription": "Guía completa sobre la fiscalidad de NFTs en España 2025. Aprende cómo declarar tus NFTs ante la AEAT, diferencias entre creadores y compradores, IVA, ITP y modelo 100.",
+        "keywords": [
+          "fiscalidad NFTs España",
+          "impuestos NFTs",
+          "cómo declarar NFTs AEAT",
+          "tributación NFTs 2025",
+          "NFT impuesto España",
+          "declarar NFT renta",
+          "IVA NFTs",
+          "ITP tokens no fungibles",
+          "ganancias patrimoniales NFT",
+          "creadores NFT fiscalidad",
+          "arte digital impuestos"
+        ],
+        "ogImage": "/images/illustrations/blog/modelo-impositivo-criptoactivos.webp",
+        "ogImageAlt": "Fiscalidad de NFTs en España 2025 - Guía completa sobre cómo tributan los tokens no fungibles ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine"
+    },
+    {
       "id": "modelo-721-criptomonedas",
       "slugTranslations": {
         "es": "modelo-721-criptomonedas",

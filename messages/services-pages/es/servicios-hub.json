@@ -1,0 +1,160 @@
+{
+  "title": "Servicios de Asesoría Fiscal y Análisis de Datos para Inversores",
+  "slug": "servicios",
+  "excerpt": "Soluciones completas en análisis de datos y fiscalidad para carteras complejas de inversión: criptomonedas, acciones y DeFi. Ingeniería de datos aplicada al cumplimiento fiscal.",
+  "hero": {
+    "h1": "Servicios de Asesoría Fiscal y Análisis de Datos",
+    "subheading": "Convertimos carteras complejas de inversión en informes fiscales precisos, trazables y listos para presentar ante la AEAT. Combinamos ingeniería de datos con experiencia fiscal para ofrecerte claridad absoluta.",
+    "cta": {
+      "label": "Solicitar evaluación gratuita",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Qué hacemos" },
+    { "id": "servicios", "label": "Nuestros servicios" },
+    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
+    { "id": "para-quien", "label": "Para quién trabajamos" },
+    { "id": "faq", "label": "Preguntas frecuentes" },
+    { "id": "cta", "label": "Hablemos de tu caso" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Qué hacemos",
+      "body": "En Cleriontax nos especializamos en dos áreas críticas para inversores con carteras complejas: análisis de datos financieros e ingeniería fiscal. Trabajamos con inversores que operan en múltiples plataformas, exchanges, wallets on-chain y protocolos DeFi, y necesitan consolidar miles de transacciones en informes fiscales verificables y compatibles con la AEAT. Nuestro enfoque combina tecnología de procesamiento de datos con conocimiento profundo de la normativa fiscal española, aplicando criterios FIFO, clasificación de operaciones y trazabilidad completa en cada informe que generamos. No somos una asesoría generalista ni un software automático: somos especialistas en resolver complejidad fiscal mediante ingeniería de datos aplicada."
+    },
+    {
+      "id": "servicios",
+      "h2": "Nuestros servicios",
+      "body": "Ofrecemos cuatro servicios especializados, diseñados para cubrir las diferentes necesidades que enfrentan los inversores con carteras de alta complejidad. Cada servicio se adapta al nivel de sofisticación de tu cartera y al grado de automatización que necesites.",
+      "subsections": [
+        {
+          "title": "Análisis de Carteras de Inversión Complejas",
+          "body": "Para inversores con múltiples fuentes de datos, cientos de miles de operaciones y activos dispersos en exchanges, brokers y blockchains. Integramos datos de 50 o más plataformas, aplicamos limpieza avanzada, reconciliación de transacciones duplicadas y generamos informes consolidados de rendimiento, balances y operaciones. Este servicio es clave si operas con DeFi, staking multichain, airdrops o cualquier estructura de inversión descentralizada. Incluye modelado de datos, validación cruzada, exportables personalizados y documentación completa para auditorías o requerimientos fiscales.",
+          "link": {
+            "label": "Ver detalles del servicio →",
+            "href": "/servicios/analisis-carteras"
+          }
+        },
+        {
+          "title": "Liquidaciones Fiscales y Modelos AEAT",
+          "body": "Preparación completa de tus obligaciones fiscales: cálculo de plusvalías y pérdidas patrimoniales con criterio FIFO, rendimientos del capital mobiliario, simulaciones de escenarios fiscales y generación de modelos 100, 721 y 714. Trabajamos contigo para optimizar tu declaración dentro del marco legal, aplicando criterios de la DGT y normativa vigente. Este servicio incluye un dossier completo con documentación de soporte, justificación de cada cálculo y revisión por asesores fiscales colegiados. Ideal si tienes operaciones complejas en criptomonedas, acciones internacionales o estructuras fiscales multinivel.",
+          "link": {
+            "label": "Ver detalles del servicio →",
+            "href": "/servicios/liquidaciones-fiscales"
+          }
+        },
+        {
+          "title": "Seguimiento en Tiempo Real de Cartera",
+          "body": "Conectamos tus wallets y cuentas de exchange a herramientas de seguimiento como CoinTracking para ofrecerte visibilidad continua de tu cartera. Recibes dashboards actualizados en tiempo real, alertas configurables, balances consolidados y comparativas históricas. Este servicio está orientado a carteras menos complejas que no requieren ingeniería de datos avanzada, pero sí necesitan monitorización constante y reportes automatizados. Si tu cartera supera cierto nivel de complejidad, te recomendaremos nuestro servicio de análisis de carteras en su lugar.",
+          "link": {
+            "label": "Ver detalles del servicio →",
+            "href": "/servicios/seguimiento-cartera"
+          }
+        },
+        {
+          "title": "Asesoría Fiscal Especializada",
+          "body": "Sesiones personalizadas 1:1 con nuestro equipo fiscal para resolver dudas específicas sobre presentación de modelos, criterios de clasificación, cumplimiento normativo y estructura de informes. No ofrecemos asesoramiento de inversión ni recomendaciones sobre qué activos comprar o vender. Nuestro enfoque es técnico y fiscal: te ayudamos a interpretar la normativa, preparar documentación ante requerimientos de la AEAT y entender cómo aplicar correctamente los criterios fiscales a tu caso concreto. Incluye revisión documental, Q&A técnico y seguimiento post-sesión.",
+          "link": {
+            "label": "Ver detalles del servicio →",
+            "href": "/servicios/asesoria-fiscal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo trabajamos",
+      "steps": [
+        {
+          "title": "Evaluación inicial gratuita",
+          "body": "Envíanos información sobre tus plataformas, volumen aproximado de transacciones y tipos de activos. Analizamos tu caso en 24-48 horas y te enviamos un diagnóstico inicial sin compromiso. Si tu caso requiere análisis avanzado de datos o preparación fiscal compleja, te recomendamos el servicio más adecuado."
+        },
+        {
+          "title": "Definición de alcance y presupuesto",
+          "body": "Recibes una propuesta con precio fijo, entregables específicos, timeline de ejecución y metodología de trabajo. No hay sorpresas ni costes ocultos. Si aceptas, comenzamos de inmediato con la recopilación y consolidación de tus datos."
+        },
+        {
+          "title": "Ejecución y validación",
+          "body": "Procesamos tus datos aplicando limpieza, reconciliación y clasificación fiscal. Cada operación se revisa manualmente cuando corresponde. Generamos informes intermedios para validación conjunta antes de entregar el informe final."
+        },
+        {
+          "title": "Entrega y soporte continuo",
+          "body": "Recibes tu informe fiscal completo, modelos listos para presentar y sesión de revisión para resolver cualquier duda. Ofrecemos soporte post-entrega durante toda la campaña de Renta y ante cualquier requerimiento de Hacienda."
+        }
+      ]
+    },
+    {
+      "id": "para-quien",
+      "h2": "Para quién trabajamos",
+      "bullets": [
+        "Inversores con carteras de criptomonedas en múltiples exchanges, wallets y protocolos DeFi que necesitan consolidar datos dispersos en un informe fiscal único y trazable.",
+        "Traders activos con miles de operaciones anuales en acciones, futuros, opciones o criptoactivos que requieren cálculos FIFO precisos y documentación auditable.",
+        "Inversores internacionales con activos en el extranjero que deben cumplir con modelos 720, 721 y 714, y necesitan asesoría técnica sobre normativa de transparencia fiscal.",
+        "Profesionales y empresas que gestionan tesorería en criptomonedas, realizan pagos cross-border o participan en protocolos DeFi como parte de su actividad económica.",
+        "Cualquier inversor con alta complejidad fiscal que haya recibido informes automáticos incorrectos de software de terceros y necesite una revisión profesional con criterio fiscal real."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Qué diferencia vuestro servicio de un software automático como Koinly o CoinTracking?",
+          "a": "Los software automáticos aplican algoritmos genéricos que no contemplan las particularidades de la normativa fiscal española, no reconcilian correctamente movimientos internos entre wallets y generan errores en clasificación de operaciones DeFi complejas. Nosotros aplicamos criterio fiscal humano, revisión manual de operaciones críticas y modelado de datos personalizado para cada caso. Nuestro enfoque combina tecnología con expertise fiscal, garantizando trazabilidad, precisión y cumplimiento normativo real."
+        },
+        {
+          "q": "¿Trabajáis solo con criptomonedas o también con acciones y otros activos?",
+          "a": "Trabajamos con cualquier tipo de activo financiero: criptomonedas, acciones, ETFs, futuros, opciones, bonos, fondos de inversión y activos alternativos. Nuestra especialización está en la complejidad del análisis de datos y la ingeniería fiscal, no en una clase de activo específica. Si tienes una cartera mixta con múltiples fuentes de datos, podemos consolidarla completa."
+        },
+        {
+          "q": "¿Cuánto tiempo tarda el proceso completo desde el primer contacto hasta la entrega del informe fiscal?",
+          "a": "Depende de la complejidad. Casos simples con pocas plataformas y volumen moderado pueden resolverse en 5-7 días laborables. Carteras complejas con más de 50 fuentes de datos, cientos de miles de transacciones y operaciones DeFi pueden requerir entre 2 y 4 semanas. En la evaluación inicial te daremos un timeline preciso basado en tu caso concreto."
+        },
+        {
+          "q": "¿Ofrecéis asesoramiento sobre qué criptomonedas comprar o cómo optimizar mi estrategia de inversión?",
+          "a": "No. No ofrecemos asesoramiento de inversión ni recomendaciones sobre qué activos comprar, vender o mantener. Nuestro servicio es exclusivamente técnico-fiscal: análisis de datos financieros, cálculo de obligaciones tributarias, preparación de modelos AEAT y asesoría sobre cumplimiento normativo. Para decisiones de inversión, te recomendamos consultar con un asesor financiero independiente."
+        },
+        {
+          "q": "¿Qué garantías ofrecéis sobre la precisión de los cálculos fiscales?",
+          "a": "Todos nuestros informes fiscales son revisados por asesores fiscales colegiados especializados en criptoactivos. Aplicamos metodología FIFO certificada, trazabilidad completa de cada cálculo y documentación de soporte auditable. Si detectamos errores post-entrega, los corregimos sin coste adicional. Cada informe incluye justificación técnica y referencias normativas aplicables."
+        },
+        {
+          "q": "¿Cómo garantizáis la confidencialidad y seguridad de mis datos financieros?",
+          "a": "Procesamos todos los datos en entornos propios y seguros, sin subirlos a servicios cloud de terceros. Aplicamos cifrado end-to-end, acceso restringido por roles y políticas estrictas de retención de datos. Firmamos acuerdos de confidencialidad con cada cliente y cumplimos con RGPD. Tus datos se eliminan de nuestros sistemas cuando finaliza el periodo de retención legal obligatorio."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "¿Hablamos de tu caso?",
+      "body": "Cuéntanos sobre tu cartera: plataformas que utilizas, volumen aproximado de operaciones, tipos de activos y cualquier particularidad fiscal que consideres relevante. Te enviamos una evaluación inicial en 24-48 horas, sin compromiso. Si tienes más de 10.000 operaciones anuales, múltiples fuentes de datos o has recibido informes automáticos con errores, podemos ayudarte.",
+      "button": {
+        "label": "Solicitar evaluación gratuita",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
+    { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" },
+    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Servicios de Asesoría Fiscal y Análisis de Datos | Cleriontax",
+    "description": "Análisis de carteras complejas, liquidaciones fiscales AEAT, seguimiento en tiempo real y asesoría especializada. Ingeniería de datos aplicada al cumplimiento fiscal.",
+    "keywords": ["asesoría fiscal criptomonedas", "análisis de datos financieros", "liquidación fiscal AEAT", "modelo 721", "modelo 714", "FIFO criptoactivos", "DeFi fiscalidad", "informes fiscales verificables"],
+    "canonical": "https://cleriontax.com/servicios"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Servicios de Asesoría Fiscal y Análisis de Datos",
+    "serviceType": "Asesoría Fiscal y Análisis de Datos Financieros",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "España",
+    "description": "Servicios especializados en análisis de datos financieros y asesoría fiscal para inversores con carteras complejas en criptomonedas, acciones y activos digitales. Incluye análisis de carteras, liquidaciones fiscales, seguimiento en tiempo real y asesoría especializada."
+  }
+}

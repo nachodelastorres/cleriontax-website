@@ -35,7 +35,16 @@
       "Bash(rm:*)",
       "Bash(awk:*)",
       "WebSearch",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "Bash(for file in messages/blog-posts/{es,en,ca}/fiscalidad-nfts-espana-2025.json)",
+      "Bash(do echo \"Checking: $file\")",
+      "Bash(done)",
+      "Bash(for file in messages/blog-posts/{es,en,ca}/mineria-criptomonedas-fiscalidad-espana.json)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then echo \"Checking: $file\")",
+      "Bash(else echo \"File not found: $file\")",
+      "Bash(fi)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": []

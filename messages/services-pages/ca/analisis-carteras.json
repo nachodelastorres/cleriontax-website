@@ -1,0 +1,153 @@
+{
+  "title": "Anàlisi de Carteres d'Inversió Complexes",
+  "slug": "analisis-carteras",
+  "excerpt": "Integració, neteja i consolidació de dades des de totes les fonts necessàries: exchanges, brokers, wallets i protocols DeFi. Convertim carteres disperses en informes unificats, traçables i auditables sense límit de complexitat.",
+  "hero": {
+    "h1": "Anàlisi de Carteres d'Inversió Complexes",
+    "subheading": "Integrem dades de totes les fonts necessàries, processem operacions d'alta complexitat i generem informes consolidats amb traçabilitat completa. Ideal per a carteres amb operacions DeFi, staking multichain, airdrops i estructures descentralitzades.",
+    "cta": {
+      "label": "Sol·licitar avaluació gratuïta",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducció" },
+    { "id": "que-incluye", "label": "Què inclou" },
+    { "id": "como-trabajamos", "label": "Com treballem" },
+    { "id": "por-que-elegirnos", "label": "Per què escollir-nos" },
+    { "id": "casos-uso", "label": "Casos d'ús" },
+    { "id": "faq", "label": "Preguntes freqüents" },
+    { "id": "cta", "label": "Sol·licitar avaluació" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducció",
+      "body": "L'anàlisi de carteres complexes és el nostre servei més tècnic i especialitzat. Està dissenyat per a inversors que operen en múltiples plataformes simultàniament, gestionen operacions d'alta complexitat i necessiten consolidar dades disperses en exchanges, brokers, wallets on-chain i protocols DeFi. Apliquem enginyeria de dades avançada per integrar fonts heterogènies, detectar duplicats, reconciliar moviments interns i generar informes consolidats amb traçabilitat completa. Aquest servei no és fiscalització directa: és el pas previ imprescindible quan les teves dades són massa complexes per a eines automàtiques i necessites una base sòlida abans de preparar les teves obligacions fiscals. Si la teva cartera presenta alta complexitat operativa, múltiples ecosistemes blockchain o estructures d'inversió sofisticades, aquest és el servei que necessites. Parlem?"
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Què inclou el servei",
+      "bullets": [
+        "<strong>Integració multi-font:</strong> connectem i consolidem dades d'exchanges centralitzats, brokers tradicionals, wallets on-chain, protocols DeFi, nodes propis, APIs de tercers i fitxers CSV manuals.",
+        "<strong>Normalització i neteja de dades:</strong> estandarditzem formats heterogenis, corregim errors de timestamp, unifiquem nomenclatures d'actius i eliminem registres corruptes o incomplets.",
+        "<strong>Reconciliació avançada:</strong> detectem i eliminem transaccions duplicades, identifiquem moviments interns entre les teves pròpies wallets i exchanges, i reconstruïm cadenes d'operacions fragmentades.",
+        "<strong>Classificació operativa:</strong> categoritzem cada transacció segons la seva naturalesa (trading, staking, airdrops, fees, gas, bridging, wrapping, swaps, liquidity pools) per facilitar anàlisi posterior.",
+        "<strong>Reporting consolidat:</strong> generem informes de rendiment global, balances per actiu i plataforma, anàlisi de staking rewards, tracking d'airdrops, desglossament de fees i qualsevol vista personalitzada que necessitis.",
+        "<strong>Lliurables complets:</strong> datasets nets en CSV/Excel/JSON llests per a auditories, documentació tècnica de metodologia aplicada, traçabilitat d'ajustos i sessió de revisió per resoldre dubtes."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Com treballem",
+      "steps": [
+        {
+          "title": "Ingestió i mapatge de fonts",
+          "body": "Rebem els teus fitxers CSV, credencials API de només lectura o adreces de wallets on-chain. Mapegem cada font de dades, identifiquem formats, validem integritat i detectem possibles inconsistències estructurals abans de processar."
+        },
+        {
+          "title": "Modelatge i normalització",
+          "body": "Apliquem transformacions ETL per unificar dades heterogenis en un model comú. Estandarditzem timestamps a UTC, normalitzem símbols d'actius, convertim unitats i corregim errors d'encoding o format."
+        },
+        {
+          "title": "Validació creuada i reconciliació",
+          "body": "Creuem transaccions entre plataformes per detectar duplicats i moviments interns. Validem balances finals contra saldos reals en exchanges i blockchains. Identifiquem discrepàncies i les documentem per revisió conjunta."
+        },
+        {
+          "title": "Generació d'informes i lliurament",
+          "body": "Produïm informes consolidats amb vistes per actiu, plataforma, tipus d'operació i període temporal. Lliurem datasets nets, documentació tècnica i sessió de revisió per resoldre dubtes sobre metodologia aplicada."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Per què escollir-nos",
+      "bullets": [
+        "<strong>Experiència en alta complexitat:</strong> hem processat carteres amb nombroses fonts de dades i volums massius de transaccions anuals, incloent operacions DeFi complexes en Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis i múltiples xarxes addicionals.",
+        "<strong>Traçabilitat total:</strong> cada ajust, eliminació de duplicats o reclassificació queda documentada amb justificació tècnica i possibilitat d'auditoria posterior.",
+        "<strong>Sense dependència de programari de tercers:</strong> no subcontratem processament a eines automàtiques. Tota l'anàlisi es realitza amb infraestructura pròpia i criteri humà expert.",
+        "<strong>Compatibilitat fiscal:</strong> els informes generats són directament utilitzables per preparar liquidacions fiscals, auditories internes o requeriments d'Hisenda.",
+        "<strong>Suport tècnic continu:</strong> incloem seguiment post-lliurament per resoldre dubtes sobre dades consolidadas o realitzar ajustos si detectes discrepàncies."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos d'ús",
+      "items": [
+        {
+          "title": "Inversor DeFi amb operacions en 15 blockchains",
+          "body": "Client amb posicions actives en Uniswap, Aave, Curve, PancakeSwap, Raydium, Osmosis i 20 protocols més. Més de 200.000 transaccions on-chain en 3 anys. Necessitava consolidar tota la seva activitat DeFi, calcular rewards reals de staking i liquidity pools, i preparar base de dades per liquidació fiscal. Integrem dades de subgraphs, APIs de protocols, nodes propis i exploradors blockchain. Resultat: informe consolidat amb traçabilitat completa i dataset llest per fiscalització."
+        },
+        {
+          "title": "Trader institucional amb 50+ comptes d'exchange",
+          "body": "Fons d'inversió amb comptes en Binance, Kraken, Coinbase, Bitfinex, OKX, Bybit i 45 exchanges més. Volum de 300.000 operacions anuals entre spot, futurs i opcions. Requeria consolidació global per reporting intern i auditories trimestrals. Processem APIs de tots els exchanges, reconciliem transferències inter-exchange i generem vistes consolidadas per estratègia de trading. Lliurem dashboards personalitzats i datasets auditables."
+        },
+        {
+          "title": "Early adopter amb històric des de 2013",
+          "body": "Inversor amb primeres compres de Bitcoin el 2013, operacions en exchanges ja desapareguts, wallets antigues sense registres complets i migració entre múltiples carteres hardware. Necessitava reconstruir històric complet per complir amb model 721 i preparar declaració de Renda. Apliquem tècniques de forensics blockchain, recuperem dades d'exchanges tancats mitjançant backups del client i reconstruïm històric complet amb traçabilitat. Resultat: base de dades històrica verificable per a tota la seva vida fiscal en crypto."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Quins formats de dades suporteu?",
+          "a": "Suportem CSV d'exchanges (Binance, Kraken, Coinbase, etc.), APIs de només lectura, adreces de wallets on-chain per extracció via exploradors o nodes, dades de subgraphs de The Graph, fitxers de brokers tradicionals i qualsevol font estructurada que contingui informació de transaccions. Si tens un format propietari o legacy, podem adaptar-nos prèvia avaluació."
+        },
+        {
+          "q": "Quant de temps triga l'anàlisi d'una cartera complexa?",
+          "a": "Depèn del volum i complexitat del teu cas específic. Carteres amb complexitat moderada solen processar-se en 1-2 setmanes. Carteres amb alta complexitat, múltiples fonts i volums massius poden requerir entre 3 i 5 setmanes. En l'avaluació inicial et donarem un timeline precís basat en les característiques de la teva cartera."
+        },
+        {
+          "q": "Què lliureu exactament al finalitzar el servei?",
+          "a": "Lliurem datasets nets en format CSV/Excel/JSON amb totes les teves transaccions consolidadas i classificades, informe d'anàlisi amb mètriques clau (rendiment, balances, fees, staking rewards), documentació tècnica de metodologia aplicada, traçabilitat d'ajustos realitzats i sessió de revisió online per resoldre dubtes. Opcionalment, podem generar dashboards interactius si ho requereixes."
+        },
+        {
+          "q": "Aquest servei inclou preparació fiscal o només anàlisi de dades?",
+          "a": "Aquest servei és exclusivament anàlisi de dades. No inclou càlculs fiscals, models AEAT ni assessorament tributari. El seu objectiu és consolidar i netejar les teves dades perquè tinguis una base sòlida. Si necessites fiscalització posterior, oferim el nostre servei de Liquidacions Fiscals com a complement natural després de completar l'anàlisi de cartera."
+        },
+        {
+          "q": "Podeu integrar dades de protocols DeFi exòtics o poc coneguts?",
+          "a": "Sí. Treballem amb qualsevol protocol que tingui dades verificables on-chain o mitjançant APIs. Hem integrat protocols en Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis, Avalanche, Arbitrum, Optimism i altres xarxes. Si el protocol té un subgraph a The Graph, contracte verificat o API pública, podem extreure les dades. En casos molt específics, podem desplegar nodes propis si és necessari."
+        },
+        {
+          "q": "Quines garanties oferiu sobre la integritat de les dades processades?",
+          "a": "Apliquem validació creuada entre fonts, verifiquem balances finals contra saldos reals en blockchain i exchanges, documentem cada transformació aplicada i oferim traçabilitat completa. Si detectes discrepàncies post-lliurament, les revisem i corregeix sense cost addicional. Tots els datasets originals es conserven íntegres durant el procés."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Parlem?",
+      "body": "Si tens una cartera amb alta complexitat operativa, operes en múltiples blockchains o has rebut informes automàtics amb errors de reconciliació, podem ajudar-te. Explica'ns sobre la teva cartera: nombre de plataformes, volum de transaccions, tipus d'actius i qualsevol particularitat tècnica. T'enviam una avaluació inicial en 24-48 hores.",
+      "button": {
+        "label": "Sol·licitar avaluació gratuïta",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Tornar a tots els serveis", "href": "/servicios" },
+    { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" },
+    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Anàlisi de Carteres d'Inversió Complexes | Cleriontax",
+    "description": "Integració i consolidació de dades des de múltiples exchanges, wallets i protocols DeFi. Processament d'operacions complexes amb traçabilitat completa.",
+    "keywords": ["anàlisi carteres crypto", "consolidació dades exchanges", "reconciliació transaccions DeFi", "enginyeria dades blockchain", "informes carteres complexes", "traçabilitat fiscal crypto"],
+    "canonical": "https://cleriontax.com/servicios/analisis-carteras"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Anàlisi de Carteres d'Inversió Complexes",
+    "serviceType": "Anàlisi de Dades Financeres i Consolidació de Carteres",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Espanya",
+    "description": "Servei especialitzat en integració, neteja i consolidació de dades des de múltiples exchanges, brokers, wallets i protocols DeFi. Processament de carteres amb alta complexitat operativa i traçabilitat completa."
+  }
+}
+

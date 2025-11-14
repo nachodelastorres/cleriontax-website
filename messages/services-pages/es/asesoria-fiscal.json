@@ -1,0 +1,152 @@
+{
+  "title": "Asesoría Fiscal Especializada en Criptoactivos",
+  "slug": "asesoria-fiscal",
+  "excerpt": "Sesiones personalizadas 1:1 para resolver dudas fiscales sobre criptomonedas. Criterios de presentación, cumplimiento normativo y revisión documental. Sin asesoramiento de inversión.",
+  "hero": {
+    "h1": "Asesoría Fiscal Especializada en Criptoactivos",
+    "subheading": "Sesiones técnicas con nuestro equipo fiscal para resolver dudas sobre modelos AEAT, criterios de clasificación, cumplimiento normativo y estructura de informes. Enfoque exclusivamente técnico-fiscal. No ofrecemos asesoramiento de inversión.",
+    "cta": {
+      "label": "Solicitar evaluación gratuita",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducción" },
+    { "id": "que-incluye", "label": "Qué incluye" },
+    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
+    { "id": "por-que-elegirnos", "label": "Por qué elegirnos" },
+    { "id": "casos-uso", "label": "Casos de uso" },
+    { "id": "faq", "label": "Preguntas frecuentes" },
+    { "id": "cta", "label": "Solicitar evaluación" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducción",
+      "body": "La asesoría fiscal especializada es un servicio de consultoría técnica para inversores que necesitan resolver dudas concretas sobre fiscalidad de criptoactivos sin requerir un servicio completo de análisis o liquidación. Trabajamos en formato de sesiones personalizadas 1:1 donde revisamos tu caso, respondemos preguntas específicas sobre normativa aplicable, criterios de presentación de modelos AEAT, interpretación de consultas vinculantes de la DGT y cualquier aspecto técnico-fiscal relacionado con criptomonedas, acciones o activos digitales. Es importante destacar que NO ofrecemos asesoramiento de inversión: no te diremos qué activos comprar, vender o cuándo hacerlo. Nuestro enfoque es exclusivamente técnico y fiscal: cómo declarar correctamente lo que ya has hecho, cómo interpretar la normativa aplicable a tu caso y cómo preparar documentación ante requerimientos de Hacienda. Este servicio es ideal si ya tienes conocimientos fiscales básicos pero necesitas validación experta, o si has recibido un requerimiento de la AEAT y necesitas ayuda técnica para responder. ¿Tienes dudas fiscales específicas sobre tus criptoactivos? Hablemos."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Qué incluye el servicio",
+      "bullets": [
+        "<strong>Sesiones 1:1 online:</strong> videollamadas privadas con duración típica de 60-90 minutos, adaptadas a la complejidad de tu consulta. Puedes reservar sesiones individuales o packs de varias sesiones si tu caso lo requiere.",
+        "<strong>Revisión documental previa:</strong> antes de cada sesión, revisamos documentación que nos aportes (informes automáticos, borradores de modelos, comunicaciones de la AEAT) para preparar la sesión de forma eficiente.",
+        "<strong>Q&A técnico especializado:</strong> respondemos preguntas sobre interpretación de normativa fiscal española aplicable a criptoactivos, criterios DGT, clasificación de operaciones DeFi, diferencias entre rendimientos y ganancias patrimoniales, y cualquier duda técnica sobre cumplimiento.",
+        "<strong>Revisión de criterios de presentación:</strong> validamos si tus modelos AEAT están correctamente cumplimentados, revisamos clasificación de operaciones y confirmamos coherencia fiscal de tu declaración antes de presentar.",
+        "<strong>Orientación sobre requerimientos de Hacienda:</strong> si has recibido un requerimiento de la AEAT, te ayudamos a interpretar qué solicitan, qué documentación aportar y cómo estructurar tu respuesta de forma técnicamente sólida.",
+        "<strong>Seguimiento y acceso prioritario:</strong> después de cada sesión, recibes resumen escrito con puntos clave tratados, referencias normativas mencionadas y próximos pasos recomendados. Acceso prioritario a sesiones adicionales si necesitas seguimiento."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo trabajamos",
+      "steps": [
+        {
+          "title": "Solicitud inicial y evaluación de alcance",
+          "body": "Nos envías un resumen de tu consulta: qué dudas tienes, qué documentación dispones, si has recibido algún requerimiento y qué necesitas resolver. Evaluamos si tu caso es adecuado para asesoría puntual o si requiere un servicio más completo (análisis o liquidación). Te confirmamos viabilidad y precio."
+        },
+        {
+          "title": "Preparación de la sesión",
+          "body": "Nos envías documentación relevante: informes automáticos que hayas generado, borradores de modelos, comunicaciones de la AEAT o cualquier documento que ayude a contextualizar tu consulta. Revisamos todo previamente para maximizar eficiencia de la sesión."
+        },
+        {
+          "title": "Sesión de asesoramiento técnico",
+          "body": "Realizamos videollamada privada donde abordamos tus dudas de forma estructurada. Explicamos normativa aplicable, criterios DGT relevantes, interpretación de casos similares y recomendaciones técnicas para tu situación específica. Sesión 100% enfocada en aspectos fiscales, no en decisiones de inversión."
+        },
+        {
+          "title": "Entrega de resumen y seguimiento",
+          "body": "Tras la sesión, recibes documento resumen con puntos clave, referencias normativas citadas y próximos pasos. Si necesitas sesiones adicionales de seguimiento (ej. tras cambios normativos o nuevos requerimientos), tienes acceso prioritario a nueva reserva."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Por qué elegirnos",
+      "bullets": [
+        "<strong>Especialización real en criptoactivos:</strong> seguimos de cerca todas las consultas vinculantes de la DGT sobre cripto, criterios de la AEAT y jurisprudencia aplicable. No somos asesores generalistas que improvisan: es nuestra especialización principal.",
+        "<strong>Enfoque técnico, no comercial:</strong> no te venderemos servicios que no necesitas. Si tu consulta es puntual y puede resolverse en una sesión, te lo diremos. Si necesitas un servicio más completo, te lo recomendaremos con transparencia.",
+        "<strong>Experiencia en requerimientos de Hacienda:</strong> hemos ayudado a decenas de clientes a responder requerimientos de la AEAT sobre criptoactivos. Sabemos qué documentación solicitan, cómo estructurar respuestas y qué errores evitar.",
+        "<strong>Sin jerga innecesaria:</strong> explicamos conceptos fiscales complejos de forma comprensible. Nuestro objetivo es que entiendas la normativa aplicable a tu caso, no impresionarte con tecnicismos inútiles.",
+        "<strong>Límites claros sobre alcance:</strong> te decimos claramente qué podemos y qué no podemos hacer. No ofrecemos asesoramiento de inversión, no presentamos modelos por ti (salvo coordinación expresa) y no garantizamos resultados ante Hacienda (nadie puede garantizarlo). Ofrecemos criterio técnico experto, nada más ni nada menos."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos de uso",
+      "items": [
+        {
+          "title": "Validación de informe automático antes de presentar",
+          "body": "Cliente había generado informe fiscal con Koinly, pero tenía dudas sobre si la clasificación de operaciones DeFi era correcta según criterios españoles. Envió el informe para revisión previa. En sesión de 90 minutos, identificamos varios errores: swaps clasificados como no imponibles (error), staking rewards sin declarar como rendimientos, y duplicados por transferencias internas. Recomendamos correcciones específicas y criterios DGT aplicables. Cliente corrigió informe y presentó con confianza."
+        },
+        {
+          "title": "Respuesta a requerimiento de la AEAT",
+          "body": "Cliente recibió requerimiento de Hacienda solicitando justificación de operaciones en criptomonedas declaradas en IRPF. Necesitaba entender qué documentación aportar y cómo estructurar respuesta. En sesión, revisamos el requerimiento, identificamos qué operaciones cuestionaban, preparamos estructura de respuesta con detalle transaccional, justificación de valoraciones y referencias normativas. Cliente aportó documentación según guía proporcionada. Requerimiento cerrado sin incidencias."
+        },
+        {
+          "title": "Duda sobre obligación de presentar modelo 721",
+          "body": "Cliente con criptomonedas en exchanges extranjeros, dudaba si debía presentar modelo 721 o no aplicaba a su caso. Sesión de 60 minutos donde explicamos umbrales del modelo 721, qué se considera saldo en el extranjero según AEAT, diferencias con modelo 714, y simulamos su caso concreto. Conclusión: sí debía presentar 721. Le orientamos sobre cómo cumplimentarlo correctamente y plazos aplicables."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Qué tipo de consultas podéis resolver en asesoría?",
+          "a": "Cualquier duda técnica sobre fiscalidad de criptoactivos en España: interpretación de normativa AEAT/DGT, clasificación de operaciones, criterios de presentación de modelos, diferencias entre rendimientos y ganancias patrimoniales, obligaciones informativas (721, 714), respuesta a requerimientos de Hacienda, revisión de informes automáticos y validación de criterios fiscales aplicados. No resolvemos dudas sobre qué activos comprar o estrategias de inversión."
+        },
+        {
+          "q": "¿Ofrecéis asesoramiento sobre qué criptomonedas comprar o cuándo vender?",
+          "a": "No. No ofrecemos asesoramiento de inversión bajo ningún concepto. Nuestro servicio es exclusivamente técnico-fiscal: cómo declarar correctamente lo que ya has hecho, cómo interpretar normativa aplicable y cómo cumplir con tus obligaciones tributarias. Para decisiones de inversión, consulta con un asesor financiero independiente."
+        },
+        {
+          "q": "¿Presentáis vosotros los modelos ante la AEAT o solo asesoráis?",
+          "a": "Por defecto, solo asesoramos. Tú presentas los modelos mediante tu certificado digital o Cl@ve PIN. Si necesitas que un asesor fiscal colegiado presente por ti con representación, podemos coordinarlo como servicio adicional específico, pero requiere trámites de apoderamiento y tiene coste separado."
+        },
+        {
+          "q": "¿Cuánto dura una sesión típica de asesoría?",
+          "a": "Entre 60 y 90 minutos según complejidad de tu consulta. Consultas puntuales simples pueden resolverse en 60 minutos. Casos con múltiples dudas, revisión documental extensa o requerimientos de Hacienda suelen requerir 90 minutos o más. Te indicamos duración estimada tras evaluar tu caso inicial."
+        },
+        {
+          "q": "¿Puedo contratar varias sesiones si tengo un caso complejo?",
+          "a": "Sí. Ofrecemos packs de sesiones con descuento si prevés necesitar seguimiento continuo. También puedes reservar sesiones individuales según necesidad. Si tu caso es muy complejo y requiere análisis profundo de datos o preparación fiscal completa, probablemente te convenga más nuestro servicio de Liquidaciones Fiscales en lugar de múltiples sesiones de asesoría."
+        },
+        {
+          "q": "¿Qué garantías ofrecéis sobre las recomendaciones fiscales que dais?",
+          "a": "Ofrecemos criterio técnico experto basado en normativa vigente, consultas vinculantes DGT y jurisprudencia aplicable. Sin embargo, la interpretación fiscal siempre tiene componente de criterio y puede evolucionar con cambios normativos o nuevas resoluciones. No podemos garantizar que Hacienda acepte siempre nuestras interpretaciones, pero sí garantizamos que aplicamos el mejor criterio técnico disponible en cada momento y te justificamos normativamente cada recomendación."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "¿Hablamos?",
+      "body": "Si tienes dudas fiscales específicas sobre criptoactivos, necesitas validar un informe antes de presentar o has recibido un requerimiento de Hacienda, podemos ayudarte. Cuéntanos tu consulta de forma resumida: qué necesitas resolver, qué documentación tienes y qué plazo manejas. Te confirmamos si es adecuado para asesoría puntual o si necesitas otro servicio, y te enviamos presupuesto en 24-48 horas.",
+      "button": {
+        "label": "Solicitar evaluación gratuita",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Volver a todos los servicios", "href": "/servicios" },
+    { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
+    { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" }
+  ],
+  "seo": {
+    "title": "Asesoría Fiscal Especializada en Criptoactivos | Cleriontax",
+    "description": "Sesiones técnicas 1:1 sobre fiscalidad crypto. Dudas sobre modelos AEAT, requerimientos de Hacienda y cumplimiento normativo. Sin asesoramiento de inversión.",
+    "keywords": ["asesoría fiscal criptomonedas", "consultoría fiscal crypto", "requerimiento AEAT cripto", "modelo 721 asesoría", "DGT criptoactivos", "cumplimiento fiscal crypto"],
+    "canonical": "https://cleriontax.com/servicios/asesoria-fiscal"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Asesoría Fiscal Especializada en Criptoactivos",
+    "serviceType": "Consultoría Fiscal Técnica para Inversores en Criptomonedas",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "España",
+    "description": "Servicio de asesoría fiscal técnica especializada en criptoactivos mediante sesiones personalizadas 1:1. Resolución de dudas sobre normativa AEAT, modelos fiscales, requerimientos de Hacienda y cumplimiento tributario. Sin asesoramiento de inversión."
+  }
+}

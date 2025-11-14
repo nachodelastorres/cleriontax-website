@@ -1,0 +1,153 @@
+{
+  "title": "Liquidacions Fiscals i Models AEAT",
+  "slug": "liquidaciones-fiscales",
+  "excerpt": "Càlcul de plusvàlues, pèrdues i rendiments amb criteri FIFO. Preparació de models 100, 721 i 714 amb documentació completa i revisió per assessors fiscals col·legiats.",
+  "hero": {
+    "h1": "Liquidacions Fiscals i Models AEAT",
+    "subheading": "Calculem les teves obligacions fiscals amb criteri FIFO, apliquem normativa DGT vigent i generem models llests per presentar. Inclou simulacions d'escenaris, documentació de suport i revisió per assessors fiscals col·legiats.",
+    "cta": {
+      "label": "Sol·licitar avaluació gratuïta",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducció" },
+    { "id": "que-incluye", "label": "Què inclou" },
+    { "id": "como-trabajamos", "label": "Com treballem" },
+    { "id": "por-que-elegirnos", "label": "Per què escollir-nos" },
+    { "id": "casos-uso", "label": "Casos d'ús" },
+    { "id": "faq", "label": "Preguntes freqüents" },
+    { "id": "cta", "label": "Sol·licitar avaluació" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducció",
+      "body": "La preparació de liquidacions fiscals és el pas final després de consolidar i analitzar les teves dades. Aquest servei està dissenyat per a inversors que necessiten complir amb les seves obligacions tributàries aplicant correctament els criteris de l'AEAT i la DGT. Calculem plusvàlues i pèrdues patrimonials mitjançant criteri FIFO, classifiquem rendiments del capital mobiliari (staking, lending, airdrops), preparem models 100, 721 i 714, i generem documentació de suport auditable per a qualsevol requeriment d'Hisenda. No oferim assessorament d'inversió ni recomanacions sobre quins actius comprar o vendre: el nostre enfocament és exclusivament tècnic-fiscal. Treballem amb tu per optimitzar la teva declaració dins del marc legal, aplicant totes les compensacions de pèrdues permeses i simulant escenaris alternatius quan correspongui. Si tens operacions complexes en criptomonedes, accions internacionals o estructures fiscals multinivell, aquest és el servei que necessites. Tens dubtes sobre com declarar els teus criptoactius aquest any? Parlem."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Què inclou el servei",
+      "bullets": [
+        "<strong>Càlcul FIFO de plusvàlues i pèrdues:</strong> apliquem el criteri FIFO (First In, First Out) per determinar el cost d'adquisició de cada venda o permuta, calculant guanys i pèrdues amb precisió decimal.",
+        "<strong>Classificació de rendiments:</strong> identifiquem i quantifiquem rewards de staking, interessos de lending, airdrops, hard forks i qualsevol rendiment que tributi com capital mobiliari segons normativa vigent.",
+        "<strong>Preparació de models AEAT:</strong> generem model 100 (IRPF) amb caselles correctament complimentades, model 721 (criptomonedes a l'estranger) si superes llindars, i model 714 (patrimoni) quan correspongui.",
+        "<strong>Simulacions d'escenaris fiscals:</strong> calculem diferents escenaris de declaració (ex. venda escalonada vs venda única, compensació de pèrdues, imputació temporal) per identificar l'estratègia fiscal més eficient dins del marc legal.",
+        "<strong>Revisió professional i documentació:</strong> tots els càlculs són revisats per assessors fiscals col·legiats especialitzats en criptoactius. Lliurem dossier complet amb detall de cada operació, justificació de càlculs i referències normatives.",
+        "<strong>Suport i sessió de revisió:</strong> incloem sessió online per revisar els models generats, explicar criteris aplicats i resoldre qualsevol dubte sobre la teva declaració. Traçabilitat total per a auditories."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Com treballem",
+      "steps": [
+        {
+          "title": "Consolidació de dades fiscals",
+          "body": "Rebem les teves dades consolidadas (si has usat el nostre servei d'anàlisi de carteres) o processem els teus fitxers des de zero. Validem integritat, identifiquem operacions fiscalment rellevants i classifiquem segons naturalesa tributària."
+        },
+        {
+          "title": "Aplicació de regles fiscals FIFO",
+          "body": "Calculem el cost d'adquisició de cada venda mitjançant FIFO, determinem dates d'adquisició i transmissió, classifiquem entre guanys a curt/llarg termini si aplica i generem detall transaccional complet. Apliquem criteris DGT actualitzats."
+        },
+        {
+          "title": "Simulació d'escenaris i optimització",
+          "body": "Avaluem diferents estratègies de declaració, simulem impacte fiscal de compensacions de pèrdues, analitzem imputació temporal d'operacions i et presentem opcions amb pros/contras fiscals de cada escenari."
+        },
+        {
+          "title": "Generació de models i dossier fiscal",
+          "body": "Produïm models AEAT llests per importar en Renta Web o presentar mitjançant certificat digital. Generem dossier fiscal amb annexos, justificacions, càlculs detallats i referències normatives. Revisió final per assessor col·legiat abans de lliurament."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Per què escollir-nos",
+      "bullets": [
+        "<strong>Criteri fiscal real, no automatitzat:</strong> cada operació és revisada amb criteri fiscal humà. No confiem cegament en algoritmes automàtics que generen errors en casos complexos.",
+        "<strong>Coneixement profund de normativa crypto:</strong> seguim de prop consultes vinculants de la DGT, criteris de l'AEAT i jurisprudència aplicable a criptoactius. Apliquem interpretació normativa actualitzada.",
+        "<strong>Traçabilitat i auditabilitat total:</strong> cada càlcul inclou justificació tècnica, referència a operacions origen i possibilitat d'auditoria completa. Documentació llesta per requeriments d'Hisenda.",
+        "<strong>Simulacions fiscals estratègiques:</strong> no ens limitem a calcular. Analitzem escenaris alternatius, identifiquem oportunitats d'optimització legal i t'ajudem a prendre decisions informades.",
+        "<strong>Revisió per professionals col·legiats:</strong> tots els informes fiscals són validats per assessors fiscals col·legiats especialitzats en criptoactius abans de lliurament. Garantia de qualitat professional."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos d'ús",
+      "items": [
+        {
+          "title": "Trader actiu amb milers d'operacions FIFO",
+          "body": "Client amb 15.000 operacions de compra/venda de criptomonedes el 2024, múltiples exchanges, operacions en diferents anys fiscals. Necessitava càlcul FIFO precís, compensació de pèrdues d'exercicis anteriors i optimització d'imputació temporal. Processem totes les operacions, vam aplicar FIFO històric des de primeres compres, vam simular escenaris de declaració i vam generar model 100 amb annexos justificatius. Resultat: declaració optimitzada legalment amb estalvi fiscal significatiu per correcta aplicació de compensacions."
+        },
+        {
+          "title": "Inversor DeFi amb rendiments complexos",
+          "body": "Client amb posicions de staking en Ethereum 2.0, yield farming en Curve i Aave, liquidity pools en Uniswap i airdrops diversos. Necessitava classificar correctament cada tipus de rendiment segons normativa fiscal espanyola. Vam identificar rendiments de capital mobiliari (staking rewards), guanys patrimonials (swaps de tokens), variacions de valor en LP tokens i airdrops. Vam generar model 100 amb correcta imputació en cada casella i dossier justificatiu. Resultat: declaració fiscalment coherent amb criteris DGT aplicables a DeFi."
+        },
+        {
+          "title": "Inversor internacional amb obligacions 721 i 714",
+          "body": "Client amb criptomonedes en exchanges estrangers per valor superior a 50.000€, necessitava complir amb model 721. També tenia patrimoni total superior a llindars de model 714. Processem balances a 31 de desembre, vam valorar actius segons criteris AEAT, vam preparar model 721 amb detall de saldos per exchange i model 714 amb valoració patrimonial correcta. Vam incloure simulació de possibles sancions per no declarar i justificació de valoració aplicada. Resultat: compliment complet d'obligacions informatives internacionals."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Quina diferència hi ha entre els models 100, 721 i 714?",
+          "a": "Model 100 és la declaració de la renda (IRPF), on declares totes les teves guanys, pèrdues i rendiments de l'exercici fiscal. Model 721 és informatiu: declares saldos de criptomonedes a l'estranger si superen 50.000€ a 31 de desembre. Model 714 també és informatiu: declares el teu patrimoni total si superes certs llindars. Cada un té terminis i requisits diferents. Et assessorem sobre quins apliquen al teu cas."
+        },
+        {
+          "q": "Quina documentació necessito aportar per preparar la meva liquidació fiscal?",
+          "a": "Necessitem fitxers CSV de tots els teus exchanges amb històric complet d'operacions, adreces de wallets on-chain per extreure transaccions, informació de compres inicials si tens actius des de fa anys, i qualsevol document que justifiqui operacions especials (airdrops, hard forks, ingressos per mineria). Si ja tens dades consolidadas del nostre servei d'anàlisi de carteres, és suficient amb això."
+        },
+        {
+          "q": "Com apliqueu el criteri FIFO si tinc operacions des de 2015?",
+          "a": "Reconstruïm el teu històric complet des de la primera compra documentada. Apliquem FIFO estricte: les primeres unitats comprades són les primeres venudes. Si tens gaps en els teus registres històrics, apliquem mètodes conservadors de valoració i documentem supòsits aplicats. En casos d'exchanges tancats o wallets antigues sense registres, treballem amb la informació disponible i justifiquem metodologia."
+        },
+        {
+          "q": "Puc optimitzar fiscalment la meva declaració de forma legal?",
+          "a": "Sí. Dins del marc legal, existeixen estratègies d'optimització: compensació de pèrdues patrimonials amb guanys, imputació temporal d'operacions en exercicis diferents si és possible, aprofitament de deduccions aplicables, i planificació de vendes escalonades per evitar salts de tram. Et simulem escenaris i expliquem pros/contras de cada opció. No oferim elusió fiscal ni estratègies il·legals."
+        },
+        {
+          "q": "Què passa si l'AEAT em requereix després de presentar la meva declaració?",
+          "a": "Tots els nostres informes inclouen documentació de suport completa i traçabilitat total de càlculs. Si reps un requeriment, t'ajudem a preparar la resposta aportant justificació tècnica, detall d'operacions i referències normatives aplicades. Oferim suport post-presentació durant tota la campanya de Renda sense cost addicional si el requeriment es refereix a dades que processem."
+        },
+        {
+          "q": "Aquest servei inclou la presentació efectiva dels models davant l'AEAT?",
+          "a": "No. Preparem tots els models llests per presentar, però la presentació efectiva mitjançant certificat digital o Cl@ve PIN la realitzes tu o el teu assessor fiscal de confiança. Et lliurem fitxers importables en Renta Web, PDFs llests per signar i guia pas a pas de presentació. Si necessites que un assessor fiscal presenti per tu, podem coordinar-ho mitjançant el nostre servei d'assessoria."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Parlem?",
+      "body": "Si tens operacions complexes en criptomonedes, necessites preparar el teu IRPF o complir amb models 721/714, podem ajudar-te. Explica'ns sobre el teu cas: volum d'operacions, tipus d'actius, si tens pèrdues d'exercicis anteriors i qualsevol particularitat fiscal rellevant. T'enviam una avaluació inicial en 24-48 hores amb pressupost detallat.",
+      "button": {
+        "label": "Sol·licitar avaluació gratuïta",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Tornar a tots els serveis", "href": "/servicios" },
+    { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
+    { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" },
+    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Liquidacions Fiscals Criptomonedes | Model 100, 721, 714 | Cleriontax",
+    "description": "Càlcul FIFO de plusvàlues, preparació de models AEAT i simulacions fiscals. Revisió per assessors col·legiats. Cumpleix amb Hisenda sense errors.",
+    "keywords": ["liquidació fiscal criptomonedes", "model 100 crypto", "model 721 AEAT", "model 714 patrimoni", "FIFO criptoactius", "declaració renda crypto", "assessoria fiscal AEAT"],
+    "canonical": "https://cleriontax.com/servicios/liquidaciones-fiscales"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Liquidacions Fiscals i Models AEAT",
+    "serviceType": "Preparació de Liquidacions Fiscals per a Criptoactius",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Espanya",
+    "description": "Servei especialitzat en càlcul de plusvàlues i pèrdues amb criteri FIFO, preparació de models 100, 721 i 714, simulacions fiscals i documentació completa per compliment davant l'AEAT."
+  }
+}
+

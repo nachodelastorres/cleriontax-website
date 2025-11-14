@@ -1,0 +1,153 @@
+{
+  "title": "Specialized Tax Advisory for Crypto Assets",
+  "slug": "asesoria-fiscal",
+  "excerpt": "Personalized 1:1 sessions to resolve tax questions about cryptocurrencies. Filing criteria, compliance and document review. No investment advice.",
+  "hero": {
+    "h1": "Specialized Tax Advisory for Crypto Assets",
+    "subheading": "Technical sessions with our tax team to resolve questions about AEAT forms, classification criteria, compliance and report structure. Exclusively technical-tax oriented. No investment advice.",
+    "cta": {
+      "label": "Request a free evaluation",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "que-incluye", "label": "What's included" },
+    { "id": "como-trabajamos", "label": "How we work" },
+    { "id": "por-que-elegirnos", "label": "Why choose us" },
+    { "id": "casos-uso", "label": "Use cases" },
+    { "id": "faq", "label": "Frequently asked questions" },
+    { "id": "cta", "label": "Request evaluation" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introduction",
+      "body": "Specialized tax advisory is a technical consulting service for investors who need to resolve specific questions about crypto asset taxation without requiring a complete analysis or settlement service. We work in personalized 1:1 session format where we review your case, answer specific questions about applicable regulations, AEAT form filing criteria, interpretation of DGT binding consultations and any technical-tax aspect related to cryptocurrencies, stocks or digital assets. It is important to note that we do NOT offer investment advice: we will not tell you which assets to buy, sell or when to do so. Our approach is exclusively technical and tax-oriented: how to correctly declare what you have already done, how to interpret applicable regulations for your case and how to prepare documentation for Tax Agency requirements. This service is ideal if you already have basic tax knowledge but need expert validation, or if you have received a request from the AEAT and need technical help to respond. Do you have specific tax questions about your crypto assets? Let's talk."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "What the service includes",
+      "bullets": [
+        "<strong>1:1 online sessions:</strong> private video calls with typical duration of 60-90 minutes, adapted to the complexity of your consultation. You can book individual sessions or packs of several sessions if your case requires it.",
+        "<strong>Prior document review:</strong> before each session, we review documentation you provide (automated reports, draft forms, AEAT communications) to prepare the session efficiently.",
+        "<strong>Specialized technical Q&A:</strong> we answer questions about interpretation of Spanish tax regulations applicable to crypto assets, DGT criteria, DeFi operation classification, differences between income and capital gains, and any technical doubt about compliance.",
+        "<strong>Filing criteria review:</strong> we validate if your AEAT forms are correctly completed, review operation classification and confirm fiscal coherence of your declaration before filing.",
+        "<strong>Guidance on Tax Agency requirements:</strong> if you have received a request from the AEAT, we help you interpret what they are asking for, what documentation to provide and how to structure your response in a technically sound way.",
+        "<strong>Follow-up and priority access:</strong> after each session, you receive written summary with key points covered, regulatory references mentioned and recommended next steps. Priority access to additional sessions if you need follow-up."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "How we work",
+      "steps": [
+        {
+          "title": "Initial request and scope evaluation",
+          "body": "You send us a summary of your consultation: what questions you have, what documentation you have, if you have received any request and what you need to resolve. We evaluate if your case is suitable for occasional advisory or if it requires a more complete service (analysis or settlement). We confirm feasibility and price."
+        },
+        {
+          "title": "Session preparation",
+          "body": "You send us relevant documentation: automated reports you have generated, draft forms, AEAT communications or any document that helps contextualize your consultation. We review everything beforehand to maximize session efficiency."
+        },
+        {
+          "title": "Technical advisory session",
+          "body": "We conduct a private video call where we address your questions in a structured way. We explain applicable regulations, relevant DGT criteria, interpretation of similar cases and technical recommendations for your specific situation. Session 100% focused on tax aspects, not investment decisions."
+        },
+        {
+          "title": "Summary delivery and follow-up",
+          "body": "After the session, you receive a summary document with key points, regulatory references cited and next steps. If you need additional follow-up sessions (e.g. after regulatory changes or new requirements), you have priority access to new booking."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Why choose us",
+      "bullets": [
+        "<strong>Real specialization in crypto assets:</strong> we closely follow all DGT binding consultations on crypto, AEAT criteria and applicable case law. We are not generalist advisors who improvise: it is our main specialization.",
+        "<strong>Technical, not commercial approach:</strong> we will not sell you services you don't need. If your consultation is occasional and can be resolved in one session, we will tell you. If you need a more complete service, we will recommend it with transparency.",
+        "<strong>Experience with Tax Agency requirements:</strong> we have helped dozens of clients respond to AEAT requests about crypto assets. We know what documentation they request, how to structure responses and what errors to avoid.",
+        "<strong>No unnecessary jargon:</strong> we explain complex tax concepts in an understandable way. Our goal is for you to understand the regulations applicable to your case, not to impress you with useless technicalities.",
+        "<strong>Clear limits on scope:</strong> we clearly tell you what we can and cannot do. We do not offer investment advice, we do not file forms for you (except express coordination) and we do not guarantee results before the Tax Agency (no one can guarantee it). We offer expert technical judgment, nothing more and nothing less."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Use cases",
+      "items": [
+        {
+          "title": "Validation of automated report before filing",
+          "body": "Client had generated tax report with Koinly, but had doubts about whether DeFi operation classification was correct according to Spanish criteria. Sent the report for prior review. In 90-minute session, we identified several errors: swaps classified as non-taxable (error), staking rewards not declared as income, and duplicates from internal transfers. We recommended specific corrections and applicable DGT criteria. Client corrected report and filed with confidence."
+        },
+        {
+          "title": "Response to AEAT request",
+          "body": "Client received request from Tax Agency asking for justification of cryptocurrency operations declared in income tax. Needed to understand what documentation to provide and how to structure response. In session, we reviewed the request, identified which operations they questioned, prepared response structure with transactional detail, valuation justification and regulatory references. Client provided documentation according to provided guide. Request closed without incidents."
+        },
+        {
+          "title": "Doubt about obligation to file form 721",
+          "body": "Client with cryptocurrencies on foreign exchanges, doubted whether they should file form 721 or it didn't apply to their case. 60-minute session where we explained form 721 thresholds, what is considered balance abroad according to AEAT, differences with form 714, and simulated their specific case. Conclusion: they should file 721. We guided them on how to complete it correctly and applicable deadlines."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What type of consultations can you resolve in advisory?",
+          "a": "Any technical question about crypto asset taxation in Spain: interpretation of AEAT/DGT regulations, operation classification, form filing criteria, differences between income and capital gains, informative obligations (721, 714), response to Tax Agency requests, review of automated reports and validation of applied tax criteria. We do not resolve questions about which assets to buy or investment strategies."
+        },
+        {
+          "q": "Do you offer advice on which cryptocurrencies to buy or when to sell?",
+          "a": "No. We do not offer investment advice under any circumstances. Our service is exclusively technical-tax: how to correctly declare what you have already done, how to interpret applicable regulations and how to comply with your tax obligations. For investment decisions, consult with an independent financial advisor."
+        },
+        {
+          "q": "Do you file the forms with the AEAT or do you only advise?",
+          "a": "By default, we only advise. You file the forms using your digital certificate or Cl@ve PIN. If you need a certified tax advisor to file for you with representation, we can coordinate it as a specific additional service, but it requires power of attorney procedures and has separate cost."
+        },
+        {
+          "q": "How long does a typical advisory session last?",
+          "a": "Between 60 and 90 minutes depending on the complexity of your consultation. Simple occasional consultations can be resolved in 60 minutes. Cases with multiple questions, extensive document review or Tax Agency requests usually require 90 minutes or more. We indicate estimated duration after evaluating your initial case."
+        },
+        {
+          "q": "Can I contract several sessions if I have a complex case?",
+          "a": "Yes. We offer session packs with discount if you anticipate needing continuous follow-up. You can also book individual sessions as needed. If your case is very complex and requires deep data analysis or complete tax preparation, you probably benefit more from our Tax Settlements service instead of multiple advisory sessions."
+        },
+        {
+          "q": "What guarantees do you offer on the tax recommendations you give?",
+          "a": "We offer expert technical judgment based on current regulations, DGT binding consultations and applicable case law. However, tax interpretation always has a component of judgment and can evolve with regulatory changes or new resolutions. We cannot guarantee that the Tax Agency will always accept our interpretations, but we do guarantee that we apply the best available technical judgment at each moment and we justify each recommendation normatively."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Shall we talk?",
+      "body": "If you have specific tax questions about crypto assets, need to validate a report before filing or have received a Tax Agency request, we can help you. Tell us your consultation in summary: what you need to resolve, what documentation you have and what deadline you are handling. We confirm if it is suitable for occasional advisory or if you need another service, and we send you a quote within 24-48 hours.",
+      "button": {
+        "label": "Request a free evaluation",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Back to all services", "href": "/servicios" },
+    { "label": "Portfolio Analysis", "href": "/servicios/analisis-carteras" },
+    { "label": "Tax Settlements", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Portfolio Tracking", "href": "/servicios/seguimiento-cartera" }
+  ],
+  "seo": {
+    "title": "Specialized Crypto Tax Advisory | Cleriontax",
+    "description": "Technical 1:1 sessions on crypto taxation. Questions about AEAT forms, tax requirements and compliance. No investment advice.",
+    "keywords": ["crypto tax advisory", "crypto tax consulting", "AEAT crypto requirement", "form 721 advisory", "DGT cryptoassets", "crypto tax compliance"],
+    "canonical": "https://cleriontax.com/servicios/asesoria-fiscal"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Specialized Tax Advisory for Crypto Assets",
+    "serviceType": "Technical Tax Consulting for Cryptocurrency Investors",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Spain",
+    "description": "Technical tax advisory service specialized in crypto assets through personalized 1:1 sessions. Resolution of questions about AEAT regulations, tax forms, Tax Agency requests and tax compliance. No investment advice."
+  }
+}
+

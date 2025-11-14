@@ -2,6 +2,8 @@ import { getTranslations } from 'next-intl/server';
 import Container from "@/components/ui/Container";
 import HeroAbout from "@/components/about/HeroAbout";
 import DualitySection from "@/components/about/DualitySection";
+import IndividualServicesShowcase from "@/components/services/IndividualServicesShowcase";
+import BlogScrollSection from "@/components/home/BlogScrollSection";
 import CTASection from "@/components/home/CTASection";
 import { Lightbulb, Target, Handshake } from "lucide-react";
 
@@ -128,6 +130,12 @@ export default async function SobreNosotrosPage({ params }: Props) {
           </ul>
         </Container>
       </section>
+
+      {/* Individual Services Showcase */}
+      <IndividualServicesShowcase />
+
+      {/* Blog Scroll Section */}
+      <BlogScrollSection />
 
       {/* CTA */}
       <CTASection />

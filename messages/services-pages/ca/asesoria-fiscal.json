@@ -1,0 +1,153 @@
+{
+  "title": "Assessoria Fiscal Especialitzada en Criptoactius",
+  "slug": "asesoria-fiscal",
+  "excerpt": "Sessions personalitzades 1:1 per resoldre dubtes fiscals sobre criptomonedes. Criteris de presentació, compliment normatiu i revisió documental. Sense assessorament d'inversió.",
+  "hero": {
+    "h1": "Assessoria Fiscal Especialitzada en Criptoactius",
+    "subheading": "Sessions tècniques amb el nostre equip fiscal per resoldre dubtes sobre models AEAT, criteris de classificació, compliment normatiu i estructura d'informes. Enfocament exclusivament tècnic-fiscal. No oferim assessorament d'inversió.",
+    "cta": {
+      "label": "Sol·licitar avaluació gratuïta",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducció" },
+    { "id": "que-incluye", "label": "Què inclou" },
+    { "id": "como-trabajamos", "label": "Com treballem" },
+    { "id": "por-que-elegirnos", "label": "Per què escollir-nos" },
+    { "id": "casos-uso", "label": "Casos d'ús" },
+    { "id": "faq", "label": "Preguntes freqüents" },
+    { "id": "cta", "label": "Sol·licitar avaluació" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducció",
+      "body": "L'assessoria fiscal especialitzada és un servei de consultoria tècnica per a inversors que necessiten resoldre dubtes concretes sobre fiscalitat de criptoactius sense requerir un servei complet d'anàlisi o liquidació. Treballem en format de sessions personalitzades 1:1 on revisem el teu cas, responem preguntes específiques sobre normativa aplicable, criteris de presentació de models AEAT, interpretació de consultes vinculants de la DGT i qualsevol aspecte tècnic-fiscal relacionat amb criptomonedes, accions o actius digitals. És important destacar que NO oferim assessorament d'inversió: no et direm quins actius comprar, vendre o quan fer-ho. El nostre enfocament és exclusivament tècnic i fiscal: com declarar correctament el que ja has fet, com interpretar la normativa aplicable al teu cas i com preparar documentació davant requeriments d'Hisenda. Aquest servei és ideal si ja tens coneixements fiscals bàsics però necessites validació experta, o si has rebut un requeriment de l'AEAT i necessites ajuda tècnica per respondre. Tens dubtes fiscals específiques sobre els teus criptoactius? Parlem."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Què inclou el servei",
+      "bullets": [
+        "<strong>Sessions 1:1 online:</strong> videotrucades privades amb durada típica de 60-90 minuts, adaptades a la complexitat de la teva consulta. Pots reservar sessions individuals o packs de diverses sessions si el teu cas ho requereix.",
+        "<strong>Revisió documental prèvia:</strong> abans de cada sessió, revisem documentació que ens aportis (informes automàtics, esborranys de models, comunicacions de l'AEAT) per preparar la sessió de forma eficient.",
+        "<strong>Q&A tècnic especialitzat:</strong> responem preguntes sobre interpretació de normativa fiscal espanyola aplicable a criptoactius, criteris DGT, classificació d'operacions DeFi, diferències entre rendiments i guanys patrimonials, i qualsevol dubte tècnic sobre compliment.",
+        "<strong>Revisió de criteris de presentació:</strong> validem si els teus models AEAT estan correctament complimentats, revisem classificació d'operacions i confirmem coherència fiscal de la teva declaració abans de presentar.",
+        "<strong>Orientació sobre requeriments d'Hisenda:</strong> si has rebut un requeriment de l'AEAT, t'ajudem a interpretar què sol·liciten, quina documentació aportar i com estructurar la teva resposta de forma tècnicament sòlida.",
+        "<strong>Seguiment i accés prioritari:</strong> després de cada sessió, reps resum escrit amb punts clau tractats, referències normatives esmentades i propers passos recomanats. Accés prioritari a sessions addicionals si necessites seguiment."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Com treballem",
+      "steps": [
+        {
+          "title": "Sol·licitud inicial i avaluació d'abast",
+          "body": "Ens envies un resum de la teva consulta: quins dubtes tens, quina documentació disposes, si has rebut algun requeriment i què necessites resoldre. Avaluem si el teu cas és adequat per assessoria puntual o si requereix un servei més complet (anàlisi o liquidació). Et confirmem viabilitat i preu."
+        },
+        {
+          "title": "Preparació de la sessió",
+          "body": "Ens envies documentació rellevant: informes automàtics que hagis generat, esborranys de models, comunicacions de l'AEAT o qualsevol document que ajudi a contextualitzar la teva consulta. Revisem tot prèviament per maximitzar eficiència de la sessió."
+        },
+        {
+          "title": "Sessió d'assessorament tècnic",
+          "body": "Realitzem videotrucada privada on abordem els teus dubtes de forma estructurada. Expliquem normativa aplicable, criteris DGT rellevants, interpretació de casos similars i recomanacions tècniques per a la teva situació específica. Sessió 100% enfocada en aspectes fiscals, no en decisions d'inversió."
+        },
+        {
+          "title": "Lliurament de resum i seguiment",
+          "body": "Després de la sessió, reps document resum amb punts clau, referències normatives citades i propers passos. Si necessites sessions addicionals de seguiment (ex. després de canvis normatius o nous requeriments), tens accés prioritari a nova reserva."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Per què escollir-nos",
+      "bullets": [
+        "<strong>Especialització real en criptoactius:</strong> seguim de prop totes les consultes vinculants de la DGT sobre crypto, criteris de l'AEAT i jurisprudència aplicable. No som assessors generalistes que improvisen: és la nostra especialització principal.",
+        "<strong>Enfocament tècnic, no comercial:</strong> no et vendrem serveis que no necessites. Si la teva consulta és puntual i pot resoldre's en una sessió, t'ho direm. Si necessites un servei més complet, et ho recomanarem amb transparència.",
+        "<strong>Experiència en requeriments d'Hisenda:</strong> hem ajudat a desenes de clients a respondre requeriments de l'AEAT sobre criptoactius. Sabem quina documentació sol·liciten, com estructurar respostes i quins errors evitar.",
+        "<strong>Sense argot innecessari:</strong> expliquem conceptes fiscals complexos de forma comprensible. El nostre objectiu és que entenguis la normativa aplicable al teu cas, no impressionar-te amb tecnicismes inútils.",
+        "<strong>Límits clars sobre abast:</strong> et diem clarament què podem i què no podem fer. No oferim assessorament d'inversió, no presentem models per tu (excepte coordinació expressa) i no garantim resultats davant Hisenda (ningú pot garantir-ho). Oferim criteri tècnic expert, res més ni res menys."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos d'ús",
+      "items": [
+        {
+          "title": "Validació d'informe automàtic abans de presentar",
+          "body": "Client havia generat informe fiscal amb Koinly, però tenia dubtes sobre si la classificació d'operacions DeFi era correcta segons criteris espanyols. Va enviar l'informe per revisió prèvia. En sessió de 90 minuts, vam identificar diversos errors: swaps classificats com no imposables (error), staking rewards sense declarar com rendiments, i duplicats per transferències internes. Vam recomanar correccions específiques i criteris DGT aplicables. Client va corregir informe i va presentar amb confiança."
+        },
+        {
+          "title": "Resposta a requeriment de l'AEAT",
+          "body": "Client va rebre requeriment d'Hisenda sol·licitant justificació d'operacions en criptomonedes declarades en IRPF. Necessitava entendre quina documentació aportar i com estructurar resposta. En sessió, vam revisar el requeriment, vam identificar quines operacions qüestionaven, vam preparar estructura de resposta amb detall transaccional, justificació de valoracions i referències normatives. Client va aportar documentació segons guia proporcionada. Requeriment tancat sense incidències."
+        },
+        {
+          "title": "Dubte sobre obligació de presentar model 721",
+          "body": "Client amb criptomonedes en exchanges estrangers, dubtava si havia de presentar model 721 o no aplicava al seu cas. Sessió de 60 minuts on vam explicar llindars del model 721, què es considera saldo a l'estranger segons AEAT, diferències amb model 714, i vam simular el seu cas concret. Conclusió: sí havia de presentar 721. L'orientem sobre com complimentar-lo correctament i terminis aplicables."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Quin tipus de consultes podeu resoldre en assessoria?",
+          "a": "Qualsevol dubte tècnic sobre fiscalitat de criptoactius a Espanya: interpretació de normativa AEAT/DGT, classificació d'operacions, criteris de presentació de models, diferències entre rendiments i guanys patrimonials, obligacions informatives (721, 714), resposta a requeriments d'Hisenda, revisió d'informes automàtics i validació de criteris fiscals aplicats. No resolem dubtes sobre quins actius comprar o estratègies d'inversió."
+        },
+        {
+          "q": "Oferiu assessorament sobre quines criptomonedes comprar o quan vendre?",
+          "a": "No. No oferim assessorament d'inversió sota cap concepte. El nostre servei és exclusivament tècnic-fiscal: com declarar correctament el que ja has fet, com interpretar normativa aplicable i com complir amb les teves obligacions tributàries. Per a decisions d'inversió, consulta amb un assessor financer independent."
+        },
+        {
+          "q": "Presenteu vosaltres els models davant l'AEAT o només assessoreu?",
+          "a": "Per defecte, només assessorem. Tu presentes els models mitjançant el teu certificat digital o Cl@ve PIN. Si necessites que un assessor fiscal col·legiat presenti per tu amb representació, podem coordinar-ho com a servei addicional específic, però requereix tràmits d'apoderament i té cost separat."
+        },
+        {
+          "q": "Quant dura una sessió típica d'assessoria?",
+          "a": "Entre 60 i 90 minuts segons complexitat de la teva consulta. Consultes puntuals simples poden resoldre's en 60 minuts. Casos amb múltiples dubtes, revisió documental extensa o requeriments d'Hisenda solen requerir 90 minuts o més. Et indiquem durada estimada després d'avaluar el teu cas inicial."
+        },
+        {
+          "q": "Puc contractar diverses sessions si tinc un cas complex?",
+          "a": "Sí. Oferim packs de sessions amb descompte si preveus necessitar seguiment continu. També pots reservar sessions individuals segons necessitat. Si el teu cas és molt complex i requereix anàlisi profunda de dades o preparació fiscal completa, probablement et convingui més el nostre servei de Liquidacions Fiscals en lloc de múltiples sessions d'assessoria."
+        },
+        {
+          "q": "Quines garanties oferiu sobre les recomanacions fiscals que doneu?",
+          "a": "Oferim criteri tècnic expert basat en normativa vigent, consultes vinculants DGT i jurisprudència aplicable. Tanmateix, la interpretació fiscal sempre té component de criteri i pot evolucionar amb canvis normatius o noves resolucions. No podem garantir que Hisenda accepti sempre les nostres interpretacions, però sí garantim que apliquem el millor criteri tècnic disponible en cada moment i et justifiquem normativament cada recomanació."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Parlem?",
+      "body": "Si tens dubtes fiscals específics sobre criptoactius, necessites validar un informe abans de presentar o has rebut un requeriment d'Hisenda, podem ajudar-te. Explica'ns la teva consulta de forma resumida: què necessites resoldre, quina documentació tens i quin termini maneges. Et confirmem si és adequat per assessoria puntual o si necessites un altre servei, i t'enviam pressupost en 24-48 hores.",
+      "button": {
+        "label": "Sol·licitar avaluació gratuïta",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Tornar a tots els serveis", "href": "/servicios" },
+    { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
+    { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" }
+  ],
+  "seo": {
+    "title": "Assessoria Fiscal Especialitzada en Criptoactius | Cleriontax",
+    "description": "Sessions tècniques 1:1 sobre fiscalitat crypto. Dubtes sobre models AEAT, requeriments d'Hisenda i compliment normatiu. Sense assessorament d'inversió.",
+    "keywords": ["assessoria fiscal criptomonedes", "consultoria fiscal crypto", "requeriment AEAT crypto", "model 721 assessoria", "DGT criptoactius", "compliment fiscal crypto"],
+    "canonical": "https://cleriontax.com/servicios/asesoria-fiscal"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Assessoria Fiscal Especialitzada en Criptoactius",
+    "serviceType": "Consultoria Fiscal Tècnica per a Inversors en Criptomonedes",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Espanya",
+    "description": "Servei d'assessoria fiscal tècnica especialitzada en criptoactius mitjançant sessions personalitzades 1:1. Resolució de dubtes sobre normativa AEAT, models fiscals, requeriments d'Hisenda i compliment tributari. Sense assessorament d'inversió."
+  }
+}
+

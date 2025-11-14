@@ -1,0 +1,152 @@
+{
+  "title": "Seguimiento en Tiempo Real de Cartera",
+  "slug": "seguimiento-cartera",
+  "excerpt": "Conexión de tus wallets y exchanges a dashboards en tiempo real con CoinTracking. Monitorización continua, alertas configurables y reportes automatizados para carteras de complejidad moderada.",
+  "hero": {
+    "h1": "Seguimiento en Tiempo Real de Cartera",
+    "subheading": "Conectamos tus wallets y cuentas de exchange a herramientas de seguimiento profesional. Dashboards actualizados en tiempo real, alertas personalizadas y balances consolidados. Ideal para carteras de complejidad moderada que necesitan visibilidad continua sin ingeniería de datos avanzada.",
+    "cta": {
+      "label": "Solicitar evaluación gratuita",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducción" },
+    { "id": "que-incluye", "label": "Qué incluye" },
+    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
+    { "id": "por-que-elegirnos", "label": "Por qué elegirnos" },
+    { "id": "casos-uso", "label": "Casos de uso" },
+    { "id": "faq", "label": "Preguntas frecuentes" },
+    { "id": "cta", "label": "Solicitar evaluación" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducción",
+      "body": "El seguimiento en tiempo real de cartera está diseñado para inversores que necesitan visibilidad continua de sus posiciones sin requerir análisis avanzado de datos ni fiscalización inmediata. Conectamos tus wallets on-chain y cuentas de exchange a herramientas profesionales como CoinTracking, configuramos dashboards personalizados y te damos acceso a reportes automatizados de balances, rendimiento histórico y alertas configurables. Este servicio es ideal si tienes una cartera de complejidad moderada (menos de 10 plataformas, hasta 10.000 transacciones anuales) y quieres monitorización continua sin necesidad de procesamiento manual avanzado. Si tu cartera supera estos límites o tienes operaciones DeFi complejas, te recomendaremos nuestro servicio de Análisis de Carteras en su lugar. Este servicio no incluye cálculos fiscales ni preparación de modelos AEAT: es exclusivamente monitorización y reporting automatizado. ¿Quieres tener tu cartera bajo control en todo momento? Hablemos."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Qué incluye el servicio",
+      "bullets": [
+        "<strong>Conexión de wallets y exchanges:</strong> integramos tus cuentas mediante APIs de solo lectura o direcciones públicas de wallets. Soportamos exchanges principales (Binance, Kraken, Coinbase, etc.) y wallets en Ethereum, BSC, Polygon y otras redes compatibles.",
+        "<strong>Configuración de dashboards personalizados:</strong> definimos vistas adaptadas a tus necesidades: balances por activo, rendimiento histórico, distribución por plataforma, tracking de staking rewards, gráficos de evolución patrimonial y métricas custom.",
+        "<strong>Alertas configurables:</strong> configuramos notificaciones automáticas por email o Telegram para cambios significativos en balances, umbrales de precio, vencimientos de staking o cualquier evento que quieras monitorizar.",
+        "<strong>Reportes automatizados:</strong> generas reportes consolidados en cualquier momento: balances a fecha, histórico de operaciones, rendimiento por periodo, comparativas entre plataformas y exportables en CSV/PDF.",
+        "<strong>Actualizaciones en tiempo real:</strong> los datos se sincronizan automáticamente según frecuencia configurada (desde cada hora hasta diaria). Visibilidad continua sin intervención manual.",
+        "<strong>Soporte técnico inicial:</strong> incluimos sesión de configuración, formación en uso de la herramienta y resolución de dudas técnicas durante los primeros 30 días."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo trabajamos",
+      "steps": [
+        {
+          "title": "Evaluación de compatibilidad",
+          "body": "Analizamos tus plataformas y volumen de operaciones. Verificamos que tus exchanges y wallets sean compatibles con CoinTracking u otras herramientas similares. Si tu cartera es demasiado compleja para automatización directa, te recomendamos nuestro servicio de Análisis de Carteras."
+        },
+        {
+          "title": "Configuración inicial de cuentas",
+          "body": "Creas cuenta en CoinTracking (o herramienta acordada). Te guiamos en la generación de API keys de solo lectura en tus exchanges. Conectamos wallets on-chain mediante direcciones públicas. Validamos sincronización correcta de datos."
+        },
+        {
+          "title": "Personalización de dashboards y alertas",
+          "body": "Configuramos vistas según tus preferencias: métricas a mostrar, gráficos relevantes, agrupaciones por activo o plataforma. Definimos alertas para eventos clave. Ajustamos frecuencia de actualización según tus necesidades."
+        },
+        {
+          "title": "Formación y soporte continuo",
+          "body": "Realizamos sesión de formación para que sepas usar la herramienta de forma autónoma. Resolvemos dudas técnicas durante el primer mes. Posteriormente, ofreces soporte básico bajo demanda si necesitas ajustes o nuevas conexiones."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Por qué elegirnos",
+      "bullets": [
+        "<strong>Experiencia en configuración avanzada:</strong> conocemos las limitaciones de herramientas como CoinTracking y sabemos cómo maximizar su efectividad. Configuramos conexiones optimizadas para evitar duplicados y errores de sincronización.",
+        "<strong>Enfoque en privacidad:</strong> solo usamos APIs de solo lectura. Nunca pedimos permisos de trading ni retiro. Tus activos permanecen bajo tu control total. Las herramientas que utilizamos cumplen con estándares de seguridad verificados.",
+        "<strong>Asesoramiento sobre límites:</strong> si durante la configuración detectamos que tu cartera es demasiado compleja para herramientas automatizadas, te lo decimos claramente y recomendamos el servicio adecuado. No forzamos soluciones inadecuadas.",
+        "<strong>Soporte técnico cualificado:</strong> nuestro equipo conoce profundamente CoinTracking y herramientas similares. Resolvemos problemas de conexión, errores de sincronización y configuraciones avanzadas que usuarios regulares no pueden solucionar.",
+        "<strong>Transparencia sobre capacidades:</strong> te explicamos claramente qué puede hacer la herramienta y qué no. Si necesitas análisis fiscal, reconciliación manual o procesamiento DeFi complejo, te dirigimos a nuestros otros servicios."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos de uso",
+      "items": [
+        {
+          "title": "Inversor con 5 exchanges y staking simple",
+          "body": "Cliente con cuentas en Binance, Kraken, Coinbase, Bitfinex y KuCoin. Aproximadamente 2.000 operaciones anuales, principalmente trading spot y algo de staking en ETH y DOT. Necesitaba dashboard consolidado para ver balances totales, tracking de staking rewards y alertas si algún balance bajaba de ciertos umbrales. Configuramos CoinTracking con conexión API a los 5 exchanges, vistas personalizadas de balances y rendimiento, y alertas por email. Resultado: visibilidad total en tiempo real sin intervención manual diaria."
+        },
+        {
+          "title": "HODLer con wallets hardware en varias redes",
+          "body": "Cliente con posiciones a largo plazo en wallets Ledger en Ethereum, BSC y Polygon. Sin trading activo, solo compras ocasionales y holding. Quería monitorizar valor total de su cartera en EUR/USD sin necesidad de conectar Ledger constantemente. Conectamos direcciones públicas de sus wallets a CoinTracking, configuramos vistas de valoración patrimonial histórica y alertas de cambios significativos. Resultado: seguimiento pasivo continuo sin comprometer seguridad de sus wallets hardware."
+        },
+        {
+          "title": "Pequeño trader que necesitaba reportes mensuales",
+          "body": "Cliente con actividad de trading moderada en 3 exchanges, necesitaba generar reportes mensuales para su contabilidad personal. Aproximadamente 500 operaciones/mes. Configuramos CoinTracking con sincronización diaria, vistas de rendimiento mensual y exportación automática de reportes en CSV al finalizar cada mes. Resultado: reportes listos automáticamente sin procesamiento manual."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Es seguro conectar mis exchanges mediante API keys?",
+          "a": "Sí, siempre que uses API keys de solo lectura sin permisos de trading ni retiro. CoinTracking y herramientas similares solo pueden leer tus balances y transacciones, nunca operar con tus fondos. Te enseñamos a generar API keys con permisos mínimos necesarios. Nunca pedimos credenciales de login directo."
+        },
+        {
+          "q": "¿Qué herramienta utilizáis para el seguimiento?",
+          "a": "Principalmente CoinTracking, que es la más completa y compatible con mayoría de exchanges y blockchains. En casos específicos, podemos usar alternativas como Koinly, Accointing o Zerion según tus necesidades. Te asesoramos sobre cuál es más adecuada para tu caso."
+        },
+        {
+          "q": "¿Con qué frecuencia se actualizan los datos?",
+          "a": "Depende de tu plan en la herramienta elegida. CoinTracking ofrece sincronización desde cada hora hasta diaria. Para carteras con trading activo, recomendamos actualización cada 6-12 horas. Para HODLers, actualización diaria es suficiente. La frecuencia afecta al coste de suscripción en la herramienta."
+        },
+        {
+          "q": "¿Este servicio incluye cálculos fiscales o preparación de modelos AEAT?",
+          "a": "No. Este servicio es exclusivamente monitorización en tiempo real. Si necesitas cálculos FIFO, preparación de liquidaciones fiscales o modelos AEAT, debes contratar nuestro servicio de Liquidaciones Fiscales. CoinTracking puede generar reportes fiscales automáticos, pero no son válidos para España sin revisión manual experta."
+        },
+        {
+          "q": "¿Qué pasa si mi cartera es demasiado compleja para CoinTracking?",
+          "a": "Si durante la evaluación detectamos que tienes operaciones DeFi complejas, más de 50 fuentes de datos, cientos de miles de transacciones o casos que CoinTracking no procesa correctamente, te recomendaremos nuestro servicio de Análisis de Carteras en su lugar. No forzamos herramientas automatizadas cuando sabemos que generarán errores."
+        },
+        {
+          "q": "¿Puedo cancelar el servicio en cualquier momento?",
+          "a": "La configuración inicial es un servicio puntual con pago único. La suscripción a CoinTracking (u otra herramienta) la contratas tú directamente y puedes cancelarla cuando quieras. Nosotros solo cobramos por configuración inicial, formación y soporte durante los primeros 30 días. Soporte posterior se factura bajo demanda si lo necesitas."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "¿Hablamos?",
+      "body": "Si tienes una cartera de complejidad moderada y quieres visibilidad continua sin complicaciones técnicas, podemos ayudarte. Cuéntanos sobre tus plataformas, volumen de operaciones y qué métricas quieres monitorizar. Te enviamos una evaluación inicial en 24-48 horas confirmando si este servicio es adecuado para tu caso o si necesitas algo más avanzado.",
+      "button": {
+        "label": "Solicitar evaluación gratuita",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Volver a todos los servicios", "href": "/servicios" },
+    { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
+    { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Seguimiento en Tiempo Real de Cartera Crypto | CoinTracking | Cleriontax",
+    "description": "Configuración profesional de dashboards con CoinTracking. Monitorización continua de exchanges y wallets. Alertas, reportes y balances en tiempo real.",
+    "keywords": ["seguimiento cartera crypto", "dashboard criptomonedas", "CoinTracking configuración", "monitorización exchanges", "alertas crypto", "portfolio tracking"],
+    "canonical": "https://cleriontax.com/servicios/seguimiento-cartera"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Seguimiento en Tiempo Real de Cartera",
+    "serviceType": "Configuración de Herramientas de Seguimiento de Cartera Crypto",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "España",
+    "description": "Servicio de configuración profesional de herramientas de seguimiento en tiempo real para carteras de criptomonedas de complejidad moderada. Incluye conexión de exchanges y wallets, dashboards personalizados y alertas configurables."
+  }
+}

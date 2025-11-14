@@ -4,7 +4,7 @@ import HowWeWork from "@/components/home/HowWeWork";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import ServicesSection from "@/components/home/ServicesSection";
 import FAQSection from "@/components/home/FAQSection";
-import BlogCTASection from "@/components/home/BlogCTASection";
+import BlogScrollSection from "@/components/home/BlogScrollSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
 // import Benefits from "@/components/home/Benefits";
 // import ServiceSteps from "@/components/home/ServiceSteps";
@@ -47,7 +47,7 @@ export default function Home() {
       <WhyChooseUs />
       <ServicesSection />
       <FAQSection />
-      <BlogCTASection />
+      <BlogScrollSection />
       <FinalCTASection />
       {/* <Benefits /> */}
       {/* <ServiceSteps /> */}

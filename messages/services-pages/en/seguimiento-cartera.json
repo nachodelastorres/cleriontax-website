@@ -1,0 +1,153 @@
+{
+  "title": "Real-Time Portfolio Tracking",
+  "slug": "seguimiento-cartera",
+  "excerpt": "Connecting your wallets and exchanges to real-time dashboards with CoinTracking. Continuous monitoring, configurable alerts and automated reporting for moderately complex portfolios.",
+  "hero": {
+    "h1": "Real-Time Portfolio Tracking",
+    "subheading": "We connect your wallets and exchange accounts to professional tracking tools. Real-time dashboards, personalized alerts, and consolidated balances. Ideal for moderately complex portfolios that need continuous visibility without advanced data engineering.",
+    "cta": {
+      "label": "Request a free evaluation",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "que-incluye", "label": "What's included" },
+    { "id": "como-trabajamos", "label": "How we work" },
+    { "id": "por-que-elegirnos", "label": "Why choose us" },
+    { "id": "casos-uso", "label": "Use cases" },
+    { "id": "faq", "label": "Frequently asked questions" },
+    { "id": "cta", "label": "Request evaluation" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introduction",
+      "body": "Real-time portfolio tracking is designed for investors who need continuous visibility of their positions without requiring advanced data analysis or immediate tax filing. We connect your on-chain wallets and exchange accounts to professional tools like CoinTracking, configure personalized dashboards and give you access to automated reports of balances, historical performance and configurable alerts. This service is ideal if you have a portfolio of moderate complexity (less than 10 platforms, up to 10,000 annual transactions) and want continuous monitoring without need for advanced manual processing. If your portfolio exceeds these limits or you have complex DeFi operations, we will recommend our Portfolio Analysis service instead. This service does not include tax calculations or AEAT form preparation: it is exclusively monitoring and automated reporting. Do you want to have your portfolio under control at all times? Let's talk."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "What the service includes",
+      "bullets": [
+        "<strong>Wallet and exchange connection:</strong> we integrate your accounts through read-only APIs or public wallet addresses. We support main exchanges (Binance, Kraken, Coinbase, etc.) and wallets on Ethereum, BSC, Polygon and other compatible networks.",
+        "<strong>Custom dashboard configuration:</strong> we define views adapted to your needs: balances by asset, historical performance, distribution by platform, staking rewards tracking, asset evolution charts and custom metrics.",
+        "<strong>Configurable alerts:</strong> we configure automatic notifications by email or Telegram for significant balance changes, price thresholds, staking maturities or any event you want to monitor.",
+        "<strong>Automated reports:</strong> you generate consolidated reports at any time: balances as of date, operation history, performance by period, comparisons between platforms and exports in CSV/PDF.",
+        "<strong>Real-time updates:</strong> data syncs automatically according to configured frequency (from hourly to daily). Continuous visibility without manual intervention.",
+        "<strong>Initial technical support:</strong> we include setup session, tool usage training and technical doubt resolution during the first 30 days."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "How we work",
+      "steps": [
+        {
+          "title": "Compatibility evaluation",
+          "body": "We analyze your platforms and transaction volume. We verify that your exchanges and wallets are compatible with CoinTracking or other similar tools. If your portfolio is too complex for direct automation, we recommend our Portfolio Analysis service."
+        },
+        {
+          "title": "Initial account setup",
+          "body": "You create an account on CoinTracking (or agreed tool). We guide you in generating read-only API keys on your exchanges. We connect on-chain wallets through public addresses. We validate correct data synchronization."
+        },
+        {
+          "title": "Dashboard and alert personalization",
+          "body": "We configure views according to your preferences: metrics to show, relevant charts, groupings by asset or platform. We define alerts for key events. We adjust update frequency according to your needs."
+        },
+        {
+          "title": "Training and continuous support",
+          "body": "We conduct a training session so you know how to use the tool autonomously. We resolve technical doubts during the first month. Subsequently, we offer basic support on demand if you need adjustments or new connections."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Why choose us",
+      "bullets": [
+        "<strong>Experience in advanced configuration:</strong> we know the limitations of tools like CoinTracking and know how to maximize their effectiveness. We configure optimized connections to avoid duplicates and synchronization errors.",
+        "<strong>Privacy-focused approach:</strong> we only use read-only APIs. We never ask for trading or withdrawal permissions. Your assets remain under your total control. The tools we use comply with verified security standards.",
+        "<strong>Advice on limits:</strong> if during setup we detect that your portfolio is too complex for automated tools, we tell you clearly and recommend the appropriate service. We don't force inadequate solutions.",
+        "<strong>Qualified technical support:</strong> our team knows CoinTracking and similar tools deeply. We resolve connection problems, synchronization errors and advanced configurations that regular users cannot solve.",
+        "<strong>Transparency about capabilities:</strong> we clearly explain what the tool can do and what it cannot. If you need tax analysis, manual reconciliation or complex DeFi processing, we direct you to our other services."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Use cases",
+      "items": [
+        {
+          "title": "Investor with 5 exchanges and simple staking",
+          "body": "Client with accounts on Binance, Kraken, Coinbase, Bitfinex and KuCoin. Approximately 2,000 annual operations, mainly spot trading and some staking on ETH and DOT. Needed consolidated dashboard to see total balances, staking rewards tracking and alerts if any balance dropped below certain thresholds. We configured CoinTracking with API connection to the 5 exchanges, personalized balance and performance views, and email alerts. Result: total real-time visibility without daily manual intervention."
+        },
+        {
+          "title": "HODLer with hardware wallets on several networks",
+          "body": "Client with long-term positions on Ledger wallets on Ethereum, BSC and Polygon. No active trading, only occasional purchases and holding. Wanted to monitor total portfolio value in EUR/USD without need to constantly connect Ledger. We connected public addresses of their wallets to CoinTracking, configured asset valuation historical views and alerts for significant changes. Result: passive continuous tracking without compromising security of their hardware wallets."
+        },
+        {
+          "title": "Small trader who needed monthly reports",
+          "body": "Client with moderate trading activity on 3 exchanges, needed to generate monthly reports for personal accounting. Approximately 500 operations/month. We configured CoinTracking with daily synchronization, monthly performance views and automatic CSV report export at end of each month. Result: reports ready automatically without manual processing."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Is it safe to connect my exchanges through API keys?",
+          "a": "Yes, as long as you use read-only API keys without trading or withdrawal permissions. CoinTracking and similar tools can only read your balances and transactions, never operate with your funds. We teach you to generate API keys with minimum necessary permissions. We never ask for direct login credentials."
+        },
+        {
+          "q": "What tool do you use for tracking?",
+          "a": "Mainly CoinTracking, which is the most complete and compatible with most exchanges and blockchains. In specific cases, we can use alternatives like Koinly, Accointing or Zerion according to your needs. We advise you on which is most suitable for your case."
+        },
+        {
+          "q": "How often is data updated?",
+          "a": "Depends on your plan on the chosen tool. CoinTracking offers synchronization from hourly to daily. For portfolios with active trading, we recommend update every 6-12 hours. For HODLers, daily update is sufficient. Frequency affects subscription cost on the tool."
+        },
+        {
+          "q": "Does this service include tax calculations or AEAT form preparation?",
+          "a": "No. This service is exclusively real-time monitoring. If you need FIFO calculations, tax settlement preparation or AEAT forms, you must contract our Tax Settlements service. CoinTracking can generate automatic tax reports, but they are not valid for Spain without expert manual review."
+        },
+        {
+          "q": "What happens if my portfolio is too complex for CoinTracking?",
+          "a": "If during evaluation we detect that you have complex DeFi operations, more than 50 data sources, hundreds of thousands of transactions or cases that CoinTracking does not process correctly, we will recommend our Portfolio Analysis service instead. We don't force automated tools when we know they will generate errors."
+        },
+        {
+          "q": "Can I cancel the service at any time?",
+          "a": "Initial setup is a one-time service with single payment. The CoinTracking (or other tool) subscription you contract directly and can cancel whenever you want. We only charge for initial setup, training and support during the first 30 days. Subsequent support is billed on demand if you need it."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Shall we talk?",
+      "body": "If you have a portfolio of moderate complexity and want continuous visibility without technical complications, we can help you. Tell us about your platforms, transaction volume and what metrics you want to monitor. We send you an initial evaluation within 24-48 hours confirming if this service is suitable for your case or if you need something more advanced.",
+      "button": {
+        "label": "Request a free evaluation",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Back to all services", "href": "/servicios" },
+    { "label": "Portfolio Analysis", "href": "/servicios/analisis-carteras" },
+    { "label": "Tax Settlements", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Tax Advisory", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Real-Time Crypto Portfolio Tracking | CoinTracking | Cleriontax",
+    "description": "Professional dashboard setup with CoinTracking. Continuous monitoring of exchanges and wallets. Alerts, reports and real-time balances.",
+    "keywords": ["crypto portfolio tracking", "cryptocurrency dashboard", "CoinTracking setup", "exchange monitoring", "crypto alerts", "portfolio tracking"],
+    "canonical": "https://cleriontax.com/servicios/seguimiento-cartera"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Real-Time Portfolio Tracking",
+    "serviceType": "Cryptocurrency Portfolio Tracking Tool Configuration",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Spain",
+    "description": "Professional real-time tracking tool configuration service for moderately complex cryptocurrency portfolios. Includes exchange and wallet connection, personalized dashboards and configurable alerts."
+  }
+}
+

@@ -1,0 +1,152 @@
+{
+  "title": "Análisis de Carteras de Inversión Complejas",
+  "slug": "analisis-carteras",
+  "excerpt": "Integración, limpieza y consolidación de datos desde todas las fuentes necesarias: exchanges, brokers, wallets y protocolos DeFi. Convertimos carteras dispersas en informes unificados, trazables y auditables sin límite de complejidad.",
+  "hero": {
+    "h1": "Análisis de Carteras de Inversión Complejas",
+    "subheading": "Integramos datos de todas las fuentes necesarias, procesamos operaciones de alta complejidad y generamos informes consolidados con trazabilidad completa. Ideal para carteras con operaciones DeFi, staking multichain, airdrops y estructuras descentralizadas.",
+    "cta": {
+      "label": "Solicitar evaluación gratuita",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducción" },
+    { "id": "que-incluye", "label": "Qué incluye" },
+    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
+    { "id": "por-que-elegirnos", "label": "Por qué elegirnos" },
+    { "id": "casos-uso", "label": "Casos de uso" },
+    { "id": "faq", "label": "Preguntas frecuentes" },
+    { "id": "cta", "label": "Solicitar evaluación" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducción",
+      "body": "El análisis de carteras complejas es nuestro servicio más técnico y especializado. Está diseñado para inversores que operan en múltiples plataformas simultáneamente, gestionan operaciones de alta complejidad y necesitan consolidar datos dispersos en exchanges, brokers, wallets on-chain y protocolos DeFi. Aplicamos ingeniería de datos avanzada para integrar fuentes heterogéneas, detectar duplicados, reconciliar movimientos internos y generar informes consolidados con trazabilidad completa. Este servicio no es fiscalización directa: es el paso previo imprescindible cuando tus datos son demasiado complejos para herramientas automáticas y necesitas una base sólida antes de preparar tus obligaciones fiscales. Si tu cartera presenta alta complejidad operativa, múltiples ecosistemas blockchain o estructuras de inversión sofisticadas, este es el servicio que necesitas. ¿Hablamos?"
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Qué incluye el servicio",
+      "bullets": [
+        "<strong>Integración multi-fuente:</strong> conectamos y consolidamos datos de exchanges centralizados, brokers tradicionales, wallets on-chain, protocolos DeFi, nodos propios, APIs de terceros y archivos CSV manuales.",
+        "<strong>Normalización y limpieza de datos:</strong> estandarizamos formatos heterogéneos, corregimos errores de timestamp, unificamos nomenclaturas de activos y eliminamos registros corruptos o incompletos.",
+        "<strong>Reconciliación avanzada:</strong> detectamos y eliminamos transacciones duplicadas, identificamos movimientos internos entre tus propias wallets y exchanges, y reconstruimos cadenas de operaciones fragmentadas.",
+        "<strong>Clasificación operativa:</strong> categorizamos cada transacción según su naturaleza (trading, staking, airdrops, fees, gas, bridging, wrapping, swaps, liquidity pools) para facilitar análisis posterior.",
+        "<strong>Reporting consolidado:</strong> generamos informes de rendimiento global, balances por activo y plataforma, análisis de staking rewards, tracking de airdrops, desglose de fees y cualquier vista personalizada que necesites.",
+        "<strong>Entregables completos:</strong> datasets limpios en CSV/Excel/JSON listos para auditorías, documentación técnica de metodología aplicada, trazabilidad de ajustes y sesión de revisión para resolver dudas."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo trabajamos",
+      "steps": [
+        {
+          "title": "Ingestión y mapeo de fuentes",
+          "body": "Recibimos tus archivos CSV, credenciales API de solo lectura o direcciones de wallets on-chain. Mapeamos cada fuente de datos, identificamos formatos, validamos integridad y detectamos posibles inconsistencias estructurales antes de procesar."
+        },
+        {
+          "title": "Modelado y normalización",
+          "body": "Aplicamos transformaciones ETL para unificar datos heterogéneos en un modelo común. Estandarizamos timestamps a UTC, normalizamos símbolos de activos, convertimos unidades y corregimos errores de encoding o formato."
+        },
+        {
+          "title": "Validación cruzada y reconciliación",
+          "body": "Cruzamos transacciones entre plataformas para detectar duplicados y movimientos internos. Validamos balances finales contra saldos reales en exchanges y blockchains. Identificamos discrepancias y las documentamos para revisión conjunta."
+        },
+        {
+          "title": "Generación de informes y entrega",
+          "body": "Producimos informes consolidados con vistas por activo, plataforma, tipo de operación y periodo temporal. Entregamos datasets limpios, documentación técnica y sesión de revisión para resolver dudas sobre metodología aplicada."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Por qué elegirnos",
+      "bullets": [
+        "<strong>Experiencia en alta complejidad:</strong> hemos procesado carteras con numerosas fuentes de datos y volúmenes masivos de transacciones anuales, incluyendo operaciones DeFi complejas en Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis y múltiples redes adicionales.",
+        "<strong>Trazabilidad total:</strong> cada ajuste, eliminación de duplicados o reclasificación queda documentada con justificación técnica y posibilidad de auditoría posterior.",
+        "<strong>Sin dependencia de software de terceros:</strong> no subcontratamos procesamiento a herramientas automáticas. Todo el análisis se realiza con infraestructura propia y criterio humano experto.",
+        "<strong>Compatibilidad fiscal:</strong> los informes generados son directamente utilizables para preparar liquidaciones fiscales, auditorías internas o requerimientos de Hacienda.",
+        "<strong>Soporte técnico continuo:</strong> incluimos seguimiento post-entrega para resolver dudas sobre datos consolidados o realizar ajustes si detectas discrepancias."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos de uso",
+      "items": [
+        {
+          "title": "Inversor DeFi con operaciones en 15 blockchains",
+          "body": "Cliente con posiciones activas en Uniswap, Aave, Curve, PancakeSwap, Raydium, Osmosis y otros 20 protocolos. Más de 200.000 transacciones on-chain en 3 años. Necesitaba consolidar toda su actividad DeFi, calcular rewards reales de staking y liquidity pools, y preparar base de datos para liquidación fiscal. Integramos datos de subgraphs, APIs de protocolos, nodos propios y exploradores blockchain. Resultado: informe consolidado con trazabilidad completa y dataset listo para fiscalización."
+        },
+        {
+          "title": "Trader institucional con 50+ cuentas de exchange",
+          "body": "Fondo de inversión con cuentas en Binance, Kraken, Coinbase, Bitfinex, OKX, Bybit y 45 exchanges más. Volumen de 300.000 operaciones anuales entre spot, futuros y opciones. Requería consolidación global para reporting interno y auditorías trimestrales. Procesamos APIs de todos los exchanges, reconciliamos transferencias inter-exchange y generamos vistas consolidadas por estrategia de trading. Entregamos dashboards personalizados y datasets auditables."
+        },
+        {
+          "title": "Early adopter con histórico desde 2013",
+          "body": "Inversor con primeras compras de Bitcoin en 2013, operaciones en exchanges ya desaparecidos, wallets antiguas sin registros completos y migración entre múltiples carteras hardware. Necesitaba reconstruir histórico completo para cumplir con modelo 721 y preparar declaración de Renta. Aplicamos técnicas de forensics blockchain, recuperamos datos de exchanges cerrados mediante backups del cliente y reconstruimos histórico completo con trazabilidad. Resultado: base de datos histórica verificable para toda su vida fiscal en cripto."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Qué formatos de datos soportáis?",
+          "a": "Soportamos CSV de exchanges (Binance, Kraken, Coinbase, etc.), APIs de solo lectura, direcciones de wallets on-chain para extracción vía exploradores o nodos, datos de subgraphs de The Graph, archivos de brokers tradicionales y cualquier fuente estructurada que contenga información de transacciones. Si tienes un formato propietario o legacy, podemos adaptarnos previa evaluación."
+        },
+        {
+          "q": "¿Cuánto tiempo tarda el análisis de una cartera compleja?",
+          "a": "Depende del volumen y complejidad de tu caso específico. Carteras con complejidad moderada suelen procesarse en 1-2 semanas. Carteras con alta complejidad, múltiples fuentes y volúmenes masivos pueden requerir entre 3 y 5 semanas. En la evaluación inicial te daremos un timeline preciso basado en las características de tu cartera."
+        },
+        {
+          "q": "¿Qué entregáis exactamente al finalizar el servicio?",
+          "a": "Entregamos datasets limpios en formato CSV/Excel/JSON con todas tus transacciones consolidadas y clasificadas, informe de análisis con métricas clave (rendimiento, balances, fees, staking rewards), documentación técnica de metodología aplicada, trazabilidad de ajustes realizados y sesión de revisión online para resolver dudas. Opcionalmente, podemos generar dashboards interactivos si lo requieres."
+        },
+        {
+          "q": "¿Este servicio incluye preparación fiscal o solo análisis de datos?",
+          "a": "Este servicio es exclusivamente análisis de datos. No incluye cálculos fiscales, modelos AEAT ni asesoramiento tributario. Su objetivo es consolidar y limpiar tus datos para que tengas una base sólida. Si necesitas fiscalización posterior, ofrecemos nuestro servicio de Liquidaciones Fiscales como complemento natural tras completar el análisis de cartera."
+        },
+        {
+          "q": "¿Podéis integrar datos de protocolos DeFi exóticos o poco conocidos?",
+          "a": "Sí. Trabajamos con cualquier protocolo que tenga datos verificables on-chain o mediante APIs. Hemos integrado protocolos en Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis, Avalanche, Arbitrum, Optimism y otras redes. Si el protocolo tiene un subgraph en The Graph, contrato verificado o API pública, podemos extraer los datos. En casos muy específicos, podemos desplegar nodos propios si es necesario."
+        },
+        {
+          "q": "¿Qué garantías ofrecéis sobre la integridad de los datos procesados?",
+          "a": "Aplicamos validación cruzada entre fuentes, verificamos balances finales contra saldos reales en blockchain y exchanges, documentamos cada transformación aplicada y ofrecemos trazabilidad completa. Si detectas discrepancias post-entrega, las revisamos y corregimos sin coste adicional. Todos los datasets originales se conservan íntegros durante el proceso."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "¿Hablamos?",
+      "body": "Si tienes una cartera con alta complejidad operativa, operas en múltiples blockchains o has recibido informes automáticos con errores de reconciliación, podemos ayudarte. Cuéntanos sobre tu cartera: número de plataformas, volumen de operaciones, tipos de activos y cualquier particularidad técnica. Te enviamos una evaluación inicial en 24-48 horas.",
+      "button": {
+        "label": "Solicitar evaluación gratuita",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Volver a todos los servicios", "href": "/servicios" },
+    { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" },
+    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Análisis de Carteras de Inversión Complejas | Cleriontax",
+    "description": "Integración y consolidación de datos desde múltiples exchanges, wallets y protocolos DeFi. Procesamiento de operaciones complejas con trazabilidad completa.",
+    "keywords": ["análisis carteras cripto", "consolidación datos exchanges", "reconciliación transacciones DeFi", "ingeniería datos blockchain", "informes carteras complejas", "trazabilidad fiscal cripto"],
+    "canonical": "https://cleriontax.com/servicios/analisis-carteras"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Análisis de Carteras de Inversión Complejas",
+    "serviceType": "Análisis de Datos Financieros y Consolidación de Carteras",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "España",
+    "description": "Servicio especializado en integración, limpieza y consolidación de datos desde múltiples exchanges, brokers, wallets y protocolos DeFi. Procesamiento de carteras con alta complejidad operativa y trazabilidad completa."
+  }
+}

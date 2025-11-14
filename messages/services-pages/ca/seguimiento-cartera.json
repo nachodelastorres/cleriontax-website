@@ -1,0 +1,153 @@
+{
+  "title": "Seguiment en Temps Real de Cartera",
+  "slug": "seguimiento-cartera",
+  "excerpt": "Connexió de les teves wallets i exchanges a dashboards en temps real amb CoinTracking. Monitorització contínua, alertes configurables i reportes automatitzats per a carteres de complexitat moderada.",
+  "hero": {
+    "h1": "Seguiment en Temps Real de Cartera",
+    "subheading": "Connectem les teves wallets i comptes d'exchange a eines de seguiment professionals. Dashboards actualitzats en temps real, alertes personalitzades i balances consolidats. Ideal per a carteres de complexitat moderada que necessiten visibilitat contínua sense enginyeria de dades avançada.",
+    "cta": {
+      "label": "Sol·licitar avaluació gratuïta",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    { "id": "intro", "label": "Introducció" },
+    { "id": "que-incluye", "label": "Què inclou" },
+    { "id": "como-trabajamos", "label": "Com treballem" },
+    { "id": "por-que-elegirnos", "label": "Per què escollir-nos" },
+    { "id": "casos-uso", "label": "Casos d'ús" },
+    { "id": "faq", "label": "Preguntes freqüents" },
+    { "id": "cta", "label": "Sol·licitar avaluació" }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducció",
+      "body": "El seguiment en temps real de cartera està dissenyat per a inversors que necessiten visibilitat contínua de les seves posicions sense requerir anàlisi avançada de dades ni fiscalització immediata. Connectem les teves wallets on-chain i comptes d'exchange a eines professionals com CoinTracking, configurem dashboards personalitzats i et donem accés a reportes automatitzats de balances, rendiment històric i alertes configurables. Aquest servei és ideal si tens una cartera de complexitat moderada (menys de 10 plataformes, fins a 10.000 transaccions anuals) i vols monitorització contínua sense necessitat de processament manual avançat. Si la teva cartera supera aquests límits o tens operacions DeFi complexes, et recomanarem el nostre servei d'Anàlisi de Carteres al seu lloc. Aquest servei no inclou càlculs fiscals ni preparació de models AEAT: és exclusivament monitorització i reporting automatitzat. Vols tenir la teva cartera sota control en tot moment? Parlem."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Què inclou el servei",
+      "bullets": [
+        "<strong>Connexió de wallets i exchanges:</strong> integrem els teus comptes mitjançant APIs de només lectura o adreces públiques de wallets. Suportem exchanges principals (Binance, Kraken, Coinbase, etc.) i wallets en Ethereum, BSC, Polygon i altres xarxes compatibles.",
+        "<strong>Configuració de dashboards personalitzats:</strong> definim vistes adaptades a les teves necessitats: balances per actiu, rendiment històric, distribució per plataforma, tracking de staking rewards, gràfics d'evolució patrimonial i mètriques custom.",
+        "<strong>Alertes configurables:</strong> configurem notificacions automàtiques per email o Telegram per canvis significatius en balances, llindars de preu, venciments de staking o qualsevol esdeveniment que vulguis monitoritzar.",
+        "<strong>Reportes automatitzats:</strong> generes reportes consolidats en qualsevol moment: balances a data, històric d'operacions, rendiment per període, comparatives entre plataformes i exportables en CSV/PDF.",
+        "<strong>Actualitzacions en temps real:</strong> les dades es sincronitzen automàticament segons freqüència configurada (des de cada hora fins a diària). Visibilitat contínua sense intervenció manual.",
+        "<strong>Suport tècnic inicial:</strong> incloem sessió de configuració, formació en ús de l'eina i resolució de dubtes tècnics durant els primers 30 dies."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Com treballem",
+      "steps": [
+        {
+          "title": "Avaluació de compatibilitat",
+          "body": "Analitzem les teves plataformes i volum d'operacions. Verifiquem que els teus exchanges i wallets siguin compatibles amb CoinTracking o altres eines similars. Si la teva cartera és massa complexa per automatització directa, et recomanem el nostre servei d'Anàlisi de Carteres."
+        },
+        {
+          "title": "Configuració inicial de comptes",
+          "body": "Creus compte en CoinTracking (o eina acordada). Et guiem en la generació d'API keys de només lectura en els teus exchanges. Connectem wallets on-chain mitjançant adreces públiques. Validem sincronització correcta de dades."
+        },
+        {
+          "title": "Personalització de dashboards i alertes",
+          "body": "Configurem vistes segons les teves preferències: mètriques a mostrar, gràfics rellevants, agrupacions per actiu o plataforma. Definim alertes per esdeveniments clau. Ajustem freqüència d'actualització segons les teves necessitats."
+        },
+        {
+          "title": "Formació i suport continu",
+          "body": "Realitzem sessió de formació perquè sàpigues usar l'eina de forma autònoma. Resolem dubtes tècnics durant el primer mes. Posteriorment, oferim suport bàsic sota demanda si necessites ajustos o noves connexions."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Per què escollir-nos",
+      "bullets": [
+        "<strong>Experiència en configuració avançada:</strong> coneixem les limitacions d'eines com CoinTracking i sabem com maximitzar la seva efectivitat. Configurem connexions optimitzades per evitar duplicats i errors de sincronització.",
+        "<strong>Enfocament en privacitat:</strong> només usem APIs de només lectura. Mai demanem permisos de trading ni retirada. Els teus actius romanen sota el teu control total. Les eines que utilitzem compleixen amb estàndards de seguretat verificats.",
+        "<strong>Assessorament sobre límits:</strong> si durant la configuració detectem que la teva cartera és massa complexa per eines automatitzades, et ho diem clarament i recomanem el servei adequat. No forcem solucions inadequades.",
+        "<strong>Suport tècnic qualificat:</strong> el nostre equip coneix profundament CoinTracking i eines similars. Resolem problemes de connexió, errors de sincronització i configuracions avançades que usuaris regulars no poden solucionar.",
+        "<strong>Transparència sobre capacitats:</strong> et expliquem clarament què pot fer l'eina i què no. Si necessites anàlisi fiscal, reconciliació manual o processament DeFi complex, et dirigim als nostres altres serveis."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos d'ús",
+      "items": [
+        {
+          "title": "Inversor amb 5 exchanges i staking simple",
+          "body": "Client amb comptes en Binance, Kraken, Coinbase, Bitfinex i KuCoin. Aproximadament 2.000 operacions anuals, principalment trading spot i una mica de staking en ETH i DOT. Necessitava dashboard consolidat per veure balances totals, tracking de staking rewards i alertes si algun balance baixava de certs llindars. Vam configurar CoinTracking amb connexió API als 5 exchanges, vistes personalitzades de balances i rendiment, i alertes per email. Resultat: visibilitat total en temps real sense intervenció manual diària."
+        },
+        {
+          "title": "HODLer amb wallets hardware en diverses xarxes",
+          "body": "Client amb posicions a llarg termini en wallets Ledger en Ethereum, BSC i Polygon. Sense trading actiu, només compres ocasionals i holding. Volia monitoritzar valor total de la seva cartera en EUR/USD sense necessitat de connectar Ledger constantment. Vam connectar adreces públiques de les seves wallets a CoinTracking, vam configurar vistes de valoració patrimonial històrica i alertes de canvis significatius. Resultat: seguiment passiu continu sense comprometre seguretat de les seves wallets hardware."
+        },
+        {
+          "title": "Petit trader que necessitava reportes mensuals",
+          "body": "Client amb activitat de trading moderada en 3 exchanges, necessitava generar reportes mensuals per a la seva comptabilitat personal. Aproximadament 500 operacions/mes. Vam configurar CoinTracking amb sincronització diària, vistes de rendiment mensual i exportació automàtica de reportes en CSV al finalitzar cada mes. Resultat: reportes llests automàticament sense processament manual."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "És segur connectar els meus exchanges mitjançant API keys?",
+          "a": "Sí, sempre que usis API keys de només lectura sense permisos de trading ni retirada. CoinTracking i eines similars només poden llegir els teus balances i transaccions, mai operar amb els teus fons. Et ensenyem a generar API keys amb permisos mínims necessaris. Mai demanem credencials de login directe."
+        },
+        {
+          "q": "Quina eina utilitzeu per al seguiment?",
+          "a": "Principalment CoinTracking, que és la més completa i compatible amb majoria d'exchanges i blockchains. En casos específics, podem usar alternatives com Koinly, Accointing o Zerion segons les teves necessitats. Et assessorem sobre quina és més adequada per al teu cas."
+        },
+        {
+          "q": "Amb quina freqüència s'actualitzen les dades?",
+          "a": "Depèn del teu pla en l'eina escollida. CoinTracking ofereix sincronització des de cada hora fins a diària. Per a carteres amb trading actiu, recomanem actualització cada 6-12 hores. Per a HODLers, actualització diària és suficient. La freqüència afecta al cost de subscripció en l'eina."
+        },
+        {
+          "q": "Aquest servei inclou càlculs fiscals o preparació de models AEAT?",
+          "a": "No. Aquest servei és exclusivament monitorització en temps real. Si necessites càlculs FIFO, preparació de liquidacions fiscals o models AEAT, has de contractar el nostre servei de Liquidacions Fiscals. CoinTracking pot generar reportes fiscals automàtics, però no són vàlids per a Espanya sense revisió manual experta."
+        },
+        {
+          "q": "Què passa si la meva cartera és massa complexa per CoinTracking?",
+          "a": "Si durant l'avaluació detectem que tens operacions DeFi complexes, més de 50 fonts de dades, centenars de milers de transaccions o casos que CoinTracking no processa correctament, et recomanarem el nostre servei d'Anàlisi de Carteres al seu lloc. No forcem eines automatitzades quan sabem que generaran errors."
+        },
+        {
+          "q": "Puc cancel·lar el servei en qualsevol moment?",
+          "a": "La configuració inicial és un servei puntual amb pagament únic. La subscripció a CoinTracking (u altra eina) la contractes tu directament i pots cancel·lar-la quan vulguis. Nosaltres només cobrem per configuració inicial, formació i suport durant els primers 30 dies. Suport posterior es factura sota demanda si el necessites."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "Parlem?",
+      "body": "Si tens una cartera de complexitat moderada i vols visibilitat contínua sense complicacions tècniques, podem ajudar-te. Explica'ns sobre les teves plataformes, volum d'operacions i quines mètriques vols monitoritzar. T'enviam una avaluació inicial en 24-48 hores confirmant si aquest servei és adequat per al teu cas o si necessites alguna cosa més avançada.",
+      "button": {
+        "label": "Sol·licitar avaluació gratuïta",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    { "label": "Tornar a tots els serveis", "href": "/servicios" },
+    { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
+    { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
+    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+  ],
+  "seo": {
+    "title": "Seguiment en Temps Real de Cartera Crypto | CoinTracking | Cleriontax",
+    "description": "Configuració professional de dashboards amb CoinTracking. Monitorització contínua d'exchanges i wallets. Alertes, reportes i balances en temps real.",
+    "keywords": ["seguiment cartera crypto", "dashboard criptomonedes", "CoinTracking configuració", "monitorització exchanges", "alertes crypto", "portfolio tracking"],
+    "canonical": "https://cleriontax.com/servicios/seguimiento-cartera"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Seguiment en Temps Real de Cartera",
+    "serviceType": "Configuració d'Eines de Seguiment de Cartera Crypto",
+    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "areaServed": "Espanya",
+    "description": "Servei de configuració professional d'eines de seguiment en temps real per a carteres de criptomonedes de complexitat moderada. Inclou connexió d'exchanges i wallets, dashboards personalitzats i alertes configurables."
+  }
+}
+

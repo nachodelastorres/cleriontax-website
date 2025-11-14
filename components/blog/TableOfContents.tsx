@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { ListBulletIcon } from '@heroicons/react/24/outline';
 
 interface TableOfContentsProps {
@@ -14,6 +15,7 @@ interface Heading {
 }
 
 export default function TableOfContents({ content }: TableOfContentsProps) {
+  const t = useTranslations('blog.post');
   const [headings, setHeadings] = useState<Heading[]>([]);
   const [activeId, setActiveId] = useState<string>('');
 
@@ -75,7 +77,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
       <div className="bg-white rounded-2xl shadow-lg border border-neutral-200 p-6">
         <div className="flex items-center gap-3 mb-4 pb-4 border-b border-neutral-200">
           <ListBulletIcon className="w-5 h-5 text-accent" />
-          <h3 className="text-lg font-bold text-navy">Tabla de Contenidos</h3>
+          <h3 className="text-lg font-bold text-navy">{t('tableOfContents')}</h3>
         </div>
 
         <nav className="space-y-2">
@@ -100,7 +102,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
         {/* Progress indicator */}
         <div className="mt-6 pt-4 border-t border-neutral-200">
           <div className="flex items-center justify-between text-xs text-neutral-500 mb-2">
-            <span>Progreso de lectura</span>
+            <span>{t('readingProgress')}</span>
             <span>{Math.round(((headings.findIndex(h => h.id === activeId) + 1) / headings.length) * 100)}%</span>
           </div>
           <div className="w-full h-2 bg-neutral-100 rounded-full overflow-hidden">
