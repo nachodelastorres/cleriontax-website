@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from 'next-intl/server';
+import Image from "next/image";
 import { getBlogPostBySlug, getAllBlogPosts, getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogContentMagazine from "@/components/blog/BlogContentMagazine";
@@ -9,6 +10,11 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogCard from "@/components/blog/BlogCard";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { Calendar, Clock, Tag, Share2, ArrowLeft } from "lucide-react";
+import {
+  generateBlogBreadcrumbSchema,
+  generatePersonSchema,
+  getOrganizationReference
+} from "@/lib/schemas";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -35,6 +41,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   const post = await getBlogPostBySlug(slug, locale);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   if (!post) {
     return {
@@ -48,11 +55,11 @@ export async function generateMetadata({ params }: Props) {
     keywords: post.seo.keywords.join(', '),
     authors: [{ name: post.author.name }],
     alternates: {
-      canonical: `/${locale}/blog/${slug}`,
+      canonical: `${baseUrl}/${locale}/blog/${slug}`,
       languages: {
-        'es': `/es/blog/${post.slugTranslations.es}`,
-        'en': `/en/blog/${post.slugTranslations.en}`,
-        'ca': `/ca/blog/${post.slugTranslations.ca}`,
+        'es': `${baseUrl}/es/blog/${post.slugTranslations.es}`,
+        'en': `${baseUrl}/en/blog/${post.slugTranslations.en}`,
+        'ca': `${baseUrl}/ca/blog/${post.slugTranslations.ca}`,
       },
     },
     openGraph: {
@@ -60,7 +67,7 @@ export async function generateMetadata({ params }: Props) {
       description: post.seo.metaDescription,
       type: 'article',
       locale: locale,
-      url: `/${locale}/blog/${slug}`,
+      url: `${baseUrl}/${locale}/blog/${slug}`,
       images: [
         {
           url: post.seo.ogImage || post.image.url,
@@ -102,42 +109,83 @@ export default async function BlogPostPage({ params }: Props) {
     ))
     .slice(0, 3);
 
-  // Structured Data for SEO
+  // Generate structured data schemas
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
+  const postUrl = `${baseUrl}/${locale}/blog/${slug}`;
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = generateBlogBreadcrumbSchema({
+    locale: locale as 'es' | 'en' | 'ca',
+    blogSlug: slug,
+    blogTitle: post.title,
+    baseUrl
+  });
+
+  // Person/Author Schema
+  const authorSchema = generatePersonSchema({
+    name: post.author.name,
+    role: post.author.role,
+    avatar: post.author.avatar,
+    baseUrl
+  });
+
+  // Enhanced BlogPosting Schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
     "headline": post.title,
+    "alternativeHeadline": post.seo.metaTitle,
     "description": post.excerpt,
-    "image": post.image.url,
+    "image": {
+      "@type": "ImageObject",
+      "url": post.image.url,
+      "width": post.image.width,
+      "height": post.image.height,
+      "caption": post.image.alt
+    },
     "datePublished": post.publishedAt,
     "dateModified": post.updatedAt || post.publishedAt,
-    "author": {
-      "@type": "Person",
-      "name": post.author.name,
-      "jobTitle": post.author.role
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Cleriontax",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://cleriontax.com/images/logo.png"
-      }
-    },
+    "author": authorSchema,
+    "publisher": getOrganizationReference(baseUrl),
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://cleriontax.com/${locale}/blog/${slug}`
+      "@id": `${postUrl}#webpage`,
+      "url": postUrl
     },
+    "isPartOf": {
+      "@type": "Blog",
+      "@id": `${baseUrl}/${locale}/blog#blog`,
+      "name": "Cleriontax Blog"
+    },
+    "inLanguage": locale,
     "articleSection": post.category,
-    "keywords": post.tags.join(', '),
+    "keywords": post.tags,
     "wordCount": post.content ? post.content.split(/\s+/).length : 0,
-    "timeRequired": `PT${post.readingTime}M`
+    "timeRequired": `PT${post.readingTime}M`,
+    "breadcrumb": breadcrumbSchema,
+    "url": postUrl
   };
 
   return (
     <>
-      {/* Structured Data */}
+      {/* Structured Data - Breadcrumb */}
       <script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* Structured Data - Author */}
+      <script
+        id="author-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
+
+      {/* Structured Data - BlogPosting */}
+      <script
+        id="blogposting-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
@@ -151,7 +199,7 @@ export default async function BlogPostPage({ params }: Props) {
               <ButtonLink
                 variant="outline"
                 size="sm"
-                href={`/${locale}/blog`}
+                href="/blog"
                 className="mb-8"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -235,14 +283,16 @@ export default async function BlogPostPage({ params }: Props) {
           <Container>
             <div className="max-w-5xl mx-auto">
               <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl">
-                <div
-                  className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"
-                  style={{
-                    backgroundImage: `url(${post.image.url})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
+                <Image
+                  src={post.image.url}
+                  alt={post.image.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1280px) 100vw, 1280px"
+                  quality={90}
+                  priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
               </div>
             </div>
           </Container>
@@ -366,7 +416,7 @@ export default async function BlogPostPage({ params }: Props) {
             <ButtonLink
               variant="secondary"
               size="lg"
-              href={`/${locale}/contacto`}
+              href="/contacto"
               className="shadow-xl hover:shadow-2xl"
             >
               {t('post.cta.button')}

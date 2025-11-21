@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { Mail, Phone, Linkedin } from "lucide-react";
 import Container from "@/components/ui/Container";
@@ -14,23 +14,24 @@ export default function Footer() {
 
   const footerLinks = {
     empresa: [
-      { name: t('links.about'), href: `/${locale}/sobre-nosotros` },
-      { name: t('links.services'), href: `/${locale}/servicios` },
-      { name: t('links.blog'), href: `/${locale}/blog` },
-      { name: t('links.contact'), href: `/${locale}/contacto` },
+      { name: t('links.about'), href: '/sobre-nosotros' },
+      { name: t('links.services'), href: '/servicios' },
+      { name: t('links.blog'), href: '/blog' },
+      { name: t('links.contact'), href: '/contacto' },
     ],
-    legal: [
-      { name: t('links.privacy'), href: `/${locale}/privacidad` },
-      { name: t('links.legal'), href: `/${locale}/aviso-legal` },
-      { name: t('links.cookies'), href: `/${locale}/cookies` },
-    ],
+    // Comentado temporalmente hasta crear las páginas legales
+    // legal: [
+    //   { name: t('links.privacy'), href: '/privacidad' },
+    //   { name: t('links.legal'), href: '/aviso-legal' },
+    //   { name: t('links.cookies'), href: '/cookies' },
+    // ],
   };
 
   return (
     <footer className="border-t border-neutral-300 bg-gradient-to-br from-navy via-navy to-navy-darker">
       <Container>
         <div className="py-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Brand */}
             <div className="space-y-2">
               <Logo variant="transparent" type="cropped" />
@@ -58,8 +59,8 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Legal */}
-            <div>
+            {/* Legal - Temporalmente oculto hasta crear las páginas */}
+            {/* <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
                 {t('sections.legal')}
               </h3>
@@ -75,7 +76,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Contacto */}
             <div>
@@ -103,9 +104,10 @@ export default function Footer() {
                     <span>+34 663 482 301</span>
                   </a>
                 </li>
+                {/* LinkedIn - Comentado hasta tener URL específica
                 <li>
                   <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/company/cleriontax"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-sm text-gray-blue-light transition-colors hover:text-white group"
@@ -114,6 +116,7 @@ export default function Footer() {
                     <span>{tCommon('linkedin')}</span>
                   </a>
                 </li>
+                */}
               </ul>
             </div>
           </div>

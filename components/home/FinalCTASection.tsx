@@ -59,7 +59,7 @@ export default function FinalCTASection() {
               <ButtonLink
                 variant="primary"
                 size="lg"
-                href={`/${locale}/contacto`}
+                href="/contacto"
                 className="group inline-flex items-center gap-3 px-10 py-5 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 {t('button')}

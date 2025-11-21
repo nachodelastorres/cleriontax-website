@@ -62,7 +62,7 @@ export default function Navbar() {
           <Logo
             variant="transparent"
             type="full"
-            href={`/${locale}`}
+            href="/"
             height={32}
           />
 

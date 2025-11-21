@@ -8,6 +8,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Obtener todos los posts del blog
   const blogPosts = getAllBlogPosts();
 
+  // Servicios dinámicos
+  const serviceSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal'];
+
   // Páginas estáticas principales
   const staticPages = [
     '',
@@ -38,6 +41,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
+  // Generar URLs para todos los servicios dinámicos en todos los idiomas
+  const serviceUrls: MetadataRoute.Sitemap = [];
+
+  locales.forEach(locale => {
+    serviceSlugs.forEach(slug => {
+      serviceUrls.push({
+        url: `${baseUrl}/${locale}/servicios/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.9,
+        alternates: {
+          languages: {
+            es: `${baseUrl}/es/servicios/${slug}`,
+            en: `${baseUrl}/en/servicios/${slug}`,
+            ca: `${baseUrl}/ca/servicios/${slug}`,
+          },
+        },
+      });
+    });
+  });
+
   // Generar URLs para todos los posts del blog en todos los idiomas
   const blogUrls: MetadataRoute.Sitemap = [];
 
@@ -61,5 +85,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
-  return [...staticUrls, ...blogUrls];
+  return [...staticUrls, ...serviceUrls, ...blogUrls];
 }

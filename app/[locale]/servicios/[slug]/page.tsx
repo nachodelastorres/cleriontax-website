@@ -4,6 +4,12 @@ import Container from "@/components/ui/Container";
 import CTASection from "@/components/home/CTASection";
 import { promises as fs } from 'fs';
 import path from 'path';
+import {
+  generateServiceBreadcrumbSchema,
+  generateDetailedServiceSchema,
+  generateHowToSchema,
+  getServiceName
+} from "@/lib/schemas";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -30,6 +36,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   const slugKey = slugToCamelCase(slug);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   try {
     const t = await getTranslations({ locale, namespace: `servicesPages.${slugKey}` });
@@ -39,11 +46,11 @@ export async function generateMetadata({ params }: Props) {
       description: t('seo.description'),
       keywords: t.raw('seo.keywords'),
       alternates: {
-        canonical: `/${locale}/servicios/${slug}`,
+        canonical: `${baseUrl}/${locale}/servicios/${slug}`,
         languages: {
-          'es': `/es/servicios/${slug}`,
-          'en': `/en/servicios/${slug}`,
-          'ca': `/ca/servicios/${slug}`,
+          'es': `${baseUrl}/es/servicios/${slug}`,
+          'en': `${baseUrl}/en/servicios/${slug}`,
+          'ca': `${baseUrl}/ca/servicios/${slug}`,
         },
       },
       openGraph: {
@@ -51,7 +58,7 @@ export async function generateMetadata({ params }: Props) {
         description: t('seo.description'),
         type: 'website',
         locale: locale,
-        url: `/${locale}/servicios/${slug}`,
+        url: `${baseUrl}/${locale}/servicios/${slug}`,
       },
     };
   } catch {
@@ -84,11 +91,75 @@ export default async function ServiceDetailPage({ params }: Props) {
   }
 
   const t = await getTranslations({ locale, namespace: 'servicesPages.relatedServices' });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   const { hero, toc, sections, internal_links } = serviceData;
 
+  // Generate structured data schemas
+  const serviceName = getServiceName(slug, locale as 'es' | 'en' | 'ca');
+  const serviceUrl = `${baseUrl}/${locale}/servicios/${slug}`;
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = generateServiceBreadcrumbSchema({
+    locale: locale as 'es' | 'en' | 'ca',
+    serviceSlug: slug,
+    serviceTitle: serviceName,
+    baseUrl
+  });
+
+  // Service Schema
+  const serviceSchema = generateDetailedServiceSchema({
+    locale: locale as 'es' | 'en' | 'ca',
+    serviceName,
+    description: serviceData.excerpt,
+    serviceType: slug,
+    url: serviceUrl,
+    breadcrumb: breadcrumbSchema,
+    baseUrl
+  });
+
+  // HowTo Schema (if service has steps)
+  const howToSection = sections.find((s: any) => s.steps && s.steps.length > 0);
+  let howToSchema = null;
+  if (howToSection && howToSection.steps) {
+    howToSchema = generateHowToSchema({
+      locale: locale as 'es' | 'en' | 'ca',
+      name: `${serviceName} - ${howToSection.h2}`,
+      description: serviceData.excerpt,
+      steps: howToSection.steps.map((step: any) => ({
+        name: step.title,
+        text: step.body
+      })),
+      url: serviceUrl,
+      baseUrl
+    });
+  }
+
   return (
     <>
+      {/* Structured Data - Breadcrumb */}
+      <script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* Structured Data - Service */}
+      <script
+        id="service-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
+      {/* Structured Data - HowTo (if available) */}
+      {howToSchema && (
+        <script
+          id="howto-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
+
       {/* Hero Section - Enhanced */}
       <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-darker to-plum pt-32 pb-24">
         {/* Animated background pattern */}

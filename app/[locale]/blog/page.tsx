@@ -3,6 +3,7 @@ import { getAllBlogPostsWithContent, getAllCategories } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogHero from "@/components/blog/BlogHero";
 import BlogCard from "@/components/blog/BlogCard";
+import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -11,17 +12,18 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo.blog' });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
     title: t('title'),
     description: t('description'),
     keywords: 'blog fiscalidad criptomonedas, noticias cripto España, guías fiscales crypto, impuestos bitcoin, declaración criptoactivos, AEAT criptomonedas, asesoría fiscal blockchain, actualidad normativa cripto',
     alternates: {
-      canonical: `/${locale}/blog`,
+      canonical: `${baseUrl}/${locale}/blog`,
       languages: {
-        'es': '/es/blog',
-        'en': '/en/blog',
-        'ca': '/ca/blog',
+        'es': `${baseUrl}/es/blog`,
+        'en': `${baseUrl}/en/blog`,
+        'ca': `${baseUrl}/ca/blog`,
       },
     },
     openGraph: {
@@ -29,7 +31,7 @@ export async function generateMetadata({ params }: Props) {
       description: t('description'),
       type: 'website',
       locale: locale,
-      url: `/${locale}/blog`,
+      url: `${baseUrl}/${locale}/blog`,
     },
   };
 }
@@ -37,6 +39,7 @@ export async function generateMetadata({ params }: Props) {
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'blog' });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   // Cargar todos los posts con su contenido en el idioma actual
   const allPosts = await getAllBlogPostsWithContent(locale);
@@ -46,22 +49,22 @@ export default async function BlogPage({ params }: Props) {
   // Obtener traducciones de categorías
   const categoryTranslations = t.raw('categoryTranslations') as Record<string, string> || {};
 
+  // Breadcrumb Schema
+  const breadcrumbSchema = generateBreadcrumbSchema({
+    locale: locale as 'es' | 'en' | 'ca',
+    path: `/${locale}/blog`,
+    baseUrl
+  });
+
   // Structured Data for SEO
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Cleriontax Blog - Fiscalidad de Criptomonedas",
     "description": "Guías, noticias y análisis sobre la fiscalidad de criptomonedas en España. Expertos en IRPF, modelo 100, 720 y optimización fiscal crypto.",
-    "url": `https://cleriontax.com/${locale}/blog`,
-    "publisher": {
-      "@type": "Organization",
-      "name": "Cleriontax",
-      "url": "https://cleriontax.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://cleriontax.com/images/logo.png"
-      }
-    },
+    "url": `${baseUrl}/${locale}/blog`,
+    "publisher": getOrganizationReference(baseUrl),
+    "breadcrumb": breadcrumbSchema,
     "blogPost": allPosts.map(post => ({
       "@type": "BlogPosting",
       "headline": post.title,
@@ -73,25 +76,26 @@ export default async function BlogPage({ params }: Props) {
         "@type": "Person",
         "name": post.author.name
       },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Cleriontax",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://cleriontax.com/images/logo.png"
-        }
-      },
+      "publisher": getOrganizationReference(baseUrl),
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://cleriontax.com/${locale}/blog/${post.slugTranslations[locale as keyof typeof post.slugTranslations]}`
+        "@id": `${baseUrl}/${locale}/blog/${post.slugTranslations[locale as keyof typeof post.slugTranslations]}`
       }
     }))
   };
 
   return (
     <>
+      {/* Breadcrumb Schema */}
+      <script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Structured Data */}
       <script
+        id="blog-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

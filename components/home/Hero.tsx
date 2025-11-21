@@ -80,7 +80,7 @@ export default function Hero() {
               <ButtonLink
                 variant="secondary"
                 size="lg"
-                href={`/${locale}/contacto`}
+                href="/contacto"
                 className="group shadow-xl hover:shadow-2xl"
               >
                 {t('primaryCTA')}
@@ -89,7 +89,7 @@ export default function Hero() {
               <ButtonLink
                 variant="outline"
                 size="lg"
-                href={`/${locale}/servicios`}
+                href="/servicios"
                 className="border-white text-white hover:border-gray-blue-light hover:text-gray-blue-light"
               >
                 {t('secondaryCTA')}

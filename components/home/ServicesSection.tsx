@@ -16,25 +16,25 @@ export default function ServicesSection() {
       title: t('services.service1.title'),
       description: t('services.service1.description'),
       cta: t('services.service1.cta'),
-      link: `/${locale}/servicios`,
+      link: '/servicios',
     },
     {
       title: t('services.service2.title'),
       description: t('services.service2.description'),
       cta: t('services.service2.cta'),
-      link: `/${locale}/servicios`,
+      link: '/servicios',
     },
     {
       title: t('services.service3.title'),
       description: t('services.service3.description'),
       cta: t('services.service3.cta'),
-      link: `/${locale}/servicios`,
+      link: '/servicios',
     },
     {
       title: t('services.service4.title'),
       description: t('services.service4.description'),
       cta: t('services.service4.cta'),
-      link: `/${locale}/servicios`,
+      link: '/servicios',
     },
   ];
 

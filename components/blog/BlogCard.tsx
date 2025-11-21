@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';
+import Image from "next/image";
 import { Calendar, Clock, Tag, ArrowRight } from "lucide-react";
 import { BlogPost } from "@/lib/blog";
 import { useLocale, useTranslations } from 'next-intl';
@@ -39,17 +40,18 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
         featured ? 'lg:col-span-2' : ''
       }`}
     >
-      <Link href={`/${locale}/blog/${slug}`} className={`block ${featured ? 'lg:flex lg:flex-row' : ''}`}>
+      <Link href={`/blog/${slug}`} className={`block ${featured ? 'lg:flex lg:flex-row' : ''}`}>
         {/* Image */}
         <div className={`relative overflow-hidden ${featured ? 'lg:w-1/2 aspect-[16/9] lg:aspect-auto' : 'aspect-[16/9]'}`}>
-          <div
-            className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 group-hover:scale-105 transition-transform duration-700"
-            style={{
-              backgroundImage: `url(${post.image.url})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
+          <Image
+            src={post.image.url}
+            alt={post.image.alt}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-700"
+            sizes={featured ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}
+            quality={85}
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
           {/* Category badge */}

@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schemas";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,9 +22,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com'),
+    metadataBase: new URL(baseUrl),
     title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
     description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
     keywords: [
@@ -46,6 +48,7 @@ export async function generateMetadata({ params }: Props) {
       description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
       type: 'website',
       locale: locale,
+      url: `${baseUrl}/${locale}`,
       images: [
         {
           url: '/images/logos/logo_fondo_blanco.png',
@@ -56,11 +59,11 @@ export async function generateMetadata({ params }: Props) {
       ],
     },
     alternates: {
-      canonical: `/${locale}`,
+      canonical: `${baseUrl}/${locale}`,
       languages: {
-        'es': '/es',
-        'en': '/en',
-        'ca': '/ca',
+        'es': `${baseUrl}/es`,
+        'en': `${baseUrl}/en`,
+        'ca': `${baseUrl}/ca`,
       },
     },
   };
@@ -80,8 +83,41 @@ export default async function LocaleLayout({
   // Obtener mensajes para el idioma actual
   const messages = await getMessages({ locale });
 
+  // Generate structured data schemas
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
+  const organizationSchema = generateOrganizationSchema({
+    locale: locale as 'es' | 'en' | 'ca',
+    baseUrl
+  });
+  const websiteSchema = generateWebSiteSchema({
+    locale: locale as 'es' | 'en' | 'ca',
+    baseUrl
+  });
+
   return (
     <html lang={locale}>
+      <head>
+        {/* Ahrefs Analytics */}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="3r++ttNRQCzpkDfWHbDw2A"
+          async
+        />
+
+        {/* Structured Data - Organization */}
+        <script
+          id="schema-organization"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+
+        {/* Structured Data - WebSite */}
+        <script
+          id="schema-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
