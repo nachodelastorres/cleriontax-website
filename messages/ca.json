@@ -570,7 +570,8 @@
     },
     "categoryTranslations": {
       "Fiscalidad e Inversión": "Fiscalitat i Inversió",
-      "Clasificación y Metodología": "Classificació i Metodologia"
+      "Clasificación y Metodología": "Classificació i Metodologia",
+      "DeFi y Protocolos Avanzados": "DeFi i Protocols Avançats"
     },
     "authorTranslations": {
       "Equipo Cleriontax": {
@@ -659,7 +660,66 @@
       "Permuta Criptomonedas": "Permuta Criptomonedes",
       "Error Fiscal": "Error Fiscal",
       "DAI": "DAI",
-      "Tether": "Tether"
+      "Tether": "Tether",
+      "DEX": "DEX",
+      "Uniswap": "Uniswap",
+      "PancakeSwap": "PancakeSwap",
+      "Curve Finance": "Curve Finance",
+      "Fiscalidad DeFi Avanzada": "Fiscalitat DeFi Avançada",
+      "Swaps DEX": "Swaps DEX",
+      "Pools de Liquidez": "Pools de Liquiditat",
+      "Impermanent Loss": "Impermanent Loss",
+      "Tokens LP": "Tokens LP",
+      "Protocolos Descentralizados": "Protocols Descentralitzats",
+      "Gas Fees": "Gas Fees"
+    },
+    "latestPost": {
+      "title": "Últim Article Publicat",
+      "subtitle": "El més recent sobre fiscalitat de criptomonedes a Espanya",
+      "readFullArticle": "Llegir article complet",
+      "readingTime": "min lectura"
+    },
+    "clusters": {
+      "title": "Explora per Temes",
+      "subtitle": "Contingut estructurat en clústers temàtics per facilitar la teva cerca",
+      "article": "article",
+      "articles": "articles",
+      "recentArticles": "Articles Recents",
+      "moreArticles": "articles més",
+      "comingSoon": "📝 Contingut properament",
+      "viewAll": "Veure tots els articles"
+    },
+    "cta": {
+      "title": "Necessites ajuda amb la teva declaració fiscal?",
+      "description": "El nostre equip d'experts pot ajudar-te a preparar la teva declaració de criptomonedes",
+      "button": "Sol·licitar Assessoria"
+    },
+    "clusterPage": {
+      "backToBlog": "Tornar al Blog",
+      "badge": "Clúster Temàtic",
+      "article": "article",
+      "articles": "articles",
+      "seoText": "Clúster temàtic sobre {clusterName} al blog de Cleriontax. Guies completes i articles especialitzats sobre fiscalitat de criptomonedes a Espanya. {keywords}. Informació actualitzada sobre IRPF, model 100, declaració de criptoactius i assessorament fiscal especialitzat.",
+      "keyTopics": "Temes Clau",
+      "seoKeywordsPrefix": "Articles sobre {keywords1}. Informació fiscal especialitzada en {keywords2}. Guies completes de {clusterName} a Espanya.",
+      "allArticles": {
+        "title": "Tots els Articles",
+        "description": "Explora tota la col·lecció d'articles sobre {clusterName}"
+      },
+      "comingSoon": {
+        "title": "Contingut Properament",
+        "description": "Estem treballant en contingut per a aquest clúster. Torna aviat per trobar guies completes sobre {clusterName}."
+      },
+      "faq": {
+        "title": "Preguntes Freqüents",
+        "description": "Les consultes més comunes sobre {clusterName}",
+        "answerText": "Troba la resposta detallada als articles d'aquest clúster. Les nostres guies inclouen exemples pràctics, càlculs pas a pas i referències a la normativa AEAT."
+      },
+      "cta": {
+        "title": "Necessites ajuda amb la teva declaració fiscal?",
+        "description": "El nostre equip d'experts pot ajudar-te amb {clusterName}",
+        "button": "Sol·licitar Assessoria"
+      }
     }
   },
   "faq": {

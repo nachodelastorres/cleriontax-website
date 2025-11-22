@@ -1,0 +1,96 @@
+{
+  "clusters": [
+    {
+      "id": "fiscalidad-criptomonedas",
+      "name": {
+        "es": "Fiscalidad de Criptomonedas",
+        "en": "Cryptocurrency Taxation",
+        "ca": "Fiscalitat de Criptomonedes"
+      },
+      "description": {
+        "es": "Guía completa sobre la tributación de criptomonedas en España: modelos fiscales, obligaciones ante la AEAT, cálculo de ganancias patrimoniales y declaración de activos digitales.",
+        "en": "Complete guide on cryptocurrency taxation in Spain: tax forms, obligations to the AEAT, capital gains calculation and digital asset declaration.",
+        "ca": "Guia completa sobre la tributació de criptomonedes a Espanya: models fiscals, obligacions davant l'AEAT, càlcul de guanys patrimonials i declaració d'actius digitals."
+      },
+      "keywords": {
+        "es": ["fiscalidad criptomonedas", "modelo 100", "modelo 721", "modelo 714", "AEAT", "declaración renta cripto", "ganancias patrimoniales", "FIFO", "impuestos bitcoin", "stablecoins fiscalidad", "NFTs tributación", "minería crypto impuestos"],
+        "en": ["cryptocurrency taxation", "form 100", "form 721", "form 714", "AEAT", "crypto tax return", "capital gains", "FIFO", "bitcoin taxes", "stablecoins taxation", "NFTs taxation", "crypto mining taxes"],
+        "ca": ["fiscalitat criptomonedes", "model 100", "model 721", "model 714", "AEAT", "declaració renda cripto", "guanys patrimonials", "FIFO", "impostos bitcoin", "stablecoins fiscalitat", "NFTs tributació", "mineria crypto impostos"]
+      },
+      "aiPrompts": {
+        "es": ["¿Cómo declarar criptomonedas en la renta en España?", "¿Qué modelos fiscales necesito para declarar Bitcoin?", "¿Cómo tributan las stablecoins en España?", "¿Cuándo debo presentar el modelo 721?", "¿Cómo se calculan las ganancias patrimoniales en crypto?"],
+        "en": ["How to declare cryptocurrencies in the tax return in Spain?", "What tax forms do I need to declare Bitcoin?", "How are stablecoins taxed in Spain?", "When should I file form 721?", "How are capital gains calculated in crypto?"],
+        "ca": ["Com declarar criptomonedes a la renda a Espanya?", "Quins models fiscals necessito per declarar Bitcoin?", "Com tributen les stablecoins a Espanya?", "Quan he de presentar el model 721?", "Com es calculen els guanys patrimonials en crypto?"]
+      }
+    },
+    {
+      "id": "fiscalidad-defi-avanzada",
+      "name": {
+        "es": "Fiscalidad DeFi Avanzada",
+        "en": "Advanced DeFi Taxation",
+        "ca": "Fiscalitat DeFi Avançada"
+      },
+      "description": {
+        "es": "Tratamiento fiscal de operaciones DeFi complejas: staking, yield farming, liquidity pools, lending, protocolos descentralizados y trazabilidad de transacciones on-chain.",
+        "en": "Tax treatment of complex DeFi operations: staking, yield farming, liquidity pools, lending, decentralized protocols and on-chain transaction traceability.",
+        "ca": "Tractament fiscal d'operacions DeFi complexes: staking, yield farming, liquidity pools, lending, protocols descentralitzats i traçabilitat de transaccions on-chain."
+      },
+      "keywords": {
+        "es": ["staking fiscalidad", "yield farming impuestos", "liquidity pools tributación", "DeFi AEAT", "protocolos descentralizados", "trazabilidad blockchain", "lending borrowing fiscalidad", "rendimientos DeFi", "impermanent loss fiscal"],
+        "en": ["staking taxation", "yield farming taxes", "liquidity pools taxation", "DeFi AEAT", "decentralized protocols", "blockchain traceability", "lending borrowing taxation", "DeFi yields", "impermanent loss tax"],
+        "ca": ["staking fiscalitat", "yield farming impostos", "liquidity pools tributació", "DeFi AEAT", "protocols descentralitzats", "traçabilitat blockchain", "lending borrowing fiscalitat", "rendiments DeFi", "impermanent loss fiscal"]
+      },
+      "aiPrompts": {
+        "es": ["¿Cómo tributa el staking de criptomonedas?", "¿Debo declarar recompensas de yield farming?", "¿Cómo se declaran las liquidity pools?", "¿Qué es el impermanent loss fiscalmente?", "¿Cómo rastrear operaciones DeFi para Hacienda?"],
+        "en": ["How is cryptocurrency staking taxed?", "Should I declare yield farming rewards?", "How are liquidity pools declared?", "What is impermanent loss from a tax perspective?", "How to track DeFi operations for Tax Authority?"],
+        "ca": ["Com tributa el staking de criptomonedes?", "He de declarar recompenses de yield farming?", "Com es declaren les liquidity pools?", "Què és l'impermanent loss fiscalment?", "Com rastrejar operacions DeFi per a Hisenda?"]
+      }
+    },
+    {
+      "id": "ingenieria-datos-fiscalidad",
+      "name": {
+        "es": "Ingeniería de Datos Aplicada a Fiscalidad",
+        "en": "Data Engineering Applied to Taxation",
+        "ca": "Enginyeria de Dades Aplicada a Fiscalitat"
+      },
+      "description": {
+        "es": "Metodologías técnicas para procesamiento de datos fiscales: extracción de CSV, limpieza de datasets, clasificación de operaciones, ETL, reconciliación de transacciones y auditoría de datos blockchain.",
+        "en": "Technical methodologies for tax data processing: CSV extraction, dataset cleaning, operation classification, ETL, transaction reconciliation and blockchain data auditing.",
+        "ca": "Metodologies tècniques per al processament de dades fiscals: extracció de CSV, neteja de datasets, classificació d'operacions, ETL, reconciliació de transaccions i auditoria de dades blockchain."
+      },
+      "keywords": {
+        "es": ["clasificación operaciones crypto", "extracción datos CSV", "limpieza dataset fiscal", "ETL criptomonedas", "reconciliación transacciones", "auditoría datos blockchain", "metodología FIFO", "trazabilidad fiscal", "ingeniería datos crypto"],
+        "en": ["crypto operations classification", "CSV data extraction", "tax dataset cleaning", "cryptocurrency ETL", "transaction reconciliation", "blockchain data audit", "FIFO methodology", "tax traceability", "crypto data engineering"],
+        "ca": ["classificació operacions crypto", "extracció dades CSV", "neteja dataset fiscal", "ETL criptomonedes", "reconciliació transaccions", "auditoria dades blockchain", "metodologia FIFO", "traçabilitat fiscal", "enginyeria dades crypto"]
+      },
+      "aiPrompts": {
+        "es": ["¿Cómo clasificar operaciones de criptomonedas?", "¿Qué herramientas usar para rastrear transacciones?", "¿Cómo limpiar datos de exchanges?", "¿Qué es la metodología FIFO?", "¿Cómo auditar datos blockchain para fiscalidad?"],
+        "en": ["How to classify cryptocurrency operations?", "What tools to use to track transactions?", "How to clean exchange data?", "What is the FIFO methodology?", "How to audit blockchain data for taxation?"],
+        "ca": ["Com classificar operacions de criptomonedes?", "Quines eines utilitzar per rastrejar transaccions?", "Com netejar dades d'exchanges?", "Què és la metodologia FIFO?", "Com auditar dades blockchain per a fiscalitat?"]
+      }
+    },
+    {
+      "id": "guias-practicas-especificas",
+      "name": {
+        "es": "Guías Prácticas Específicas",
+        "en": "Specific Practical Guides",
+        "ca": "Guies Pràctiques Específiques"
+      },
+      "description": {
+        "es": "Tutoriales paso a paso para operaciones fiscales concretas: exportar históricos de exchanges, descargar datos de wallets, documentar swaps, generar informes AEAT y preparar declaraciones.",
+        "en": "Step-by-step tutorials for specific tax operations: export exchange histories, download wallet data, document swaps, generate AEAT reports and prepare declarations.",
+        "ca": "Tutorials pas a pas per a operacions fiscals concretes: exportar històrics d'exchanges, descarregar dades de wallets, documentar swaps, generar informes AEAT i preparar declaracions."
+      },
+      "keywords": {
+        "es": ["exportar Binance", "descargar Coinbase", "histórico Kraken", "datos MetaMask", "documentar swaps", "exportar Uniswap", "CSV exchanges", "informe AEAT", "preparar modelo 100"],
+        "en": ["export Binance", "download Coinbase", "Kraken history", "MetaMask data", "document swaps", "export Uniswap", "exchange CSV", "AEAT report", "prepare form 100"],
+        "ca": ["exportar Binance", "descarregar Coinbase", "històric Kraken", "dades MetaMask", "documentar swaps", "exportar Uniswap", "CSV exchanges", "informe AEAT", "preparar model 100"]
+      },
+      "aiPrompts": {
+        "es": ["¿Cómo exportar histórico de Binance?", "¿Cómo descargar datos de MetaMask?", "¿Cómo documentar swaps en Uniswap?", "¿Cómo generar informe para la AEAT?", "¿Cómo preparar el modelo 100 con criptomonedas?"],
+        "en": ["How to export Binance history?", "How to download MetaMask data?", "How to document swaps on Uniswap?", "How to generate a report for AEAT?", "How to prepare form 100 with cryptocurrencies?"],
+        "ca": ["Com exportar històric de Binance?", "Com descarregar dades de MetaMask?", "Com documentar swaps a Uniswap?", "Com generar informe per a l'AEAT?", "Com preparar el model 100 amb criptomonedes?"]
+      }
+    }
+  ]
+}

@@ -211,8 +211,25 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* Table of Contents - Enhanced */}
       <section className="bg-white border-b border-gray-200 sticky top-0 z-20 shadow-sm backdrop-blur-sm bg-white/95">
         <Container>
-          <nav className="py-5">
-            <ul className="flex flex-wrap gap-3 justify-center text-sm">
+          <nav className="py-3 md:py-5">
+            {/* Mobile: Horizontal scroll */}
+            <div className="md:hidden overflow-x-auto scrollbar-hide">
+              <ul className="flex gap-2 text-sm min-w-max px-4">
+                {toc.map((item: { id: string; label: string }) => (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      className="inline-block px-3 py-1.5 rounded-lg text-gray-700 hover:text-accent hover:bg-accent/5 font-medium transition-all duration-200 border border-gray-300 hover:border-accent/20 whitespace-nowrap text-xs"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Desktop: Wrap with spacing */}
+            <ul className="hidden md:flex flex-wrap gap-3 justify-center text-sm">
               {toc.map((item: { id: string; label: string }) => (
                 <li key={item.id}>
                   <a

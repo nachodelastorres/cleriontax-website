@@ -18,7 +18,7 @@ export default function HeroServices() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(109,164,143,0.08),_transparent_70%)]">
         <div className="absolute inset-0 opacity-[0.25]">
           <Image
-            src="/images/illustrations/services/tax-investment-services.webp"
+            src="/images/illustrations/informe-fiscal-datos-ordenados-cripto.webp"
             alt=""
             fill
             className="object-cover"

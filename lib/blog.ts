@@ -40,6 +40,9 @@ export interface BlogPost {
   };
   featured: boolean;
   layoutType?: 'magazine' | 'minimal' | 'storytelling';
+  cluster?: string;
+  relatedPosts?: string[];
+  aiOptimized?: boolean;
 }
 
 // Interfaz para el contenido traducido del blog

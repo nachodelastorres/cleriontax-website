@@ -1,80 +1,6 @@
 {
   "posts": [
     {
-      "id": "fiscalidad-dex-protocolos-uniswap-impuestos",
-      "slugTranslations": {
-        "es": "fiscalidad-dex-protocolos-uniswap-impuestos",
-        "en": "dex-protocols-uniswap-taxation",
-        "ca": "fiscalitat-dex-protocols-uniswap-impostos"
-      },
-      "author": {
-        "name": "Equipo Cleriontax",
-        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
-        "avatar": "/images/team/cleriontax-team.jpg"
-      },
-      "publishedAt": "2025-11-22T09:00:00Z",
-      "readingTime": 22,
-      "category": "DeFi y Protocolos Avanzados",
-      "tags": [
-        "DEX",
-        "Uniswap",
-        "PancakeSwap",
-        "Curve Finance",
-        "Fiscalidad DeFi Avanzada",
-        "Swaps DEX",
-        "Pools de Liquidez",
-        "Yield Farming",
-        "Impermanent Loss",
-        "Tokens LP",
-        "AEAT",
-        "Modelo 100",
-        "Protocolos Descentralizados",
-        "Gas Fees",
-        "FIFO",
-        "Multichain"
-      ],
-      "image": {
-        "url": "/images/illustrations/blog/ganancias-patrimonio-aeat.webp",
-        "alt": "Fiscalidad DeFi avanzada - Cómo tributan los protocolos DEX como Uniswap, PancakeSwap y Curve ante la AEAT - Guía completa sobre impuestos en exchanges descentralizados",
-        "width": 1200,
-        "height": 630
-      },
-      "seo": {
-        "metaTitle": "Fiscalidad DeFi Avanzada 2025: Cómo Tributan los DEX (Uniswap, PancakeSwap) | Cleriontax",
-        "metaDescription": "Guía definitiva sobre fiscalidad de protocolos DEX en España. Descubre cómo tributan swaps en Uniswap, pools de liquidez, farming, impermanent loss y gas fees ante la AEAT. Ejemplos prácticos con cálculos completos.",
-        "keywords": [
-          "DEX impuestos España",
-          "Uniswap fiscalidad",
-          "tributación PancakeSwap",
-          "pools de liquidez impuestos",
-          "yield farming fiscalidad",
-          "impermanent loss tributa",
-          "swaps DEX AEAT",
-          "tokens LP declaración",
-          "Curve Finance impuestos",
-          "gas fees deducibles",
-          "DeFi declaración AEAT",
-          "exchanges descentralizados fiscalidad",
-          "protocolos DeFi impuestos",
-          "Uniswap declarar Hacienda",
-          "fiscalidad Balancer"
-        ],
-        "ogImage": "/images/illustrations/blog/ganancias-patrimonio-aeat.webp",
-        "ogImageAlt": "Fiscalidad DeFi avanzada - Cómo tributan los protocolos DEX como Uniswap, PancakeSwap y Curve ante la AEAT",
-        "ogImageWidth": 1200,
-        "ogImageHeight": 630
-      },
-      "featured": true,
-      "layoutType": "minimal",
-      "cluster": "fiscalidad-defi-avanzada",
-      "relatedPosts": [
-        "fiscalidad-defi-espana",
-        "stablecoins-tributacion-espana-mito",
-        "clasificar-operaciones-criptomonedas"
-      ],
-      "aiOptimized": true
-    },
-    {
       "id": "stablecoins-tributacion-espana-mito",
       "slugTranslations": {
         "es": "stablecoins-tributacion-espana-mito",
@@ -132,14 +58,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "minimal",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "modelos-100-721-714-criptomonedas",
-        "errores-declarar-criptomonedas",
-        "guia-completa-declaracion-fiscal-criptomonedas-2025"
-      ],
-      "aiOptimized": true
+      "layoutType": "minimal"
     },
     {
       "id": "modelos-100-721-714-criptomonedas",
@@ -199,14 +118,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "minimal",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "modelo-721-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025",
-        "guia-completa-declaracion-fiscal-criptomonedas-2025"
-      ],
-      "aiOptimized": true
+      "layoutType": "minimal"
     },
     {
       "id": "herramientas-rastrear-criptomonedas",
@@ -266,14 +178,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "minimal",
-      "cluster": "ingenieria-datos-fiscalidad",
-      "relatedPosts": [
-        "clasificar-operaciones-criptomonedas",
-        "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "fiscalidad-defi-espana"
-      ],
-      "aiOptimized": true
+      "layoutType": "minimal"
     },
     {
       "id": "mineria-criptomonedas-fiscalidad-espana",
@@ -332,14 +237,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "como-declarar-criptomonedas-renta-2025",
-        "modelos-100-721-714-criptomonedas",
-        "errores-declarar-criptomonedas"
-      ],
-      "aiOptimized": true
+      "layoutType": "magazine"
     },
     {
       "id": "fiscalidad-nfts-espana-2025",
@@ -398,14 +296,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "como-declarar-criptomonedas-renta-2025",
-        "modelos-100-721-714-criptomonedas",
-        "guia-completa-declaracion-fiscal-criptomonedas-2025"
-      ],
-      "aiOptimized": true
+      "layoutType": "magazine"
     },
     {
       "id": "modelo-721-criptomonedas",
@@ -459,14 +350,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "modelos-100-721-714-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025",
-        "fiscalidad-defi-espana"
-      ],
-      "aiOptimized": true
+      "layoutType": "magazine"
     },
     {
       "id": "clasificar-operaciones-criptomonedas",
@@ -520,14 +404,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "minimal",
-      "cluster": "ingenieria-datos-fiscalidad",
-      "relatedPosts": [
-        "herramientas-rastrear-criptomonedas",
-        "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "fiscalidad-defi-espana"
-      ],
-      "aiOptimized": true
+      "layoutType": "minimal"
     },
     {
       "id": "errores-declarar-criptomonedas",
@@ -578,14 +455,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "storytelling",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "modelos-100-721-714-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025"
-      ],
-      "aiOptimized": true
+      "layoutType": "storytelling"
     },
     {
       "id": "fiscalidad-defi-espana",
@@ -636,14 +506,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "minimal",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "modelo-721-criptomonedas",
-        "clasificar-operaciones-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025"
-      ],
-      "aiOptimized": true
+      "layoutType": "minimal"
     },
     {
       "id": "como-declarar-criptomonedas-renta-2025",
@@ -694,14 +557,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "modelos-100-721-714-criptomonedas",
-        "errores-declarar-criptomonedas"
-      ],
-      "aiOptimized": true
+      "layoutType": "magazine"
     },
     {
       "id": "guia-completa-declaracion-fiscal-criptomonedas-2025",
@@ -762,14 +618,7 @@
         "ogImageHeight": 630
       },
       "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "como-declarar-criptomonedas-renta-2025",
-        "modelos-100-721-714-criptomonedas",
-        "clasificar-operaciones-criptomonedas"
-      ],
-      "aiOptimized": true
+      "layoutType": "magazine"
     }
   ]
 }

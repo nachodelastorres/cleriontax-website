@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from 'next-intl/server';
 import Image from "next/image";
+import Link from "next/link";
 import { getBlogPostBySlug, getAllBlogPosts, getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogContentMagazine from "@/components/blog/BlogContentMagazine";
@@ -9,12 +10,13 @@ import BlogContentStorytelling from "@/components/blog/BlogContentStorytelling";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogCard from "@/components/blog/BlogCard";
 import ButtonLink from "@/components/ui/ButtonLink";
-import { Calendar, Clock, Tag, Share2, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, Tag, Share2, ArrowLeft, Folder, FileText } from "lucide-react";
 import {
   generateBlogBreadcrumbSchema,
   generatePersonSchema,
   getOrganizationReference
 } from "@/lib/schemas";
+import clustersConfig from "@/messages/blog-posts/clusters-config.json";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -102,12 +104,25 @@ export default async function BlogPostPage({ params }: Props) {
 
   // Cargar posts relacionados con contenido
   const allPostsWithContent = await getAllBlogPostsWithContent(locale);
-  const relatedPosts = allPostsWithContent
-    .filter(p => p.slug !== post.slug && (
-      p.category === post.category ||
-      p.tags.some(tag => post.tags.includes(tag))
-    ))
-    .slice(0, 3);
+
+  // Priorizar posts relacionados del cluster (si existen en metadata)
+  let relatedPosts: typeof allPostsWithContent = [];
+  if (post.relatedPosts && post.relatedPosts.length > 0) {
+    // Buscar posts relacionados por sus IDs desde metadata
+    relatedPosts = allPostsWithContent
+      .filter(p => post.relatedPosts?.includes(p.slug.replace(/^.*\//, '')))
+      .slice(0, 3);
+  }
+
+  // Fallback: si no hay suficientes related posts del cluster, usar lógica por categoría/tags
+  if (relatedPosts.length < 3) {
+    const additionalPosts = allPostsWithContent
+      .filter(p => p.slug !== post.slug &&
+                   !relatedPosts.find(rp => rp.slug === p.slug) &&
+                   (p.category === post.category || p.tags.some(tag => post.tags.includes(tag))))
+      .slice(0, 3 - relatedPosts.length);
+    relatedPosts = [...relatedPosts, ...additionalPosts];
+  }
 
   // Generate structured data schemas
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
@@ -199,7 +214,7 @@ export default async function BlogPostPage({ params }: Props) {
               <ButtonLink
                 variant="outline"
                 size="sm"
-                href="/blog"
+                href={`/${locale}/blog`}
                 className="mb-8"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -298,6 +313,108 @@ export default async function BlogPostPage({ params }: Props) {
           </Container>
         </section>
 
+        {/* Cluster Section - Inicio del artículo */}
+        {post.cluster && (() => {
+          const cluster = clustersConfig.clusters.find(c => c.id === post.cluster);
+          if (!cluster) return null;
+
+          const clusterName = cluster.name[locale as 'es' | 'en' | 'ca'];
+          const clusterDescription = cluster.description[locale as 'es' | 'en' | 'ca'];
+          const clusterKeywords = cluster.keywords[locale as 'es' | 'en' | 'ca'].slice(0, 6);
+
+          // Obtener posts relacionados del mismo cluster
+          const clusterRelatedPosts = relatedPosts.slice(0, 5);
+
+          return (
+            <section className="py-12 bg-gradient-to-br from-primary-50 to-accent-50">
+              <Container>
+                <div className="max-w-4xl mx-auto">
+                  {/* Header del cluster */}
+                  <div className="flex items-start gap-4 p-8 bg-white rounded-2xl shadow-xl border-2 border-primary-200 mb-8">
+                    <div className="p-4 bg-gradient-to-br from-primary to-primary-600 rounded-xl shadow-lg">
+                      <Folder className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="mb-3">
+                        <span className="text-xs font-bold text-primary-700 uppercase tracking-wider">
+                          Cluster Temático
+                        </span>
+                      </div>
+                      <Link
+                        href={`/${locale}/blog/tema/${post.cluster}`}
+                        className="group inline-block"
+                      >
+                        <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">
+                          {clusterName}
+                        </h3>
+                      </Link>
+                      <p className="text-neutral-700 mb-4 leading-relaxed">
+                        {clusterDescription}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {clusterKeywords.map((keyword, idx) => (
+                          <span key={idx} className="px-3 py-1.5 text-xs font-semibold bg-primary-100 text-primary-700 rounded-full hover:bg-primary-200 transition-colors">
+                            {keyword}
+                          </span>
+                        ))}
+                      </div>
+                      <Link
+                        href={`/${locale}/blog/tema/${post.cluster}`}
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+                      >
+                        Ver todos los artículos del cluster →
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Posts relacionados del cluster */}
+                  {clusterRelatedPosts.length > 0 && (
+                    <div className="bg-white rounded-2xl shadow-lg p-8 border border-neutral-200">
+                      <h4 className="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+                        <FileText className="w-5 h-5" />
+                        Artículos Relacionados en este Cluster
+                      </h4>
+                      <div className="grid grid-cols-1 gap-4">
+                        {clusterRelatedPosts.map((relatedPost) => (
+                          <Link
+                            key={relatedPost.slug}
+                            href={`/${locale}/blog/${relatedPost.slug}`}
+                            className="group p-4 border border-neutral-200 rounded-xl hover:border-primary hover:shadow-md transition-all duration-300"
+                          >
+                            <div className="flex items-start gap-4">
+                              <div className="flex-shrink-0 w-16 h-16 relative rounded-lg overflow-hidden">
+                                <Image
+                                  src={relatedPost.image.url}
+                                  alt={relatedPost.title}
+                                  fill
+                                  className="object-cover"
+                                  sizes="64px"
+                                />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <h5 className="font-semibold text-primary group-hover:text-accent transition-colors line-clamp-2 mb-1">
+                                  {relatedPost.title}
+                                </h5>
+                                <p className="text-xs text-neutral-500">
+                                  {new Date(relatedPost.publishedAt).toLocaleDateString('es-ES', {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric'
+                                  })} • {relatedPost.readingTime} min lectura
+                                </p>
+                              </div>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </Container>
+            </section>
+          );
+        })()}
+
         {/* Article Content with Table of Contents */}
         <section className="py-16 bg-white">
           <Container>
@@ -378,17 +495,26 @@ export default async function BlogPostPage({ params }: Props) {
       </article>
 
       {/* Related Articles */}
-      {relatedPosts.length > 0 && (
-        <section className="py-16 md:py-20 bg-white">
-          <Container>
-            <div className="mb-12">
-              <h2 className="text-3xl font-bold text-primary mb-4">
-                {t('post.relatedArticles.title')}
-              </h2>
-              <p className="text-lg text-neutral-600">
-                {t('post.relatedArticles.description')}
-              </p>
-            </div>
+      {relatedPosts.length > 0 && (() => {
+        const cluster = clustersConfig.clusters.find(c => c.id === post.cluster);
+        const clusterName = cluster?.name[locale as 'es' | 'en' | 'ca'];
+        const isClusterRelated = post.cluster && post.relatedPosts && post.relatedPosts.length > 0;
+
+        return (
+          <section className="py-16 md:py-20 bg-white">
+            <Container>
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold text-primary mb-4">
+                  {isClusterRelated && clusterName
+                    ? `Más artículos del cluster: ${clusterName}`
+                    : t('post.relatedArticles.title')}
+                </h2>
+                <p className="text-lg text-neutral-600">
+                  {isClusterRelated
+                    ? 'Explora más contenido relacionado dentro de este cluster temático'
+                    : t('post.relatedArticles.description')}
+                </p>
+              </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost, index) => (
@@ -401,7 +527,8 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </Container>
         </section>
-      )}
+        );
+      })()}
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-primary-800 to-primary-900">

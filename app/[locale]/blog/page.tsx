@@ -1,9 +1,13 @@
 import { getTranslations } from 'next-intl/server';
-import { getAllBlogPostsWithContent, getAllCategories } from "@/lib/blog";
+import { getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogHero from "@/components/blog/BlogHero";
-import BlogCard from "@/components/blog/BlogCard";
 import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
+import Link from "next/link";
+import { Folder, FileText, Calendar, ArrowRight } from "lucide-react";
+import clustersConfig from "@/messages/blog-posts/clusters-config.json";
+import metadata from "@/messages/blog-posts/metadata.json";
+import Image from "next/image";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -43,11 +47,9 @@ export default async function BlogPage({ params }: Props) {
 
   // Cargar todos los posts con su contenido en el idioma actual
   const allPosts = await getAllBlogPostsWithContent(locale);
-  const featuredPosts = allPosts.filter(post => post.featured);
-  const categories = getAllCategories();
 
-  // Obtener traducciones de categorías
-  const categoryTranslations = t.raw('categoryTranslations') as Record<string, string> || {};
+  // Obtener el último post publicado
+  const latestPost = allPosts[0];
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema({
@@ -84,6 +86,12 @@ export default async function BlogPage({ params }: Props) {
     }))
   };
 
+  // Calcular estadísticas
+  const totalPosts = metadata.posts.length;
+  const activeClusters = clustersConfig.clusters.filter(cluster =>
+    metadata.posts.some(post => post.cluster === cluster.id)
+  ).length;
+
   return (
     <>
       {/* Breadcrumb Schema */}
@@ -100,79 +108,201 @@ export default async function BlogPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      {/* Hero Section */}
-      <BlogHero postsCount={allPosts.length} categoriesCount={categories.length} />
+      {/* Hero Section Original */}
+      <BlogHero postsCount={allPosts.length} categoriesCount={activeClusters} />
 
-      {/* Featured Posts */}
-      {featuredPosts.length > 0 && (
-        <section className="py-16 md:py-20 bg-white">
+      {/* Latest Post Featured */}
+      {latestPost && (
+        <section className="py-12 bg-white border-b border-neutral-200">
           <Container>
-            <div className="mb-12">
-              <h2 className="text-3xl font-bold text-primary mb-4">
-                {t('featured.title')}
-              </h2>
-              <p className="text-lg text-neutral-600">
-                {t('featured.subtitle')}
-              </p>
-            </div>
+            <div className="max-w-6xl mx-auto">
+              <div className="mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {t('latestPost.title')}
+                </h2>
+                <p className="text-neutral-600">
+                  {t('latestPost.subtitle')}
+                </p>
+              </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {featuredPosts.map((post, index) => (
-                <BlogCard
-                  key={post.slug}
-                  post={post}
-                  index={index}
-                  featured={index === 0}
-                />
-              ))}
+              <Link
+                href={`/${locale}/blog/${latestPost.slug}`}
+                className="group block"
+              >
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl border-2 border-primary-100 hover:border-primary hover:shadow-2xl transition-all duration-300">
+                  {/* Image */}
+                  <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+                    <Image
+                      src={latestPost.image.url}
+                      alt={latestPost.image.alt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex flex-col justify-center">
+                    <div className="mb-4">
+                      <span className="inline-block px-3 py-1 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wide">
+                        {t(`categoryTranslations.${latestPost.category}`, { default: latestPost.category })}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4 group-hover:text-accent transition-colors">
+                      {latestPost.title}
+                    </h3>
+                    <p className="text-neutral-600 mb-6 line-clamp-3">
+                      {latestPost.excerpt}
+                    </p>
+                    <div className="flex items-center gap-4 text-sm text-neutral-500 mb-6">
+                      <div className="flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                        <span>
+                          {new Date(latestPost.publishedAt).toLocaleDateString('es-ES', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </span>
+                      </div>
+                      <div>•</div>
+                      <span>{latestPost.readingTime} {t('latestPost.readingTime')}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-primary font-semibold group-hover:gap-4 transition-all">
+                      <span>{t('latestPost.readFullArticle')}</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </Container>
         </section>
       )}
 
-      {/* All Posts */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-primary-50/20">
+      {/* Clusters Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-neutral-50">
         <Container>
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              {t('allArticles.title')}
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              {t('clusters.title')}
             </h2>
-            <p className="text-lg text-neutral-600">
-              {t('allArticles.subtitle')}
+            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              {t('clusters.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {allPosts.map((post, index) => (
-              <BlogCard
-                key={post.slug}
-                post={post}
-                index={index}
-              />
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {clustersConfig.clusters.map((cluster) => {
+              // Obtener posts del cluster
+              const clusterPosts = metadata.posts.filter(post => post.cluster === cluster.id);
+
+              // Obtener posts con contenido completo
+              const clusterPostsWithContent = allPosts.filter(post =>
+                clusterPosts.some(cp => cp.id === post.slug.replace(/^.*\//, ''))
+              ).slice(0, 5);
+
+              return (
+                <Link
+                  key={cluster.id}
+                  href={`/${locale}/blog/tema/${cluster.id}`}
+                  className="group block p-8 bg-white border-2 border-neutral-200 rounded-2xl hover:border-primary hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                >
+                  {/* Header */}
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className="p-3 bg-primary-100 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                      <Folder className="w-6 h-6" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                        {cluster.name[locale as 'es' | 'en' | 'ca']}
+                      </h3>
+                      <div className="flex items-center gap-3 text-sm text-neutral-600">
+                        <span className="flex items-center gap-1">
+                          <FileText className="w-4 h-4" />
+                          {clusterPosts.length} {clusterPosts.length === 1 ? t('clusters.article') : t('clusters.articles')}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                    {cluster.description[locale as 'es' | 'en' | 'ca']}
+                  </p>
+
+                  {/* Posts List */}
+                  {clusterPostsWithContent.length > 0 ? (
+                    <div className="mb-6">
+                      <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
+                        {t('clusters.recentArticles')}
+                      </p>
+                      <ul className="space-y-3">
+                        {clusterPostsWithContent.map((post) => (
+                          <li key={post.slug}>
+                            <span className="group/link flex items-start gap-3 text-sm">
+                              <Calendar className="w-4 h-4 mt-0.5 text-neutral-400 flex-shrink-0" />
+                              <div className="flex-1">
+                                <span className="line-clamp-2 font-medium text-neutral-700">
+                                  {post.title}
+                                </span>
+                                <span className="text-xs text-neutral-500 block mt-1">
+                                  {new Date(post.publishedAt).toLocaleDateString('es-ES', {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric'
+                                  })}
+                                </span>
+                              </div>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                      {clusterPosts.length > 5 && (
+                        <p className="text-xs text-neutral-500 italic mt-3">
+                          +{clusterPosts.length - 5} {t('clusters.moreArticles')}
+                        </p>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="mb-6 p-4 bg-neutral-50 rounded-lg text-center">
+                      <p className="text-sm text-neutral-500 italic">
+                        {t('clusters.comingSoon')}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* CTA Indicator */}
+                  <div className="flex items-center justify-between pt-4 border-t border-neutral-200">
+                    <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors">
+                      {t('clusters.viewAll')}
+                    </span>
+                    <ArrowRight className="w-5 h-5 text-primary group-hover:text-accent group-hover:translate-x-1 transition-all" />
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </Container>
       </section>
 
-      {/* Categories */}
-      <section className="py-16 md:py-20 bg-white">
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
         <Container>
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              {t('categories.title')}
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-primary mb-4">
+              {t('cta.title')}
             </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              {categories.map((category, index) => (
-                <div
-                  key={index}
-                  className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/5 to-accent/5 border border-accent/20 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 cursor-pointer group"
-                >
-                  <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors duration-300">
-                    {categoryTranslations[category] || category}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <p className="text-lg text-neutral-600 mb-8">
+              {t('cta.description')}
+            </p>
+            <Link
+              href={`/${locale}/contacto`}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent-600 transition-colors font-semibold text-lg"
+            >
+              {t('cta.button')}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </Container>
       </section>

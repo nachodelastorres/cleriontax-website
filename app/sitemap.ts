@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
+import clustersConfig from '@/messages/blog-posts/clusters-config.json';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://cleriontax.com';
@@ -10,6 +11,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Servicios dinámicos
   const serviceSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal'];
+
+  // Clusters temáticos
+  const clusterSlugs = clustersConfig.clusters.map(c => c.id);
 
   // Páginas estáticas principales
   const staticPages = [
@@ -85,5 +89,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
-  return [...staticUrls, ...serviceUrls, ...blogUrls];
+  // Generar URLs para todos los clusters temáticos en todos los idiomas
+  const clusterUrls: MetadataRoute.Sitemap = [];
+
+  locales.forEach(locale => {
+    clusterSlugs.forEach(slug => {
+      clusterUrls.push({
+        url: `${baseUrl}/${locale}/blog/tema/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+        alternates: {
+          languages: {
+            es: `${baseUrl}/es/blog/tema/${slug}`,
+            en: `${baseUrl}/en/blog/tema/${slug}`,
+            ca: `${baseUrl}/ca/blog/tema/${slug}`,
+          },
+        },
+      });
+    });
+  });
+
+  return [...staticUrls, ...serviceUrls, ...clusterUrls, ...blogUrls];
 }

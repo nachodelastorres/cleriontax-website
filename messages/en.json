@@ -570,7 +570,8 @@
     },
     "categoryTranslations": {
       "Fiscalidad e Inversión": "Taxation & Investment",
-      "Clasificación y Metodología": "Classification & Methodology"
+      "Clasificación y Metodología": "Classification & Methodology",
+      "DeFi y Protocolos Avanzados": "DeFi & Advanced Protocols"
     },
     "authorTranslations": {
       "Equipo Cleriontax": {
@@ -659,7 +660,66 @@
       "Permuta Criptomonedas": "Crypto Swap",
       "Error Fiscal": "Tax Error",
       "DAI": "DAI",
-      "Tether": "Tether"
+      "Tether": "Tether",
+      "DEX": "DEX",
+      "Uniswap": "Uniswap",
+      "PancakeSwap": "PancakeSwap",
+      "Curve Finance": "Curve Finance",
+      "Fiscalidad DeFi Avanzada": "Advanced DeFi Taxation",
+      "Swaps DEX": "DEX Swaps",
+      "Pools de Liquidez": "Liquidity Pools",
+      "Impermanent Loss": "Impermanent Loss",
+      "Tokens LP": "LP Tokens",
+      "Protocolos Descentralizados": "Decentralized Protocols",
+      "Gas Fees": "Gas Fees"
+    },
+    "latestPost": {
+      "title": "Latest Published Article",
+      "subtitle": "The most recent on cryptocurrency taxation in Spain",
+      "readFullArticle": "Read full article",
+      "readingTime": "min read"
+    },
+    "clusters": {
+      "title": "Explore by Topics",
+      "subtitle": "Content structured in thematic clusters to facilitate your search",
+      "article": "article",
+      "articles": "articles",
+      "recentArticles": "Recent Articles",
+      "moreArticles": "more articles",
+      "comingSoon": "📝 Content coming soon",
+      "viewAll": "View all articles"
+    },
+    "cta": {
+      "title": "Need help with your tax return?",
+      "description": "Our team of experts can help you prepare your cryptocurrency tax return",
+      "button": "Request Advisory"
+    },
+    "clusterPage": {
+      "backToBlog": "Back to Blog",
+      "badge": "Thematic Cluster",
+      "article": "article",
+      "articles": "articles",
+      "seoText": "Thematic cluster about {clusterName} on Cleriontax blog. Complete guides and specialized articles about cryptocurrency taxation in Spain. {keywords}. Updated information about IRPF, form 100, crypto asset declaration and specialized tax advisory.",
+      "keyTopics": "Key Topics",
+      "seoKeywordsPrefix": "Articles about {keywords1}. Specialized tax information on {keywords2}. Complete guides on {clusterName} in Spain.",
+      "allArticles": {
+        "title": "All Articles",
+        "description": "Explore the complete collection of articles about {clusterName}"
+      },
+      "comingSoon": {
+        "title": "Content Coming Soon",
+        "description": "We are working on content for this cluster. Come back soon to find complete guides about {clusterName}."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "The most common questions about {clusterName}",
+        "answerText": "Find the detailed answer in the articles of this cluster. Our guides include practical examples, step-by-step calculations and references to AEAT regulations."
+      },
+      "cta": {
+        "title": "Need help with your tax return?",
+        "description": "Our team of experts can help you with {clusterName}",
+        "button": "Request Advisory"
+      }
     }
   },
   "faq": {
