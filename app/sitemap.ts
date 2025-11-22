@@ -22,6 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/sobre-nosotros',
     '/contacto',
     '/blog',
+    '/blog/clusters',
   ];
 
   // Generar URLs para todas las páginas estáticas en todos los idiomas
