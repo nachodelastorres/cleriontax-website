@@ -1,6 +1,79 @@
 {
   "posts": [
     {
+      "id": "como-exportar-historial-binance-correctamente",
+      "slugTranslations": {
+        "es": "como-exportar-historial-binance-correctamente",
+        "en": "how-to-export-binance-history-correctly",
+        "ca": "com-exportar-historial-binance-correctament"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-11-26T09:00:00Z",
+      "readingTime": 18,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Binance",
+        "CSV Export",
+        "Historial Transacciones",
+        "Exportar Datos",
+        "Trade History",
+        "Fiscalidad Exchanges",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 100",
+        "FIFO",
+        "Staking",
+        "Earn",
+        "Convert History",
+        "Ingeniería Datos",
+        "Trazabilidad"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/bitcoin-asesor-fiscal.webp",
+        "alt": "Cómo exportar historial de Binance correctamente - Guía completa paso a paso para obtener tus datos CSV y preparar la declaración fiscal ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo Exportar Historial de Binance Correctamente: Guía Completa CSV 2025 | Cleriontax",
+        "metaDescription": "Guía paso a paso para exportar correctamente tu historial completo de Binance en formato CSV. Aprende a obtener trades, conversiones, staking, earn y todo lo necesario para tu declaración de la renta ante la AEAT.",
+        "keywords": [
+          "binance csv",
+          "exportar binance",
+          "historial binance",
+          "binance trade history",
+          "exportar transacciones binance",
+          "binance transaction history",
+          "binance convert history",
+          "cómo exportar binance",
+          "datos binance fiscalidad",
+          "binance declaración renta",
+          "binance modelo 100",
+          "historial completo binance",
+          "binance csv español",
+          "exportar staking binance",
+          "binance earn history"
+        ],
+        "ogImage": "/images/illustrations/blog/bitcoin-asesor-fiscal.webp",
+        "ogImageAlt": "Cómo exportar historial de Binance correctamente - Guía completa paso a paso para obtener tus datos CSV y preparar la declaración fiscal ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "herramientas-rastrear-criptomonedas",
+        "clasificar-operaciones-criptomonedas",
+        "como-declarar-criptomonedas-renta-2025"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "fiscalidad-dex-protocolos-uniswap-impuestos",
       "slugTranslations": {
         "es": "fiscalidad-dex-protocolos-uniswap-impuestos",

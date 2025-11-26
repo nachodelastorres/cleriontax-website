@@ -266,39 +266,37 @@ export default function BlogContentMagazine({ content, metadata }: BlogContentMa
               );
             },
 
-            // Code blocks con estilo mejorado
+            // Pre blocks con estilo mejorado
+            pre({ children, ...props }: any) {
+              return (
+                <pre className="bg-gradient-to-br from-navy to-navy/90 text-neutral-100 p-6 rounded-xl overflow-x-auto my-8 shadow-lg border border-navy/50" {...props}>
+                  {children}
+                </pre>
+              );
+            },
+
+            // Code con estilo mejorado
             code({ node, inline, className, children, ...props }: any) {
-              return inline ? (
+              return (
                 <code
-                  className="px-2 py-1 bg-accent/10 text-accent-dark rounded font-mono text-base font-semibold"
+                  className={inline ? "px-2 py-1 bg-accent/10 text-accent-dark rounded font-mono text-base font-semibold" : className}
                   {...props}
                 >
                   {children}
                 </code>
-              ) : (
-                <pre className="bg-gradient-to-br from-navy to-navy/90 text-neutral-100 p-6 rounded-xl overflow-x-auto my-8 shadow-lg border border-navy/50">
-                  <code className={className} {...props}>
-                    {children}
-                  </code>
-                </pre>
               );
             },
 
             // Links con icono externo
             a({ href, children, ...props }) {
               const isExternal = href?.startsWith('http');
-              const isInternal = href?.startsWith('/');
 
               return (
                 <a
                   href={href}
                   target={isExternal ? '_blank' : undefined}
                   rel={isExternal ? 'noopener noreferrer' : undefined}
-                  className={`${
-                    isInternal
-                      ? 'inline-flex items-center gap-1 px-4 py-2 bg-accent hover:bg-accent-dark text-white rounded-lg font-semibold transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5'
-                      : 'text-accent font-semibold hover:underline'
-                  }`}
+                  className="text-accent font-semibold hover:underline transition-colors"
                   {...props}
                 >
                   {children}

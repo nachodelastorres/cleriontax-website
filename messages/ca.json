@@ -571,7 +571,8 @@
     "categoryTranslations": {
       "Fiscalidad e Inversión": "Fiscalitat i Inversió",
       "Clasificación y Metodología": "Classificació i Metodologia",
-      "DeFi y Protocolos Avanzados": "DeFi i Protocols Avançats"
+      "DeFi y Protocolos Avanzados": "DeFi i Protocols Avançats",
+      "Guías Prácticas Específicas": "Guies Pràctiques Específiques"
     },
     "authorTranslations": {
       "Equipo Cleriontax": {
@@ -671,7 +672,16 @@
       "Impermanent Loss": "Impermanent Loss",
       "Tokens LP": "Tokens LP",
       "Protocolos Descentralizados": "Protocols Descentralitzats",
-      "Gas Fees": "Gas Fees"
+      "Gas Fees": "Gas Fees",
+      "Binance": "Binance",
+      "CSV Export": "Exportar CSV",
+      "Historial Transacciones": "Historial de Transaccions",
+      "Exportar Datos": "Exportar Dades",
+      "Trade History": "Historial de Trades",
+      "Fiscalidad Exchanges": "Fiscalitat Exchanges",
+      "Earn": "Earn",
+      "Convert History": "Historial de Conversions",
+      "Ingeniería Datos": "Enginyeria de Dades"
     },
     "latestPost": {
       "title": "Últim Article Publicat",

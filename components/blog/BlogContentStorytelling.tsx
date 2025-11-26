@@ -203,47 +203,37 @@ export default function BlogContentStorytelling({ content, metadata }: BlogConte
               );
             },
 
-            // Code blocks simples
+            // Pre blocks simples
+            pre({ children, ...props }: any) {
+              return (
+                <pre className="bg-navy text-neutral-100 p-6 rounded-xl overflow-x-auto my-8" {...props}>
+                  {children}
+                </pre>
+              );
+            },
+
+            // Code simples
             code({ node, inline, className, children, ...props }: any) {
-              return inline ? (
+              return (
                 <code
-                  className="px-2 py-1 bg-accent/10 text-accent-dark rounded font-mono text-base"
+                  className={inline ? "px-2 py-1 bg-accent/10 text-accent-dark rounded font-mono text-base" : className}
                   {...props}
                 >
                   {children}
                 </code>
-              ) : (
-                <pre className="bg-navy text-neutral-100 p-6 rounded-xl overflow-x-auto my-8">
-                  <code className={className} {...props}>
-                    {children}
-                  </code>
-                </pre>
               );
             },
 
             // Links simples
             a({ href, children, ...props }) {
               const isExternal = href?.startsWith('http');
-              const isInternal = href?.startsWith('/');
-
-              if (isInternal) {
-                return (
-                  <a
-                    href={href}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white rounded-lg font-semibold transition-colors mt-4"
-                    {...props}
-                  >
-                    {children} →
-                  </a>
-                );
-              }
 
               return (
                 <a
                   href={href}
                   target={isExternal ? '_blank' : undefined}
                   rel={isExternal ? 'noopener noreferrer' : undefined}
-                  className="text-accent font-semibold hover:text-accent-dark transition-colors"
+                  className="text-accent font-semibold hover:text-accent-dark hover:underline transition-colors"
                   {...props}
                 >
                   {children}
