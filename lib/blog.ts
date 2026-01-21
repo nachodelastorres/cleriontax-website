@@ -132,14 +132,15 @@ export async function getBlogPostBySlug(slug: string, locale: string = 'es'): Pr
     // Cargar el contenido en el idioma especificado
     const content = await loadBlogPostContent(postMetadata.id, locale);
 
-    // Determinar el slug correcto según el idioma
-    const localizedSlug = postMetadata.slugTranslations[locale as keyof typeof postMetadata.slugTranslations] || postMetadata.slugTranslations.es;
+    // IMPORTANTE: Siempre usar el slug español para URLs (requisito SEO)
+    // Las URLs deben ser /{locale}/blog/{slug-español} independientemente del idioma
+    const spanishSlug = postMetadata.slugTranslations.es;
 
     // Usar SEO del contenido traducido si existe, sino usar el del metadata
     const seo = content.seo || postMetadata.seo;
 
     return {
-      slug: localizedSlug,
+      slug: spanishSlug,
       slugTranslations: postMetadata.slugTranslations,
       title: content.title,
       excerpt: content.excerpt,

@@ -73,7 +73,7 @@ export default async function BlogPage({ params }: Props) {
       "publisher": getOrganizationReference(SITE_URL),
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": canonicalFor(locale as Locale, `/blog/${post.slugTranslations[locale as keyof typeof post.slugTranslations]}`)
+        "@id": canonicalFor(locale as Locale, `/blog/${post.slugTranslations.es}`)
       }
     }))
   };

@@ -16,7 +16,8 @@ interface BlogCardProps {
 export default function BlogCard({ post, index = 0, featured = false }: BlogCardProps) {
   const locale = useLocale();
   const t = useTranslations('blog');
-  const slug = post.slugTranslations[locale as keyof typeof post.slugTranslations] || post.slug;
+  // IMPORTANTE: Siempre usar el slug español para URLs (requisito SEO)
+  const slug = post.slugTranslations.es || post.slug;
 
   // Traducir categoría, tags y autor
   const categoryTranslations = t.raw('categoryTranslations') as Record<string, string> || {};

@@ -127,7 +127,7 @@ export default async function ClustersPage({ params }: Props) {
                         {clusterPosts.slice(0, 5).map((post) => (
                           <li key={post.id}>
                             <Link
-                              href={`/${locale}/blog/${post.slugTranslations[locale as 'es' | 'en' | 'ca']}`}
+                              href={`/${locale}/blog/${post.slugTranslations.es}`}
                               className="group/link flex items-start gap-2 text-sm hover:text-primary transition-colors"
                             >
                               <FileText className="w-4 h-4 mt-0.5 text-neutral-400 group-hover/link:text-primary" />
