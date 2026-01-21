@@ -70,7 +70,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Validar que el locale es válido
-  if (!locales.includes(locale)) {
+  if (!(locales as readonly string[]).includes(locale)) {
     notFound();
   }
 
