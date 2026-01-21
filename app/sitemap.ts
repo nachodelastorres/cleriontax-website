@@ -69,22 +69,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   // Generar URLs para todos los posts del blog en todos los idiomas
+  // IMPORTANTE: Siempre usar el slug español para todas las URLs (requisito SEO)
   const blogUrls: MetadataRoute.Sitemap = [];
 
   blogPosts.forEach(post => {
-    locales.forEach(locale => {
-      const slug = post.slugTranslations[locale as keyof typeof post.slugTranslations];
+    const spanishSlug = post.slugTranslations.es;
 
+    locales.forEach(locale => {
       blogUrls.push({
-        url: `${baseUrl}/${locale}/blog/${slug}`,
+        url: `${baseUrl}/${locale}/blog/${spanishSlug}`,
         lastModified: new Date(post.updatedAt || post.publishedAt),
         changeFrequency: 'monthly',
         priority: post.featured ? 0.9 : 0.7,
         alternates: {
           languages: {
-            es: `${baseUrl}/es/blog/${post.slugTranslations.es}`,
-            en: `${baseUrl}/en/blog/${post.slugTranslations.en}`,
-            ca: `${baseUrl}/ca/blog/${post.slugTranslations.ca}`,
+            es: `${baseUrl}/es/blog/${spanishSlug}`,
+            en: `${baseUrl}/en/blog/${spanishSlug}`,
+            ca: `${baseUrl}/ca/blog/${spanishSlug}`,
           },
         },
       });

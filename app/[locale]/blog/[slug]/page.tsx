@@ -29,11 +29,14 @@ export async function generateStaticParams() {
 
   const params: { locale: string; slug: string }[] = [];
 
+  // IMPORTANTE: Siempre usar el slug español para todas las URLs (requisito SEO)
+  // Las URLs deben ser /{locale}/blog/{slug-español} independientemente del idioma
   posts.forEach(post => {
+    const spanishSlug = post.slugTranslations.es;
     locales.forEach(locale => {
       params.push({
         locale,
-        slug: post.slugTranslations[locale as keyof typeof post.slugTranslations]
+        slug: spanishSlug
       });
     });
   });
@@ -53,6 +56,9 @@ export async function generateMetadata({ params }: Props) {
 
   const postUrl = canonicalFor(locale as Locale, `/blog/${slug}`);
 
+  // IMPORTANTE: Siempre usar el slug español para hreflang (requisito SEO)
+  const spanishSlug = post.slugTranslations.es;
+
   return {
     title: post.seo.metaTitle,
     description: post.seo.metaDescription,
@@ -61,9 +67,9 @@ export async function generateMetadata({ params }: Props) {
     alternates: {
       canonical: postUrl,
       languages: {
-        'es': canonicalFor('es', `/blog/${post.slugTranslations.es}`),
-        'en': canonicalFor('en', `/blog/${post.slugTranslations.en}`),
-        'ca': canonicalFor('ca', `/blog/${post.slugTranslations.ca}`),
+        'es': canonicalFor('es', `/blog/${spanishSlug}`),
+        'en': canonicalFor('en', `/blog/${spanishSlug}`),
+        'ca': canonicalFor('ca', `/blog/${spanishSlug}`),
       },
     },
     openGraph: {
