@@ -54,6 +54,13 @@ export async function generateMetadata({ params }: Props) {
     };
   }
 
+  // IMPORTANTE: Solo aceptar el slug español para evitar URLs duplicadas
+  if (slug !== post.slugTranslations.es) {
+    return {
+      title: 'Artículo no encontrado',
+    };
+  }
+
   const postUrl = canonicalFor(locale as Locale, `/blog/${slug}`);
 
   // IMPORTANTE: Siempre usar el slug español para hreflang (requisito SEO)
@@ -107,6 +114,12 @@ export default async function BlogPostPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'blog' });
 
   if (!post) {
+    notFound();
+  }
+
+  // IMPORTANTE: Solo aceptar el slug español para evitar URLs duplicadas
+  // URLs como /en/blog/how-to-get-csv... deben devolver 404
+  if (slug !== post.slugTranslations.es) {
     notFound();
   }
 
