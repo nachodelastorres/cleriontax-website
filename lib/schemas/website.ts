@@ -18,7 +18,7 @@ interface WebSiteSchemaConfig {
 export function generateWebSiteSchema(
   config: WebSiteSchemaConfig
 ): WithContext<any> {
-  const { locale, baseUrl = 'https://cleriontax.com' } = config;
+  const { locale, baseUrl = 'https://www.cleriontax.com' } = config;
 
   // Localized site names
   const names: Record<Locale, string> = {
@@ -114,7 +114,7 @@ export function generateWebPageSchema(config: {
   breadcrumb?: any;
   baseUrl?: string;
 }): WithContext<any> {
-  const { locale, title, description, url, datePublished, dateModified, breadcrumb, baseUrl = 'https://cleriontax.com' } = config;
+  const { locale, title, description, url, datePublished, dateModified, breadcrumb, baseUrl = 'https://www.cleriontax.com' } = config;
 
   const schema: WithContext<any> = {
     '@context': 'https://schema.org',

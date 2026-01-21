@@ -440,8 +440,9 @@
       "submitError": "Error al enviar el formulario",
       "successMessage": "¡Mensaje enviado correctamente! Te responderemos en pocas horas.",
       "errorMessage": "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contáctanos por email.",
-      "privacyText": "Al enviar este formulario aceptas nuestra",
-      "privacyLink": "Política de Privacidad"
+      "privacyConsentText": "He leído y acepto la",
+      "privacyLink": "Política de Privacidad",
+      "privacyConsentRequired": "Debes aceptar la política de privacidad para continuar"
     },
     "info": {
       "title": "¿Prefieres contactarnos directamente?",
@@ -467,6 +468,7 @@
     "description": "Firma boutique de análisis de datos y asesoría fiscal especializada en criptoactivos e inversiones globales.",
     "sections": {
       "company": "Empresa",
+      "services": "Servicios",
       "legal": "Legal",
       "contact": "Contacto"
     },
@@ -478,6 +480,12 @@
       "privacy": "Política de privacidad",
       "legal": "Aviso legal",
       "cookies": "Cookies"
+    },
+    "serviceLinks": {
+      "analisisCarteras": "Análisis de Carteras",
+      "liquidacionesFiscales": "Liquidaciones Fiscales",
+      "seguimientoCartera": "Seguimiento de Cartera",
+      "asesoriaFiscal": "Asesoría Fiscal Cripto"
     },
     "copyright": "Todos los derechos reservados."
   },
@@ -637,6 +645,23 @@
       "Rendimientos Actividad": "Rendimientos Actividad",
       "RETA": "RETA",
       "Deducciones Mining": "Deducciones Mining",
+      "Kraken": "Kraken",
+      "CSV Export": "Exportar CSV",
+      "Historial Transacciones": "Historial Transacciones",
+      "Exportar Datos": "Exportar Datos",
+      "Spot Trading": "Trading Spot",
+      "Fiscalidad Exchanges": "Fiscalidad Exchanges",
+      "EUR Directo": "EUR Directo",
+      "Ingeniería Datos": "Ingeniería de Datos",
+      "Bybit": "Bybit",
+      "Derivados": "Derivados",
+      "Futuros": "Futuros",
+      "Perpetuos": "Perpetuos",
+      "Copy Trading": "Copy Trading",
+      "Apalancamiento": "Apalancamiento",
+      "Funding Fees": "Funding Fees",
+      "Bybit Earn": "Bybit Earn",
+      "P2P Trading": "P2P Trading",
       "Herramientas Crypto": "Herramientas Crypto",
       "Portfolio Tracking": "Portfolio Tracking",
       "DeBank": "DeBank",
@@ -678,7 +703,54 @@
       "Fiscalidad Exchanges": "Fiscalidad Exchanges",
       "Earn": "Earn",
       "Convert History": "Historial de Conversiones",
-      "Ingeniería Datos": "Ingeniería de Datos"
+      "Ingeniería Datos": "Ingeniería de Datos",
+      "Ingeniería de Datos": "Ingeniería de Datos",
+      "Limpieza Datos": "Limpieza de Datos",
+      "Data Cleaning": "Limpieza de Datos",
+      "CSV": "CSV",
+      "Normalización": "Normalización",
+      "Duplicados": "Duplicados",
+      "ETL": "ETL",
+      "Datasets": "Datasets",
+      "Consolidación": "Consolidación",
+      "Metamask": "Metamask",
+      "Wallet": "Wallet",
+      "Exportar Historial": "Exportar Historial",
+      "Etherscan": "Etherscan",
+      "Blockchain": "Blockchain",
+      "DAC8": "DAC8",
+      "Directiva Europea": "Directiva Europea",
+      "Intercambio Información": "Intercambio de Información",
+      "CARF": "CARF",
+      "MiCA": "MiCA",
+      "Exchanges": "Exchanges",
+      "Hacienda": "Hacienda",
+      "Regulación Cripto": "Regulación Cripto",
+      "Fiscalidad UE": "Fiscalidad UE",
+      "Cumplimiento Fiscal": "Cumplimiento Fiscal",
+      "Guía Práctica": "Guía Práctica",
+      "Inversores Cripto": "Inversores Cripto",
+      "Bridges": "Bridges",
+      "Staking Líquido": "Staking Líquido",
+      "Rendimientos On-Chain": "Rendimientos On-Chain",
+      "Lending DeFi": "Lending DeFi",
+      "Farmeo Criptomonedas": "Farmeo Criptomonedas",
+      "Liquidity Mining": "Liquidity Mining",
+      "Rewards DeFi": "Rewards DeFi",
+      "LP Tokens": "LP Tokens",
+      "Auto-Compounding": "Auto-Compounding",
+      "Rendimientos Capital Mobiliario": "Rendimientos Capital Mobiliario",
+      "Liquidity Pools": "Liquidity Pools",
+      "AMM": "AMM",
+      "Proveer Liquidez": "Proveer Liquidez",
+      "Comisiones DeFi": "Comisiones DeFi",
+      "Balancer": "Balancer",
+      "Permutas Criptomonedas": "Permutas Criptomonedas",
+      "Ledger": "Ledger",
+      "Hardware Wallet": "Hardware Wallet",
+      "Ledger Live": "Ledger Live",
+      "Bitcoin": "Bitcoin",
+      "Ethereum": "Ethereum"
     },
     "latestPost": {
       "title": "Último Artículo Publicado",
@@ -692,6 +764,8 @@
       "article": "artículo",
       "articles": "artículos",
       "recentArticles": "Artículos Recientes",
+      "otherArticles": "Más en este tema",
+      "latestBadge": "Último",
       "moreArticles": "artículos más",
       "comingSoon": "📝 Contenido próximamente",
       "viewAll": "Ver todos los artículos"
@@ -777,6 +851,10 @@
     "featured": "Destacado",
     "updates": "Actualizaciones semanales",
     "expert": "Contenido experto",
+    "viewAllArticles": "Ver todos los artículos",
+    "readArticle": "Leer artículo",
+    "scrollHelper": "Desliza horizontalmente para ver más artículos →",
+    "minRead": "min",
     "articleExample": {
       "title": "Guía completa para declarar criptomonedas en 2025",
       "excerpt": "Todo lo que necesitas saber sobre FIFO, modelos fiscales y optimización legal.",
@@ -854,7 +932,7 @@
               "body": "Sesiones personalizadas 1:1 con nuestro equipo fiscal para resolver dudas específicas sobre presentación de modelos, criterios de clasificación, cumplimiento normativo y estructura de informes. No ofrecemos asesoramiento de inversión ni recomendaciones sobre qué activos comprar o vender. Nuestro enfoque es técnico y fiscal: te ayudamos a interpretar la normativa, preparar documentación ante requerimientos de la AEAT y entender cómo aplicar correctamente los criterios fiscales a tu caso concreto. Incluye revisión documental, Q&A técnico y seguimiento post-sesión.",
               "link": {
                 "label": "Ver detalles del servicio →",
-                "href": "/servicios/asesoria-fiscal"
+                "href": "/servicios/asesoria-fiscal-criptomonedas"
               }
             }
           ]
@@ -936,7 +1014,7 @@
         { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
         { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
         { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" },
-        { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+        { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
       ],
       "seo": {
         "title": "Servicios de Asesoría Fiscal y Análisis de Datos | Cleriontax",
@@ -993,7 +1071,7 @@
       "internal_links": [
         { "label": "Volver a todos los servicios", "href": "/servicios" },
         { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
-        { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+        { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
       ],
       "seo": {
         "title": "Liquidaciones Fiscales Criptomonedas | Modelo 100, 721, 714 | Cleriontax",
@@ -1017,7 +1095,7 @@
       "internal_links": [
         { "label": "Volver a todos los servicios", "href": "/servicios" },
         { "label": "Análisis de Carteras (para casos complejos)", "href": "/servicios/analisis-carteras" },
-        { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+        { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
       ],
       "seo": {
         "title": "Seguimiento en Tiempo Real de Cartera Crypto | CoinTracking | Cleriontax",
@@ -1026,9 +1104,9 @@
         "canonical": "https://cleriontax.com/servicios/seguimiento-cartera"
       }
     },
-    "asesoriaFiscal": {
+    "asesoriaFiscalCriptomonedas": {
       "title": "Asesoría Fiscal Especializada en Criptoactivos",
-      "slug": "asesoria-fiscal",
+      "slug": "asesoria-fiscal-criptomonedas",
       "excerpt": "Sesiones personalizadas 1:1 para resolver dudas fiscales sobre criptomonedas. Criterios de presentación, cumplimiento normativo y revisión documental. Sin asesoramiento de inversión.",
       "hero": {
         "h1": "Asesoría Fiscal Especializada en Criptoactivos",
@@ -1047,7 +1125,7 @@
         "title": "Asesoría Fiscal Especializada en Criptoactivos | Cleriontax",
         "description": "Sesiones técnicas 1:1 sobre fiscalidad crypto. Dudas sobre modelos AEAT, requerimientos de Hacienda y cumplimiento normativo. Sin asesoramiento de inversión.",
         "keywords": ["asesoría fiscal criptomonedas", "consultoría fiscal crypto", "requerimiento AEAT cripto", "modelo 721 asesoría", "DGT criptoactivos", "cumplimiento fiscal crypto"],
-        "canonical": "https://cleriontax.com/servicios/asesoria-fiscal"
+        "canonical": "https://cleriontax.com/servicios/asesoria-fiscal-criptomonedas"
       }
     },
     "relatedServices": {
@@ -1060,7 +1138,239 @@
         "analisis-carteras": "Integración y consolidación de datos desde múltiples fuentes. Convertimos carteras dispersas en informes unificados y auditables.",
         "liquidaciones-fiscales": "Cálculo FIFO de plusvalías y preparación de modelos 100, 721 y 714 con revisión por asesores colegiados.",
         "seguimiento-cartera": "Monitorización continua con dashboards en tiempo real, alertas configurables y reportes automatizados.",
-        "asesoria-fiscal": "Sesiones personalizadas 1:1 para resolver dudas fiscales y revisar criterios de presentación."
+        "asesoria-fiscal-criptomonedas": "Sesiones personalizadas 1:1 para resolver dudas fiscales y revisar criterios de presentación."
+      }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Utilizamos cookies",
+      "description": "Usamos cookies propias y de terceros para analizar el uso del sitio web y mejorar nuestros servicios. Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.",
+      "acceptAll": "Aceptar todas",
+      "rejectAll": "Rechazar todas",
+      "settings": "Configurar",
+      "learnMore": "Más información",
+      "close": "Cerrar",
+      "settingsTitle": "Configuración de cookies",
+      "settingsDescription": "Gestiona tus preferencias de cookies. Las cookies necesarias no se pueden desactivar ya que son esenciales para el funcionamiento del sitio.",
+      "savePreferences": "Guardar preferencias",
+      "alwaysActive": "Siempre activas",
+      "categories": {
+        "necessary": {
+          "title": "Cookies necesarias",
+          "description": "Esenciales para el funcionamiento básico del sitio web. Incluyen cookies de sesión y preferencias de usuario."
+        },
+        "analytics": {
+          "title": "Cookies analíticas",
+          "description": "Nos ayudan a entender cómo interactúas con el sitio web, permitiéndonos mejorar la experiencia de usuario."
+        },
+        "marketing": {
+          "title": "Cookies de marketing",
+          "description": "Se utilizan para mostrarte anuncios relevantes y medir la efectividad de nuestras campañas publicitarias."
+        }
+      }
+    },
+    "page": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última actualización",
+      "intro": "En Cleriontax utilizamos cookies y tecnologías similares para mejorar tu experiencia de navegación, analizar el tráfico del sitio web y personalizar el contenido. Esta política explica qué son las cookies, cómo las usamos y cómo puedes gestionarlas.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "¿Qué son las cookies?",
+          "content": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Permiten que el sitio recuerde tus acciones y preferencias (como el idioma, tamaño de fuente y otras opciones de visualización) durante un período de tiempo, para que no tengas que volver a configurarlas cada vez que vuelvas al sitio o navegues de una página a otra."
+        },
+        "typesOfCookies": {
+          "title": "Tipos de cookies que utilizamos",
+          "necessary": {
+            "title": "Cookies necesarias",
+            "description": "Estas cookies son esenciales para el funcionamiento básico del sitio web. Sin ellas, el sitio no funcionaría correctamente. Incluyen cookies de sesión, preferencias de idioma y consentimiento de cookies. No se pueden desactivar.",
+            "examples": "Ejemplos: Preferencias de idioma, estado del consentimiento de cookies."
+          },
+          "analytics": {
+            "title": "Cookies analíticas",
+            "description": "Estas cookies nos permiten contar las visitas y las fuentes de tráfico para poder medir y mejorar el rendimiento de nuestro sitio. Nos ayudan a saber qué páginas son las más y las menos populares y a ver cómo se mueven los visitantes por el sitio.",
+            "examples": "Ejemplos: Ahrefs Analytics para análisis de tráfico web."
+          },
+          "marketing": {
+            "title": "Cookies de marketing",
+            "description": "Estas cookies se utilizan para rastrear a los visitantes en los sitios web. La intención es mostrar anuncios que sean relevantes y atractivos para el usuario individual, y por lo tanto más valiosos para los editores y anunciantes terceros.",
+            "examples": "Ejemplos: Actualmente no utilizamos cookies de marketing, pero podríamos implementar píxeles de seguimiento en el futuro."
+          }
+        },
+        "howToManage": {
+          "title": "¿Cómo gestionar las cookies?",
+          "content": "Puedes gestionar tus preferencias de cookies en cualquier momento haciendo clic en el enlace \"Configuración de cookies\" en el pie de página de nuestro sitio web. También puedes configurar tu navegador para que bloquee o elimine las cookies. A continuación te mostramos cómo hacerlo en los navegadores más populares:",
+          "browsers": {
+            "chrome": "Google Chrome: Configuración > Privacidad y seguridad > Cookies y otros datos de sitios",
+            "firefox": "Mozilla Firefox: Opciones > Privacidad y seguridad > Cookies y datos del sitio",
+            "safari": "Safari: Preferencias > Privacidad > Cookies y datos de sitios web",
+            "edge": "Microsoft Edge: Configuración > Cookies y permisos del sitio"
+          },
+          "warning": "Ten en cuenta que si desactivas las cookies, es posible que algunas funciones del sitio web no funcionen correctamente."
+        },
+        "thirdPartyCookies": {
+          "title": "Cookies de terceros",
+          "content": "Algunos servicios de terceros que utilizamos pueden establecer sus propias cookies. Estos servicios tienen sus propias políticas de privacidad y uso de cookies que te recomendamos revisar:",
+          "services": {
+            "ahrefs": "Ahrefs Analytics - Para análisis de tráfico web"
+          }
+        },
+        "changes": {
+          "title": "Cambios en esta política",
+          "content": "Podemos actualizar esta política de cookies periódicamente para reflejar cambios en las cookies que utilizamos o por otras razones operativas, legales o reglamentarias. Por favor, visita esta página regularmente para mantenerte informado sobre nuestro uso de cookies."
+        },
+        "contact": {
+          "title": "Contacto",
+          "content": "Si tienes alguna pregunta sobre nuestra política de cookies, puedes contactarnos en:",
+          "email": "info@cleriontax.com"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "page": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización",
+      "intro": "En Cleriontax nos tomamos muy en serio la protección de tus datos personales. Esta política de privacidad describe cómo recopilamos, utilizamos y protegemos tu información personal de acuerdo con el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD).",
+      "sections": {
+        "controller": {
+          "title": "Responsable del tratamiento",
+          "content": "El responsable del tratamiento de tus datos personales es:",
+          "details": {
+            "company": "Cleriontax",
+            "address": "[Dirección por confirmar]",
+            "email": "info@cleriontax.com",
+            "cif": "[CIF por confirmar]"
+          }
+        },
+        "dataCollected": {
+          "title": "Datos que recopilamos",
+          "content": "Podemos recopilar los siguientes tipos de datos personales:",
+          "items": {
+            "contact": "Datos de contacto: nombre, correo electrónico, teléfono",
+            "financial": "Datos financieros relacionados con tus activos digitales (solo cuando nos los proporcionas para el servicio contratado)",
+            "navigation": "Datos de navegación: dirección IP, tipo de navegador, páginas visitadas",
+            "communications": "Contenido de las comunicaciones que mantienes con nosotros"
+          }
+        },
+        "purposes": {
+          "title": "Finalidad del tratamiento",
+          "content": "Utilizamos tus datos personales para las siguientes finalidades:",
+          "items": {
+            "services": "Prestación de servicios de asesoría fiscal y análisis de datos",
+            "communication": "Comunicación relacionada con los servicios contratados",
+            "legal": "Cumplimiento de obligaciones legales",
+            "marketing": "Envío de comunicaciones comerciales (solo con tu consentimiento previo)",
+            "improvement": "Mejora de nuestros servicios y sitio web"
+          }
+        },
+        "legalBasis": {
+          "title": "Base legal del tratamiento",
+          "content": "El tratamiento de tus datos se basa en:",
+          "items": {
+            "consent": "Tu consentimiento (para comunicaciones comerciales y cookies no esenciales)",
+            "contract": "La ejecución de un contrato o prestación de servicios",
+            "legal": "El cumplimiento de obligaciones legales",
+            "interest": "Nuestro interés legítimo en mejorar nuestros servicios"
+          }
+        },
+        "retention": {
+          "title": "Conservación de datos",
+          "content": "Conservamos tus datos personales durante el tiempo necesario para cumplir con las finalidades para las que fueron recogidos y para cumplir con las obligaciones legales aplicables. Los datos relacionados con servicios fiscales se conservarán durante el período legalmente establecido (generalmente 4-6 años)."
+        },
+        "rights": {
+          "title": "Tus derechos",
+          "content": "De acuerdo con la normativa vigente, tienes los siguientes derechos:",
+          "items": {
+            "access": "Derecho de acceso: conocer qué datos personales tenemos sobre ti",
+            "rectification": "Derecho de rectificación: corregir datos inexactos o incompletos",
+            "erasure": "Derecho de supresión: solicitar la eliminación de tus datos",
+            "restriction": "Derecho de limitación: restringir el tratamiento de tus datos",
+            "portability": "Derecho de portabilidad: recibir tus datos en formato estructurado",
+            "objection": "Derecho de oposición: oponerte al tratamiento de tus datos",
+            "withdraw": "Derecho a retirar el consentimiento en cualquier momento"
+          },
+          "howTo": "Para ejercer estos derechos, puedes contactarnos en info@cleriontax.com. También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        },
+        "security": {
+          "title": "Seguridad de los datos",
+          "content": "Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra acceso no autorizado, pérdida, destrucción o alteración. Esto incluye cifrado de datos, controles de acceso y formación del personal en protección de datos."
+        },
+        "sharing": {
+          "title": "Comunicación de datos a terceros",
+          "content": "No vendemos ni alquilamos tus datos personales a terceros. Solo compartimos tus datos cuando:",
+          "items": {
+            "consent": "Nos has dado tu consentimiento",
+            "legal": "Es necesario para cumplir con obligaciones legales",
+            "services": "Es necesario para la prestación de los servicios contratados (por ejemplo, con la Agencia Tributaria cuando nos autorices)"
+          }
+        },
+        "changes": {
+          "title": "Cambios en esta política",
+          "content": "Podemos actualizar esta política de privacidad periódicamente. Te notificaremos cualquier cambio significativo a través de nuestro sitio web o por correo electrónico."
+        },
+        "contact": {
+          "title": "Contacto",
+          "content": "Si tienes alguna pregunta sobre esta política de privacidad o sobre el tratamiento de tus datos, puedes contactarnos en:",
+          "email": "info@cleriontax.com"
+        }
+      }
+    }
+  },
+  "legalNotice": {
+    "page": {
+      "title": "Aviso Legal",
+      "lastUpdated": "Última actualización",
+      "intro": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos de información general de este sitio web.",
+      "sections": {
+        "identification": {
+          "title": "Datos identificativos",
+          "content": "En cumplimiento del deber de información establecido en el artículo 10 de la LSSI-CE, se facilitan los siguientes datos:",
+          "details": {
+            "owner": "Titular del sitio web: Cleriontax",
+            "cif": "CIF: [Por confirmar]",
+            "address": "Domicilio social: [Por confirmar]",
+            "email": "Correo electrónico: info@cleriontax.com",
+            "activity": "Actividad: Asesoría fiscal especializada en criptoactivos y análisis de datos financieros"
+          }
+        },
+        "purpose": {
+          "title": "Objeto del sitio web",
+          "content": "Este sitio web tiene como finalidad ofrecer información sobre los servicios de asesoría fiscal y análisis de datos para inversores en criptomonedas y otros activos digitales que ofrece Cleriontax, así como facilitar el contacto con potenciales clientes."
+        },
+        "intellectualProperty": {
+          "title": "Propiedad intelectual e industrial",
+          "content": "Todos los contenidos de este sitio web, incluyendo textos, imágenes, gráficos, diseño, logotipos, código fuente y software, están protegidos por derechos de propiedad intelectual e industrial y pertenecen a Cleriontax o a terceros que han autorizado su uso.",
+          "prohibition": "Queda prohibida la reproducción, distribución, comunicación pública, transformación o cualquier otra forma de explotación de los contenidos de este sitio web sin la autorización expresa y por escrito de Cleriontax."
+        },
+        "liability": {
+          "title": "Exclusión de responsabilidad",
+          "content": "Cleriontax no se hace responsable de:",
+          "items": {
+            "availability": "La falta de disponibilidad, continuidad o calidad del funcionamiento del sitio web",
+            "accuracy": "Los posibles errores u omisiones en los contenidos publicados",
+            "thirdParty": "Los daños que puedan derivarse del uso de la información contenida en este sitio web",
+            "links": "Los contenidos de sitios web de terceros a los que se pueda acceder mediante enlaces desde este sitio"
+          },
+          "disclaimer": "La información proporcionada en este sitio web tiene carácter meramente informativo y no constituye asesoramiento fiscal profesional. Para un asesoramiento personalizado, te recomendamos contactar con nuestro equipo."
+        },
+        "links": {
+          "title": "Enlaces a terceros",
+          "content": "Este sitio web puede contener enlaces a sitios web de terceros. Cleriontax no tiene control sobre dichos sitios y no es responsable de sus contenidos, políticas de privacidad o prácticas. Te recomendamos revisar las condiciones legales de cada sitio que visites."
+        },
+        "modifications": {
+          "title": "Modificaciones",
+          "content": "Cleriontax se reserva el derecho de modificar, actualizar o eliminar los contenidos del sitio web, así como las presentes condiciones de uso, en cualquier momento y sin previo aviso."
+        },
+        "jurisdiction": {
+          "title": "Legislación aplicable y jurisdicción",
+          "content": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, las partes se someten a los Juzgados y Tribunales de [Ciudad por confirmar], con renuncia expresa a cualquier otro fuero que pudiera corresponderles."
+        },
+        "contact": {
+          "title": "Contacto",
+          "content": "Para cualquier consulta relacionada con este aviso legal, puedes contactarnos en:",
+          "email": "info@cleriontax.com"
+        }
       }
     }
   }

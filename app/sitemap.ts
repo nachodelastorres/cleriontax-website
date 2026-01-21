@@ -1,16 +1,17 @@
 import { MetadataRoute } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
 import clustersConfig from '@/messages/blog-posts/clusters-config.json';
+import { SITE_URL, LOCALES } from '@/lib/site';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://cleriontax.com';
-  const locales = ['es', 'en', 'ca'];
+  const baseUrl = SITE_URL;
+  const locales = LOCALES;
 
   // Obtener todos los posts del blog
   const blogPosts = getAllBlogPosts();
 
   // Servicios dinámicos
-  const serviceSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal'];
+  const serviceSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal-criptomonedas'];
 
   // Clusters temáticos
   const clusterSlugs = clustersConfig.clusters.map(c => c.id);

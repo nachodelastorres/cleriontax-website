@@ -8,6 +8,7 @@ import { Folder, FileText, Calendar, ArrowRight } from "lucide-react";
 import clustersConfig from "@/messages/blog-posts/clusters-config.json";
 import metadata from "@/messages/blog-posts/metadata.json";
 import Image from "next/image";
+import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,26 +17,18 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo.blog' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
     title: t('title'),
     description: t('description'),
     keywords: 'blog fiscalidad criptomonedas, noticias cripto España, guías fiscales crypto, impuestos bitcoin, declaración criptoactivos, AEAT criptomonedas, asesoría fiscal blockchain, actualidad normativa cripto',
-    alternates: {
-      canonical: `${baseUrl}/${locale}/blog`,
-      languages: {
-        'es': `${baseUrl}/es/blog`,
-        'en': `${baseUrl}/en/blog`,
-        'ca': `${baseUrl}/ca/blog`,
-      },
-    },
+    alternates: getAlternates(locale as Locale, '/blog'),
     openGraph: {
       title: t('title'),
       description: t('description'),
       type: 'website',
       locale: locale,
-      url: `${baseUrl}/${locale}/blog`,
+      url: canonicalFor(locale as Locale, '/blog'),
     },
   };
 }
@@ -43,7 +36,6 @@ export async function generateMetadata({ params }: Props) {
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'blog' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   // Cargar todos los posts con su contenido en el idioma actual
   const allPosts = await getAllBlogPostsWithContent(locale);
@@ -53,9 +45,9 @@ export default async function BlogPage({ params }: Props) {
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     path: `/${locale}/blog`,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // Structured Data for SEO
@@ -64,8 +56,8 @@ export default async function BlogPage({ params }: Props) {
     "@type": "Blog",
     "name": "Cleriontax Blog - Fiscalidad de Criptomonedas",
     "description": "Guías, noticias y análisis sobre la fiscalidad de criptomonedas en España. Expertos en IRPF, modelo 100, 720 y optimización fiscal crypto.",
-    "url": `${baseUrl}/${locale}/blog`,
-    "publisher": getOrganizationReference(baseUrl),
+    "url": canonicalFor(locale as Locale, '/blog'),
+    "publisher": getOrganizationReference(SITE_URL),
     "breadcrumb": breadcrumbSchema,
     "blogPost": allPosts.map(post => ({
       "@type": "BlogPosting",
@@ -78,10 +70,10 @@ export default async function BlogPage({ params }: Props) {
         "@type": "Person",
         "name": post.author.name
       },
-      "publisher": getOrganizationReference(baseUrl),
+      "publisher": getOrganizationReference(SITE_URL),
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `${baseUrl}/${locale}/blog/${post.slugTranslations[locale as keyof typeof post.slugTranslations]}`
+        "@id": canonicalFor(locale as Locale, `/blog/${post.slugTranslations[locale as keyof typeof post.slugTranslations]}`)
       }
     }))
   };
@@ -202,84 +194,134 @@ export default async function BlogPage({ params }: Props) {
                 clusterPosts.some(cp => cp.id === post.slug.replace(/^.*\//, ''))
               ).slice(0, 5);
 
+              // Último post del cluster (el primero por orden cronológico)
+              const latestClusterPost = clusterPostsWithContent[0];
+
+              // Posts restantes para la lista (excluyendo el destacado)
+              const remainingPosts = clusterPostsWithContent.slice(1, 4);
+
               return (
-                <Link
+                <div
                   key={cluster.id}
-                  href={`/${locale}/blog/tema/${cluster.id}`}
-                  className="group block p-8 bg-white border-2 border-neutral-200 rounded-2xl hover:border-primary hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                  className="group block p-8 bg-white border-2 border-neutral-200 rounded-2xl hover:border-primary hover:shadow-2xl transition-all duration-300"
                 >
                   {/* Header */}
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="p-3 bg-primary-100 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
-                      <Folder className="w-6 h-6" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
-                        {cluster.name[locale as 'es' | 'en' | 'ca']}
-                      </h3>
-                      <div className="flex items-center gap-3 text-sm text-neutral-600">
-                        <span className="flex items-center gap-1">
-                          <FileText className="w-4 h-4" />
-                          {clusterPosts.length} {clusterPosts.length === 1 ? t('clusters.article') : t('clusters.articles')}
-                        </span>
+                  <Link href={`/${locale}/blog/tema/${cluster.id}`} className="block">
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="p-3 bg-primary-100 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                        <Folder className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                          {cluster.name[locale as 'es' | 'en' | 'ca']}
+                        </h3>
+                        <div className="flex items-center gap-3 text-sm text-neutral-600">
+                          <span className="flex items-center gap-1">
+                            <FileText className="w-4 h-4" />
+                            {clusterPosts.length} {clusterPosts.length === 1 ? t('clusters.article') : t('clusters.articles')}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
+
+                  {/* Featured Latest Post Card */}
+                  {latestClusterPost && (
+                    <Link
+                      href={`/${locale}/blog/${latestClusterPost.slug}`}
+                      className="block mb-6 p-4 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100 hover:border-primary hover:shadow-md transition-all duration-200"
+                    >
+                      <div className="flex gap-4">
+                        {/* Image */}
+                        <div className="relative w-24 h-24 md:w-28 md:h-28 flex-shrink-0 rounded-lg overflow-hidden">
+                          <Image
+                            src={latestClusterPost.image.url}
+                            alt={latestClusterPost.image.alt}
+                            fill
+                            className="object-cover"
+                            sizes="112px"
+                          />
+                        </div>
+                        {/* Content */}
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wide">
+                              {t('clusters.latestBadge')}
+                            </span>
+                          </div>
+                          <h4 className="font-semibold text-primary line-clamp-2 mb-1 text-sm md:text-base">
+                            {latestClusterPost.title}
+                          </h4>
+                          <p className="text-xs text-neutral-500 line-clamp-2 hidden md:block">
+                            {latestClusterPost.excerpt}
+                          </p>
+                          <div className="flex items-center gap-2 mt-2 text-xs text-neutral-500">
+                            <Calendar className="w-3 h-3" />
+                            <span>
+                              {new Date(latestClusterPost.publishedAt).toLocaleDateString('es-ES', {
+                                day: 'numeric',
+                                month: 'short'
+                              })}
+                            </span>
+                            <span>•</span>
+                            <span>{latestClusterPost.readingTime} min</span>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  )}
 
                   {/* Description */}
-                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                  <p className="text-neutral-600 mb-6 leading-relaxed text-sm">
                     {cluster.description[locale as 'es' | 'en' | 'ca']}
                   </p>
 
-                  {/* Posts List */}
-                  {clusterPostsWithContent.length > 0 ? (
+                  {/* Remaining Posts List */}
+                  {remainingPosts.length > 0 ? (
                     <div className="mb-6">
                       <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
-                        {t('clusters.recentArticles')}
+                        {t('clusters.otherArticles')}
                       </p>
-                      <ul className="space-y-3">
-                        {clusterPostsWithContent.map((post) => (
+                      <ul className="space-y-2">
+                        {remainingPosts.map((post) => (
                           <li key={post.slug}>
-                            <span className="group/link flex items-start gap-3 text-sm">
-                              <Calendar className="w-4 h-4 mt-0.5 text-neutral-400 flex-shrink-0" />
-                              <div className="flex-1">
-                                <span className="line-clamp-2 font-medium text-neutral-700">
-                                  {post.title}
-                                </span>
-                                <span className="text-xs text-neutral-500 block mt-1">
-                                  {new Date(post.publishedAt).toLocaleDateString('es-ES', {
-                                    year: 'numeric',
-                                    month: 'short',
-                                    day: 'numeric'
-                                  })}
-                                </span>
-                              </div>
-                            </span>
+                            <Link
+                              href={`/${locale}/blog/${post.slug}`}
+                              className="flex items-start gap-2 text-sm hover:text-primary transition-colors"
+                            >
+                              <span className="text-neutral-400 mt-1">•</span>
+                              <span className="line-clamp-1 text-neutral-700 hover:text-primary">
+                                {post.title}
+                              </span>
+                            </Link>
                           </li>
                         ))}
                       </ul>
-                      {clusterPosts.length > 5 && (
-                        <p className="text-xs text-neutral-500 italic mt-3">
-                          +{clusterPosts.length - 5} {t('clusters.moreArticles')}
+                      {clusterPosts.length > 4 && (
+                        <p className="text-xs text-neutral-500 italic mt-2">
+                          +{clusterPosts.length - 4} {t('clusters.moreArticles')}
                         </p>
                       )}
                     </div>
-                  ) : (
+                  ) : !latestClusterPost ? (
                     <div className="mb-6 p-4 bg-neutral-50 rounded-lg text-center">
                       <p className="text-sm text-neutral-500 italic">
                         {t('clusters.comingSoon')}
                       </p>
                     </div>
-                  )}
+                  ) : null}
 
                   {/* CTA Indicator */}
-                  <div className="flex items-center justify-between pt-4 border-t border-neutral-200">
+                  <Link
+                    href={`/${locale}/blog/tema/${cluster.id}`}
+                    className="flex items-center justify-between pt-4 border-t border-neutral-200 hover:text-accent transition-colors"
+                  >
                     <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors">
                       {t('clusters.viewAll')}
                     </span>
                     <ArrowRight className="w-5 h-5 text-primary group-hover:text-accent group-hover:translate-x-1 transition-all" />
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               );
             })}
           </div>

@@ -19,19 +19,24 @@ export default function Footer() {
       { name: t('links.blog'), href: '/blog' },
       { name: t('links.contact'), href: '/contacto' },
     ],
-    // Comentado temporalmente hasta crear las páginas legales
-    // legal: [
-    //   { name: t('links.privacy'), href: '/privacidad' },
-    //   { name: t('links.legal'), href: '/aviso-legal' },
-    //   { name: t('links.cookies'), href: '/cookies' },
-    // ],
+    servicios: [
+      { name: t('serviceLinks.analisisCarteras'), href: '/servicios/analisis-carteras' },
+      { name: t('serviceLinks.liquidacionesFiscales'), href: '/servicios/liquidaciones-fiscales' },
+      { name: t('serviceLinks.seguimientoCartera'), href: '/servicios/seguimiento-cartera' },
+      { name: t('serviceLinks.asesoriaFiscal'), href: '/servicios/asesoria-fiscal-criptomonedas' },
+    ],
+    legal: [
+      { name: t('links.privacy'), href: '/privacidad' },
+      { name: t('links.legal'), href: '/aviso-legal' },
+      { name: t('links.cookies'), href: '/cookies' },
+    ],
   };
 
   return (
     <footer className="border-t border-neutral-300 bg-gradient-to-br from-navy via-navy to-navy-darker">
       <Container>
         <div className="py-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
             {/* Brand */}
             <div className="space-y-2">
               <Logo variant="transparent" type="cropped" />
@@ -59,8 +64,27 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Legal - Temporalmente oculto hasta crear las páginas */}
-            {/* <div>
+            {/* Servicios */}
+            <div>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+                {t('sections.services')}
+              </h3>
+              <ul className="space-y-2">
+                {footerLinks.servicios.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-gray-blue-light transition-colors hover:text-white"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
                 {t('sections.legal')}
               </h3>
@@ -76,7 +100,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div> */}
+            </div>
 
             {/* Contacto */}
             <div>

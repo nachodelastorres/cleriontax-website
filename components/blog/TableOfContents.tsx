@@ -19,6 +19,18 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
   const [headings, setHeadings] = useState<Heading[]>([]);
   const [activeId, setActiveId] = useState<string>('');
 
+  // Función para generar IDs consistentes (debe coincidir con BlogContentMagazine)
+  const generateHeadingId = (text: string): string => {
+    return text
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '') // Eliminar acentos
+      .replace(/[^a-z0-9\s-]/g, '') // Eliminar caracteres especiales excepto espacios y guiones
+      .replace(/\s+/g, '-') // Reemplazar espacios con guiones
+      .replace(/-+/g, '-') // Eliminar guiones múltiples
+      .replace(/^-|-$/g, ''); // Eliminar guiones al inicio y final
+  };
+
   useEffect(() => {
     // Extraer h2 del contenido markdown
     const h2Regex = /^## (.+)$/gm;
@@ -26,7 +38,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
 
     const extractedHeadings = matches.map((match) => {
       const text = match[1];
-      const id = text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\s-]/g, '');
+      const id = generateHeadingId(text);
       return { id, text, level: 2 };
     });
 

@@ -25,7 +25,7 @@ const defaultLabels: Record<Locale, Record<string, string>> = {
     'analisis-carteras': 'Análisis de Carteras',
     'liquidaciones-fiscales': 'Liquidaciones Fiscales',
     'seguimiento-cartera': 'Seguimiento de Cartera',
-    'asesoria-fiscal': 'Asesoría Fiscal'
+    'asesoria-fiscal-criptomonedas': 'Asesoría Fiscal Criptomonedas'
   },
   en: {
     'servicios': 'Services',
@@ -35,7 +35,7 @@ const defaultLabels: Record<Locale, Record<string, string>> = {
     'analisis-carteras': 'Portfolio Analysis',
     'liquidaciones-fiscales': 'Tax Settlements',
     'seguimiento-cartera': 'Portfolio Tracking',
-    'asesoria-fiscal': 'Tax Advisory'
+    'asesoria-fiscal-criptomonedas': 'Crypto Tax Advisory'
   },
   ca: {
     'servicios': 'Serveis',
@@ -45,7 +45,7 @@ const defaultLabels: Record<Locale, Record<string, string>> = {
     'analisis-carteras': 'Anàlisi de Carteres',
     'liquidaciones-fiscales': 'Liquidacions Fiscals',
     'seguimiento-cartera': 'Seguiment de Cartera',
-    'asesoria-fiscal': 'Assessoria Fiscal'
+    'asesoria-fiscal-criptomonedas': 'Assessoria Fiscal Criptomonedes'
   }
 };
 
@@ -65,7 +65,7 @@ const homeLabels: Record<Locale, string> = {
  * generateBreadcrumbSchema({
  *   locale: 'es',
  *   path: '/es/servicios/analisis-carteras',
- *   baseUrl: 'https://cleriontax.com'
+ *   baseUrl: 'https://www.cleriontax.com'
  * })
  *
  * Returns:
@@ -74,7 +74,7 @@ const homeLabels: Record<Locale, string> = {
 export function generateBreadcrumbSchema(
   config: BreadcrumbConfig
 ): WithContext<any> {
-  const { locale, path, customLabels = {}, baseUrl = 'https://cleriontax.com' } = config;
+  const { locale, path, customLabels = {}, baseUrl = 'https://www.cleriontax.com' } = config;
 
   // Parse the path into segments
   const segments = path.split('/').filter(segment => segment && segment !== locale);
@@ -141,7 +141,7 @@ function capitalizeSegment(segment: string): string {
  *   locale: 'es',
  *   blogSlug: 'fiscalidad-nfts-espana-2025',
  *   blogTitle: 'Fiscalidad de NFTs en España 2025',
- *   baseUrl: 'https://cleriontax.com'
+ *   baseUrl: 'https://www.cleriontax.com'
  * })
  */
 export function generateBlogBreadcrumbSchema(config: {
@@ -150,7 +150,7 @@ export function generateBlogBreadcrumbSchema(config: {
   blogTitle: string;
   baseUrl?: string;
 }): WithContext<any> {
-  const { locale, blogSlug, blogTitle, baseUrl = 'https://cleriontax.com' } = config;
+  const { locale, blogSlug, blogTitle, baseUrl = 'https://www.cleriontax.com' } = config;
 
   const items: BreadcrumbItem[] = [
     {
@@ -193,7 +193,7 @@ export function generateBlogBreadcrumbSchema(config: {
  *   locale: 'es',
  *   serviceSlug: 'analisis-carteras',
  *   serviceTitle: 'Análisis de Carteras de Criptomonedas',
- *   baseUrl: 'https://cleriontax.com'
+ *   baseUrl: 'https://www.cleriontax.com'
  * })
  */
 export function generateServiceBreadcrumbSchema(config: {
@@ -202,7 +202,7 @@ export function generateServiceBreadcrumbSchema(config: {
   serviceTitle: string;
   baseUrl?: string;
 }): WithContext<any> {
-  const { locale, serviceSlug, serviceTitle, baseUrl = 'https://cleriontax.com' } = config;
+  const { locale, serviceSlug, serviceTitle, baseUrl = 'https://www.cleriontax.com' } = config;
 
   const items: BreadcrumbItem[] = [
     {

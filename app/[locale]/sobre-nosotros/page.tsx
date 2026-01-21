@@ -7,6 +7,7 @@ import BlogScrollSection from "@/components/home/BlogScrollSection";
 import CTASection from "@/components/home/CTASection";
 import { Lightbulb, Target, Handshake } from "lucide-react";
 import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
+import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -15,26 +16,18 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo.about' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
     title: t('title'),
     description: t('description'),
     keywords: 'asesoría fiscal tecnológica, asesores fiscales colegiados crypto, análisis de datos fiscales, automatización fiscal, tecnología blockchain, procesamiento transacciones cripto, asesoría fiscal innovadora, fiscal + tecnología, expertise fiscal digital',
-    alternates: {
-      canonical: `${baseUrl}/${locale}/sobre-nosotros`,
-      languages: {
-        'es': `${baseUrl}/es/sobre-nosotros`,
-        'en': `${baseUrl}/en/sobre-nosotros`,
-        'ca': `${baseUrl}/ca/sobre-nosotros`,
-      },
-    },
+    alternates: getAlternates(locale as Locale, '/sobre-nosotros'),
     openGraph: {
       title: t('title'),
       description: t('description'),
       type: 'website',
       locale: locale,
-      url: `${baseUrl}/${locale}/sobre-nosotros`,
+      url: canonicalFor(locale as Locale, '/sobre-nosotros'),
     },
   };
 }
@@ -42,13 +35,13 @@ export async function generateMetadata({ params }: Props) {
 export default async function SobreNosotrosPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations('about');
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
+  const aboutUrl = canonicalFor(locale as Locale, '/sobre-nosotros');
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     path: `/${locale}/sobre-nosotros`,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // Structured Data for SEO
@@ -57,11 +50,11 @@ export default async function SobreNosotrosPage({ params }: Props) {
     "@type": "AboutPage",
     "name": t('structuredData.name'),
     "description": t('structuredData.description'),
-    "url": `${baseUrl}/${locale}/sobre-nosotros`,
+    "url": aboutUrl,
     "breadcrumb": breadcrumbSchema,
     "about": {
       "@type": "Organization",
-      "@id": `${baseUrl}/#organization`,
+      "@id": `${SITE_URL}/#organization`,
       "name": "Cleriontax",
       "foundingDate": t('structuredData.foundingDate'),
       "areaServed": {
@@ -70,7 +63,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
       },
       "knowsAbout": t.raw('structuredData.knowsAbout') as string[]
     },
-    "mainEntity": getOrganizationReference(baseUrl)
+    "mainEntity": getOrganizationReference(SITE_URL)
   };
 
   const valueIcons = [Lightbulb, Target, Handshake];
@@ -160,7 +153,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
       <IndividualServicesShowcase />
 
       {/* Blog Scroll Section */}
-      <BlogScrollSection />
+      <BlogScrollSection locale={locale} />
 
       {/* CTA */}
       <CTASection />

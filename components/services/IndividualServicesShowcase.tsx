@@ -18,7 +18,7 @@ const serviceImages = {
     src: '/images/illustrations/services/seguimiento-tiempo-real-cartera-crypto.webp',
     alt: 'Seguimiento en tiempo real de cartera de criptomonedas con CoinTracking'
   },
-  'asesoria-fiscal': {
+  'asesoria-fiscal-criptomonedas': {
     src: '/images/illustrations/services/asesoria-fiscal-especializada-criptoactivos.webp',
     alt: 'Asesoría fiscal especializada en criptoactivos y activos digitales'
   },
@@ -45,7 +45,7 @@ export default function IndividualServicesShowcase() {
       excerpt: t('trackingExcerpt'),
     },
     {
-      slug: 'asesoria-fiscal',
+      slug: 'asesoria-fiscal-criptomonedas',
       title: t('advisoryTitle'),
       excerpt: t('advisoryExcerpt'),
     },

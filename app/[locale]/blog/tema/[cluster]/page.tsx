@@ -9,6 +9,7 @@ import metadata from "@/messages/blog-posts/metadata.json";
 import BlogCard from "@/components/blog/BlogCard";
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string; cluster: string }>;
@@ -29,7 +30,6 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale, cluster } = await params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   const clusterData = clustersConfig.clusters.find(c => c.id === cluster);
 
@@ -40,28 +40,22 @@ export async function generateMetadata({ params }: Props) {
     };
   }
 
-  const clusterName = clusterData.name[locale as 'es' | 'en' | 'ca'];
-  const clusterDescription = clusterData.description[locale as 'es' | 'en' | 'ca'];
-  const clusterKeywords = clusterData.keywords[locale as 'es' | 'en' | 'ca'];
+  const clusterName = clusterData.name[locale as Locale];
+  const clusterDescription = clusterData.description[locale as Locale];
+  const clusterKeywords = clusterData.keywords[locale as Locale];
+  const clusterPath = `/blog/tema/${cluster}`;
 
   return {
     title: `${clusterName} - Blog Cleriontax`,
     description: clusterDescription,
     keywords: clusterKeywords.join(', '),
-    alternates: {
-      canonical: `${baseUrl}/${locale}/blog/tema/${cluster}`,
-      languages: {
-        'es': `${baseUrl}/es/blog/tema/${cluster}`,
-        'en': `${baseUrl}/en/blog/tema/${cluster}`,
-        'ca': `${baseUrl}/ca/blog/tema/${cluster}`,
-      },
-    },
+    alternates: getAlternates(locale as Locale, clusterPath),
     openGraph: {
       title: `${clusterName} - Blog Cleriontax`,
       description: clusterDescription,
       type: 'website',
       locale: locale,
-      url: `${baseUrl}/${locale}/blog/tema/${cluster}`,
+      url: canonicalFor(locale as Locale, clusterPath),
     },
   };
 }
@@ -69,7 +63,6 @@ export async function generateMetadata({ params }: Props) {
 export default async function ClusterPage({ params }: Props) {
   const { locale, cluster } = await params;
   const t = await getTranslations({ locale, namespace: 'blog.clusterPage' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   // Buscar cluster
   const clusterData = clustersConfig.clusters.find(c => c.id === cluster);
@@ -85,16 +78,16 @@ export default async function ClusterPage({ params }: Props) {
     clusterPostsMeta.some(cp => cp.id === post.slug.replace(/^.*\//, ''))
   );
 
-  const clusterName = clusterData.name[locale as 'es' | 'en' | 'ca'];
-  const clusterDescription = clusterData.description[locale as 'es' | 'en' | 'ca'];
-  const clusterKeywords = clusterData.keywords[locale as 'es' | 'en' | 'ca'];
-  const clusterPrompts = clusterData.aiPrompts[locale as 'es' | 'en' | 'ca'];
+  const clusterName = clusterData.name[locale as Locale];
+  const clusterDescription = clusterData.description[locale as Locale];
+  const clusterKeywords = clusterData.keywords[locale as Locale];
+  const clusterPrompts = clusterData.aiPrompts[locale as Locale];
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     path: `/${locale}/blog/tema/${cluster}`,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   return (

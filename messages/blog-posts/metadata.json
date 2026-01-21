@@ -1,6 +1,575 @@
 {
   "posts": [
     {
+      "id": "como-exportar-historial-ledger-csv",
+      "slugTranslations": {
+        "es": "como-exportar-historial-ledger-csv",
+        "en": "how-to-export-ledger-history-csv",
+        "ca": "com-exportar-historial-ledger-csv"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-30T09:00:00Z",
+      "readingTime": 16,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Ledger",
+        "Hardware Wallet",
+        "Exportar Historial",
+        "CSV Export",
+        "Ledger Live",
+        "Staking",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 100",
+        "Modelo 721",
+        "FIFO",
+        "Bitcoin",
+        "Ethereum",
+        "Multichain",
+        "Trazabilidad"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/ledger-exportar-datos-csv-crypto.webp",
+        "alt": "Cómo exportar historial de Ledger Live - Guía completa paso a paso para obtener tus operaciones y transacciones en formato CSV para la declaración fiscal ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo Exportar Historial de Ledger Live: Guía Completa CSV 2025 | Cleriontax",
+        "metaDescription": "Guía paso a paso para exportar tu historial completo de operaciones de Ledger Live en formato CSV. Aprende a obtener transacciones, staking, swaps y operaciones multichain para tu declaración de la renta ante la AEAT.",
+        "keywords": [
+          "ledger historial",
+          "exportar ledger live",
+          "ledger csv",
+          "ledger transacciones",
+          "exportar ledger wallet",
+          "historial ledger nano",
+          "ledger declaración renta",
+          "ledger fiscalidad",
+          "exportar operaciones ledger",
+          "hardware wallet fiscalidad",
+          "ledger AEAT",
+          "ledger modelo 721",
+          "ledger staking historial",
+          "ledger swap export"
+        ],
+        "ogImage": "/images/illustrations/blog/ledger-exportar-datos-csv-crypto.webp",
+        "ogImageAlt": "Cómo exportar historial de Ledger Live - Guía completa paso a paso para obtener tus operaciones y transacciones en formato CSV para la declaración fiscal ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "como-exportar-historial-metamask",
+        "como-exportar-historial-binance-correctamente",
+        "limpiar-datasets-cripto-antes-declarar"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "liquidity-pools-lp-tokens-fiscalidad-espana",
+      "slugTranslations": {
+        "es": "liquidity-pools-lp-tokens-fiscalidad-espana",
+        "en": "liquidity-pools-lp-tokens-taxation-spain",
+        "ca": "liquidity-pools-lp-tokens-fiscalitat-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-20T09:00:00Z",
+      "readingTime": 15,
+      "category": "DeFi y Protocolos Avanzados",
+      "tags": [
+        "Liquidity Pools",
+        "LP Tokens",
+        "Fiscalidad DeFi Avanzada",
+        "Pools de Liquidez",
+        "AMM",
+        "Impermanent Loss",
+        "Proveer Liquidez",
+        "Comisiones DeFi",
+        "Uniswap",
+        "Curve Finance",
+        "Balancer",
+        "PancakeSwap",
+        "AEAT",
+        "Modelo 721",
+        "Ganancias Patrimoniales",
+        "Permutas Criptomonedas"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/guia-fiscal-liquidity-pools-crypto.webp",
+        "alt": "LP Tokens y Liquidity Pools - Guía fiscal completa sobre cómo tributan los pools de liquidez y los tokens LP ante la AEAT en España",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Liquidity Pools Fiscalidad España 2025: LP Tokens e Impuestos | Cleriontax",
+        "metaDescription": "Guía fiscal definitiva sobre liquidity pools en España. Aprende cómo tributan los LP tokens, las comisiones del pool, el impermanent loss y cada fase del ciclo de liquidez ante la AEAT.",
+        "keywords": [
+          "liquidity pool fiscalidad",
+          "lp tokens impuestos",
+          "pools de liquidez tributación",
+          "fiscalidad liquidity pools España",
+          "LP tokens AEAT",
+          "tributación pools liquidez",
+          "impuestos liquidity provider",
+          "fiscalidad AMM España",
+          "uniswap pool impuestos",
+          "curve pool fiscalidad",
+          "tokens LP declaración",
+          "proveer liquidez impuestos",
+          "comisiones pool tributación",
+          "DeFi pools fiscalidad",
+          "liquidity mining impuestos España"
+        ],
+        "ogImage": "/images/illustrations/blog/guia-fiscal-liquidity-pools-crypto.webp",
+        "ogImageAlt": "LP Tokens y Liquidity Pools - Guía fiscal completa sobre cómo tributan los pools de liquidez y los tokens LP ante la AEAT en España",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-defi-avanzada",
+      "relatedPosts": [
+        "yield-farming-como-tributa-espana",
+        "fiscalidad-dex-protocolos-uniswap-impuestos",
+        "dac8-defi-wallets-swaps-liquidez-fiscalidad"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "yield-farming-como-tributa-espana",
+      "slugTranslations": {
+        "es": "yield-farming-como-tributa-espana",
+        "en": "yield-farming-taxation-spain",
+        "ca": "yield-farming-com-tributa-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-18T09:00:00Z",
+      "readingTime": 14,
+      "category": "DeFi y Protocolos Avanzados",
+      "tags": [
+        "Yield Farming",
+        "Fiscalidad DeFi Avanzada",
+        "Farmeo Criptomonedas",
+        "Liquidity Mining",
+        "Rewards DeFi",
+        "LP Tokens",
+        "Impermanent Loss",
+        "Auto-Compounding",
+        "Curve Finance",
+        "Uniswap",
+        "PancakeSwap",
+        "Rendimientos Capital Mobiliario",
+        "AEAT",
+        "Modelo 100",
+        "FIFO"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/yield-farming-como-tributa-espana-impuestos.webp",
+        "alt": "Yield Farming y fiscalidad en España - Guía completa sobre cómo tributan los rendimientos de farming DeFi ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Yield Farming Impuestos España 2025: Cómo Tributa el Farmeo DeFi | Cleriontax",
+        "metaDescription": "Guía fiscal definitiva sobre yield farming en España. Aprende cómo declarar rewards, LP tokens, farming en Uniswap, Curve, Aave y otros protocolos DeFi ante la AEAT. Ejemplos prácticos con cálculos.",
+        "keywords": [
+          "yield farming impuestos",
+          "farmeo defi fiscal",
+          "yield farming tributación España",
+          "cómo tributa yield farming",
+          "farming criptomonedas AEAT",
+          "rendimientos DeFi impuestos",
+          "liquidity mining fiscalidad",
+          "rewards farming declaración",
+          "LP tokens tributación",
+          "farming Uniswap impuestos",
+          "Curve farming fiscalidad",
+          "Aave lending impuestos",
+          "yield farming modelo 100",
+          "farming cripto Hacienda",
+          "DeFi fiscalidad España 2025"
+        ],
+        "ogImage": "/images/illustrations/blog/yield-farming-como-tributa-espana-impuestos.webp",
+        "ogImageAlt": "Yield Farming y fiscalidad en España - Guía completa sobre cómo tributan los rendimientos de farming DeFi ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-defi-avanzada",
+      "relatedPosts": [
+        "fiscalidad-dex-protocolos-uniswap-impuestos",
+        "dac8-defi-wallets-swaps-liquidez-fiscalidad",
+        "fiscalidad-defi-espana"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "dac8-defi-wallets-swaps-liquidez-fiscalidad",
+      "slugTranslations": {
+        "es": "dac8-defi-wallets-swaps-liquidez-fiscalidad",
+        "en": "dac8-defi-wallets-swaps-liquidity-taxation",
+        "ca": "dac8-defi-wallets-swaps-liquiditat-fiscalitat"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-11T09:00:00Z",
+      "readingTime": 14,
+      "category": "DeFi y Protocolos Avanzados",
+      "tags": [
+        "DAC8",
+        "DeFi",
+        "Wallets No Custodiales",
+        "Swaps DEX",
+        "Pools de Liquidez",
+        "Bridges",
+        "Staking Líquido",
+        "AEAT",
+        "Fiscalidad DeFi Avanzada",
+        "Rendimientos On-Chain",
+        "Trazabilidad",
+        "Impermanent Loss",
+        "Lending DeFi"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/dac8-cripto-regulacion-hacienda.webp",
+        "alt": "DAC8 y DeFi - Guía avanzada sobre cómo afecta la directiva europea a wallets, swaps, pools de liquidez y rendimientos on-chain ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "DAC8 y DeFi: Guía Avanzada de Impacto Fiscal y Preparación | Cleriontax",
+        "metaDescription": "Aprende cómo afectará la Directiva DAC8 a tus operaciones DeFi. Entiende qué podrá saber Hacienda sobre tus swaps, LPs, préstamos, bridges y wallets, y cómo preparar tu cartera para evitar discrepancias fiscales.",
+        "keywords": [
+          "DAC8 DeFi",
+          "impacto fiscal DeFi",
+          "DAC8 criptomonedas",
+          "fiscalidad DeFi España",
+          "cómo afecta DAC8 a DeFi",
+          "DAC8 wallets no custodiales",
+          "DAC8 exchanges España",
+          "tributación DeFi",
+          "impuestos DeFi España",
+          "rendimientos DeFi fiscalidad",
+          "liquidez LP impuestos",
+          "swaps DEX fiscalidad",
+          "DAC8 AEAT cripto"
+        ],
+        "ogImage": "/images/illustrations/blog/dac8-cripto-regulacion-hacienda.webp",
+        "ogImageAlt": "DAC8 y DeFi - Guía avanzada sobre cómo afecta la directiva europea a wallets, swaps, pools de liquidez y rendimientos on-chain ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-defi-avanzada",
+      "relatedPosts": [
+        "fiscalidad-dex-protocolos-uniswap-impuestos",
+        "directiva-dac8-criptomonedas-exchanges-hacienda",
+        "limpiar-datasets-cripto-antes-declarar"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "dac8-guia-practica-inversores-cripto",
+      "slugTranslations": {
+        "es": "dac8-guia-practica-inversores-cripto",
+        "en": "dac8-practical-guide-crypto-investors",
+        "ca": "dac8-guia-practica-inversors-cripto"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-10T12:00:00Z",
+      "readingTime": 12,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "DAC8",
+        "Guía Práctica",
+        "Inversores Cripto",
+        "Cumplimiento Fiscal",
+        "Exchanges",
+        "AEAT",
+        "Obligaciones Fiscales",
+        "Declaración Renta",
+        "FIFO",
+        "Trazabilidad",
+        "Regulación Cripto",
+        "Fiscalidad UE"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/dac8-normativa-regulacion-europea.webp",
+        "alt": "DAC8 para inversores cripto - Guía práctica sobre qué cambia con la nueva normativa europea y cómo cumplir sin errores",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "DAC8 para Inversores Cripto: Obligaciones, Riesgos y Guía Práctica | Cleriontax",
+        "metaDescription": "Aprende cómo afecta DAC8 a los inversores de criptomonedas: qué datos reportarán los exchanges, qué riesgos fiscales existen y cómo preparar tu cartera para cumplir sin errores.",
+        "keywords": [
+          "DAC8 inversores",
+          "DAC8 criptomonedas obligaciones",
+          "impacto DAC8 usuarios cripto",
+          "fiscalidad criptomonedas DAC8",
+          "datos que reportan exchanges DAC8",
+          "cómo prepararse DAC8",
+          "guía práctica DAC8",
+          "nueva normativa criptomonedas UE",
+          "obligaciones fiscales cripto 2025",
+          "cumplir DAC8",
+          "riesgos DAC8 AEAT",
+          "qué deben hacer los inversores con DAC8"
+        ],
+        "ogImage": "/images/illustrations/blog/dac8-normativa-regulacion-europea.webp",
+        "ogImageAlt": "DAC8 para inversores cripto - Guía práctica sobre qué cambia con la nueva normativa europea y cómo cumplir sin errores",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "directiva-dac8-criptomonedas-exchanges-hacienda",
+        "limpiar-datasets-cripto-antes-declarar",
+        "errores-declarar-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "directiva-dac8-criptomonedas-exchanges-hacienda",
+      "slugTranslations": {
+        "es": "directiva-dac8-criptomonedas-exchanges-hacienda",
+        "en": "dac8-directive-cryptocurrencies-exchanges-tax-authority",
+        "ca": "directiva-dac8-criptomonedes-exchanges-hisenda"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-10T09:00:00Z",
+      "readingTime": 14,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "DAC8",
+        "Directiva Europea",
+        "Intercambio Información",
+        "CARF",
+        "MiCA",
+        "Exchanges",
+        "Hacienda",
+        "AEAT",
+        "Regulación Cripto",
+        "Fiscalidad UE",
+        "Cumplimiento Fiscal",
+        "Transparencia Fiscal",
+        "Modelo 721",
+        "Declaración Renta"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/dac8-declaracion-exchanges-cripto.webp",
+        "alt": "Directiva DAC8 y criptomonedas - Qué información reportarán los exchanges a Hacienda y cómo prepararse para la nueva fiscalidad cripto en la UE",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Directiva DAC8 y Criptomonedas: Guía Fiscal Completa 2025 | Cleriontax",
+        "metaDescription": "Guía profesional sobre la Directiva DAC8 aplicada a criptomonedas. Aprende qué datos compartirán los exchanges con Hacienda, cómo afecta a tus wallets y cómo prepararte para la nueva fiscalidad cripto en la UE.",
+        "keywords": [
+          "DAC8 criptomonedas",
+          "directiva DAC8 fiscalidad",
+          "DAC8 Hacienda España",
+          "DAC8 crypto UE",
+          "intercambio automático información cripto",
+          "CARF DAC8 criptomonedas",
+          "MiCA y DAC8",
+          "fiscalidad criptomonedas 2025",
+          "exchanges reportan Hacienda",
+          "obligaciones fiscales crypto DAC8",
+          "datos cripto AEAT",
+          "regulación europea criptomonedas",
+          "cumplimiento fiscal DAC8",
+          "normativa DAC8 inversores crypto",
+          "DAC8 wallets exchanges"
+        ],
+        "ogImage": "/images/illustrations/blog/dac8-declaracion-exchanges-cripto.webp",
+        "ogImageAlt": "Directiva DAC8 y criptomonedas - Qué información reportarán los exchanges a Hacienda y cómo prepararse para la nueva fiscalidad cripto en la UE",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "modelo-721-criptomonedas",
+        "modelos-100-721-714-criptomonedas",
+        "limpiar-datasets-cripto-antes-declarar"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "limpiar-datasets-cripto-antes-declarar",
+      "slugTranslations": {
+        "es": "limpiar-datasets-cripto-antes-declarar",
+        "en": "clean-crypto-datasets-before-filing",
+        "ca": "netejar-datasets-cripto-abans-declarar"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-07T09:00:00Z",
+      "readingTime": 10,
+      "category": "Clasificación y Metodología",
+      "tags": [
+        "Ingeniería de Datos",
+        "Limpieza Datos",
+        "Data Cleaning",
+        "CSV",
+        "Normalización",
+        "Duplicados",
+        "FIFO",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 100",
+        "ETL",
+        "Datasets",
+        "Consolidación",
+        "Trazabilidad"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/analisis-datos-cripto-para-declaracion-renta.webp",
+        "alt": "Cómo limpiar datasets de criptomonedas antes de declarar - Guía de ingeniería de datos fiscal para preparar CSV y calcular correctamente FIFO ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo Limpiar Datasets Cripto Antes de Declarar: Guía Completa 2025 | Cleriontax",
+        "metaDescription": "Aprende a limpiar y preparar tus datasets de criptomonedas para la declaración fiscal. Técnicas profesionales de ingeniería de datos para depurar CSV, eliminar duplicados y corregir errores antes de presentar ante la AEAT.",
+        "keywords": [
+          "limpiar datos criptomonedas",
+          "depurar CSV crypto",
+          "preparar datos declaración",
+          "ingeniería datos fiscal",
+          "limpiar historial crypto",
+          "data cleaning criptomonedas",
+          "errores CSV exchanges",
+          "duplicados transacciones crypto",
+          "normalizar datos fiscales",
+          "ETL criptomonedas",
+          "preparar AEAT crypto",
+          "consolidar wallets exchanges",
+          "datasets fiscalidad crypto",
+          "limpieza datos blockchain"
+        ],
+        "ogImage": "/images/illustrations/blog/analisis-datos-cripto-para-declaracion-renta.webp",
+        "ogImageAlt": "Cómo limpiar datasets de criptomonedas antes de declarar - Guía de ingeniería de datos fiscal para preparar CSV y calcular correctamente FIFO ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "ingenieria-datos-fiscalidad",
+      "relatedPosts": [
+        "herramientas-rastrear-criptomonedas",
+        "clasificar-operaciones-criptomonedas",
+        "como-exportar-historial-binance-correctamente"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "como-exportar-historial-metamask",
+      "slugTranslations": {
+        "es": "como-exportar-historial-metamask",
+        "en": "how-to-export-metamask-history",
+        "ca": "com-exportar-historial-metamask"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2025-12-05T09:00:00Z",
+      "readingTime": 14,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Metamask",
+        "Wallet",
+        "Exportar Historial",
+        "Etherscan",
+        "DeFi",
+        "Swaps DEX",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 100",
+        "FIFO",
+        "Gas Fees",
+        "Multichain",
+        "Trazabilidad",
+        "Blockchain"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/metamask-exportar-historial-operaciones.webp",
+        "alt": "Cómo exportar historial de Metamask - Guía completa paso a paso para obtener tus operaciones DeFi y swaps para la declaración fiscal ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo Exportar Historial de Metamask: Guía Completa 2025 | Cleriontax",
+        "metaDescription": "Guía paso a paso para exportar tu historial completo de operaciones de Metamask. Aprende a obtener transacciones, swaps DEX, airdrops y operaciones DeFi para tu declaración de la renta ante la AEAT.",
+        "keywords": [
+          "metamask historial",
+          "exportar wallet",
+          "exportar metamask",
+          "historial metamask",
+          "metamask transacciones",
+          "exportar wallet ethereum",
+          "metamask etherscan",
+          "metamask csv",
+          "historial wallet crypto",
+          "metamask declaración renta",
+          "metamask fiscalidad",
+          "exportar operaciones DeFi",
+          "swaps DEX historial",
+          "wallet no custodial fiscalidad"
+        ],
+        "ogImage": "/images/illustrations/blog/metamask-exportar-historial-operaciones.webp",
+        "ogImageAlt": "Cómo exportar historial de Metamask - Guía completa paso a paso para obtener tus operaciones DeFi y swaps para la declaración fiscal ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "como-exportar-historial-binance-correctamente",
+        "herramientas-rastrear-criptomonedas",
+        "fiscalidad-defi-espana"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "como-exportar-historial-binance-correctamente",
       "slugTranslations": {
         "es": "como-exportar-historial-binance-correctamente",
@@ -70,6 +639,79 @@
         "herramientas-rastrear-criptomonedas",
         "clasificar-operaciones-criptomonedas",
         "como-declarar-criptomonedas-renta-2025"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "como-obtener-csv-kraken-tributacion",
+      "slugTranslations": {
+        "es": "como-obtener-csv-kraken-tributacion",
+        "en": "how-to-get-csv-from-kraken-taxation",
+        "ca": "com-obtenir-csv-de-kraken-tributacio"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-01-06T10:00:00Z",
+      "readingTime": 15,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Kraken",
+        "CSV Export",
+        "Historial Transacciones",
+        "Exportar Datos",
+        "Spot Trading",
+        "Fiscalidad Exchanges",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 100",
+        "Modelo 721",
+        "FIFO",
+        "Staking",
+        "EUR Directo",
+        "Trazabilidad",
+        "Ingeniería Datos"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/como-exportar-historial-kraken-csv-tributacion.webp",
+        "alt": "Cómo obtener CSV de Kraken - Guía completa paso a paso para exportar tu historial de operaciones y transacciones en formato CSV para la declaración fiscal ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo Obtener CSV de Kraken: Guía Completa para Exportar Datos Fiscales | Cleriontax",
+        "metaDescription": "Guía paso a paso para exportar correctamente tu historial completo de Kraken en formato CSV. Aprende a descargar transacciones, trades, conversiones y staking para tu declaración de la renta y cumplimiento con la AEAT.",
+        "keywords": [
+          "kraken csv",
+          "exportar kraken",
+          "kraken data export",
+          "descargar kraken historial",
+          "kraken transaction history",
+          "como exportar kraken",
+          "kraken declaración renta",
+          "kraken fiscalidad",
+          "kraken modelo 100",
+          "kraken modelo 721",
+          "exportar trades kraken",
+          "kraken spot trading export",
+          "kraken staking historial",
+          "kraken ledger export",
+          "kraken EUR pares"
+        ],
+        "ogImage": "/images/illustrations/blog/como-exportar-historial-kraken-csv-tributacion.webp",
+        "ogImageAlt": "Cómo obtener CSV de Kraken - Guía completa paso a paso para exportar tu historial de operaciones y transacciones en formato CSV para la declaración fiscal ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "como-exportar-historial-binance-correctamente",
+        "como-exportar-historial-metamask",
+        "herramientas-rastrear-criptomonedas"
       ],
       "aiOptimized": true
     },

@@ -132,7 +132,7 @@
     { "label": "Tornar a tots els serveis", "href": "/servicios" },
     { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
     { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" },
-    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
   ],
   "seo": {
     "title": "Anàlisi de Carteres d'Inversió Complexes | Cleriontax",

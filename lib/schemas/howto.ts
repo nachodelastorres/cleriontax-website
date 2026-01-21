@@ -51,7 +51,7 @@ export function generateHowToSchema(
     totalTime,
     image,
     url,
-    baseUrl = 'https://cleriontax.com'
+    baseUrl = 'https://www.cleriontax.com'
   } = config;
 
   const schema: WithContext<any> = {
@@ -154,7 +154,7 @@ export const commonHowToSchemas = {
   /**
    * How to declare cryptocurrencies process
    */
-  cryptoDeclarationProcess: (locale: Locale, baseUrl = 'https://cleriontax.com'): WithContext<any> => {
+  cryptoDeclarationProcess: (locale: Locale, baseUrl = 'https://www.cleriontax.com'): WithContext<any> => {
     const steps: Record<Locale, HowToStep[]> = {
       es: [
         {

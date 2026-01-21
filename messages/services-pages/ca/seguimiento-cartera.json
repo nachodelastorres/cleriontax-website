@@ -132,7 +132,7 @@
     { "label": "Tornar a tots els serveis", "href": "/servicios" },
     { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
     { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
-    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
   ],
   "seo": {
     "title": "Seguiment en Temps Real de Cartera Crypto | CoinTracking | Cleriontax",

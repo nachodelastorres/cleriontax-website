@@ -1,25 +1,25 @@
-"use client";
-
-import { useLocale, useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Container from '@/components/ui/Container';
-import metadata from '@/messages/blog-posts/metadata.json';
+import { getAllBlogPostsWithContent } from '@/lib/blog';
 
-export default function BlogScrollSection() {
-  const locale = useLocale();
-  const t = useTranslations('blogCTA');
+interface BlogScrollSectionProps {
+  locale: string;
+}
+
+export default async function BlogScrollSection({ locale }: BlogScrollSectionProps) {
+  const t = await getTranslations({ locale, namespace: 'blogCTA' });
+  const tBlog = await getTranslations({ locale, namespace: 'blog' });
+
+  // Get posts with translated content
+  const posts = await getAllBlogPostsWithContent(locale);
 
   // Sort posts by publishedAt (newest first)
-  const sortedPosts = [...metadata.posts].sort((a, b) =>
+  const sortedPosts = [...posts].sort((a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
-
-  // Get slug based on locale
-  const getSlugForLocale = (post: typeof metadata.posts[0]) => {
-    return post.slugTranslations[locale as keyof typeof post.slugTranslations] || post.slugTranslations.es;
-  };
 
   // Format date
   const formatDate = (dateString: string) => {
@@ -60,7 +60,7 @@ export default function BlogScrollSection() {
                 href={`/${locale}/blog`}
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-burgundy-dark transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Ver todos los artículos
+                {t('viewAllArticles')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -75,13 +75,11 @@ export default function BlogScrollSection() {
             {/* Scrollable container */}
             <div className="overflow-x-auto pb-6 -mx-6 px-6 scrollbar-hide">
               <div className="flex gap-6 w-max">
-                {sortedPosts.map((post, index) => {
-                  const slug = getSlugForLocale(post);
-
+                {sortedPosts.map((post) => {
                   return (
                     <Link
-                      key={post.id}
-                      href={`/${locale}/blog/${slug}`}
+                      key={post.slug}
+                      href={`/${locale}/blog/${post.slug}`}
                       className="group relative block w-[380px] flex-shrink-0"
                     >
                       <article className="h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-accent/30">
@@ -96,7 +94,7 @@ export default function BlogScrollSection() {
                           {/* Category badge */}
                           <div className="absolute top-4 left-4">
                             <span className="px-3 py-1.5 rounded-lg bg-accent/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wide shadow-lg">
-                              {post.category}
+                              {tBlog(`categoryTranslations.${post.category}`, { default: post.category })}
                             </span>
                           </div>
                         </div>
@@ -113,18 +111,18 @@ export default function BlogScrollSection() {
                             </div>
                             <div className="flex items-center gap-1.5">
                               <Clock className="w-4 h-4" />
-                              <span>{post.readingTime} min</span>
+                              <span>{post.readingTime} {t('minRead')}</span>
                             </div>
                           </div>
 
-                          {/* Title - Get from translations */}
+                          {/* Title - Now using translated title */}
                           <h3 className="text-xl font-bold text-navy mb-3 line-clamp-2 group-hover:text-accent transition-colors">
-                            {post.seo.metaTitle.split('|')[0].trim()}
+                            {post.title}
                           </h3>
 
-                          {/* Excerpt */}
+                          {/* Excerpt - Now using translated excerpt */}
                           <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
-                            {post.seo.metaDescription}
+                            {post.excerpt}
                           </p>
 
                           {/* Tags */}
@@ -134,14 +132,14 @@ export default function BlogScrollSection() {
                                 key={i}
                                 className="px-2.5 py-1 rounded-md bg-gray-100 text-gray-700 text-xs font-medium"
                               >
-                                {tag}
+                                {tBlog(`tagTranslations.${tag}`, { default: tag })}
                               </span>
                             ))}
                           </div>
 
                           {/* CTA */}
                           <div className="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:gap-3 transition-all">
-                            Leer artículo
+                            {t('readArticle')}
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                           </div>
                         </div>
@@ -159,13 +157,13 @@ export default function BlogScrollSection() {
           {/* Helper text */}
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-500">
-              Desliza horizontalmente para ver más artículos →
+              {t('scrollHelper')}
             </p>
           </div>
         </div>
       </Container>
 
-      <style jsx global>{`
+      <style>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }

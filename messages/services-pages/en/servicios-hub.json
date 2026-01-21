@@ -58,7 +58,7 @@
           "body": "Personalized 1:1 sessions with our tax team to resolve specific questions about filing forms, classification criteria, regulatory compliance and report structure. We do not offer investment advice or recommendations on which assets to buy or sell. Our focus is technical and tax-oriented: we help you interpret regulations, prepare documentation for AEAT requirements and understand how to correctly apply tax criteria to your specific case. Includes document review, technical Q&A and post-session follow-up.",
           "link": {
             "label": "View service details →",
-            "href": "/servicios/asesoria-fiscal"
+            "href": "/servicios/asesoria-fiscal-criptomonedas"
           }
         }
       ]
@@ -140,7 +140,7 @@
     { "label": "Portfolio Analysis", "href": "/servicios/analisis-carteras" },
     { "label": "Tax Settlements", "href": "/servicios/liquidaciones-fiscales" },
     { "label": "Portfolio Tracking", "href": "/servicios/seguimiento-cartera" },
-    { "label": "Tax Advisory", "href": "/servicios/asesoria-fiscal" }
+    { "label": "Tax Advisory", "href": "/servicios/asesoria-fiscal-criptomonedas" }
   ],
   "seo": {
     "title": "Tax Advisory and Data Analysis Services | Cleriontax",

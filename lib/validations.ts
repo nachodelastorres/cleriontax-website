@@ -1,6 +1,7 @@
 import { z } from "zod";
 
-export const contactFormSchema = z.object({
+// Base schema for server-side validation (without privacyConsent)
+export const contactFormServerSchema = z.object({
   name: z
     .string()
     .min(2, "El nombre debe tener al menos 2 caracteres")
@@ -19,4 +20,14 @@ export const contactFormSchema = z.object({
     .max(1000, "El mensaje es demasiado largo"),
 });
 
+// Full schema for client-side validation (includes privacyConsent)
+export const contactFormSchema = contactFormServerSchema.extend({
+  privacyConsent: z
+    .boolean()
+    .refine((val) => val === true, {
+      message: "Debes aceptar la política de privacidad",
+    }),
+});
+
 export type ContactFormData = z.infer<typeof contactFormSchema>;
+export type ContactFormServerData = z.infer<typeof contactFormServerSchema>;

@@ -10,12 +10,13 @@ import {
   generateHowToSchema,
   getServiceName
 } from "@/lib/schemas";
+import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
-const validSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal'];
+const validSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal-criptomonedas'];
 
 // Convert slug to camelCase for i18n keys
 const slugToCamelCase = (slug: string): string => {
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   const slugKey = slugToCamelCase(slug);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
+  const servicePath = `/servicios/${slug}`;
 
   try {
     const t = await getTranslations({ locale, namespace: `servicesPages.${slugKey}` });
@@ -45,20 +46,13 @@ export async function generateMetadata({ params }: Props) {
       title: t('seo.title'),
       description: t('seo.description'),
       keywords: t.raw('seo.keywords'),
-      alternates: {
-        canonical: `${baseUrl}/${locale}/servicios/${slug}`,
-        languages: {
-          'es': `${baseUrl}/es/servicios/${slug}`,
-          'en': `${baseUrl}/en/servicios/${slug}`,
-          'ca': `${baseUrl}/ca/servicios/${slug}`,
-        },
-      },
+      alternates: getAlternates(locale as Locale, servicePath),
       openGraph: {
         title: t('seo.title'),
         description: t('seo.description'),
         type: 'website',
         locale: locale,
-        url: `${baseUrl}/${locale}/servicios/${slug}`,
+        url: canonicalFor(locale as Locale, servicePath),
       },
     };
   } catch {
@@ -91,31 +85,30 @@ export default async function ServiceDetailPage({ params }: Props) {
   }
 
   const t = await getTranslations({ locale, namespace: 'servicesPages.relatedServices' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   const { hero, toc, sections, internal_links } = serviceData;
 
   // Generate structured data schemas
-  const serviceName = getServiceName(slug, locale as 'es' | 'en' | 'ca');
-  const serviceUrl = `${baseUrl}/${locale}/servicios/${slug}`;
+  const serviceName = getServiceName(slug, locale as Locale);
+  const serviceUrl = canonicalFor(locale as Locale, `/servicios/${slug}`);
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateServiceBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     serviceSlug: slug,
     serviceTitle: serviceName,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // Service Schema
   const serviceSchema = generateDetailedServiceSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     serviceName,
     description: serviceData.excerpt,
     serviceType: slug,
     url: serviceUrl,
     breadcrumb: breadcrumbSchema,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // HowTo Schema (if service has steps)
@@ -123,7 +116,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   let howToSchema = null;
   if (howToSection && howToSection.steps) {
     howToSchema = generateHowToSchema({
-      locale: locale as 'es' | 'en' | 'ca',
+      locale: locale as Locale,
       name: `${serviceName} - ${howToSection.h2}`,
       description: serviceData.excerpt,
       steps: howToSection.steps.map((step: any) => ({
@@ -131,7 +124,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         text: step.body
       })),
       url: serviceUrl,
-      baseUrl
+      baseUrl: SITE_URL
     });
   }
 
@@ -478,7 +471,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     'analisis-carteras': '/images/illustrations/services/analisis-carteras-inversion-compleja-crypto.webp',
                     'liquidaciones-fiscales': '/images/illustrations/services/liquidaciones-fiscales-modelos-aeat-criptomonedas.webp',
                     'seguimiento-cartera': '/images/illustrations/services/seguimiento-tiempo-real-cartera-crypto.webp',
-                    'asesoria-fiscal': '/images/illustrations/services/asesoria-fiscal-especializada-criptoactivos.webp'
+                    'asesoria-fiscal-criptomonedas': '/images/illustrations/services/asesoria-fiscal-especializada-criptoactivos.webp'
                   };
 
                   const serviceSlug = link.href.split('/').pop() || '';

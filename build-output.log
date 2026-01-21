@@ -1,0 +1,31 @@
+
+> cleriontax@1.0.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\nacho\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\nacho\Desktop\ClerionTax\package-lock.json
+
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Environments: .env.local
+
+ ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.0s
+   Running TypeScript ...
+Failed to compile.
+
+./app/[locale]/blog/[slug]/page.tsx:323:52
+Type error: Property 'slice' does not exist on type '{ es: string[]; en: string[]; ca: string[]; }'.
+
+[0m [90m 321 |[39m           [36mconst[39m clusterName [33m=[39m cluster[33m.[39mname[locale [36mas[39m [32m'es'[39m [33m|[39m [32m'en'[39m [33m|[39m [32m'ca'[39m][33m;[39m
+ [90m 322 |[39m           [36mconst[39m clusterDescription [33m=[39m cluster[33m.[39mdescription[locale [36mas[39m [32m'es'[39m [33m|[39m [32m'en'[39m [33m|[39m [32m'ca'[39m][33m;[39m
+[31m[1m>[22m[39m[90m 323 |[39m           [36mconst[39m clusterKeywords [33m=[39m cluster[33m.[39mkeywords[33m.[39mslice([35m0[39m[33m,[39m [35m6[39m)[33m;[39m
+ [90m     |[39m                                                    [31m[1m^[22m[39m
+ [90m 324 |[39m
+ [90m 325 |[39m           [90m// Obtener posts relacionados del mismo cluster[39m
+ [90m 326 |[39m           [36mconst[39m clusterRelatedPosts [33m=[39m relatedPosts[33m.[39mslice([35m0[39m[33m,[39m [35m5[39m)[33m;[39m[0m
+Next.js build worker exited with code: 1 and signal: null

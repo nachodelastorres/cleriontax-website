@@ -27,7 +27,7 @@ export function generatePersonSchema(
     avatar,
     description,
     url,
-    baseUrl = 'https://cleriontax.com'
+    baseUrl = 'https://www.cleriontax.com'
   } = config;
 
   const schema: WithContext<any> = {
@@ -82,7 +82,7 @@ export function getPersonReference(name: string, url?: string): any {
   return {
     '@type': 'Person',
     name,
-    url: url || 'https://cleriontax.com'
+    url: url || 'https://www.cleriontax.com'
   };
 }
 
@@ -90,7 +90,7 @@ export function getPersonReference(name: string, url?: string): any {
  * Default Cleriontax team author schema
  * Use this for blog posts authored by the team
  */
-export function generateCleriontaxTeamSchema(baseUrl = 'https://cleriontax.com'): WithContext<any> {
+export function generateCleriontaxTeamSchema(baseUrl = 'https://www.cleriontax.com'): WithContext<any> {
   return generatePersonSchema({
     name: 'Equipo Cleriontax',
     role: 'Tax Advisory & Data Analysis Team',

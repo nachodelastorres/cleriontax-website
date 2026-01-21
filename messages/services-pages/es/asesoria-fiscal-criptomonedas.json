@@ -1,9 +1,9 @@
 {
-  "title": "Asesoría Fiscal Especializada en Criptoactivos",
-  "slug": "asesoria-fiscal",
+  "title": "Asesoría Fiscal Especializada en Criptomonedas",
+  "slug": "asesoria-fiscal-criptomonedas",
   "excerpt": "Sesiones personalizadas 1:1 para resolver dudas fiscales sobre criptomonedas. Criterios de presentación, cumplimiento normativo y revisión documental. Sin asesoramiento de inversión.",
   "hero": {
-    "h1": "Asesoría Fiscal Especializada en Criptoactivos",
+    "h1": "Asesoría Fiscal Especializada en Criptomonedas",
     "subheading": "Sesiones técnicas con nuestro equipo fiscal para resolver dudas sobre modelos AEAT, criterios de clasificación, cumplimiento normativo y estructura de informes. Enfoque exclusivamente técnico-fiscal. No ofrecemos asesoramiento de inversión.",
     "cta": {
       "label": "Solicitar evaluación gratuita",
@@ -138,7 +138,7 @@
     "title": "Asesoría Fiscal Especializada en Criptoactivos | Cleriontax",
     "description": "Sesiones técnicas 1:1 sobre fiscalidad crypto. Dudas sobre modelos AEAT, requerimientos de Hacienda y cumplimiento normativo. Sin asesoramiento de inversión.",
     "keywords": ["asesoría fiscal criptomonedas", "consultoría fiscal crypto", "requerimiento AEAT cripto", "modelo 721 asesoría", "DGT criptoactivos", "cumplimiento fiscal crypto"],
-    "canonical": "https://cleriontax.com/servicios/asesoria-fiscal"
+    "canonical": "https://cleriontax.com/servicios/asesoria-fiscal-criptomonedas"
   },
   "schema_org": {
     "@context": "https://schema.org",

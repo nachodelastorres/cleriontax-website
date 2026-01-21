@@ -17,6 +17,7 @@ import {
   getOrganizationReference
 } from "@/lib/schemas";
 import clustersConfig from "@/messages/blog-posts/clusters-config.json";
+import { SITE_URL, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -43,7 +44,6 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   const post = await getBlogPostBySlug(slug, locale);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   if (!post) {
     return {
@@ -51,17 +51,19 @@ export async function generateMetadata({ params }: Props) {
     };
   }
 
+  const postUrl = canonicalFor(locale as Locale, `/blog/${slug}`);
+
   return {
     title: post.seo.metaTitle,
     description: post.seo.metaDescription,
     keywords: post.seo.keywords.join(', '),
     authors: [{ name: post.author.name }],
     alternates: {
-      canonical: `${baseUrl}/${locale}/blog/${slug}`,
+      canonical: postUrl,
       languages: {
-        'es': `${baseUrl}/es/blog/${post.slugTranslations.es}`,
-        'en': `${baseUrl}/en/blog/${post.slugTranslations.en}`,
-        'ca': `${baseUrl}/ca/blog/${post.slugTranslations.ca}`,
+        'es': canonicalFor('es', `/blog/${post.slugTranslations.es}`),
+        'en': canonicalFor('en', `/blog/${post.slugTranslations.en}`),
+        'ca': canonicalFor('ca', `/blog/${post.slugTranslations.ca}`),
       },
     },
     openGraph: {
@@ -69,7 +71,7 @@ export async function generateMetadata({ params }: Props) {
       description: post.seo.metaDescription,
       type: 'article',
       locale: locale,
-      url: `${baseUrl}/${locale}/blog/${slug}`,
+      url: postUrl,
       images: [
         {
           url: post.seo.ogImage || post.image.url,
@@ -125,15 +127,14 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   // Generate structured data schemas
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
-  const postUrl = `${baseUrl}/${locale}/blog/${slug}`;
+  const postUrl = canonicalFor(locale as Locale, `/blog/${slug}`);
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBlogBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     blogSlug: slug,
     blogTitle: post.title,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // Person/Author Schema
@@ -141,7 +142,7 @@ export default async function BlogPostPage({ params }: Props) {
     name: post.author.name,
     role: post.author.role,
     avatar: post.author.avatar,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // Enhanced BlogPosting Schema
@@ -162,7 +163,7 @@ export default async function BlogPostPage({ params }: Props) {
     "datePublished": post.publishedAt,
     "dateModified": post.updatedAt || post.publishedAt,
     "author": authorSchema,
-    "publisher": getOrganizationReference(baseUrl),
+    "publisher": getOrganizationReference(SITE_URL),
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `${postUrl}#webpage`,
@@ -170,7 +171,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     "isPartOf": {
       "@type": "Blog",
-      "@id": `${baseUrl}/${locale}/blog#blog`,
+      "@id": `${canonicalFor(locale as Locale, '/blog')}#blog`,
       "name": "Cleriontax Blog"
     },
     "inLanguage": locale,
@@ -458,6 +459,7 @@ export default async function BlogPostPage({ params }: Props) {
                         category: post.category,
                         tags: post.tags
                       }}
+                      tagTranslations={t.raw('tagTranslations') as Record<string, string>}
                     />
                   </div>
 

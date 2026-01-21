@@ -18,7 +18,7 @@ interface OrganizationSchemaConfig {
 export function generateOrganizationSchema(
   config: OrganizationSchemaConfig
 ): WithContext<any> {
-  const { locale, baseUrl = 'https://cleriontax.com' } = config;
+  const { locale, baseUrl = 'https://www.cleriontax.com' } = config;
 
   // Localized descriptions
   const descriptions: Record<Locale, string> = {
@@ -174,7 +174,7 @@ export function generateOrganizationSchema(
  * Simplified Organization schema for embedding in other schemas
  * Use this when you need to reference the organization without full details
  */
-export function getOrganizationReference(baseUrl = 'https://cleriontax.com') {
+export function getOrganizationReference(baseUrl = 'https://www.cleriontax.com') {
   return {
     '@type': 'ProfessionalService',
     '@id': `${baseUrl}/#organization`,

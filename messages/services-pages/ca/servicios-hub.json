@@ -58,7 +58,7 @@
           "body": "Sessions personalitzades 1:1 amb el nostre equip fiscal per resoldre dubtes específics sobre presentació de models, criteris de classificació, compliment normatiu i estructura d'informes. No oferim assessorament d'inversió ni recomanacions sobre quins actius comprar o vendre. El nostre enfocament és tècnic i fiscal: t'ajudem a interpretar la normativa, preparar documentació davant requeriments de l'AEAT i entendre com aplicar correctament els criteris fiscals al teu cas concret. Inclou revisió documental, Q&A tècnic i seguiment post-sessió.",
           "link": {
             "label": "Veure detalls del servei →",
-            "href": "/servicios/asesoria-fiscal"
+            "href": "/servicios/asesoria-fiscal-criptomonedas"
           }
         }
       ]
@@ -140,7 +140,7 @@
     { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
     { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
     { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" },
-    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+    { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
   ],
   "seo": {
     "title": "Serveis d'Assessoria Fiscal i Anàlisi de Dades | Cleriontax",

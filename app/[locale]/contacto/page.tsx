@@ -4,6 +4,7 @@ import HeroContact from "@/components/contact/HeroContact";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import { generateBreadcrumbSchema } from "@/lib/schemas";
+import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -12,25 +13,17 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo.contact' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `${baseUrl}/${locale}/contacto`,
-      languages: {
-        'es': `${baseUrl}/es/contacto`,
-        'en': `${baseUrl}/en/contacto`,
-        'ca': `${baseUrl}/ca/contacto`,
-      },
-    },
+    alternates: getAlternates(locale as Locale, '/contacto'),
     openGraph: {
       title: t('title'),
       description: t('description'),
       type: 'website',
       locale: locale,
-      url: `${baseUrl}/${locale}/contacto`,
+      url: canonicalFor(locale as Locale, '/contacto'),
     },
   };
 }
@@ -38,13 +31,13 @@ export async function generateMetadata({ params }: Props) {
 export default async function ContactoPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations('contact');
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
+  const contactUrl = canonicalFor(locale as Locale, '/contacto');
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     path: `/${locale}/contacto`,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   // ContactPage Schema
@@ -53,11 +46,11 @@ export default async function ContactoPage({ params }: Props) {
     "@type": "ContactPage",
     "name": t('hero.title'),
     "description": t('hero.subtitle'),
-    "url": `${baseUrl}/${locale}/contacto`,
+    "url": contactUrl,
     "breadcrumb": breadcrumbSchema,
     "mainEntity": {
       "@type": "ProfessionalService",
-      "@id": `${baseUrl}/#organization`
+      "@id": `${SITE_URL}/#organization`
     }
   };
 

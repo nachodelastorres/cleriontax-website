@@ -442,9 +442,10 @@
       "submitting": "Enviant...",
       "submitError": "Error en enviar el formulari",
       "successMessage": "Missatge enviat correctament! Et respondrem en poques hores.",
-      "errorMessage": "Hi ha hagut un error en enviar el missatge. Si us plau, torna-ho a provar o contacta’ns per correu.",
-      "privacyText": "En enviar aquest formulari acceptes la nostra",
-      "privacyLink": "Política de Privacitat"
+      "errorMessage": "Hi ha hagut un error en enviar el missatge. Si us plau, torna-ho a provar o contacta'ns per correu.",
+      "privacyConsentText": "He llegit i accepto la",
+      "privacyLink": "Política de Privadesa",
+      "privacyConsentRequired": "Has d'acceptar la política de privadesa per continuar"
     },
     "info": {
       "title": "Prefereixes contactar-nos directament?",
@@ -467,9 +468,10 @@
     }
   },
   "footer": {
-    "description": "Firma boutique d’anàlisi de dades i assessoria fiscal especialitzada en criptoactius i inversions globals.",
+    "description": "Firma boutique d'anàlisi de dades i assessoria fiscal especialitzada en criptoactius i inversions globals.",
     "sections": {
       "company": "Empresa",
+      "services": "Serveis",
       "legal": "Legal",
       "contact": "Contacte"
     },
@@ -481,6 +483,12 @@
       "privacy": "Política de privacitat",
       "legal": "Avís legal",
       "cookies": "Cookies"
+    },
+    "serviceLinks": {
+      "analisisCarteras": "Anàlisi de Carteres",
+      "liquidacionesFiscales": "Liquidacions Fiscals",
+      "seguimientoCartera": "Seguiment de Cartera",
+      "asesoriaFiscal": "Assessoria Fiscal Cripto"
     },
     "copyright": "Tots els drets reservats."
   },
@@ -640,6 +648,23 @@
       "Rendimientos Actividad": "Rendiments Activitat",
       "RETA": "RETA",
       "Deducciones Mining": "Deduccions Mining",
+      "Kraken": "Kraken",
+      "CSV Export": "Exportar CSV",
+      "Historial Transacciones": "Historial de Transaccions",
+      "Exportar Datos": "Exportar Dades",
+      "Spot Trading": "Trading Spot",
+      "Fiscalidad Exchanges": "Fiscalitat d'Exchanges",
+      "EUR Directo": "EUR Directe",
+      "Ingeniería Datos": "Enginyeria de Dades",
+      "Bybit": "Bybit",
+      "Derivados": "Derivats",
+      "Futuros": "Futurs",
+      "Perpetuos": "Perpetus",
+      "Copy Trading": "Copy Trading",
+      "Apalancamiento": "Palanquejament",
+      "Funding Fees": "Funding Fees",
+      "Bybit Earn": "Bybit Earn",
+      "P2P Trading": "P2P Trading",
       "Herramientas Crypto": "Eines Crypto",
       "Portfolio Tracking": "Portfolio Tracking",
       "DeBank": "DeBank",
@@ -681,7 +706,54 @@
       "Fiscalidad Exchanges": "Fiscalitat Exchanges",
       "Earn": "Earn",
       "Convert History": "Historial de Conversions",
-      "Ingeniería Datos": "Enginyeria de Dades"
+      "Ingeniería Datos": "Enginyeria de Dades",
+      "Ingeniería de Datos": "Enginyeria de Dades",
+      "Limpieza Datos": "Neteja de Dades",
+      "Data Cleaning": "Neteja de Dades",
+      "CSV": "CSV",
+      "Normalización": "Normalització",
+      "Duplicados": "Duplicats",
+      "ETL": "ETL",
+      "Datasets": "Datasets",
+      "Consolidación": "Consolidació",
+      "Metamask": "Metamask",
+      "Wallet": "Wallet",
+      "Exportar Historial": "Exportar Historial",
+      "Etherscan": "Etherscan",
+      "Blockchain": "Blockchain",
+      "DAC8": "DAC8",
+      "Directiva Europea": "Directiva Europea",
+      "Intercambio Información": "Intercanvi d'Informació",
+      "CARF": "CARF",
+      "MiCA": "MiCA",
+      "Exchanges": "Exchanges",
+      "Hacienda": "Hisenda",
+      "Regulación Cripto": "Regulació Cripto",
+      "Fiscalidad UE": "Fiscalitat UE",
+      "Cumplimiento Fiscal": "Compliment Fiscal",
+      "Guía Práctica": "Guia Pràctica",
+      "Inversores Cripto": "Inversors Cripto",
+      "Bridges": "Bridges",
+      "Staking Líquido": "Staking Líquid",
+      "Rendimientos On-Chain": "Rendiments On-Chain",
+      "Lending DeFi": "Lending DeFi",
+      "Farmeo Criptomonedas": "Farmeo Criptomonedes",
+      "Liquidity Mining": "Liquidity Mining",
+      "Rewards DeFi": "Rewards DeFi",
+      "LP Tokens": "LP Tokens",
+      "Auto-Compounding": "Auto-Compounding",
+      "Rendimientos Capital Mobiliario": "Rendiments Capital Mobiliari",
+      "Liquidity Pools": "Liquidity Pools",
+      "AMM": "AMM",
+      "Proveer Liquidez": "Proveir Liquiditat",
+      "Comisiones DeFi": "Comissions DeFi",
+      "Balancer": "Balancer",
+      "Permutas Criptomonedas": "Permutes Criptomonedes",
+      "Ledger": "Ledger",
+      "Hardware Wallet": "Hardware Wallet",
+      "Ledger Live": "Ledger Live",
+      "Bitcoin": "Bitcoin",
+      "Ethereum": "Ethereum"
     },
     "latestPost": {
       "title": "Últim Article Publicat",
@@ -695,6 +767,8 @@
       "article": "article",
       "articles": "articles",
       "recentArticles": "Articles Recents",
+      "otherArticles": "Més sobre aquest tema",
+      "latestBadge": "Últim",
       "moreArticles": "articles més",
       "comingSoon": "📝 Contingut properament",
       "viewAll": "Veure tots els articles"
@@ -780,6 +854,10 @@
     "featured": "Destacat",
     "updates": "Actualitzacions setmanals",
     "expert": "Contingut expert",
+    "viewAllArticles": "Veure tots els articles",
+    "readArticle": "Llegir article",
+    "scrollHelper": "Llisca horitzontalment per veure més articles →",
+    "minRead": "min",
     "articleExample": {
       "title": "Guia completa per declarar criptomonedes el 2025",
       "excerpt": "Tot el que necessites saber sobre FIFO, models fiscals i optimització legal.",
@@ -858,7 +936,7 @@
               "body": "Sessions personalitzades 1:1 amb el nostre equip fiscal per resoldre dubtes específics sobre presentació de models, criteris de classificació, compliment normatiu i estructura d'informes. No oferim assessorament d'inversió ni recomanacions sobre quins actius comprar o vendre. El nostre enfocament és tècnic i fiscal: t'ajudem a interpretar la normativa, preparar documentació davant requeriments de l’AEAT i entendre com aplicar correctament els criteris fiscals al teu cas concret. Inclou revisió documental, Q&A tècnic i seguiment post-sessió.",
               "link": {
                 "label": "Veure detalls del servei →",
-                "href": "/servicios/asesoria-fiscal"
+                "href": "/servicios/asesoria-fiscal-criptomonedas"
               }
             }
           ]
@@ -940,7 +1018,7 @@
         { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
         { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
         { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" },
-        { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+        { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
       ],
       "seo": {
         "title": "Serveis d'Assessoria Fiscal i Anàlisi de Dades | Cleriontax",
@@ -999,7 +1077,7 @@
       "internal_links": [
         { "label": "Tornar a tots els serveis", "href": "/servicios" },
         { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
-        { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+        { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
       ],
       "seo": {
         "title": "Liquidacions Fiscals Criptomonedes | Model 100, 721, 714 | Cleriontax",
@@ -1024,7 +1102,7 @@
       "internal_links": [
         { "label": "Tornar a tots els serveis", "href": "/servicios" },
         { "label": "Anàlisi de Carteres (per a casos complexos)", "href": "/servicios/analisis-carteras" },
-        { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal" }
+        { "label": "Assessoria Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
       ],
       "seo": {
         "title": "Seguiment en Temps Real de la Cartera Crypto | CoinTracking | Cleriontax",
@@ -1034,9 +1112,9 @@
       }
     },
 
-    "asesoriaFiscal": {
+    "asesoriaFiscalCriptomonedas": {
       "title": "Assessoria Fiscal Especialitzada en Criptoactius",
-      "slug": "asesoria-fiscal",
+      "slug": "asesoria-fiscal-criptomonedas",
       "excerpt": "Sessions personalitzades 1:1 per resoldre dubtes fiscals sobre criptomonedes. Criteris de presentació, compliment normatiu i revisió documental. Sense assessorament d'inversió.",
       "hero": {
         "h1": "Assessoria Fiscal Especialitzada en Criptoactius",
@@ -1055,7 +1133,7 @@
         "title": "Assessoria Fiscal Especialitzada en Criptoactius | Cleriontax",
         "description": "Sessions tècniques 1:1 sobre fiscalitat crypto. Dubtes sobre models AEAT, requeriments d'Hisenda i compliment normatiu. Sense assessorament d'inversió.",
         "keywords": ["assessoria fiscal criptomonedes", "consultoria fiscal crypto", "requeriment AEAT cripto", "model 721 assessoria", "DGT criptoactius", "compliment fiscal crypto"],
-        "canonical": "https://cleriontax.com/servicios/asesoria-fiscal"
+        "canonical": "https://cleriontax.com/servicios/asesoria-fiscal-criptomonedas"
       }
     },
     "relatedServices": {
@@ -1068,14 +1146,242 @@
         "analisis-carteras": "Integració i consolidació de dades des de múltiples fonts. Convertim carteres disperses en informes unificats i auditables.",
         "liquidaciones-fiscales": "Càlcul FIFO de plusvàlues i preparació de models 100, 721 i 714 amb revisió per assessors col·legiats.",
         "seguimiento-cartera": "Monitorització contínua amb dashboards en temps real, alertes configurables i reportes automatitzats.",
-        "asesoria-fiscal": "Sessions personalitzades 1:1 per resoldre dubtes fiscals i revisar criteris de presentació."
+        "asesoria-fiscal-criptomonedas": "Sessions personalitzades 1:1 per resoldre dubtes fiscals i revisar criteris de presentació."
+      }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Utilitzem cookies",
+      "description": "Utilitzem cookies pròpies i de tercers per analitzar l'ús del lloc web i millorar els nostres serveis. Pots acceptar totes les cookies, rebutjar-les o configurar les teves preferències.",
+      "acceptAll": "Acceptar totes",
+      "rejectAll": "Rebutjar totes",
+      "settings": "Configurar",
+      "learnMore": "Més informació",
+      "close": "Tancar",
+      "settingsTitle": "Configuració de cookies",
+      "settingsDescription": "Gestiona les teves preferències de cookies. Les cookies necessàries no es poden desactivar ja que són essencials per al funcionament del lloc.",
+      "savePreferences": "Desar preferències",
+      "alwaysActive": "Sempre actives",
+      "categories": {
+        "necessary": {
+          "title": "Cookies necessàries",
+          "description": "Essencials per al funcionament bàsic del lloc web. Inclouen cookies de sessió i preferències d'usuari."
+        },
+        "analytics": {
+          "title": "Cookies analítiques",
+          "description": "Ens ajuden a entendre com interactues amb el lloc web, permetent-nos millorar l'experiència d'usuari."
+        },
+        "marketing": {
+          "title": "Cookies de màrqueting",
+          "description": "S'utilitzen per mostrar-te anuncis rellevants i mesurar l'efectivitat de les nostres campanyes publicitàries."
+        }
+      }
+    },
+    "page": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última actualització",
+      "intro": "A Cleriontax utilitzem cookies i tecnologies similars per millorar la teva experiència de navegació, analitzar el trànsit del lloc web i personalitzar el contingut. Aquesta política explica què són les cookies, com les fem servir i com pots gestionar-les.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "Què són les cookies?",
+          "content": "Les cookies són petits arxius de text que s'emmagatzemen al teu dispositiu quan visites un lloc web. Permeten que el lloc recordi les teves accions i preferències (com l'idioma, la mida de la lletra i altres opcions de visualització) durant un període de temps, perquè no hagis de tornar-les a configurar cada vegada que tornis al lloc o naveguis d'una pàgina a una altra."
+        },
+        "typesOfCookies": {
+          "title": "Tipus de cookies que utilitzem",
+          "necessary": {
+            "title": "Cookies necessàries",
+            "description": "Aquestes cookies són essencials per al funcionament bàsic del lloc web. Sense elles, el lloc no funcionaria correctament. Inclouen cookies de sessió, preferències d'idioma i consentiment de cookies. No es poden desactivar.",
+            "examples": "Exemples: Preferències d'idioma, estat del consentiment de cookies."
+          },
+          "analytics": {
+            "title": "Cookies analítiques",
+            "description": "Aquestes cookies ens permeten comptar les visites i les fonts de trànsit per poder mesurar i millorar el rendiment del nostre lloc. Ens ajuden a saber quines pàgines són les més i les menys populars i veure com es mouen els visitants pel lloc.",
+            "examples": "Exemples: Ahrefs Analytics per a anàlisi de trànsit web."
+          },
+          "marketing": {
+            "title": "Cookies de màrqueting",
+            "description": "Aquestes cookies s'utilitzen per rastrejar els visitants als llocs web. La intenció és mostrar anuncis que siguin rellevants i atractius per a l'usuari individual, i per tant més valuosos per als editors i anunciants tercers.",
+            "examples": "Exemples: Actualment no utilitzem cookies de màrqueting, però podríem implementar píxels de seguiment en el futur."
+          }
+        },
+        "howToManage": {
+          "title": "Com gestionar les cookies?",
+          "content": "Pots gestionar les teves preferències de cookies en qualsevol moment fent clic a l'enllaç \"Configuració de cookies\" al peu de pàgina del nostre lloc web. També pots configurar el teu navegador perquè bloquegi o elimini les cookies. A continuació et mostrem com fer-ho als navegadors més populars:",
+          "browsers": {
+            "chrome": "Google Chrome: Configuració > Privadesa i seguretat > Cookies i altres dades de llocs",
+            "firefox": "Mozilla Firefox: Opcions > Privadesa i seguretat > Cookies i dades del lloc",
+            "safari": "Safari: Preferències > Privadesa > Cookies i dades de llocs web",
+            "edge": "Microsoft Edge: Configuració > Cookies i permisos del lloc"
+          },
+          "warning": "Tingues en compte que si desactives les cookies, és possible que algunes funcions del lloc web no funcionin correctament."
+        },
+        "thirdPartyCookies": {
+          "title": "Cookies de tercers",
+          "content": "Alguns serveis de tercers que utilitzem poden establir les seves pròpies cookies. Aquests serveis tenen les seves pròpies polítiques de privadesa i ús de cookies que et recomanem revisar:",
+          "services": {
+            "ahrefs": "Ahrefs Analytics - Per a anàlisi de trànsit web"
+          }
+        },
+        "changes": {
+          "title": "Canvis en aquesta política",
+          "content": "Podem actualitzar aquesta política de cookies periòdicament per reflectir canvis en les cookies que utilitzem o per altres raons operatives, legals o reglamentàries. Si us plau, visita aquesta pàgina regularment per mantenir-te informat sobre el nostre ús de cookies."
+        },
+        "contact": {
+          "title": "Contacte",
+          "content": "Si tens alguna pregunta sobre la nostra política de cookies, pots contactar-nos a:",
+          "email": "info@cleriontax.com"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "page": {
+      "title": "Política de Privadesa",
+      "lastUpdated": "Última actualització",
+      "intro": "A Cleriontax ens prenem molt seriosament la protecció de les teves dades personals. Aquesta política de privadesa descriu com recopilem, utilitzem i protegim la teva informació personal d'acord amb el Reglament General de Protecció de Dades (RGPD) i la Llei Orgànica de Protecció de Dades i Garantia dels Drets Digitals (LOPDGDD).",
+      "sections": {
+        "controller": {
+          "title": "Responsable del tractament",
+          "content": "El responsable del tractament de les teves dades personals és:",
+          "details": {
+            "company": "Cleriontax",
+            "address": "[Adreça per confirmar]",
+            "email": "info@cleriontax.com",
+            "cif": "[CIF per confirmar]"
+          }
+        },
+        "dataCollected": {
+          "title": "Dades que recopilem",
+          "content": "Podem recopilar els següents tipus de dades personals:",
+          "items": {
+            "contact": "Dades de contacte: nom, correu electrònic, telèfon",
+            "financial": "Dades financeres relacionades amb els teus actius digitals (només quan ens les proporciones per al servei contractat)",
+            "navigation": "Dades de navegació: adreça IP, tipus de navegador, pàgines visitades",
+            "communications": "Contingut de les comunicacions que mantens amb nosaltres"
+          }
+        },
+        "purposes": {
+          "title": "Finalitat del tractament",
+          "content": "Utilitzem les teves dades personals per a les següents finalitats:",
+          "items": {
+            "services": "Prestació de serveis d'assessoria fiscal i anàlisi de dades",
+            "communication": "Comunicació relacionada amb els serveis contractats",
+            "legal": "Compliment d'obligacions legals",
+            "marketing": "Enviament de comunicacions comercials (només amb el teu consentiment previ)",
+            "improvement": "Millora dels nostres serveis i lloc web"
+          }
+        },
+        "legalBasis": {
+          "title": "Base legal del tractament",
+          "content": "El tractament de les teves dades es basa en:",
+          "items": {
+            "consent": "El teu consentiment (per a comunicacions comercials i cookies no essencials)",
+            "contract": "L'execució d'un contracte o prestació de serveis",
+            "legal": "El compliment d'obligacions legals",
+            "interest": "El nostre interès legítim en millorar els nostres serveis"
+          }
+        },
+        "retention": {
+          "title": "Conservació de dades",
+          "content": "Conservem les teves dades personals durant el temps necessari per complir amb les finalitats per a les quals van ser recollides i per complir amb les obligacions legals aplicables. Les dades relacionades amb serveis fiscals es conservaran durant el període legalment establert (generalment 4-6 anys)."
+        },
+        "rights": {
+          "title": "Els teus drets",
+          "content": "D'acord amb la normativa vigent, tens els següents drets:",
+          "items": {
+            "access": "Dret d'accés: conèixer quines dades personals tenim sobre tu",
+            "rectification": "Dret de rectificació: corregir dades inexactes o incompletes",
+            "erasure": "Dret de supressió: sol·licitar l'eliminació de les teves dades",
+            "restriction": "Dret de limitació: restringir el tractament de les teves dades",
+            "portability": "Dret de portabilitat: rebre les teves dades en format estructurat",
+            "objection": "Dret d'oposició: oposar-te al tractament de les teves dades",
+            "withdraw": "Dret a retirar el consentiment en qualsevol moment"
+          },
+          "howTo": "Per exercir aquests drets, pots contactar-nos a info@cleriontax.com. També tens dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es)."
+        },
+        "security": {
+          "title": "Seguretat de les dades",
+          "content": "Implementem mesures tècniques i organitzatives apropiades per protegir les teves dades personals contra accés no autoritzat, pèrdua, destrucció o alteració. Això inclou xifrat de dades, controls d'accés i formació del personal en protecció de dades."
+        },
+        "sharing": {
+          "title": "Comunicació de dades a tercers",
+          "content": "No venem ni llogem les teves dades personals a tercers. Només compartim les teves dades quan:",
+          "items": {
+            "consent": "Ens has donat el teu consentiment",
+            "legal": "És necessari per complir amb obligacions legals",
+            "services": "És necessari per a la prestació dels serveis contractats (per exemple, amb l'Agència Tributària quan ens autoritzis)"
+          }
+        },
+        "changes": {
+          "title": "Canvis en aquesta política",
+          "content": "Podem actualitzar aquesta política de privadesa periòdicament. Et notificarem qualsevol canvi significatiu a través del nostre lloc web o per correu electrònic."
+        },
+        "contact": {
+          "title": "Contacte",
+          "content": "Si tens alguna pregunta sobre aquesta política de privadesa o sobre el tractament de les teves dades, pots contactar-nos a:",
+          "email": "info@cleriontax.com"
+        }
+      }
+    }
+  },
+  "legalNotice": {
+    "page": {
+      "title": "Avís Legal",
+      "lastUpdated": "Última actualització",
+      "intro": "En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSI-CE), es faciliten les següents dades d'informació general d'aquest lloc web.",
+      "sections": {
+        "identification": {
+          "title": "Dades identificatives",
+          "content": "En compliment del deure d'informació establert a l'article 10 de la LSSI-CE, es faciliten les següents dades:",
+          "details": {
+            "owner": "Titular del lloc web: Cleriontax",
+            "cif": "CIF: [Per confirmar]",
+            "address": "Domicili social: [Per confirmar]",
+            "email": "Correu electrònic: info@cleriontax.com",
+            "activity": "Activitat: Assessoria fiscal especialitzada en criptoactius i anàlisi de dades financeres"
+          }
+        },
+        "purpose": {
+          "title": "Objecte del lloc web",
+          "content": "Aquest lloc web té com a finalitat oferir informació sobre els serveis d'assessoria fiscal i anàlisi de dades per a inversors en criptomonedes i altres actius digitals que ofereix Cleriontax, així com facilitar el contacte amb potencials clients."
+        },
+        "intellectualProperty": {
+          "title": "Propietat intel·lectual i industrial",
+          "content": "Tots els continguts d'aquest lloc web, incloent textos, imatges, gràfics, disseny, logotips, codi font i programari, estan protegits per drets de propietat intel·lectual i industrial i pertanyen a Cleriontax o a tercers que n'han autoritzat l'ús.",
+          "prohibition": "Queda prohibida la reproducció, distribució, comunicació pública, transformació o qualsevol altra forma d'explotació dels continguts d'aquest lloc web sense l'autorització expressa i per escrit de Cleriontax."
+        },
+        "liability": {
+          "title": "Exclusió de responsabilitat",
+          "content": "Cleriontax no es fa responsable de:",
+          "items": {
+            "availability": "La manca de disponibilitat, continuïtat o qualitat del funcionament del lloc web",
+            "accuracy": "Els possibles errors o omissions en els continguts publicats",
+            "thirdParty": "Els danys que puguin derivar-se de l'ús de la informació continguda en aquest lloc web",
+            "links": "Els continguts de llocs web de tercers als quals es pugui accedir mitjançant enllaços des d'aquest lloc"
+          },
+          "disclaimer": "La informació proporcionada en aquest lloc web té caràcter merament informatiu i no constitueix assessorament fiscal professional. Per a un assessorament personalitzat, et recomanem contactar amb el nostre equip."
+        },
+        "links": {
+          "title": "Enllaços a tercers",
+          "content": "Aquest lloc web pot contenir enllaços a llocs web de tercers. Cleriontax no té control sobre aquests llocs i no és responsable dels seus continguts, polítiques de privadesa o pràctiques. Et recomanem revisar les condicions legals de cada lloc que visitis."
+        },
+        "modifications": {
+          "title": "Modificacions",
+          "content": "Cleriontax es reserva el dret de modificar, actualitzar o eliminar els continguts del lloc web, així com les presents condicions d'ús, en qualsevol moment i sense previ avís."
+        },
+        "jurisdiction": {
+          "title": "Legislació aplicable i jurisdicció",
+          "content": "Les presents condicions es regeixen per la legislació espanyola. Per a qualsevol controvèrsia que pogués derivar-se de l'accés o ús d'aquest lloc web, les parts se sotmeten als Jutjats i Tribunals de [Ciutat per confirmar], amb renúncia expressa a qualsevol altre fur que pogués correspondre'ls."
+        },
+        "contact": {
+          "title": "Contacte",
+          "content": "Per a qualsevol consulta relacionada amb aquest avís legal, pots contactar-nos a:",
+          "email": "info@cleriontax.com"
+        }
       }
     }
   }
-
-
-
-
 
 
 

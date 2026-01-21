@@ -58,7 +58,7 @@
           "body": "Sesiones personalizadas 1:1 con nuestro equipo fiscal para resolver dudas específicas sobre presentación de modelos, criterios de clasificación, cumplimiento normativo y estructura de informes. No ofrecemos asesoramiento de inversión ni recomendaciones sobre qué activos comprar o vender. Nuestro enfoque es técnico y fiscal: te ayudamos a interpretar la normativa, preparar documentación ante requerimientos de la AEAT y entender cómo aplicar correctamente los criterios fiscales a tu caso concreto. Incluye revisión documental, Q&A técnico y seguimiento post-sesión.",
           "link": {
             "label": "Ver detalles del servicio →",
-            "href": "/servicios/asesoria-fiscal"
+            "href": "/servicios/asesoria-fiscal-criptomonedas"
           }
         }
       ]
@@ -140,7 +140,7 @@
     { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
     { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
     { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" },
-    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal" }
+    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
   ],
   "seo": {
     "title": "Servicios de Asesoría Fiscal y Análisis de Datos | Cleriontax",

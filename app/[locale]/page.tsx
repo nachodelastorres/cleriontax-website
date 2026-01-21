@@ -7,6 +7,7 @@ import FAQSection from "@/components/home/FAQSection";
 import BlogScrollSection from "@/components/home/BlogScrollSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schemas";
+import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 // import Benefits from "@/components/home/Benefits";
 // import ServiceSteps from "@/components/home/ServiceSteps";
 // import CTASection from "@/components/home/CTASection";
@@ -18,25 +19,17 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo.home' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `${baseUrl}/${locale}`,
-      languages: {
-        'es': `${baseUrl}/es`,
-        'en': `${baseUrl}/en`,
-        'ca': `${baseUrl}/ca`,
-      },
-    },
+    alternates: getAlternates(locale as Locale),
     openGraph: {
       title: t('title'),
       description: t('description'),
       type: 'website',
       locale: locale,
-      url: `${baseUrl}/${locale}`,
+      url: canonicalFor(locale as Locale),
     },
   };
 }
@@ -44,22 +37,21 @@ export async function generateMetadata({ params }: Props) {
 export default async function Home({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo.home' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   // Generate structured data
   const breadcrumbSchema = generateBreadcrumbSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     path: `/${locale}`,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   const webpageSchema = generateWebPageSchema({
-    locale: locale as 'es' | 'en' | 'ca',
+    locale: locale as Locale,
     title: t('title'),
     description: t('description'),
-    url: `${baseUrl}/${locale}`,
+    url: canonicalFor(locale as Locale),
     breadcrumb: breadcrumbSchema,
-    baseUrl
+    baseUrl: SITE_URL
   });
 
   return (
@@ -81,7 +73,7 @@ export default async function Home({ params }: Props) {
       <WhyChooseUs />
       <ServicesSection />
       <FAQSection />
-      <BlogScrollSection />
+      <BlogScrollSection locale={locale} />
       <FinalCTASection />
       {/* <Benefits /> */}
       {/* <ServiceSteps /> */}

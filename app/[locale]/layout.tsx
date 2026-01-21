@@ -4,12 +4,14 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import CookieConsentWrapper from "@/components/cookies/CookieConsentWrapper";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schemas";
+import { SITE_URL, LOCALES, getAlternates, type Locale } from "@/lib/site";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const locales = ['es', 'en', 'ca'];
+const locales = LOCALES;
 
 type Props = {
   children: React.ReactNode;
@@ -22,10 +24,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(SITE_URL),
     title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
     description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
     keywords: [
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: Props) {
       description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
       type: 'website',
       locale: locale,
-      url: `${baseUrl}/${locale}`,
+      url: `${SITE_URL}/${locale}`,
       images: [
         {
           url: '/images/logos/logo_fondo_blanco.png',
@@ -58,14 +59,7 @@ export async function generateMetadata({ params }: Props) {
         },
       ],
     },
-    alternates: {
-      canonical: `${baseUrl}/${locale}`,
-      languages: {
-        'es': `${baseUrl}/es`,
-        'en': `${baseUrl}/en`,
-        'ca': `${baseUrl}/ca`,
-      },
-    },
+    alternates: getAlternates(locale as Locale),
   };
 }
 
@@ -84,14 +78,13 @@ export default async function LocaleLayout({
   const messages = await getMessages({ locale });
 
   // Generate structured data schemas
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cleriontax.com';
   const organizationSchema = generateOrganizationSchema({
-    locale: locale as 'es' | 'en' | 'ca',
-    baseUrl
+    locale: locale as Locale,
+    baseUrl: SITE_URL
   });
   const websiteSchema = generateWebSiteSchema({
-    locale: locale as 'es' | 'en' | 'ca',
-    baseUrl
+    locale: locale as Locale,
+    baseUrl: SITE_URL
   });
 
   return (
@@ -123,6 +116,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <CookieConsentWrapper />
         </NextIntlClientProvider>
       </body>
     </html>

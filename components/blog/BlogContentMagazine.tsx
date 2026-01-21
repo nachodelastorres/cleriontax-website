@@ -25,7 +25,20 @@ interface BlogContentMagazineProps {
     category?: string;
     tags?: string[];
   };
+  tagTranslations?: Record<string, string>;
 }
+
+// Función para generar IDs consistentes (debe coincidir con TableOfContents)
+const generateHeadingId = (text: string): string => {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Eliminar acentos
+    .replace(/[^a-z0-9\s-]/g, '') // Eliminar caracteres especiales excepto espacios y guiones
+    .replace(/\s+/g, '-') // Reemplazar espacios con guiones
+    .replace(/-+/g, '-') // Eliminar guiones múltiples
+    .replace(/^-|-$/g, ''); // Eliminar guiones al inicio y final
+};
 
 // Mapa de iconos según palabras clave en los títulos
 const getIconForHeading = (text: string) => {
@@ -56,7 +69,8 @@ const getIconForHeading = (text: string) => {
   return <DocumentTextIcon className="w-8 h-8" />;
 };
 
-export default function BlogContentMagazine({ content, metadata }: BlogContentMagazineProps) {
+export default function BlogContentMagazine({ content, metadata, tagTranslations = {} }: BlogContentMagazineProps) {
+  const translateTag = (tag: string) => tagTranslations[tag] || tag;
   return (
     <div className="max-w-none">
       {/* Metadata Bar */}
@@ -99,7 +113,7 @@ export default function BlogContentMagazine({ content, metadata }: BlogContentMa
               key={index}
               className="px-3 py-1 bg-neutral-100 hover:bg-accent/10 text-neutral-700 text-xs font-medium rounded-md transition-colors cursor-pointer border border-neutral-200"
             >
-              {tag}
+              {translateTag(tag)}
             </span>
           ))}
         </div>
@@ -122,9 +136,10 @@ export default function BlogContentMagazine({ content, metadata }: BlogContentMa
             h2({ children, ...props }) {
               const text = children?.toString() || '';
               const icon = getIconForHeading(text);
+              const headingId = generateHeadingId(text);
 
               return (
-                <div className="mb-10 mt-16 scroll-mt-24" id={text.toLowerCase().replace(/\s+/g, '-')}>
+                <div className="mb-10 mt-16 scroll-mt-24" id={headingId}>
                   <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-accent/5 via-accent/3 to-transparent rounded-2xl border-l-4 border-accent shadow-sm">
                     <div className="flex-shrink-0 text-accent mt-1">
                       {icon}

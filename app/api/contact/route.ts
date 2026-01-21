@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import { contactFormSchema } from "@/lib/validations";
+import { contactFormServerSchema } from "@/lib/validations";
 
 // Configure nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     const file = formData.get("file") as File | null;
 
     // Validate form data
-    const validatedData = contactFormSchema.parse(data);
+    const validatedData = contactFormServerSchema.parse(data);
 
     // Prepare email content
     let htmlContent = `
@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
         ${file ? `<p style="margin: 20px 0; padding: 10px; background-color: #fff3cd; border-left: 4px solid #d4a574;">📎 <strong>Archivo adjunto:</strong> ${file.name}</p>` : ''}
 
         <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 12px;">
-          <p>Este email fue enviado desde el formulario de contacto de <a href="https://cleriontax.com" style="color: #d4a574;">cleriontax.com</a></p>
+          <p>Este email fue enviado desde el formulario de contacto de <a href="https://www.cleriontax.com" style="color: #d4a574;">cleriontax.com</a></p>
         </div>
       </div>
     `;

@@ -25,7 +25,7 @@ const serviceTypeCategories: Record<string, string> = {
   'analisis-carteras': 'Financial Advisory Service',
   'liquidaciones-fiscales': 'Tax Preparation Service',
   'seguimiento-cartera': 'Financial Monitoring Service',
-  'asesoria-fiscal': 'Tax Advisory Service'
+  'asesoria-fiscal-criptomonedas': 'Tax Advisory Service'
 };
 
 /**
@@ -43,7 +43,7 @@ export function generateServiceSchema(
     url,
     image,
     breadcrumb,
-    baseUrl = 'https://cleriontax.com'
+    baseUrl = 'https://www.cleriontax.com'
   } = config;
 
   // Get the appropriate service category
@@ -197,7 +197,7 @@ export const serviceNames: Record<string, Record<Locale, string>> = {
     en: 'Real-Time Portfolio Tracking',
     ca: 'Seguiment de Cartera en Temps Real'
   },
-  'asesoria-fiscal': {
+  'asesoria-fiscal-criptomonedas': {
     es: 'Asesoría Fiscal Especializada en Criptoactivos',
     en: 'Specialized Tax Advisory for Crypto Assets',
     ca: 'Assessoria Fiscal Especialitzada en Criptoactius'

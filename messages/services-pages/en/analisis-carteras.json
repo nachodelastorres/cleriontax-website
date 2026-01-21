@@ -132,7 +132,7 @@
     { "label": "Back to all services", "href": "/servicios" },
     { "label": "Tax Settlements", "href": "/servicios/liquidaciones-fiscales" },
     { "label": "Portfolio Tracking", "href": "/servicios/seguimiento-cartera" },
-    { "label": "Tax Advisory", "href": "/servicios/asesoria-fiscal" }
+    { "label": "Tax Advisory", "href": "/servicios/asesoria-fiscal-criptomonedas" }
   ],
   "seo": {
     "title": "Analysis of Complex Investment Portfolios | Cleriontax",

@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import Input from "@/components/ui/Input";
 import Textarea from "@/components/ui/Textarea";
 import Button from "@/components/ui/Button";
@@ -33,7 +34,10 @@ export default function ContactForm() {
     try {
       const formData = new FormData();
       Object.entries(data).forEach(([key, value]) => {
-        formData.append(key, value);
+        // Skip privacyConsent as it's only for form validation
+        if (key !== 'privacyConsent') {
+          formData.append(key, String(value));
+        }
       });
 
       if (file) {
@@ -109,6 +113,29 @@ export default function ContactForm() {
 
       <FileUpload onFileSelect={setFile} />
 
+      {/* Privacy Consent Checkbox */}
+      <div className="space-y-2">
+        <label className="flex items-start gap-3 cursor-pointer group">
+          <div className="relative flex items-center">
+            <input
+              type="checkbox"
+              {...register("privacyConsent")}
+              disabled={status === "submitting"}
+              className="peer h-5 w-5 rounded border-2 border-gray-300 text-navy focus:ring-navy focus:ring-offset-0 cursor-pointer transition-colors disabled:opacity-50"
+            />
+          </div>
+          <span className="text-sm text-gray-700 leading-relaxed">
+            {t('privacyConsentText')}{" "}
+            <Link href="/privacidad" className="text-navy font-medium hover:underline">
+              {t('privacyLink')}
+            </Link>
+          </span>
+        </label>
+        {errors.privacyConsent && (
+          <p className="text-sm text-red-600 ml-8">{t('privacyConsentRequired')}</p>
+        )}
+      </div>
+
       {/* Status Messages */}
       {status === "success" && (
         <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -148,12 +175,6 @@ export default function ContactForm() {
         )}
       </Button>
 
-      <p className="text-xs text-neutral-500 text-center">
-        {t('privacyText')}{" "}
-        <a href="/privacidad" className="text-accent hover:underline">
-          {t('privacyLink')}
-        </a>
-      </p>
     </form>
   );
 }
