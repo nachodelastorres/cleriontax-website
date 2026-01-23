@@ -126,13 +126,18 @@ export function canonicalFor(locale: Locale, path?: string): string {
 /**
  * Genera las URLs alternativas para hreflang
  * @param path - Ruta relativa (sin locale)
- * @returns Objeto con URLs por locale
+ * @returns Objeto con URLs por locale incluyendo x-default
+ *
+ * IMPORTANTE: x-default debe apuntar a una URL con locale para evitar
+ * redirecciones 307 que causan errores en Ahrefs/SEO tools.
+ * Usamos 'es' como x-default ya que es el locale por defecto.
  */
-export function alternatesFor(path?: string): Record<Locale, string> {
+export function alternatesFor(path?: string): Record<Locale | 'x-default', string> {
   return {
     es: canonicalFor('es', path),
     en: canonicalFor('en', path),
     ca: canonicalFor('ca', path),
+    'x-default': canonicalFor('es', path), // Español como default
   };
 }
 

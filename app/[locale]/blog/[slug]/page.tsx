@@ -77,6 +77,7 @@ export async function generateMetadata({ params }: Props) {
         'es': canonicalFor('es', `/blog/${spanishSlug}`),
         'en': canonicalFor('en', `/blog/${spanishSlug}`),
         'ca': canonicalFor('ca', `/blog/${spanishSlug}`),
+        'x-default': canonicalFor('es', `/blog/${spanishSlug}`),
       },
     },
     openGraph: {
