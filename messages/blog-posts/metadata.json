@@ -1,6 +1,80 @@
 {
   "posts": [
     {
+      "id": "como-exportar-historial-bybit-csv-tributacion",
+      "slugTranslations": {
+        "es": "como-exportar-historial-bybit-csv-tributacion",
+        "en": "how-to-export-bybit-history-csv-taxation",
+        "ca": "com-exportar-historial-bybit-csv-tributacio"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-01-14T09:00:00Z",
+      "readingTime": 14,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Bybit",
+        "CSV Export",
+        "Historial Transacciones",
+        "Exportar Datos",
+        "Derivados",
+        "Futuros Perpetuos",
+        "Fiscalidad Exchanges",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 100",
+        "Modelo 721",
+        "FIFO",
+        "Bybit Earn",
+        "Copy Trading",
+        "Trazabilidad",
+        "Ingeniería Datos"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/como-exportar-historial-bybit-csv-tributacion.webp",
+        "alt": "Guía para descargar el historial de Bybit - Tutorial completo paso a paso para exportar tus operaciones spot, derivados y earn en formato CSV para la declaración fiscal ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Guía para Descargar el Historial de Bybit: Exporta tus Datos Fiscales | Cleriontax",
+        "metaDescription": "Guía completa y actualizada para exportar correctamente todo tu historial de Bybit en formato CSV. Aprende a descargar transacciones, trades spot, derivados, conversiones y recompensas para preparar tu declaración fiscal y cumplir con la AEAT.",
+        "keywords": [
+          "bybit csv",
+          "exportar bybit",
+          "bybit historial",
+          "descargar historial bybit",
+          "bybit transaction history",
+          "como exportar bybit",
+          "bybit declaración renta",
+          "bybit fiscalidad",
+          "bybit modelo 100",
+          "bybit modelo 721",
+          "exportar trades bybit",
+          "bybit derivados historial",
+          "bybit futuros perpetuos export",
+          "bybit earn historial",
+          "bybit copy trading fiscalidad"
+        ],
+        "ogImage": "/images/illustrations/blog/como-exportar-historial-bybit-csv-tributacion.webp",
+        "ogImageAlt": "Guía para descargar el historial de Bybit - Tutorial completo paso a paso para exportar tus operaciones spot, derivados y earn en formato CSV para la declaración fiscal ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "como-exportar-historial-binance-correctamente",
+        "como-obtener-csv-kraken-tributacion",
+        "herramientas-rastrear-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "como-exportar-historial-ledger-csv",
       "slugTranslations": {
         "es": "como-exportar-historial-ledger-csv",
