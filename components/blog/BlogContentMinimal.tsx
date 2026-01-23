@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Link } from '@/i18n/navigation';
 
 interface BlogContentMinimalProps {
   content: string;
@@ -225,16 +226,47 @@ export default function BlogContentMinimal({ content, metadata }: BlogContentMin
             a({ href, children, ...props }) {
               const isExternal = href?.startsWith('http');
 
+              // Detectar si el enlace ya tiene prefijo de locale
+              const hasLocalePrefix = href && (
+                href.startsWith('/es/') ||
+                href.startsWith('/en/') ||
+                href.startsWith('/ca/')
+              );
+
+              if (isExternal) {
+                return (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors font-normal"
+                    {...props}
+                  >
+                    {children}
+                  </a>
+                );
+              }
+
+              // Si ya tiene locale, usar <a> normal para evitar duplicación
+              if (hasLocalePrefix) {
+                return (
+                  <a
+                    href={href}
+                    className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors font-normal"
+                    {...props}
+                  >
+                    {children}
+                  </a>
+                );
+              }
+
               return (
-                <a
-                  href={href}
-                  target={isExternal ? '_blank' : undefined}
-                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                <Link
+                  href={href || '/'}
                   className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors font-normal"
-                  {...props}
                 >
                   {children}
-                </a>
+                </Link>
               );
             },
 

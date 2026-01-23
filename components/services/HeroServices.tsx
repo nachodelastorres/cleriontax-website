@@ -66,7 +66,7 @@ export default function HeroServices() {
           <ButtonLink
             variant="secondary"
             size="lg"
-            href={`/${locale}/contacto`}
+            href="/contacto"
             className="group shadow-xl hover:shadow-2xl"
           >
             {t('cta')}

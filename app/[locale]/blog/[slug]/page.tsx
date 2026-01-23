@@ -234,7 +234,7 @@ export default async function BlogPostPage({ params }: Props) {
               <ButtonLink
                 variant="outline"
                 size="sm"
-                href={`/${locale}/blog`}
+                href="/blog"
                 className="mb-8"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />

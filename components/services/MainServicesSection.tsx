@@ -111,7 +111,7 @@ export default function MainServicesSection() {
           <ButtonLink
             variant="secondary"
             size="lg"
-            href={`/${locale}/contacto`}
+            href="/contacto"
             className="group"
           >
             {t('cta')}

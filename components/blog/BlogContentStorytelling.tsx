@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Link } from '@/i18n/navigation';
 import {
   AlertTriangle,
   CheckCircle2,
@@ -228,17 +229,48 @@ export default function BlogContentStorytelling({ content, metadata }: BlogConte
             a({ href, children, ...props }) {
               const isExternal = href?.startsWith('http');
 
+              // Detectar si el enlace ya tiene prefijo de locale
+              const hasLocalePrefix = href && (
+                href.startsWith('/es/') ||
+                href.startsWith('/en/') ||
+                href.startsWith('/ca/')
+              );
+
+              if (isExternal) {
+                return (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent font-semibold hover:text-accent-dark hover:underline transition-colors"
+                    {...props}
+                  >
+                    {children}
+                    {' ↗'}
+                  </a>
+                );
+              }
+
+              // Si ya tiene locale, usar <a> normal para evitar duplicación
+              if (hasLocalePrefix) {
+                return (
+                  <a
+                    href={href}
+                    className="text-accent font-semibold hover:text-accent-dark hover:underline transition-colors"
+                    {...props}
+                  >
+                    {children}
+                  </a>
+                );
+              }
+
               return (
-                <a
-                  href={href}
-                  target={isExternal ? '_blank' : undefined}
-                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                <Link
+                  href={href || '/'}
                   className="text-accent font-semibold hover:text-accent-dark hover:underline transition-colors"
-                  {...props}
                 >
                   {children}
-                  {isExternal && ' ↗'}
-                </a>
+                </Link>
               );
             },
 

@@ -155,7 +155,7 @@ export default function FAQSection() {
               <ButtonLink
                 variant="primary"
                 size="md"
-                href={`/${locale}/contacto`}
+                href="/contacto"
                 className="shadow-md"
               >
                 {t('cta.button')}

@@ -141,7 +141,7 @@ export default function HowWeWork() {
             <ButtonLink
               variant="secondary"
               size="lg"
-              href={`/${locale}/contacto`}
+              href="/contacto"
               className="group shadow-lg hover:shadow-xl"
             >
               {t('cta')}

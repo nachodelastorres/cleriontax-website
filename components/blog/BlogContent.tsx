@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Link } from '@/i18n/navigation';
 
 interface BlogContentProps {
   content: string;
@@ -59,20 +60,43 @@ export default function BlogContent({ content }: BlogContentProps) {
           // Agregar iconos a los enlaces externos
           a({ href, children, ...props }) {
             const isExternal = href?.startsWith('http');
-            return (
-              <a
-                href={href}
-                target={isExternal ? '_blank' : undefined}
-                rel={isExternal ? 'noopener noreferrer' : undefined}
-                {...props}
-              >
-                {children}
-                {isExternal && (
+
+            // Detectar si el enlace ya tiene prefijo de locale
+            const hasLocalePrefix = href && (
+              href.startsWith('/es/') ||
+              href.startsWith('/en/') ||
+              href.startsWith('/ca/')
+            );
+
+            if (isExternal) {
+              return (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  {...props}
+                >
+                  {children}
                   <svg className="inline w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                )}
-              </a>
+                </a>
+              );
+            }
+
+            // Si ya tiene locale, usar <a> normal para evitar duplicación
+            if (hasLocalePrefix) {
+              return (
+                <a href={href} {...props}>
+                  {children}
+                </a>
+              );
+            }
+
+            return (
+              <Link href={href || '/'}>
+                {children}
+              </Link>
             );
           },
         }}

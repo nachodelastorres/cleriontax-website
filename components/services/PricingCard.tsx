@@ -111,7 +111,7 @@ export default function PricingCard({ plan, index }: PricingCardProps) {
           <ButtonLink
             variant={popular ? "primary" : "outline"}
             size="md"
-            href={`/${locale}/contacto`}
+            href="/contacto"
             className="w-full"
           >
             {tNav('requestQuote')}

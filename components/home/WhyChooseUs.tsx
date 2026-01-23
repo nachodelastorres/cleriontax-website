@@ -141,7 +141,7 @@ export default function WhyChooseUs() {
             <ButtonLink
               variant="primary"
               size="lg"
-              href={`/${locale}/servicios`}
+              href="/servicios"
               className="group shadow-lg hover:shadow-xl"
             >
               {t('cta')}

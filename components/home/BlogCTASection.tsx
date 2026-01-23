@@ -80,7 +80,7 @@ export default function BlogCTASection() {
                 <ButtonLink
                   variant="primary"
                   size="lg"
-                  href={`/${locale}/blog`}
+                  href="/blog"
                   className="group shadow-xl hover:shadow-2xl hover:shadow-accent/20 transition-all duration-300"
                 >
                   {t('cta')}
