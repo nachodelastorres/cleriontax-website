@@ -1,6 +1,79 @@
 {
   "posts": [
     {
+      "id": "lending-borrowing-tributacion-espana",
+      "slugTranslations": {
+        "es": "lending-borrowing-tributacion-espana",
+        "en": "lending-borrowing-taxation-spain",
+        "ca": "lending-borrowing-tributacio-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-01-19T09:00:00Z",
+      "readingTime": 16,
+      "category": "DeFi y Protocolos Avanzados",
+      "tags": [
+        "Lending DeFi",
+        "Borrowing Crypto",
+        "Préstamos Colateralizados",
+        "Aave",
+        "Compound",
+        "MakerDAO",
+        "Venus",
+        "Liquidaciones DeFi",
+        "Colateral Crypto",
+        "Intereses DeFi",
+        "Flash Loans",
+        "Fiscalidad DeFi Avanzada",
+        "Rendimientos Capital Mobiliario",
+        "AEAT",
+        "Modelo 100",
+        "Modelo 721"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/declaracion-renta-criptomonedas.webp",
+        "alt": "Tributación de lending y borrowing de criptomonedas en España - Guía completa sobre cómo declarar préstamos DeFi, intereses, colateral y liquidaciones ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Tributación de Lending y Borrowing Crypto España 2025 | Cleriontax",
+        "metaDescription": "Guía completa sobre la fiscalidad del lending y borrowing de criptomonedas en España. Aprende a declarar intereses, colateral, liquidaciones y operaciones en Aave, Compound y MakerDAO ante la AEAT.",
+        "keywords": [
+          "lending crypto fiscalidad",
+          "borrowing criptomonedas impuestos",
+          "préstamos crypto tributación",
+          "Aave fiscalidad España",
+          "Compound impuestos",
+          "MakerDAO tributación",
+          "intereses DeFi declaración",
+          "colateral crypto AEAT",
+          "liquidaciones DeFi impuestos",
+          "préstamos descentralizados fiscalidad",
+          "rendimientos lending crypto",
+          "borrowing declaración renta",
+          "DeFi lending España",
+          "fiscalidad préstamos blockchain"
+        ],
+        "ogImage": "/images/illustrations/blog/declaracion-renta-criptomonedas.webp",
+        "ogImageAlt": "Tributación de lending y borrowing de criptomonedas en España - Guía completa sobre cómo declarar préstamos DeFi, intereses, colateral y liquidaciones ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-defi-avanzada",
+      "relatedPosts": [
+        "yield-farming-como-tributa-espana",
+        "liquidity-pools-lp-tokens-fiscalidad-espana",
+        "dac8-defi-wallets-swaps-liquidez-fiscalidad"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "como-exportar-historial-bybit-csv-tributacion",
       "slugTranslations": {
         "es": "como-exportar-historial-bybit-csv-tributacion",
