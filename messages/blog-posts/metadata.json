@@ -1,6 +1,217 @@
 {
   "posts": [
     {
+      "id": "como-documentar-transacciones-defi-hacienda",
+      "slugTranslations": {
+        "es": "como-documentar-transacciones-defi-hacienda",
+        "en": "how-to-document-defi-transactions-tax-authority",
+        "ca": "com-documentar-transaccions-defi-hisenda"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-02-09T09:00:00Z",
+      "readingTime": 14,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Documentación DeFi",
+        "Pruebas Fiscales",
+        "Trazabilidad",
+        "AEAT",
+        "Hacienda",
+        "Smart Contracts",
+        "On-Chain",
+        "Blockchain Explorer",
+        "Etherscan",
+        "Swaps DEX",
+        "Staking",
+        "Yield Farming",
+        "Lending DeFi",
+        "Declaración Renta",
+        "Modelo 100"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/como-declarar-transacciones-defi-hacienda-criptomonedas.webp",
+        "alt": "Cómo documentar transacciones DeFi para Hacienda - Guía práctica de pruebas fiscales para declarar operaciones de finanzas descentralizadas ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Cómo Documentar Transacciones DeFi para Hacienda: Guía de Pruebas Fiscales | Cleriontax",
+        "metaDescription": "Guía práctica para documentar tus operaciones DeFi ante Hacienda. Aprende qué pruebas exige la AEAT, cómo extraer datos on-chain, valorar en euros y construir un sistema de documentación fiscal sólido para swaps, staking, lending y pools.",
+        "keywords": [
+          "documentar transacciones DeFi",
+          "pruebas fiscales criptomonedas",
+          "documentación DeFi Hacienda",
+          "registrar operaciones DeFi AEAT",
+          "evidencia fiscal crypto",
+          "trazabilidad transacciones blockchain",
+          "documentar swaps DEX Hacienda",
+          "pruebas declaración renta crypto",
+          "hash transacción prueba fiscal",
+          "documentar staking impuestos",
+          "documentar yield farming AEAT",
+          "documentar lending DeFi",
+          "valoración euros operaciones DeFi",
+          "exportar datos on-chain fiscalidad"
+        ],
+        "ogImage": "/images/illustrations/blog/como-declarar-transacciones-defi-hacienda-criptomonedas.webp",
+        "ogImageAlt": "Cómo documentar transacciones DeFi para Hacienda - Guía práctica de pruebas fiscales para declarar operaciones de finanzas descentralizadas ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "limpiar-datasets-cripto-antes-declarar",
+        "herramientas-rastrear-criptomonedas",
+        "clasificar-operaciones-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "modelo-714-criptomonedas-patrimonio",
+      "slugTranslations": {
+        "es": "modelo-714-criptomonedas-patrimonio",
+        "en": "form-714-cryptocurrencies-wealth-tax",
+        "ca": "model-714-criptomonedes-patrimoni"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Patrimonio Digital",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-01-26T09:00:00Z",
+      "readingTime": 15,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Modelo 714",
+        "Impuesto Patrimonio",
+        "Patrimonio Crypto",
+        "AEAT",
+        "Declaración Patrimonio",
+        "Grandes Fortunas",
+        "Valoración Criptomonedas",
+        "Comunidades Autónomas",
+        "Modelo 721",
+        "Optimización Fiscal",
+        "Bitcoin",
+        "DeFi",
+        "Planificación Fiscal"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/modelo-impuestos-espana-cripto.webp",
+        "alt": "Modelo 714 para criptomonedas - Guía completa del Impuesto sobre el Patrimonio aplicado a activos digitales ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Modelo 714 Criptomonedas: Impuesto sobre el Patrimonio Cripto | Cleriontax",
+        "metaDescription": "Guía completa del Modelo 714 para criptomonedas. Aprende a declarar tus activos digitales en el Impuesto sobre el Patrimonio, umbrales por comunidad autónoma, valoración y optimización fiscal ante la AEAT.",
+        "keywords": [
+          "modelo 714 criptomonedas",
+          "impuesto patrimonio crypto",
+          "declarar patrimonio criptomonedas",
+          "modelo 714 AEAT",
+          "patrimonio bitcoin",
+          "impuesto riqueza crypto",
+          "umbral patrimonio criptomonedas",
+          "valorar criptomonedas patrimonio",
+          "fiscalidad patrimonio digital",
+          "modelo 714 2026",
+          "declaración patrimonio bitcoin",
+          "impuesto grandes fortunas crypto",
+          "AEAT patrimonio criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/modelo-impuestos-espana-cripto.webp",
+        "ogImageAlt": "Modelo 714 para criptomonedas - Guía completa del Impuesto sobre el Patrimonio aplicado a activos digitales ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "modelos-100-721-714-criptomonedas",
+        "modelo-721-criptomonedas",
+        "como-declarar-criptomonedas-renta-2025"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "pipeline-etl-fiscalidad-cripto",
+      "slugTranslations": {
+        "es": "pipeline-etl-fiscalidad-cripto",
+        "en": "etl-pipeline-crypto-taxation",
+        "ca": "pipeline-etl-fiscalitat-cripto"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto e Ingeniería de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-01-23T09:00:00Z",
+      "readingTime": 11,
+      "category": "Clasificación y Metodología",
+      "tags": [
+        "ETL",
+        "Pipeline Datos",
+        "Ingeniería de Datos",
+        "Automatización Fiscal",
+        "Procesamiento Datos",
+        "FIFO",
+        "Extract Transform Load",
+        "Orquestación",
+        "Python",
+        "CSV",
+        "Exchanges",
+        "Wallets",
+        "AEAT",
+        "Declaración Renta"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/fifo-aeat-crypto.webp",
+        "alt": "Pipeline ETL para fiscalidad de criptomonedas - Arquitectura de procesamiento de datos para automatizar la declaración fiscal ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Pipeline ETL para Fiscalidad Cripto: Automatiza tu Declaración | Cleriontax",
+        "metaDescription": "Diseña un pipeline ETL profesional para fiscalidad de criptomonedas. Extrae datos de exchanges y wallets, transforma operaciones al formato AEAT y carga información fiscal precisa. Guía completa con arquitectura y código.",
+        "keywords": [
+          "ETL criptomonedas",
+          "pipeline datos fiscales",
+          "automatizar declaración crypto",
+          "ingeniería datos fiscalidad",
+          "extract transform load crypto",
+          "procesamiento datos exchanges",
+          "automatización fiscal blockchain",
+          "pipeline FIFO criptomonedas",
+          "ETL exchanges wallets",
+          "data engineering fiscalidad",
+          "integración datos crypto AEAT",
+          "orquestación datos fiscales",
+          "batch processing criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/fifo-aeat-crypto.webp",
+        "ogImageAlt": "Pipeline ETL para fiscalidad de criptomonedas - Arquitectura de procesamiento de datos para automatizar la declaración fiscal ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "ingenieria-datos-fiscalidad",
+      "relatedPosts": [
+        "limpiar-datasets-cripto-antes-declarar",
+        "clasificar-operaciones-criptomonedas",
+        "herramientas-rastrear-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "lending-borrowing-tributacion-espana",
       "slugTranslations": {
         "es": "lending-borrowing-tributacion-espana",
