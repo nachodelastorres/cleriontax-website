@@ -39,7 +39,7 @@ export default function ContactInfo() {
               <a
                 href={`https://wa.me/${t('phone').replace(/[^0-9]/g, "")}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="text-accent hover:underline"
               >
                 {t('phone')}

@@ -118,7 +118,7 @@ export default function Navbar() {
             <a
               href="https://wa.me/34663482301"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="flex items-center space-x-2 rounded-lg bg-green-500 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-green-600 hover:shadow-md"
             >
               <MessageCircle className="h-4 w-4" />
@@ -195,7 +195,7 @@ export default function Navbar() {
                   <a
                     href="https://wa.me/34663482301"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="flex items-center justify-center space-x-2 rounded-lg bg-green-500 px-4 py-2.5 text-base font-medium text-white transition-all hover:bg-green-600 w-full"
                   >
                     <MessageCircle className="h-5 w-5" />

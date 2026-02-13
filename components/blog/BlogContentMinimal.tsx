@@ -238,7 +238,7 @@ export default function BlogContentMinimal({ content, metadata }: BlogContentMin
                   <a
                     href={href}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors font-normal"
                     {...props}
                   >

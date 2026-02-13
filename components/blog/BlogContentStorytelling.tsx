@@ -241,7 +241,7 @@ export default function BlogContentStorytelling({ content, metadata }: BlogConte
                   <a
                     href={href}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-accent font-semibold hover:text-accent-dark hover:underline transition-colors"
                     {...props}
                   >

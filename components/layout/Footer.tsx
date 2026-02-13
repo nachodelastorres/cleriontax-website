@@ -121,7 +121,7 @@ export default function Footer() {
                   <a
                     href="https://wa.me/34663482301"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="flex items-center space-x-2 text-sm text-gray-blue-light transition-colors hover:text-white group"
                   >
                     <Phone className="h-4 w-4 group-hover:scale-110 transition-transform" />

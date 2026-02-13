@@ -73,7 +73,7 @@ export default function BlogContent({ content }: BlogContentProps) {
                 <a
                   href={href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   {...props}
                 >
                   {children}

@@ -320,7 +320,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
                   <a
                     href={href}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-accent font-semibold hover:underline transition-colors"
                     {...props}
                   >

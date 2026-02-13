@@ -18,6 +18,17 @@ const nextConfig = {
         destination: '/:locale/servicios/asesoria-fiscal-criptomonedas',
         permanent: true,
       },
+      // Redirect /contact → /contacto (el slug real de la página)
+      {
+        source: '/contact',
+        destination: '/contacto',
+        permanent: true,
+      },
+      {
+        source: '/:locale/contact',
+        destination: '/:locale/contacto',
+        permanent: true,
+      },
     ];
   },
   images: {

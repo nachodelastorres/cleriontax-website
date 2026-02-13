@@ -6,7 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CookieConsentWrapper from "@/components/cookies/CookieConsentWrapper";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schemas";
-import { SITE_URL, LOCALES, getAlternates, type Locale } from "@/lib/site";
+import { SITE_URL, LOCALES, type Locale } from "@/lib/site";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -59,7 +59,8 @@ export async function generateMetadata({ params }: Props) {
         },
       ],
     },
-    alternates: getAlternates(locale as Locale),
+    // NOTA: No definir alternates aquí - cada página los define individualmente
+    // para evitar duplicación de hreflang
   };
 }
 
