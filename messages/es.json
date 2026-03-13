@@ -783,7 +783,19 @@
       "Pruebas Fiscales": "Pruebas Fiscales",
       "Smart Contracts": "Smart Contracts",
       "On-Chain": "On-Chain",
-      "Blockchain Explorer": "Blockchain Explorer"
+      "Blockchain Explorer": "Blockchain Explorer",
+      "Inspección Hacienda": "Inspección Hacienda",
+      "Auditoría Fiscal": "Auditoría Fiscal",
+      "Requerimiento Criptomonedas": "Requerimiento Criptomonedas",
+      "Sanciones Fiscales": "Sanciones Fiscales",
+      "Derechos Contribuyente": "Derechos Contribuyente",
+      "Comprobación Limitada": "Comprobación Limitada",
+      "Prescripción Fiscal": "Prescripción Fiscal",
+      "Regularización Voluntaria": "Regularización Voluntaria",
+      "Cruce Datos AEAT": "Cruce Datos AEAT",
+      "Documentación Fiscal": "Documentación Fiscal",
+      "Declaración Complementaria": "Declaración Complementaria",
+      "Procedimiento Inspector": "Procedimiento Inspector"
     },
     "latestPost": {
       "title": "Último Artículo Publicado",

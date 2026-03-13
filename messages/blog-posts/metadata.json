@@ -1,6 +1,77 @@
 {
   "posts": [
     {
+      "id": "inspeccion-hacienda-criptomonedas",
+      "slugTranslations": {
+        "es": "inspeccion-hacienda-criptomonedas",
+        "en": "tax-authority-crypto-audit-spain",
+        "ca": "inspeccio-hisenda-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-02-16T09:00:00Z",
+      "readingTime": 18,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Inspección Hacienda",
+        "AEAT",
+        "Auditoría Fiscal",
+        "Requerimiento Criptomonedas",
+        "Sanciones Fiscales",
+        "Derechos Contribuyente",
+        "Comprobación Limitada",
+        "DAC8",
+        "Prescripción Fiscal",
+        "Regularización Voluntaria",
+        "Cruce Datos AEAT",
+        "Documentación Fiscal",
+        "Declaración Complementaria",
+        "Procedimiento Inspector"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/inspeccion-hacienda-criptomonedas.webp",
+        "alt": "Inspección de Hacienda por criptomonedas - Guía completa sobre procedimientos de la AEAT, derechos del contribuyente y cómo prepararse ante una inspección fiscal crypto",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Inspección Hacienda Criptomonedas: Guía Completa 2026 | Cleriontax",
+        "metaDescription": "Qué hacer ante una inspección de Hacienda por criptomonedas. Cómo cruza datos la AEAT, tus derechos, sanciones y cómo prepararte. Guía actualizada 2026.",
+        "keywords": [
+          "inspección hacienda criptomonedas",
+          "AEAT criptomonedas inspección",
+          "requerimiento hacienda crypto",
+          "sanción criptomonedas España",
+          "auditoría fiscal criptomonedas",
+          "derechos contribuyente inspección",
+          "comprobación limitada crypto",
+          "cruce datos AEAT exchanges",
+          "prescripción fiscal criptomonedas",
+          "regularización voluntaria crypto",
+          "declaración complementaria criptomonedas",
+          "multa hacienda bitcoin",
+          "inspección fiscal DeFi",
+          "DAC8 inspección criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/inspeccion-hacienda-criptomonedas.webp",
+        "ogImageAlt": "Inspección de Hacienda por criptomonedas - Guía completa sobre procedimientos de la AEAT, derechos del contribuyente y cómo prepararse ante una inspección fiscal crypto",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "errores-declarar-criptomonedas",
+        "modelos-100-721-714-criptomonedas",
+        "directiva-dac8-criptomonedas-exchanges-hacienda"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "como-documentar-transacciones-defi-hacienda",
       "slugTranslations": {
         "es": "como-documentar-transacciones-defi-hacienda",

@@ -786,7 +786,19 @@
       "Pruebas Fiscales": "Proves Fiscals",
       "Smart Contracts": "Smart Contracts",
       "On-Chain": "On-Chain",
-      "Blockchain Explorer": "Blockchain Explorer"
+      "Blockchain Explorer": "Blockchain Explorer",
+      "Inspección Hacienda": "Inspecció Hisenda",
+      "Auditoría Fiscal": "Auditoria Fiscal",
+      "Requerimiento Criptomonedas": "Requeriment Criptomonedes",
+      "Sanciones Fiscales": "Sancions Fiscals",
+      "Derechos Contribuyente": "Drets Contribuent",
+      "Comprobación Limitada": "Comprovació Limitada",
+      "Prescripción Fiscal": "Prescripció Fiscal",
+      "Regularización Voluntaria": "Regularització Voluntària",
+      "Cruce Datos AEAT": "Encreuament Dades AEAT",
+      "Documentación Fiscal": "Documentació Fiscal",
+      "Declaración Complementaria": "Declaració Complementària",
+      "Procedimiento Inspector": "Procediment Inspector"
     },
     "latestPost": {
       "title": "Últim Article Publicat",

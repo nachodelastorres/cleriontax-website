@@ -786,7 +786,19 @@
       "Pruebas Fiscales": "Tax Evidence",
       "Smart Contracts": "Smart Contracts",
       "On-Chain": "On-Chain",
-      "Blockchain Explorer": "Blockchain Explorer"
+      "Blockchain Explorer": "Blockchain Explorer",
+      "Inspección Hacienda": "Tax Authority Audit",
+      "Auditoría Fiscal": "Tax Audit",
+      "Requerimiento Criptomonedas": "Crypto Information Request",
+      "Sanciones Fiscales": "Tax Penalties",
+      "Derechos Contribuyente": "Taxpayer Rights",
+      "Comprobación Limitada": "Limited Review",
+      "Prescripción Fiscal": "Tax Statute of Limitations",
+      "Regularización Voluntaria": "Voluntary Regularisation",
+      "Cruce Datos AEAT": "AEAT Data Cross-Referencing",
+      "Documentación Fiscal": "Tax Documentation",
+      "Declaración Complementaria": "Supplementary Declaration",
+      "Procedimiento Inspector": "Inspection Procedure"
     },
     "latestPost": {
       "title": "Latest Published Article",
