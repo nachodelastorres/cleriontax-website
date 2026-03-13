@@ -1,6 +1,77 @@
 {
   "posts": [
     {
+      "id": "perdidas-criptomonedas-compensar-declaracion",
+      "slugTranslations": {
+        "es": "perdidas-criptomonedas-compensar-declaracion",
+        "en": "cryptocurrency-losses-offset-tax-return-spain",
+        "ca": "perdues-criptomonedes-compensar-declaracio"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-03-13T09:00:00Z",
+      "readingTime": 18,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Pérdidas Patrimoniales",
+        "Compensación Pérdidas",
+        "Tax Loss Harvesting",
+        "Regla Antiaplicación",
+        "Arrastre Pérdidas",
+        "FIFO",
+        "AEAT",
+        "Declaración Renta",
+        "Base del Ahorro",
+        "Ganancias Patrimoniales",
+        "Minusvalías Crypto",
+        "Wash Sale Rule",
+        "IRPF",
+        "Optimización Fiscal"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/perdidas-criptomonedas-compensar-declaracion.webp",
+        "alt": "Compensación de pérdidas en criptomonedas - Guía completa sobre tax loss harvesting, regla antiaplicación y arrastre de pérdidas patrimoniales en España",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Pérdidas Criptomonedas: Cómo Compensarlas en la Renta 2026 | Cleriontax",
+        "metaDescription": "Guía completa para compensar pérdidas de criptomonedas en tu declaración. Regla antiaplicación, tax loss harvesting, arrastre a 4 años y estrategias fiscales.",
+        "keywords": [
+          "compensar pérdidas criptomonedas",
+          "pérdidas Bitcoin declaración renta",
+          "tax loss harvesting crypto España",
+          "regla antiaplicación criptomonedas",
+          "minusvalías criptomonedas IRPF",
+          "arrastre pérdidas crypto",
+          "compensación pérdidas patrimoniales",
+          "wash sale rule criptomonedas",
+          "pérdidas crypto Hacienda",
+          "recuperar pérdidas Bitcoin impuestos",
+          "base del ahorro criptomonedas",
+          "FIFO pérdidas crypto",
+          "declarar pérdidas criptomonedas",
+          "optimización fiscal crypto"
+        ],
+        "ogImage": "/images/illustrations/blog/perdidas-criptomonedas-compensar-declaracion.webp",
+        "ogImageAlt": "Compensación de pérdidas en criptomonedas - Guía completa sobre tax loss harvesting, regla antiaplicación y arrastre de pérdidas patrimoniales en España",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "errores-declarar-criptomonedas",
+        "guia-completa-declaracion-fiscal-criptomonedas-2025",
+        "stablecoins-tributacion-espana-mito"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "herencias-donaciones-criptomonedas-espana",
       "slugTranslations": {
         "es": "herencias-donaciones-criptomonedas-espana",
@@ -12,7 +83,7 @@
         "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
         "avatar": "/images/team/cleriontax-team.jpg"
       },
-      "publishedAt": "2026-03-13T09:00:00Z",
+      "publishedAt": "2026-02-25T09:00:00Z",
       "readingTime": 20,
       "category": "Fiscalidad e Inversión",
       "tags": [
