@@ -1,6 +1,76 @@
 {
   "posts": [
     {
+      "id": "criptomonedas-nomadas-digitales-residencia-fiscal-espana",
+      "slugTranslations": {
+        "es": "criptomonedas-nomadas-digitales-residencia-fiscal-espana",
+        "en": "cryptocurrencies-digital-nomads-tax-residency-spain",
+        "ca": "criptomonedes-nomades-digitals-residencia-fiscal-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-03-13T09:00:00Z",
+      "readingTime": 18,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Nómadas Digitales",
+        "Residencia Fiscal",
+        "Ley Beckham",
+        "183 Días",
+        "Convenio Doble Imposición",
+        "Exit Tax",
+        "Visado Nómada Digital",
+        "Renta Mundial",
+        "Fiscalidad Internacional",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 721",
+        "Modelo 714"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/nomadas-digitales-criptomonedas-tributacion-españa-hacienda-impuestos.webp",
+        "alt": "Criptomonedas y nómadas digitales: residencia fiscal, Ley Beckham, regla de los 183 días y tributación en España",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Criptomonedas y Nómadas Digitales: Residencia Fiscal en España | Cleriontax",
+        "metaDescription": "Guía completa sobre residencia fiscal en España para nómadas digitales con criptomonedas. Regla 183 días, Ley Beckham, convenios doble imposición y obligaciones.",
+        "keywords": [
+          "nómadas digitales criptomonedas España",
+          "residencia fiscal crypto",
+          "ley beckham criptomonedas",
+          "183 días residencia fiscal",
+          "convenio doble imposición crypto",
+          "exit tax criptomonedas España",
+          "visado nómada digital España",
+          "tributación renta mundial crypto",
+          "fiscalidad internacional criptomonedas",
+          "AEAT nómadas digitales",
+          "declarar criptomonedas expatriado",
+          "impatriados régimen especial crypto",
+          "cambio residencia fiscal crypto",
+          "DAC8 nómadas digitales"
+        ],
+        "ogImage": "/images/illustrations/blog/nomadas-digitales-criptomonedas-tributacion-españa-hacienda-impuestos.webp",
+        "ogImageAlt": "Criptomonedas y nómadas digitales: residencia fiscal, Ley Beckham, regla de los 183 días y tributación en España",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "tributacion-derivados-cripto-futuros-perpetuos",
+        "guia-completa-declaracion-fiscal-criptomonedas-2025",
+        "modelo-721-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "tributacion-derivados-cripto-futuros-perpetuos",
       "slugTranslations": {
         "es": "tributacion-derivados-cripto-futuros-perpetuos",
@@ -12,7 +82,7 @@
         "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
         "avatar": "/images/team/cleriontax-team.jpg"
       },
-      "publishedAt": "2026-03-13T09:00:00Z",
+      "publishedAt": "2026-03-08T09:00:00Z",
       "readingTime": 19,
       "category": "Fiscalidad e Inversión",
       "tags": [
@@ -32,7 +102,7 @@
         "Modelo 721"
       ],
       "image": {
-        "url": "/images/illustrations/blog/tributacion-derivados-cripto-futuros-perpetuos.webp",
+        "url": "/images/illustrations/blog/tributacion-derivados-cripto-futuros-opciones-perpetuos.webp",
         "alt": "Tributación de derivados cripto en España - Guía completa sobre futuros, perpetuos, opciones, funding rates y liquidaciones ante la AEAT",
         "width": 1200,
         "height": 630
@@ -56,7 +126,7 @@
           "derivados crypto AEAT",
           "declarar futuros Bitcoin"
         ],
-        "ogImage": "/images/illustrations/blog/tributacion-derivados-cripto-futuros-perpetuos.webp",
+        "ogImage": "/images/illustrations/blog/tributacion-derivados-cripto-futuros-opciones-perpetuos.webp",
         "ogImageAlt": "Tributación de derivados cripto en España - Guía completa sobre futuros, perpetuos, opciones, funding rates y liquidaciones ante la AEAT",
         "ogImageWidth": 1200,
         "ogImageHeight": 630
@@ -103,7 +173,7 @@
         "Optimización Fiscal"
       ],
       "image": {
-        "url": "/images/illustrations/blog/perdidas-criptomonedas-compensar-declaracion.webp",
+        "url": "/images/illustrations/blog/perdida-criptomonedas-compensacion-declaracion-renta-tributacion.webp",
         "alt": "Compensación de pérdidas en criptomonedas - Guía completa sobre tax loss harvesting, regla antiaplicación y arrastre de pérdidas patrimoniales en España",
         "width": 1200,
         "height": 630
@@ -127,7 +197,7 @@
           "declarar pérdidas criptomonedas",
           "optimización fiscal crypto"
         ],
-        "ogImage": "/images/illustrations/blog/perdidas-criptomonedas-compensar-declaracion.webp",
+        "ogImage": "/images/illustrations/blog/perdida-criptomonedas-compensacion-declaracion-renta-tributacion.webp",
         "ogImageAlt": "Compensación de pérdidas en criptomonedas - Guía completa sobre tax loss harvesting, regla antiaplicación y arrastre de pérdidas patrimoniales en España",
         "ogImageWidth": 1200,
         "ogImageHeight": 630
@@ -174,7 +244,7 @@
         "Bitcoin"
       ],
       "image": {
-        "url": "/images/illustrations/blog/herencias-donaciones-criptomonedas-espana.webp",
+        "url": "/images/illustrations/blog/herencia-criptomonedas-donaciones-tributacion-espana-valoracion-obligaciones.webp",
         "alt": "Herencias y donaciones de criptomonedas en España - Guía completa sobre tributación del ISD, valoración de activos digitales y diferencias por comunidad autónoma",
         "width": 1200,
         "height": 630
@@ -198,7 +268,7 @@
           "impuesto donaciones criptomonedas",
           "obligaciones heredero crypto"
         ],
-        "ogImage": "/images/illustrations/blog/herencias-donaciones-criptomonedas-espana.webp",
+        "ogImage": "/images/illustrations/blog/herencia-criptomonedas-donaciones-tributacion-espana-valoracion-obligaciones.webp",
         "ogImageAlt": "Herencias y donaciones de criptomonedas en España - Guía completa sobre tributación del ISD, valoración de activos digitales y diferencias por comunidad autónoma",
         "ogImageWidth": 1200,
         "ogImageHeight": 630
@@ -245,7 +315,7 @@
         "Procedimiento Inspector"
       ],
       "image": {
-        "url": "/images/illustrations/blog/inspeccion-hacienda-criptomonedas.webp",
+        "url": "/images/illustrations/blog/inspeccion-hacienda-por-criptomonedas-aeat-dac8-derechos.webp",
         "alt": "Inspección de Hacienda por criptomonedas - Guía completa sobre procedimientos de la AEAT, derechos del contribuyente y cómo prepararse ante una inspección fiscal crypto",
         "width": 1200,
         "height": 630
@@ -269,7 +339,7 @@
           "inspección fiscal DeFi",
           "DAC8 inspección criptomonedas"
         ],
-        "ogImage": "/images/illustrations/blog/inspeccion-hacienda-criptomonedas.webp",
+        "ogImage": "/images/illustrations/blog/inspeccion-hacienda-por-criptomonedas-aeat-dac8-derechos.webp",
         "ogImageAlt": "Inspección de Hacienda por criptomonedas - Guía completa sobre procedimientos de la AEAT, derechos del contribuyente y cómo prepararse ante una inspección fiscal crypto",
         "ogImageWidth": 1200,
         "ogImageHeight": 630
