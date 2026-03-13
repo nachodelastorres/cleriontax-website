@@ -1,6 +1,77 @@
 {
   "posts": [
     {
+      "id": "herencias-donaciones-criptomonedas-espana",
+      "slugTranslations": {
+        "es": "herencias-donaciones-criptomonedas-espana",
+        "en": "cryptocurrency-inheritance-gifts-spain",
+        "ca": "herencies-donacions-criptomonedes-espanya"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-03-13T09:00:00Z",
+      "readingTime": 20,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Herencias Criptomonedas",
+        "Donaciones Crypto",
+        "Impuesto Sucesiones y Donaciones",
+        "ISD",
+        "Plusvalía del Muerto",
+        "Comunidades Autónomas",
+        "Valoración Herencia Crypto",
+        "Planificación Sucesoria",
+        "Testamento Criptomonedas",
+        "Transmisión Patrimonio Digital",
+        "AEAT",
+        "Modelo 714",
+        "Modelo 721",
+        "Bitcoin"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/herencias-donaciones-criptomonedas-espana.webp",
+        "alt": "Herencias y donaciones de criptomonedas en España - Guía completa sobre tributación del ISD, valoración de activos digitales y diferencias por comunidad autónoma",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Herencias y Donaciones Criptomonedas España: Guía ISD 2026 | Cleriontax",
+        "metaDescription": "Cómo tributan las criptomonedas heredadas o donadas en España. Impuesto de Sucesiones, plusvalía del muerto, diferencias por CCAA y obligaciones del heredero.",
+        "keywords": [
+          "herencia criptomonedas España",
+          "donación criptomonedas impuestos",
+          "impuesto sucesiones Bitcoin",
+          "heredar Bitcoin tributa",
+          "ISD criptomonedas",
+          "plusvalía del muerto crypto",
+          "herencia Bitcoin comunidades autónomas",
+          "donación crypto IRPF",
+          "testamento criptomonedas",
+          "valoración herencia crypto",
+          "planificación sucesoria Bitcoin",
+          "heredar Ethereum España",
+          "impuesto donaciones criptomonedas",
+          "obligaciones heredero crypto"
+        ],
+        "ogImage": "/images/illustrations/blog/herencias-donaciones-criptomonedas-espana.webp",
+        "ogImageAlt": "Herencias y donaciones de criptomonedas en España - Guía completa sobre tributación del ISD, valoración de activos digitales y diferencias por comunidad autónoma",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "modelo-714-criptomonedas-patrimonio",
+        "modelo-721-criptomonedas",
+        "modelos-100-721-714-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "inspeccion-hacienda-criptomonedas",
       "slugTranslations": {
         "es": "inspeccion-hacienda-criptomonedas",
