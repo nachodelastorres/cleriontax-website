@@ -1,6 +1,77 @@
 {
   "posts": [
     {
+      "id": "tributacion-derivados-cripto-futuros-perpetuos",
+      "slugTranslations": {
+        "es": "tributacion-derivados-cripto-futuros-perpetuos",
+        "en": "crypto-derivatives-taxation-futures-perpetuals-spain",
+        "ca": "tributacio-derivats-cripto-futurs-perpetus"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-03-13T09:00:00Z",
+      "readingTime": 19,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Derivados",
+        "Futuros",
+        "Perpetuos",
+        "Opciones Crypto",
+        "Apalancamiento",
+        "Funding Rates",
+        "Liquidaciones DeFi",
+        "PnL Realizado",
+        "Tokens Apalancados",
+        "Copy Trading",
+        "AEAT",
+        "Declaración Renta",
+        "Ganancias Patrimoniales",
+        "Modelo 721"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/tributacion-derivados-cripto-futuros-perpetuos.webp",
+        "alt": "Tributación de derivados cripto en España - Guía completa sobre futuros, perpetuos, opciones, funding rates y liquidaciones ante la AEAT",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Tributación Derivados Cripto: Futuros, Perpetuos y Opciones | Cleriontax",
+        "metaDescription": "Cómo tributan los futuros, perpetuos y opciones crypto en España. Funding rates, liquidaciones, apalancamiento y cómo declarar derivados ante la AEAT.",
+        "keywords": [
+          "tributación futuros criptomonedas",
+          "perpetuos crypto impuestos España",
+          "derivados criptomonedas IRPF",
+          "funding rate tributación",
+          "liquidación futuros declarar",
+          "opciones crypto impuestos",
+          "apalancamiento criptomonedas fiscal",
+          "Binance Futures declarar",
+          "Bybit perpetuos tributación",
+          "PnL realizado impuestos",
+          "tokens apalancados fiscalidad",
+          "copy trading tributación",
+          "derivados crypto AEAT",
+          "declarar futuros Bitcoin"
+        ],
+        "ogImage": "/images/illustrations/blog/tributacion-derivados-cripto-futuros-perpetuos.webp",
+        "ogImageAlt": "Tributación de derivados cripto en España - Guía completa sobre futuros, perpetuos, opciones, funding rates y liquidaciones ante la AEAT",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "perdidas-criptomonedas-compensar-declaracion",
+        "como-exportar-historial-bybit-csv-tributacion",
+        "como-exportar-historial-binance-correctamente"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "perdidas-criptomonedas-compensar-declaracion",
       "slugTranslations": {
         "es": "perdidas-criptomonedas-compensar-declaracion",
@@ -12,7 +83,7 @@
         "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
         "avatar": "/images/team/cleriontax-team.jpg"
       },
-      "publishedAt": "2026-03-13T09:00:00Z",
+      "publishedAt": "2026-03-02T09:00:00Z",
       "readingTime": 18,
       "category": "Fiscalidad e Inversión",
       "tags": [

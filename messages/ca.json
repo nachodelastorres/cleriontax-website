@@ -816,7 +816,11 @@
       "Base del Ahorro": "Base de l'Estalvi",
       "Minusvalías Crypto": "Minusvàlues Crypto",
       "Wash Sale Rule": "Wash Sale Rule",
-      "IRPF": "IRPF"
+      "IRPF": "IRPF",
+      "Opciones Crypto": "Opcions Crypto",
+      "PnL Realizado": "PnL Realitzat",
+      "Tokens Apalancados": "Tokens Palanquejats",
+      "Funding Rates": "Funding Rates"
     },
     "latestPost": {
       "title": "Últim Article Publicat",

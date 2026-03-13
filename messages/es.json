@@ -813,7 +813,11 @@
       "Base del Ahorro": "Base del Ahorro",
       "Minusvalías Crypto": "Minusvalías Crypto",
       "Wash Sale Rule": "Wash Sale Rule",
-      "IRPF": "IRPF"
+      "IRPF": "IRPF",
+      "Opciones Crypto": "Opciones Crypto",
+      "PnL Realizado": "PnL Realizado",
+      "Tokens Apalancados": "Tokens Apalancados",
+      "Funding Rates": "Funding Rates"
     },
     "latestPost": {
       "title": "Último Artículo Publicado",

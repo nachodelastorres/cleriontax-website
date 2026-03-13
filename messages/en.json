@@ -816,7 +816,11 @@
       "Base del Ahorro": "Savings Tax Base",
       "Minusvalías Crypto": "Crypto Losses",
       "Wash Sale Rule": "Wash Sale Rule",
-      "IRPF": "Income Tax"
+      "IRPF": "Income Tax",
+      "Opciones Crypto": "Crypto Options",
+      "PnL Realizado": "Realised PnL",
+      "Tokens Apalancados": "Leveraged Tokens",
+      "Funding Rates": "Funding Rates"
     },
     "latestPost": {
       "title": "Latest Published Article",
