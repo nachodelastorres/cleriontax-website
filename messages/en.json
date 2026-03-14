@@ -828,7 +828,13 @@
       "Convenio Doble Imposición": "Double Taxation Treaty",
       "Exit Tax": "Exit Tax",
       "Visado Nómada Digital": "Digital Nomad Visa",
-      "Renta Mundial": "Worldwide Income"
+      "Renta Mundial": "Worldwide Income",
+      "Facturación Crypto": "Crypto Invoicing",
+      "IVA Criptomonedas": "Cryptocurrency VAT",
+      "Modelo 303": "Form 303",
+      "Pago en Especie": "Payment in Kind",
+      "Retenciones IRPF": "Income Tax Withholding",
+      "Epígrafe IAE": "IAE Activity Code"
     },
     "latestPost": {
       "title": "Latest Published Article",

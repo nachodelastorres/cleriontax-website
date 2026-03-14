@@ -1,6 +1,76 @@
 {
   "posts": [
     {
+      "id": "autonomos-criptomonedas-facturar-iva-tributar",
+      "slugTranslations": {
+        "es": "autonomos-criptomonedas-facturar-iva-tributar",
+        "en": "freelancers-cryptocurrency-invoicing-vat-tax-spain",
+        "ca": "autonoms-criptomonedes-facturar-iva-tributar"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-03-16T09:00:00Z",
+      "readingTime": 20,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Autónomo Crypto",
+        "Facturación Crypto",
+        "IVA Criptomonedas",
+        "Modelo 130",
+        "Modelo 303",
+        "Pago en Especie",
+        "Retenciones IRPF",
+        "RETA",
+        "Epígrafe IAE",
+        "AEAT",
+        "Declaración Renta",
+        "Modelo 721",
+        "Fiscalidad Internacional"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/modelo-impositivo-criptoactivos.webp",
+        "alt": "Criptomonedas y autónomos: cómo facturar, declarar IVA y tributar si cobras en crypto en España",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Autónomos y Criptomonedas: Facturar, IVA y Tributación | Cleriontax",
+        "metaDescription": "Guía completa para autónomos que cobran en crypto. Cómo facturar, declarar IVA, modelo 130, retenciones, cotización RETA y obligaciones ante la AEAT.",
+        "keywords": [
+          "autónomos criptomonedas España",
+          "facturar en crypto",
+          "IVA criptomonedas autónomo",
+          "cobrar en Bitcoin freelancer",
+          "modelo 130 criptomonedas",
+          "modelo 303 crypto",
+          "retenciones IRPF crypto",
+          "pago en especie criptomonedas",
+          "freelancer crypto impuestos",
+          "declarar ingresos crypto autónomo",
+          "RETA criptomonedas",
+          "factura criptomonedas España",
+          "tipo de cambio crypto factura",
+          "gastos deducibles autónomo crypto"
+        ],
+        "ogImage": "/images/illustrations/blog/modelo-impositivo-criptoactivos.webp",
+        "ogImageAlt": "Criptomonedas y autónomos: cómo facturar, declarar IVA y tributar si cobras en crypto en España",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "criptomonedas-nomadas-digitales-residencia-fiscal-espana",
+        "como-declarar-criptomonedas-renta-2025",
+        "inspeccion-hacienda-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "criptomonedas-nomadas-digitales-residencia-fiscal-espana",
       "slugTranslations": {
         "es": "criptomonedas-nomadas-digitales-residencia-fiscal-espana",
