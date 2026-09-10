@@ -28,7 +28,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
   };
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-gray-100 to-white">
+    <section className="relative py-24 overflow-hidden bg-papel">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-30"
@@ -42,23 +42,23 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
           {/* Header */}
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-1 w-12 bg-gradient-to-r from-accent to-burgundy-dark rounded-full" />
-              <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+              <div className="h-1 w-12 bg-rojo" />
+              <span className="text-sm font-semibold text-rojo uppercase tracking-wider">
                 {t('badge')}
               </span>
             </div>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+                <h2 className="text-4xl md:text-5xl font-bold text-azul mb-4">
                   {t('title')}
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl">
+                <p className="text-lg text-pizarra max-w-2xl">
                   {t('description')}
                 </p>
               </div>
               <Link
                 href={`/${locale}/blog`}
-                className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-burgundy-dark transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="group inline-flex items-center gap-2 px-6 py-3 bg-rojo text-blanco font-semibold hover:bg-rojo/90 transition-all duration-300"
               >
                 {t('viewAllArticles')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -69,8 +69,8 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
           {/* Horizontal Scroll Container */}
           <div className="relative">
             {/* Gradient overlays for scroll indication */}
-            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 w-20 bg-papel z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-20 bg-blanco z-10 pointer-events-none" />
 
             {/* Scrollable container */}
             <div className="overflow-x-auto pb-6 -mx-6 px-6 scrollbar-hide">
@@ -82,9 +82,9 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                       href={`/${locale}/blog/${post.slug}`}
                       className="group relative block w-[380px] flex-shrink-0"
                     >
-                      <article className="h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-accent/30">
+                      <article className="h-full bg-blanco transition-all duration-300 overflow-hidden border border-niebla hover:border-rojo/30">
                         {/* Image */}
-                        <div className="relative h-56 bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden">
+                        <div className="relative h-56 bg-papel overflow-hidden">
                           <Image
                             src={post.image.url}
                             alt={post.image.alt}
@@ -93,7 +93,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                           />
                           {/* Category badge */}
                           <div className="absolute top-4 left-4">
-                            <span className="px-3 py-1.5 rounded-lg bg-accent/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wide shadow-lg">
+                            <span className="px-3 py-1.5 bg-rojo/90 backdrop- text-blanco text-xs font-bold uppercase tracking-wide">
                               {tBlog(`categoryTranslations.${post.category}`, { default: post.category })}
                             </span>
                           </div>
@@ -102,7 +102,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                         {/* Content */}
                         <div className="p-6">
                           {/* Meta info */}
-                          <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                          <div className="flex items-center gap-4 text-sm text-pizarra mb-3">
                             <div className="flex items-center gap-1.5">
                               <Calendar className="w-4 h-4" />
                               <time dateTime={post.publishedAt}>
@@ -116,12 +116,12 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                           </div>
 
                           {/* Title - Now using translated title */}
-                          <h3 className="text-xl font-bold text-navy mb-3 line-clamp-2 group-hover:text-accent transition-colors">
+                          <h3 className="text-xl font-bold text-azul mb-3 line-clamp-2 group-hover:text-rojo transition-colors">
                             {post.title}
                           </h3>
 
                           {/* Excerpt - Now using translated excerpt */}
-                          <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
+                          <p className="text-pizarra text-sm leading-relaxed line-clamp-3 mb-4">
                             {post.excerpt}
                           </p>
 
@@ -130,7 +130,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                             {post.tags.slice(0, 3).map((tag, i) => (
                               <span
                                 key={i}
-                                className="px-2.5 py-1 rounded-md bg-gray-100 text-gray-700 text-xs font-medium"
+                                className="px-2.5 py-1 bg-papel text-pizarra text-xs font-medium"
                               >
                                 {tBlog(`tagTranslations.${tag}`, { default: tag })}
                               </span>
@@ -138,14 +138,14 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                           </div>
 
                           {/* CTA */}
-                          <div className="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:gap-3 transition-all">
+                          <div className="inline-flex items-center gap-2 text-rojo font-semibold text-sm group-hover:gap-3 transition-all">
                             {t('readArticle')}
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                           </div>
                         </div>
 
                         {/* Bottom accent border */}
-                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-burgundy-dark to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-rojo transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
                       </article>
                     </Link>
                   );
@@ -156,7 +156,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
 
           {/* Helper text */}
           <div className="mt-6 text-center">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-pizarra">
               {t('scrollHelper')}
             </p>
           </div>

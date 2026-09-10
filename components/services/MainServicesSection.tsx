@@ -61,20 +61,20 @@ export default function MainServicesSection() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-azul mb-6">
             {t('title')}
           </h2>
-          <p className="text-lg text-gray-blue max-w-3xl mx-auto">
+          <p className="text-lg text-pizarra max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </div>
 
         {/* Main Content */}
-        <div className="space-y-8 text-base md:text-lg leading-relaxed text-navy">
+        <div className="space-y-8 text-base md:text-lg leading-relaxed text-azul">
           {/* Paragraph 1 with Icon */}
           <div className="flex gap-4 items-start">
             <div className="flex-shrink-0 mt-1">
-              <FileText className="w-6 h-6 text-accent" />
+              <FileText className="w-6 h-6 text-rojo" />
             </div>
             <p className="flex-1">
               {t('paragraph1')}
@@ -84,7 +84,7 @@ export default function MainServicesSection() {
           {/* Paragraph 2 with Icon */}
           <div className="flex gap-4 items-start">
             <div className="flex-shrink-0 mt-1">
-              <CheckCircle className="w-6 h-6 text-accent" />
+              <CheckCircle className="w-6 h-6 text-rojo" />
             </div>
             {locale === 'es' ? (
               <p className="flex-1">{t('paragraph2')}</p>
@@ -96,7 +96,7 @@ export default function MainServicesSection() {
           {/* Paragraph 3 with Icon */}
           <div className="flex gap-4 items-start">
             <div className="flex-shrink-0 mt-1">
-              <TrendingUp className="w-6 h-6 text-accent" />
+              <TrendingUp className="w-6 h-6 text-rojo" />
             </div>
             {locale === 'es' ? (
               <p className="flex-1">{t('paragraph3')}</p>
@@ -109,7 +109,7 @@ export default function MainServicesSection() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <ButtonLink
-            variant="secondary"
+            variant="principal"
             size="lg"
             href="/contacto"
             className="group"

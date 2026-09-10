@@ -1,5 +1,16 @@
 import type { Config } from "tailwindcss";
 
+/**
+ * Sistema de diseño Cleriontax — derivado del Manual de marca v1.0.
+ *
+ * Reglas que este fichero hace cumplir:
+ *  §10 Color        Dos colores de marca (azul y rojo), neutros y dos colores de estado.
+ *                   El rojo es acento: si una pieza tiene más rojo que azul, está mal.
+ *  §11 Tipografía   Plus Jakarta Sans para todo, IBM Plex Mono solo para datos.
+ *  §12 Bordes       Esquinas rectas siempre. El único radio de la marca es el arco
+ *                   del símbolo, y solo aparece en el símbolo.
+ *  §12 Fondos       Color plano o el patrón isométrico. Sin degradados.
+ */
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,58 +20,56 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Paleta estricta - Solo estos colores
-        'burgundy-dark': '#7b1923',    // Burgundy oscuro
-        'red': '#dc2618',              // Rojo principal
-        'navy': '#1b2042',             // Azul marino oscuro
-        'plum': '#3b112a',             // Ciruela oscuro
-        'gray-blue-light': '#acadba',  // Gris azulado claro
-        'gray-blue': '#535671',        // Gris azulado medio
-        'navy-darker': '#0d1236',      // Azul marino muy oscuro
+        // ---- Colores de marca (§10) ----
+        azul: "#050A30", // Azul Cleriontax — 40 % de la superficie
+        rojo: "#DC2618", // Rojo Señal — acento, ~10 %
 
-        // Aliases para mantener compatibilidad
-        primary: {
-          DEFAULT: '#1b2042',  // Navy como principal
-          dark: '#0d1236',     // Navy más oscuro
-          light: '#535671',    // Gris azulado para variaciones
-        },
-        accent: {
-          DEFAULT: '#dc2618',  // Rojo como acento
-          dark: '#7b1923',     // Burgundy para hover
-          light: '#dc2618',    // Mismo rojo
-        },
-        dark: {
-          DEFAULT: '#1b2042',  // Navy
-          light: '#535671',    // Gris azulado
-          darker: '#0d1236',   // Navy muy oscuro
-        },
-        // Escala de grises neutral
-        neutral: {
-          50: '#FAFAFA',
-          100: '#F5F5F5',
-          200: '#E5E5E5',
-          300: '#D4D4D4',
-          400: '#acadba',      // De la paleta
-          500: '#8a8c9e',
-          600: '#535671',      // De la paleta
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
-        },
-        // Estados
-        success: '#10b981',
-        warning: '#f59e0b',
-        error: '#dc2618',
-        info: '#1b2042',
+        // ---- Neutros (§10) ----
+        blanco: "#FFFFFF", // Fondo principal
+        papel: "#F2F3F6", // Fondo secundario
+        niebla: "#C9CCD6", // Líneas y estados inactivos
+        pizarra: "#4A5A66", // Texto secundario
+
+        // ---- Colores funcionales de estado (§10) ----
+        // Solo describen el estado real de un dato. Nunca decoran.
+        "verde-conciliado": "#17706A", // Estado: verificado
+        "ambar-revision": "#D4941C", // Estado: requiere revisión
+        // El ámbar no alcanza 4,5:1 sobre blanco: solo relleno o icono, nunca texto.
+
       },
+
+      // ---- Escala tipográfica (§11) ----
+      // Titulares con interletrado negativo; texto de lectura a 17/27.
+      fontSize: {
+        hero: ["52px", { lineHeight: "55px", letterSpacing: "-0.04em", fontWeight: "800" }],
+        seccion: ["33px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }],
+        subtitulo: ["21px", { lineHeight: "28px", letterSpacing: "-0.02em", fontWeight: "600" }],
+        lectura: ["17px", { lineHeight: "27px" }],
+        nota: ["14px", { lineHeight: "22px" }],
+        dato: ["13px", { lineHeight: "20px" }],
+      },
+
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        // Familia principal: todo el texto.
+        sans: ["var(--font-jakarta)", "system-ui", "-apple-system", "sans-serif"],
+        // Familia de datos: cifras, importes, hashes, modelos, fechas en tabla.
+        // Nunca para texto corrido ni para etiquetas sin datos.
+        mono: ["var(--font-plex-mono)", "ui-monospace", "monospace"],
       },
-      backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #1b2042 0%, #0d1236 100%)',
-        'gradient-accent': 'linear-gradient(135deg, #dc2618 0%, #7b1923 100%)',
-        'gradient-dark': 'linear-gradient(135deg, #1b2042 0%, #0d1236 100%)',
-        'gradient-hero': 'linear-gradient(135deg, #1b2042 0%, #0d1236 100%)',
+
+      // ---- Esquinas rectas (§12) ----
+      // Toda la escala a cero: neutraliza el radio en todo el sitio de una vez,
+      // incluidas las clases rounded-* que quedan pendientes de retirar.
+      borderRadius: {
+        none: "0",
+        sm: "0",
+        DEFAULT: "0",
+        md: "0",
+        lg: "0",
+        xl: "0",
+        "2xl": "0",
+        "3xl": "0",
+        full: "0",
       },
     },
   },

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 
@@ -53,34 +52,22 @@ export default function WhyChooseUsServices() {
   ];
 
   return (
-    <section id="why-choose-us-services" className="relative py-24 px-6 bg-gradient-to-br from-neutral-50 via-white to-neutral-50 overflow-hidden">
-      {/* Background subtle pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, rgb(27, 32, 66) 1px, transparent 0)',
-          backgroundSize: '48px 48px'
-        }} />
-      </div>
-
+    <section id="why-choose-us-services" className="relative py-24 px-6 bg-papel overflow-hidden">
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <div
           className="text-center mb-20 space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-navy-darker leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-azul leading-tight">
             {t('title')}
           </h2>
-          <p className="text-xl text-gray-blue max-w-4xl mx-auto">
+          <p className="text-xl text-pizarra max-w-4xl mx-auto">
             {t('subtitle')}
           </p>
-          <p className="text-base md:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-pizarra max-w-3xl mx-auto leading-relaxed">
             {t('intro')}
           </p>
-        </motion.div>
+        </div>
 
         {/* Reasons - Editorial Layout */}
         <div className="space-y-16 md:space-y-20">
@@ -88,12 +75,8 @@ export default function WhyChooseUsServices() {
             const isLeft = reason.position === 'left';
 
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="relative"
               >
                 {/* Desktop Layout */}
@@ -102,12 +85,12 @@ export default function WhyChooseUsServices() {
                     <>
                       {/* Image Left */}
                       <div className="col-span-5">
-                        <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div className="relative w-full aspect-square overflow-hidden transition- duration-300">
                           <Image
                             src={reason.image}
                             alt={reason.alt}
                             fill
-                            className="object-contain p-6 bg-white"
+                            className="object-contain p-6 bg-blanco"
                             loading="lazy"
                           />
                         </div>
@@ -116,14 +99,14 @@ export default function WhyChooseUsServices() {
                       {/* Content Right */}
                       <div className="col-span-7 pl-4">
                         <div className="flex items-start gap-4">
-                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                            <span className="text-accent font-bold text-sm">{index + 1}</span>
+                          <div className="flex-shrink-0 w-8 h-8 bg-rojo/10 flex items-center justify-center">
+                            <span className="text-rojo font-bold text-sm">{index + 1}</span>
                           </div>
                           <div>
-                            <h3 className="text-2xl font-semibold text-navy-darker mb-4 leading-tight">
+                            <h3 className="text-2xl font-semibold text-azul mb-4 leading-tight">
                               {reason.title}
                             </h3>
-                            <p className="text-base md:text-lg text-gray-blue leading-relaxed">
+                            <p className="text-base md:text-lg text-pizarra leading-relaxed">
                               {reason.description}
                             </p>
                           </div>
@@ -135,14 +118,14 @@ export default function WhyChooseUsServices() {
                       {/* Content Left */}
                       <div className="col-span-7 pr-4">
                         <div className="flex items-start gap-4">
-                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                            <span className="text-accent font-bold text-sm">{index + 1}</span>
+                          <div className="flex-shrink-0 w-8 h-8 bg-rojo/10 flex items-center justify-center">
+                            <span className="text-rojo font-bold text-sm">{index + 1}</span>
                           </div>
                           <div>
-                            <h3 className="text-2xl font-semibold text-navy-darker mb-4 leading-tight">
+                            <h3 className="text-2xl font-semibold text-azul mb-4 leading-tight">
                               {reason.title}
                             </h3>
-                            <p className="text-base md:text-lg text-gray-blue leading-relaxed">
+                            <p className="text-base md:text-lg text-pizarra leading-relaxed">
                               {reason.description}
                             </p>
                           </div>
@@ -151,12 +134,12 @@ export default function WhyChooseUsServices() {
 
                       {/* Image Right */}
                       <div className="col-span-5">
-                        <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div className="relative w-full aspect-square overflow-hidden transition- duration-300">
                           <Image
                             src={reason.image}
                             alt={reason.alt}
                             fill
-                            className="object-contain p-6 bg-white"
+                            className="object-contain p-6 bg-blanco"
                             loading="lazy"
                           />
                         </div>
@@ -168,25 +151,25 @@ export default function WhyChooseUsServices() {
                 {/* Mobile Layout */}
                 <div className="md:hidden space-y-6">
                   {/* Image */}
-                  <div className="relative w-full aspect-square max-w-xs mx-auto rounded-2xl overflow-hidden shadow-lg">
+                  <div className="relative w-full aspect-square max-w-xs mx-auto overflow-hidden">
                     <Image
                       src={reason.image}
                       alt={reason.alt}
                       fill
-                      className="object-contain p-6 bg-white"
+                      className="object-contain p-6 bg-blanco"
                       loading="lazy"
                     />
                   </div>
 
                   {/* Content */}
                   <div className="text-center">
-                    <div className="inline-flex w-8 h-8 rounded-full bg-accent/10 items-center justify-center mb-4">
-                      <span className="text-accent font-bold text-sm">{index + 1}</span>
+                    <div className="inline-flex w-8 h-8 bg-rojo/10 items-center justify-center mb-4">
+                      <span className="text-rojo font-bold text-sm">{index + 1}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-navy-darker mb-3 leading-tight">
+                    <h3 className="text-xl font-semibold text-azul mb-3 leading-tight">
                       {reason.title}
                     </h3>
-                    <p className="text-base text-gray-blue leading-relaxed">
+                    <p className="text-base text-pizarra leading-relaxed">
                       {reason.description}
                     </p>
                   </div>
@@ -194,9 +177,9 @@ export default function WhyChooseUsServices() {
 
                 {/* Decorative separator (except for last item) */}
                 {index < reasons.length - 1 && (
-                  <div className="absolute -bottom-8 md:-bottom-10 left-1/2 transform -translate-x-1/2 w-px h-12 bg-gradient-to-b from-accent/30 to-transparent" />
+                  <div className="absolute -bottom-8 md:-bottom-10 left-1/2 transform -translate-x-1/2 w-px h-12 bg-rojo" />
                 )}
-              </motion.div>
+              </div>
             );
           })}
         </div>

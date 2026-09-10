@@ -12,10 +12,10 @@ export default function HeroServices() {
   return (
     <section
       id="hero-services"
-      className="relative min-h-[600px] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#F8F9FA] to-white"
+      className="relative min-h-[600px] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-papel"
     >
       {/* Background Pattern/Image */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(109,164,143,0.08),_transparent_70%)]">
+      <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-[0.25]">
           <Image
             src="/images/illustrations/informe-fiscal-datos-ordenados-cripto.webp"
@@ -39,7 +39,7 @@ export default function HeroServices() {
           <span className="text-xs font-semibold text-[#2B2D42] tracking-wider uppercase">
             {t('badge')}
           </span>
-          <div className="w-24 h-[2px] bg-red" />
+          <div className="w-24 h-[2px] bg-rojo" />
         </div>
 
         {/* Main Title (H1) */}
@@ -64,10 +64,10 @@ export default function HeroServices() {
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
           <ButtonLink
-            variant="secondary"
+            variant="principal"
             size="lg"
             href="/contacto"
-            className="group shadow-xl hover:shadow-2xl"
+            className="group"
           >
             {t('cta')}
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -83,8 +83,8 @@ export default function HeroServices() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-[#6DA48F]/5 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#2B2D42]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-[#6DA48F]/5"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#2B2D42]/5" style={{ animationDelay: '1s' }}></div>
 
       <style jsx>{`
         @keyframes fade-in {

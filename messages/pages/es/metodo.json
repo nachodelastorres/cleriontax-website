@@ -1,0 +1,247 @@
+{
+  "title": "El método: operación a operación",
+  "slug": "metodo",
+  "excerpt": "Cómo convertimos miles de operaciones dispersas en exchanges, wallets y protocolos DeFi en un informe fiscal único y trazable, con criterio aplicado a mano y cada cifra justificada.",
+  "hero": {
+    "etiqueta": "Cómo trabajamos",
+    "h1": "Un informe automático es el punto de partida, nunca el entregable",
+    "subheading": "El software procesa. El criterio decide. Nuestro método consiste en reconstruir tu operativa desde el dato bruto y revisar a mano todo lo que un programa no puede resolver solo.",
+    "cta": {
+      "label": "Cuéntanos tu operativa",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "Ver los servicios",
+      "href": "/servicios"
+    }
+  },
+  "toc": [
+    {
+      "id": "por-que",
+      "label": "Por qué no basta el software"
+    },
+    {
+      "id": "tesis",
+      "label": "La tesis"
+    },
+    {
+      "id": "el-problema",
+      "label": "Qué falla en los datos"
+    },
+    {
+      "id": "las-fases",
+      "label": "Las cuatro fases"
+    },
+    {
+      "id": "a-mano",
+      "label": "Qué revisamos a mano"
+    },
+    {
+      "id": "que-recibes",
+      "label": "Qué recibes"
+    },
+    {
+      "id": "limites",
+      "label": "Límites del método"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    }
+  ],
+  "sections": [
+    {
+      "id": "por-que",
+      "h2": "Por qué no basta con pasar los CSV por un programa",
+      "body": "Las herramientas de fiscalidad cripto hacen bien una cosa: leer muchos ficheros deprisa. Lo que no hacen es decidir. Y en una cartera real la mayor parte del trabajo son decisiones: si esa transferencia es una venta o un movimiento entre wallets tuyas, si ese token que apareció en tu dirección es un airdrop imputable o spam, qué valor de adquisición tiene algo que recibiste sin comprarlo, o qué haces con las operaciones de un exchange que cerró y del que ya no puedes descargar nada.\n\nUn programa resuelve esas situaciones aplicando un valor por defecto. Casi siempre el más conservador para el software, que no es el más correcto para ti: coste de adquisición cero, transferencias tratadas como disposiciones, tokens sin precio de mercado valorados a lo que diga el primer oráculo disponible. El informe sale, cuadra internamente y es incorrecto.\n\nEl problema aparece cuando ese informe llega a la AEAT. A partir de ahí es tu declaración, y rectificarla es más difícil que haberla hecho bien."
+    },
+    {
+      "id": "tesis",
+      "h2": "",
+      "fondo": "patron",
+      "cita": {
+        "texto": "El software procesa. El criterio decide.",
+        "pie": "Un programa resuelve las situaciones dudosas aplicando un valor por defecto. Casi siempre el más conservador para el software, que no es el más correcto para ti.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "el-problema",
+      "h2": "Qué suele fallar en los datos",
+      "bullets": [
+        "<strong>Movimientos internos contados como ventas:</strong> mandas fondos de tu exchange a tu wallet fría y el informe lo registra como una disposición. Es el error más frecuente y el que más ganancia ficticia genera.",
+        "<strong>Spam de tokens:</strong> direcciones que reciben cientos de tokens sin valor enviados por terceros. En cadenas como Solana o BSC pueden ser miles de registros que ensucian toda la cartera si se procesan como ingresos.",
+        "<strong>Permutas no identificadas:</strong> cambiar un token por otro tributa aunque no pase por euros. Muchos históricos no distinguen el swap de un simple movimiento.",
+        "<strong>Coste de adquisición perdido:</strong> tokens recibidos por staking, airdrops, forks o recompensas de liquidez que el programa valora a cero, inflando la ganancia al venderlos.",
+        "<strong>Duplicados entre fuentes:</strong> la misma operación aparece en el CSV del exchange y en la lectura on-chain de la wallet.",
+        "<strong>Exchanges desaparecidos:</strong> plataformas cerradas de las que no queda histórico descargable y cuyo tramo hay que reconstruir por otras vías.",
+        "<strong>Fechas y husos:</strong> registros con marcas de tiempo en zonas horarias distintas que descolocan el orden de las operaciones y, con ello, el cálculo FIFO."
+      ],
+      "entrada": "Estos son los siete fallos que aparecen una y otra vez, y ninguno lo resuelve un programa por su cuenta.",
+      "columnas": [
+        {
+          "titulo": "Lo que hace un informe automático",
+          "correcta": false,
+          "items": [
+            "Cuenta como venta la transferencia a tu propia wallet fría",
+            "Valora a coste cero los tokens que recibiste sin comprar",
+            "Procesa el spam de tokens como si fueran ingresos",
+            "Aplica el precio del primer oráculo disponible, sin contraste",
+            "Deja los tramos sin datos como si no hubieran existido"
+          ]
+        },
+        {
+          "titulo": "Lo que hace una reconciliación revisada",
+          "correcta": true,
+          "items": [
+            "Identifica la titularidad de la dirección de destino y la marca como interna",
+            "Reconstruye el valor de adquisición en la fecha de recepción",
+            "Filtra el spam con criterio, no por lista automática",
+            "Contrasta el precio entre fuentes y documenta cuál se aplicó",
+            "Aparta el tramo, lo reconstruye por vía indirecta y anota el grado de certeza"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "las-fases",
+      "h2": "Las cuatro fases",
+      "fondo": "azul",
+      "entrada": "Cada fase corresponde a una de las cuatro piezas del símbolo, y no por casualidad: el símbolo describe este proceso.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Ingesta y mapeo",
+          "body": "El dato en bruto, tal como llega del exchange. Se valida la integridad y se detecta lo que falta antes de procesar nada."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Limpieza y conciliación",
+          "body": "El proceso que curva el dato hasta encajarlo: formatos, husos horarios, duplicados y movimientos internos."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Clasificación fiscal",
+          "body": "El criterio. Cada operación recibe su naturaleza fiscal, y lo que no encaja en una regla se aparta para revisión manual."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Cálculo e informe",
+          "body": "El resultado, ya cerrado sobre el informe: criterio FIFO sobre la cartera conciliada, con el detalle detrás de cada total."
+        }
+      ]
+    },
+    {
+      "id": "a-mano",
+      "h2": "Qué revisamos a mano",
+      "body": "No revisamos a mano las cien mil operaciones: revisamos las que el proceso automático no puede resolver con certeza, y esas son siempre las que deciden el resultado.\n\nSe apartan para revisión manual las transferencias sin contraparte identificada, los tokens sin precio de mercado fiable en la fecha de la operación, las adquisiciones sin coste conocido, las operaciones en protocolos DeFi cuya mecánica no encaja en una categoría estándar, y cualquier tramo donde los datos de dos fuentes se contradicen.\n\nEn una cartera de cincuenta mil operaciones, esa lista suele estar entre las trescientas y las dos mil. Es donde se concentra el riesgo, y es el trabajo que un informe automático se salta.",
+      "fondo": "papel",
+      "cifras": [
+        {
+          "valor": "50.000",
+          "etiqueta": "operaciones en una cartera compleja tipo"
+        },
+        {
+          "valor": "300–2.000",
+          "etiqueta": "que el proceso automático no puede resolver solo",
+          "acento": true
+        },
+        {
+          "valor": "100 %",
+          "etiqueta": "de esas, revisadas a mano"
+        }
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "Qué recibes",
+      "bullets": [
+        "<strong>Informe fiscal con el resumen y su detalle:</strong> los totales que van a la declaración y, detrás de cada uno, las operaciones que lo componen.",
+        "<strong>Memoria de criterios:</strong> qué criterio se ha aplicado en cada situación dudosa y por qué. Es el documento que sostiene tu posición si algún día te la preguntan.",
+        "<strong>Registro de incidencias:</strong> qué datos faltaban, qué se ha reconstruido por vía indirecta y con qué grado de certeza.",
+        "<strong>Cartera conciliada:</strong> el conjunto de datos limpio, que sirve de punto de partida para los ejercicios siguientes sin repetir el trabajo.",
+        "<strong>Documentación de respaldo:</strong> los ficheros originales organizados y referenciados desde el informe."
+      ],
+      "entrada": "Así se ve el resumen de un informe. Cada línea enlaza con su detalle de operaciones.",
+      "tabla": {
+        "titulo": "Informe fiscal",
+        "periodo": "ejercicio 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Ganancias patrimoniales",
+            "importe": 18402.15
+          },
+          {
+            "concepto": "Pérdidas patrimoniales",
+            "importe": -6117.8
+          },
+          {
+            "concepto": "Rendimientos de staking",
+            "importe": 1293.44
+          },
+          {
+            "concepto": "Operaciones procesadas",
+            "recuento": 48317
+          },
+          {
+            "concepto": "Operaciones revisadas a mano",
+            "recuento": 412
+          }
+        ]
+      }
+    },
+    {
+      "id": "limites",
+      "h2": "Los límites del método",
+      "body": "Conviene decir también lo que el método no puede hacer.\n\nNo reconstruye lo que no existe. Si de un tramo no hay ni histórico, ni rastro on-chain, ni extracto bancario, se documenta como no reconstruible y se explica el criterio aplicado, pero no se inventa.\n\nNo garantiza un resultado ante la Administración. Ninguna metodología lo hace, y desconfía de quien lo prometa. Lo que sí produce es una posición documentada y coherente, que es lo que se puede defender.\n\nY no es asesoramiento de inversión. No decimos qué comprar, qué vender ni cuándo. El terreno es el cumplimiento y la defensa de tu posición fiscal.",
+      "fondo": "azul"
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Cuánto tarda el proceso?",
+          "a": "Depende del volumen y, sobre todo, del estado de los datos. Una cartera ordenada de unos pocos miles de operaciones puede estar en una o dos semanas; una cartera multicadena con cientos de miles de registros y tramos que reconstruir puede llevar bastante más. Tras la fase de ingesta te damos un plazo concreto, porque hasta entonces cualquier estimación sería inventada."
+        },
+        {
+          "q": "¿Necesito daros mis claves privadas?",
+          "a": "No, nunca. Trabajamos con exportaciones CSV, claves API de solo lectura y direcciones públicas de wallet. Una clave privada no hace falta para leer un historial, y no debes dársela a nadie."
+        },
+        {
+          "q": "¿Y si ya tengo un informe hecho con Koinly o CoinTracking?",
+          "a": "Sirve como punto de partida y nos ahorra la fase de ingesta. Lo que hacemos es revisar la reconciliación: movimientos internos, coste de adquisición de lo recibido sin compra, tratamiento de permutas y spam. Si el informe ya se presentó a la AEAT, el trabajo es distinto y conviene mirarlo con la página de litigación delante."
+        },
+        {
+          "q": "¿Trabajáis con cualquier cadena y protocolo?",
+          "a": "Con la mayoría. Las cadenas y protocolos con exploradores públicos y datos accesibles no suelen dar problema. Los casos difíciles son protocolos muy pequeños, cadenas sin explorador mantenido o plataformas ya cerradas, y ahí lo decimos antes de empezar."
+        },
+        {
+          "q": "¿Qué pasa con los ejercicios anteriores?",
+          "a": "La cartera conciliada se construye desde el origen de tu operativa, no desde el ejercicio que quieres declarar: sin el histórico anterior no hay coste de adquisición fiable. Si al reconstruirlo aparecen ejercicios mal declarados o sin declarar, te lo decimos y valoramos contigo la vía de regularización."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "¿Hablamos?",
+    "body": "Cuéntanos cuántas operaciones tienes más o menos, en qué exchanges y cadenas operas y qué ejercicios te preocupan. Con eso te decimos qué trabajo hay por delante y te damos un plazo y un precio orientativos.",
+    "button": {
+      "label": "Enviar diagnóstico",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "El método: operación a operación | Cleriontax",
+    "description": "Cómo reconstruimos tu operativa cripto desde el dato bruto: ingesta, conciliación, clasificación fiscal operación a operación y cálculo FIFO con cada cifra trazable hasta su origen.",
+    "keywords": [
+      "reconciliación carteras cripto",
+      "trazabilidad criptomonedas hacienda",
+      "cálculo fifo criptomonedas",
+      "errores koinly hacienda",
+      "informe fiscal criptomonedas metodología"
+    ],
+    "canonical": "https://cleriontax.com/metodo"
+  }
+}

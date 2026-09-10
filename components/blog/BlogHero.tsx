@@ -15,10 +15,10 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
   return (
     <section
       id="hero-blog"
-      className="relative min-h-[600px] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#F8F9FA] to-white"
+      className="relative min-h-[600px] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-papel"
     >
       {/* Background Pattern/Image */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(27,32,66,0.08),_transparent_70%)]">
+      <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-[0.25]">
           <Image
             src="/images/illustrations/blog-fiscalidad-cripto.webp"
@@ -38,15 +38,15 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
           className="inline-flex flex-col items-center gap-4 animate-fade-in"
           style={{ animationDelay: '0.1s', animationFillMode: 'both' }}
         >
-          <span className="text-xs font-semibold text-navy tracking-wider uppercase">
+          <span className="text-xs font-semibold text-azul tracking-wider uppercase">
             {t('badge')}
           </span>
-          <div className="w-24 h-[2px] bg-red" />
+          <div className="w-24 h-[2px] bg-rojo" />
         </div>
 
         {/* Main Title (H1) */}
         <h1
-          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-navy leading-tight tracking-tight max-w-4xl animate-fade-in"
+          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl animate-fade-in"
           style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
         >
           {t('title')}
@@ -54,7 +54,7 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
 
         {/* Subtitle */}
         <p
-          className="text-lg md:text-xl text-gray-blue max-w-3xl leading-relaxed animate-fade-in"
+          className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed animate-fade-in"
           style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
         >
           {t('subtitle')}
@@ -65,23 +65,23 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
           className="flex flex-wrap justify-center gap-8 pt-8 animate-fade-in"
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
-          <div className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center">
-              <FileText className="w-6 h-6 text-navy" />
+          <div className="flex items-center gap-4 bg-blanco p-4 transition- duration-300">
+            <div className="w-12 h-12 bg-blanco flex items-center justify-center">
+              <FileText className="w-6 h-6 text-azul" />
             </div>
             <div className="text-left">
-              <div className="text-3xl font-bold text-navy">{postsCount}</div>
-              <div className="text-sm text-gray-blue">{t('stats.articles')}</div>
+              <div className="text-3xl font-bold text-azul">{postsCount}</div>
+              <div className="text-sm text-pizarra">{t('stats.articles')}</div>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-accent" />
+          <div className="flex items-center gap-4 bg-blanco p-4 transition- duration-300">
+            <div className="w-12 h-12 bg-blanco flex items-center justify-center">
+              <TrendingUp className="w-6 h-6 text-rojo" />
             </div>
             <div className="text-left">
-              <div className="text-3xl font-bold text-accent">{categoriesCount}</div>
-              <div className="text-sm text-gray-blue">{t('stats.categories')}</div>
+              <div className="text-3xl font-bold text-rojo">{categoriesCount}</div>
+              <div className="text-sm text-pizarra">{t('stats.categories')}</div>
             </div>
           </div>
         </div>
@@ -98,8 +98,8 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-navy/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-rojo/5"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-azul/5" style={{ animationDelay: '1s' }}></div>
 
       <style jsx>{`
         @keyframes fade-in {

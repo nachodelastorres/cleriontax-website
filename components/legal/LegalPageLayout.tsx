@@ -30,12 +30,12 @@ export default function LegalPageLayout({
   const t = useTranslations(translationKey);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-papel">
       {/* Header */}
-      <div className="bg-navy text-white py-16">
+      <div className="bg-azul text-blanco py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h1>
-          <p className="text-gray-300">
+          <p className="text-niebla">
             {t('lastUpdated')}: {lastUpdated}
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function LegalPageLayout({
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Introduction */}
-        <p className="text-lg text-gray-700 mb-10 leading-relaxed">
+        <p className="text-lg text-pizarra mb-10 leading-relaxed">
           {t('intro')}
         </p>
 
@@ -150,22 +150,22 @@ function Section({ t, sectionKey }: { t: ReturnType<typeof useTranslations>; sec
   } catch {}
 
   return (
-    <section className="border-b border-gray-200 pb-8 last:border-b-0">
-      <h2 className="text-xl font-semibold text-navy mb-4">{title}</h2>
-      <p className="text-gray-700 leading-relaxed mb-4">{content}</p>
+    <section className="border-b border-niebla pb-8 last:border-b-0">
+      <h2 className="text-xl font-semibold text-azul mb-4">{title}</h2>
+      <p className="text-pizarra leading-relaxed mb-4">{content}</p>
 
       {details && (
-        <div className="bg-gray-50 rounded-lg p-4 mb-4">
+        <div className="bg-papel p-4 mb-4">
           <ul className="space-y-2">
             {Object.entries(details).map(([key, value]) => (
-              <li key={key} className="text-gray-700">{value}</li>
+              <li key={key} className="text-pizarra">{value}</li>
             ))}
           </ul>
         </div>
       )}
 
       {items && (
-        <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+        <ul className="list-disc list-inside space-y-2 text-pizarra ml-4">
           {Object.entries(items).map(([key, value]) => (
             <li key={key}>{value}</li>
           ))}
@@ -173,7 +173,7 @@ function Section({ t, sectionKey }: { t: ReturnType<typeof useTranslations>; sec
       )}
 
       {browsers && (
-        <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-4">
+        <ul className="list-disc list-inside space-y-2 text-pizarra ml-4 mt-4">
           {Object.entries(browsers).map(([key, value]) => (
             <li key={key}>{value}</li>
           ))}
@@ -181,7 +181,7 @@ function Section({ t, sectionKey }: { t: ReturnType<typeof useTranslations>; sec
       )}
 
       {services && (
-        <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-4">
+        <ul className="list-disc list-inside space-y-2 text-pizarra ml-4 mt-4">
           {Object.entries(services).map(([key, value]) => (
             <li key={key}>{value}</li>
           ))}
@@ -189,23 +189,23 @@ function Section({ t, sectionKey }: { t: ReturnType<typeof useTranslations>; sec
       )}
 
       {prohibition && (
-        <p className="text-gray-700 leading-relaxed mt-4">{prohibition}</p>
+        <p className="text-pizarra leading-relaxed mt-4">{prohibition}</p>
       )}
 
       {disclaimer && (
-        <p className="text-gray-600 italic mt-4 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+        <p className="text-pizarra italic mt-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">
           {disclaimer}
         </p>
       )}
 
       {howTo && (
-        <p className="text-gray-700 leading-relaxed mt-4 bg-blue-50 p-4 rounded-lg">
+        <p className="text-pizarra leading-relaxed mt-4 bg-blue-50 p-4">
           {howTo}
         </p>
       )}
 
       {warning && (
-        <p className="text-amber-700 mt-4 bg-amber-50 p-4 rounded-lg border-l-4 border-amber-400">
+        <p className="text-amber-700 mt-4 bg-amber-50 p-4 border-l-4 border-amber-400">
           {warning}
         </p>
       )}

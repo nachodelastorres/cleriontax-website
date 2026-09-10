@@ -8,9 +8,6 @@ import BlogScrollSection from "@/components/home/BlogScrollSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
-// import Benefits from "@/components/home/Benefits";
-// import ServiceSteps from "@/components/home/ServiceSteps";
-// import CTASection from "@/components/home/CTASection";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -75,9 +72,6 @@ export default async function Home({ params }: Props) {
       <FAQSection />
       <BlogScrollSection locale={locale} />
       <FinalCTASection />
-      {/* <Benefits /> */}
-      {/* <ServiceSteps /> */}
-      {/* <CTASection /> */}
     </>
   );
 }

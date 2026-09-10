@@ -16,28 +16,28 @@ export default function SectionCard({
   variant = 'default'
 }: SectionCardProps) {
   const variantStyles = {
-    default: 'bg-white border border-neutral-200 shadow-md hover:shadow-lg',
-    gradient: 'bg-gradient-to-br from-accent/5 via-white to-accent/5 border border-accent/20 shadow-lg',
-    outlined: 'bg-white border-2 border-accent/30 shadow-sm hover:border-accent hover:shadow-md',
+    default: 'bg-blanco border border-niebla  ',
+    gradient: 'bg-papel border border-rojo/20 ',
+    outlined: 'bg-blanco border-2 border-rojo/30  hover:border-rojo ',
   };
 
   return (
-    <div className={`rounded-2xl p-6 my-6 transition-all ${variantStyles[variant]}`}>
+    <div className={` p-6 my-6 transition-all ${variantStyles[variant]}`}>
       {(icon || title) && (
         <div className="flex items-start gap-4 mb-4">
           {icon && (
-            <div className="flex-shrink-0 text-accent">
+            <div className="flex-shrink-0 text-rojo">
               {icon}
             </div>
           )}
           {title && (
-            <h3 className="text-xl font-bold text-navy flex-1">
+            <h3 className="text-xl font-bold text-azul flex-1">
               {title}
             </h3>
           )}
         </div>
       )}
-      <div className="text-neutral-700 leading-relaxed">
+      <div className="text-pizarra leading-relaxed">
         {children}
       </div>
     </div>

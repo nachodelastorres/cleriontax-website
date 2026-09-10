@@ -1,0 +1,218 @@
+{
+  "title": "Litigación fiscal de criptomonedas",
+  "slug": "litigacion-fiscal-criptomonedas",
+  "excerpt": "Defensa del contribuyente ante requerimientos, comprobaciones limitadas, inspecciones y sanciones de la AEAT relacionadas con criptoactivos. Contestamos dentro de plazo y construimos la prueba documental y on-chain que sostiene tu posición.",
+  "hero": {
+    "h1": "Litigación fiscal de criptomonedas",
+    "subheading": "Si tienes una notificación de la AEAT encima de la mesa, lo primero es el plazo. Contestamos requerimientos, presentamos alegaciones y recursos, y construimos la prueba documental y on-chain que respalda cada cifra.",
+    "cta": {
+      "label": "Cuéntanos tu caso",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    {
+      "id": "intro",
+      "label": "Introducción"
+    },
+    {
+      "id": "que-incluye",
+      "label": "Qué incluye"
+    },
+    {
+      "id": "como-trabajamos",
+      "label": "Cómo trabajamos"
+    },
+    {
+      "id": "por-que-elegirnos",
+      "label": "Por qué elegirnos"
+    },
+    {
+      "id": "casos-uso",
+      "label": "Casos de uso"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    },
+    {
+      "id": "cta",
+      "label": "Hablamos"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "h2": "Introducción",
+      "body": "Recibir una notificación de la Agencia Tributaria por tus criptoactivos no significa que hayas hecho algo mal. Significa que la AEAT tiene un dato que no cuadra con tu declaración, y que ahora te corresponde a ti explicar de dónde sale cada cifra. La diferencia entre un procedimiento que se cierra sin más y uno que acaba en liquidación y sanción está casi siempre en dos cosas: contestar dentro de plazo y poder demostrar el origen de cada operación.\n\nCon la entrada en vigor de DAC8 y el intercambio automático de información entre exchanges y administraciones, la AEAT ya no depende de que tú declares: cruza lo que le reportan las plataformas con lo que aparece en tu IRPF. Cuando esos dos números no coinciden, se abre el procedimiento. Y en criptoactivos hay muchísimas razones legítimas por las que pueden no coincidir: movimientos internos entre tus propias wallets contados como ventas, permutas no declaradas por desconocimiento, informes automáticos con errores de reconciliación, o exchanges desaparecidos de los que ya no puedes descargar el histórico.\n\nNuestro terreno aquí es el cumplimiento y la defensa de tu posición fiscal. No prometemos un resultado concreto ni anticipamos el sentido de una resolución: trabajamos sobre lo que sí se puede construir, que es una posición documentada, trazable y defendible."
+    },
+    {
+      "id": "que-incluye",
+      "h2": "Qué incluye el servicio",
+      "bullets": [
+        "<strong>Contestación a requerimientos de información:</strong> analizamos el alcance real de lo que se te pide, reconstruimos la operativa del ejercicio requerido y preparamos la respuesta con la documentación de respaldo, dentro del plazo concedido.",
+        "<strong>Comprobaciones limitadas y procedimientos de verificación:</strong> asistencia durante todo el procedimiento, control de los límites de lo que la Administración puede comprobar en cada tipo de actuación y respuesta a los requerimientos sucesivos.",
+        "<strong>Inspección tributaria:</strong> representación y asistencia ante el actuario, preparación de la documentación previa a cada comparecencia y seguimiento del expediente hasta el acta.",
+        "<strong>Alegaciones y recursos:</strong> alegaciones a la propuesta de liquidación, recurso de reposición y reclamación económico-administrativa ante el TEAR o el TEAC según cuantía y materia.",
+        "<strong>Recursos frente a sanciones:</strong> análisis del elemento subjetivo de la infracción, que en criptoactivos es donde suele estar la defensa: la interpretación razonable de la norma y la ausencia de ocultación.",
+        "<strong>Preparación de prueba documental y on-chain:</strong> reconstrucción del histórico de operaciones, identificación de movimientos internos, trazabilidad de wallet a wallet y elaboración del informe pericial que acompaña a las alegaciones.",
+        "<strong>Regularización voluntaria:</strong> cuando todavía no hay procedimiento abierto, análisis de la vía de complementaria y de sus consecuencias antes de que la Administración se adelante."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo trabajamos",
+      "steps": [
+        {
+          "title": "Lectura de la notificación y cómputo del plazo",
+          "body": "Lo primero es saber exactamente qué procedimiento se ha abierto, qué ejercicios abarca y cuántos días hábiles quedan. Un requerimiento de información, una comprobación limitada y una inspección tienen alcances y consecuencias muy distintos, y el plazo empieza a correr desde la notificación, no desde que la lees."
+        },
+        {
+          "title": "Reconstrucción de la operativa del ejercicio",
+          "body": "Consolidamos tus datos de exchanges, wallets y protocolos hasta obtener el histórico completo del periodo requerido. Aquí es donde suele aparecer el origen de la discrepancia: transferencias entre wallets propias contabilizadas como ventas, permutas no declaradas o rendimientos de staking sin imputar."
+        },
+        {
+          "title": "Contraste con lo declarado y cuantificación",
+          "body": "Comparamos la operativa real con lo que consta en tu declaración y con el dato que maneja la AEAT. Cuantificamos la diferencia, identificamos su causa y determinamos qué parte es un error real y qué parte es un problema de interpretación o de datos incompletos por parte de la Administración."
+        },
+        {
+          "title": "Estrategia y escrito de respuesta",
+          "body": "Definimos la posición a sostener y preparamos el escrito con su prueba documental. Te explicamos antes qué se va a alegar, qué respaldo tiene cada argumento y qué escenarios pueden abrirse después, incluidos los desfavorables."
+        },
+        {
+          "title": "Presentación y seguimiento del expediente",
+          "body": "Presentamos dentro de plazo y hacemos seguimiento del expediente hasta su resolución, respondiendo a los requerimientos sucesivos que puedan surgir y manteniéndote informado de cada movimiento."
+        },
+        {
+          "title": "Recurso, si procede",
+          "body": "Si la resolución es desfavorable, analizamos contigo si compensa recurrir en función de la cuantía, del fundamento y del coste del procedimiento, y preparamos el recurso de reposición o la reclamación económico-administrativa."
+        }
+      ]
+    },
+    {
+      "id": "por-que-elegirnos",
+      "h2": "Por qué elegirnos",
+      "bullets": [
+        "<strong>El dato y el criterio en el mismo sitio:</strong> la mayoría de los procedimientos por criptoactivos no se ganan con argumentación jurídica, sino demostrando de dónde sale cada euro. Reconstruimos la operativa nosotros mismos, sin depender de un informe automático de terceros.",
+        "<strong>Revisamos operación a operación:</strong> un informe generado por software es un punto de partida, nunca el entregable. En un procedimiento abierto, una reconciliación mal hecha es exactamente lo que la Administración va a discutir.",
+        "<strong>Trazabilidad on-chain:</strong> sabemos reconstruir el rastro de una wallet cuando el exchange ya no existe o el histórico descargable está incompleto, que es uno de los problemas más frecuentes en estos expedientes.",
+        "<strong>Plazos explícitos:</strong> te decimos desde el primer día qué días hábiles quedan, qué necesitamos de ti y en qué fecha tenemos que tener cerrada la respuesta.",
+        "<strong>Asesoramiento colegiado:</strong> el expediente lo lleva un asesor fiscal colegiado, con la responsabilidad profesional que eso implica.",
+        "<strong>Sin alarmismo:</strong> las sanciones se explican cuando son relevantes y con su fundamento, no como argumento de venta."
+      ]
+    },
+    {
+      "id": "casos-uso",
+      "h2": "Casos de uso",
+      "items": [
+        {
+          "title": "Requerimiento por diferencias entre lo reportado por el exchange y el IRPF",
+          "body": "El supuesto más habitual. La AEAT recibe del exchange el volumen operado y no encuentra correspondencia en la declaración. En muchos casos la diferencia no es una ganancia oculta, sino movimientos internos entre wallets del propio contribuyente que el reporte cuenta como operaciones. La defensa consiste en reconstruir el histórico completo y demostrar la titularidad de las direcciones de destino."
+        },
+        {
+          "title": "Ejercicios no declarados que afloran al declarar el actual",
+          "body": "Contribuyente que declara correctamente el ejercicio corriente y con ello hace visible una operativa anterior no declarada. Aquí la vía suele ser la regularización mediante complementaria antes de que se abra procedimiento, analizando el efecto de los recargos frente al de una liquidación con sanción."
+        },
+        {
+          "title": "Informe automático con errores de reconciliación aportado a la Administración",
+          "body": "El contribuyente contestó un primer requerimiento con un informe generado por software que contenía duplicados, permutas mal valoradas o coste de adquisición cero en tokens recibidos. La Administración lo toma como declaración propia. Rehacer la reconciliación y explicar documentalmente la discrepancia con lo ya aportado es un trabajo distinto y más delicado que hacerlo bien desde el principio."
+        },
+        {
+          "title": "Sanción por infracción con interpretación razonable de la norma",
+          "body": "Liquidación aceptada pero sanción recurrida. En criptoactivos, buena parte de la operativa —permutas, staking, airdrops, DeFi— ha carecido durante años de criterio administrativo claro. La ausencia de ocultación y la existencia de una interpretación razonable son el eje del recurso contra el elemento sancionador."
+        },
+        {
+          "title": "Inspección con requerimiento de histórico de un exchange desaparecido",
+          "body": "Se solicita documentación de una plataforma que ha cerrado y de la que ya no es posible descargar el histórico. La reconstrucción se apoya en la trazabilidad on-chain, los extractos bancarios de entrada y salida a euros y la prueba indiciaria coherente entre fuentes."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Cuánto tiempo tengo para contestar un requerimiento?",
+          "a": "El plazo habitual para contestar un requerimiento de información es de diez días hábiles desde la notificación, aunque varía según el tipo de procedimiento y lo que indique la propia notificación. El plazo corre desde la fecha de notificación, no desde que se abre el documento, y en las notificaciones electrónicas se entiende producida a los diez días naturales de su puesta a disposición si no se accede antes. Lo primero que hacemos al recibir un caso es computar la fecha límite real."
+        },
+        {
+          "q": "¿Qué diferencia hay entre un requerimiento, una comprobación limitada y una inspección?",
+          "a": "El requerimiento de información pide datos concretos y no implica necesariamente que se te esté comprobando. La comprobación limitada es un procedimiento de gestión con alcance acotado: la Administración puede revisar determinados elementos pero no puede examinar la contabilidad mercantil. La inspección tiene el alcance más amplio y la lleva un actuario. Cada una tiene consecuencias y plazos distintos, y responder a una como si fuera otra es un error frecuente."
+        },
+        {
+          "q": "¿Cuántos ejercicios atrás puede revisar la AEAT?",
+          "a": "El derecho de la Administración a liquidar prescribe a los cuatro años desde el fin del plazo de declaración, plazo que se interrumpe con cualquier actuación notificada. Existen supuestos en los que ese cómputo se altera, por lo que la prescripción concreta de tu caso hay que analizarla sobre las fechas reales del expediente."
+        },
+        {
+          "q": "¿Puedo contestar yo mismo y llamaros solo si se complica?",
+          "a": "Puedes, pero conviene saber que lo que aportas en la primera respuesta queda en el expediente y condiciona todo lo que venga después. Rectificar un informe ya aportado es más difícil que presentarlo bien la primera vez. Si vas a contestar por tu cuenta, al menos revisa que las cifras que aportas son reconstruibles y coherentes con lo declarado."
+        },
+        {
+          "q": "¿Qué pasa si no conservo el histórico completo de mis operaciones?",
+          "a": "Es una situación habitual, sobre todo con plataformas que han cerrado. La reconstrucción se apoya en lo que sí existe: trazabilidad on-chain de las wallets, extractos bancarios de las entradas y salidas a euros, correos de confirmación y datos parciales de terceros. No siempre se llega al cien por cien, pero sí a una posición documentada y coherente."
+        },
+        {
+          "q": "¿Trabajáis con otros despachos?",
+          "a": "Sí. Damos apoyo técnico a gestorías y despachos sin especialización en criptoactivos que llevan el procedimiento y necesitan la reconstrucción de la operativa y el informe pericial que la sostiene."
+        },
+        {
+          "q": "¿Podéis garantizarme que no habrá sanción?",
+          "a": "No. Nadie puede anticipar el sentido de una resolución, y desconfía de quien lo haga. Lo que sí podemos es construir la mejor posición documentada posible con los datos disponibles, explicarte con franqueza los escenarios que se abren —incluidos los desfavorables— y responder dentro de plazo, que es donde se pierden muchos expedientes."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "h2": "¿Hablamos?",
+      "body": "Si tienes una notificación de la AEAT encima de la mesa, lo primero es el plazo. Cuéntanos qué has recibido, de qué ejercicios se trata y cómo es tu operativa, y te decimos qué procedimiento se ha abierto, qué días hábiles quedan y qué necesitamos de ti. Si el plazo aprieta, llámanos directamente al +34 663 482 301.",
+      "button": {
+        "label": "Cuéntanos tu caso",
+        "href": "/contacto"
+      }
+    }
+  ],
+  "internal_links": [
+    {
+      "label": "Volver a todos los servicios",
+      "href": "/servicios"
+    },
+    {
+      "label": "Informe fiscal de criptomonedas",
+      "href": "/servicios/informe-fiscal-criptomonedas"
+    },
+    {
+      "label": "Declaración de la renta cripto",
+      "href": "/servicios/declarar-criptomonedas"
+    },
+    {
+      "label": "Asesoría fiscal de criptomonedas",
+      "href": "/servicios/asesoria-fiscal-criptomonedas"
+    }
+  ],
+  "seo": {
+    "title": "Litigación fiscal de criptomonedas | Defensa ante la AEAT | Cleriontax",
+    "description": "Defensa ante requerimientos, inspecciones y sanciones de la AEAT por criptomonedas. Contestamos dentro de plazo y construimos la prueba documental y on-chain que respalda tu posición.",
+    "keywords": [
+      "litigación fiscal criptomonedas",
+      "abogado fiscal criptomonedas",
+      "requerimiento hacienda criptomonedas",
+      "inspección hacienda criptomonedas",
+      "defensa hacienda criptomonedas",
+      "recurso sanción criptomonedas",
+      "reclamación económico-administrativa criptomonedas"
+    ],
+    "canonical": "https://cleriontax.com/servicios/litigacion-fiscal-criptomonedas"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Litigación fiscal de criptomonedas",
+    "serviceType": "Defensa del contribuyente en procedimientos tributarios sobre criptoactivos",
+    "provider": {
+      "@type": "Organization",
+      "name": "Cleriontax"
+    },
+    "areaServed": "España",
+    "description": "Defensa del contribuyente ante requerimientos, comprobaciones limitadas, inspecciones y sanciones de la AEAT relacionadas con criptoactivos, incluyendo contestación a requerimientos, alegaciones, recursos y preparación de prueba documental y on-chain."
+  }
+}

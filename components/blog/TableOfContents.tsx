@@ -86,10 +86,10 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
 
   return (
     <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
-      <div className="bg-white rounded-2xl shadow-lg border border-neutral-200 p-6">
-        <div className="flex items-center gap-3 mb-4 pb-4 border-b border-neutral-200">
-          <ListBulletIcon className="w-5 h-5 text-accent" />
-          <h3 className="text-lg font-bold text-navy">{t('tableOfContents')}</h3>
+      <div className="bg-blanco border border-niebla p-6">
+        <div className="flex items-center gap-3 mb-4 pb-4 border-b border-niebla">
+          <ListBulletIcon className="w-5 h-5 text-rojo" />
+          <h3 className="text-lg font-bold text-azul">{t('tableOfContents')}</h3>
         </div>
 
         <nav className="space-y-2">
@@ -98,13 +98,13 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
               key={index}
               onClick={() => handleClick(heading.id)}
               className={`
-                w-full text-left px-3 py-2 rounded-lg transition-all text-sm
-                ${
-                  activeId === heading.id
-                    ? 'bg-accent text-white font-semibold shadow-md'
-                    : 'text-neutral-700 hover:bg-accent/10 hover:text-accent-dark font-medium'
-                }
-              `}
+ w-full text-left px-3 py-2 transition-all text-sm
+ ${
+ activeId === heading.id
+ ? 'bg-rojo text-blanco font-semibold '
+ : 'text-pizarra hover:bg-rojo/10 hover:text-rojo font-medium'
+ }
+ `}
             >
               <span className="line-clamp-2">{heading.text}</span>
             </button>
@@ -112,14 +112,14 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
         </nav>
 
         {/* Progress indicator */}
-        <div className="mt-6 pt-4 border-t border-neutral-200">
-          <div className="flex items-center justify-between text-xs text-neutral-500 mb-2">
+        <div className="mt-6 pt-4 border-t border-niebla">
+          <div className="flex items-center justify-between text-xs text-pizarra mb-2">
             <span>{t('readingProgress')}</span>
             <span>{Math.round(((headings.findIndex(h => h.id === activeId) + 1) / headings.length) * 100)}%</span>
           </div>
-          <div className="w-full h-2 bg-neutral-100 rounded-full overflow-hidden">
+          <div className="w-full h-2 bg-papel overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-accent to-accent-dark transition-all duration-300"
+              className="h-full bg-rojo transition-all duration-300"
               style={{
                 width: `${((headings.findIndex(h => h.id === activeId) + 1) / headings.length) * 100}%`
               }}

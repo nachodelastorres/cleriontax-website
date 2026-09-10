@@ -22,9 +22,9 @@ interface ServiceSchemaConfig {
  * Service type mapping for better SEO
  */
 const serviceTypeCategories: Record<string, string> = {
-  'analisis-carteras': 'Financial Advisory Service',
-  'liquidaciones-fiscales': 'Tax Preparation Service',
-  'seguimiento-cartera': 'Financial Monitoring Service',
+  'informe-fiscal-criptomonedas': 'Financial Data Reconciliation Service',
+  'declarar-criptomonedas': 'Tax Preparation Service',
+  'litigacion-fiscal-criptomonedas': 'Tax Litigation Service',
   'asesoria-fiscal-criptomonedas': 'Tax Advisory Service'
 };
 
@@ -181,26 +181,31 @@ export function generateDetailedServiceSchema(config: {
 /**
  * Service slug to name mapping for Spanish
  */
+/**
+ * Las cuatro líneas del manual de marca v1.1, §02.
+ * El nombre visible es el que el cliente usa cuando busca el servicio; el
+ * método —la reconciliación de carteras— se explica dentro de la página.
+ */
 export const serviceNames: Record<string, Record<Locale, string>> = {
-  'analisis-carteras': {
-    es: 'Análisis de Carteras de Criptomonedas',
-    en: 'Cryptocurrency Portfolio Analysis',
-    ca: 'Anàlisi de Carteres de Criptomonedes'
+  'informe-fiscal-criptomonedas': {
+    es: 'Informe fiscal de criptomonedas',
+    en: 'Cryptocurrency Tax Report',
+    ca: 'Informe fiscal de criptomonedes'
   },
-  'liquidaciones-fiscales': {
-    es: 'Liquidaciones Fiscales y Modelos AEAT',
-    en: 'Tax Settlements and AEAT Forms',
-    ca: 'Liquidacions Fiscals i Models AEAT'
+  'declarar-criptomonedas': {
+    es: 'Declaración de la renta cripto',
+    en: 'Crypto Income Tax Return',
+    ca: 'Declaració de la renda cripto'
   },
-  'seguimiento-cartera': {
-    es: 'Seguimiento de Cartera en Tiempo Real',
-    en: 'Real-Time Portfolio Tracking',
-    ca: 'Seguiment de Cartera en Temps Real'
+  'litigacion-fiscal-criptomonedas': {
+    es: 'Litigación fiscal de criptomonedas',
+    en: 'Crypto Tax Litigation',
+    ca: 'Litigació fiscal de criptomonedes'
   },
   'asesoria-fiscal-criptomonedas': {
-    es: 'Asesoría Fiscal Especializada en Criptoactivos',
-    en: 'Specialized Tax Advisory for Crypto Assets',
-    ca: 'Assessoria Fiscal Especialitzada en Criptoactius'
+    es: 'Asesoría fiscal de criptomonedas',
+    en: 'Cryptocurrency Tax Advisory',
+    ca: 'Assessoria fiscal de criptomonedes'
   }
 };
 

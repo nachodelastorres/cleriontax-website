@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations, useLocale } from 'next-intl';
 import { Plus, Minus, MessageCircle } from "lucide-react";
 import { useState } from "react";
@@ -72,11 +71,7 @@ export default function FAQSection() {
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
             className="text-center mb-16 space-y-4"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#2B2D42] leading-tight">
@@ -85,7 +80,7 @@ export default function FAQSection() {
             <p className="text-lg md:text-xl text-[#6B7280] max-w-4xl mx-auto">
               {t('subtitle')}
             </p>
-          </motion.div>
+          </div>
 
           {/* FAQ Accordion */}
           <div className="space-y-4 mb-12">
@@ -93,17 +88,13 @@ export default function FAQSection() {
               const isOpen = openIndex === index;
 
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
                 >
-                  <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden">
+                  <div className="bg-blanco border border-niebla overflow-hidden">
                     <button
                       onClick={() => toggleFAQ(index)}
-                      className="w-full px-6 md:px-8 py-6 flex items-start justify-between gap-4 text-left hover:bg-neutral-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-navy/20"
+                      className="w-full px-6 md:px-8 py-6 flex items-start justify-between gap-4 text-left hover:bg-papel transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-azul/20"
                       aria-expanded={isOpen}
                       aria-controls={`faq-answer-${index}`}
                     >
@@ -112,9 +103,9 @@ export default function FAQSection() {
                       </h3>
                       <div className="flex-shrink-0 mt-1">
                         {isOpen ? (
-                          <Minus className="w-6 h-6 text-navy transition-transform duration-300" />
+                          <Minus className="w-6 h-6 text-azul transition-transform duration-300" />
                         ) : (
-                          <Plus className="w-6 h-6 text-navy transition-transform duration-300" />
+                          <Plus className="w-6 h-6 text-azul transition-transform duration-300" />
                         )}
                       </div>
                     </button>
@@ -122,8 +113,8 @@ export default function FAQSection() {
                     <div
                       id={`faq-answer-${index}`}
                       className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                      }`}
+ isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+ }`}
                     >
                       <div className="px-6 md:px-8 pb-6 pt-2">
                         <p className="text-base text-[#6B7280] leading-relaxed">
@@ -132,36 +123,32 @@ export default function FAQSection() {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
           </div>
 
           {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+          <div
             className="text-center"
           >
-            <div className="inline-flex flex-col items-center gap-4 bg-white rounded-2xl px-8 py-6 shadow-sm border border-neutral-200">
+            <div className="inline-flex flex-col items-center gap-4 bg-blanco px-8 py-6 border border-niebla">
               <div className="flex items-center gap-3">
-                <MessageCircle className="w-6 h-6 text-navy" />
+                <MessageCircle className="w-6 h-6 text-azul" />
                 <p className="text-lg font-medium text-[#2B2D42]">
                   {t('cta.text')}
                 </p>
               </div>
               <ButtonLink
-                variant="primary"
+                variant="principal"
                 size="md"
                 href="/contacto"
-                className="shadow-md"
+                className=""
               >
                 {t('cta.button')}
               </ButtonLink>
             </div>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

@@ -14,7 +14,34 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/:locale/servicios/asesoria-fiscal',
+        // El parámetro va acotado a los idiomas reales a propósito: sin la
+        // restricción, `:locale` casa con cualquier primer segmento, `api`
+        // incluido, y /api/... acaba redirigido a una ruta que no existe.
+        source: '/:locale(es|en|ca)/servicios/asesoria-fiscal',
+        destination: '/:locale/servicios/asesoria-fiscal-criptomonedas',
+        permanent: true,
+      },
+      /*
+       * Renombrado de las cuatro líneas de servicio (manual v1.1, §02).
+       * Los slugs antiguos describían el servicio hacia dentro; los nuevos
+       * usan la forma con la que el cliente lo busca. Permanentes porque el
+       * cambio es definitivo, y con el parámetro de idioma acotado para que
+       * no capturen /api ni ningún otro primer segmento.
+       */
+      {
+        source: '/:locale(es|en|ca)/servicios/analisis-carteras',
+        destination: '/:locale/servicios/informe-fiscal-criptomonedas',
+        permanent: true,
+      },
+      {
+        source: '/:locale(es|en|ca)/servicios/liquidaciones-fiscales',
+        destination: '/:locale/servicios/declarar-criptomonedas',
+        permanent: true,
+      },
+      {
+        // Seguimiento de cartera se absorbe como prestación dentro de
+        // asesoría fiscal: cuatro líneas se recuerdan, cinco se diluyen.
+        source: '/:locale(es|en|ca)/servicios/seguimiento-cartera',
         destination: '/:locale/servicios/asesoria-fiscal-criptomonedas',
         permanent: true,
       },
@@ -25,7 +52,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/:locale/contact',
+        source: '/:locale(es|en|ca)/contact',
         destination: '/:locale/contacto',
         permanent: true,
       },

@@ -74,12 +74,12 @@ export default async function ContactoPage({ params }: Props) {
       <HeroContact />
 
       {/* Contact Form and Info */}
-      <section id="contact-form" className="py-16 md:py-24 bg-white">
+      <section id="contact-form" className="py-16 md:py-24 bg-blanco">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form - 2/3 width */}
             <div className="lg:col-span-2">
-              <div className="bg-white border border-neutral-200 rounded-2xl p-8 shadow-lg">
+              <div className="bg-blanco border border-niebla p-8">
                 <ContactForm />
               </div>
             </div>

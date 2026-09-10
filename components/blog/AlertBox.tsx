@@ -39,10 +39,10 @@ const alertStyles = {
     iconComponent: CheckCircleIcon,
   },
   error: {
-    container: 'bg-red-50 border-red-400',
-    icon: 'text-red-600',
-    title: 'text-red-900',
-    text: 'text-red-800',
+    container: 'bg-rojo/10 border-rojo',
+    icon: 'text-rojo',
+    title: 'text-rojo',
+    text: 'text-rojo',
     iconComponent: XCircleIcon,
   },
   tip: {
@@ -59,7 +59,7 @@ export default function AlertBox({ type = 'info', title, children }: AlertBoxPro
   const IconComponent = styles.iconComponent;
 
   return (
-    <div className={`flex gap-4 ${styles.container} border-l-4 rounded-r-xl p-6 my-6 shadow-md`}>
+    <div className={`flex gap-4 ${styles.container} border-l-4 p-6 my-6 `}>
       <div className={`flex-shrink-0 ${styles.icon}`}>
         <IconComponent className="w-6 h-6" />
       </div>

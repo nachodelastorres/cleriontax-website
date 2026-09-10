@@ -91,16 +91,16 @@ export default async function SobreNosotrosPage({ params }: Props) {
       <DualitySection />
 
       {/* Values Section - SEO Optimized */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-neutral-50 to-white">
+      <section className="py-20 md:py-28 bg-papel">
         <Container>
           <div className="max-w-6xl mx-auto">
             {/* Header with SEO-rich content */}
             <div className="text-center mb-16 space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-azul mb-6">
                 {t('values.title')}
               </h2>
-              <p className="text-xl md:text-2xl text-gray-blue max-w-4xl mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: t('valuesSection.intro1') }} />
-              <p className="text-base md:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: t('valuesSection.intro2') }} />
+              <p className="text-xl md:text-2xl text-pizarra max-w-4xl mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: t('valuesSection.intro1') }} />
+              <p className="text-base md:text-lg text-pizarra max-w-3xl mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: t('valuesSection.intro2') }} />
             </div>
 
             {/* Values Grid with SEO-enriched content */}
@@ -109,14 +109,14 @@ export default async function SobreNosotrosPage({ params }: Props) {
                 const Icon = valueIcons[index];
                 return (
                   <div key={key} className="group">
-                    <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 h-full border border-neutral-200 hover:border-accent/30">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-white shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="w-8 h-8 text-accent" strokeWidth={2} />
+                    <div className="bg-blanco p-8 transition-all duration-300 h-full border border-niebla hover:border-rojo/30">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-blanco mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-8 h-8 text-rojo" strokeWidth={2} />
                       </div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-navy mb-4">
+                      <h3 className="text-2xl md:text-3xl font-bold text-azul mb-4">
                         {t(`values.${key}.title`)}
                       </h3>
-                      <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
+                      <p className="text-base md:text-lg text-pizarra leading-relaxed">
                         {t(`values.${key}.description`)}
                       </p>
                     </div>
@@ -126,8 +126,8 @@ export default async function SobreNosotrosPage({ params }: Props) {
             </div>
 
             {/* Additional SEO-rich paragraph */}
-            <div className="bg-navy/5 rounded-2xl p-8 md:p-12 border border-navy/10">
-              <p className="text-base md:text-lg text-neutral-700 leading-relaxed text-center max-w-5xl mx-auto" dangerouslySetInnerHTML={{ __html: t('valuesSection.closingText') }} />
+            <div className="bg-azul/5 p-8 md:p-12 border border-azul/10">
+              <p className="text-base md:text-lg text-pizarra leading-relaxed text-center max-w-5xl mx-auto" dangerouslySetInnerHTML={{ __html: t('valuesSection.closingText') }} />
             </div>
           </div>
         </Container>

@@ -11,13 +11,34 @@
     }
   },
   "toc": [
-    { "id": "intro", "label": "Introduction" },
-    { "id": "que-incluye", "label": "What's included" },
-    { "id": "como-trabajamos", "label": "How we work" },
-    { "id": "por-que-elegirnos", "label": "Why choose us" },
-    { "id": "casos-uso", "label": "Use cases" },
-    { "id": "faq", "label": "Frequently asked questions" },
-    { "id": "cta", "label": "Request evaluation" }
+    {
+      "id": "intro",
+      "label": "Introduction"
+    },
+    {
+      "id": "que-incluye",
+      "label": "What's included"
+    },
+    {
+      "id": "como-trabajamos",
+      "label": "How we work"
+    },
+    {
+      "id": "por-que-elegirnos",
+      "label": "Why choose us"
+    },
+    {
+      "id": "casos-uso",
+      "label": "Use cases"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    },
+    {
+      "id": "cta",
+      "label": "Request evaluation"
+    }
   ],
   "sections": [
     {
@@ -129,15 +150,34 @@
     }
   ],
   "internal_links": [
-    { "label": "Back to all services", "href": "/servicios" },
-    { "label": "Portfolio Analysis", "href": "/servicios/analisis-carteras" },
-    { "label": "Tax Settlements", "href": "/servicios/liquidaciones-fiscales" },
-    { "label": "Portfolio Tracking", "href": "/servicios/seguimiento-cartera" }
+    {
+      "label": "Back to all services",
+      "href": "/servicios"
+    },
+    {
+      "label": "Cryptocurrency Tax Report",
+      "href": "/servicios/informe-fiscal-criptomonedas"
+    },
+    {
+      "label": "Crypto Income Tax Return",
+      "href": "/servicios/declarar-criptomonedas"
+    },
+    {
+      "label": "Crypto Tax Litigation",
+      "href": "/servicios/litigacion-fiscal-criptomonedas"
+    }
   ],
   "seo": {
     "title": "Specialized Crypto Tax Advisory | Cleriontax",
     "description": "Technical 1:1 sessions on crypto taxation. Questions about AEAT forms, tax requirements and compliance. No investment advice.",
-    "keywords": ["crypto tax advisory", "crypto tax consulting", "AEAT crypto requirement", "form 721 advisory", "DGT cryptoassets", "crypto tax compliance"],
+    "keywords": [
+      "crypto tax advisory",
+      "crypto tax consulting",
+      "AEAT crypto requirement",
+      "form 721 advisory",
+      "DGT cryptoassets",
+      "crypto tax compliance"
+    ],
     "canonical": "https://cleriontax.com/servicios/asesoria-fiscal-criptomonedas"
   },
   "schema_org": {
@@ -145,9 +185,11 @@
     "@type": "Service",
     "name": "Specialized Tax Advisory for Crypto Assets",
     "serviceType": "Technical Tax Consulting for Cryptocurrency Investors",
-    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "provider": {
+      "@type": "Organization",
+      "name": "Cleriontax"
+    },
     "areaServed": "Spain",
     "description": "Technical tax advisory service specialized in crypto assets through personalized 1:1 sessions. Resolution of questions about AEAT regulations, tax forms, Tax Agency requests and tax compliance. No investment advice."
   }
 }
-

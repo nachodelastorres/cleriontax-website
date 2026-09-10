@@ -12,17 +12,17 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
     return (
       <div className="w-full">
         {label && (
-          <label className="block text-sm font-medium text-neutral-700 mb-2">
+          <label className="block text-nota font-semibold text-azul mb-2">
             {label}
-            {props.required && <span className="text-error ml-1">*</span>}
+            {props.required && <span className="text-rojo ml-1">*</span>}
           </label>
         )}
         <select
           className={cn(
-            "w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900",
-            "focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20",
+            "w-full border border-niebla bg-blanco px-4 py-2.5 text-azul",
+            "focus:border-rojo focus:outline-none focus:ring-2 focus:ring-rojo/20",
             "disabled:cursor-not-allowed disabled:opacity-50",
-            error && "border-error focus:border-error focus:ring-error/20",
+            error && "border-rojo focus:border-rojo focus:ring-rojo/20",
             className
           )}
           ref={ref}
@@ -35,7 +35,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
           ))}
         </select>
         {error && (
-          <p className="mt-1.5 text-sm text-error">{error}</p>
+          <p className="mt-1.5 text-nota text-rojo">{error}</p>
         )}
       </div>
     );

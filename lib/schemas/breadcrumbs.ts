@@ -8,7 +8,7 @@ import type { Locale, BreadcrumbItem } from './types';
 
 interface BreadcrumbConfig {
   locale: Locale;
-  path: string; // e.g., '/es/servicios/analisis-carteras'
+  path: string; // e.g., '/es/servicios/informe-fiscal-criptomonedas'
   customLabels?: Record<string, string>; // Custom labels for specific paths
   baseUrl?: string;
 }
@@ -22,30 +22,30 @@ const defaultLabels: Record<Locale, Record<string, string>> = {
     'blog': 'Blog',
     'sobre-nosotros': 'Sobre Nosotros',
     'contacto': 'Contacto',
-    'analisis-carteras': 'Análisis de Carteras',
-    'liquidaciones-fiscales': 'Liquidaciones Fiscales',
-    'seguimiento-cartera': 'Seguimiento de Cartera',
-    'asesoria-fiscal-criptomonedas': 'Asesoría Fiscal Criptomonedas'
+    'informe-fiscal-criptomonedas': 'Informe fiscal de criptomonedas',
+    'declarar-criptomonedas': 'Declaración de la renta cripto',
+    'litigacion-fiscal-criptomonedas': 'Litigación fiscal de criptomonedas',
+    'asesoria-fiscal-criptomonedas': 'Asesoría fiscal de criptomonedas'
   },
   en: {
     'servicios': 'Services',
     'blog': 'Blog',
     'sobre-nosotros': 'About Us',
     'contacto': 'Contact',
-    'analisis-carteras': 'Portfolio Analysis',
-    'liquidaciones-fiscales': 'Tax Settlements',
-    'seguimiento-cartera': 'Portfolio Tracking',
-    'asesoria-fiscal-criptomonedas': 'Crypto Tax Advisory'
+    'informe-fiscal-criptomonedas': 'Cryptocurrency Tax Report',
+    'declarar-criptomonedas': 'Crypto Income Tax Return',
+    'litigacion-fiscal-criptomonedas': 'Crypto Tax Litigation',
+    'asesoria-fiscal-criptomonedas': 'Cryptocurrency Tax Advisory'
   },
   ca: {
     'servicios': 'Serveis',
     'blog': 'Blog',
     'sobre-nosotros': 'Sobre Nosaltres',
     'contacto': 'Contacte',
-    'analisis-carteras': 'Anàlisi de Carteres',
-    'liquidaciones-fiscales': 'Liquidacions Fiscals',
-    'seguimiento-cartera': 'Seguiment de Cartera',
-    'asesoria-fiscal-criptomonedas': 'Assessoria Fiscal Criptomonedes'
+    'informe-fiscal-criptomonedas': 'Informe fiscal de criptomonedes',
+    'declarar-criptomonedas': 'Declaració de la renda cripto',
+    'litigacion-fiscal-criptomonedas': 'Litigació fiscal de criptomonedes',
+    'asesoria-fiscal-criptomonedas': 'Assessoria fiscal de criptomonedes'
   }
 };
 
@@ -64,7 +64,7 @@ const homeLabels: Record<Locale, string> = {
  * @example
  * generateBreadcrumbSchema({
  *   locale: 'es',
- *   path: '/es/servicios/analisis-carteras',
+ *   path: '/es/servicios/informe-fiscal-criptomonedas',
  *   baseUrl: 'https://www.cleriontax.com'
  * })
  *
@@ -123,7 +123,7 @@ export function generateBreadcrumbSchema(
 
 /**
  * Capitalizes and formats a URL segment into a readable label
- * Converts 'analisis-carteras' to 'Analisis Carteras'
+ * Converts 'informe-fiscal-criptomonedas' to 'Informe Fiscal Criptomonedas'
  */
 function capitalizeSegment(segment: string): string {
   return segment
@@ -191,7 +191,7 @@ export function generateBlogBreadcrumbSchema(config: {
  * @example
  * generateServiceBreadcrumbSchema({
  *   locale: 'es',
- *   serviceSlug: 'analisis-carteras',
+ *   serviceSlug: 'informe-fiscal-criptomonedas',
  *   serviceTitle: 'Análisis de Carteras de Criptomonedas',
  *   baseUrl: 'https://www.cleriontax.com'
  * })

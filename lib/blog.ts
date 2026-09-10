@@ -154,7 +154,12 @@ export async function getBlogPostBySlug(slug: string, locale: string = 'es'): Pr
       image: postMetadata.image,
       seo: seo,
       featured: postMetadata.featured,
-      layoutType: (postMetadata as any).layoutType || 'magazine'
+      layoutType: (postMetadata as any).layoutType || 'magazine',
+      // El cluster y los relacionados viven en metadata.json y se perdían aquí:
+      // sin ellos la sección de cluster del artículo no llegaba a renderizarse.
+      cluster: (postMetadata as any).cluster,
+      relatedPosts: (postMetadata as any).relatedPosts,
+      aiOptimized: (postMetadata as any).aiOptimized
     };
   } catch (error) {
     console.error(`Error loading blog post ${postMetadata.id}:`, error);

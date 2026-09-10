@@ -2,27 +2,33 @@ import { ButtonHTMLAttributes, forwardRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
+/**
+ * Botón — Manual de marca §17. Mismas variantes que ButtonLink, para que un
+ * envío de formulario y un enlace de acción pesen igual en la página.
+ */
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rojo focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        primary:
-          "bg-navy text-white hover:bg-navy-darker shadow-md hover:shadow-lg",
-        secondary:
-          "bg-red text-white hover:bg-burgundy-dark shadow-md hover:shadow-lg",
-        outline:
-          "border-2 border-navy text-navy hover:bg-navy hover:text-white",
-        ghost: "hover:bg-neutral-100 text-navy",
+        /** Acción principal. Una por bloque. */
+        principal: "bg-rojo text-blanco hover:bg-rojo/90",
+        /** Acción secundaria sobre fondo claro. */
+        secundaria: "border-2 border-azul text-azul hover:bg-azul hover:text-blanco",
+        /** Acción secundaria sobre azul o sobre fotografía oscura. */
+        "secundaria-inversa":
+          "border-2 border-blanco text-blanco hover:bg-blanco hover:text-azul",
+        /** Enlace de apoyo, sin peso de botón. */
+        ghost: "text-azul hover:bg-papel",
       },
       size: {
-        sm: "h-9 px-4 text-sm",
-        md: "h-11 px-6 text-base",
-        lg: "h-14 px-8 text-lg",
+        sm: "h-9 px-4 text-nota",
+        md: "h-11 px-6 text-lectura",
+        lg: "h-14 px-8 text-subtitulo",
       },
     },
     defaultVariants: {
-      variant: "primary",
+      variant: "principal",
       size: "md",
     },
   }

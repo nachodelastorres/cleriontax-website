@@ -1,0 +1,136 @@
+{
+  "title": "Me han sancionado por mis criptomonedas y quiero recurrir",
+  "slug": "recurrir-una-sancion",
+  "excerpt": "La sanción se defiende aparte de la liquidación. Qué se puede rebatir, con qué plazos y por qué en criptoactivos la interpretación razonable de la norma es un argumento real.",
+  "hero": {
+    "etiqueta": "Tienes un plazo corriendo",
+    "h1": "Aceptar la liquidación no te obliga a aceptar la sanción",
+    "subheading": "Son dos expedientes distintos y se defienden por separado. Puede que la cuota esté bien calculada y aun así la sanción no proceda, porque para sancionar hace falta algo más que haber declarado de menos.",
+    "cta": { "label": "Llámanos: +34 663 482 301", "href": "tel:+34663482301" },
+    "secundaria": { "label": "Cuéntanos tu caso", "href": "/contacto" }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "Qué te ha llegado" },
+    { "id": "dos-cosas", "label": "Dos expedientes" },
+    { "id": "el-reloj", "label": "Los plazos" },
+    { "id": "argumentos", "label": "Qué se alega" },
+    { "id": "como-resolvemos", "label": "Cómo lo hacemos" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "Qué te ha llegado",
+      "fondo": "blanco",
+      "body": "Has recibido una liquidación —lo que la Administración calcula que debías haber pagado— y, junto a ella o después, el inicio de un expediente sancionador. Puede venir de un requerimiento que contestaste tú, de una comprobación o de una inspección.\n\nLo primero que conviene entender es que no son lo mismo. La liquidación corrige la cuota. La sanción castiga una conducta, y para imponerla la Administración tiene que motivar que hubo culpabilidad, aunque sea a título de simple negligencia. No basta con constatar que declaraste de menos.\n\nEn criptoactivos ese punto es especialmente discutible, y no por retórica: durante años buena parte de la operativa —permutas, staking, airdrops, DeFi— careció de criterio administrativo claro y publicado."
+    },
+    {
+      "id": "dos-cosas",
+      "h2": "Dos expedientes, dos decisiones",
+      "fondo": "papel",
+      "entrada": "Se pueden combinar: hay casos en que conviene aceptar la cuota y pelear solo la sanción.",
+      "columnas": [
+        {
+          "titulo": "La liquidación",
+          "correcta": true,
+          "items": [
+            "Corrige la cuota del ejercicio",
+            "Se discute con cifras: reconstruyendo la operativa y demostrando el origen de cada euro",
+            "Si la Administración partió de datos incompletos, ahí está la defensa",
+            "Aceptarla puede tener efectos de reducción sobre la sanción, y conviene valorarlo antes"
+          ]
+        },
+        {
+          "titulo": "La sanción",
+          "correcta": false,
+          "items": [
+            "Castiga la conducta, no el importe",
+            "Exige que la Administración motive la culpabilidad, aunque sea por negligencia",
+            "Se rebate con interpretación razonable de la norma y ausencia de ocultación",
+            "Va por su propio expediente y con sus propios plazos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el-reloj",
+      "h2": "Los plazos",
+      "fondo": "blanco",
+      "entrada": "Las fechas exactas dependen de tu notificación. Este es el orden habitual.",
+      "hitos": [
+        { "cuando": "Notificación", "titulo": "Llega la propuesta o el acuerdo", "body": "Desde aquí corren todos los plazos. Anota la fecha de notificación, no la de lectura." },
+        { "cuando": "Alegaciones", "titulo": "Plazo para alegar", "body": "La propia notificación indica el plazo concedido. Es el momento más barato de defenderse, porque todavía no hay resolución firme." },
+        { "cuando": "1 mes", "titulo": "Recurso de reposición o reclamación económico-administrativa", "body": "Una vez notificada la resolución, el plazo general para recurrir en vía administrativa es de un mes. Reposición y reclamación son alternativas y hay que elegir." },
+        { "cuando": "Vencimiento", "titulo": "La resolución gana firmeza", "body": "Si no se recurre en plazo, la sanción queda firme y las vías posteriores se estrechan mucho.", "critico": true }
+      ]
+    },
+    {
+      "id": "argumentos",
+      "h2": "Qué se alega en una sanción por criptoactivos",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>Interpretación razonable de la norma:</strong> si el criterio administrativo no estaba publicado o era contradictorio en la fecha de la declaración, la conducta no es sancionable por el mero hecho de no coincidir con el criterio actual.",
+        "<strong>Ausencia de ocultación:</strong> operaste en plataformas que reportan, moviste fondos por tu banco y no usaste estructuras opacas. Eso pesa.",
+        "<strong>Falta de motivación de la culpabilidad:</strong> los acuerdos sancionadores que se limitan a describir el resultado sin razonar la conducta son atacables por esa razón.",
+        "<strong>Error material en la base:</strong> si la liquidación parte de movimientos internos entre wallets propias contados como ventas, la base de la sanción está mal calculada de origen.",
+        "<strong>Diligencia acreditada:</strong> haber contratado asesoramiento, haber pedido información o haber declarado otros ejercicios correctamente son hechos que se aportan.",
+        "<strong>Proporcionalidad y graduación:</strong> revisión de los criterios de graduación aplicados y de si concurren las circunstancias que la Administración ha considerado."
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Cómo lo hacemos",
+      "steps": [
+        { "title": "Separamos qué se discute", "body": "Revisamos si la cuota está bien calculada y si la sanción está bien motivada. Son análisis distintos y pueden llevar a decisiones distintas." },
+        { "title": "Reconstruimos la base", "body": "Si la liquidación parte de datos incompletos, se demuestra con la operativa rehecha. Muchas sanciones se caen porque la base sobre la que se calculan está inflada." },
+        { "title": "Elegimos la vía", "body": "Reposición o reclamación económico-administrativa, según cuantía, materia y estrategia. Son excluyentes, así que elegir mal cierra puertas." },
+        { "title": "Redactamos y presentamos en plazo", "body": "Con la prueba documental y on-chain que sostenga cada alegación, y explicándote antes qué se sostiene y con qué respaldo." },
+        { "title": "Seguimos hasta la resolución", "body": "Y valoramos contigo, con la resolución delante, si compensa seguir." }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Merece la pena recurrir o sale más caro?",
+          "a": "Depende de la cuantía y del fundamento, y es exactamente lo que analizamos antes de recomendarte nada. Hay casos en que el coste del procedimiento no compensa el importe en juego, y te lo diremos. No recurrimos por recurrir."
+        },
+        {
+          "q": "¿Puedo aceptar la liquidación y recurrir solo la sanción?",
+          "a": "Sí, y en criptoactivos es una estrategia frecuente: la cuota puede estar bien calculada y la sanción no estar motivada. Ahora bien, conformarse con la liquidación puede tener efectos sobre las reducciones aplicables a la sanción, así que la decisión se toma con los dos números delante."
+        },
+        {
+          "q": "¿Recurrir suspende el pago?",
+          "a": "La suspensión de la ejecución no es automática y suele requerir garantía, aunque en materia sancionadora el régimen tiene particularidades. Es de lo primero que hay que resolver, porque afecta a tu tesorería mientras dura el procedimiento."
+        },
+        {
+          "q": "¿Y si ya se me pasó el plazo?",
+          "a": "Las vías se estrechan mucho, pero no siempre desaparecen: existen procedimientos especiales de revisión con requisitos estrictos. Merece la pena mirarlo, aunque conviene ir sin expectativas."
+        },
+        {
+          "q": "¿Podéis garantizarme que la sanción se anula?",
+          "a": "No, y desconfía de quien te lo garantice. No publicamos tasas de éxito ni anticipamos el sentido de una resolución. Lo que hacemos es construir la mejor posición documentada posible y decirte con franqueza cómo la vemos."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Antes de nada, la fecha",
+    "body": "Dinos qué has recibido exactamente y en qué fecha te lo notificaron. Con eso sabemos qué plazo tienes, si conviene alegar o recurrir y qué parte del expediente tiene recorrido.",
+    "button": { "label": "Cuéntanos tu caso", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Recurrir una sanción de Hacienda por criptomonedas | Cleriontax",
+    "description": "La sanción se defiende aparte de la liquidación. Qué se puede alegar, con qué plazos y por qué la interpretación razonable de la norma es un argumento real en criptoactivos.",
+    "keywords": [
+      "recurso sanción criptomonedas",
+      "sanción hacienda criptomonedas",
+      "reclamación económico-administrativa criptomonedas",
+      "alegaciones sancion criptomonedas",
+      "recurrir sancion hacienda criptomonedas",
+      "abogado fiscal criptomonedas"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/recurrir-una-sancion"
+  }
+}

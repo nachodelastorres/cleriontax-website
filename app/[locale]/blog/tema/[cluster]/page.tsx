@@ -102,10 +102,10 @@ export default async function ClusterPage({ params }: Props) {
       {/* Hero Header */}
       <section
         id="hero-cluster"
-        className="relative min-h-[600px] md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#F8F9FA] to-white"
+        className="relative min-h-[600px] md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-papel"
       >
         {/* Background Pattern/Image */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(27,32,66,0.08),_transparent_70%)]">
+        <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-[0.2]">
             <Image
               src="/images/illustrations/blog-fiscalidad-cripto.webp"
@@ -123,7 +123,7 @@ export default async function ClusterPage({ params }: Props) {
           {/* Back Link */}
           <Link
             href={`/${locale}/blog`}
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors mb-4 animate-fade-in"
+            className="inline-flex items-center gap-2 text-azul hover:text-rojo transition-colors mb-4 animate-fade-in"
             style={{ animationDelay: '0.05s', animationFillMode: 'both' }}
           >
             <ArrowLeft className="w-4 h-4" />
@@ -136,19 +136,19 @@ export default async function ClusterPage({ params }: Props) {
             style={{ animationDelay: '0.1s', animationFillMode: 'both' }}
           >
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-primary/10 rounded-xl">
-                <Folder className="w-6 h-6 text-primary" />
+              <div className="p-3 bg-azul/10">
+                <Folder className="w-6 h-6 text-azul" />
               </div>
-              <span className="text-xs font-semibold text-navy tracking-wider uppercase">
+              <span className="text-xs font-semibold text-azul tracking-wider uppercase">
                 {t('badge')}
               </span>
             </div>
-            <div className="w-24 h-[2px] bg-accent" />
+            <div className="w-24 h-[2px] bg-rojo" />
           </div>
 
           {/* Main Title (H1) */}
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-navy leading-tight tracking-tight max-w-4xl animate-fade-in"
+            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl animate-fade-in"
             style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
           >
             {clusterName}
@@ -156,7 +156,7 @@ export default async function ClusterPage({ params }: Props) {
 
           {/* Subtitle/Description */}
           <p
-            className="text-lg md:text-xl text-gray-blue max-w-3xl leading-relaxed animate-fade-in"
+            className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed animate-fade-in"
             style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
           >
             {clusterDescription}
@@ -167,11 +167,11 @@ export default async function ClusterPage({ params }: Props) {
             className="flex flex-wrap justify-center gap-6 pt-4 animate-fade-in"
             style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
           >
-            <div className="flex items-center gap-3 bg-white rounded-xl px-6 py-3 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-3 bg-blanco px-6 py-3 transition- duration-300">
+              <FileText className="w-5 h-5 text-azul" />
               <div className="text-left">
-                <div className="text-2xl font-bold text-navy">{clusterPosts.length}</div>
-                <div className="text-xs text-gray-blue">
+                <div className="text-2xl font-bold text-azul">{clusterPosts.length}</div>
+                <div className="text-xs text-pizarra">
                   {clusterPosts.length === 1 ? t('article') : t('articles')}
                 </div>
               </div>
@@ -190,24 +190,24 @@ export default async function ClusterPage({ params }: Props) {
         </div>
 
         {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-navy/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-rojo/5"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-azul/5" style={{ animationDelay: '1s' }}></div>
       </section>
 
       {/* Keywords Section - Tag Cloud Optimized */}
-      <section className="py-12 bg-gradient-to-b from-white to-neutral-50/50 border-b border-neutral-100">
+      <section className="py-12 bg-papel border-b border-papel">
         <Container>
           <div className="max-w-5xl mx-auto">
             {/* Header - más discreto */}
             <div className="flex items-center justify-center gap-2 mb-8">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-neutral-300"></div>
+              <div className="h-px w-12 bg-niebla"></div>
               <div className="flex items-center gap-2">
-                <Tag className="w-3.5 h-3.5 text-neutral-400" />
-                <span className="text-xs font-medium text-neutral-500 uppercase tracking-wider">
+                <Tag className="w-3.5 h-3.5 text-pizarra" />
+                <span className="text-xs font-medium text-pizarra uppercase tracking-wider">
                   {t('keyTopics')}
                 </span>
               </div>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-neutral-300"></div>
+              <div className="h-px w-12 bg-niebla"></div>
             </div>
 
             {/* Tag Cloud - Keywords con tamaños variables */}
@@ -219,9 +219,9 @@ export default async function ClusterPage({ params }: Props) {
 
                 // Alternar colores sutiles para variedad visual
                 const colorClasses = [
-                  'bg-primary-50 text-primary-700 hover:bg-primary-100 border-primary-100',
-                  'bg-accent-50 text-accent-700 hover:bg-accent-100 border-accent-100',
-                  'bg-neutral-100 text-neutral-700 hover:bg-neutral-200 border-neutral-200',
+                  'bg-papel text-azul hover:bg-papel border-papel',
+                  'bg-papel text-rojo hover:bg-rojo/10 border-rojo/30',
+                  'bg-papel text-pizarra hover:bg-niebla border-niebla',
                 ];
                 const colorClass = colorClasses[idx % 3];
 
@@ -230,12 +230,12 @@ export default async function ClusterPage({ params }: Props) {
                     key={idx}
                     itemProp="keywords"
                     className={`
-                      inline-block px-4 py-1.5 rounded-full border
-                      font-medium transition-all duration-200
-                      ${colorClass}
-                      ${isHighlight ? 'text-base' : isMedium ? 'text-sm' : 'text-xs'}
-                      hover:scale-105 hover:shadow-md cursor-default
-                    `}
+ inline-block px-4 py-1.5 border
+ font-medium transition-all duration-200
+ ${colorClass}
+ ${isHighlight ? 'text-base' : isMedium ? 'text-sm' : 'text-xs'}
+ hover:scale-105  cursor-default
+ `}
                   >
                     {keyword}
                   </span>
@@ -259,13 +259,13 @@ export default async function ClusterPage({ params }: Props) {
 
       {/* Posts Grid */}
       {clusterPosts.length > 0 ? (
-        <section className="py-16 md:py-20 bg-gradient-to-b from-white to-primary-50/20">
+        <section className="py-16 md:py-20 bg-papel">
           <Container>
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-primary mb-4">
+              <h2 className="text-3xl font-bold text-azul mb-4">
                 {t('allArticles.title')}
               </h2>
-              <p className="text-lg text-neutral-600">
+              <p className="text-lg text-pizarra">
                 {t('allArticles.description', { clusterName: clusterName.toLowerCase() })}
               </p>
             </div>
@@ -282,16 +282,16 @@ export default async function ClusterPage({ params }: Props) {
           </Container>
         </section>
       ) : (
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-blanco">
           <Container>
             <div className="max-w-2xl mx-auto text-center">
               <div className="mb-6">
-                <FileText className="w-16 h-16 text-neutral-300 mx-auto" />
+                <FileText className="w-16 h-16 text-niebla mx-auto" />
               </div>
-              <h2 className="text-2xl font-bold text-neutral-600 mb-4">
+              <h2 className="text-2xl font-bold text-pizarra mb-4">
                 {t('comingSoon.title')}
               </h2>
-              <p className="text-neutral-500">
+              <p className="text-pizarra">
                 {t('comingSoon.description', { clusterName: clusterName.toLowerCase() })}
               </p>
             </div>
@@ -300,18 +300,18 @@ export default async function ClusterPage({ params }: Props) {
       )}
 
       {/* FAQs Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-blanco">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start gap-4 mb-12">
-              <div className="p-3 bg-accent/10 rounded-xl">
-                <HelpCircle className="w-6 h-6 text-accent" />
+              <div className="p-3 bg-rojo/10">
+                <HelpCircle className="w-6 h-6 text-rojo" />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-2">
+                <h2 className="text-3xl font-bold text-azul mb-2">
                   {t('faq.title')}
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-pizarra">
                   {t('faq.description', { clusterName: clusterName.toLowerCase() })}
                 </p>
               </div>
@@ -321,17 +321,17 @@ export default async function ClusterPage({ params }: Props) {
               {clusterPrompts.map((prompt, idx) => (
                 <div
                   key={idx}
-                  className="p-6 bg-gradient-to-br from-primary-50 to-white border border-primary-100 rounded-xl hover:shadow-lg transition-shadow"
+                  className="p-6 bg-papel border border-papel transition-"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="flex-shrink-0 w-8 h-8 bg-azul text-blanco flex items-center justify-center font-bold text-sm">
                       {idx + 1}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-primary mb-3">
+                      <h3 className="text-lg font-semibold text-azul mb-3">
                         {prompt}
                       </h3>
-                      <p className="text-neutral-600 leading-relaxed">
+                      <p className="text-pizarra leading-relaxed">
                         {t('faq.answerText')}
                       </p>
                     </div>
@@ -344,18 +344,18 @@ export default async function ClusterPage({ params }: Props) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
+      <section className="py-16 bg-papel">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">
+            <h2 className="text-3xl font-bold text-azul mb-4">
               {t('cta.title')}
             </h2>
-            <p className="text-lg text-neutral-600 mb-8">
+            <p className="text-lg text-pizarra mb-8">
               {t('cta.description', { clusterName: clusterName.toLowerCase() })}
             </p>
             <Link
               href={`/${locale}/contacto`}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent-600 transition-colors font-semibold text-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-rojo text-blanco hover:bg-rojo transition-colors font-semibold text-lg"
             >
               {t('cta.button')}
             </Link>

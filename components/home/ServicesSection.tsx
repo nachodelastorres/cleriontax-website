@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations, useLocale } from 'next-intl';
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -51,48 +50,40 @@ export default function ServicesSection() {
           priority={false}
         />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-darker/95 via-navy/92 to-navy-darker/95" />
+        <div className="absolute inset-0 bg-azul" />
       </div>
 
       <Container className="relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
             className="text-center mb-16 space-y-4"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-blanco leading-tight">
               {t('title')}
             </h2>
-            <p className="text-xl text-gray-blue-light max-w-3xl mx-auto">
+            <p className="text-xl text-niebla max-w-3xl mx-auto">
               {t('subtitle')}
             </p>
-          </motion.div>
+          </div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {services.map((service, index) => {
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 h-full flex flex-col">
-                    <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 leading-tight">
+                  <div className="bg-blanco/10 backdrop- p-8 border border-blanco/20 hover:bg-blanco/15 hover:border-blanco/30 transition-all duration-300 h-full flex flex-col">
+                    <h3 className="text-xl md:text-2xl font-semibold text-blanco mb-4 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-base text-gray-blue-light leading-relaxed mb-6 flex-grow">
+                    <p className="text-base text-niebla leading-relaxed mb-6 flex-grow">
                       {service.description}
                     </p>
                     <ButtonLink
-                      variant="secondary"
+                      variant="principal"
                       size="md"
                       href={service.link}
                       className="group inline-flex w-fit"
@@ -101,7 +92,7 @@ export default function ServicesSection() {
                       <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </ButtonLink>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
           </div>

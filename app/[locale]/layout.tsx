@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -9,7 +9,21 @@ import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schemas
 import { SITE_URL, LOCALES, type Locale } from "@/lib/site";
 import "../globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// §11 — Familia principal. La misma familia formal que el logotipo.
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-jakarta",
+  display: "swap",
+});
+
+// §11 — Familia de datos. Solo cifras, importes, hashes, modelos y fechas en tabla.
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
+  display: "swap",
+});
 
 const locales = LOCALES;
 
@@ -112,7 +126,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${jakarta.variable} ${plexMono.variable} font-sans`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <main className="min-h-screen">{children}</main>

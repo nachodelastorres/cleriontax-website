@@ -1,145 +1,82 @@
-'use client';
+import { useTranslations } from "next-intl";
+import { ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import { LINEAS_SERVICIO } from "@/components/brand/lineas";
 
-import { useLocale, useTranslations } from 'next-intl';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
-
-const serviceImages = {
-  'analisis-carteras': {
-    src: '/images/illustrations/services/analisis-carteras-inversion-compleja-crypto.webp',
-    alt: 'Análisis de carteras de inversión complejas en criptomonedas y activos digitales'
+/**
+ * Las cuatro líneas de servicio (manual v1.1, §02).
+ *
+ * La forma que identifica a cada línea sale de `LINEAS_SERVICIO`, para que
+ * esta rejilla y los bloques de servicios relacionados no puedan discrepar.
+ */
+const LINEAS = [
+  {
+    slug: "informe-fiscal-criptomonedas",
+    tituloKey: "analysisTitle",
+    excerptKey: "analysisExcerpt",
   },
-  'liquidaciones-fiscales': {
-    src: '/images/illustrations/services/liquidaciones-fiscales-modelos-aeat-criptomonedas.webp',
-    alt: 'Liquidaciones fiscales y preparación de modelos AEAT para criptomonedas'
+  {
+    slug: "declarar-criptomonedas",
+    tituloKey: "taxReturnsTitle",
+    excerptKey: "taxReturnsExcerpt",
   },
-  'seguimiento-cartera': {
-    src: '/images/illustrations/services/seguimiento-tiempo-real-cartera-crypto.webp',
-    alt: 'Seguimiento en tiempo real de cartera de criptomonedas con CoinTracking'
+  {
+    slug: "litigacion-fiscal-criptomonedas",
+    tituloKey: "litigationTitle",
+    excerptKey: "litigationExcerpt",
   },
-  'asesoria-fiscal-criptomonedas': {
-    src: '/images/illustrations/services/asesoria-fiscal-especializada-criptoactivos.webp',
-    alt: 'Asesoría fiscal especializada en criptoactivos y activos digitales'
+  {
+    slug: "asesoria-fiscal-criptomonedas",
+    tituloKey: "advisoryTitle",
+    excerptKey: "advisoryExcerpt",
   },
-};
+] as const;
 
 export default function IndividualServicesShowcase() {
-  const locale = useLocale();
-  const t = useTranslations('services.showcase');
-
-  const services = [
-    {
-      slug: 'analisis-carteras',
-      title: t('analysisTitle'),
-      excerpt: t('analysisExcerpt'),
-    },
-    {
-      slug: 'liquidaciones-fiscales',
-      title: t('taxReturnsTitle'),
-      excerpt: t('taxReturnsExcerpt'),
-    },
-    {
-      slug: 'seguimiento-cartera',
-      title: t('trackingTitle'),
-      excerpt: t('trackingExcerpt'),
-    },
-    {
-      slug: 'asesoria-fiscal-criptomonedas',
-      title: t('advisoryTitle'),
-      excerpt: t('advisoryExcerpt'),
-    },
-  ];
+  const t = useTranslations("services.showcase");
 
   return (
-    <section className="relative py-24 bg-gray-100 overflow-hidden">
-      {/* Subtle noise texture */}
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E")`
-        }}
-      />
-
-      {/* Subtle radial gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-gray-100/50" />
-
-      <div className="max-w-5xl mx-auto px-6 relative z-10">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
-            {t('sectionTitle')}
-          </h2>
-          <p className="text-lg text-gray-blue max-w-3xl mx-auto">
-            {t('sectionSubtitle')}
-          </p>
+    <section className="py-24 bg-papel">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="mb-14 max-w-3xl">
+          <h2 className="text-seccion text-azul">{t("sectionTitle")}</h2>
+          <p className="mt-4 text-lectura text-pizarra">{t("sectionSubtitle")}</p>
         </div>
 
-        {/* Services List */}
-        <div className="space-y-6">
-          {services.map((service, index) => {
-            const serviceImage = serviceImages[service.slug as keyof typeof serviceImages];
+        <div className="grid gap-px border border-niebla bg-niebla">
+          {LINEAS.map(({ slug, tituloKey, excerptKey }, i) => {
+            const { Forma, acento } = LINEAS_SERVICIO[slug];
 
             return (
               <Link
-                key={service.slug}
-                href={`/${locale}/servicios/${service.slug}`}
-                className="group relative block"
+                key={slug}
+                href={`/servicios/${slug}`}
+                className="group block bg-blanco transition-colors duration-200 hover:bg-papel"
               >
-                <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-gray-300">
-                  {/* Accent bar on left */}
-                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-burgundy-dark opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                  <div className="flex items-start gap-6 p-8 md:p-10">
-                    {/* Image Icon */}
-                    <div className="flex-shrink-0">
-                      <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 bg-white">
-                        <Image
-                          src={serviceImage.src}
-                          alt={serviceImage.alt}
-                          width={80}
-                          height={80}
-                          className="w-full h-full object-contain p-3"
-                        />
-                        {/* Subtle glow effect on hover */}
-                        <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-xl md:text-2xl font-bold text-navy group-hover:text-accent transition-colors duration-300 mb-3">
-                        {service.title}
-                      </h3>
-
-                      <p className="text-gray-600 leading-relaxed mb-6">
-                        {service.excerpt}
-                      </p>
-
-                      {/* CTA */}
-                      <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border-2 border-navy/20 bg-white group-hover:border-accent group-hover:bg-accent/5 transition-all duration-300">
-                        <span className="text-sm font-semibold text-navy group-hover:text-accent transition-colors duration-300">
-                          {t('learnMore')}
-                        </span>
-                        <ArrowRight className="w-4 h-4 text-navy group-hover:text-accent group-hover:translate-x-1 transition-all duration-300" />
-                      </div>
-                    </div>
+                <article className="flex items-start gap-6 p-8 md:p-10">
+                  <div className="flex flex-none items-start gap-4">
+                    <span className="pt-1 font-mono text-dato text-pizarra">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <Forma tam={44} className={acento ? "text-rojo" : "text-azul"} />
                   </div>
 
-                  {/* Bottom accent line on hover */}
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent via-burgundy-dark to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-                </div>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-subtitulo text-azul">{t(tituloKey)}</h3>
+                    <p className="mt-3 text-lectura text-pizarra">{t(excerptKey)}</p>
+
+                    <span className="mt-6 inline-flex items-center gap-2 text-nota font-semibold text-rojo">
+                      {t("learnMore")}
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </span>
+                  </div>
+                </article>
               </Link>
             );
           })}
         </div>
 
-        {/* Bottom note */}
-        <div className="mt-12 text-center">
-          <p className="text-sm text-gray-blue dark:text-gray-blue-light max-w-2xl mx-auto">
-            {t('needHelpChoosing')}
-          </p>
-        </div>
+        <p className="mt-10 max-w-[66ch] text-nota text-pizarra">{t("needHelpChoosing")}</p>
       </div>
     </section>
   );

@@ -11,12 +11,30 @@
     }
   },
   "toc": [
-    { "id": "intro", "label": "Qué hacemos" },
-    { "id": "servicios", "label": "Nuestros servicios" },
-    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
-    { "id": "para-quien", "label": "Para quién trabajamos" },
-    { "id": "faq", "label": "Preguntas frecuentes" },
-    { "id": "cta", "label": "Hablemos de tu caso" }
+    {
+      "id": "intro",
+      "label": "Qué hacemos"
+    },
+    {
+      "id": "servicios",
+      "label": "Nuestros servicios"
+    },
+    {
+      "id": "como-trabajamos",
+      "label": "Cómo trabajamos"
+    },
+    {
+      "id": "para-quien",
+      "label": "Para quién trabajamos"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    },
+    {
+      "id": "cta",
+      "label": "Hablemos de tu caso"
+    }
   ],
   "sections": [
     {
@@ -34,7 +52,7 @@
           "body": "Para inversores con múltiples fuentes de datos, cientos de miles de operaciones y activos dispersos en exchanges, brokers y blockchains. Integramos datos de 50 o más plataformas, aplicamos limpieza avanzada, reconciliación de transacciones duplicadas y generamos informes consolidados de rendimiento, balances y operaciones. Este servicio es clave si operas con DeFi, staking multichain, airdrops o cualquier estructura de inversión descentralizada. Incluye modelado de datos, validación cruzada, exportables personalizados y documentación completa para auditorías o requerimientos fiscales.",
           "link": {
             "label": "Ver detalles del servicio →",
-            "href": "/servicios/analisis-carteras"
+            "href": "/servicios/informe-fiscal-criptomonedas"
           }
         },
         {
@@ -42,7 +60,7 @@
           "body": "Preparación completa de tus obligaciones fiscales: cálculo de plusvalías y pérdidas patrimoniales con criterio FIFO, rendimientos del capital mobiliario, simulaciones de escenarios fiscales y generación de modelos 100, 721 y 714. Trabajamos contigo para optimizar tu declaración dentro del marco legal, aplicando criterios de la DGT y normativa vigente. Este servicio incluye un dossier completo con documentación de soporte, justificación de cada cálculo y revisión por asesores fiscales colegiados. Ideal si tienes operaciones complejas en criptomonedas, acciones internacionales o estructuras fiscales multinivel.",
           "link": {
             "label": "Ver detalles del servicio →",
-            "href": "/servicios/liquidaciones-fiscales"
+            "href": "/servicios/declarar-criptomonedas"
           }
         },
         {
@@ -50,7 +68,7 @@
           "body": "Conectamos tus wallets y cuentas de exchange a herramientas de seguimiento como CoinTracking para ofrecerte visibilidad continua de tu cartera. Recibes dashboards actualizados en tiempo real, alertas configurables, balances consolidados y comparativas históricas. Este servicio está orientado a carteras menos complejas que no requieren ingeniería de datos avanzada, pero sí necesitan monitorización constante y reportes automatizados. Si tu cartera supera cierto nivel de complejidad, te recomendaremos nuestro servicio de análisis de carteras en su lugar.",
           "link": {
             "label": "Ver detalles del servicio →",
-            "href": "/servicios/seguimiento-cartera"
+            "href": "/servicios/asesoria-fiscal-criptomonedas"
           }
         },
         {
@@ -137,15 +155,36 @@
     }
   ],
   "internal_links": [
-    { "label": "Análisis de Carteras", "href": "/servicios/analisis-carteras" },
-    { "label": "Liquidaciones Fiscales", "href": "/servicios/liquidaciones-fiscales" },
-    { "label": "Seguimiento de Cartera", "href": "/servicios/seguimiento-cartera" },
-    { "label": "Asesoría Fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
+    {
+      "label": "Informe fiscal de criptomonedas",
+      "href": "/servicios/informe-fiscal-criptomonedas"
+    },
+    {
+      "label": "Declaración de la renta cripto",
+      "href": "/servicios/declarar-criptomonedas"
+    },
+    {
+      "label": "Litigación fiscal de criptomonedas",
+      "href": "/servicios/litigacion-fiscal-criptomonedas"
+    },
+    {
+      "label": "Asesoría fiscal de criptomonedas",
+      "href": "/servicios/asesoria-fiscal-criptomonedas"
+    }
   ],
   "seo": {
     "title": "Servicios de Asesoría Fiscal y Análisis de Datos | Cleriontax",
     "description": "Análisis de carteras complejas, liquidaciones fiscales AEAT, seguimiento en tiempo real y asesoría especializada. Ingeniería de datos aplicada al cumplimiento fiscal.",
-    "keywords": ["asesoría fiscal criptomonedas", "análisis de datos financieros", "liquidación fiscal AEAT", "modelo 721", "modelo 714", "FIFO criptoactivos", "DeFi fiscalidad", "informes fiscales verificables"],
+    "keywords": [
+      "asesoría fiscal criptomonedas",
+      "análisis de datos financieros",
+      "liquidación fiscal AEAT",
+      "modelo 721",
+      "modelo 714",
+      "FIFO criptoactivos",
+      "DeFi fiscalidad",
+      "informes fiscales verificables"
+    ],
     "canonical": "https://cleriontax.com/servicios"
   },
   "schema_org": {
@@ -153,7 +192,10 @@
     "@type": "Service",
     "name": "Servicios de Asesoría Fiscal y Análisis de Datos",
     "serviceType": "Asesoría Fiscal y Análisis de Datos Financieros",
-    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "provider": {
+      "@type": "Organization",
+      "name": "Cleriontax"
+    },
     "areaServed": "España",
     "description": "Servicios especializados en análisis de datos financieros y asesoría fiscal para inversores con carteras complejas en criptomonedas, acciones y activos digitales. Incluye análisis de carteras, liquidaciones fiscales, seguimiento en tiempo real y asesoría especializada."
   }

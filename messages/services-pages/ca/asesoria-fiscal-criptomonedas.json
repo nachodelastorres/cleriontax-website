@@ -11,13 +11,34 @@
     }
   },
   "toc": [
-    { "id": "intro", "label": "Introducció" },
-    { "id": "que-incluye", "label": "Què inclou" },
-    { "id": "como-trabajamos", "label": "Com treballem" },
-    { "id": "por-que-elegirnos", "label": "Per què escollir-nos" },
-    { "id": "casos-uso", "label": "Casos d'ús" },
-    { "id": "faq", "label": "Preguntes freqüents" },
-    { "id": "cta", "label": "Sol·licitar avaluació" }
+    {
+      "id": "intro",
+      "label": "Introducció"
+    },
+    {
+      "id": "que-incluye",
+      "label": "Què inclou"
+    },
+    {
+      "id": "como-trabajamos",
+      "label": "Com treballem"
+    },
+    {
+      "id": "por-que-elegirnos",
+      "label": "Per què escollir-nos"
+    },
+    {
+      "id": "casos-uso",
+      "label": "Casos d'ús"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    },
+    {
+      "id": "cta",
+      "label": "Sol·licitar avaluació"
+    }
   ],
   "sections": [
     {
@@ -129,15 +150,34 @@
     }
   ],
   "internal_links": [
-    { "label": "Tornar a tots els serveis", "href": "/servicios" },
-    { "label": "Anàlisi de Carteres", "href": "/servicios/analisis-carteras" },
-    { "label": "Liquidacions Fiscals", "href": "/servicios/liquidaciones-fiscales" },
-    { "label": "Seguiment de Cartera", "href": "/servicios/seguimiento-cartera" }
+    {
+      "label": "Tornar a tots els serveis",
+      "href": "/servicios"
+    },
+    {
+      "label": "Informe fiscal de criptomonedes",
+      "href": "/servicios/informe-fiscal-criptomonedas"
+    },
+    {
+      "label": "Declaració de la renda cripto",
+      "href": "/servicios/declarar-criptomonedas"
+    },
+    {
+      "label": "Litigació fiscal de criptomonedes",
+      "href": "/servicios/litigacion-fiscal-criptomonedas"
+    }
   ],
   "seo": {
     "title": "Assessoria Fiscal Especialitzada en Criptoactius | Cleriontax",
     "description": "Sessions tècniques 1:1 sobre fiscalitat crypto. Dubtes sobre models AEAT, requeriments d'Hisenda i compliment normatiu. Sense assessorament d'inversió.",
-    "keywords": ["assessoria fiscal criptomonedes", "consultoria fiscal crypto", "requeriment AEAT crypto", "model 721 assessoria", "DGT criptoactius", "compliment fiscal crypto"],
+    "keywords": [
+      "assessoria fiscal criptomonedes",
+      "consultoria fiscal crypto",
+      "requeriment AEAT crypto",
+      "model 721 assessoria",
+      "DGT criptoactius",
+      "compliment fiscal crypto"
+    ],
     "canonical": "https://cleriontax.com/servicios/asesoria-fiscal-criptomonedas"
   },
   "schema_org": {
@@ -145,9 +185,11 @@
     "@type": "Service",
     "name": "Assessoria Fiscal Especialitzada en Criptoactius",
     "serviceType": "Consultoria Fiscal Tècnica per a Inversors en Criptomonedes",
-    "provider": { "@type": "Organization", "name": "Cleriontax" },
+    "provider": {
+      "@type": "Organization",
+      "name": "Cleriontax"
+    },
     "areaServed": "Espanya",
     "description": "Servei d'assessoria fiscal tècnica especialitzada en criptoactius mitjançant sessions personalitzades 1:1. Resolució de dubtes sobre normativa AEAT, models fiscals, requeriments d'Hisenda i compliment tributari. Sense assessorament d'inversió."
   }
 }
-

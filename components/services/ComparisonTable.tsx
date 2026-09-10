@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import Container from "@/components/ui/Container";
@@ -13,45 +12,37 @@ export default function ComparisonTable() {
   const featureKeys = ['transactions', 'exchanges', 'trading', 'staking', 'defi', 'nfts', 'model100', 'model720', 'reviews', 'optimization', 'support'] as const;
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-blanco">
       <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-primary md:text-4xl mb-4">
+          <h2 className="text-3xl font-bold text-azul md:text-4xl mb-4">
             Comparación detallada
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-lg text-pizarra max-w-2xl mx-auto">
             Encuentra el plan que mejor se adapte a tus necesidades
           </p>
-        </motion.div>
+        </div>
 
         {/* Desktop Table */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+        <div
           className="hidden md:block overflow-x-auto"
         >
-          <table className="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
+          <table className="w-full border-collapse bg-blanco overflow-hidden">
             <thead>
-              <tr className="bg-neutral-100">
-                <th className="py-4 px-6 text-left font-semibold text-primary">
+              <tr className="bg-papel">
+                <th className="py-4 px-6 text-left font-semibold text-azul">
                   Características
                 </th>
                 {planKeys.map((plan, index) => (
                   <th
                     key={plan}
                     className={`py-4 px-6 text-center font-semibold ${
-                      index === 1
-                        ? "bg-accent text-white"
-                        : "text-primary"
-                    }`}
+ index === 1
+ ? "bg-rojo text-blanco"
+ : "text-azul"
+ }`}
                   >
                     {tPlans(`${plan}.name`)}
                   </th>
@@ -62,9 +53,9 @@ export default function ComparisonTable() {
               {featureKeys.map((feature, rowIndex) => (
                 <tr
                   key={feature}
-                  className={rowIndex % 2 === 0 ? "bg-neutral-50" : "bg-white"}
+                  className={rowIndex % 2 === 0 ? "bg-papel" : "bg-blanco"}
                 >
-                  <td className="py-4 px-6 font-medium text-neutral-800">
+                  <td className="py-4 px-6 font-medium text-azul">
                     {t(`features.${feature}`)}
                   </td>
                   {planKeys.map((plan) => {
@@ -91,14 +82,14 @@ export default function ComparisonTable() {
                       <td key={plan} className="py-4 px-6 text-center">
                         {value === "included" ? (
                           <div className="flex justify-center">
-                            <Check className="h-5 w-5 text-accent" />
+                            <Check className="h-5 w-5 text-rojo" />
                           </div>
                         ) : value === "not_included" ? (
                           <div className="flex justify-center">
-                            <X className="h-5 w-5 text-neutral-300" />
+                            <X className="h-5 w-5 text-niebla" />
                           </div>
                         ) : (
-                          <span className="text-neutral-700">{value}</span>
+                          <span className="text-pizarra">{value}</span>
                         )}
                       </td>
                     );
@@ -107,25 +98,21 @@ export default function ComparisonTable() {
               ))}
             </tbody>
           </table>
-        </motion.div>
+        </div>
 
         {/* Mobile Cards */}
         <div className="md:hidden space-y-6">
           {planKeys.map((plan, planIndex) => (
-            <motion.div
+            <div
               key={plan}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: planIndex * 0.1, duration: 0.5 }}
-              className={`rounded-lg border-2 ${
-                planIndex === 1 ? "border-accent" : "border-neutral-200"
-              } bg-white p-6 shadow-md`}
+              className={` border-2 ${
+ planIndex === 1 ? "border-rojo" : "border-niebla"
+ } bg-blanco p-6 `}
             >
               <h3
                 className={`text-xl font-bold mb-4 ${
-                  planIndex === 1 ? "text-accent" : "text-primary"
-                }`}
+ planIndex === 1 ? "text-rojo" : "text-azul"
+ }`}
               >
                 {tPlans(`${plan}.name`)}
               </h3>
@@ -152,17 +139,17 @@ export default function ComparisonTable() {
                   return (
                     <div
                       key={feature}
-                      className="flex items-center justify-between py-2 border-b border-neutral-100 last:border-0"
+                      className="flex items-center justify-between py-2 border-b border-papel last:border-0"
                     >
-                      <span className="text-sm text-neutral-700 font-medium">
+                      <span className="text-sm text-pizarra font-medium">
                         {t(`features.${feature}`)}
                       </span>
                       {value === "included" ? (
-                        <Check className="h-5 w-5 text-accent shrink-0" />
+                        <Check className="h-5 w-5 text-rojo shrink-0" />
                       ) : value === "not_included" ? (
-                        <X className="h-5 w-5 text-neutral-300 shrink-0" />
+                        <X className="h-5 w-5 text-niebla shrink-0" />
                       ) : (
-                        <span className="text-sm text-neutral-600 text-right">
+                        <span className="text-sm text-pizarra text-right">
                           {value}
                         </span>
                       )}
@@ -170,7 +157,7 @@ export default function ComparisonTable() {
                   );
                 })}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </Container>

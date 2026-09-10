@@ -1,0 +1,137 @@
+{
+  "title": "Quiero declarar mis criptomonedas este año",
+  "slug": "declarar-criptomonedas",
+  "excerpt": "Qué operaciones con criptoactivos tributan y cuáles no, cómo se integran en la declaración de la renta y qué hace falta reunir. Con criterio FIFO y cada cifra justificada.",
+  "hero": {
+    "etiqueta": "Campaña de la renta",
+    "h1": "Este año quieres declararlo bien",
+    "subheading": "Puede que sea tu primera vez o que en años anteriores lo dejaras a medias. El punto de partida es siempre el mismo: saber qué de todo lo que hiciste tributa, porque no es solo vender.",
+    "cta": { "label": "Cuéntanos tu operativa", "href": "/contacto" },
+    "secundaria": { "label": "Ver el método", "href": "/metodo" }
+  },
+  "toc": [
+    { "id": "que-tributa", "label": "Qué tributa" },
+    { "id": "el-malentendido", "label": "El malentendido" },
+    { "id": "reconoces", "label": "Cómo se integra" },
+    { "id": "como-resolvemos", "label": "Cómo lo hacemos" },
+    { "id": "que-necesitamos", "label": "Qué necesitamos" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "que-tributa",
+      "h2": "Qué tributa, y no es solo vender",
+      "fondo": "azul",
+      "entrada": "Las cuatro situaciones que más gente pasa por alto. Cada una tiene su tratamiento y ninguna requiere que hayas sacado euros al banco.",
+      "formas": [
+        { "forma": "angulo", "titulo": "Vender por euros", "body": "El caso evidente: ganancia o pérdida patrimonial por la diferencia entre el valor de transmisión y el de adquisición." },
+        { "forma": "cuarto", "titulo": "Cambiar un token por otro", "body": "Es una permuta y genera ganancia o pérdida patrimonial, aunque no pases por euros en ningún momento. Es el que más se pasa por alto." },
+        { "forma": "arco", "titulo": "Cobrar por staking o similares", "body": "Las recompensas recibidas por ceder tus criptoactivos tienen su propio tratamiento, distinto del de una venta, y se imputan cuando se perciben." },
+        { "forma": "inverso", "titulo": "Recibir sin comprar", "body": "Airdrops, forks y recompensas de protocolos. Lo importante es fijar su valor en la fecha de recepción: ese será tu coste de adquisición cuando los vendas." }
+      ]
+    },
+    {
+      "id": "el-malentendido",
+      "h2": "El malentendido que sale más caro",
+      "fondo": "papel",
+      "entrada": "Casi todo el mundo llega con la misma idea, y es la que genera más problemas después.",
+      "columnas": [
+        {
+          "titulo": "Lo que mucha gente cree",
+          "correcta": false,
+          "items": [
+            "«Mientras no lo pase a euros, no tributa»",
+            "«Como sigo en pérdidas globales, no declaro nada»",
+            "«Lo que está en mi wallet privada no lo ve nadie»",
+            "«Si el exchange no me da informe fiscal, es que no hay nada que declarar»"
+          ]
+        },
+        {
+          "titulo": "Cómo funciona en realidad",
+          "correcta": true,
+          "items": [
+            "La permuta entre tokens tributa igual, sin pasar por euros",
+            "Las pérdidas también se declaran: es la única forma de poder compensarlas después",
+            "La cadena es pública y las plataformas reportan a la Administración",
+            "La obligación de declarar es tuya, exista o no informe del exchange"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "Cómo se integra en tu declaración",
+      "fondo": "blanco",
+      "body": "Las ganancias y pérdidas patrimoniales derivadas de la transmisión de criptoactivos se integran en la base imponible del ahorro, que tiene su propia escala de tipos y sus propias reglas de compensación. Los rendimientos por ceder tus criptoactivos siguen un camino distinto.\n\nEso significa que el orden importa. Las pérdidas de un ejercicio se compensan con las ganancias siguiendo reglas concretas, con límites y con plazos, y declararlas es requisito para poder usarlas más adelante. Una pérdida no declarada es una pérdida perdida.\n\nY hay obligaciones que van aparte de la renta: si tus criptoactivos están custodiados en el extranjero por encima de determinados umbrales, existe una obligación informativa propia con su calendario y su régimen. Se comprueba siempre, porque no declararla tiene consecuencias por sí sola."
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Cómo lo hacemos",
+      "steps": [
+        { "title": "Reunimos y conciliamos tu operativa", "body": "Desde el origen, no desde el ejercicio que declaras: sin histórico anterior no hay coste de adquisición fiable y la ganancia sale inflada." },
+        { "title": "Clasificamos operación a operación", "body": "Qué es venta, qué es permuta, qué es rendimiento y qué es adquisición sin coste. Lo que no encaja en una regla se revisa a mano." },
+        { "title": "Aplicamos criterio FIFO", "body": "Sobre la cartera ya conciliada, con el detalle por operación detrás de cada total." },
+        { "title": "Revisamos compensaciones y otras obligaciones", "body": "Pérdidas de ejercicios anteriores pendientes de compensar, y si procede alguna obligación informativa adicional." },
+        { "title": "Preparamos la declaración y su respaldo", "body": "Con la memoria de criterios, para que cualquier cifra pueda justificarse si algún día te la preguntan." }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Qué necesitamos de ti",
+      "bullets": [
+        "<strong>Exportaciones de tus exchanges</strong>, desde tu primera operación: CSV o claves API de solo lectura.",
+        "<strong>Direcciones públicas de tus wallets</strong>, incluidas las que ya no uses.",
+        "<strong>Qué protocolos DeFi has tocado</strong>, aunque sea aproximado.",
+        "<strong>Tus declaraciones anteriores</strong>, sobre todo si tuviste pérdidas pendientes de compensar.",
+        "<strong>Extractos bancarios</strong> de entradas y salidas a euros.",
+        "<strong>Si tienes acciones, fondos u otros activos</strong>, también: se integran en la misma declaración y las reglas de compensación los relacionan."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "Solo he comprado y no he vendido nada. ¿Tengo que declarar?",
+          "a": "Comprar y mantener no genera por sí solo ganancia o pérdida patrimonial. Ahora bien, conviene revisar si hubo permutas que no identificaste como tales, recompensas recibidas, o si te aplica alguna obligación informativa por tenencia en el extranjero. Comprar y mantener no siempre significa no tener nada que hacer."
+        },
+        {
+          "q": "He perdido dinero. ¿Para qué voy a declarar?",
+          "a": "Precisamente para poder compensar esa pérdida contra ganancias, en ese ejercicio y en los siguientes dentro del plazo que marca la norma. Si no la declaras, no existe a efectos de compensación."
+        },
+        {
+          "q": "¿Y si opero desde hace años y nunca declaré?",
+          "a": "Es más común de lo que parece y tiene salida ordenada. Conviene mirarlo antes de presentar el ejercicio corriente, porque declarar bien este año hace visible lo anterior. Está explicado en la situación de regularizar años anteriores."
+        },
+        {
+          "q": "¿Cuándo hay que hacerlo?",
+          "a": "La campaña de la renta tiene su calendario anual, y algunas obligaciones informativas vencen antes, en el primer trimestre. Conviene no dejarlo para el final: si tu operativa hay que reconstruirla, el trabajo previo lleva semanas, no días."
+        },
+        {
+          "q": "¿Cuánto cuesta?",
+          "a": "Depende del volumen de operaciones y del estado de tus datos. Una cartera pequeña y ordenada es un trabajo sencillo; una multicadena con tramos que reconstruir es otra cosa. Te damos precio tras ver una muestra, antes de empezar."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Cuanto antes empieces, más tranquilo vas",
+    "body": "Cuéntanos cuántas operaciones tienes, dónde has operado y qué ejercicios te preocupan. Te decimos qué trabajo hay por delante y te damos plazo y precio orientativos.",
+    "button": { "label": "Enviar diagnóstico", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Declarar criptomonedas: qué tributa y cómo hacerlo bien | Cleriontax",
+    "description": "Qué operaciones con criptoactivos tributan —incluidas las permutas entre tokens—, cómo se integran en la renta y qué necesitas reunir. Criterio FIFO y cada cifra justificada.",
+    "keywords": [
+      "declarar criptomonedas",
+      "cómo declarar criptomonedas",
+      "declarar criptomonedas hacienda",
+      "declarar criptomonedas renta 2026",
+      "ayuda declarar criptomonedas",
+      "servicio declaración criptomonedas",
+      "gestoria declarar criptomonedas",
+      "declarar ganancias criptomonedas"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/declarar-criptomonedas"
+  }
+}

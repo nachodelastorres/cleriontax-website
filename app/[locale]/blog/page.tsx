@@ -105,14 +105,14 @@ export default async function BlogPage({ params }: Props) {
 
       {/* Latest Post Featured */}
       {latestPost && (
-        <section className="py-12 bg-white border-b border-neutral-200">
+        <section className="py-12 bg-blanco border-b border-niebla">
           <Container>
             <div className="max-w-6xl mx-auto">
               <div className="mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                <h2 className="text-2xl md:text-3xl font-bold text-azul mb-2">
                   {t('latestPost.title')}
                 </h2>
-                <p className="text-neutral-600">
+                <p className="text-pizarra">
                   {t('latestPost.subtitle')}
                 </p>
               </div>
@@ -121,9 +121,9 @@ export default async function BlogPage({ params }: Props) {
                 href={`/${locale}/blog/${latestPost.slug}`}
                 className="group block"
               >
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl border-2 border-primary-100 hover:border-primary hover:shadow-2xl transition-all duration-300">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-papel border-2 border-papel hover:border-azul transition-all duration-300">
                   {/* Image */}
-                  <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+                  <div className="relative aspect-video overflow-hidden">
                     <Image
                       src={latestPost.image.url}
                       alt={latestPost.image.alt}
@@ -136,17 +136,17 @@ export default async function BlogPage({ params }: Props) {
                   {/* Content */}
                   <div className="flex flex-col justify-center">
                     <div className="mb-4">
-                      <span className="inline-block px-3 py-1 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wide">
+                      <span className="inline-block px-3 py-1 bg-rojo text-blanco text-xs font-bold uppercase tracking-wide">
                         {t(`categoryTranslations.${latestPost.category}`, { default: latestPost.category })}
                       </span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4 group-hover:text-accent transition-colors">
+                    <h3 className="text-2xl md:text-3xl font-bold text-azul mb-4 group-hover:text-rojo transition-colors">
                       {latestPost.title}
                     </h3>
-                    <p className="text-neutral-600 mb-6 line-clamp-3">
+                    <p className="text-pizarra mb-6 line-clamp-3">
                       {latestPost.excerpt}
                     </p>
-                    <div className="flex items-center gap-4 text-sm text-neutral-500 mb-6">
+                    <div className="flex items-center gap-4 text-sm text-pizarra mb-6">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         <span>
@@ -160,7 +160,7 @@ export default async function BlogPage({ params }: Props) {
                       <div>•</div>
                       <span>{latestPost.readingTime} {t('latestPost.readingTime')}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-primary font-semibold group-hover:gap-4 transition-all">
+                    <div className="flex items-center gap-2 text-azul font-semibold group-hover:gap-4 transition-all">
                       <span>{t('latestPost.readFullArticle')}</span>
                       <ArrowRight className="w-5 h-5" />
                     </div>
@@ -173,13 +173,13 @@ export default async function BlogPage({ params }: Props) {
       )}
 
       {/* Clusters Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-neutral-50">
+      <section className="py-16 md:py-20 bg-papel">
         <Container>
           <div className="mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-azul mb-4">
               {t('clusters.title')}
             </h2>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+            <p className="text-lg text-pizarra max-w-3xl mx-auto">
               {t('clusters.subtitle')}
             </p>
           </div>
@@ -203,19 +203,19 @@ export default async function BlogPage({ params }: Props) {
               return (
                 <div
                   key={cluster.id}
-                  className="group block p-8 bg-white border-2 border-neutral-200 rounded-2xl hover:border-primary hover:shadow-2xl transition-all duration-300"
+                  className="group block p-8 bg-blanco border-2 border-niebla hover:border-azul transition-all duration-300"
                 >
                   {/* Header */}
                   <Link href={`/${locale}/blog/tema/${cluster.id}`} className="block">
                     <div className="flex items-start gap-4 mb-6">
-                      <div className="p-3 bg-primary-100 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                      <div className="p-3 bg-papel group-hover:bg-azul group-hover:text-blanco transition-colors">
                         <Folder className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                        <h3 className="text-2xl font-bold text-azul mb-2 group-hover:text-rojo transition-colors">
                           {cluster.name[locale as 'es' | 'en' | 'ca']}
                         </h3>
-                        <div className="flex items-center gap-3 text-sm text-neutral-600">
+                        <div className="flex items-center gap-3 text-sm text-pizarra">
                           <span className="flex items-center gap-1">
                             <FileText className="w-4 h-4" />
                             {clusterPosts.length} {clusterPosts.length === 1 ? t('clusters.article') : t('clusters.articles')}
@@ -229,11 +229,11 @@ export default async function BlogPage({ params }: Props) {
                   {latestClusterPost && (
                     <Link
                       href={`/${locale}/blog/${latestClusterPost.slug}`}
-                      className="block mb-6 p-4 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100 hover:border-primary hover:shadow-md transition-all duration-200"
+                      className="block mb-6 p-4 bg-papel border border-papel hover:border-azul transition-all duration-200"
                     >
                       <div className="flex gap-4">
                         {/* Image */}
-                        <div className="relative w-24 h-24 md:w-28 md:h-28 flex-shrink-0 rounded-lg overflow-hidden">
+                        <div className="relative w-24 h-24 md:w-28 md:h-28 flex-shrink-0 overflow-hidden">
                           <Image
                             src={latestClusterPost.image.url}
                             alt={latestClusterPost.image.alt}
@@ -245,17 +245,17 @@ export default async function BlogPage({ params }: Props) {
                         {/* Content */}
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-2">
-                            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wide">
+                            <span className="inline-flex items-center px-2 py-0.5 bg-rojo text-blanco text-xs font-bold uppercase tracking-wide">
                               {t('clusters.latestBadge')}
                             </span>
                           </div>
-                          <h4 className="font-semibold text-primary line-clamp-2 mb-1 text-sm md:text-base">
+                          <h4 className="font-semibold text-azul line-clamp-2 mb-1 text-sm md:text-base">
                             {latestClusterPost.title}
                           </h4>
-                          <p className="text-xs text-neutral-500 line-clamp-2 hidden md:block">
+                          <p className="text-xs text-pizarra line-clamp-2 hidden md:block">
                             {latestClusterPost.excerpt}
                           </p>
-                          <div className="flex items-center gap-2 mt-2 text-xs text-neutral-500">
+                          <div className="flex items-center gap-2 mt-2 text-xs text-pizarra">
                             <Calendar className="w-3 h-3" />
                             <span>
                               {new Date(latestClusterPost.publishedAt).toLocaleDateString('es-ES', {
@@ -272,14 +272,14 @@ export default async function BlogPage({ params }: Props) {
                   )}
 
                   {/* Description */}
-                  <p className="text-neutral-600 mb-6 leading-relaxed text-sm">
+                  <p className="text-pizarra mb-6 leading-relaxed text-sm">
                     {cluster.description[locale as 'es' | 'en' | 'ca']}
                   </p>
 
                   {/* Remaining Posts List */}
                   {remainingPosts.length > 0 ? (
                     <div className="mb-6">
-                      <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
+                      <p className="text-xs font-semibold text-pizarra uppercase tracking-wide mb-3">
                         {t('clusters.otherArticles')}
                       </p>
                       <ul className="space-y-2">
@@ -287,10 +287,10 @@ export default async function BlogPage({ params }: Props) {
                           <li key={post.slug}>
                             <Link
                               href={`/${locale}/blog/${post.slug}`}
-                              className="flex items-start gap-2 text-sm hover:text-primary transition-colors"
+                              className="flex items-start gap-2 text-sm hover:text-azul transition-colors"
                             >
-                              <span className="text-neutral-400 mt-1">•</span>
-                              <span className="line-clamp-1 text-neutral-700 hover:text-primary">
+                              <span className="text-pizarra mt-1">•</span>
+                              <span className="line-clamp-1 text-pizarra hover:text-azul">
                                 {post.title}
                               </span>
                             </Link>
@@ -298,14 +298,14 @@ export default async function BlogPage({ params }: Props) {
                         ))}
                       </ul>
                       {clusterPosts.length > 4 && (
-                        <p className="text-xs text-neutral-500 italic mt-2">
+                        <p className="text-xs text-pizarra italic mt-2">
                           +{clusterPosts.length - 4} {t('clusters.moreArticles')}
                         </p>
                       )}
                     </div>
                   ) : !latestClusterPost ? (
-                    <div className="mb-6 p-4 bg-neutral-50 rounded-lg text-center">
-                      <p className="text-sm text-neutral-500 italic">
+                    <div className="mb-6 p-4 bg-papel text-center">
+                      <p className="text-sm text-pizarra italic">
                         {t('clusters.comingSoon')}
                       </p>
                     </div>
@@ -314,12 +314,12 @@ export default async function BlogPage({ params }: Props) {
                   {/* CTA Indicator */}
                   <Link
                     href={`/${locale}/blog/tema/${cluster.id}`}
-                    className="flex items-center justify-between pt-4 border-t border-neutral-200 hover:text-accent transition-colors"
+                    className="flex items-center justify-between pt-4 border-t border-niebla hover:text-rojo transition-colors"
                   >
-                    <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors">
+                    <span className="text-sm font-semibold text-azul group-hover:text-rojo transition-colors">
                       {t('clusters.viewAll')}
                     </span>
-                    <ArrowRight className="w-5 h-5 text-primary group-hover:text-accent group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-5 h-5 text-azul group-hover:text-rojo group-hover:translate-x-1 transition-all" />
                   </Link>
                 </div>
               );
@@ -329,18 +329,18 @@ export default async function BlogPage({ params }: Props) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
+      <section className="py-16 bg-papel">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">
+            <h2 className="text-3xl font-bold text-azul mb-4">
               {t('cta.title')}
             </h2>
-            <p className="text-lg text-neutral-600 mb-8">
+            <p className="text-lg text-pizarra mb-8">
               {t('cta.description')}
             </p>
             <Link
               href={`/${locale}/contacto`}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent-600 transition-colors font-semibold text-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-rojo text-blanco hover:bg-rojo transition-colors font-semibold text-lg"
             >
               {t('cta.button')}
               <ArrowRight className="w-5 h-5" />

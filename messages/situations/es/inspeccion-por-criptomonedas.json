@@ -1,0 +1,125 @@
+{
+  "title": "Estoy en una inspección de Hacienda por criptomonedas",
+  "slug": "inspeccion-por-criptomonedas",
+  "excerpt": "Qué alcance tiene una inspección, qué documentación te van a pedir, qué derechos tienes durante el procedimiento y cómo se prepara cada comparecencia.",
+  "hero": {
+    "etiqueta": "Procedimiento abierto",
+    "h1": "Te han abierto una inspección por tus criptoactivos",
+    "subheading": "Es el procedimiento de mayor alcance y lo lleva un actuario. No se responde igual que un requerimiento: aquí cada comparecencia se prepara, cada documento que entra queda en el expediente y el orden en que se aportan las cosas importa.",
+    "cta": { "label": "Llámanos: +34 663 482 301", "href": "tel:+34663482301" },
+    "secundaria": { "label": "Cuéntanos tu caso", "href": "/contacto" }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "Dónde estás" },
+    { "id": "el-reloj", "label": "Cómo avanza" },
+    { "id": "derechos", "label": "Tus derechos" },
+    { "id": "como-resolvemos", "label": "Cómo lo llevamos" },
+    { "id": "que-necesitamos", "label": "Qué necesitamos" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "Dónde estás",
+      "fondo": "blanco",
+      "body": "Has recibido una comunicación de inicio de actuaciones inspectoras. Indica el alcance —qué ejercicios y qué conceptos— y te cita para comparecer o para aportar documentación.\n\nA diferencia de un requerimiento de gestión, la inspección puede examinar mucho más y dispone de más medios. También tiene su propio calendario y sus propias garantías para ti, que conviene conocer porque son las que marcan qué se puede pedir y qué no.\n\nLo que no cambia respecto a cualquier otro procedimiento por criptoactivos es el fondo del asunto: casi todo se decide demostrando de dónde sale cada euro. Una inspección se gana o se pierde en la reconstrucción de la operativa, no en la elocuencia del escrito."
+    },
+    {
+      "id": "el-reloj",
+      "h2": "Cómo avanza el procedimiento",
+      "fondo": "papel",
+      "entrada": "El calendario concreto lo marca la comunicación de inicio. Este es el recorrido habitual.",
+      "hitos": [
+        { "cuando": "Inicio", "titulo": "Comunicación de inicio de actuaciones", "body": "Define el alcance: qué ejercicios y qué conceptos entran. Ese alcance importa, porque delimita lo que se puede comprobar." },
+        { "cuando": "Comparecencias", "titulo": "Requerimientos sucesivos de documentación", "body": "Cada una se prepara: qué se aporta, en qué orden y con qué explicación. Lo que entra al expediente no sale." },
+        { "cuando": "Diligencias", "titulo": "Se documenta lo actuado", "body": "Conviene revisarlas: recogen hechos que después sostienen la propuesta, y no siempre reflejan lo que se quiso decir." },
+        { "cuando": "Trámite de audiencia", "titulo": "Alegaciones previas al acta", "body": "El momento de rebatir con la cuantificación propia delante, antes de que se formalice nada." },
+        { "cuando": "Acta", "titulo": "Se formaliza el resultado", "body": "En conformidad o disconformidad. La elección tiene consecuencias sobre lo que se puede recurrir después y sobre las reducciones aplicables." },
+        { "cuando": "Después", "titulo": "Liquidación y, en su caso, sanción", "body": "Son expedientes distintos y se defienden por separado.", "critico": true }
+      ]
+    },
+    {
+      "id": "derechos",
+      "h2": "Lo que puedes exigir durante el procedimiento",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>Conocer el alcance:</strong> qué ejercicios y qué conceptos se comprueban, y que las actuaciones no se extiendan más allá sin ampliarlo formalmente.",
+        "<strong>Asistencia profesional:</strong> puedes comparecer con asesor, y es recomendable que las comparecencias no las afrontes solo.",
+        "<strong>No autoincriminarte:</strong> hay límites a lo que se te puede exigir declarar, distintos de la obligación de aportar documentación contable o de operaciones.",
+        "<strong>Formular alegaciones</strong> en el trámite de audiencia, con la documentación que consideres.",
+        "<strong>Obtener copia</strong> de lo que consta en el expediente.",
+        "<strong>Invocar la prescripción</strong> de los ejercicios que ya no pueden liquidarse.",
+        "<strong>Recurrir</strong> tanto la liquidación como, por separado, la sanción."
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Cómo lo llevamos",
+      "steps": [
+        { "title": "Revisamos el alcance y la prescripción", "body": "Qué ejercicios están dentro, cuáles ya no pueden liquidarse y si el alcance declarado se corresponde con lo que después se está pidiendo." },
+        { "title": "Reconstruimos la operativa completa del periodo", "body": "Antes de aportar nada. Aportar documentación sin saber qué dice es la forma más rápida de complicarse un expediente." },
+        { "title": "Preparamos cada comparecencia", "body": "Qué se aporta, en qué orden y con qué explicación acompañando. Y revisamos las diligencias antes de firmarlas." },
+        { "title": "Construimos la prueba on-chain", "body": "Titularidad de direcciones, trazabilidad de wallet a wallet y correspondencia con los extractos bancarios. Es lo que convierte una afirmación en prueba." },
+        { "title": "Alegamos en el trámite de audiencia", "body": "Con la cuantificación propia frente a la de la Administración, y explicándote antes qué se sostiene." },
+        { "title": "Valoramos conformidad o disconformidad contigo", "body": "Con las consecuencias de cada opción escritas, incluidas las desfavorables." }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Qué necesitamos de ti",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>La comunicación de inicio</strong> y todo lo notificado después, incluidas las diligencias firmadas.",
+        "<strong>Las declaraciones</strong> de los ejercicios incluidos en el alcance.",
+        "<strong>El histórico completo</strong> de exchanges, wallets y protocolos del periodo: CSV, claves API de solo lectura y direcciones públicas.",
+        "<strong>Extractos bancarios</strong> de todas las entradas y salidas a euros.",
+        "<strong>Lo que ya hayas aportado</strong> a la inspección, exactamente como lo aportaste.",
+        "<strong>Cualquier informe previo</strong> generado con software, aunque no se haya presentado."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Puede Hacienda ver mis wallets no custodiadas?",
+          "a": "La cadena es pública: cualquiera puede ver los movimientos de una dirección. Lo que no es público es la titularidad. La Administración dispone de herramientas de análisis y de la información que le reportan las plataformas, y a partir de ahí puede atribuir direcciones. Conviene partir de que la trazabilidad existe."
+        },
+        {
+          "q": "¿Tengo que ir yo a las comparecencias?",
+          "a": "Puedes otorgar representación para que acuda tu asesor. En procedimientos técnicos es lo habitual, y evita que una respuesta improvisada acabe en una diligencia."
+        },
+        {
+          "q": "¿Cuánto puede durar?",
+          "a": "El procedimiento inspector tiene plazos máximos de duración establecidos en la normativa, con supuestos de extensión. La duración real depende del alcance y del volumen. Te decimos qué esperar en tu caso una vez visto el expediente."
+        },
+        {
+          "q": "Firmo en conformidad y me quito el problema, ¿no?",
+          "a": "Puede ser razonable, pero no es una decisión menor: la conformidad limita lo que después se puede discutir y tiene efectos sobre la sanción. Se decide con la cuantificación propia hecha, no antes."
+        },
+        {
+          "q": "No conservo datos de un exchange que cerró",
+          "a": "Es habitual y no es un callejón sin salida. Se reconstruye con trazabilidad on-chain, extractos bancarios y prueba indiciaria coherente entre fuentes, y se documenta expresamente el grado de certeza de cada tramo."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "No aportes nada más sin revisarlo",
+    "body": "Cuéntanos qué alcance tiene la inspección, qué ejercicios abarca y qué has aportado ya. Lo primero que haremos es revisar el expediente tal como está antes de que entre un documento más.",
+    "button": { "label": "Cuéntanos tu caso", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Inspección de Hacienda por criptomonedas: qué hacer y qué derechos tienes | Cleriontax",
+    "description": "Alcance de una inspección por criptoactivos, cómo avanza el procedimiento, qué documentación piden y qué derechos tienes en cada comparecencia.",
+    "keywords": [
+      "inspección hacienda criptomonedas",
+      "inspección fiscal criptomonedas",
+      "defensa inspección hacienda cripto",
+      "abogado inspección hacienda criptomonedas",
+      "comprobación limitada criptomonedas",
+      "que hacer en una inspeccion por criptomonedas"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/inspeccion-por-criptomonedas"
+  }
+}

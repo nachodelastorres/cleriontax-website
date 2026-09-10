@@ -11,7 +11,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = getAllBlogPosts();
 
   // Servicios dinámicos
-  const serviceSlugs = ['analisis-carteras', 'liquidaciones-fiscales', 'seguimiento-cartera', 'asesoria-fiscal-criptomonedas'];
+  // Las cuatro líneas del manual de marca v1.1, §02.
+  const serviceSlugs = [
+    'informe-fiscal-criptomonedas',
+    'declarar-criptomonedas',
+    'litigacion-fiscal-criptomonedas',
+    'asesoria-fiscal-criptomonedas',
+  ];
 
   // Clusters temáticos
   const clusterSlugs = clustersConfig.clusters.map(c => c.id);
@@ -20,6 +26,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     '',
     '/servicios',
+    '/metodo',
+    '/despachos',
     '/sobre-nosotros',
     '/contacto',
     '/blog',

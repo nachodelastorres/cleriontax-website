@@ -17,6 +17,9 @@ import {
   getOrganizationReference
 } from "@/lib/schemas";
 import clustersConfig from "@/messages/blog-posts/clusters-config.json";
+import NotaLegal from "@/components/blog/NotaLegal";
+import BloqueAccion from "@/components/cta/BloqueAccion";
+import { servicioSugerido } from "@/components/blog/servicioDelCluster";
 import { SITE_URL, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
@@ -228,12 +231,12 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Article Header */}
       <article>
-        <header className="pt-24 pb-12 md:pt-32 md:pb-16 bg-gradient-to-b from-neutral-50 to-white">
+        <header className="pt-24 pb-12 md:pt-32 md:pb-16 bg-papel">
           <Container>
             <div className="max-w-4xl mx-auto">
               {/* Back button */}
               <ButtonLink
-                variant="outline"
+                variant="secundaria"
                 size="sm"
                 href="/blog"
                 className="mb-8"
@@ -244,32 +247,32 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Category */}
               <div className="mb-6">
-                <span className="inline-block px-4 py-1.5 rounded-full bg-accent text-white text-sm font-bold uppercase tracking-wide">
+                <span className="inline-block px-4 py-1.5 bg-rojo text-blanco text-sm font-bold uppercase tracking-wide">
                   {t(`categoryTranslations.${post.category}`, { default: post.category })}
                 </span>
               </div>
 
               {/* Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-azul mb-6 leading-tight">
                 {post.title}
               </h1>
 
               {/* Excerpt */}
-              <p className="text-xl text-neutral-600 leading-relaxed mb-8">
+              <p className="text-xl text-pizarra leading-relaxed mb-8">
                 {post.excerpt}
               </p>
 
               {/* Meta */}
-              <div className="flex flex-wrap items-center gap-6 text-sm text-neutral-600 pb-8 border-b border-neutral-200">
+              <div className="flex flex-wrap items-center gap-6 text-sm text-pizarra pb-8 border-b border-niebla">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-lg">
+                  <div className="w-12 h-12 bg-azul flex items-center justify-center text-blanco font-bold text-lg">
                     {post.author.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-semibold text-primary">
+                    <p className="font-semibold text-azul">
                       {t(`authorTranslations.${post.author.name}.name`, { default: post.author.name })}
                     </p>
-                    <p className="text-xs text-neutral-500">
+                    <p className="text-xs text-pizarra">
                       {t(`authorTranslations.${post.author.name}.role`, { default: post.author.role })}
                     </p>
                   </div>
@@ -292,7 +295,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
 
                 {post.updatedAt && (
-                  <div className="text-xs text-neutral-500">
+                  <div className="text-xs text-pizarra">
                     {t('post.updated')}: {new Date(post.updatedAt).toLocaleDateString(locale)}
                   </div>
                 )}
@@ -303,7 +306,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {post.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/5 text-primary text-sm font-medium hover:bg-primary/10 transition-colors duration-300"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-azul/5 text-azul text-sm font-medium hover:bg-azul/10 transition-colors duration-300"
                   >
                     <Tag className="w-3.5 h-3.5" />
                     {t(`tagTranslations.${tag}`, { default: tag })}
@@ -315,10 +318,10 @@ export default async function BlogPostPage({ params }: Props) {
         </header>
 
         {/* Featured Image */}
-        <section className="py-8 bg-white">
+        <section className="py-8 bg-blanco">
           <Container>
             <div className="max-w-5xl mx-auto">
-              <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[21/9] overflow-hidden">
                 <Image
                   src={post.image.url}
                   alt={post.image.alt}
@@ -328,7 +331,7 @@ export default async function BlogPostPage({ params }: Props) {
                   quality={90}
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
+                <div className="absolute inset-0 bg-papel" />
               </div>
             </div>
           </Container>
@@ -347,17 +350,17 @@ export default async function BlogPostPage({ params }: Props) {
           const clusterRelatedPosts = relatedPosts.slice(0, 5);
 
           return (
-            <section className="py-12 bg-gradient-to-br from-primary-50 to-accent-50">
+            <section className="py-12 bg-papel">
               <Container>
                 <div className="max-w-4xl mx-auto">
                   {/* Header del cluster */}
-                  <div className="flex items-start gap-4 p-8 bg-white rounded-2xl shadow-xl border-2 border-primary-200 mb-8">
-                    <div className="p-4 bg-gradient-to-br from-primary to-primary-600 rounded-xl shadow-lg">
-                      <Folder className="w-8 h-8 text-white" />
+                  <div className="flex items-start gap-4 p-8 bg-blanco border-2 border-niebla mb-8">
+                    <div className="p-4 bg-azul">
+                      <Folder className="w-8 h-8 text-blanco" />
                     </div>
                     <div className="flex-1">
                       <div className="mb-3">
-                        <span className="text-xs font-bold text-primary-700 uppercase tracking-wider">
+                        <span className="text-xs font-bold text-azul uppercase tracking-wider">
                           Cluster Temático
                         </span>
                       </div>
@@ -365,23 +368,23 @@ export default async function BlogPostPage({ params }: Props) {
                         href={`/${locale}/blog/tema/${post.cluster}`}
                         className="group inline-block"
                       >
-                        <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">
+                        <h3 className="text-2xl font-bold text-azul mb-3 group-hover:text-rojo transition-colors">
                           {clusterName}
                         </h3>
                       </Link>
-                      <p className="text-neutral-700 mb-4 leading-relaxed">
+                      <p className="text-pizarra mb-4 leading-relaxed">
                         {clusterDescription}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {clusterKeywords.map((keyword, idx) => (
-                          <span key={idx} className="px-3 py-1.5 text-xs font-semibold bg-primary-100 text-primary-700 rounded-full hover:bg-primary-200 transition-colors">
+                          <span key={idx} className="px-3 py-1.5 text-xs font-semibold bg-papel text-azul hover:bg-niebla transition-colors">
                             {keyword}
                           </span>
                         ))}
                       </div>
                       <Link
                         href={`/${locale}/blog/tema/${post.cluster}`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-azul hover:text-rojo transition-colors"
                       >
                         Ver todos los artículos del cluster →
                       </Link>
@@ -390,8 +393,8 @@ export default async function BlogPostPage({ params }: Props) {
 
                   {/* Posts relacionados del cluster */}
                   {clusterRelatedPosts.length > 0 && (
-                    <div className="bg-white rounded-2xl shadow-lg p-8 border border-neutral-200">
-                      <h4 className="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+                    <div className="bg-blanco p-8 border border-niebla">
+                      <h4 className="text-lg font-bold text-azul mb-6 flex items-center gap-2">
                         <FileText className="w-5 h-5" />
                         Artículos Relacionados en este Cluster
                       </h4>
@@ -400,10 +403,10 @@ export default async function BlogPostPage({ params }: Props) {
                           <Link
                             key={relatedPost.slug}
                             href={`/${locale}/blog/${relatedPost.slug}`}
-                            className="group p-4 border border-neutral-200 rounded-xl hover:border-primary hover:shadow-md transition-all duration-300"
+                            className="group p-4 border border-niebla hover:border-azul transition-all duration-300"
                           >
                             <div className="flex items-start gap-4">
-                              <div className="flex-shrink-0 w-16 h-16 relative rounded-lg overflow-hidden">
+                              <div className="flex-shrink-0 w-16 h-16 relative overflow-hidden">
                                 <Image
                                   src={relatedPost.image.url}
                                   alt={relatedPost.title}
@@ -413,10 +416,10 @@ export default async function BlogPostPage({ params }: Props) {
                                 />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <h5 className="font-semibold text-primary group-hover:text-accent transition-colors line-clamp-2 mb-1">
+                                <h5 className="font-semibold text-azul group-hover:text-rojo transition-colors line-clamp-2 mb-1">
                                   {relatedPost.title}
                                 </h5>
-                                <p className="text-xs text-neutral-500">
+                                <p className="text-xs text-pizarra">
                                   {new Date(relatedPost.publishedAt).toLocaleDateString('es-ES', {
                                     year: 'numeric',
                                     month: 'short',
@@ -437,7 +440,7 @@ export default async function BlogPostPage({ params }: Props) {
         })()}
 
         {/* Article Content with Table of Contents */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-blanco">
           <Container>
             {post.layoutType === 'minimal' ? (
               // Layout Minimalista - Sin sidebar
@@ -494,19 +497,19 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
 
         {/* Share Section */}
-        <section className="py-12 bg-neutral-50">
+        <section className="py-12 bg-papel">
           <Container>
             <div className="max-w-4xl mx-auto">
-              <div className="flex items-center justify-between p-6 bg-white rounded-2xl border border-neutral-200">
+              <div className="flex items-center justify-between p-6 bg-blanco border border-niebla">
                 <div>
-                  <h3 className="text-lg font-bold text-primary mb-1">
+                  <h3 className="text-lg font-bold text-azul mb-1">
                     {t('post.shareSection.title')}
                   </h3>
-                  <p className="text-sm text-neutral-600">
+                  <p className="text-sm text-pizarra">
                     {t('post.shareSection.description')}
                   </p>
                 </div>
-                <button className="flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-colors duration-300 font-semibold">
+                <button className="flex items-center gap-2 px-6 py-3 bg-rojo text-blanco hover:bg-rojo transition-colors duration-300 font-semibold">
                   <Share2 className="w-5 h-5" />
                   {t('post.shareSection.button')}
                 </button>
@@ -523,15 +526,15 @@ export default async function BlogPostPage({ params }: Props) {
         const isClusterRelated = post.cluster && post.relatedPosts && post.relatedPosts.length > 0;
 
         return (
-          <section className="py-16 md:py-20 bg-white">
+          <section className="py-16 md:py-20 bg-blanco">
             <Container>
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-primary mb-4">
+                <h2 className="text-3xl font-bold text-azul mb-4">
                   {isClusterRelated && clusterName
                     ? `Más artículos del cluster: ${clusterName}`
                     : t('post.relatedArticles.title')}
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-pizarra">
                   {isClusterRelated
                     ? 'Explora más contenido relacionado dentro de este cluster temático'
                     : t('post.relatedArticles.description')}
@@ -552,27 +555,27 @@ export default async function BlogPostPage({ params }: Props) {
         );
       })()}
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-800 to-primary-900">
+      {/* Nota legal de pieza divulgativa (§18) */}
+      <section className="bg-blanco pb-12">
         <Container>
-          <div className="max-w-3xl mx-auto text-center text-white space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              {t('post.cta.title')}
-            </h2>
-            <p className="text-lg text-white/90">
-              {t('post.cta.description')}
-            </p>
-            <ButtonLink
-              variant="secondary"
-              size="lg"
-              href="/contacto"
-              className="shadow-xl hover:shadow-2xl"
-            >
-              {t('post.cta.button')}
-            </ButtonLink>
+          <div className="mx-auto max-w-4xl">
+            <NotaLegal locale={locale} />
           </div>
         </Container>
       </section>
+
+      {/*
+        Cierre del artículo. Quien lo está leyendo aún se está informando, así
+        que la acción principal lleva a ver cómo se resuelve su caso y no
+        directamente a contratar.
+      */}
+      <BloqueAccion
+        temperatura="templado"
+        titulo={t("ctaFrio.titulo")}
+        apoyo={t("ctaFrio.texto")}
+        accion={{ texto: t("ctaFrio.verServicio"), href: servicioSugerido(slug, post.cluster) }}
+        secundaria={{ texto: t("ctaFrio.contar"), href: "/contacto" }}
+      />
     </>
   );
 }

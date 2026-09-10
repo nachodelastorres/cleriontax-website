@@ -1,0 +1,141 @@
+{
+  "title": "Para despachos y gestorías",
+  "slug": "despachos",
+  "excerpt": "Apoyo técnico para despachos y gestorías sin especialización en criptoactivos: reconstruimos la operativa del cliente y entregamos el informe pericial que sostiene vuestra posición. Vosotros mantenéis la relación.",
+  "hero": {
+    "etiqueta": "Colaboración profesional",
+    "h1": "El cliente es vuestro. El trabajo técnico lo hacemos nosotros.",
+    "subheading": "Cuando a un despacho le entra una cartera con miles de operaciones en exchanges, wallets y protocolos DeFi, el problema no es fiscal: es de datos. Reconstruimos la operativa y os entregamos el informe con su memoria de criterios.",
+    "cta": { "label": "Hablar de una derivación", "href": "/contacto" },
+    "secundaria": { "label": "Ver el método", "href": "/metodo" }
+  },
+  "toc": [
+    { "id": "cuando", "label": "Cuándo derivar" },
+    { "id": "que-hacemos", "label": "Qué hacemos" },
+    { "id": "como-funciona", "label": "Cómo funciona" },
+    { "id": "responsabilidad", "label": "Responsabilidad" },
+    { "id": "casos", "label": "Casos típicos" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "cuando",
+      "h2": "Cuándo tiene sentido derivar",
+      "body": "Un despacho generalista resuelve sin problema una cartera cripto pequeña y ordenada: cuatro compras, dos ventas y un exchange. El trabajo empieza a no compensar cuando aparece el volumen o la dispersión.\n\nEl punto de inflexión suele ser este: el cliente trae exportaciones de varias plataformas, algunas incompletas, con movimientos entre sus propias wallets que parecen ventas y tokens que aparecieron sin que él los comprara. A partir de ahí el trabajo deja de ser fiscal y pasa a ser de tratamiento de datos, que es un oficio distinto y consume un tiempo que no se factura bien.\n\nY hay un segundo caso, más incómodo: cuando la AEAT ya ha abierto procedimiento y hace falta demostrar el origen de cada cifra con prueba on-chain."
+    },
+    {
+      "id": "que-hacemos",
+      "h2": "Qué hacemos y qué no",
+      "bullets": [
+        "<strong>Reconstrucción de la operativa:</strong> ingesta de todas las fuentes del cliente, conciliación, identificación de movimientos internos y clasificación fiscal operación a operación.",
+        "<strong>Informe con memoria de criterios:</strong> los totales listos para integrar en la declaración, con el detalle por operación detrás y el criterio aplicado en cada situación dudosa.",
+        "<strong>Informe pericial para procedimientos:</strong> cuando hay requerimiento, comprobación o inspección abiertos, el documento técnico que acompaña a vuestras alegaciones.",
+        "<strong>Segunda opinión sobre informes automáticos:</strong> revisión de un informe generado con software antes de que se presente.",
+        "<strong>No tocamos vuestra relación con el cliente:</strong> no facturamos al cliente final salvo que lo pidáis, no le ofrecemos nuestros servicios y no aparecemos en la relación si no queréis. El interlocutor sois vosotros.",
+        "<strong>No asumimos la presentación:</strong> salvo que lo acordemos expresamente, la declaración la presentáis vosotros. Nosotros entregamos el trabajo técnico y su respaldo documental."
+      ]
+    },
+    {
+      "id": "como-funciona",
+      "h2": "Cómo funciona la colaboración",
+      "steps": [
+        {
+          "title": "Nos contáis el caso",
+          "body": "Volumen aproximado, plataformas implicadas, ejercicios afectados y si hay algo de la AEAT de por medio. Con eso os decimos si el caso encaja, qué plazo lleva y qué coste tiene, antes de que os comprometáis con el cliente."
+        },
+        {
+          "title": "Acuerdo y alcance por escrito",
+          "body": "Definimos qué entra y qué no, quién factura a quién, qué datos necesitamos y en qué formato os llega el entregable. Sin esto no empezamos: en trabajos de datos, un alcance ambiguo acaba siempre en discusión."
+        },
+        {
+          "title": "Recogida de datos",
+          "body": "Podemos pedirlos nosotros al cliente en vuestro nombre o recibirlos de vosotros ya reunidos, como prefiráis. Nunca pedimos claves privadas: exportaciones, claves API de solo lectura y direcciones públicas."
+        },
+        {
+          "title": "Reconstrucción y revisión",
+          "body": "Aplicamos el método completo. Todo lo que el proceso automático no puede resolver con certeza se aparta y se revisa a mano, y las decisiones quedan documentadas en la memoria de criterios."
+        },
+        {
+          "title": "Entrega y sesión de traspaso",
+          "body": "Os entregamos el informe, la memoria de criterios y el registro de incidencias, y hacemos una sesión para que podáis defender cada cifra ante vuestro cliente y, si toca, ante la Administración."
+        }
+      ]
+    },
+    {
+      "id": "responsabilidad",
+      "h2": "Responsabilidad y confidencialidad",
+      "bullets": [
+        "<strong>Asesoramiento colegiado:</strong> el trabajo lo firma un asesor fiscal colegiado, con la responsabilidad profesional correspondiente.",
+        "<strong>Criterios documentados:</strong> cada decisión discutible queda por escrito con su fundamento, de modo que si un criterio se cuestiona más adelante se sabe exactamente qué se aplicó y por qué.",
+        "<strong>Confidencialidad:</strong> los datos del cliente no salen del encargo, no se usan como ejemplo ni se publican en ninguna pieza, ni siquiera anonimizados, sin consentimiento expreso por escrito.",
+        "<strong>Protección de datos:</strong> tratamiento conforme al RGPD, con el encargo de tratamiento formalizado cuando la relación lo requiere.",
+        "<strong>Sin captación:</strong> no ofrecemos nuestros servicios al cliente que nos deriváis."
+      ]
+    },
+    {
+      "id": "casos",
+      "h2": "Casos típicos",
+      "items": [
+        {
+          "title": "Cliente de toda la vida que ahora tiene cripto",
+          "body": "Un cliente que lleváis años declarando aparece con una cartera de criptoactivos que no sabéis cómo tratar. No queréis derivarlo entero ni perderlo, y tampoco dedicar treinta horas a limpiar CSV. Nosotros hacemos el tramo cripto y vosotros seguís presentando su declaración completa."
+        },
+        {
+          "title": "Requerimiento de la AEAT con plazo corriendo",
+          "body": "Vuestro cliente recibe un requerimiento por diferencias entre lo reportado por un exchange y su IRPF. Vosotros lleváis el procedimiento; nosotros reconstruimos la operativa del ejercicio y preparamos el informe técnico que acompaña a vuestras alegaciones."
+        },
+        {
+          "title": "Informe automático que no cuadra",
+          "body": "El cliente llega con un informe de un software que da una ganancia que no le encaja. Antes de presentarlo, revisamos la reconciliación: casi siempre aparecen movimientos internos tratados como ventas o adquisiciones valoradas a coste cero."
+        },
+        {
+          "title": "Regularización de ejercicios anteriores",
+          "body": "Al preparar el ejercicio corriente aflora operativa de años anteriores sin declarar. Reconstruimos el histórico completo para que podáis valorar la vía de complementaria con cifras reales delante."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Vais a quedaros con mi cliente?",
+          "a": "No. No le ofrecemos nuestros servicios, no le facturamos salvo que vosotros lo pidáis y no aparecemos en la relación si no queréis. Si el modelo no funcionara así, ningún despacho volvería a derivarnos un segundo caso."
+        },
+        {
+          "q": "¿Cómo se factura?",
+          "a": "Como prefiráis: os facturamos a vosotros y vosotros repercutís al cliente, o facturamos directamente al cliente final si os resulta más cómodo. Se acuerda antes de empezar, junto con el alcance."
+        },
+        {
+          "q": "¿Qué necesitáis para dar un precio?",
+          "a": "Volumen aproximado de operaciones, en qué plataformas y cadenas opera el cliente, qué ejercicios hay que cubrir y si hay procedimiento abierto. Con eso damos un plazo y un precio orientativos; el definitivo sale tras la fase de ingesta, cuando ya se sabe en qué estado están los datos."
+        },
+        {
+          "q": "¿Podéis firmar el informe?",
+          "a": "Sí. El trabajo lo firma un asesor fiscal colegiado, y en procedimientos abiertos el informe técnico se emite para que pueda aportarse al expediente."
+        },
+        {
+          "q": "¿Trabajáis con despachos de fuera de Mallorca?",
+          "a": "Sí. El trabajo es íntegramente remoto y la normativa aplicable es la española, así que la ubicación no condiciona nada."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "¿Tenéis un caso encima de la mesa?",
+    "body": "Contadnos el volumen, las plataformas, los ejercicios y si hay algo de la AEAT de por medio. Os decimos si encaja, qué plazo lleva y qué coste tiene antes de que os comprometáis con vuestro cliente.",
+    "button": { "label": "Hablar de una derivación", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Apoyo técnico para despachos y gestorías | Cleriontax",
+    "description": "Reconstrucción de operativa cripto e informe pericial para despachos y gestorías sin especialización en criptoactivos. Vosotros mantenéis la relación con el cliente.",
+    "keywords": [
+      "apoyo despachos fiscalidad criptomonedas",
+      "colaboración gestoría criptomonedas",
+      "informe pericial criptomonedas",
+      "asesor fiscal criptomonedas para despachos",
+      "externalizar fiscalidad cripto"
+    ],
+    "canonical": "https://cleriontax.com/despachos"
+  }
+}

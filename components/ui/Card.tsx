@@ -2,19 +2,25 @@ import { HTMLAttributes, forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {
+  /** Realce al pasar el ratón. Solo cambia el color del borde (§12). */
   hover?: boolean;
 }
 
+/**
+ * Tarjeta — Manual de marca §12.
+ *
+ * Esquinas rectas, borde de una línea y fondo plano. Sin sombras, sin bordes
+ * en degradado y sin desplazamiento ni escala al pasar el ratón: el único
+ * movimiento autorizado de la marca es la entrada de los cuatro cuadrantes.
+ */
 const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ className, hover = false, ...props }, ref) => {
     return (
       <div
         ref={ref}
         className={cn(
-          "rounded-xl border border-neutral-200 bg-white p-6 shadow-md relative overflow-hidden",
-          "before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-navy/10 before:via-transparent before:to-navy/5 before:-z-10",
-          "after:absolute after:top-0 after:left-0 after:right-0 after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-navy/20 after:to-transparent",
-          hover && "transition-all duration-500 hover:shadow-2xl hover:shadow-navy/10 hover:-translate-y-2 hover:border-navy/20 hover:scale-[1.02]",
+          "border border-niebla bg-blanco p-6",
+          hover && "transition-colors duration-200 hover:border-azul",
           className
         )}
         {...props}

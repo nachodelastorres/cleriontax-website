@@ -1,0 +1,92 @@
+import Patron from "@/components/brand/Patron";
+import ButtonLink from "@/components/ui/ButtonLink";
+import SimboloAnimado from "@/components/brand/SimboloAnimado";
+
+/**
+ * Cabecera de página — §13 y §17.
+ *
+ * El patrón se usa como superficie completa, no como banda parcial. La razón
+ * es de color: su cara dominante es #22326B, bastante más clara que el Azul
+ * Cleriontax del fondo, así que una banda a media anchura se lee siempre como
+ * un rectángulo pegado encima, con un canto que parece un error.
+ *
+ * Cubriendo toda la cabecera, el patrón sangra por arriba, por la derecha y
+ * por abajo —«como superficie completa», §13— y el único borde recto es el del
+ * panel de contenido, que sí es deliberado.
+ *
+ * El texto de lectura va sobre color plano, nunca sobre el patrón (§13).
+ */
+interface HeroPaginaProps {
+  /** Identificador de la página. Se conserva por compatibilidad de llamada. */
+  id: string;
+  etiqueta?: string;
+  titulo: string;
+  entrada: string;
+  /** Muestra el símbolo entrando a su posición (§12). Solo donde signifique algo. */
+  simbolo?: boolean;
+  accion?: { label: string; href: string };
+  secundaria?: { label: string; href: string };
+}
+
+export default function HeroPagina({
+  etiqueta,
+  titulo,
+  entrada,
+  accion,
+  secundaria,
+  simbolo = false,
+}: HeroPaginaProps) {
+  return (
+    <section className="relative overflow-hidden bg-azul">
+      {/* Superficie completa de patrón. En móvil, color plano. */}
+      <div className="pointer-events-none absolute inset-0 hidden lg:block">
+        <Patron version="azul" bloque={104} />
+      </div>
+
+      <div className="relative mx-auto max-w-5xl px-6">
+        {/*
+          Panel sólido sobre el patrón. El pseudoelemento lo prolonga hasta el
+          borde izquierdo de la ventana, de modo que sangra por ese lado y solo
+          queda un canto recto: el derecho.
+        */}
+        <div className="relative bg-azul py-20 before:absolute before:inset-y-0 before:right-full before:w-screen before:bg-azul md:py-24 lg:w-[66%] lg:pr-12">
+          <div className="relative grid gap-10 xl:grid-cols-[1fr_auto] xl:items-center">
+            <div>
+              {etiqueta ? (
+                <span className="font-mono text-dato text-rojo">{etiqueta}</span>
+              ) : null}
+
+              <h1 className="mt-5 max-w-[18ch] text-hero text-blanco">{titulo}</h1>
+              <p className="mt-6 max-w-[62ch] text-lectura text-niebla">{entrada}</p>
+
+              {accion ? (
+                <div className="mt-10 flex flex-wrap items-center gap-4">
+                  <ButtonLink href={accion.href} variant="principal" size="lg">
+                    {accion.label}
+                  </ButtonLink>
+                  {secundaria ? (
+                    <ButtonLink
+                      href={secundaria.href}
+                      variant="secundaria-inversa"
+                      size="lg"
+                    >
+                      {secundaria.label}
+                    </ButtonLink>
+                  ) : null}
+                </div>
+              ) : null}
+            </div>
+
+            {simbolo ? (
+              <SimboloAnimado
+                tam={132}
+                className="hidden text-blanco xl:block"
+                retraso={140}
+              />
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

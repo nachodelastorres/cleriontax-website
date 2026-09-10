@@ -75,7 +75,7 @@ export default function FileUpload({ onFileSelect, error }: FileUploadProps) {
 
   return (
     <div className="w-full">
-      <label className="block text-sm font-medium text-neutral-700 mb-2">
+      <label className="block text-sm font-medium text-pizarra mb-2">
         {t('file')}
       </label>
 
@@ -85,11 +85,11 @@ export default function FileUpload({ onFileSelect, error }: FileUploadProps) {
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
           className={cn(
-            "relative border-2 border-dashed rounded-lg p-8 text-center transition-colors cursor-pointer",
+            "relative border-2 border-dashed  p-8 text-center transition-colors cursor-pointer",
             isDragging
-              ? "border-accent bg-accent/5"
-              : "border-neutral-300 hover:border-accent hover:bg-neutral-50",
-            error && "border-error"
+              ? "border-rojo bg-rojo/5"
+              : "border-niebla hover:border-rojo hover:bg-papel",
+            error && "border-rojo"
           )}
         >
           <input
@@ -98,21 +98,21 @@ export default function FileUpload({ onFileSelect, error }: FileUploadProps) {
             onChange={handleFileInput}
             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
           />
-          <Upload className="h-10 w-10 text-neutral-400 mx-auto mb-4" />
-          <p className="text-sm text-neutral-600 mb-1">
+          <Upload className="h-10 w-10 text-pizarra mx-auto mb-4" />
+          <p className="text-sm text-pizarra mb-1">
             {t('fileDragText')}
           </p>
-          <p className="text-xs text-neutral-500">
+          <p className="text-xs text-pizarra">
             {t('fileClickText')}
           </p>
         </div>
       ) : (
-        <div className="border border-neutral-300 rounded-lg p-4 flex items-center justify-between bg-neutral-50">
+        <div className="border border-niebla p-4 flex items-center justify-between bg-papel">
           <div className="flex items-center gap-3">
-            <FileText className="h-8 w-8 text-accent shrink-0" />
+            <FileText className="h-8 w-8 text-rojo shrink-0" />
             <div>
-              <p className="text-sm font-medium text-neutral-900">{file.name}</p>
-              <p className="text-xs text-neutral-500">
+              <p className="text-sm font-medium text-azul">{file.name}</p>
+              <p className="text-xs text-pizarra">
                 {(file.size / 1024).toFixed(2)} KB
               </p>
             </div>
@@ -120,14 +120,14 @@ export default function FileUpload({ onFileSelect, error }: FileUploadProps) {
           <button
             type="button"
             onClick={removeFile}
-            className="p-2 hover:bg-neutral-200 rounded-lg transition-colors"
+            className="p-2 hover:bg-niebla transition-colors"
           >
-            <X className="h-5 w-5 text-neutral-600" />
+            <X className="h-5 w-5 text-pizarra" />
           </button>
         </div>
       )}
 
-      {error && <p className="mt-1.5 text-sm text-error">{error}</p>}
+      {error && <p className="mt-1.5 text-sm text-rojo">{error}</p>}
     </div>
   );
 }

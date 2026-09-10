@@ -76,10 +76,10 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
     <div className="max-w-none">
       {/* Metadata Bar */}
       {metadata && (
-        <div className="flex flex-wrap items-center gap-4 mb-12 pb-6 border-b-2 border-neutral-200">
+        <div className="flex flex-wrap items-center gap-4 mb-12 pb-6 border-b-2 border-niebla">
           {metadata.publishedAt && (
-            <div className="flex items-center gap-2 text-neutral-600">
-              <CalendarIcon className="w-5 h-5 text-accent" />
+            <div className="flex items-center gap-2 text-pizarra">
+              <CalendarIcon className="w-5 h-5 text-rojo" />
               <span className="text-sm font-medium">
                 {new Date(metadata.publishedAt).toLocaleDateString('es-ES', {
                   year: 'numeric',
@@ -90,14 +90,14 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             </div>
           )}
           {metadata.readingTime && (
-            <div className="flex items-center gap-2 text-neutral-600">
-              <ClockIcon className="w-5 h-5 text-accent" />
+            <div className="flex items-center gap-2 text-pizarra">
+              <ClockIcon className="w-5 h-5 text-rojo" />
               <span className="text-sm font-medium">{metadata.readingTime} min de lectura</span>
             </div>
           )}
           {metadata.category && (
             <div className="flex items-center gap-2">
-              <span className="px-4 py-1.5 bg-accent/10 text-accent-dark text-sm font-semibold rounded-full">
+              <span className="px-4 py-1.5 bg-rojo/10 text-rojo text-sm font-semibold">
                 {metadata.category}
               </span>
             </div>
@@ -108,11 +108,11 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
       {/* Tags */}
       {metadata?.tags && metadata.tags.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-10">
-          <TagIcon className="w-5 h-5 text-neutral-500 mt-1" />
+          <TagIcon className="w-5 h-5 text-pizarra mt-1" />
           {metadata.tags.map((tag, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-neutral-100 hover:bg-accent/10 text-neutral-700 text-xs font-medium rounded-md transition-colors cursor-pointer border border-neutral-200"
+              className="px-3 py-1 bg-papel hover:bg-rojo/10 text-pizarra text-xs font-medium transition-colors cursor-pointer border border-niebla"
             >
               {translateTag(tag)}
             </span>
@@ -121,15 +121,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
       )}
 
       {/* Content */}
-      <div className="prose prose-lg max-w-none
-        prose-headings:font-bold prose-headings:text-navy
-        prose-p:text-neutral-700 prose-p:leading-loose prose-p:mb-6 prose-p:text-lg
-        prose-a:text-accent prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-a:transition-all
-        prose-strong:text-navy prose-strong:font-bold
-        prose-ul:my-6 prose-ul:space-y-3
-        prose-ol:my-6 prose-ol:space-y-3
-        prose-li:text-neutral-700 prose-li:leading-relaxed prose-li:text-lg
-      ">
+      <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-azul prose-p:text-pizarra prose-p:leading-loose prose-p:mb-6 prose-p:text-lg prose-a:text-rojo prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-a:transition-all prose-strong:text-azul prose-strong:font-bold prose-ul:my-6 prose-ul:space-y-3 prose-ol:my-6 prose-ol:space-y-3 prose-li:text-pizarra prose-li:leading-relaxed prose-li:text-lg">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
@@ -141,11 +133,11 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
               return (
                 <div className="mb-10 mt-16 scroll-mt-24" id={headingId}>
-                  <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-accent/5 via-accent/3 to-transparent rounded-2xl border-l-4 border-accent shadow-sm">
-                    <div className="flex-shrink-0 text-accent mt-1">
+                  <div className="flex items-start gap-4 p-6 bg-papel border-l-4 border-rojo">
+                    <div className="flex-shrink-0 text-rojo mt-1">
                       {icon}
                     </div>
-                    <h2 className="text-3xl font-bold text-navy mb-0 flex-1" {...props}>
+                    <h2 className="text-3xl font-bold text-azul mb-0 flex-1" {...props}>
                       {children}
                     </h2>
                   </div>
@@ -157,7 +149,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             h3({ children, ...props }) {
               return (
                 <h3
-                  className="text-2xl font-bold text-navy mb-5 mt-10 pb-2 border-b border-neutral-200"
+                  className="text-2xl font-bold text-azul mb-5 mt-10 pb-2 border-b border-niebla"
                   {...props}
                 >
                   {children}
@@ -169,10 +161,10 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             h4({ children, ...props }) {
               return (
                 <h4
-                  className="text-xl font-bold text-navy mb-4 mt-8 flex items-center gap-2"
+                  className="text-xl font-bold text-azul mb-4 mt-8 flex items-center gap-2"
                   {...props}
                 >
-                  <span className="w-2 h-2 bg-accent rounded-full"></span>
+                  <span className="w-2 h-2 bg-rojo"></span>
                   {children}
                 </h4>
               );
@@ -199,11 +191,11 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
               }
 
               return (
-                <div className={`flex gap-4 ${bgColor} ${borderColor} border-l-4 rounded-r-xl p-6 my-8 shadow-sm`}>
+                <div className={`flex gap-4 ${bgColor} ${borderColor} border-l-4 p-6 my-8 `}>
                   <div className={`flex-shrink-0 ${iconColor}`}>
                     {icon}
                   </div>
-                  <blockquote className="m-0 flex-1 font-medium text-neutral-800" {...props}>
+                  <blockquote className="m-0 flex-1 font-medium text-azul" {...props}>
                     {children}
                   </blockquote>
                 </div>
@@ -221,8 +213,8 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             li({ children, ...props }) {
               return (
-                <li className="flex gap-3 text-neutral-700 leading-relaxed" {...props}>
-                  <span className="flex-shrink-0 w-1.5 h-1.5 bg-accent rounded-full mt-2.5"></span>
+                <li className="flex gap-3 text-pizarra leading-relaxed" {...props}>
+                  <span className="flex-shrink-0 w-1.5 h-1.5 bg-rojo mt-2.5"></span>
                   <span className="flex-1">{children}</span>
                 </li>
               );
@@ -240,7 +232,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             // Tablas con diseño moderno
             table({ children, ...props }) {
               return (
-                <div className="my-10 overflow-hidden rounded-xl border border-neutral-200 shadow-lg">
+                <div className="my-10 overflow-hidden border border-niebla">
                   <div className="overflow-x-auto">
                     <table className="w-full" {...props}>
                       {children}
@@ -252,7 +244,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             thead({ children, ...props }) {
               return (
-                <thead className="bg-gradient-to-r from-navy to-navy/90" {...props}>
+                <thead className="bg-azul" {...props}>
                   {children}
                 </thead>
               );
@@ -260,7 +252,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             th({ children, ...props }) {
               return (
-                <th className="px-6 py-4 text-left font-bold text-white text-sm uppercase tracking-wider" {...props}>
+                <th className="px-6 py-4 text-left font-bold text-blanco text-sm uppercase tracking-wider" {...props}>
                   {children}
                 </th>
               );
@@ -268,7 +260,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             td({ children, ...props }) {
               return (
-                <td className="px-6 py-4 text-neutral-700 border-b border-neutral-200" {...props}>
+                <td className="px-6 py-4 text-pizarra border-b border-niebla" {...props}>
                   {children}
                 </td>
               );
@@ -276,7 +268,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             tr({ children, ...props }) {
               return (
-                <tr className="hover:bg-accent/5 transition-colors" {...props}>
+                <tr className="hover:bg-rojo/5 transition-colors" {...props}>
                   {children}
                 </tr>
               );
@@ -285,7 +277,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             // Pre blocks con estilo mejorado
             pre({ children, ...props }: any) {
               return (
-                <pre className="bg-gradient-to-br from-navy to-navy/90 text-neutral-100 p-6 rounded-xl overflow-x-auto my-8 shadow-lg border border-navy/50" {...props}>
+                <pre className="bg-azul text-papel p-6 overflow-x-auto my-8 border border-azul/50" {...props}>
                   {children}
                 </pre>
               );
@@ -295,7 +287,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             code({ node, inline, className, children, ...props }: any) {
               return (
                 <code
-                  className={inline ? "px-2 py-1 bg-accent/10 text-accent-dark rounded font-mono text-base font-semibold" : className}
+                  className={inline ? "px-2 py-1 bg-rojo/10 text-rojo  font-mono text-base font-semibold" : className}
                   {...props}
                 >
                   {children}
@@ -321,7 +313,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="text-accent font-semibold hover:underline transition-colors"
+                    className="text-rojo font-semibold hover:underline transition-colors"
                     {...props}
                   >
                     {children}
@@ -337,7 +329,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
                 return (
                   <a
                     href={href}
-                    className="text-accent font-semibold hover:underline transition-colors"
+                    className="text-rojo font-semibold hover:underline transition-colors"
                     {...props}
                   >
                     {children}
@@ -349,7 +341,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
               return (
                 <Link
                   href={href || '/'}
-                  className="text-accent font-semibold hover:underline transition-colors"
+                  className="text-rojo font-semibold hover:underline transition-colors"
                 >
                   {children}
                 </Link>
@@ -360,13 +352,13 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             hr({ ...props }) {
               return (
                 <div className="my-12 flex items-center gap-4" {...props}>
-                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
+                  <div className="flex-1 h-px bg-rojo"></div>
                   <div className="flex gap-1">
-                    <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                    <span className="w-1.5 h-1.5 bg-accent/60 rounded-full"></span>
-                    <span className="w-1.5 h-1.5 bg-accent/30 rounded-full"></span>
+                    <span className="w-1.5 h-1.5 bg-rojo"></span>
+                    <span className="w-1.5 h-1.5 bg-rojo/60"></span>
+                    <span className="w-1.5 h-1.5 bg-rojo/30"></span>
                   </div>
-                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
+                  <div className="flex-1 h-px bg-rojo"></div>
                 </div>
               );
             },

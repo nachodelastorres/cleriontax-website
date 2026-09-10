@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations, useLocale } from 'next-intl';
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -51,7 +50,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-choose-us" className="relative py-24 px-6 bg-white overflow-hidden">
+    <section id="why-choose-us" className="relative py-24 px-6 bg-blanco overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <div className="relative w-full h-full">
@@ -66,43 +65,35 @@ export default function WhyChooseUs() {
           />
         </div>
         {/* Gradient overlay for better blending */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#EDF2F4]/60 via-white/50 to-white/70" />
+        <div className="absolute inset-0 bg-papel" />
       </div>
 
       <Container className="relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
             className="text-center mb-16 space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-navy-darker leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-azul leading-tight">
               {t('title')}
             </h2>
-            <p className="text-xl text-gray-blue max-w-4xl mx-auto">
+            <p className="text-xl text-pizarra max-w-4xl mx-auto">
               {t('subtitle')}
             </p>
-            <p className="text-base md:text-lg text-neutral-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-pizarra max-w-4xl mx-auto leading-relaxed">
               {t('intro')}
             </p>
-          </motion.div>
+          </div>
 
           {/* Reasons Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
             {reasons.map((reason, index) => {
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md shadow-[0_6px_24px_rgba(0,0,0,0.05)] hover:shadow-lg hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 h-full">
+                  <div className="bg-blanco p-6 md:p-8 -[0_6px_24px_rgba(0,0,0,0.05)] -[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 h-full">
                     {/* Image */}
                     <div className="mb-5 flex items-center justify-center w-full h-40 md:h-44">
                       <Image
@@ -116,38 +107,34 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl font-semibold text-navy-darker mb-3 leading-tight">
+                    <h3 className="text-xl font-semibold text-azul mb-3 leading-tight">
                       {reason.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm md:text-base text-gray-blue leading-relaxed">
+                    <p className="text-sm md:text-base text-pizarra leading-relaxed">
                       {reason.description}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
           </div>
 
           {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+          <div
             className="text-center"
           >
             <ButtonLink
-              variant="primary"
+              variant="principal"
               size="lg"
               href="/servicios"
-              className="group shadow-lg hover:shadow-xl"
+              className="group"
             >
               {t('cta')}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </ButtonLink>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

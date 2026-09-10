@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Link } from '@/i18n/navigation';
 import Image from "next/image";
 import { Calendar, Clock, Tag, ArrowRight } from "lucide-react";
@@ -32,14 +31,10 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
   };
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1, duration: 0.5 }}
-      className={`group relative overflow-hidden rounded-2xl bg-white border border-neutral-200 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 ${
-        featured ? 'lg:col-span-2' : ''
-      }`}
+    <article
+      className={`group relative overflow-hidden bg-blanco border border-niebla hover:border-rojo/30 transition-all duration-500   ${
+ featured ? 'lg:col-span-2' : ''
+ }`}
     >
       <Link href={`/blog/${slug}`} className={`block ${featured ? 'lg:flex lg:flex-row' : ''}`}>
         {/* Image */}
@@ -52,12 +47,12 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             sizes={featured ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}
             quality={85}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute inset-0 bg-papel" />
+          <div className="absolute inset-0 bg-azul/55 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
           {/* Category badge */}
           <div className="absolute top-4 left-4 z-10">
-            <span className="px-4 py-1.5 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wide shadow-lg">
+            <span className="px-4 py-1.5 bg-rojo text-blanco text-xs font-bold uppercase tracking-wide">
               {translatedCategory}
             </span>
           </div>
@@ -65,8 +60,8 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
           {/* Featured badge */}
           {post.featured && (
             <div className="absolute top-4 right-4 z-10">
-              <span className="px-4 py-1.5 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wide shadow-lg flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+              <span className="px-4 py-1.5 bg-azul text-blanco text-xs font-bold uppercase tracking-wide flex items-center gap-1.5">
+                <span className="w-2 h-2 bg-blanco"></span>
                 {t('featured.badge')}
               </span>
             </div>
@@ -77,7 +72,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
         <div className={`p-6 ${featured ? 'lg:p-8 lg:w-1/2 flex flex-col justify-between' : ''}`}>
           <div>
             {/* Meta information */}
-            <div className="flex items-center gap-4 text-sm text-neutral-500 mb-4">
+            <div className="flex items-center gap-4 text-sm text-pizarra mb-4">
               <div className="flex items-center gap-1.5">
                 <Calendar className="w-4 h-4" />
                 <time dateTime={post.publishedAt}>
@@ -95,16 +90,16 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             </div>
 
             {/* Title */}
-            <h3 className={`font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300 ${
-              featured ? 'text-2xl lg:text-3xl' : 'text-xl'
-            }`}>
+            <h3 className={`font-bold text-azul mb-3 group-hover:text-rojo transition-colors duration-300 ${
+ featured ? 'text-2xl lg:text-3xl' : 'text-xl'
+ }`}>
               {post.title}
             </h3>
 
             {/* Excerpt */}
-            <p className={`text-neutral-600 leading-relaxed mb-4 ${
-              featured ? 'text-base lg:text-lg' : 'text-sm'
-            }`}>
+            <p className={`text-pizarra leading-relaxed mb-4 ${
+ featured ? 'text-base lg:text-lg' : 'text-sm'
+ }`}>
               {post.excerpt}
             </p>
 
@@ -113,14 +108,14 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
               {post.tags.slice(0, 3).map((tag, i) => (
                 <span
                   key={i}
-                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/5 text-primary text-xs font-medium"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 bg-azul/5 text-azul text-xs font-medium"
                 >
                   <Tag className="w-3 h-3" />
                   {translateTag(tag)}
                 </span>
               ))}
               {post.tags.length > 3 && (
-                <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-600 text-xs font-medium">
+                <span className="inline-flex items-center px-2.5 py-1 bg-papel text-pizarra text-xs font-medium">
                   +{post.tags.length - 3}
                 </span>
               )}
@@ -128,24 +123,24 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
           </div>
 
           {/* Author & CTA */}
-          <div className="flex items-center justify-between pt-4 border-t border-neutral-200">
+          <div className="flex items-center justify-between pt-4 border-t border-niebla">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">
+              <div className="w-10 h-10 bg-azul flex items-center justify-center text-blanco font-bold">
                 {translatedAuthor.name.charAt(0)}
               </div>
               <div>
-                <p className="text-sm font-semibold text-primary">{translatedAuthor.name}</p>
-                <p className="text-xs text-neutral-500">{translatedAuthor.role}</p>
+                <p className="text-sm font-semibold text-azul">{translatedAuthor.name}</p>
+                <p className="text-xs text-pizarra">{translatedAuthor.role}</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-2 text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+            <div className="flex items-center gap-2 text-rojo font-semibold text-sm group-hover:gap-3 transition-all duration-300">
               <span>{t('readMore')}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </div>
           </div>
         </div>
       </Link>
-    </motion.article>
+    </article>
   );
 }

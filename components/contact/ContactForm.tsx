@@ -121,24 +121,24 @@ export default function ContactForm() {
               type="checkbox"
               {...register("privacyConsent")}
               disabled={status === "submitting"}
-              className="peer h-5 w-5 rounded border-2 border-gray-300 text-navy focus:ring-navy focus:ring-offset-0 cursor-pointer transition-colors disabled:opacity-50"
+              className="peer h-5 w-5 border-2 border-niebla text-azul focus:ring-azul focus:ring-offset-0 cursor-pointer transition-colors disabled:opacity-50"
             />
           </div>
-          <span className="text-sm text-gray-700 leading-relaxed">
+          <span className="text-sm text-pizarra leading-relaxed">
             {t('privacyConsentText')}{" "}
-            <Link href="/privacidad" className="text-navy font-medium hover:underline">
+            <Link href="/privacidad" className="text-azul font-medium hover:underline">
               {t('privacyLink')}
             </Link>
           </span>
         </label>
         {errors.privacyConsent && (
-          <p className="text-sm text-red-600 ml-8">{t('privacyConsentRequired')}</p>
+          <p className="text-sm text-rojo ml-8">{t('privacyConsentRequired')}</p>
         )}
       </div>
 
       {/* Status Messages */}
       {status === "success" && (
-        <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
+        <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200">
           <CheckCircle className="h-5 w-5 text-green-600 shrink-0" />
           <p className="text-sm text-green-800">
             {t('successMessage')}
@@ -147,9 +147,9 @@ export default function ContactForm() {
       )}
 
       {status === "error" && (
-        <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
-          <AlertCircle className="h-5 w-5 text-red-600 shrink-0" />
-          <p className="text-sm text-red-800">
+        <div className="flex items-center gap-3 p-4 bg-rojo/10 border border-rojo/30">
+          <AlertCircle className="h-5 w-5 text-rojo shrink-0" />
+          <p className="text-sm text-rojo">
             {t('errorMessage')}
           </p>
         </div>
@@ -157,14 +157,14 @@ export default function ContactForm() {
 
       <Button
         type="submit"
-        variant="primary"
+        variant="principal"
         size="lg"
         className="w-full"
         disabled={status === "submitting"}
       >
         {status === "submitting" ? (
           <>
-            <span className="animate-spin mr-2">⏳</span>
+            <span className="mr-2">⏳</span>
             {t('submitting')}
           </>
         ) : (

@@ -27,13 +27,13 @@ export default async function ClustersPage({ params }: Props) {
   return (
     <>
       {/* Header */}
-      <section className="pt-24 pb-12 md:pt-32 md:pb-16 bg-gradient-to-br from-primary-900 to-primary-800">
+      <section className="pt-24 pb-12 md:pt-32 md:pb-16 bg-azul">
         <Container>
-          <div className="max-w-4xl mx-auto text-center text-white">
+          <div className="max-w-4xl mx-auto text-center text-blanco">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Clusters Temáticos
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-blanco/90 mb-8">
               Contenido organizado por temas para facilitar tu búsqueda
             </p>
             <div className="flex items-center justify-center gap-8 text-sm">
@@ -51,7 +51,7 @@ export default async function ClustersPage({ params }: Props) {
       </section>
 
       {/* Clusters Grid */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-blanco">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {clustersConfig.clusters.map((cluster) => {
@@ -60,18 +60,18 @@ export default async function ClustersPage({ params }: Props) {
               return (
                 <div
                   key={cluster.id}
-                  className="group p-8 bg-white border-2 border-neutral-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300"
+                  className="group p-8 bg-blanco border-2 border-niebla hover:border-azul transition-all duration-300"
                 >
                   {/* Header */}
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="p-3 bg-primary-100 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                    <div className="p-3 bg-papel group-hover:bg-azul group-hover:text-blanco transition-colors">
                       <Folder className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                      <h2 className="text-2xl font-bold text-azul mb-2 group-hover:text-rojo transition-colors">
                         {cluster.name[locale as 'es' | 'en' | 'ca']}
                       </h2>
-                      <div className="flex items-center gap-3 text-sm text-neutral-600">
+                      <div className="flex items-center gap-3 text-sm text-pizarra">
                         <span className="flex items-center gap-1">
                           <FileText className="w-4 h-4" />
                           {clusterPosts.length} artículos
@@ -81,20 +81,20 @@ export default async function ClustersPage({ params }: Props) {
                   </div>
 
                   {/* Description */}
-                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                  <p className="text-pizarra mb-6 leading-relaxed">
                     {cluster.description[locale as 'es' | 'en' | 'ca']}
                   </p>
 
                   {/* Keywords */}
                   <div className="mb-6">
-                    <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
+                    <p className="text-xs font-semibold text-pizarra uppercase tracking-wide mb-3">
                       Temas principales
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {cluster.keywords[locale as 'es' | 'en' | 'ca'].slice(0, 8).map((keyword, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1 text-xs font-medium bg-primary-50 text-primary rounded-full"
+                          className="px-3 py-1 text-xs font-medium bg-papel text-azul"
                         >
                           {keyword}
                         </span>
@@ -104,13 +104,13 @@ export default async function ClustersPage({ params }: Props) {
 
                   {/* AI Prompts */}
                   <div className="mb-6">
-                    <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
+                    <p className="text-xs font-semibold text-pizarra uppercase tracking-wide mb-3">
                       Preguntas frecuentes
                     </p>
                     <ul className="space-y-2">
                       {cluster.aiPrompts[locale as 'es' | 'en' | 'ca'].slice(0, 3).map((prompt, idx) => (
-                        <li key={idx} className="text-sm text-neutral-600 flex items-start gap-2">
-                          <span className="text-accent mt-1">→</span>
+                        <li key={idx} className="text-sm text-pizarra flex items-start gap-2">
+                          <span className="text-rojo mt-1">→</span>
                           <span>{prompt}</span>
                         </li>
                       ))}
@@ -119,8 +119,8 @@ export default async function ClustersPage({ params }: Props) {
 
                   {/* Posts List */}
                   {clusterPosts.length > 0 && (
-                    <div className="pt-6 border-t border-neutral-200">
-                      <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
+                    <div className="pt-6 border-t border-niebla">
+                      <p className="text-xs font-semibold text-pizarra uppercase tracking-wide mb-3">
                         Artículos en este cluster
                       </p>
                       <ul className="space-y-2">
@@ -128,9 +128,9 @@ export default async function ClustersPage({ params }: Props) {
                           <li key={post.id}>
                             <Link
                               href={`/${locale}/blog/${post.slugTranslations.es}`}
-                              className="group/link flex items-start gap-2 text-sm hover:text-primary transition-colors"
+                              className="group/link flex items-start gap-2 text-sm hover:text-azul transition-colors"
                             >
-                              <FileText className="w-4 h-4 mt-0.5 text-neutral-400 group-hover/link:text-primary" />
+                              <FileText className="w-4 h-4 mt-0.5 text-pizarra group-hover/link:text-azul" />
                               <span className="flex-1 line-clamp-2">
                                 {post.id.split('-').map(word =>
                                   word.charAt(0).toUpperCase() + word.slice(1)
@@ -140,7 +140,7 @@ export default async function ClustersPage({ params }: Props) {
                           </li>
                         ))}
                         {clusterPosts.length > 5 && (
-                          <li className="text-xs text-neutral-500 italic">
+                          <li className="text-xs text-pizarra italic">
                             +{clusterPosts.length - 5} artículos más
                           </li>
                         )}
@@ -150,8 +150,8 @@ export default async function ClustersPage({ params }: Props) {
 
                   {/* Empty State */}
                   {clusterPosts.length === 0 && (
-                    <div className="pt-6 border-t border-neutral-200">
-                      <p className="text-sm text-neutral-500 italic text-center py-4">
+                    <div className="pt-6 border-t border-niebla">
+                      <p className="text-sm text-pizarra italic text-center py-4">
                         📝 Contenido próximamente
                       </p>
                     </div>
@@ -164,24 +164,24 @@ export default async function ClustersPage({ params }: Props) {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-neutral-50">
+      <section className="py-12 bg-papel">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-primary mb-6 text-center">
+            <h2 className="text-2xl font-bold text-azul mb-6 text-center">
               Estadísticas del Blog
             </h2>
             <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
-              <div className="p-8 bg-white rounded-xl text-center shadow-sm">
-                <div className="text-4xl font-bold text-primary mb-2">
+              <div className="p-8 bg-blanco text-center">
+                <div className="text-4xl font-bold text-azul mb-2">
                   {clustersIndex.stats.totalClusters}
                 </div>
-                <div className="text-sm text-neutral-600 font-medium">Clusters Temáticos</div>
+                <div className="text-sm text-pizarra font-medium">Clusters Temáticos</div>
               </div>
-              <div className="p-8 bg-white rounded-xl text-center shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">
+              <div className="p-8 bg-blanco text-center">
+                <div className="text-4xl font-bold text-rojo mb-2">
                   {clustersIndex.stats.totalPosts}
                 </div>
-                <div className="text-sm text-neutral-600 font-medium">Artículos Publicados</div>
+                <div className="text-sm text-pizarra font-medium">Artículos Publicados</div>
               </div>
             </div>
           </div>

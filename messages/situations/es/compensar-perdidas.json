@@ -1,0 +1,111 @@
+{
+  "title": "Tuve pérdidas y quiero compensarlas",
+  "slug": "compensar-perdidas",
+  "excerpt": "Cómo se compensan las pérdidas en criptoactivos contra ganancias, incluidas las de acciones y fondos, qué plazo hay para hacerlo y por qué una pérdida no declarada es una pérdida perdida.",
+  "hero": {
+    "etiqueta": "Lo que ya perdiste puede valer",
+    "h1": "Vendiste en pérdidas y ahora tienes ganancias",
+    "subheading": "Puede ser una venta ruinosa de hace tres años que preferiste olvidar, y este año un buen resultado en cripto o en bolsa. Esas dos cosas se hablan entre sí, pero solo si la pérdida se declaró en su momento.",
+    "cta": { "label": "Revisar mi caso", "href": "/contacto" },
+    "secundaria": { "label": "Ver declaración cripto", "href": "/servicios/declarar-criptomonedas" }
+  },
+  "toc": [
+    { "id": "lo-esencial", "label": "Lo esencial" },
+    { "id": "reconoces", "label": "Tu situación" },
+    { "id": "el-ejemplo", "label": "Un ejemplo con cifras" },
+    { "id": "como-resolvemos", "label": "Cómo lo hacemos" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "lo-esencial",
+      "h2": "Lo esencial",
+      "fondo": "azul",
+      "entrada": "Las reglas que gobiernan la compensación. Los importes exactos y los límites aplicables dependen del ejercicio y hay que comprobarlos.",
+      "cifras": [
+        { "valor": "4 años", "etiqueta": "para compensar una pérdida contra ganancias de ejercicios siguientes" },
+        { "valor": "0 €", "etiqueta": "es lo que vale una pérdida que nunca se declaró", "acento": true },
+        { "valor": "2", "etiqueta": "bloques que se compensan entre sí con límites: patrimoniales y rendimientos" }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "Tu situación",
+      "fondo": "blanco",
+      "body": "La pérdida suele tener una historia parecida. Compraste caro, aguantaste, acabaste vendiendo mal, y como el resultado era negativo diste por hecho que no había nada que declarar. Es el razonamiento más natural del mundo y es justo el que sale caro.\n\nUna pérdida patrimonial declarada es un activo fiscal: se compensa contra ganancias del mismo ejercicio y, si sobra, contra las de los siguientes dentro del plazo legal. Una pérdida no declarada, sencillamente, no existe a estos efectos.\n\nY hay un detalle que mucha gente desconoce: la compensación no distingue por tipo de activo del modo en que uno espera. Una pérdida por vender criptomonedas puede jugar contra una ganancia por vender acciones o participaciones de un fondo, porque lo que importa no es qué vendiste sino en qué bloque de la base imponible se integra el resultado."
+    },
+    {
+      "id": "el-ejemplo",
+      "h2": "Un ejemplo con cifras",
+      "fondo": "papel",
+      "entrada": "Una pérdida antigua en criptoactivos aplicada contra una ganancia actual en bolsa. Datos de ejemplo.",
+      "tabla": {
+        "titulo": "Compensación entre ejercicios",
+        "periodo": "ejercicios 2022 y 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Pérdida declarada en 2022 por venta de criptoactivos", "importe": -12400.0 },
+          { "concepto": "Compensada en ejercicios 2023 y 2024", "importe": 3100.0 },
+          { "concepto": "Saldo pendiente al iniciar 2025", "importe": -9300.0 },
+          { "concepto": "Ganancia de 2025 por venta de acciones", "importe": 14200.0 },
+          { "concepto": "Base sujeta tras aplicar el saldo pendiente", "importe": 4900.0 }
+        ]
+      }
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Cómo lo hacemos",
+      "steps": [
+        { "title": "Revisamos tus declaraciones anteriores", "body": "Buscamos saldos de pérdidas pendientes de compensar que quizá ni sabías que tenías. Aparecen más veces de las que parece." },
+        { "title": "Reconstruimos las operaciones que generaron la pérdida", "body": "Para poder acreditarla: fecha, valor de adquisición y de transmisión, y su respaldo documental. Una pérdida sin soporte es difícil de sostener si se revisa." },
+        { "title": "Comprobamos el plazo", "body": "Cuánto queda de vida a cada saldo pendiente. Las pérdidas caducan, y usarlas en el orden correcto puede evitar que se pierda una por el camino." },
+        { "title": "Integramos cripto con el resto de tu cartera", "body": "Acciones, fondos, derivados. Las reglas de compensación los relacionan y aplicarlas por separado deja dinero sobre la mesa." },
+        { "title": "Y si la pérdida nunca se declaró, valoramos la vía", "body": "Puede haber margen para rectificar ejercicios no prescritos. Te decimos si en tu caso compensa intentarlo." }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "Perdí en cripto y gané en bolsa. ¿Se pueden cruzar?",
+          "a": "Sí, siempre que ambos resultados se integren en el mismo bloque de la base imponible, que es lo habitual en ganancias y pérdidas por transmisión. Lo que importa no es el tipo de activo sino dónde se integra el resultado."
+        },
+        {
+          "q": "No declaré la pérdida en su momento",
+          "a": "Si el ejercicio no está prescrito, puede haber margen para solicitar su rectificación y hacer aflorar la pérdida. No siempre compensa el esfuerzo, y depende del importe y de los ejercicios implicados. Se analiza antes de mover nada."
+        },
+        {
+          "q": "Vendí en pérdidas y recompré poco después",
+          "a": "Existen reglas específicas que limitan el cómputo de la pérdida cuando se readquieren valores homogéneos dentro de determinados plazos. Es un punto que conviene revisar con las fechas exactas delante, porque cambia el resultado."
+        },
+        {
+          "q": "¿Y si perdí porque un exchange quebró?",
+          "a": "Es una situación distinta de una venta con pérdida y su tratamiento no es automático: depende de cómo y cuándo se acredite la pérdida del derecho. Merece un análisis propio y documentación específica."
+        },
+        {
+          "q": "¿Cuánto tiempo tengo?",
+          "a": "El plazo general para compensar contra ganancias de ejercicios posteriores es de cuatro años. Por eso conviene revisar los saldos pendientes cada año y no dejar que caduquen sin usarlos."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Revisemos si tienes pérdidas guardadas",
+    "body": "Cuéntanos qué ejercicios declaraste, si tuviste ventas en pérdidas y si tienes también acciones o fondos. Buscamos saldos pendientes y te decimos qué se puede aplicar este año.",
+    "button": { "label": "Enviar diagnóstico", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Compensar pérdidas de criptomonedas con ganancias | Cleriontax",
+    "description": "Cómo compensar pérdidas en criptoactivos contra ganancias, incluidas las de acciones y fondos, en qué plazo y qué hacer si la pérdida no se declaró en su momento.",
+    "keywords": [
+      "compensar perdidas criptomonedas",
+      "compensar perdidas criptomonedas con acciones",
+      "perdidas criptomonedas años anteriores compensar",
+      "compensar perdidas xrp",
+      "declarar acciones y criptomonedas juntas",
+      "asesor fiscal acciones y cripto"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/compensar-perdidas"
+  }
+}

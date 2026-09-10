@@ -47,6 +47,9 @@ export {
   commonHowToSchemas
 } from './howto';
 
+// FAQ schemas
+export { generateFAQSchema } from './faq';
+
 /**
  * Utility function to render schema as JSON-LD script tag
  * Use this in your components to embed schema in the HTML
