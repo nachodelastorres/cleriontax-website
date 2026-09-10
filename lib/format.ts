@@ -24,11 +24,19 @@ const ELIPSIS = "…";
 const LOCALE = "es-ES";
 
 /**
+ * Punto de millar también en cifras de cuatro dígitos. Por defecto, Intl no
+ * agrupa en es-ES por debajo de 10.000 («6117,80»), y el manual pide
+ * «6.117,80 €» en toda cifra (§16).
+ */
+const AGRUPAR = { useGrouping: "always" } as const;
+
+/**
  * Importe en euros: `12.480,37 €`.
  * Siempre con dos decimales, porque cada decimal cuenta en una declaración.
  */
 export function formatearImporte(valor: number, decimales = 2): string {
   const cifra = new Intl.NumberFormat(LOCALE, {
+    ...AGRUPAR,
     minimumFractionDigits: decimales,
     maximumFractionDigits: decimales,
   }).format(valor);
@@ -51,6 +59,7 @@ export function formatearImporteConSigno(valor: number, decimales = 2): string {
 /** Porcentaje: `21 %`. El símbolo va separado por espacio fino. */
 export function formatearPorcentaje(valor: number, decimales = 0): string {
   const cifra = new Intl.NumberFormat(LOCALE, {
+    ...AGRUPAR,
     minimumFractionDigits: decimales,
     maximumFractionDigits: decimales,
   }).format(valor);
@@ -61,6 +70,7 @@ export function formatearPorcentaje(valor: number, decimales = 0): string {
 /** Número sin unidad, con punto de millar: `12.480`. Para recuentos de operaciones. */
 export function formatearNumero(valor: number, decimales = 0): string {
   return new Intl.NumberFormat(LOCALE, {
+    ...AGRUPAR,
     minimumFractionDigits: decimales,
     maximumFractionDigits: decimales,
   }).format(valor);

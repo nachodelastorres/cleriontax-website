@@ -36,6 +36,11 @@ interface TablaDatosProps {
   periodo?: string;
   /** Nota obligatoria si las cifras son de ejemplo (§14). */
   datosDeEjemplo?: boolean;
+  /**
+   * Pie ya redactado, para páginas en otro idioma. Sustituye al pie generado
+   * y tiene que decir lo mismo: datos de ejemplo, si lo son, y el criterio.
+   */
+  pie?: string;
   className?: string;
 }
 
@@ -47,6 +52,7 @@ export default function TablaDatos({
   criterio,
   periodo,
   datosDeEjemplo = false,
+  pie,
   className,
 }: TablaDatosProps) {
   return (
@@ -101,8 +107,12 @@ export default function TablaDatos({
       </div>
 
       <p className="mt-2.5 text-nota text-pizarra">
-        {datosDeEjemplo ? <>Datos de ejemplo. </> : null}
-        Criterio {criterio}.
+        {pie ?? (
+          <>
+            {datosDeEjemplo ? <>Datos de ejemplo. </> : null}
+            Criterio {criterio}.
+          </>
+        )}
       </p>
     </figure>
   );
