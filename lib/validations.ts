@@ -64,36 +64,75 @@ export const SITUACIONES_AEAT = [
 const valores = <T extends readonly { value: string }[]>(opts: T) =>
   opts.map((o) => o.value) as unknown as [string, ...string[]];
 
-export const diagnosticoServerSchema = contactFormServerSchema
-  .extend({
-    message: z.string().max(1000, "El mensaje es demasiado largo").optional(),
-  })
-  .extend({
+/**
+ * Mensajes de error del diagnóstico. El formulario los recibe traducidos
+ * (namespace `diagnostico.errores`); el servidor usa estos, en español, porque
+ * solo acaban en el correo interno.
+ */
+export type ErroresDiagnostico = Record<
+  | "nombreCorto"
+  | "nombreLargo"
+  | "emailInvalido"
+  | "emailObligatorio"
+  | "telefonoObligatorio"
+  | "telefonoFormato"
+  | "mensajeLargo"
+  | "volumen"
+  | "plataformasCorto"
+  | "plataformasLargo"
+  | "ejerciciosCorto"
+  | "ejerciciosLargo"
+  | "situacionAeat"
+  | "privacidad",
+  string
+>;
+
+const ERRORES_ES: ErroresDiagnostico = {
+  nombreCorto: "El nombre debe tener al menos 2 caracteres",
+  nombreLargo: "El nombre es demasiado largo",
+  emailInvalido: "Email inválido",
+  emailObligatorio: "El email es obligatorio",
+  telefonoObligatorio: "El teléfono es obligatorio",
+  telefonoFormato: "Formato de teléfono inválido",
+  mensajeLargo: "El mensaje es demasiado largo",
+  volumen: "Indica un volumen aproximado",
+  plataformasCorto: "Dinos al menos dónde operas",
+  plataformasLargo: "Demasiado largo: resume las principales",
+  ejerciciosCorto: "Indica al menos un ejercicio",
+  ejerciciosLargo: "Demasiado largo",
+  situacionAeat: "Indica si hay algo de la AEAT de por medio",
+  privacidad: "Debes aceptar la política de privacidad",
+};
+
+function crearDiagnosticoServerSchema(m: ErroresDiagnostico) {
+  return z.object({
+    name: z.string().min(2, m.nombreCorto).max(100, m.nombreLargo),
+    email: z.string().email(m.emailInvalido).min(1, m.emailObligatorio),
+    phone: z
+      .string()
+      .min(1, m.telefonoObligatorio)
+      .regex(/^[+]?[\d\s()-]+$/, m.telefonoFormato),
+    message: z.string().max(1000, m.mensajeLargo).optional(),
     /** Situación desde la que se llega. La rellena la landing, no la persona. */
     situacion: z.string().max(120).optional(),
-    volumen: z.enum(valores(VOLUMENES), {
-      message: "Indica un volumen aproximado",
-    }),
+    volumen: z.enum(valores(VOLUMENES), { message: m.volumen }),
     /** Exchanges, wallets y cadenas donde opera. Texto libre a propósito. */
-    plataformas: z
-      .string()
-      .min(2, "Dinos al menos dónde operas")
-      .max(400, "Demasiado largo: resume las principales"),
+    plataformas: z.string().min(2, m.plataformasCorto).max(400, m.plataformasLargo),
     /** Ejercicios afectados, en el formato que la persona los tenga en la cabeza. */
-    ejercicios: z
-      .string()
-      .min(4, "Indica al menos un ejercicio")
-      .max(120, "Demasiado largo"),
-    situacionAeat: z.enum(valores(SITUACIONES_AEAT), {
-      message: "Indica si hay algo de la AEAT de por medio",
-    }),
+    ejercicios: z.string().min(4, m.ejerciciosCorto).max(120, m.ejerciciosLargo),
+    situacionAeat: z.enum(valores(SITUACIONES_AEAT), { message: m.situacionAeat }),
   });
+}
 
-export const diagnosticoSchema = diagnosticoServerSchema.extend({
-  privacyConsent: z.boolean().refine((val) => val === true, {
-    message: "Debes aceptar la política de privacidad",
-  }),
-});
+/** Esquema del formulario, con los mensajes en el idioma de la página. */
+export function crearDiagnosticoSchema(m: ErroresDiagnostico = ERRORES_ES) {
+  return crearDiagnosticoServerSchema(m).extend({
+    privacyConsent: z.boolean().refine((val) => val === true, { message: m.privacidad }),
+  });
+}
+
+export const diagnosticoServerSchema = crearDiagnosticoServerSchema(ERRORES_ES);
+export const diagnosticoSchema = crearDiagnosticoSchema(ERRORES_ES);
 
 export type DiagnosticoData = z.infer<typeof diagnosticoSchema>;
 export type DiagnosticoServerData = z.infer<typeof diagnosticoServerSchema>;

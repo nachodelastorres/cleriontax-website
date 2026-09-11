@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { MessageCircle, Phone } from "lucide-react";
 
@@ -39,6 +40,7 @@ export default function BarraAccion({
   urgente = false,
   desde = 520,
 }: BarraAccionProps) {
+  const t = useTranslations("common");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -94,7 +96,7 @@ export default function BarraAccion({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center gap-2 border-2 border-blanco px-5 font-semibold text-blanco transition-colors hover:bg-blanco hover:text-azul"
-                aria-label="Escribir por WhatsApp"
+                aria-label={t("escribirWhatsapp")}
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
                 <span className="hidden sm:inline">WhatsApp</span>

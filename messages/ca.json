@@ -11,8 +11,8 @@
   },
   "whyChooseUs": {
     "title": "Per què Cleriontax és diferent",
-    "subtitle": "No fem servir programari automàtic de tercers. Analitzem les teves dades des de zero per garantir precisió, traçabilitat i compliment fiscal total.",
-    "intro": "El nostre equip combina experiència fiscal i analítica de dades per oferir resultats que cap eina automatitzada pot igualar. Processem milions de transaccions multichain amb rigor tècnic, interpretant cadascuna segons els criteris de l’AEAT. Així, transformem dades caòtiques en informes fiscals 100% fiables, verificables i auditables.",
+    "subtitle": "Un informe automàtic és el punt de partida, mai el lliurament. Revisem les teves dades operació a operació i justifiquem d’on surt cada xifra.",
+    "intro": "El nostre equip uneix criteri fiscal col·legiat i enginyeria de dades. Reconstruïm operatives multicadena, classifiquem cada operació segons els criteris de l’AEAT i la DGT, i lliurem un informe traçable: cada xifra amb el seu origen i el seu criteri escrits al costat.",
     "reasons": {
       "reason1": {
         "title": "Anàlisi fiscal real, no automatitzada",
@@ -24,7 +24,7 @@
       },
       "reason3": {
         "title": "Informes traçables i auditables",
-        "description": "Cada xifra es justifica amb el seu origen. Transparència total davant Hisenda."
+        "description": "Cada xifra es justifica amb el seu origen, i aquest origen queda documentat per si l’AEAT el demana."
       },
       "reason4": {
         "title": "Seguretat i confidencialitat",
@@ -80,7 +80,7 @@
           "name": "Càlculs FIFO blockchain - Cleriontax"
         },
         "report": {
-          "description": "Informe fiscal complet de criptoactius verificat i compatible amb AEAT",
+          "description": "Informe fiscal de criptoactius amb l’origen i el criteri de cada xifra",
           "name": "Informe fiscal AEAT - Cleriontax"
         }
       }
@@ -89,7 +89,7 @@
       "title": "Els nostres serveis fiscals especialitzats",
       "subtitle": "Solucions integrals en fiscalitat crypto i actius digitals, adaptades a cada tipus d'inversor.",
       "paragraph1": "A Cleriontax combinem anàlisi fiscal i ciència de dades per oferir un servei integral i transparent. El nostre equip aborda cada cartera d'inversió —ja sigui en criptomonedes, DeFi o actius digitals tradicionals— amb la precisió que requereix la normativa vigent.",
-      "paragraph2": "Treballem amb una metodologia pròpia que garanteix la traçabilitat completa de les operacions, la classificació fiscal correcta i la generació d'informes clars, auditables i 100% compatibles amb l'AEAT. Cada {strong1} és revisat per professionals especialitzats en {strong2}, assegurant exactitud en els càlculs i coherència en la presentació.",
+      "paragraph2": "Treballem amb una metodologia pròpia: reconstruïm la traçabilitat de cada operació, la classifiquem fiscalment i deixem escrit el criteri aplicat. Cada {strong1} el revisen professionals especialitzats en {strong2} abans de lliurar-lo.",
       "paragraph3": "A més, oferim {strong1} durant tot el procés fiscal: des de la revisió inicial fins al lliurament de models oficials i suport post-presentació. El nostre objectiu és que cada client declari amb seguretat i sense incertesa, recolzat per una {strong2} de màxima qualitat.",
       "cta": "Sol·licita el teu informe fiscal"
     },
@@ -161,14 +161,14 @@
         "taxCalculations": {
           "number": "02",
           "title": "Càlculs Fiscals Certificats",
-          "description": "Aplicació de la metodologia FIFO per a guanys i pèrdues patrimonials. Càlcul de rendiments de capital mobiliari (staking, lending). Models 100, 720 i 721 generats automàticament.",
+          "description": "Criteri FIFO per a guanys i pèrdues patrimonials, càlcul de rendiments del capital mobiliari (staking, lending) i preparació dels models 100, 721 i 714, revisats operació a operació.",
           "keywords": "FIFO, guanys, pèrdues, IRPF, model 100"
         },
         "optimization": {
           "number": "03",
-          "title": "Optimització Fiscal Estratègica",
-          "description": "Anàlisi d’oportunitats de compensació de pèrdues, planificació fiscal per a futurs exercicis i estratègies d’optimització dins del marc legal vigent.",
-          "keywords": "optimització fiscal, planificació tributària"
+          "title": "Planificació fiscal",
+          "description": "Compensació de pèrdues i planificació fiscal de la venda i dels propers exercicis, sempre dins del marc legal vigent i sense recomanar què comprar o vendre.",
+          "keywords": "planificació fiscal, compensació de pèrdues"
         },
         "advisory": {
           "number": "04",
@@ -206,27 +206,14 @@
         "Declaració IRPF crypto",
         "Model 100",
         "Model 720 i 721",
-        "Optimització fiscal",
+        "Planificació fiscal",
         "Tecnologia financera"
       ]
     },
     "valuesSection": {
       "intro1": "A Cleriontax, la nostra assessoria fiscal especialitzada en criptomonedes es fonamenta en tres pilars que ens distingeixen com a assessors fiscals tecnològics líders en el sector d'actius digitals a Espanya.",
-      "intro2": "La nostra combinació única d'experiència fiscal col·legiada i tecnologia avançada d'anàlisi de dades blockchain ens permet oferir serveis de <strong>declaració IRPF crypto</strong>, <strong>model 100 criptomonedes</strong>, i <strong>optimització fiscal de criptoactius</strong> amb precisió i transparència absolutes.",
-      "closingText": "Com a assessors fiscals col·legiats especialitzats en blockchain, processem més d'un milió de transaccions anuals utilitzant algoritmes propis de conciliació fiscal i metodologia FIFO certificada. El nostre equip multidisciplinari combina <strong>expertesa en normativa AEAT</strong> amb <strong>enginyeria de dades financeres</strong>, garantint <strong>informes fiscals auditables</strong> i 100% compatibles amb els requisits de l'Agència Tributària Espanyola per a la <strong>declaració de criptoactius</strong>, <strong>model 720</strong>, i <strong>model 721</strong>."
-    },
-    "seoHidden": {
-      "title": "Assessoria Fiscal Tecnològica Especialitzada en Criptomonedes",
-      "paragraph1": "Cleriontax és una firma boutique que combina l'experiència d'assessors fiscals col·legiats especialitzats en criptoactius amb la innovació tecnològica en anàlisi de dades blockchain. El nostre equip multidisciplinari inclou assessors fiscals amb anys d'experiència en fiscalitat d'actius digitals i enginyers de dades especialitzats en processament massiu de transaccions.",
-      "sectionTitle": "Tecnologia Fiscal Avançada",
-      "paragraph2": "Utilitzem algoritmes propis de conciliació de dades, automatització de càlculs fiscals FIFO i validació creuada de transaccions blockchain. La nostra infraestructura tecnològica processa milions de transaccions amb precisió del 100%, reduint errors humans i accelerant el procés de declaració fiscal.",
-      "teamTitle": "Equip Multidisciplinari",
-      "teamItems": [
-        "Assessors fiscals col·legiats especialitzats en criptomonedes",
-        "Enginyers de dades amb experiència en blockchain",
-        "Analistes fiscals experts en normativa AEAT",
-        "Desenvolupadors de programari fiscal"
-      ]
+      "intro2": "Unim criteri fiscal col·legiat i enginyeria de dades blockchain per preparar <strong>informes fiscals de criptomonedes</strong>, <strong>declaracions de la renda amb criptoactius</strong> i el <strong>model 721</strong>, amb l’origen de cada xifra documentat.",
+      "closingText": "Som assessors fiscals col·legiats especialitzats en criptoactius. Conciliem les dades d’exchanges, wallets i protocols amb eines pròpies, apliquem el <strong>criteri FIFO</strong> i revisem a mà el que un programa resoldria amb un valor per defecte. El resultat és un <strong>informe fiscal auditable</strong> que serveix per a la <strong>declaració de la renda</strong>, el <strong>model 721</strong> i, si arriba, la resposta a un <strong>requeriment de l’AEAT</strong>."
     },
     "hero": {
       "badge": "Expertesa Fiscal × Innovació Tecnològica",
@@ -251,7 +238,7 @@
     },
     "duality": {
       "title": "La Combinació Perfecta: Assessoria + Tecnologia",
-      "subtitle": "Dos equips, una missió: transformar la complexitat fiscal en claredat absoluta",
+      "subtitle": "Dos equips, una mateixa exigència: que cada xifra es pugui explicar",
       "fiscal": {
         "title": "Equip Fiscal",
         "subtitle": "Experiència i Normativa",
@@ -323,7 +310,7 @@
         "scalable": {
           "title": "Escalable a Qualsevol Volum",
           "description": "Tant si tens 50 com 50.000 operacions, la nostra infraestructura tecnològica escala sense perdre precisió. El mateix rigor fiscal independentment del volum.",
-          "keywords": "escalabilitat, alt volum, precisió garantida"
+          "keywords": "escalabilitat, alt volum, revisió operació a operació"
         }
       }
     },
@@ -341,8 +328,8 @@
         "description": "Invertim en tecnologia, formació i metodologies per estar sempre a l’avantguarda del servei fiscal digital."
       },
       "precision": {
-        "title": "Precisió Absoluta",
-        "description": "El 100% de precisió no és un objectiu, és un requisit mínim. Cada decimal compta quan es tracta de la teva declaració fiscal."
+        "title": "Precisió absoluta",
+        "description": "El 100 % no és una meta, és el mínim. Cada decimal compta quan parlem d’una declaració."
       },
       "partnership": {
         "title": "Col·laboració Real",
@@ -454,7 +441,7 @@
     },
     "blog": {
       "title": "Blog Fiscalitat i Inversió | Guies Crypto, Accions i Anàlisi de Dades | Cleriontax",
-      "description": "Guies completes, anàlisi i actualitat sobre la fiscalitat de criptomonedes, inversions tradicionals i anàlisi de dades financeres a Espanya. Aprèn sobre IRPF, model 100, 720, optimització fiscal i normativa AEAT actualitzada."
+      "description": "Guies sobre fiscalitat de criptomonedes i inversions a Espanya amb exemples numèrics resolts: IRPF, models 100, 714 i 721, criteri FIFO, DeFi, compensació de pèrdues i normativa de l’AEAT."
     }
   },
   "common": {
@@ -470,7 +457,8 @@
     "language": "Idioma",
     "socialNetworks": {
       "linkedin": "LinkedIn"
-    }
+    },
+    "escribirWhatsapp": "Escriure per WhatsApp"
   },
   "serviceInclusions": {
     "allInclude": "Tots els serveis inclouen revisió per un assessor fiscal col·legiat"
@@ -479,7 +467,7 @@
     "hero": {
       "badge": "Blog de Fiscalitat, Inversió i Anàlisi de Dades",
       "title": "Guies, Notícies i Anàlisi per a Inversors",
-      "subtitle": "Tot el que necessites saber sobre la fiscalitat de criptomonedes, inversions en mercats tradicionals i anàlisi de dades financeres. Actualitzacions normatives, casos pràctics i estratègies d'optimització fiscal.",
+      "subtitle": "Tot el que necessites saber sobre la fiscalitat de criptomonedes, inversions i dades financeres: canvis normatius i casos pràctics amb exemples numèrics resolts.",
       "stats": {
         "articles": "Articles",
         "categories": "Categories"
@@ -831,7 +819,7 @@
   "blogCTA": {
     "badge": "Recursos gratuïts",
     "title": "Aprèn sobre fiscalitat d'inversions al nostre blog",
-    "description": "Guies completes, anàlisi de casos reals i actualitzacions normatives escrites pel nostre equip d'experts fiscals. Tot el que necessites saber per optimitzar la teva situació fiscal.",
+    "description": "Guies completes, casos pràctics i canvis normatius, escrits pel mateix equip que prepara els informes. Per entendre la teva situació fiscal abans de decidir res.",
     "stats": {
       "articles": "6+",
       "articlesLabel": "Articles",
@@ -848,7 +836,7 @@
     "minRead": "min",
     "articleExample": {
       "title": "Guia completa per declarar criptomonedes el 2025",
-      "excerpt": "Tot el que necessites saber sobre FIFO, models fiscals i optimització legal.",
+      "excerpt": "Tot el que necessites saber sobre el criteri FIFO, els models fiscals i la compensació de pèrdues.",
       "tags": [
         "Fiscalitat",
         "Criptomonedes",
@@ -858,13 +846,13 @@
   },
   "finalCTA": {
     "title": "Preparat per posar ordre a les teves operacions?",
-    "subtitle": "Sol·licita el teu informe fiscal i oblida't del caos de dades, els errors i els dubtes davant Hisenda.",
+    "subtitle": "Explica’ns quantes operacions tens, en quines plataformes i quins exercicis. Et diem què implica el teu cas, què necessitem de tu i quant pot trigar.",
     "button": "Sol·licita el teu informe fiscal",
     "trust": {
-      "security": "Processament 100% segur i confidencial",
-      "clients": "Més de 500 inversors ja confien en Cleriontax"
+      "security": "Les teves dades, tractades amb confidencialitat i d’acord amb el RGPD",
+      "clients": "Criteri fiscal col·legiat i enginyeria de dades, en el mateix equip"
     },
-    "seoText": "Assessoria fiscal especialitzada en criptomonedes, DeFi i carteres complexes d'inversió. Informes fiscals verificats, personalitzats i 100% compatibles amb l'AEAT."
+    "seoText": "Assessoria fiscal especialitzada en criptomonedes, DeFi i carteres complexes. Informes fiscals amb l’origen i el criteri de cada xifra."
   },
   "servicesPages": {
     "hub": {
@@ -1070,11 +1058,11 @@
       }
     },
     "informeFiscalCriptomonedas": {
-      "title": "Anàlisi de Carteres d'Inversió Complexes",
+      "title": "Informe fiscal de criptomonedes",
       "slug": "informe-fiscal-criptomonedas",
       "excerpt": "Integració, neteja i consolidació de dades des de totes les fonts necessàries: exchanges, brokers, wallets i protocols DeFi. Convertim carteres disperses en informes unificats, traçables i auditables sense límit de complexitat.",
       "hero": {
-        "h1": "Anàlisi de Carteres d'Inversió Complexes",
+        "h1": "Informe fiscal de criptomonedes",
         "subheading": "Integrem dades de totes les fonts necessàries, processem operacions d'alta complexitat i generem informes consolidats amb traçabilitat completa. Ideal per a carteres amb operacions DeFi, staking multichain, airdrops i estructures descentralitzades.",
         "cta": {
           "label": "Sol·licitar avaluació gratuïta",
@@ -1100,7 +1088,7 @@
         }
       ],
       "seo": {
-        "title": "Anàlisi de Carteres d'Inversió Complexes | Cleriontax",
+        "title": "Informe fiscal de criptomonedes per a l’AEAT | Cleriontax",
         "description": "Integració i consolidació de dades des de múltiples exchanges, wallets i protocols DeFi. Processament d'operacions complexes amb traçabilitat completa.",
         "keywords": [
           "anàlisi carteres crypto",
@@ -1114,11 +1102,11 @@
       }
     },
     "declararCriptomonedas": {
-      "title": "Liquidacions Fiscals i Models AEAT",
+      "title": "Declaració de la renda cripto",
       "slug": "declarar-criptomonedas",
       "excerpt": "Càlcul de plusvàlues, pèrdues i rendiments amb criteri FIFO. Preparació de models 100, 721 i 714 amb documentació completa i revisió per assessors fiscals col·legiats.",
       "hero": {
-        "h1": "Liquidacions Fiscals i Models AEAT",
+        "h1": "Declaració de la renda cripto",
         "subheading": "Calculem les teves obligacions fiscals amb criteri FIFO, apliquem normativa DGT vigent i generem models llests per presentar. Inclou simulacions d'escenaris, documentació de suport i revisió per assessors fiscals col·legiats.",
         "cta": {
           "label": "Sol·licitar avaluació gratuïta",
@@ -1144,8 +1132,8 @@
         }
       ],
       "seo": {
-        "title": "Liquidacions Fiscals Criptomonedes | Model 100, 721, 714 | Cleriontax",
-        "description": "Càlcul FIFO de plusvàlues, preparació de models AEAT i simulacions fiscals. Revisió per assessors col·legiats. Cumpleix amb Hisenda sense errors.",
+        "title": "Declarar criptomonedes a la renda: models 100, 721 i 714 | Cleriontax",
+        "description": "Càlcul de guanys i pèrdues amb criteri FIFO, integració a l’IRPF i models de l’AEAT, amb revisió d’assessors col·legiats i la documentació de cada xifra.",
         "keywords": [
           "liquidació fiscal criptomonedes",
           "model 100 crypto",
@@ -1189,7 +1177,7 @@
         }
       ],
       "seo": {
-        "title": "Litigació fiscal de criptomonedes | Defensa davant l'AEAT | Cleriontax",
+        "title": "Litigació fiscal de criptomonedes: defensa davant l’AEAT | Cleriontax",
         "description": "Defensa davant requeriments, inspeccions i sancions de l'AEAT per criptomonedes. Contestem dins de termini i construïm la prova documental i on-chain que dona suport a la teva posició.",
         "keywords": [
           "litigació fiscal criptomonedes",
@@ -1203,11 +1191,11 @@
       }
     },
     "asesoriaFiscalCriptomonedas": {
-      "title": "Assessoria Fiscal Especialitzada en Criptomonedes",
+      "title": "Assessoria fiscal de criptomonedes",
       "slug": "asesoria-fiscal-criptomonedas",
       "excerpt": "Sessions personalitzades 1:1 per resoldre dubtes fiscals sobre criptomonedes. Criteris de presentació, compliment normatiu i revisió documental. Sense assessorament d'inversió.",
       "hero": {
-        "h1": "Assessoria Fiscal Especialitzada en Criptomonedes",
+        "h1": "Assessoria fiscal de criptomonedes",
         "subheading": "Sessions tècniques amb el nostre equip fiscal per resoldre dubtes sobre models AEAT, criteris de classificació, compliment normatiu i estructura d'informes. Enfocament exclusivament tècnic-fiscal. No oferim assessorament d'inversió.",
         "cta": {
           "label": "Sol·licitar avaluació gratuïta",
@@ -1233,8 +1221,8 @@
         }
       ],
       "seo": {
-        "title": "Assessoria Fiscal Especialitzada en Criptoactius | Cleriontax",
-        "description": "Sessions tècniques 1:1 sobre fiscalitat crypto. Dubtes sobre models AEAT, requeriments d'Hisenda i compliment normatiu. Sense assessorament d'inversió.",
+        "title": "Assessor fiscal de criptomonedes: assessoria especialitzada | Cleriontax",
+        "description": "Sessions tècniques 1:1 sobre fiscalitat de criptomonedes: models de l’AEAT, requeriments i compliment normatiu. Sense assessorament d’inversió.",
         "keywords": [
           "assessoria fiscal criptomonedes",
           "consultoria fiscal crypto",
@@ -1263,7 +1251,7 @@
       "etiquetaLinea": "Línia de servei",
       "verMetodo": "Com treballem",
       "titulo": "En parlem?",
-      "enviar": "Enviar diagnòstic",
+      "enviar": "Demanar un diagnòstic",
       "barraAccion": "Explica ns la teva operativa",
       "plazoAviso": "Els terminis de l AEAT corren des de la notificació",
       "urgenteTitulo": "Ja tens una notificació amb data?",
@@ -1503,33 +1491,33 @@
     }
   },
   "situaciones": {
-    "etiqueta": "Encuentra tu caso",
-    "titulo": "¿Cuál de estas situaciones se parece a la tuya?",
-    "entrada": "Hay muchas formas de operar con criptoactivos, pero casi todas acaban en tres preguntas. Busca la tuya y verás cómo la resolvemos, qué necesitamos de ti y en cuánto tiempo.",
-    "verSituacion": "Ver cómo lo resolvemos",
-    "conPlazo": "con plazo",
-    "barraAccion": "Cuéntanos tu operativa",
-    "enviar": "Enviar diagnóstico",
-    "resuelveEste": "Lo resuelve esta línea",
-    "verServicio": "Ver el servicio",
-    "paraEntenderlo": "Para entenderlo por tu cuenta",
-    "plazoAviso": "Los plazos de la AEAT corren desde la notificación",
-    "urgenteTitulo": "¿Tienes ya una notificación con fecha?",
-    "urgenteApoyo": "Si hay un plazo administrativo corriendo, llámanos y lo miramos hoy. No respondas a la AEAT sin haber reconstruido antes tus cifras.",
-    "seoTitulo": "Situaciones: encuentra tu caso | Cleriontax",
-    "seoDescripcion": "Requerimientos de la AEAT, regularización de años anteriores, informes automáticos que no cuadran, carteras con miles de operaciones. Busca tu situación y mira cómo la resolvemos.",
+    "etiqueta": "Troba el teu cas",
+    "titulo": "Quina d’aquestes situacions s’assembla a la teva?",
+    "entrada": "Hi ha moltes maneres d’operar amb criptoactius, però gairebé totes acaben en tres preguntes. Busca la teva i veuràs com la resolem, què necessitem de tu i en quant de temps.",
+    "verSituacion": "Veure com ho resolem",
+    "conPlazo": "amb termini",
+    "barraAccion": "Explica’ns la teva operativa",
+    "enviar": "Demanar un diagnòstic",
+    "resuelveEste": "Ho resol aquesta línia",
+    "verServicio": "Veure el servei",
+    "paraEntenderlo": "Per entendre-ho pel teu compte",
+    "plazoAviso": "Els terminis de l’AEAT corren des de la notificació",
+    "urgenteTitulo": "Ja tens una notificació amb data?",
+    "urgenteApoyo": "Si hi ha un termini administratiu corrent, truca’ns i ho mirem avui. No responguis a l’AEAT sense haver reconstruït abans les teves xifres.",
+    "seoTitulo": "Situacions: troba el teu cas | Cleriontax",
+    "seoDescripcion": "Requeriments de l’AEAT, regularització d’anys anteriors, informes automàtics que no quadren, carteres amb milers d’operacions. Busca la teva situació i mira com la resolem.",
     "preguntas": {
       "P1": {
-        "titulo": "«¿Cuánto he ganado o perdido?»",
-        "quien": "Tienes los datos pero no la cifra. Llegaste buscando una herramienta y descubriste que tu caso no cabe en una herramienta."
+        "titulo": "«Quant he guanyat o perdut?»",
+        "quien": "Tens les dades però no la xifra. Vas arribar buscant una eina i vas descobrir que el teu cas no cap en una eina."
       },
       "P2": {
-        "titulo": "«¿Cómo lo justifico ante la AEAT?»",
-        "quien": "Ya tienes un problema con fecha. Aquí lo primero es el plazo, y lo segundo poder demostrar de dónde sale cada cifra."
+        "titulo": "«Com ho justifico davant l’AEAT?»",
+        "quien": "Ja tens un problema amb data. Aquí el primer és el termini, i el segon, poder demostrar d’on surt cada xifra."
       },
       "P3": {
-        "titulo": "«¿Cómo lo declaro?»",
-        "quien": "Sabes que tienes que declarar y no sabes por dónde empezar. O sí sabes, pero tu operativa no encaja en lo que explican los manuales."
+        "titulo": "«Com ho declaro?»",
+        "quien": "Saps que has de declarar i no saps per on començar. O sí que ho saps, però la teva operativa no encaixa en el que expliquen els manuals."
       }
     }
   },
@@ -1702,6 +1690,76 @@
       "apoyo": "Quantes operacions, en quines plataformes i quins exercicis. Amb això et diem quin tipus de feina és el teu cas, què necessitem de tu i quant pot trigar.",
       "accion": "Començar el diagnòstic",
       "secundaria": "Veure totes les situacions"
+    }
+  },
+  "diagnostico": {
+    "intro": "Explica’ns com és la teva operativa. Amb això sabem quina feina tens per davant i et donem un termini i un preu orientatius, sense compromís.",
+    "volumen": {
+      "label": "Quantes operacions tens, més o menys?",
+      "elige": "Tria un rang"
+    },
+    "aeat": {
+      "label": "Hi ha alguna cosa de l’AEAT pel mig?",
+      "elige": "Tria una opció"
+    },
+    "plataformas": {
+      "label": "On operes?",
+      "placeholder": "Binance, MetaMask, Solana, Ledger…"
+    },
+    "ejercicios": {
+      "label": "Quins exercicis et preocupen?",
+      "placeholder": "2022–2025"
+    },
+    "nombre": "Nom",
+    "email": "Correu electrònic",
+    "telefono": "Telèfon",
+    "mensaje": "Alguna cosa més que hàgim de saber (opcional)",
+    "privacidadAntes": "He llegit i accepto la",
+    "privacidadEnlace": "política de privadesa",
+    "enviar": "Demanar un diagnòstic",
+    "enviando": "Enviant…",
+    "respuesta": "Resposta en 24–48 h laborables",
+    "recibido": {
+      "chip": "Rebut",
+      "titulo": "Tenim la teva operativa. T’escrivim en 24–48 hores laborables.",
+      "texto": "Si en el teu cas hi ha un termini de l’AEAT corrent, truca’ns i ho mirem avui:"
+    },
+    "error": {
+      "generico": "No s’ha pogut enviar el diagnòstic.",
+      "escribenos": "Pots escriure’ns a",
+      "llamanos": "o trucar-nos al"
+    },
+    "nota": "La informació publicada per Cleriontax té caràcter divulgatiu i no constitueix assessorament fiscal personalitzat ni assessorament d’inversió. Cada situació requereix una anàlisi individual.",
+    "volumenes": {
+      "hasta-500": "Menys de 500",
+      "500-5000": "Entre 500 i 5.000",
+      "5000-50000": "Entre 5.000 i 50.000",
+      "mas-50000": "Més de 50.000",
+      "no-lo-se": "No ho sé"
+    },
+    "situacionesAeat": {
+      "ninguna": "Res de moment",
+      "requerimiento": "He rebut un requeriment",
+      "comprobacion": "Estic en una comprovació limitada",
+      "inspeccion": "Estic en una inspecció",
+      "sancion": "M’han sancionat",
+      "sin-declarar": "No vaig declarar exercicis anteriors"
+    },
+    "errores": {
+      "nombreCorto": "El nom ha de tenir almenys 2 caràcters",
+      "nombreLargo": "El nom és massa llarg",
+      "emailInvalido": "Correu electrònic no vàlid",
+      "emailObligatorio": "El correu electrònic és obligatori",
+      "telefonoObligatorio": "El telèfon és obligatori",
+      "telefonoFormato": "Format de telèfon no vàlid",
+      "mensajeLargo": "El missatge és massa llarg",
+      "volumen": "Indica un volum aproximat",
+      "plataformasCorto": "Digues-nos almenys on operes",
+      "plataformasLargo": "Massa llarg: resumeix les principals",
+      "ejerciciosCorto": "Indica almenys un exercici",
+      "ejerciciosLargo": "Massa llarg",
+      "situacionAeat": "Indica si hi ha alguna cosa de l’AEAT pel mig",
+      "privacidad": "Has d’acceptar la política de privadesa"
     }
   }
 }

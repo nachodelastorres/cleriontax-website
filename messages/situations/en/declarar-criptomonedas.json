@@ -1,0 +1,137 @@
+{
+  "title": "I want to declare my crypto this year",
+  "slug": "declarar-criptomonedas",
+  "excerpt": "Which crypto asset transactions are taxable and which aren't, how they fit into your personal income tax (IRPF) return and what you need to gather. Using the FIFO rule, with every figure backed up.",
+  "hero": {
+    "etiqueta": "Income tax season",
+    "h1": "This year you want to get it right",
+    "subheading": "It may be your first time, or you may have left it half done in previous years. The starting point is always the same: knowing which of the things you did are taxable, because it isn't just selling.",
+    "cta": { "label": "Tell us about your activity", "href": "/contacto" },
+    "secundaria": { "label": "See the method", "href": "/metodo" }
+  },
+  "toc": [
+    { "id": "que-tributa", "label": "What is taxable" },
+    { "id": "el-malentendido", "label": "The misunderstanding" },
+    { "id": "reconoces", "label": "How it fits in" },
+    { "id": "como-resolvemos", "label": "How we do it" },
+    { "id": "que-necesitamos", "label": "What we need" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "que-tributa",
+      "h2": "What is taxable, and it isn't just selling",
+      "fondo": "azul",
+      "entrada": "The four situations people most often overlook. Each has its own treatment, and none of them requires you to have taken euros out to the bank.",
+      "formas": [
+        { "forma": "angulo", "titulo": "Selling for euros", "body": "The obvious case: a capital gain or loss equal to the difference between the disposal value and the acquisition value." },
+        { "forma": "cuarto", "titulo": "Swapping one token for another", "body": "It is an exchange of assets (swap) and produces a capital gain or loss, even if you never go through euros at any point. It's the one most often overlooked." },
+        { "forma": "arco", "titulo": "Earning from staking or similar", "body": "Rewards received for making your crypto assets available to others have their own treatment, different from that of a sale, and are taxed when you receive them." },
+        { "forma": "inverso", "titulo": "Receiving without buying", "body": "Airdrops, forks and protocol rewards. What matters is fixing their value on the date you receive them: that will be your acquisition cost when you sell them." }
+      ]
+    },
+    {
+      "id": "el-malentendido",
+      "h2": "The most costly misunderstanding",
+      "fondo": "papel",
+      "entrada": "Almost everyone arrives with the same idea, and it's the one that causes the most problems later.",
+      "columnas": [
+        {
+          "titulo": "What many people believe",
+          "correcta": false,
+          "items": [
+            "“As long as I don't convert it to euros, it isn't taxed”",
+            "“I'm still at an overall loss, so I don't declare anything”",
+            "“Nobody can see what's in my private wallet”",
+            "“If the exchange doesn't give me a tax report, there's nothing to declare”"
+          ]
+        },
+        {
+          "titulo": "How it actually works",
+          "correcta": true,
+          "items": [
+            "Swapping one token for another is taxed all the same, without going through euros",
+            "Losses are declared too: it's the only way you can offset them later",
+            "The blockchain is public and platforms report to the tax authorities",
+            "The obligation to declare is yours, whether or not the exchange provides a report"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "How it fits into your tax return",
+      "fondo": "blanco",
+      "body": "Capital gains and losses from the disposal of crypto assets go into the savings tax base, which has its own scale of rates and its own offsetting rules. Income from making your crypto assets available to others follows a different path.\n\nThat means order matters. Losses from one tax year are offset against gains under specific rules, with limits and deadlines, and declaring them is a requirement for using them later. A loss you don't declare is a loss you lose.\n\nAnd some obligations sit outside the income tax return: if your crypto assets are held by a custodian abroad above certain thresholds, there is a separate reporting obligation with its own calendar and rules. We always check it, because not filing it has consequences of its own."
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "How we do it",
+      "steps": [
+        { "title": "We gather and reconcile your activity", "body": "From the very beginning, not from the tax year you are declaring: without the earlier history there is no reliable acquisition cost and the gain comes out inflated." },
+        { "title": "We classify transaction by transaction", "body": "What is a sale, what is a swap, what is income and what is a zero-cost acquisition. Anything that doesn't fit a rule is reviewed by hand." },
+        { "title": "We apply the FIFO rule", "body": "To the already reconciled portfolio, with the per-transaction detail behind every total." },
+        { "title": "We review offsetting and other obligations", "body": "Losses from previous tax years still waiting to be offset and, where relevant, any additional reporting obligation." },
+        { "title": "We prepare the return and its supporting file", "body": "With a written record of the criteria applied, so that any figure can be justified if you are ever asked about it." }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "bullets": [
+        "<strong>Exports from your exchanges</strong>, going back to your first transaction: CSV files or read-only API keys.",
+        "<strong>Public addresses for your wallets</strong>, including ones you no longer use.",
+        "<strong>Which DeFi protocols you have used</strong>, even if only roughly.",
+        "<strong>Your previous tax returns</strong>, especially if you had losses still waiting to be offset.",
+        "<strong>Bank statements</strong> showing euros in and out.",
+        "<strong>If you hold shares, funds or other assets</strong>, those too: they go into the same return and the offsetting rules link them together."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "I've only bought and haven't sold anything. Do I have to declare?",
+          "a": "Buying and holding does not, by itself, produce a capital gain or loss. That said, it's worth checking whether there were swaps you didn't recognise as such, rewards you received, or whether a reporting obligation applies to you because of holdings abroad. Buying and holding doesn't always mean there's nothing to do."
+        },
+        {
+          "q": "I've lost money. Why would I declare it?",
+          "a": "Precisely so that you can offset that loss against gains, in that tax year and in the following ones, within the period the law allows. If you don't declare it, it doesn't exist for offsetting purposes."
+        },
+        {
+          "q": "What if I've been trading for years and never declared?",
+          "a": "It's more common than it seems, and there is an orderly way to sort it out. It's worth looking at before filing the current tax year, because declaring correctly this year makes the earlier years visible. It's explained in the situation on regularising previous years."
+        },
+        {
+          "q": "When does it have to be done?",
+          "a": "The income tax campaign follows its own annual calendar, and some reporting obligations fall due earlier, in the first quarter. It's best not to leave it to the last minute: if your activity has to be reconstructed, the groundwork takes weeks, not days."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "It depends on the volume of transactions and the state of your data. A small, orderly portfolio is a simple job; a multi-chain one with gaps to reconstruct is another matter. We give you a price after seeing a sample, before starting."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "The sooner you start, the calmer you'll be",
+    "body": "Tell us how many transactions you have, where you have traded and which tax years concern you. We'll tell you what work lies ahead and give you an indicative timeframe and price.",
+    "button": { "label": "Request a diagnosis", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Declaring crypto in Spain: what is taxable and how to get it right | Cleriontax",
+    "description": "Which crypto asset transactions are taxable — including token-to-token swaps — how they fit into your income tax return and what you need to gather. The FIFO rule, with every figure backed up.",
+    "keywords": [
+      "declare crypto spain",
+      "how to declare crypto in spain",
+      "declare crypto spanish tax agency",
+      "crypto tax return spain 2026",
+      "help declaring crypto spain",
+      "crypto tax return service spain",
+      "crypto tax accountant spain",
+      "declare crypto gains spain"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/declarar-criptomonedas"
+  }
+}

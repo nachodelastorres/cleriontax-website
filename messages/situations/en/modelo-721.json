@@ -1,0 +1,122 @@
+{
+  "title": "I hold crypto outside Spain: form 721",
+  "slug": "modelo-721",
+  "excerpt": "Who has to file form 721 for crypto assets held by custodians abroad, by when, how they are valued and what happens if it wasn't filed on time.",
+  "hero": {
+    "etiqueta": "Reporting obligation",
+    "h1": "Your crypto assets are held abroad",
+    "subheading": "Form 721 doesn't calculate any tax: it reports. That is precisely why it is easy to overlook, even though not filing it has consequences of its own, regardless of whether your income tax return is correct.",
+    "cta": { "label": "Check whether it applies to me", "href": "/contacto" },
+    "secundaria": { "label": "See crypto tax advisory", "href": "/servicios/asesoria-fiscal-criptomonedas" }
+  },
+  "toc": [
+    { "id": "lo-esencial", "label": "The essentials" },
+    { "id": "reconoces", "label": "Whether it applies" },
+    { "id": "no-confundir", "label": "Don't mix up the forms" },
+    { "id": "como-resolvemos", "label": "How we do it" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "lo-esencial",
+      "h2": "The essentials, in four figures",
+      "fondo": "azul",
+      "entrada": "The figures that define the obligation. The exact detail depends on your case and needs to be checked.",
+      "cifras": [
+        { "valor": "50.000 €", "etiqueta": "reference threshold for the combined balance at 31 December" },
+        { "valor": "1 Jan – 31 Mar", "etiqueta": "filing period for the previous tax year", "acento": true },
+        { "valor": "20.000 €", "etiqueta": "increase that requires you to report again in later tax years" },
+        { "valor": "0 €", "etiqueta": "in tax: it is a reporting obligation, not a payment" }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "Whether it applies, and why it gets overlooked",
+      "fondo": "blanco",
+      "body": "The obligation applies to anyone holding crypto assets kept by third-party custodians located abroad, above certain thresholds. The key words there are “held by third parties”: what sits on an exchange is not treated the same way as what sits in a wallet whose keys you control.\n\nIt gets overlooked for two reasons. The first is that no money goes out: since there is nothing to pay, it doesn't register on anyone's radar. The second is that the deadline comes before the income tax campaign, so by the time you sit down to do your taxes, the date for form 721 has already passed.\n\nAnd the detail with the greatest consequences: the obligation is independent of whether your income tax return is done perfectly. You may have declared and paid everything correctly and still have this reporting obligation outstanding."
+    },
+    {
+      "id": "no-confundir",
+      "h2": "Don't mix up the forms",
+      "fondo": "papel",
+      "entrada": "Three different obligations that overlap in time and are constantly confused.",
+      "columnas": [
+        {
+          "titulo": "Each one reports something different",
+          "correcta": true,
+          "items": [
+            "Form 721: crypto assets held by custodians abroad. Informational",
+            "Form 720: other assets and rights abroad. Informational, and separate from form 721",
+            "Form 714: wealth tax, where it applies depending on the autonomous community and the threshold",
+            "Form 100: the income tax return, which covers gains, losses and income"
+          ]
+        },
+        {
+          "titulo": "Costly confusions",
+          "correcta": false,
+          "items": [
+            "Believing that filing the income tax return covers the reporting obligation",
+            "Thinking form 720 includes crypto assets: they have their own form",
+            "Valuing at the purchase date instead of at 31 December",
+            "Assuming that if there were no sales, there is nothing to report"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "How we do it",
+      "steps": [
+        { "title": "We check whether you have to file", "body": "What is held by a third party and what isn't, where that third party is located and what the combined balance was at the end of the tax year. It's a preliminary analysis, and sometimes the answer is that it doesn't apply to you." },
+        { "title": "We value at the right date", "body": "The balance is taken at 31 December, with a documented valuation method and the price source recorded. A screenshot from an app won't do." },
+        { "title": "We review previous tax years", "body": "If the threshold was exceeded in any year and the form wasn't filed, we tell you what options there are before the tax authorities detect it." },
+        { "title": "We file and keep the supporting file", "body": "With the detail of how each figure was reached, in case the form is reviewed later." }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What about what I keep in a cold wallet with my own keys?",
+          "a": "The obligation hinges on the crypto assets being held by a third party. What sits in a wallet whose keys only you control is treated differently. That is exactly the point to analyse case by case, because there are in-between situations that aren't obvious."
+        },
+        {
+          "q": "I didn't file it last year and I think I should have",
+          "a": "It can be filed late, and doing so before the tax authorities request anything is not the same as waiting. It's worth analysing with the figures in front of you, so you know what you are exposed to in each scenario."
+        },
+        {
+          "q": "Do I have to pay anything with form 721?",
+          "a": "No. It is a reporting obligation, not a payment. That said, the information you report has to be consistent with what appears in your income tax return, and that is where you need to make sure both documents tell the same story."
+        },
+        {
+          "q": "I was over the threshold for only a few days in December",
+          "a": "The usual reference is the balance at 31 December, although some cases look at other points in time. It's worth reviewing your specific case rather than assuming that a one-off peak does or doesn't trigger the obligation."
+        },
+        {
+          "q": "I have accounts on several foreign exchanges",
+          "a": "What counts is the total, not each platform separately. It's one of the most frequent mistakes: you don't reach the threshold on any single exchange, but you do once they are all added together."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Checking costs little; not checking costs more",
+    "body": "Tell us which platforms you hold balances on, where they are located and the approximate amount at the end of the tax year. We'll tell you whether you have to file, and for which tax years.",
+    "button": { "label": "Request a diagnosis", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Form 721 for crypto: who files it and by when | Cleriontax",
+    "description": "Reporting obligation for crypto assets held by custodians abroad: thresholds, filing deadline, valuation at 31 December and what to do if it wasn't filed on time.",
+    "keywords": [
+      "form 721 crypto",
+      "file form 721 spain",
+      "form 721 crypto help",
+      "who must file form 721 crypto",
+      "form 721 late filing",
+      "declare crypto held abroad spain",
+      "form 720 crypto"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/modelo-721"
+  }
+}

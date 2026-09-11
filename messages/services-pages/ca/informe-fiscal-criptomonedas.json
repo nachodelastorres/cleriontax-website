@@ -1,9 +1,9 @@
 {
-  "title": "Anàlisi de Carteres d'Inversió Complexes",
+  "title": "Informe fiscal de criptomonedes",
   "slug": "informe-fiscal-criptomonedas",
   "excerpt": "Integració, neteja i consolidació de dades des de totes les fonts necessàries: exchanges, brokers, wallets i protocols DeFi. Convertim carteres disperses en informes unificats, traçables i auditables sense límit de complexitat.",
   "hero": {
-    "h1": "Anàlisi de Carteres d'Inversió Complexes",
+    "h1": "Informe fiscal de criptomonedes",
     "subheading": "Integrem dades de totes les fonts necessàries, processem operacions d'alta complexitat i generem informes consolidats amb traçabilitat completa. Ideal per a carteres amb operacions DeFi, staking multichain, airdrops i estructures descentralitzades.",
     "cta": {
       "label": "Sol·licitar avaluació gratuïta",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Casos d'ús"
+      "label": "Situacions habituals"
     },
     {
       "id": "faq",
@@ -93,19 +93,19 @@
     },
     {
       "id": "casos-uso",
-      "h2": "Casos d'ús",
+      "h2": "Situacions habituals",
       "items": [
         {
-          "title": "Inversor DeFi amb operacions en 15 blockchains",
-          "body": "Client amb posicions actives en Uniswap, Aave, Curve, PancakeSwap, Raydium, Osmosis i 20 protocols més. Més de 200.000 transaccions on-chain en 3 anys. Necessitava consolidar tota la seva activitat DeFi, calcular rewards reals de staking i liquidity pools, i preparar base de dades per liquidació fiscal. Integrem dades de subgraphs, APIs de protocols, nodes propis i exploradors blockchain. Resultat: informe consolidat amb traçabilitat completa i dataset llest per fiscalització."
+          "title": "Activitat DeFi en moltes cadenes",
+          "body": "Posicions en protocols com Uniswap, Aave, Curve o Raydium, repartides en diverses blockchains i amb desenes de milers de transaccions on-chain. La feina consisteix a consolidar tota aquesta activitat, separar les recompenses d’staking i liquidity pools de les permutes, i deixar un dataset traçable a punt per a la declaració. Integrem dades de subgraphs, APIs de protocols i exploradors de blocs."
         },
         {
-          "title": "Trader institucional amb 50+ comptes d'exchange",
-          "body": "Fons d'inversió amb comptes en Binance, Kraken, Coinbase, Bitfinex, OKX, Bybit i 45 exchanges més. Volum de 300.000 operacions anuals entre spot, futurs i opcions. Requeria consolidació global per reporting intern i auditories trimestrals. Processem APIs de tots els exchanges, reconciliem transferències inter-exchange i generem vistes consolidadas per estratègia de trading. Lliurem dashboards personalitzats i datasets auditables."
+          "title": "Molts comptes d’exchange alhora",
+          "body": "Operativa repartida en desenes de comptes —Binance, Kraken, Coinbase, OKX, Bybit…— amb spot, futurs i opcions. Aquí el gruix de la feina és reconciliar les transferències entre plataformes perquè no es comptin com a vendes, i unificar preus i fusos horaris abans d’aplicar el criteri FIFO."
         },
         {
-          "title": "Early adopter amb històric des de 2013",
-          "body": "Inversor amb primeres compres de Bitcoin el 2013, operacions en exchanges ja desapareguts, wallets antigues sense registres complets i migració entre múltiples carteres hardware. Necessitava reconstruir històric complet per complir amb model 721 i preparar declaració de Renda. Apliquem tècniques de forensics blockchain, recuperem dades d'exchanges tancats mitjançant backups del client i reconstruïm històric complet amb traçabilitat. Resultat: base de dades històrica verificable per a tota la seva vida fiscal en crypto."
+          "title": "Històric des dels primers anys",
+          "body": "Compres de bitcoin de fa una dècada, exchanges que ja no existeixen i wallets antigues sense registres complets. L’històric es reconstrueix amb la traçabilitat on-chain, els extractes bancaris i les còpies que conservis. El que no es pot reconstruir no s’inventa: es documenta el criteri aplicat per cobrir el buit."
         }
       ]
     },
@@ -168,7 +168,7 @@
     }
   ],
   "seo": {
-    "title": "Anàlisi de Carteres d'Inversió Complexes | Cleriontax",
+    "title": "Informe fiscal de criptomonedes per a l’AEAT | Cleriontax",
     "description": "Integració i consolidació de dades des de múltiples exchanges, wallets i protocols DeFi. Processament d'operacions complexes amb traçabilitat completa.",
     "keywords": [
       "anàlisi carteres crypto",
@@ -183,8 +183,8 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Anàlisi de Carteres d'Inversió Complexes",
-    "serviceType": "Anàlisi de Dades Financeres i Consolidació de Carteres",
+    "name": "Informe fiscal de criptomonedes",
+    "serviceType": "Reconciliació de carteres i preparació de l’informe fiscal",
     "provider": {
       "@type": "Organization",
       "name": "Cleriontax"

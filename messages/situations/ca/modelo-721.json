@@ -1,0 +1,122 @@
+{
+  "title": "Tinc criptomonedes fora d’Espanya: el model 721",
+  "slug": "modelo-721",
+  "excerpt": "Qui està obligat a presentar el model 721 per criptoactius custodiats a l’estranger, en quin termini, com es valoren i què passa si no es va presentar en el seu moment.",
+  "hero": {
+    "etiqueta": "Obligació informativa",
+    "h1": "Els teus criptoactius són a l’estranger",
+    "subheading": "El model 721 no calcula cap impost: informa. I precisament per això es passa per alt fàcilment, tot i que no presentar-lo té conseqüències pròpies, encara que la teva declaració de la renda estigui bé.",
+    "cta": { "label": "Comprovar si m’afecta", "href": "/contacto" },
+    "secundaria": { "label": "Veure assessoria fiscal", "href": "/servicios/asesoria-fiscal-criptomonedas" }
+  },
+  "toc": [
+    { "id": "lo-esencial", "label": "L’essencial" },
+    { "id": "reconoces", "label": "Si t’afecta" },
+    { "id": "no-confundir", "label": "No confondre models" },
+    { "id": "como-resolvemos", "label": "Com ho fem" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "lo-esencial",
+      "h2": "L’essencial, en quatre xifres",
+      "fondo": "azul",
+      "entrada": "Les magnituds que defineixen l’obligació. El detall exacte depèn del teu cas i s’ha de comprovar.",
+      "cifras": [
+        { "valor": "50.000 €", "etiqueta": "llindar de referència del saldo conjunt a 31 de desembre" },
+        { "valor": "1 gen – 31 març", "etiqueta": "termini de presentació de l’exercici anterior", "acento": true },
+        { "valor": "20.000 €", "etiqueta": "d’increment que obliga a tornar a declarar en els exercicis següents" },
+        { "valor": "0 €", "etiqueta": "d’impost: és una obligació informativa, no de pagament" }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "Si t’afecta i per què es passa per alt",
+      "fondo": "blanco",
+      "body": "L’obligació afecta qui té criptoactius custodiats per tercers situats a l’estranger per sobre de determinats llindars. L’expressió que importa aquí és «custodiats per tercers»: el tractament no és el mateix per al que tens en un exchange que per al que tens en una wallet les claus de la qual controles tu.\n\nEs passa per alt per dues raons. La primera és que no surten diners: com que no hi ha cap quota a pagar, no apareix al radar mental de ningú. La segona és que el termini s’avança a la campanya de la renda, de manera que quan et poses amb els impostos, la data del 721 ja ha passat.\n\nI el detall que té més conseqüències: l’obligació no depèn de si la teva declaració de la renda està perfectament feta. Pots haver declarat i pagat tot correctament i, tot i així, tenir pendent aquesta obligació informativa."
+    },
+    {
+      "id": "no-confundir",
+      "h2": "No confondre models",
+      "fondo": "papel",
+      "entrada": "Tres obligacions diferents que coincideixen en el temps i que es confonen constantment.",
+      "columnas": [
+        {
+          "titulo": "Cadascun informa d’una cosa diferent",
+          "correcta": true,
+          "items": [
+            "Model 721: criptoactius custodiats a l’estranger. Informatiu",
+            "Model 720: altres béns i drets a l’estranger. Informatiu, i diferent del 721",
+            "Model 714: impost sobre el patrimoni, quan escau segons la comunitat i el llindar",
+            "Model 100: la declaració de la renda, on van els guanys, les pèrdues i els rendiments"
+          ]
+        },
+        {
+          "titulo": "Confusions que surten cares",
+          "correcta": false,
+          "items": [
+            "Creure que presentar la renda cobreix l’obligació informativa",
+            "Pensar que el 720 inclou els criptoactius: van pel seu propi model",
+            "Valorar a la data de compra i no a 31 de desembre",
+            "Donar per fet que, si no hi ha hagut vendes, no hi ha res a informar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Com ho fem",
+      "steps": [
+        { "title": "Comprovem si hi estàs obligat", "body": "Què està custodiat per un tercer i què no, on està situat aquest tercer i quin saldo conjunt hi havia al tancament de l’exercici. És una anàlisi prèvia i, de vegades, la resposta és que no t’afecta." },
+        { "title": "Valorem a la data correcta", "body": "El saldo es pren a 31 de desembre, amb un criteri de valoració documentat i la font del preu anotada. No serveix una captura d’una app." },
+        { "title": "Revisem exercicis anteriors", "body": "Si algun any es va superar el llindar i no es va presentar, et diem quines opcions hi ha abans que l’Administració ho detecti." },
+        { "title": "Presentem i arxivem la documentació", "body": "Amb el detall de com s’ha arribat a cada xifra, per si el model es revisa més endavant." }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "I el que tinc en una wallet freda amb les meves claus?",
+          "a": "L’eix de l’obligació és que els criptoactius estiguin custodiats per un tercer. El que tens en una wallet les claus de la qual només controles tu té un tractament diferent. És justament el punt que cal analitzar cas per cas, perquè hi ha situacions intermèdies que no són evidents."
+        },
+        {
+          "q": "No el vaig presentar l’any passat i crec que em tocava",
+          "a": "Es pot presentar fora de termini, i fer-ho abans que l’Administració et requereixi res no és el mateix que esperar. Convé analitzar-ho amb les xifres al davant per saber a què t’exposes en cada escenari."
+        },
+        {
+          "q": "He de pagar alguna cosa amb el 721?",
+          "a": "No. És una obligació informativa, no de pagament. Una altra cosa és que la informació declarada ha de ser coherent amb el que apareix a la teva renda, i aquí sí que cal vetllar perquè tots dos documents expliquin la mateixa història."
+        },
+        {
+          "q": "Vaig superar el llindar només uns quants dies de desembre",
+          "a": "La referència habitual és el saldo a 31 de desembre, tot i que hi ha supòsits que tenen en compte altres moments. Convé revisar el cas concret en lloc de donar per fet que un pic puntual obliga o no obliga."
+        },
+        {
+          "q": "Tinc comptes en diversos exchanges estrangers",
+          "a": "Es computa el conjunt, no cada plataforma per separat. És un dels errors més freqüents: ningú no arriba al llindar amb un sol exchange, però sumant-los tots, sí."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Comprovar-ho costa poc; no fer-ho, més",
+    "body": "Digues-nos en quines plataformes tens saldo, on estan situades i quin import aproximat hi havia al tancament de l’exercici. Et diem si hi estàs obligat i de quins exercicis.",
+    "button": { "label": "Enviar diagnòstic", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Model 721 de criptomonedes: qui el presenta i en quin termini | Cleriontax",
+    "description": "Obligació informativa per criptoactius custodiats a l’estranger: llindars, termini de presentació, valoració a 31 de desembre i què fer si no es va presentar en el seu moment.",
+    "keywords": [
+      "model 721 criptomonedes",
+      "presentar model 721",
+      "ajuda model 721 criptomonedes",
+      "obligació model 721 criptomonedes",
+      "model 721 fora de termini",
+      "declarar criptomonedes estranger",
+      "model 720 criptomonedes"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/modelo-721"
+  }
+}

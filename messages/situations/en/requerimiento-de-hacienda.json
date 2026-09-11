@@ -1,0 +1,208 @@
+{
+  "title": "I’ve received an information request from the Spanish Tax Agency (AEAT) about my crypto",
+  "slug": "requerimiento-de-hacienda",
+  "excerpt": "What the request you’ve received means, how much time you really have to reply and what needs rebuilding before you respond. Don’t reply until your figures have been reworked.",
+  "hero": {
+    "etiqueta": "A deadline is already running",
+    "h1": "You’ve received a letter from the tax authorities about your crypto",
+    "subheading": "The first thing isn’t the reply: it’s the date. The deadline runs from notification, not from when you open it. The second is understanding exactly what they’re asking for, because an information request, a limited review and a tax inspection are not the same thing.",
+    "cta": {
+      "label": "Call us: +34 663 482 301",
+      "href": "tel:+34663482301"
+    },
+    "secundaria": {
+      "label": "Tell us about your case",
+      "href": "/contacto"
+    }
+  },
+  "toc": [
+    {
+      "id": "reconoces",
+      "label": "What’s happened"
+    },
+    {
+      "id": "que-implica",
+      "label": "What it means"
+    },
+    {
+      "id": "el-reloj",
+      "label": "The clock"
+    },
+    {
+      "id": "como-resolvemos",
+      "label": "How we resolve it"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "What we need from you"
+    },
+    {
+      "id": "que-recibes",
+      "label": "What you receive"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "What’s happened",
+      "body": "You’ve received a notification from the Spanish Tax Agency (AEAT) asking for information about crypto transactions, almost always for a specific tax year. It may reach you by registered post or through the AEAT’s online portal (sede electrónica).\n\nIt doesn’t mean you’ve done anything wrong. It means the AEAT has a figure — usually the volume an exchange has reported to it — that doesn’t match what appears in your return. Since the automatic exchange of information between platforms and tax administrations came in, that cross-check has been automatic and carried out on a massive scale.\n\nAnd there are many legitimate reasons why those two numbers may not match. By far the most common: transfers between your own wallets, which the report counts as transactions even though you haven’t sold anything. Also swaps of one token for another that you didn’t declare because nobody told you they were taxable, or the history of an exchange that has closed and from which you can no longer download anything.\n\nWhat matters now is not to reply in a hurry. Whatever you provide in this first reply stays on the file and shapes everything that comes afterwards."
+    },
+    {
+      "id": "que-implica",
+      "h2": "What your notification actually means",
+      "bullets": [
+        "<strong>Information request (requerimiento de información):</strong> they’re asking for specific data. It’s the mildest type and doesn’t necessarily mean you’re under review. The usual deadline to reply is ten working days from notification.",
+        "<strong>Limited review (comprobación limitada):</strong> this is already a tax management procedure, with a defined scope. The tax authorities can review certain items, but cannot examine business accounting records.",
+        "<strong>Tax inspection (inspección):</strong> the widest scope, and it’s handled by a tax inspector (actuario). The deadlines, the consequences and the way you respond all change.",
+        "<strong>Proposed assessment (propuesta de liquidación):</strong> they’ve already calculated what they think you owe. This is the time to make submissions, with your own figures in hand.",
+        "<strong>Notice opening penalty proceedings (acuerdo de inicio de expediente sancionador):</strong> this is separate from the assessment and is defended separately. Accepting an assessment doesn’t mean you have to accept the penalty."
+      ],
+      "fondo": "blanco"
+    },
+    {
+      "id": "el-reloj",
+      "h2": "The clock, day by day",
+      "fondo": "papel",
+      "entrada": "Typical timeline for an information request. The exact dates depend on your notification, but this is the pace.",
+      "hitos": [
+        {
+          "cuando": "Day 0",
+          "titulo": "Notification",
+          "body": "The deadline starts running. On the online portal, if you don’t access it, you are deemed notified ten calendar days after it was made available to you: that is the real day 0."
+        },
+        {
+          "cuando": "Days 1–2",
+          "titulo": "Reading and scope",
+          "body": "Which procedure has been opened, which tax years it covers and exactly what is being requested. This is when to decide whether to ask for an extension — asking late is no use."
+        },
+        {
+          "cuando": "Days 2–6",
+          "titulo": "Rebuilding your transactions",
+          "body": "This is the long stretch, and the one that can’t be compressed. Consolidating exchanges, wallets and protocols for the tax year in question and pinpointing the source of the discrepancy."
+        },
+        {
+          "cuando": "Days 7–8",
+          "titulo": "Quantification and strategy",
+          "body": "Comparison with what you declared, quantification of the difference and a decision on what to argue. You review it before anything is filed."
+        },
+        {
+          "cuando": "Day 9",
+          "titulo": "Filing",
+          "body": "It’s filed with a day to spare. Never on the last day, because nobody can fix a problem with the online portal on the day of the deadline."
+        },
+        {
+          "cuando": "Day 10",
+          "titulo": "The deadline expires",
+          "body": "After this point, failing to respond can lead to a penalty for obstruction and to the tax authorities issuing an assessment based on whatever data they have.",
+          "critico": true
+        }
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "How we resolve it",
+      "steps": [
+        {
+          "title": "We read the notification and work out the real deadline",
+          "body": "First of all: which procedure has been opened, which tax years it covers and how many working days are really left. An electronic notification is deemed made ten calendar days after it is made available if you haven’t accessed it before then, so the real date isn’t always the one it appears to be."
+        },
+        {
+          "title": "We rebuild your transactions for the tax year in question",
+          "body": "We consolidate exchanges, wallets and protocols until we have the complete history for the period. This is almost always where the source of the discrepancy appears: internal movements counted as sales, undeclared swaps or income that was never reported."
+        },
+        {
+          "title": "We quantify the difference and its cause",
+          "body": "We compare your actual transactions with what you declared and with the figure the AEAT is working from. We establish which part is your error, which part is a problem of incomplete data on the tax authorities’ side and which part is a matter of interpretation."
+        },
+        {
+          "title": "We prepare the written response and its evidence",
+          "body": "Beforehand, we explain what will be argued, with what backing and what scenarios may open up afterwards, including the unfavourable ones. We don’t file anything without you knowing what you’re signing."
+        },
+        {
+          "title": "We file within the deadline and follow the case",
+          "body": "We respond to any further requests that may follow and keep you informed of every development until the matter is resolved."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "bullets": [
+        "<strong>The complete notification</strong>, with all its pages and the notification date visible.",
+        "<strong>Your return for the tax year in question</strong>, and those for earlier years if you filed any.",
+        "<strong>Exports from your exchanges</strong> for the period: CSV files or read-only API keys. Never private keys.",
+        "<strong>The public addresses of your wallets</strong>, to rebuild the on-chain trail and show which movements were between your own accounts.",
+        "<strong>Bank statements</strong> showing money moving into and out of euros during the period, which are the strongest evidence when history is missing.",
+        "<strong>Any report you’ve already submitted</strong> to the tax authorities, if you replied earlier on your own."
+      ],
+      "fondo": "azul"
+    },
+    {
+      "id": "que-recibes",
+      "h2": "What you receive",
+      "bullets": [
+        "<strong>The written response</strong>, filed within the deadline, with its filing receipt.",
+        "<strong>The reconstruction report</strong> for the tax year, with the transaction-by-transaction detail behind every figure.",
+        "<strong>The criteria memo:</strong> which approach was applied to each doubtful point and on what basis. It’s what supports your position if the procedure continues.",
+        "<strong>A scenario map:</strong> what may happen from here and what each outcome would mean.",
+        "<strong>The reconciled portfolio</strong>, which you can use straight away for the following tax years without repeating the work."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How much time do I really have?",
+          "a": "The usual deadline for an information request is ten working days from notification, although it varies depending on the procedure and on what the notification itself says. It counts from the date of notification, not from when you open the document; and on the online portal you are deemed notified ten calendar days after it was made available to you, even if you haven’t logged in. The first thing we do is work out your real deadline."
+        },
+        {
+          "q": "Can I ask for an extension?",
+          "a": "In certain procedures you can apply for an extension, and it’s worth considering when the reconstruction will take longer than the time available. It isn’t automatic and it isn’t always granted, so the application needs to be well prepared and made as early as possible."
+        },
+        {
+          "q": "What if I reply myself and only call you if it gets complicated?",
+          "a": "You can, but whatever you provide stays on the file and shapes what comes next. Correcting a report you’ve already submitted is harder and more expensive than getting it right the first time. If you’re going to reply on your own, at least make sure your figures can be reconstructed and are consistent with what you declared."
+        },
+        {
+          "q": "I don’t have the full history from an exchange that closed",
+          "a": "It’s one of the most common situations. The reconstruction relies on what does exist: on-chain traceability of your wallets, bank statements showing money moving into and out of euros, confirmation emails and partial data from third parties. It doesn’t always get to one hundred per cent, but it does reach a documented, consistent position — and that is what can be defended."
+        },
+        {
+          "q": "Is this going to end in a penalty?",
+          "a": "We can’t predict that, and be wary of anyone who says they know. What can be done is to build the best documented position possible with the data available and, if penalty proceedings follow, defend them separately: with crypto assets, much of the activity went for years without clear administrative guidance, and a reasonable interpretation of the law is a real argument."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "It depends on the volume of transactions and the state of your data, which is what determines the reconstruction work. Once we’ve seen the notification and a sample of your data, we give you a price before we start. Timescales and prices are always estimates that depend on the volume and complexity of the portfolio."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "The deadline won’t wait",
+    "body": "If you have the notification in front of you, the most useful thing you can do now is call us and read us the date. In five minutes you’ll know which procedure it is, how many working days you really have left and what needs to be gathered.",
+    "button": {
+      "label": "Tell us about your case",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "AEAT information request about crypto: what to do and your deadline | Cleriontax",
+    "description": "You’ve received an information request from the Spanish Tax Agency (AEAT) about your crypto. What it means, how many working days you have to reply and what to rebuild first.",
+    "keywords": [
+      "AEAT information request crypto",
+      "AEAT letter crypto",
+      "how to respond to AEAT request crypto",
+      "Hacienda letter crypto",
+      "Spanish tax authorities asking about my crypto",
+      "deadline to reply AEAT request",
+      "what to do AEAT asks for crypto information"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/requerimiento-de-hacienda"
+  }
+}

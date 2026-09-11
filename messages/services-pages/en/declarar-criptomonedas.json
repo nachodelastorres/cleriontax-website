@@ -1,9 +1,9 @@
 {
-  "title": "Tax Settlements and AEAT Forms",
+  "title": "Crypto income tax return",
   "slug": "declarar-criptomonedas",
   "excerpt": "Calculation of capital gains, losses and income using FIFO. Preparation of forms 100, 721 and 714 with full documentation and review by certified tax advisors.",
   "hero": {
-    "h1": "Tax Settlements and AEAT Forms",
+    "h1": "Crypto income tax return",
     "subheading": "We calculate your tax obligations using FIFO, apply current DGT regulations and generate ready-to-file forms. Includes scenario simulations, supporting documentation and review by certified tax advisors.",
     "cta": {
       "label": "Request a free evaluation",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Use cases"
+      "label": "Typical situations"
     },
     {
       "id": "faq",
@@ -44,7 +44,7 @@
     {
       "id": "intro",
       "h2": "Introduction",
-      "body": "Tax settlement preparation is the final step after consolidating and analyzing your data. This service is designed for investors who need to comply with their tax obligations by correctly applying AEAT and DGT criteria. We calculate capital gains and losses using FIFO criteria, classify capital income (staking, lending, airdrops), prepare forms 100, 721 and 714, and generate auditable supporting documentation for any Tax Agency request. We do not offer investment advice or recommendations on which assets to buy or sell: our approach is exclusively technical-tax. We work with you to optimize your declaration within the legal framework, applying all permitted loss compensations and simulating alternative scenarios when appropriate. If you have complex operations in cryptocurrencies, international stocks or multi-level tax structures, this is the service you need. Do you have questions about how to declare your crypto assets this year? Let's talk."
+      "body": "The income tax return is the final step after consolidating and analysing your data. This service is for anyone who needs to meet their tax obligations by correctly applying AEAT and DGT criteria. We calculate capital gains and losses under the FIFO rule, classify investment income (staking, lending, airdrops), prepare forms 100, 721 and 714, and produce auditable supporting documentation in case an AEAT request arrives. We do not offer investment advice or recommendations on which assets to buy or sell: our approach is strictly technical and tax-focused. We apply every loss offset the law allows and, where there is more than one correct way to file, we explain the effect of each. If you have complex crypto activity, international shares or multi-level tax structures, this is your service. Questions about how to declare your crypto assets this year? Let’s talk."
     },
     {
       "id": "que-incluye",
@@ -64,15 +64,15 @@
       "steps": [
         {
           "title": "Tax data consolidation",
-          "body": "We receive your consolidated data (if you have used our portfolio analysis service) or process your files from scratch. We validate integrity, identify fiscally relevant operations and classify according to tax nature."
+          "body": "We receive your consolidated data (if you have used our Crypto tax report service) or process your files from scratch. We validate integrity, identify fiscally relevant operations and classify according to tax nature."
         },
         {
           "title": "Application of FIFO tax rules",
           "body": "We calculate the acquisition cost of each sale using FIFO, determine acquisition and transfer dates, classify between short/long-term gains if applicable and generate complete transactional detail. We apply updated DGT criteria."
         },
         {
-          "title": "Scenario simulation and optimization",
-          "body": "We evaluate different declaration strategies, simulate tax impact of loss compensations, analyze temporal imputation of operations and present you options with pros/cons of each scenario."
+          "title": "Filing scenarios",
+          "body": "Where the rules allow more than one correct option —how to offset losses, which tax year an operation belongs to— we simulate the effect of each and explain the pros and cons before filing."
         },
         {
           "title": "Form generation and tax dossier",
@@ -87,25 +87,25 @@
         "<strong>Real tax criteria, not automated:</strong> each operation is reviewed with human tax judgment. We do not blindly trust automated algorithms that generate errors in complex cases.",
         "<strong>Deep knowledge of crypto regulations:</strong> we closely follow DGT binding consultations, AEAT criteria and applicable case law on crypto assets. We apply updated regulatory interpretation.",
         "<strong>Total traceability and auditability:</strong> each calculation includes technical justification, reference to origin operations and possibility of complete audit. Documentation ready for Tax Agency requests.",
-        "<strong>Strategic tax simulations:</strong> we don't just calculate. We analyze alternative scenarios, identify legal optimization opportunities and help you make informed decisions.",
-        "<strong>Review by certified professionals:</strong> all tax reports are validated by certified tax advisors specialized in crypto assets before delivery. Professional quality guarantee."
+        "<strong>Scenarios explained:</strong> we don’t just calculate. If there is more than one correct way to file, we show you the effect of each so you can decide with the information in front of you.",
+        "<strong>Review by chartered professionals:</strong> all tax reports are validated by chartered tax advisors specialized in crypto assets before delivery. They sign off the work under their professional liability."
       ]
     },
     {
       "id": "casos-uso",
-      "h2": "Use cases",
+      "h2": "Typical situations",
       "items": [
         {
-          "title": "Active trader with thousands of FIFO operations",
-          "body": "Client with 15,000 cryptocurrency buy/sell operations in 2024, multiple exchanges, operations in different tax years. Needed precise FIFO calculation, compensation of losses from previous years and optimization of temporal imputation. We processed all operations, applied historical FIFO from first purchases, simulated declaration scenarios and generated form 100 with supporting annexes. Result: legally optimized declaration with significant tax savings from correct application of compensations."
+          "title": "Thousands of trades over several tax years",
+          "body": "Heavy trading on several exchanges and losses from previous years still to be offset. We apply the FIFO rule from the very first purchases, check which losses are still within the four-year window and carry the result to form 100 with the annexes that justify every figure."
         },
         {
-          "title": "DeFi investor with complex income",
-          "body": "Client with staking positions on Ethereum 2.0, yield farming on Curve and Aave, liquidity pools on Uniswap and various airdrops. Needed to correctly classify each type of income according to Spanish tax regulations. We identified capital income (staking rewards), capital gains (token swaps), value variations in LP tokens and airdrops. We generated form 100 with correct imputation in each box and supporting dossier. Result: fiscally coherent declaration with DGT criteria applicable to DeFi."
+          "title": "DeFi income of different kinds",
+          "body": "Staking, yield farming, liquidity pools and airdrops in the same portfolio. Each goes to a different place in the return: staking rewards as investment income, swaps as capital gains or losses, airdrops according to the DGT’s criteria. The result is a consistent return and a dossier explaining every classification."
         },
         {
-          "title": "International investor with 721 and 714 obligations",
-          "body": "Client with cryptocurrencies on foreign exchanges worth more than €50,000, needed to comply with form 721. Also had total assets above form 714 thresholds. We processed balances as of December 31, valued assets according to AEAT criteria, prepared form 721 with detail of balances by exchange and form 714 with correct asset valuation. We included simulation of possible penalties for not declaring and justification of applied valuation. Result: complete compliance with international informative obligations."
+          "title": "Balances abroad: forms 721 and 714",
+          "body": "Crypto on foreign exchanges above 50.000 € on 31 December and wealth that may exceed the wealth tax threshold. We take the year-end balances, value them under AEAT criteria and prepare form 721 by platform and, where applicable, form 714."
         }
       ]
     },
@@ -118,16 +118,16 @@
           "a": "Form 100 is the income tax return (IRPF), where you declare all your gains, losses and income for the tax year. Form 721 is informative: you declare balances of cryptocurrencies abroad if they exceed €50,000 as of December 31. Form 714 is also informative: you declare your total assets if you exceed certain thresholds. Each has different deadlines and requirements. We advise you on which apply to your case."
         },
         {
-          "q": "What documentation do I need to provide to prepare my tax settlement?",
-          "a": "We need CSV files from all your exchanges with complete operation history, on-chain wallet addresses to extract transactions, information on initial purchases if you have assets from years ago, and any document justifying special operations (airdrops, hard forks, mining income). If you already have consolidated data from our portfolio analysis service, that is sufficient."
+          "q": "What documentation do I need to provide to prepare my tax return?",
+          "a": "We need CSV files from all your exchanges with complete operation history, on-chain wallet addresses to extract transactions, information on initial purchases if you have assets from years ago, and any document justifying special operations (airdrops, hard forks, mining income). If you already have consolidated data from our Crypto tax report service, that is sufficient."
         },
         {
           "q": "How do you apply FIFO criteria if I have operations since 2015?",
           "a": "We reconstruct your complete history from the first documented purchase. We apply strict FIFO: the first units purchased are the first sold. If you have gaps in your historical records, we apply conservative valuation methods and document applied assumptions. In cases of closed exchanges or old wallets without records, we work with available information and justify methodology."
         },
         {
-          "q": "Can I fiscally optimize my declaration legally?",
-          "a": "Yes. Within the legal framework, optimization strategies exist: compensation of capital losses with gains, temporal imputation of operations in different years if possible, use of applicable deductions, and planning of staggered sales to avoid tax bracket jumps. We simulate scenarios and explain pros/cons of each option. We do not offer tax evasion or illegal strategies."
+          "q": "Can you help me pay what is due and no more?",
+          "a": "Yes, within the legal framework: we apply every loss offset the law allows, allocate each operation to the tax year it belongs to and apply any deductions that are due. Where there is more than one correct option, we explain the effect of each. We don’t promise an outcome or offer avoidance schemes: our job is a return that is correct and can be justified."
         },
         {
           "q": "What happens if the AEAT requests me after filing my declaration?",
@@ -168,8 +168,8 @@
     }
   ],
   "seo": {
-    "title": "Crypto Tax Settlements | Form 100, 721, 714 | Cleriontax",
-    "description": "FIFO calculation of capital gains, preparation of AEAT forms and tax simulations. Review by certified advisors. Comply with the Spanish Tax Agency without errors.",
+    "title": "Declaring crypto in your Spanish tax return: forms 100, 721 and 714 | Cleriontax",
+    "description": "Gains and losses calculated under the FIFO rule, integrated into your income tax return and AEAT forms, reviewed by chartered advisors and with every figure documented.",
     "keywords": [
       "crypto tax settlement",
       "form 100 crypto",
@@ -184,8 +184,8 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Tax Settlements and AEAT Forms",
-    "serviceType": "Tax Settlement Preparation for Crypto Assets",
+    "name": "Crypto income tax return",
+    "serviceType": "Income tax return preparation with crypto assets",
     "provider": {
       "@type": "Organization",
       "name": "Cleriontax"

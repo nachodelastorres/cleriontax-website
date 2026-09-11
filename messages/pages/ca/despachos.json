@@ -1,0 +1,141 @@
+{
+  "title": "Per a despatxos i gestories",
+  "slug": "despachos",
+  "excerpt": "Suport tècnic per a despatxos i gestories sense especialització en criptoactius: reconstruïm l'operativa del client i lliurem l'informe pericial que sosté la vostra posició. Vosaltres manteniu la relació.",
+  "hero": {
+    "etiqueta": "Col·laboració professional",
+    "h1": "El client és vostre. La feina tècnica la fem nosaltres.",
+    "subheading": "Quan a un despatx li arriba una cartera amb milers d'operacions en exchanges, wallets i protocols DeFi, el problema no és fiscal: és de dades. Reconstruïm l'operativa i us lliurem l'informe amb la seva memòria de criteris.",
+    "cta": { "label": "Parlar d'una derivació", "href": "/contacto" },
+    "secundaria": { "label": "Veure el mètode", "href": "/metodo" }
+  },
+  "toc": [
+    { "id": "cuando", "label": "Quan derivar" },
+    { "id": "que-hacemos", "label": "Què fem" },
+    { "id": "como-funciona", "label": "Com funciona" },
+    { "id": "responsabilidad", "label": "Responsabilitat" },
+    { "id": "casos", "label": "Casos típics" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "cuando",
+      "h2": "Quan té sentit derivar",
+      "body": "Un despatx generalista resol sense problemes una cartera cripto petita i ordenada: quatre compres, dues vendes i un exchange. La feina comença a no compensar quan hi entren el volum o la dispersió.\n\nEl punt d'inflexió sol ser aquest: el client porta exportacions de diverses plataformes, algunes d'incompletes, amb moviments entre les seves pròpies wallets que semblen vendes i tokens que van aparèixer sense que ell els comprés. A partir d'aquí la feina deixa de ser fiscal i passa a ser de tractament de dades, que és un ofici diferent i consumeix un temps que no es factura bé.\n\nI hi ha un segon cas, més incòmode: quan l'AEAT ja ha obert un procediment i cal demostrar l'origen de cada xifra amb prova on-chain."
+    },
+    {
+      "id": "que-hacemos",
+      "h2": "Què fem i què no",
+      "bullets": [
+        "<strong>Reconstrucció de l'operativa:</strong> ingesta de totes les fonts del client, conciliació, identificació de moviments interns i classificació fiscal operació a operació.",
+        "<strong>Informe amb memòria de criteris:</strong> els totals a punt per integrar-los en la declaració, amb el detall per operació al darrere i el criteri aplicat en cada situació dubtosa.",
+        "<strong>Informe pericial per a procediments:</strong> quan hi ha un requeriment, una comprovació o una inspecció oberts, el document tècnic que acompanya les vostres al·legacions.",
+        "<strong>Segona opinió sobre informes automàtics:</strong> revisió d'un informe generat amb programari abans que es presenti.",
+        "<strong>No toquem la vostra relació amb el client:</strong> no facturem al client final si no ens ho demaneu, no li oferim els nostres serveis i no apareixem en la relació si no voleu. L'interlocutor sou vosaltres.",
+        "<strong>No assumim la presentació:</strong> llevat que ho acordem expressament, la declaració la presenteu vosaltres. Nosaltres lliurem la feina tècnica i el seu suport documental."
+      ]
+    },
+    {
+      "id": "como-funciona",
+      "h2": "Com funciona la col·laboració",
+      "steps": [
+        {
+          "title": "Ens expliqueu el cas",
+          "body": "Volum aproximat, plataformes implicades, exercicis afectats i si hi ha res de l'AEAT pel mig. Amb això us diem si el cas encaixa, quin termini requereix i quin cost té, abans que us comprometeu amb el client."
+        },
+        {
+          "title": "Acord i abast per escrit",
+          "body": "Definim què hi entra i què no, qui factura a qui, quines dades necessitem i en quin format us arriba el lliurament. Sense això no comencem: en feines de dades, un abast ambigu acaba sempre en discussió."
+        },
+        {
+          "title": "Recollida de dades",
+          "body": "Les podem demanar nosaltres al client en nom vostre o rebre-les de vosaltres ja reunides, com preferiu. No demanem mai claus privades: exportacions, claus API de només lectura i adreces públiques."
+        },
+        {
+          "title": "Reconstrucció i revisió",
+          "body": "Apliquem el mètode complet. Tot el que el procés automàtic no pot resoldre amb certesa s'aparta i es revisa a mà, i les decisions queden documentades en la memòria de criteris."
+        },
+        {
+          "title": "Lliurament i sessió de traspàs",
+          "body": "Us lliurem l'informe, la memòria de criteris i el registre d'incidències, i fem una sessió perquè pugueu defensar cada xifra davant el vostre client i, si cal, davant l'Administració."
+        }
+      ]
+    },
+    {
+      "id": "responsabilidad",
+      "h2": "Responsabilitat i confidencialitat",
+      "bullets": [
+        "<strong>Assessorament col·legiat:</strong> la feina la signa un assessor fiscal col·legiat, amb la responsabilitat professional corresponent.",
+        "<strong>Criteris documentats:</strong> cada decisió discutible queda per escrit amb el seu fonament, de manera que, si més endavant es qüestiona un criteri, se sap exactament què s'ha aplicat i per què.",
+        "<strong>Confidencialitat:</strong> les dades del client no surten de l'encàrrec, no s'utilitzen com a exemple ni es publiquen en cap peça, ni tan sols anonimitzades, sense consentiment exprés per escrit.",
+        "<strong>Protecció de dades:</strong> tractament d'acord amb el RGPD, amb l'encàrrec de tractament formalitzat quan la relació ho requereix.",
+        "<strong>Sense captació:</strong> no oferim els nostres serveis al client que ens deriveu."
+      ]
+    },
+    {
+      "id": "casos",
+      "h2": "Casos típics",
+      "items": [
+        {
+          "title": "Client de tota la vida que ara té cripto",
+          "body": "Un client a qui feu la declaració des de fa anys apareix amb una cartera de criptoactius que no sabeu com tractar. No el voleu derivar sencer ni perdre'l, però tampoc no voleu dedicar trenta hores a netejar CSV. Nosaltres fem el tram cripto i vosaltres continueu presentant la seva declaració completa."
+        },
+        {
+          "title": "Requeriment de l'AEAT amb el termini corrent",
+          "body": "El vostre client rep un requeriment per diferències entre el que ha comunicat un exchange i el seu IRPF. Vosaltres porteu el procediment; nosaltres reconstruïm l'operativa de l'exercici i preparem l'informe tècnic que acompanya les vostres al·legacions."
+        },
+        {
+          "title": "Informe automàtic que no quadra",
+          "body": "El client arriba amb un informe d'un programari que dona un guany que no li encaixa. Abans de presentar-lo, revisem la reconciliació: gairebé sempre apareixen moviments interns tractats com a vendes o adquisicions valorades a cost zero."
+        },
+        {
+          "title": "Regularització d'exercicis anteriors",
+          "body": "En preparar l'exercici en curs aflora operativa d'anys anteriors sense declarar. Reconstruïm l'històric complet perquè pugueu valorar la via de la complementària amb xifres reals al davant."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Us quedareu el meu client?",
+          "a": "No. No li oferim els nostres serveis, no li facturem si no ens ho demaneu i no apareixem en la relació si no voleu. Si el model no funcionés així, cap despatx no ens tornaria a derivar un segon cas."
+        },
+        {
+          "q": "Com es factura?",
+          "a": "Com preferiu: us facturem a vosaltres i vosaltres ho repercutiu al client, o facturem directament al client final si us resulta més còmode. S'acorda abans de començar, juntament amb l'abast."
+        },
+        {
+          "q": "Què necessiteu per donar un preu?",
+          "a": "Volum aproximat d'operacions, en quines plataformes i cadenes opera el client, quins exercicis cal cobrir i si hi ha algun procediment obert. Amb això donem un termini i un preu orientatius; el definitiu surt després de la fase d'ingesta, quan ja se sap en quin estat són les dades."
+        },
+        {
+          "q": "Podeu signar l'informe?",
+          "a": "Sí. La feina la signa un assessor fiscal col·legiat, i en procediments oberts l'informe tècnic s'emet perquè es pugui aportar a l'expedient."
+        },
+        {
+          "q": "Treballeu amb despatxos de fora de Mallorca?",
+          "a": "Sí. La feina és íntegrament remota i la normativa aplicable és l'espanyola, de manera que la ubicació no condiciona res."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Teniu un cas damunt la taula?",
+    "body": "Expliqueu-nos el volum, les plataformes, els exercicis i si hi ha res de l'AEAT pel mig. Us diem si encaixa, quin termini requereix i quin cost té abans que us comprometeu amb el vostre client.",
+    "button": { "label": "Parlar d'una derivació", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Suport tècnic per a despatxos i gestories | Cleriontax",
+    "description": "Reconstrucció d'operativa cripto i informe pericial per a despatxos i gestories sense especialització en criptoactius. Vosaltres manteniu la relació amb el client.",
+    "keywords": [
+      "suport despatxos fiscalitat criptomonedes",
+      "col·laboració gestoria criptomonedes",
+      "informe pericial criptomonedes",
+      "assessor fiscal criptomonedes per a despatxos",
+      "externalitzar fiscalitat cripto"
+    ],
+    "canonical": "https://cleriontax.com/despachos"
+  }
+}

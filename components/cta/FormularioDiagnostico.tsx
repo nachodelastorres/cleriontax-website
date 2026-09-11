@@ -1,13 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
-  diagnosticoSchema,
+  crearDiagnosticoSchema,
   SITUACIONES_AEAT,
   VOLUMENES,
   type DiagnosticoData,
+  type ErroresDiagnostico,
 } from "@/lib/validations";
 import Input from "@/components/ui/Input";
 import Select from "@/components/ui/Select";
@@ -24,7 +27,8 @@ import ChipEstado from "@/components/brand/ChipEstado";
  * operativa.
  *
  * Voz (§15): primero la respuesta, segunda persona, y ninguna promesa de
- * resultado ni de ahorro (§18).
+ * resultado ni de ahorro (§18). Textos en el namespace `diagnostico`; los
+ * valores que viajan al servidor no cambian con el idioma.
  */
 
 interface FormularioDiagnosticoProps {
@@ -33,18 +37,27 @@ interface FormularioDiagnosticoProps {
    * para que el aviso interno diga de qué página salió.
    */
   situacion?: string;
-  /** Texto de la acción principal. */
+  /** Texto de la acción principal. Por defecto, el del namespace. */
   accion?: string;
   className?: string;
 }
 
+const TELEFONO = "+34663482301";
+const TELEFONO_VISIBLE = "+34 663 482 301";
+const CORREO = "info@cleriontax.com";
+
 export default function FormularioDiagnostico({
   situacion = "",
-  accion = "Enviar diagnóstico",
+  accion,
   className,
 }: FormularioDiagnosticoProps) {
+  const t = useTranslations("diagnostico");
   const [estado, setEstado] = useState<"listo" | "enviando" | "enviado" | "error">("listo");
-  const [detalleError, setDetalleError] = useState<string | null>(null);
+
+  const esquema = useMemo(
+    () => crearDiagnosticoSchema(t.raw("errores") as ErroresDiagnostico),
+    [t]
+  );
 
   const {
     register,
@@ -52,13 +65,12 @@ export default function FormularioDiagnostico({
     reset,
     formState: { errors },
   } = useForm<DiagnosticoData>({
-    resolver: zodResolver(diagnosticoSchema),
+    resolver: zodResolver(esquema),
     defaultValues: { situacion, message: "", privacyConsent: false },
   });
 
   async function onSubmit(datos: DiagnosticoData) {
     setEstado("enviando");
-    setDetalleError(null);
 
     try {
       const cuerpo = new FormData();
@@ -74,32 +86,26 @@ export default function FormularioDiagnostico({
 
       const res = await fetch("/api/contact", { method: "POST", body: cuerpo });
       const json = await res.json();
-
-      if (!res.ok || !json.success) {
-        throw new Error(json.message || "No se ha podido enviar.");
-      }
+      if (!res.ok || !json.success) throw new Error(json.message);
 
       setEstado("enviado");
       reset();
-    } catch (e) {
+    } catch {
+      // El detalle del servidor viene en español y no aporta al visitante:
+      // se le da el mensaje en su idioma y los canales directos.
       setEstado("error");
-      setDetalleError(
-        e instanceof Error ? e.message : "No se ha podido enviar el diagnóstico."
-      );
     }
   }
 
   if (estado === "enviado") {
     return (
       <div className={`border border-niebla bg-blanco p-8 ${className ?? ""}`}>
-        <ChipEstado estado="conciliado">Recibido</ChipEstado>
-        <p className="mt-4 text-subtitulo text-azul">
-          Tenemos tu operativa. Te escribimos en 24–48 horas laborables.
-        </p>
+        <ChipEstado estado="conciliado">{t("recibido.chip")}</ChipEstado>
+        <p className="mt-4 text-subtitulo text-azul">{t("recibido.titulo")}</p>
         <p className="mt-3 max-w-[66ch] text-lectura text-pizarra">
-          Si en tu caso hay un plazo de la AEAT corriendo, llámanos y lo miramos hoy:{" "}
-          <a href="tel:+34663482301" className="text-rojo">
-            +34 663 482 301
+          {t("recibido.texto")}{" "}
+          <a href={`tel:${TELEFONO}`} className="text-rojo">
+            {TELEFONO_VISIBLE}
           </a>
           .
         </p>
@@ -113,36 +119,42 @@ export default function FormularioDiagnostico({
       noValidate
       className={`border border-niebla bg-blanco p-6 md:p-8 ${className ?? ""}`}
     >
-      <p className="max-w-[64ch] text-lectura text-pizarra">
-        Cuéntanos cómo es tu operativa. Con esto sabemos qué trabajo tienes por delante
-        y te damos un plazo y un precio orientativos, sin compromiso.
-      </p>
+      <p className="max-w-[64ch] text-lectura text-pizarra">{t("intro")}</p>
 
       <div className="mt-7 grid gap-5 md:grid-cols-2">
         <Select
-          label="¿Cuántas operaciones tienes, más o menos?"
+          label={t("volumen.label")}
           required
-          options={[{ value: "", label: "Elige un rango" }, ...VOLUMENES]}
+          options={[
+            { value: "", label: t("volumen.elige") },
+            ...VOLUMENES.map((o) => ({ value: o.value, label: t(`volumenes.${o.value}`) })),
+          ]}
           error={errors.volumen?.message}
           {...register("volumen")}
         />
         <Select
-          label="¿Hay algo de la AEAT de por medio?"
+          label={t("aeat.label")}
           required
-          options={[{ value: "", label: "Elige una opción" }, ...SITUACIONES_AEAT]}
+          options={[
+            { value: "", label: t("aeat.elige") },
+            ...SITUACIONES_AEAT.map((o) => ({
+              value: o.value,
+              label: t(`situacionesAeat.${o.value}`),
+            })),
+          ]}
           error={errors.situacionAeat?.message}
           {...register("situacionAeat")}
         />
         <Input
-          label="¿Dónde operas?"
-          placeholder="Binance, MetaMask, Solana, Ledger…"
+          label={t("plataformas.label")}
+          placeholder={t("plataformas.placeholder")}
           required
           error={errors.plataformas?.message}
           {...register("plataformas")}
         />
         <Input
-          label="¿Qué ejercicios te preocupan?"
-          placeholder="2022–2025"
+          label={t("ejercicios.label")}
+          placeholder={t("ejercicios.placeholder")}
           required
           error={errors.ejercicios?.message}
           {...register("ejercicios")}
@@ -151,21 +163,16 @@ export default function FormularioDiagnostico({
 
       <div className="mt-7 border-t border-niebla pt-7">
         <div className="grid gap-5 md:grid-cols-3">
+          <Input label={t("nombre")} required error={errors.name?.message} {...register("name")} />
           <Input
-            label="Nombre"
-            required
-            error={errors.name?.message}
-            {...register("name")}
-          />
-          <Input
-            label="Email"
+            label={t("email")}
             type="email"
             required
             error={errors.email?.message}
             {...register("email")}
           />
           <Input
-            label="Teléfono"
+            label={t("telefono")}
             type="tel"
             required
             error={errors.phone?.message}
@@ -174,12 +181,7 @@ export default function FormularioDiagnostico({
         </div>
 
         <div className="mt-5">
-          <Textarea
-            label="Algo más que debamos saber (opcional)"
-            rows={3}
-            error={errors.message?.message}
-            {...register("message")}
-          />
+          <Textarea label={t("mensaje")} rows={3} error={errors.message?.message} {...register("message")} />
         </div>
       </div>
 
@@ -190,10 +192,10 @@ export default function FormularioDiagnostico({
           {...register("privacyConsent")}
         />
         <span>
-          He leído y acepto la{" "}
-          <a href="/privacidad" className="text-rojo">
-            política de privacidad
-          </a>
+          {t("privacidadAntes")}{" "}
+          <Link href="/privacidad" className="text-rojo">
+            {t("privacidadEnlace")}
+          </Link>
           .
         </span>
       </label>
@@ -203,32 +205,26 @@ export default function FormularioDiagnostico({
 
       <div className="mt-7 flex flex-wrap items-center gap-4">
         <Button type="submit" variant="principal" size="lg" disabled={estado === "enviando"}>
-          {estado === "enviando" ? "Enviando…" : accion}
+          {estado === "enviando" ? t("enviando") : accion ?? t("enviar")}
         </Button>
-        <span className="font-mono text-dato text-pizarra">
-          Respuesta en 24–48 h laborables
-        </span>
+        <span className="font-mono text-dato text-pizarra">{t("respuesta")}</span>
       </div>
 
-      {estado === "error" && detalleError ? (
+      {estado === "error" ? (
         <p className="mt-4 border-l-2 border-rojo bg-papel px-4 py-3 text-nota text-azul">
-          {detalleError} Puedes escribirnos a{" "}
-          <a href="mailto:info@cleriontax.com" className="text-rojo">
-            info@cleriontax.com
+          {t("error.generico")} {t("error.escribenos")}{" "}
+          <a href={`mailto:${CORREO}`} className="text-rojo">
+            {CORREO}
           </a>{" "}
-          o llamarnos al{" "}
-          <a href="tel:+34663482301" className="text-rojo">
-            +34 663 482 301
+          {t("error.llamanos")}{" "}
+          <a href={`tel:${TELEFONO}`} className="text-rojo">
+            {TELEFONO_VISIBLE}
           </a>
           .
         </p>
       ) : null}
 
-      <p className="mt-6 max-w-[72ch] text-nota text-pizarra">
-        La información publicada por Cleriontax tiene carácter divulgativo y no constituye
-        asesoramiento fiscal personalizado ni asesoramiento de inversión. Cada situación
-        requiere un análisis individual.
-      </p>
+      <p className="mt-6 max-w-[72ch] text-nota text-pizarra">{t("nota")}</p>
     </form>
   );
 }

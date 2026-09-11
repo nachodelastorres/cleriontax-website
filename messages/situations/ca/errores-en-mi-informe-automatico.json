@@ -1,0 +1,186 @@
+{
+  "title": "El meu informe de Koinly o CoinTracking no quadra",
+  "slug": "errores-en-mi-informe-automatico",
+  "excerpt": "Per què un informe generat per programari dona guanys que no reconeixes, quins errors de reconciliació són els habituals i com es corregeixen abans de presentar-lo a l'AEAT.",
+  "hero": {
+    "etiqueta": "Abans de presentar-lo",
+    "h1": "L'informe et dona un guany que no et quadra",
+    "subheading": "Has passat les teves dades per Koinly, CoinTracking o una eina semblant i el resultat no s'assembla al que creus que vas guanyar. Abans de pensar que t'has equivocat tu, convé mirar com ha tractat el programa quatre o cinc situacions concretes.",
+    "cta": {
+      "label": "Que el revisem",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "Veure el mètode",
+      "href": "/metodo"
+    }
+  },
+  "toc": [
+    {
+      "id": "tesis",
+      "label": "La tesi"
+    },
+    {
+      "id": "reconoces",
+      "label": "Què està passant"
+    },
+    {
+      "id": "el-ejemplo",
+      "label": "El mateix cas, dues xifres"
+    },
+    {
+      "id": "errores",
+      "label": "Els errors habituals"
+    },
+    {
+      "id": "como-resolvemos",
+      "label": "Com ho revisem"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
+  ],
+  "sections": [
+    {
+      "id": "tesis",
+      "h2": "",
+      "fondo": "patron",
+      "cita": {
+        "texto": "Un informe automàtic és un punt de partida, mai el lliurable.",
+        "pie": "El programari llegeix molts fitxers de pressa. El que no fa és decidir. I en una cartera real, la major part de la feina són decisions.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "reconoces",
+      "h2": "Què està passant",
+      "fondo": "blanco",
+      "body": "El programa no s'ha equivocat en el sentit de fallar: ha fet exactament el que sap fer. Davant d'una situació que no pot resoldre amb certesa, aplica un valor per defecte. I aquest valor per defecte sol ser el més conservador per al programari, que gairebé mai no és el més correcte per a tu.\n\nLa conseqüència habitual és un guany inflat. No perquè hagis guanyat més, sinó perquè l'informe compta com a vendes coses que no ho són i valora a zero coses que et van costar diners.\n\nAixò té solució mentre l'informe no s'hagi presentat. Un cop arriba a l'AEAT passa a ser la teva declaració, i rectificar-lo és una feina diferent, més llarga i més cara. Per això existeix aquesta pàgina: per al moment d'abans."
+    },
+    {
+      "id": "el-ejemplo",
+      "h2": "El mateix cas, dues xifres",
+      "fondo": "papel",
+      "entrada": "Una cartera amb transferències entre wallets pròpies i tokens rebuts per staking. Així la llegeix un informe automàtic i així queda després de la reconciliació.",
+      "tabla": {
+        "titulo": "Resultat abans i després de revisar",
+        "periodo": "exercici 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Guany segons l'informe automàtic",
+            "importe": 41280.6
+          },
+          {
+            "concepto": "Menys: transferències internes comptades com a vendes",
+            "importe": -19750.4
+          },
+          {
+            "concepto": "Menys: cost d'adquisició recuperat de tokens de staking",
+            "importe": -4128.05
+          },
+          {
+            "concepto": "Guany després de la reconciliació",
+            "importe": 17402.15
+          },
+          {
+            "concepto": "Operacions reclassificades a mà",
+            "recuento": 386
+          }
+        ],
+        "columnaConcepto": "Concepte",
+        "columnaValor": "Import",
+        "pie": "Dades d’exemple. Criteri FIFO."
+      }
+    },
+    {
+      "id": "errores",
+      "h2": "Els errors habituals",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>Transferències internes com a disposicions:</strong> envies fons del teu exchange a la teva wallet freda i l'informe ho registra com una venda. És el que genera més guany fictici, de molt.",
+        "<strong>Cost d'adquisició zero:</strong> tokens rebuts per staking, airdrops, forks o recompenses de liquiditat que el programa valora a zero, de manera que, quan els vens, tota la contraprestació és guany.",
+        "<strong>Spam de tokens processat com a ingrés:</strong> en cadenes com Solana o BSC poden ser milers de registres brossa que embruten tota la cartera.",
+        "<strong>Permutes mal valorades:</strong> el canvi d'un token per un altre tributa, però el valor que se li assigna depèn del preu de referència, i no tots els oracles coincideixen.",
+        "<strong>Duplicats entre fonts:</strong> la mateixa operació llegida del CSV de l'exchange i de la wallet on-chain, comptada dues vegades.",
+        "<strong>Fusos horaris:</strong> marques de temps en zones diferents que alteren l'ordre de les operacions i, amb això, el resultat del càlcul FIFO.",
+        "<strong>Trams buits tractats com a inexistents:</strong> el període d'un exchange tancat simplement no hi apareix, i amb ell desapareix el cost d'adquisició del que hi vas comprar."
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Com ho revisem",
+      "steps": [
+        {
+          "title": "Partim del teu informe, no de zero",
+          "body": "Ens estalvia la fase d'ingesta i abarateix la feina. El que fem és auditar la reconciliació, no refer el que ja està bé."
+        },
+        {
+          "title": "Aïllem les transferències entre comptes teus",
+          "body": "S'identifica la titularitat de cada adreça de destinació i es marquen com a internes. És on apareix la major part de la diferència."
+        },
+        {
+          "title": "Recuperem el cost d'adquisició perdut",
+          "body": "Per a cada token rebut sense compra, se'n determina el valor en la data de recepció i es documenta la font del preu."
+        },
+        {
+          "title": "Filtrem l'spam amb criteri",
+          "body": "No amb una llista automàtica: es revisa quines entrades són soroll de tercers i quines són operacions reals que semblen soroll."
+        },
+        {
+          "title": "Et lliurem el diferencial explicat",
+          "body": "Què canvia respecte al teu informe, per què i amb quin suport documental. Perquè puguis defensar cada línia."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Aleshores, Koinly i CoinTracking estan malament?",
+          "a": "No. Són bones eines fent el que fan: processar volum. El problema no és l'eina, sinó tractar-ne la sortida com el resultat final en lloc de com el punt de partida. Nosaltres fem servir eines semblants; la diferència és el que es fa després."
+        },
+        {
+          "q": "Quant costa revisar-lo en comparació amb fer-lo de zero?",
+          "a": "Revisar sol ser força més barat, perquè la ingesta ja està feta. El cost depèn de quantes operacions s'hagin de reclassificar, i això se sap després d'una primera passada. Et donem el preu abans de començar."
+        },
+        {
+          "q": "Ja vaig presentar l'informe a Hisenda",
+          "a": "Aleshores la feina és una altra i convé mirar-ho des de la litigació: rectificar una cosa ja aportada exigeix explicar documentalment la discrepància amb el que vas presentar. Es pot fer, però és més delicat."
+        },
+        {
+          "q": "Necessiteu accés als meus comptes?",
+          "a": "No. Treballem amb l'exportació del teu informe, els teus CSV, claus API de només lectura i adreces públiques de wallet. Mai claus privades."
+        },
+        {
+          "q": "I si després de revisar-lo resulta que l'informe estava bé?",
+          "a": "T'ho diem i et quedes amb la tranquil·litat d'haver-ho comprovat, a més de la memòria de criteris que avala cada decisió. No sempre hi ha errors, però saber que no n'hi ha també té valor."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Abans de presentar-lo, que algú el revisi",
+    "body": "Explica'ns amb quina eina l'has generat, quantes operacions té i en quines plataformes i cadenes operes. Amb una primera passada sabem si hi ha diferència i de quina mida.",
+    "button": {
+      "label": "Enviar diagnòstic",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "El meu informe de Koinly no quadra: errors de reconciliació cripto | Cleriontax",
+    "description": "Per què un informe automàtic dona guanys inflats: transferències internes comptades com a vendes, cost d'adquisició zero i spam de tokens. Com es corregeix abans de presentar-lo.",
+    "keywords": [
+      "errors koinly hisenda",
+      "corregir informe koinly",
+      "koinly no quadra",
+      "cointracking errors espanya",
+      "revisar informe fiscal criptomonedes",
+      "informe cripto incorrecte hisenda",
+      "alternativa koinly espanya"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/errores-en-mi-informe-automatico"
+  }
+}

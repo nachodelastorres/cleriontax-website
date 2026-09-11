@@ -1,9 +1,9 @@
 {
-  "title": "Specialized Tax Advisory for Crypto Assets",
+  "title": "Crypto tax advisory",
   "slug": "asesoria-fiscal-criptomonedas",
   "excerpt": "Personalized 1:1 sessions to resolve tax questions about cryptocurrencies. Filing criteria, compliance and document review. No investment advice.",
   "hero": {
-    "h1": "Specialized Tax Advisory for Crypto Assets",
+    "h1": "Crypto tax advisory",
     "subheading": "Technical sessions with our tax team to resolve questions about AEAT forms, classification criteria, compliance and report structure. Exclusively technical-tax oriented. No investment advice.",
     "cta": {
       "label": "Request a free evaluation",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Use cases"
+      "label": "Typical situations"
     },
     {
       "id": "faq",
@@ -72,7 +72,7 @@
         },
         {
           "title": "Technical advisory session",
-          "body": "We conduct a private video call where we address your questions in a structured way. We explain applicable regulations, relevant DGT criteria, interpretation of similar cases and technical recommendations for your specific situation. Session 100% focused on tax aspects, not investment decisions."
+          "body": "We conduct a private video call where we address your questions in a structured way. We explain applicable regulations, relevant DGT criteria, interpretation of similar cases and technical recommendations for your specific situation. The session covers tax matters only, never investment decisions."
         },
         {
           "title": "Summary delivery and follow-up",
@@ -93,19 +93,19 @@
     },
     {
       "id": "casos-uso",
-      "h2": "Use cases",
+      "h2": "Typical situations",
       "items": [
         {
-          "title": "Validation of automated report before filing",
-          "body": "Client had generated tax report with Koinly, but had doubts about whether DeFi operation classification was correct according to Spanish criteria. Sent the report for prior review. In 90-minute session, we identified several errors: swaps classified as non-taxable (error), staking rewards not declared as income, and duplicates from internal transfers. We recommended specific corrections and applicable DGT criteria. Client corrected report and filed with confidence."
+          "title": "Checking an automated report before filing",
+          "body": "You have a report from Koinly or similar and doubt whether your DeFi transactions are classified correctly under Spanish criteria. In one session we review it and point out the usual errors —swaps treated as non-taxable, undeclared staking rewards, duplicated internal transfers— with the DGT criterion that applies to each."
         },
         {
-          "title": "Response to AEAT request",
-          "body": "Client received request from Tax Agency asking for justification of cryptocurrency operations declared in income tax. Needed to understand what documentation to provide and how to structure response. In session, we reviewed the request, identified which operations they questioned, prepared response structure with transactional detail, valuation justification and regulatory references. Client provided documentation according to provided guide. Request closed without incidents."
+          "title": "Understanding an AEAT request",
+          "body": "You’ve received an information request and don’t know what documents to provide or how to structure the reply. In the session we go through which transactions are being questioned, what transaction detail is needed and how to justify the valuations. If the case needs more than guidance, we tell you and it moves to tax litigation."
         },
         {
-          "title": "Doubt about obligation to file form 721",
-          "body": "Client with cryptocurrencies on foreign exchanges, doubted whether they should file form 721 or it didn't apply to their case. 60-minute session where we explained form 721 thresholds, what is considered balance abroad according to AEAT, differences with form 714, and simulated their specific case. Conclusion: they should file 721. We guided them on how to complete it correctly and applicable deadlines."
+          "title": "Finding out whether you must file form 721",
+          "body": "You hold crypto on foreign exchanges and don’t know whether form 721 applies to you. We go through the 50.000 € threshold, what counts as a balance held in custody outside Spain, how it differs from form 714 and what deadline you have, applied to your actual balances."
         }
       ]
     },
@@ -131,7 +131,7 @@
         },
         {
           "q": "Can I contract several sessions if I have a complex case?",
-          "a": "Yes. We offer session packs with discount if you anticipate needing continuous follow-up. You can also book individual sessions as needed. If your case is very complex and requires deep data analysis or complete tax preparation, you probably benefit more from our Tax Settlements service instead of multiple advisory sessions."
+          "a": "Yes. We offer session packs with discount if you anticipate needing continuous follow-up. You can also book individual sessions as needed. If your case is very complex and requires deep data analysis or complete tax preparation, you probably benefit more from our Crypto income tax return service instead of multiple advisory sessions."
         },
         {
           "q": "What guarantees do you offer on the tax recommendations you give?",
@@ -168,7 +168,7 @@
     }
   ],
   "seo": {
-    "title": "Specialized Crypto Tax Advisory | Cleriontax",
+    "title": "Crypto tax advisor in Spain: specialist advisory | Cleriontax",
     "description": "Technical 1:1 sessions on crypto taxation. Questions about AEAT forms, tax requirements and compliance. No investment advice.",
     "keywords": [
       "crypto tax advisory",
@@ -183,7 +183,7 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Specialized Tax Advisory for Crypto Assets",
+    "name": "Crypto tax advisory",
     "serviceType": "Technical Tax Consulting for Cryptocurrency Investors",
     "provider": {
       "@type": "Organization",

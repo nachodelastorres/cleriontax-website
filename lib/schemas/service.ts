@@ -189,22 +189,22 @@ export function generateDetailedServiceSchema(config: {
 export const serviceNames: Record<string, Record<Locale, string>> = {
   'informe-fiscal-criptomonedas': {
     es: 'Informe fiscal de criptomonedas',
-    en: 'Cryptocurrency Tax Report',
+    en: 'Crypto tax report',
     ca: 'Informe fiscal de criptomonedes'
   },
   'declarar-criptomonedas': {
     es: 'Declaración de la renta cripto',
-    en: 'Crypto Income Tax Return',
+    en: 'Crypto income tax return',
     ca: 'Declaració de la renda cripto'
   },
   'litigacion-fiscal-criptomonedas': {
     es: 'Litigación fiscal de criptomonedas',
-    en: 'Crypto Tax Litigation',
+    en: 'Crypto tax litigation',
     ca: 'Litigació fiscal de criptomonedes'
   },
   'asesoria-fiscal-criptomonedas': {
     es: 'Asesoría fiscal de criptomonedas',
-    en: 'Cryptocurrency Tax Advisory',
+    en: 'Crypto tax advisory',
     ca: 'Assessoria fiscal de criptomonedes'
   }
 };

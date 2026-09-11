@@ -1,0 +1,207 @@
+{
+  "title": "Tinc milers de transaccions i no sé quant he guanyat",
+  "slug": "miles-de-transacciones",
+  "excerpt": "Carteres amb desenes o centenars de milers d’operacions repartides entre exchanges, wallets i cadenes. Com es netegen, es concilien i es converteixen en una xifra que pots defensar.",
+  "hero": {
+    "etiqueta": "Quan el volum és el problema",
+    "h1": "Tens tantes operacions que ja ni saps quantes són",
+    "subheading": "Potser operes en diverses cadenes, tens mitja dotzena de wallets, una part és en exchanges que ja no existeixen i bona part del que apareix a les teves adreces és spam que mai no has demanat. Abans de calcular impostos, cal esbrinar què va passar.",
+    "cta": {
+      "label": "Explica’ns la teva operativa",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "Veure el mètode",
+      "href": "/metodo"
+    }
+  },
+  "toc": [
+    {
+      "id": "la-escala",
+      "label": "L’escala del problema"
+    },
+    {
+      "id": "reconoces",
+      "label": "La teva situació"
+    },
+    {
+      "id": "como-resolvemos",
+      "label": "Com ho resolem"
+    },
+    {
+      "id": "el-resultado",
+      "label": "El resultat"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "Què necessitem"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
+  ],
+  "sections": [
+    {
+      "id": "la-escala",
+      "h2": "L’escala del problema",
+      "fondo": "azul",
+      "entrada": "Magnituds d’una cartera multicadena real. No són el teu cas concret, però donen la mida de per què això no ho resol un full de càlcul.",
+      "cifras": [
+        {
+          "valor": "100.000+",
+          "etiqueta": "operacions en una cartera activa en diverses cadenes"
+        },
+        {
+          "valor": "60–90 %",
+          "etiqueta": "dels registres en cadenes com Solana poden ser spam de tokens"
+        },
+        {
+          "valor": "300–2.000",
+          "etiqueta": "operacions que s’han de resoldre a mà perquè cap regla no les cobreix",
+          "acento": true
+        },
+        {
+          "valor": "1",
+          "etiqueta": "xifra final, amb cada euro traçable fins al seu origen"
+        }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "La teva situació",
+      "fondo": "blanco",
+      "body": "Vas començar en un exchange, després vas obrir una wallet, després vas provar una cadena nova perquè les comissions eren més baixes i després vas entrar en un parell de protocols. Cada pas tenia sentit per separat. El conjunt, vist ara, és un caos de dades repartides en llocs amb formats diferents.\n\nHas intentat posar-hi ordre. Probablement ho vas passar tot per alguna eina i el resultat et va donar un guany que no reconeixes, o directament es va encallar amb el volum.\n\nEl problema encara no és fiscal. És de dades: fins que no sàpigues quines operacions van passar de debò, quines eren moviments entre comptes teus i quant et va costar el que vas rebre sense comprar, no hi ha cap xifra per calcular. Aquesta feina prèvia és exactament el que fem."
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Com ho resolem",
+      "steps": [
+        {
+          "title": "Inventari de fonts abans de tocar res",
+          "body": "Quins exchanges, quines wallets, quines cadenes, quins períodes. D’aquí surt una llista del que hi ha i del que falta, i és el primer que t’ensenyem: saber què no tens és tan important com processar el que sí que tens."
+        },
+        {
+          "title": "Normalització",
+          "body": "Formats, nomenclatura d’actius, zones horàries i precisió decimal. Sense això, l’ordre de les operacions queda malament i el càlcul FIFO també surt malament."
+        },
+        {
+          "title": "Identificació de moviments interns",
+          "body": "Es determina la titularitat de cada adreça de destinació per separar el que va ser una venda del que va ser moure fons cap a tu mateix. És on hi ha la major part del guany fictici."
+        },
+        {
+          "title": "Filtratge d’spam amb criteri",
+          "body": "No per llista negra automàtica: hi ha tokens brossa que semblen legítims i operacions reals que semblen brossa. Cada cas dubtós es revisa."
+        },
+        {
+          "title": "Classificació fiscal i revisió manual",
+          "body": "Cada operació rep la seva naturalesa. El que cap regla no resol amb certesa s’aparta, es revisa a mà i la decisió queda documentada."
+        },
+        {
+          "title": "Càlcul i traçabilitat",
+          "body": "Criteri FIFO sobre la cartera conciliada, amb el detall per operació darrere de cada total."
+        }
+      ]
+    },
+    {
+      "id": "el-resultado",
+      "h2": "El resultat",
+      "fondo": "papel",
+      "entrada": "Un resum que cap en una pantalla, amb tot el detall a sota.",
+      "tabla": {
+        "titulo": "Informe fiscal",
+        "periodo": "exercici 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Guanys patrimonials",
+            "importe": 18402.15
+          },
+          {
+            "concepto": "Pèrdues patrimonials",
+            "importe": -6117.8
+          },
+          {
+            "concepto": "Rendiments d’staking",
+            "importe": 1293.44
+          },
+          {
+            "concepto": "Registres processats",
+            "recuento": 104882
+          },
+          {
+            "concepto": "Descartats com a spam",
+            "recuento": 71204
+          },
+          {
+            "concepto": "Revisats a mà",
+            "recuento": 947
+          }
+        ],
+        "columnaConcepto": "Concepte",
+        "columnaValor": "Import",
+        "pie": "Dades d’exemple. Criteri FIFO."
+      }
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Què necessitem de tu",
+      "bullets": [
+        "<strong>Exportacions de cada exchange</strong> que hagis fet servir, encara que siguin incompletes o el període estigui partit.",
+        "<strong>Claus API de només lectura</strong> on sigui possible: eviten errors d’exportació manual. Mai claus privades.",
+        "<strong>Adreces públiques de totes les teves wallets</strong>, incloses les que ja no facis servir. Sense aquestes adreces no es poden identificar els moviments interns.",
+        "<strong>Quines cadenes i protocols</strong> has tocat, encara que sigui de memòria i aproximadament.",
+        "<strong>Extractes bancaris</strong> d’entrades i sortides en euros, que ancoren la reconstrucció a una cosa verificable.",
+        "<strong>Qualsevol informe previ</strong> que hagis generat, encara que no et quadri. Estalvia temps."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Hi ha un límit d’operacions?",
+          "a": "No per volum. Els casos difícils no són els grans, sinó els dispersos: protocols petits sense un explorador mantingut, cadenes poc documentades o plataformes tancades. Si el teu cas té algun d’aquests trams, t’ho diem abans de començar."
+        },
+        {
+          "q": "Quant triga?",
+          "a": "Depèn molt més de l’estat de les dades que de la quantitat. Una cartera gran però ordenada va de pressa; una de mitjana amb trams per reconstruir pot durar setmanes. Després de la fase d’inventari et donem un termini concret, perquè abans qualsevol estimació seria inventada."
+        },
+        {
+          "q": "I els anys anteriors?",
+          "a": "La cartera es reconstrueix des de l’origen de la teva operativa, no des de l’exercici que vols declarar: sense històric previ no hi ha un cost d’adquisició fiable. Si en fer-ho apareixen exercicis mal declarats, t’ho diem i valorem amb tu la regularització."
+        },
+        {
+          "q": "L’any que ve, s’ha de tornar a fer tot?",
+          "a": "No. Et lliurem la cartera conciliada, que és el punt de partida net per als exercicis següents. La feina grossa es fa una sola vegada."
+        },
+        {
+          "q": "Quant costa?",
+          "a": "Es calcula segons el volum i, sobretot, segons el nombre de fonts i l’estat en què arriben. Després de veure una mostra, et donem un preu abans de començar. Terminis i preus són estimacions condicionades a la complexitat de la cartera."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Comencem per saber què hi ha",
+    "body": "Digues-nos quantes operacions tens, més o menys, en quins exchanges i cadenes has operat i quins exercicis et preocupen. Amb això sabem la mida de la feina i et donem un termini i un preu orientatius.",
+    "button": {
+      "label": "Enviar diagnòstic",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "Milers de transaccions cripto: com saber quant has guanyat | Cleriontax",
+    "description": "Carteres amb desenes o centenars de milers d’operacions en diverses cadenes i wallets. Com es netegen, es concilien i es converteixen en una xifra traçable davant l’AEAT.",
+    "keywords": [
+      "milers de transaccions criptomonedes impostos",
+      "declarar moltes operacions cripto",
+      "tokens spam solana impostos",
+      "netejar transaccions cripto declaració",
+      "informe fiscal criptomonedes",
+      "unificar exchanges i wallets informe fiscal",
+      "traçabilitat criptomonedes hisenda"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/miles-de-transacciones"
+  }
+}

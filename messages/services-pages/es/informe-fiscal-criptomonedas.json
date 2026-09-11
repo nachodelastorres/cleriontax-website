@@ -1,9 +1,9 @@
 {
-  "title": "Análisis de Carteras de Inversión Complejas",
+  "title": "Informe fiscal de criptomonedas",
   "slug": "informe-fiscal-criptomonedas",
   "excerpt": "Integración, limpieza y consolidación de datos desde todas las fuentes necesarias: exchanges, brokers, wallets y protocolos DeFi. Convertimos carteras dispersas en informes unificados, trazables y auditables sin límite de complejidad.",
   "hero": {
-    "h1": "Análisis de Carteras de Inversión Complejas",
+    "h1": "Informe fiscal de criptomonedas",
     "subheading": "Integramos datos de todas las fuentes necesarias, procesamos operaciones de alta complejidad y generamos informes consolidados con trazabilidad completa. Ideal para carteras con operaciones DeFi, staking multichain, airdrops y estructuras descentralizadas.",
     "cta": {
       "label": "Solicitar evaluación gratuita",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Casos de uso"
+      "label": "Situaciones habituales"
     },
     {
       "id": "faq",
@@ -93,19 +93,19 @@
     },
     {
       "id": "casos-uso",
-      "h2": "Casos de uso",
+      "h2": "Situaciones habituales",
       "items": [
         {
-          "title": "Inversor DeFi con operaciones en 15 blockchains",
-          "body": "Cliente con posiciones activas en Uniswap, Aave, Curve, PancakeSwap, Raydium, Osmosis y otros 20 protocolos. Más de 200.000 transacciones on-chain en 3 años. Necesitaba consolidar toda su actividad DeFi, calcular rewards reales de staking y liquidity pools, y preparar base de datos para liquidación fiscal. Integramos datos de subgraphs, APIs de protocolos, nodos propios y exploradores blockchain. Resultado: informe consolidado con trazabilidad completa y dataset listo para fiscalización."
+          "title": "Actividad DeFi en muchas cadenas",
+          "body": "Posiciones en protocolos como Uniswap, Aave, Curve o Raydium, repartidas en varias blockchains y con decenas de miles de transacciones on-chain. El trabajo consiste en consolidar toda esa actividad, separar las recompensas de staking y liquidity pools de las permutas, y dejar un dataset trazable listo para la declaración. Integramos datos de subgraphs, APIs de protocolos y exploradores de bloques."
         },
         {
-          "title": "Trader institucional con 50+ cuentas de exchange",
-          "body": "Fondo de inversión con cuentas en Binance, Kraken, Coinbase, Bitfinex, OKX, Bybit y 45 exchanges más. Volumen de 300.000 operaciones anuales entre spot, futuros y opciones. Requería consolidación global para reporting interno y auditorías trimestrales. Procesamos APIs de todos los exchanges, reconciliamos transferencias inter-exchange y generamos vistas consolidadas por estrategia de trading. Entregamos dashboards personalizados y datasets auditables."
+          "title": "Muchas cuentas de exchange a la vez",
+          "body": "Operativa repartida en decenas de cuentas —Binance, Kraken, Coinbase, OKX, Bybit…— con spot, futuros y opciones. Aquí el grueso del trabajo es reconciliar las transferencias entre plataformas para que no se cuenten como ventas, y unificar precios y husos horarios antes de aplicar el criterio FIFO."
         },
         {
-          "title": "Early adopter con histórico desde 2013",
-          "body": "Inversor con primeras compras de Bitcoin en 2013, operaciones en exchanges ya desaparecidos, wallets antiguas sin registros completos y migración entre múltiples carteras hardware. Necesitaba reconstruir histórico completo para cumplir con modelo 721 y preparar declaración de Renta. Aplicamos técnicas de forensics blockchain, recuperamos datos de exchanges cerrados mediante backups del cliente y reconstruimos histórico completo con trazabilidad. Resultado: base de datos histórica verificable para toda su vida fiscal en cripto."
+          "title": "Histórico desde los primeros años",
+          "body": "Compras de bitcoin de hace una década, exchanges que ya no existen y wallets antiguas sin registros completos. El histórico se reconstruye con la trazabilidad on-chain, los extractos bancarios y las copias que conserves. Lo que no se puede reconstruir no se inventa: se documenta el criterio aplicado para cubrir el hueco."
         }
       ]
     },
@@ -168,7 +168,7 @@
     }
   ],
   "seo": {
-    "title": "Análisis de Carteras de Inversión Complejas | Cleriontax",
+    "title": "Informe fiscal de criptomonedas para la AEAT | Cleriontax",
     "description": "Integración y consolidación de datos desde múltiples exchanges, wallets y protocolos DeFi. Procesamiento de operaciones complejas con trazabilidad completa.",
     "keywords": [
       "análisis carteras cripto",
@@ -183,8 +183,8 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Análisis de Carteras de Inversión Complejas",
-    "serviceType": "Análisis de Datos Financieros y Consolidación de Carteras",
+    "name": "Informe fiscal de criptomonedas",
+    "serviceType": "Reconciliación de carteras y preparación del informe fiscal",
     "provider": {
       "@type": "Organization",
       "name": "Cleriontax"

@@ -1,9 +1,9 @@
 {
-  "title": "Asesoría Fiscal Especializada en Criptomonedas",
+  "title": "Asesoría fiscal de criptomonedas",
   "slug": "asesoria-fiscal-criptomonedas",
   "excerpt": "Sesiones personalizadas 1:1 para resolver dudas fiscales sobre criptomonedas. Criterios de presentación, cumplimiento normativo y revisión documental. Sin asesoramiento de inversión.",
   "hero": {
-    "h1": "Asesoría Fiscal Especializada en Criptomonedas",
+    "h1": "Asesoría fiscal de criptomonedas",
     "subheading": "Sesiones técnicas con nuestro equipo fiscal para resolver dudas sobre modelos AEAT, criterios de clasificación, cumplimiento normativo y estructura de informes. Enfoque exclusivamente técnico-fiscal. No ofrecemos asesoramiento de inversión.",
     "cta": {
       "label": "Solicitar evaluación gratuita",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Casos de uso"
+      "label": "Situaciones habituales"
     },
     {
       "id": "faq",
@@ -72,7 +72,7 @@
         },
         {
           "title": "Sesión de asesoramiento técnico",
-          "body": "Realizamos videollamada privada donde abordamos tus dudas de forma estructurada. Explicamos normativa aplicable, criterios DGT relevantes, interpretación de casos similares y recomendaciones técnicas para tu situación específica. Sesión 100% enfocada en aspectos fiscales, no en decisiones de inversión."
+          "body": "Realizamos videollamada privada donde abordamos tus dudas de forma estructurada. Explicamos normativa aplicable, criterios DGT relevantes, interpretación de casos similares y recomendaciones técnicas para tu situación específica. La sesión se centra solo en aspectos fiscales, nunca en decisiones de inversión."
         },
         {
           "title": "Entrega de resumen y seguimiento",
@@ -93,19 +93,19 @@
     },
     {
       "id": "casos-uso",
-      "h2": "Casos de uso",
+      "h2": "Situaciones habituales",
       "items": [
         {
-          "title": "Validación de informe automático antes de presentar",
-          "body": "Cliente había generado informe fiscal con Koinly, pero tenía dudas sobre si la clasificación de operaciones DeFi era correcta según criterios españoles. Envió el informe para revisión previa. En sesión de 90 minutos, identificamos varios errores: swaps clasificados como no imponibles (error), staking rewards sin declarar como rendimientos, y duplicados por transferencias internas. Recomendamos correcciones específicas y criterios DGT aplicables. Cliente corrigió informe y presentó con confianza."
+          "title": "Revisar un informe automático antes de presentarlo",
+          "body": "Tienes un informe de Koinly o similar y dudas de que la clasificación de tus operaciones DeFi sea correcta según los criterios españoles. En una sesión lo revisamos y señalamos los errores habituales —swaps tratados como no imponibles, recompensas de staking sin declarar, transferencias internas duplicadas— con el criterio de la DGT que aplica en cada caso."
         },
         {
-          "title": "Respuesta a requerimiento de la AEAT",
-          "body": "Cliente recibió requerimiento de Hacienda solicitando justificación de operaciones en criptomonedas declaradas en IRPF. Necesitaba entender qué documentación aportar y cómo estructurar respuesta. En sesión, revisamos el requerimiento, identificamos qué operaciones cuestionaban, preparamos estructura de respuesta con detalle transaccional, justificación de valoraciones y referencias normativas. Cliente aportó documentación según guía proporcionada. Requerimiento cerrado sin incidencias."
+          "title": "Entender un requerimiento de la AEAT",
+          "body": "Te ha llegado un requerimiento y no sabes qué documentación aportar ni cómo ordenar la respuesta. En la sesión revisamos qué operaciones se cuestionan, qué detalle transaccional hace falta y cómo justificar las valoraciones. Si el caso pide algo más que orientación, te lo decimos y pasa a litigación fiscal."
         },
         {
-          "title": "Duda sobre obligación de presentar modelo 721",
-          "body": "Cliente con criptomonedas en exchanges extranjeros, dudaba si debía presentar modelo 721 o no aplicaba a su caso. Sesión de 60 minutos donde explicamos umbrales del modelo 721, qué se considera saldo en el extranjero según AEAT, diferencias con modelo 714, y simulamos su caso concreto. Conclusión: sí debía presentar 721. Le orientamos sobre cómo cumplimentarlo correctamente y plazos aplicables."
+          "title": "Saber si tienes que presentar el modelo 721",
+          "body": "Tienes criptomonedas en exchanges extranjeros y no sabes si te afecta el modelo 721. Repasamos el umbral de 50.000 €, qué cuenta como saldo custodiado fuera de España, en qué se diferencia del modelo 714 y qué plazo tienes, aplicado a tus saldos reales."
         }
       ]
     },
@@ -131,7 +131,7 @@
         },
         {
           "q": "¿Puedo contratar varias sesiones si tengo un caso complejo?",
-          "a": "Sí. Ofrecemos packs de sesiones con descuento si prevés necesitar seguimiento continuo. También puedes reservar sesiones individuales según necesidad. Si tu caso es muy complejo y requiere análisis profundo de datos o preparación fiscal completa, probablemente te convenga más nuestro servicio de Liquidaciones Fiscales en lugar de múltiples sesiones de asesoría."
+          "a": "Sí. Ofrecemos packs de sesiones con descuento si prevés necesitar seguimiento continuo. También puedes reservar sesiones individuales según necesidad. Si tu caso es muy complejo y requiere análisis profundo de datos o preparación fiscal completa, probablemente te convenga más nuestro servicio de Declaración de la renta cripto en lugar de múltiples sesiones de asesoría."
         },
         {
           "q": "¿Qué garantías ofrecéis sobre las recomendaciones fiscales que dais?",
@@ -168,7 +168,7 @@
     }
   ],
   "seo": {
-    "title": "Asesoría Fiscal Especializada en Criptoactivos | Cleriontax",
+    "title": "Asesor fiscal de criptomonedas: asesoría especializada | Cleriontax",
     "description": "Sesiones técnicas 1:1 sobre fiscalidad crypto. Dudas sobre modelos AEAT, requerimientos de Hacienda y cumplimiento normativo. Sin asesoramiento de inversión.",
     "keywords": [
       "asesoría fiscal criptomonedas",
@@ -183,7 +183,7 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Asesoría Fiscal Especializada en Criptoactivos",
+    "name": "Asesoría fiscal de criptomonedas",
     "serviceType": "Consultoría Fiscal Técnica para Inversores en Criptomonedas",
     "provider": {
       "@type": "Organization",

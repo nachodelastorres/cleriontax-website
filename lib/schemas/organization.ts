@@ -22,30 +22,30 @@ export function generateOrganizationSchema(
 
   // Localized descriptions
   const descriptions: Record<Locale, string> = {
-    es: 'Asesoría fiscal experta en criptomonedas, DeFi y carteras complejas de inversión. Convertimos miles de transacciones en exchanges, wallets y blockchains en informes fiscales 100% compatibles con la AEAT.',
-    en: 'Expert tax advisory specialized in cryptocurrencies, DeFi and complex investment portfolios. We convert thousands of transactions from exchanges, wallets and blockchains into tax reports 100% compliant with Spanish Tax Agency.',
-    ca: 'Assessoria fiscal experta en criptomonedes, DeFi i carteres complexes d\'inversió. Convertim milers de transaccions en exchanges, wallets i blockchains en informes fiscals 100% compatibles amb l\'AEAT.'
+    es: 'Asesoría fiscal especializada en criptomonedas, DeFi y carteras complejas. Convertimos miles de transacciones de exchanges, wallets y blockchains en un informe fiscal trazable, con el origen y el criterio de cada cifra.',
+    en: 'Tax advisory specialised in crypto, DeFi and complex portfolios. We turn thousands of transactions from exchanges, wallets and blockchains into a traceable tax report, with the source and criterion behind every figure.',
+    ca: 'Assessoria fiscal especialitzada en criptomonedes, DeFi i carteres complexes. Convertim milers de transaccions d’exchanges, wallets i blockchains en un informe fiscal traçable, amb l’origen i el criteri de cada xifra.'
   };
 
-  // Localized service names
+  // Las cuatro líneas del manual v1.1, §02.
   const serviceTypes: Record<Locale, string[]> = {
     es: [
-      'Análisis de Carteras de Criptomonedas',
-      'Liquidaciones Fiscales y Modelos AEAT',
-      'Seguimiento de Cartera en Tiempo Real',
-      'Asesoría Fiscal Especializada en Criptoactivos'
+      'Informe fiscal de criptomonedas',
+      'Declaración de la renta cripto',
+      'Litigación fiscal de criptomonedas',
+      'Asesoría fiscal de criptomonedas'
     ],
     en: [
-      'Cryptocurrency Portfolio Analysis',
-      'Tax Settlements and AEAT Forms',
-      'Real-Time Portfolio Tracking',
-      'Specialized Tax Advisory for Crypto Assets'
+      'Crypto tax report',
+      'Crypto income tax return',
+      'Crypto tax litigation',
+      'Crypto tax advisory'
     ],
     ca: [
-      'Anàlisi de Carteres de Criptomonedes',
-      'Liquidacions Fiscals i Models AEAT',
-      'Seguiment de Cartera en Temps Real',
-      'Assessoria Fiscal Especialitzada en Criptoactius'
+      'Informe fiscal de criptomonedes',
+      'Declaració de la renda cripto',
+      'Litigació fiscal de criptomonedes',
+      'Assessoria fiscal de criptomonedes'
     ]
   };
 

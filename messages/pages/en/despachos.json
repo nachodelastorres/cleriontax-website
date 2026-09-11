@@ -1,0 +1,141 @@
+{
+  "title": "For accounting and advisory firms",
+  "slug": "despachos",
+  "excerpt": "Technical support for accounting and advisory firms without crypto asset expertise: we rebuild the client's activity and deliver the expert report that supports your position. You keep the client relationship.",
+  "hero": {
+    "etiqueta": "Professional partnership",
+    "h1": "The client is yours. We do the technical work.",
+    "subheading": "When a firm takes on a portfolio with thousands of transactions across exchanges, wallets and DeFi protocols, the problem isn't a tax problem: it's a data problem. We rebuild the activity and deliver the report to you, together with its criteria memo.",
+    "cta": { "label": "Discuss a referral", "href": "/contacto" },
+    "secundaria": { "label": "See the method", "href": "/metodo" }
+  },
+  "toc": [
+    { "id": "cuando", "label": "When to refer" },
+    { "id": "que-hacemos", "label": "What we do" },
+    { "id": "como-funciona", "label": "How it works" },
+    { "id": "responsabilidad", "label": "Liability" },
+    { "id": "casos", "label": "Typical cases" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "cuando",
+      "h2": "When it makes sense to refer a client",
+      "body": "A generalist firm can handle a small, well-organised crypto portfolio without any trouble: four purchases, two sales and one exchange. The work stops being worth it once volume or dispersion comes into play.\n\nThe tipping point is usually this: the client brings exports from several platforms, some of them incomplete, with transfers between their own wallets that look like sales and tokens that appeared without them ever buying them. From then on the work is no longer tax work but data processing, which is a different trade and eats up time that is hard to bill for.\n\nAnd there's a second, less comfortable case: when the Spanish Tax Agency (AEAT) has already opened proceedings and the origin of every figure has to be proven with on-chain evidence."
+    },
+    {
+      "id": "que-hacemos",
+      "h2": "What we do and what we don't",
+      "bullets": [
+        "<strong>Rebuilding the client's activity:</strong> ingestion of all the client's sources, reconciliation, identification of internal transfers and transaction-by-transaction tax classification.",
+        "<strong>Report with criteria memo:</strong> the totals, ready to include in the tax return, with the transaction-level detail behind them and the treatment applied in each grey area.",
+        "<strong>Expert report for proceedings:</strong> when there is an open information request, limited review or audit, the technical document that accompanies your submissions.",
+        "<strong>Second opinion on automated reports:</strong> a review of a software-generated report before it is filed.",
+        "<strong>We don't touch your relationship with the client:</strong> we don't bill the end client unless you ask us to, we don't offer them our services and we stay out of the relationship if that's what you prefer. You are the point of contact.",
+        "<strong>We don't take on the filing:</strong> unless we expressly agree otherwise, you file the tax return. We deliver the technical work and the documentation that backs it up."
+      ]
+    },
+    {
+      "id": "como-funciona",
+      "h2": "How the partnership works",
+      "steps": [
+        {
+          "title": "You tell us about the case",
+          "body": "Approximate volume, platforms involved, tax years affected and whether the AEAT is involved in any way. With that, we tell you whether the case is a fit, how long it will take and what it will cost, before you commit to the client."
+        },
+        {
+          "title": "Written agreement and scope",
+          "body": "We define what is and isn't included, who bills whom, what data we need and in what format the deliverable reaches you. We don't start without this: in data work, an ambiguous scope always ends in a dispute."
+        },
+        {
+          "title": "Data collection",
+          "body": "We can request the data from the client on your behalf or receive it from you already gathered, whichever you prefer. We never ask for private keys: exports, read-only API keys and public addresses."
+        },
+        {
+          "title": "Reconstruction and review",
+          "body": "We apply the full method. Anything the automated process can't resolve with certainty is set aside and reviewed by hand, and every decision is documented in the criteria memo."
+        },
+        {
+          "title": "Delivery and handover session",
+          "body": "We deliver the report, the criteria memo and the issues log, and hold a session so that you can defend every figure to your client and, if it comes to that, to the tax authorities."
+        }
+      ]
+    },
+    {
+      "id": "responsabilidad",
+      "h2": "Liability and confidentiality",
+      "bullets": [
+        "<strong>Chartered advice:</strong> the work is signed by a chartered tax adviser (a member of a professional body), with the corresponding professional liability.",
+        "<strong>Documented criteria:</strong> every debatable decision is put in writing with its grounds, so that if a treatment is challenged later on, it's clear exactly what was applied and why.",
+        "<strong>Confidentiality:</strong> the client's data stays within the engagement. It isn't used as an example or published in any piece, not even anonymised, without express written consent.",
+        "<strong>Data protection:</strong> processing in accordance with the GDPR, with a formal data processing agreement in place where the relationship requires one.",
+        "<strong>No poaching:</strong> we don't offer our services to the client you refer to us."
+      ]
+    },
+    {
+      "id": "casos",
+      "h2": "Typical cases",
+      "items": [
+        {
+          "title": "A long-standing client who now holds crypto",
+          "body": "A client whose returns you've been filing for years turns up with a crypto asset portfolio you're not sure how to treat. You don't want to refer them elsewhere entirely or lose them, but you don't want to spend thirty hours cleaning CSVs either. We handle the crypto part and you keep filing their full tax return."
+        },
+        {
+          "title": "An AEAT information request with the clock ticking",
+          "body": "Your client receives an information request over discrepancies between what an exchange reported and their personal income tax (IRPF) return. You handle the proceedings; we rebuild the activity for that tax year and prepare the technical report that accompanies your submissions."
+        },
+        {
+          "title": "An automated report that doesn't add up",
+          "body": "The client arrives with a report from a piece of software showing a gain that doesn't make sense to them. Before it's filed, we review the reconciliation: almost always, internal transfers treated as sales or acquisitions valued at zero cost turn up."
+        },
+        {
+          "title": "Regularising previous tax years",
+          "body": "While preparing the current tax year, undeclared activity from previous years comes to light. We rebuild the full history so that you can assess the supplementary return route with real figures in front of you."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Are you going to take my client?",
+          "a": "No. We don't offer them our services, we don't bill them unless you ask us to, and we stay out of the relationship if that's what you prefer. If the model didn't work this way, no firm would ever refer a second case to us."
+        },
+        {
+          "q": "How is billing handled?",
+          "a": "However you prefer: we invoice you and you pass the cost on to the client, or we invoice the end client directly if that's easier for you. It's agreed before we start, together with the scope."
+        },
+        {
+          "q": "What do you need to give us a price?",
+          "a": "The approximate volume of transactions, which platforms and chains the client uses, which tax years need covering and whether there are open proceedings. With that, we give you an indicative timeframe and price; the final one comes after the ingestion phase, once we know what state the data is in."
+        },
+        {
+          "q": "Can you sign the report?",
+          "a": "Yes. The work is signed by a chartered tax adviser, and in open proceedings the technical report is issued so that it can be submitted to the case file."
+        },
+        {
+          "q": "Do you work with firms outside Mallorca?",
+          "a": "Yes. The work is entirely remote and the applicable legislation is Spanish, so location makes no difference."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Do you have a case on your desk?",
+    "body": "Tell us the volume, the platforms, the tax years and whether the AEAT is involved in any way. We'll tell you whether it's a fit, how long it will take and what it will cost before you commit to your client.",
+    "button": { "label": "Discuss a referral", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Technical support for accounting and advisory firms | Cleriontax",
+    "description": "Crypto activity reconstruction and expert reports for accounting and advisory firms without crypto asset expertise. You keep the client relationship.",
+    "keywords": [
+      "crypto tax support for accounting firms",
+      "crypto tax partner for accountants spain",
+      "crypto expert report spain",
+      "crypto tax adviser for accounting firms",
+      "outsource crypto tax work"
+    ],
+    "canonical": "https://cleriontax.com/despachos"
+  }
+}

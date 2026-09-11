@@ -1,0 +1,207 @@
+{
+  "title": "I have thousands of transactions and don't know how much I've made",
+  "slug": "miles-de-transacciones",
+  "excerpt": "Portfolios with tens or hundreds of thousands of transactions spread across exchanges, wallets and chains. How they are cleaned up, reconciled and turned into a figure you can stand behind.",
+  "hero": {
+    "etiqueta": "When volume is the problem",
+    "h1": "You have so many transactions you've lost count",
+    "subheading": "You may trade on several chains, hold half a dozen wallets, have part of your history on exchanges that no longer exist, and find that much of what shows up at your addresses is spam you never asked for. Before calculating any tax, you need to work out what actually happened.",
+    "cta": {
+      "label": "Tell us about your activity",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "See the method",
+      "href": "/metodo"
+    }
+  },
+  "toc": [
+    {
+      "id": "la-escala",
+      "label": "The scale of the problem"
+    },
+    {
+      "id": "reconoces",
+      "label": "Your situation"
+    },
+    {
+      "id": "como-resolvemos",
+      "label": "How we solve it"
+    },
+    {
+      "id": "el-resultado",
+      "label": "The result"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "What we need"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    }
+  ],
+  "sections": [
+    {
+      "id": "la-escala",
+      "h2": "The scale of the problem",
+      "fondo": "azul",
+      "entrada": "Figures from a real multi-chain portfolio. They are not your specific case, but they show why a spreadsheet won't solve this.",
+      "cifras": [
+        {
+          "valor": "100.000+",
+          "etiqueta": "transactions in a portfolio active across several chains"
+        },
+        {
+          "valor": "60–90 %",
+          "etiqueta": "of records on chains such as Solana can be token spam"
+        },
+        {
+          "valor": "300–2.000",
+          "etiqueta": "transactions that have to be resolved by hand because no rule covers them",
+          "acento": true
+        },
+        {
+          "valor": "1",
+          "etiqueta": "final figure, with every euro traceable back to its source"
+        }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "Your situation",
+      "fondo": "blanco",
+      "body": "You started on an exchange, then opened a wallet, then tried a new chain because the fees were lower, then got into a couple of protocols. Each step made sense on its own. Taken together, it is now a jumble of data scattered across places with different formats.\n\nYou've tried to put it in order. You probably ran everything through a tool and it gave you a gain you don't recognise, or it simply choked on the volume.\n\nThe problem isn't a tax problem yet. It's a data problem: until you know which transactions really happened, which were transfers between your own accounts and what cost to give to anything you received without buying it, there is no figure to calculate. That groundwork is exactly what we do."
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "How we solve it",
+      "steps": [
+        {
+          "title": "An inventory of sources before touching anything",
+          "body": "Which exchanges, which wallets, which chains, which periods. This gives a list of what is there and what is missing, and it's the first thing we show you: knowing what you don't have matters as much as processing what you do."
+        },
+        {
+          "title": "Normalisation",
+          "body": "Formats, asset naming, time zones and decimal precision. Without this, transactions end up in the wrong order and the FIFO calculation goes wrong with them."
+        },
+        {
+          "title": "Identifying internal transfers",
+          "body": "We establish who owns each destination address, to separate what was a sale from what was simply moving funds to yourself. This is where most of the phantom gain sits."
+        },
+        {
+          "title": "Filtering spam with judgement",
+          "body": "Not with an automatic blacklist: some junk tokens look legitimate and some real transactions look like junk. Every doubtful case is examined."
+        },
+        {
+          "title": "Tax classification and manual review",
+          "body": "Each transaction is given its tax treatment. Anything no rule resolves with certainty is set aside and reviewed by hand, and the decision is documented."
+        },
+        {
+          "title": "Calculation and traceability",
+          "body": "The FIFO rule applied to the reconciled portfolio, with the per-transaction detail behind every total."
+        }
+      ]
+    },
+    {
+      "id": "el-resultado",
+      "h2": "The result",
+      "fondo": "papel",
+      "entrada": "A summary that fits on one screen, with all the detail underneath.",
+      "tabla": {
+        "titulo": "Tax report",
+        "periodo": "tax year 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Capital gains",
+            "importe": 18402.15
+          },
+          {
+            "concepto": "Capital losses",
+            "importe": -6117.8
+          },
+          {
+            "concepto": "Staking income",
+            "importe": 1293.44
+          },
+          {
+            "concepto": "Records processed",
+            "recuento": 104882
+          },
+          {
+            "concepto": "Discarded as spam",
+            "recuento": 71204
+          },
+          {
+            "concepto": "Reviewed by hand",
+            "recuento": 947
+          }
+        ],
+        "columnaConcepto": "Item",
+        "columnaValor": "Amount",
+        "pie": "Sample data. FIFO rule."
+      }
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "bullets": [
+        "<strong>Exports from every exchange</strong> you have used, even if they are incomplete or split across several periods.",
+        "<strong>Read-only API keys</strong> where possible: they avoid manual export errors. Never private keys.",
+        "<strong>Public addresses for all your wallets</strong>, including ones you no longer use. Without them, internal transfers cannot be identified.",
+        "<strong>Which chains and protocols</strong> you have used, even if only roughly and from memory.",
+        "<strong>Bank statements</strong> showing euros in and out, which anchor the reconstruction to something verifiable.",
+        "<strong>Any previous report</strong> you have generated, even if the numbers don't add up. It saves time."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Is there a limit on the number of transactions?",
+          "a": "Not on volume. The hard cases aren't the large ones, they're the scattered ones: small protocols with no maintained explorer, poorly documented chains or closed platforms. If your case includes any of those, we tell you before we start."
+        },
+        {
+          "q": "How long does it take?",
+          "a": "It depends far more on the state of the data than on the amount. A large but orderly portfolio moves quickly; a medium-sized one with gaps to reconstruct can take weeks. After the inventory phase we give you a specific timeframe, because any estimate before that would be guesswork."
+        },
+        {
+          "q": "What about previous years?",
+          "a": "The portfolio is rebuilt from the start of your activity, not from the tax year you want to declare: without the earlier history there is no reliable acquisition cost. If this reveals tax years that were declared incorrectly, we tell you and look at regularising them with you."
+        },
+        {
+          "q": "Next year, does it all have to be done again?",
+          "a": "No. We hand over the reconciled portfolio, which is the clean starting point for the following tax years. The heavy lifting is done once."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "It is based on volume and, above all, on the number of sources and the state they arrive in. Once we have seen a sample, we give you a price before starting. Timeframes and prices are estimates that depend on the complexity of the portfolio."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Let's start by finding out what's there",
+    "body": "Tell us roughly how many transactions you have, which exchanges and chains you have used and which tax years concern you. That tells us the size of the job, and we'll give you an indicative timeframe and price.",
+    "button": {
+      "label": "Request a diagnosis",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "Thousands of crypto transactions: how to know what you've made | Cleriontax",
+    "description": "Portfolios with tens or hundreds of thousands of transactions across several chains and wallets. How they are cleaned up, reconciled and turned into a figure you can trace for the Spanish Tax Agency (AEAT).",
+    "keywords": [
+      "crypto tax spain thousands of transactions",
+      "declare many crypto transactions spain",
+      "solana spam tokens tax",
+      "clean up crypto transactions tax return",
+      "crypto tax report spain",
+      "combine exchanges and wallets tax report",
+      "crypto transaction history spanish tax agency"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/miles-de-transacciones"
+  }
+}

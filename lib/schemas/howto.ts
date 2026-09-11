@@ -167,7 +167,7 @@ export const commonHowToSchemas = {
         },
         {
           name: 'Clasificar operaciones fiscalmente',
-          text: 'Clasifica cada transacción según criterios fiscales españoles: compras, ventas, staking, airdrops, swaps, etc. Aplica metodología FIFO para calcular ganancias y pérdidas.'
+          text: 'Clasifica cada transacción según criterios fiscales españoles: compras, ventas, staking, airdrops, swaps, etc. Aplica el criterio FIFO para calcular ganancias y pérdidas.'
         },
         {
           name: 'Generar informe fiscal',
@@ -189,7 +189,7 @@ export const commonHowToSchemas = {
         },
         {
           name: 'Classify operations fiscally',
-          text: 'Classify each transaction according to Spanish tax criteria: purchases, sales, staking, airdrops, swaps, etc. Apply FIFO methodology to calculate gains and losses.'
+          text: 'Classify each transaction according to Spanish tax criteria: purchases, sales, staking, airdrops, swaps, etc. Apply the FIFO rule to calculate gains and losses.'
         },
         {
           name: 'Generate tax report',
@@ -211,7 +211,7 @@ export const commonHowToSchemas = {
         },
         {
           name: 'Classificar operacions fiscalment',
-          text: 'Classifica cada transacció segons criteris fiscals espanyols: compres, vendes, staking, airdrops, swaps, etc. Aplica metodologia FIFO per calcular guanys i pèrdues.'
+          text: 'Classifica cada transacció segons criteris fiscals espanyols: compres, vendes, staking, airdrops, swaps, etc. Aplica el criteri FIFO per calcular guanys i pèrdues.'
         },
         {
           name: 'Generar informe fiscal',

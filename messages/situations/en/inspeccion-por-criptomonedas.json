@@ -1,0 +1,125 @@
+{
+  "title": "I’m under a tax inspection over my crypto",
+  "slug": "inspeccion-por-criptomonedas",
+  "excerpt": "What a tax inspection covers, what documentation you’ll be asked for, what rights you have during the procedure and how each appearance before the inspector is prepared.",
+  "hero": {
+    "etiqueta": "Procedure under way",
+    "h1": "A tax inspection has been opened into your crypto assets",
+    "subheading": "It’s the procedure with the widest scope, and it’s handled by a tax inspector (actuario). You don’t respond to it as you would to an information request: here every appearance is prepared, every document that goes in stays on the file, and the order in which things are provided matters.",
+    "cta": { "label": "Call us: +34 663 482 301", "href": "tel:+34663482301" },
+    "secundaria": { "label": "Tell us about your case", "href": "/contacto" }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "Where you stand" },
+    { "id": "el-reloj", "label": "How it progresses" },
+    { "id": "derechos", "label": "Your rights" },
+    { "id": "como-resolvemos", "label": "How we handle it" },
+    { "id": "que-necesitamos", "label": "What we need" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "Where you stand",
+      "fondo": "blanco",
+      "body": "You’ve received a notice that inspection proceedings have begun. It sets out the scope — which tax years and which items — and summons you to appear or to provide documentation.\n\nUnlike an information request within a tax management procedure, an inspection can examine much more and has more resources at its disposal. It also has its own timetable and its own safeguards for you, which are worth knowing because they determine what can and can’t be asked of you.\n\nWhat doesn’t change compared with any other crypto asset procedure is the substance: almost everything is decided by showing where every euro came from. An inspection is won or lost on the reconstruction of your transactions, not on the eloquence of the written submissions."
+    },
+    {
+      "id": "el-reloj",
+      "h2": "How the procedure progresses",
+      "fondo": "papel",
+      "entrada": "The specific timetable is set by the notice of commencement. This is the usual path.",
+      "hitos": [
+        { "cuando": "Start", "titulo": "Notice of commencement of inspection proceedings", "body": "It defines the scope: which tax years and which items are included. That scope matters, because it limits what can be reviewed." },
+        { "cuando": "Appearances", "titulo": "Successive requests for documentation", "body": "Each one is prepared: what is provided, in what order and with what explanation. Whatever goes into the file stays there." },
+        { "cuando": "Formal records", "titulo": "What has been done is documented", "body": "They’re worth reviewing: they record facts that later support the proposal, and they don’t always reflect what was meant." },
+        { "cuando": "Hearing", "titulo": "Submissions before the inspection report", "body": "The moment to rebut, with your own figures in front of you, before anything is formalised." },
+        { "cuando": "Inspection report", "titulo": "The outcome is formalised", "body": "Either signed in agreement or in disagreement. That choice has consequences for what can be appealed later and for the reductions that apply." },
+        { "cuando": "Afterwards", "titulo": "Assessment and, where applicable, penalty", "body": "They are separate proceedings and are defended separately.", "critico": true }
+      ]
+    },
+    {
+      "id": "derechos",
+      "h2": "What you’re entitled to during the procedure",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>To know the scope:</strong> which tax years and items are being reviewed, and that the proceedings don’t go beyond them unless the scope is formally extended.",
+        "<strong>Professional assistance:</strong> you can attend with an adviser, and it’s advisable not to face the appearances alone.",
+        "<strong>Not to incriminate yourself:</strong> there are limits to what you can be required to state, which are separate from the obligation to provide accounting or transaction records.",
+        "<strong>To make submissions</strong> at the hearing stage, with whatever documentation you see fit.",
+        "<strong>To obtain a copy</strong> of what is on the file.",
+        "<strong>To invoke the statute of limitations</strong> for tax years that can no longer be assessed.",
+        "<strong>To appeal</strong> both the assessment and, separately, the penalty."
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "How we handle it",
+      "steps": [
+        { "title": "We review the scope and the statute of limitations", "body": "Which tax years are included, which can no longer be assessed, and whether the stated scope matches what is later being requested." },
+        { "title": "We rebuild all your transactions for the period", "body": "Before providing anything. Handing over documentation without knowing what it shows is the quickest way to complicate a case." },
+        { "title": "We prepare each appearance", "body": "What is provided, in what order and with what accompanying explanation. And we review the formal records (diligencias) before they are signed." },
+        { "title": "We build the on-chain evidence", "body": "Ownership of addresses, wallet-to-wallet traceability and matching against bank statements. That’s what turns an assertion into evidence." },
+        { "title": "We make submissions at the hearing stage", "body": "Setting our own figures against the tax authorities’, and explaining to you beforehand what holds up." },
+        { "title": "We weigh up agreement or disagreement with you", "body": "With the consequences of each option set out in writing, including the unfavourable ones." }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>The notice of commencement</strong> and everything notified since, including any signed formal records.",
+        "<strong>Your returns</strong> for the tax years within the scope.",
+        "<strong>The complete history</strong> from exchanges, wallets and protocols for the period: CSV files, read-only API keys and public addresses.",
+        "<strong>Bank statements</strong> for all money moving into and out of euros.",
+        "<strong>Whatever you’ve already provided</strong> to the inspection, exactly as you provided it.",
+        "<strong>Any earlier report</strong> generated with software, even if it was never filed."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Can the tax authorities see my non-custodial wallets?",
+          "a": "The blockchain is public: anyone can see the movements of an address. What isn’t public is who owns it. The tax authorities have analysis tools and the information that platforms report to them, and from there they can attribute addresses. It’s best to assume that traceability exists."
+        },
+        {
+          "q": "Do I have to attend the appearances myself?",
+          "a": "You can grant representation so that your adviser attends. In technical procedures that’s the norm, and it prevents an improvised answer from ending up in a formal record."
+        },
+        {
+          "q": "How long can it last?",
+          "a": "Inspection proceedings have maximum durations set by law, with circumstances in which they can be extended. The actual duration depends on the scope and the volume. We’ll tell you what to expect in your case once we’ve seen the file."
+        },
+        {
+          "q": "If I sign in agreement, the problem goes away, right?",
+          "a": "It may be reasonable, but it’s not a minor decision: agreeing limits what can be disputed later and has effects on the penalty. It’s decided once your own figures are done, not before."
+        },
+        {
+          "q": "I no longer have data from an exchange that closed",
+          "a": "That’s common, and it’s not a dead end. It’s rebuilt using on-chain traceability, bank statements and circumstantial evidence that is consistent across sources, and the degree of certainty for each period is expressly documented."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Don’t provide anything else without reviewing it",
+    "body": "Tell us the scope of the inspection, which tax years it covers and what you’ve already provided. The first thing we’ll do is review the file as it stands, before another document goes in.",
+    "button": { "label": "Tell us about your case", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Tax inspection over crypto in Spain: what to do and your rights | Cleriontax",
+    "description": "The scope of a tax inspection over crypto assets, how the procedure progresses, what documentation is requested and what rights you have at each appearance.",
+    "keywords": [
+      "AEAT tax inspection crypto",
+      "crypto tax audit spain",
+      "defence in AEAT inspection crypto",
+      "tax lawyer AEAT inspection crypto",
+      "limited review AEAT crypto",
+      "what to do crypto tax inspection spain"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/inspeccion-por-criptomonedas"
+  }
+}

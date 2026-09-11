@@ -269,11 +269,18 @@ export function BloqueTabla({
   periodo,
   filas,
   criterio,
+  columnaConcepto,
+  columnaValor,
+  pie,
 }: {
   titulo?: string;
   periodo?: string;
   filas: FilaDato[];
   criterio: string;
+  /** Cabeceras y pie ya traducidos. En español se usan los de TablaDatos. */
+  columnaConcepto?: string;
+  columnaValor?: string;
+  pie?: string;
 }) {
   return (
     <TablaDatos
@@ -281,6 +288,9 @@ export function BloqueTabla({
       periodo={periodo}
       filas={filas}
       criterio={criterio}
+      columnaConcepto={columnaConcepto}
+      columnaValor={columnaValor}
+      pie={pie}
       datosDeEjemplo
       className="max-w-3xl"
     />

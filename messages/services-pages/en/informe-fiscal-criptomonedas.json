@@ -1,9 +1,9 @@
 {
-  "title": "Analysis of Complex Investment Portfolios",
+  "title": "Crypto tax report",
   "slug": "informe-fiscal-criptomonedas",
   "excerpt": "Integration, cleaning and consolidation of data from all necessary sources: exchanges, brokers, wallets and DeFi protocols. We turn dispersed portfolios into unified, traceable and auditable reports with no complexity limit.",
   "hero": {
-    "h1": "Analysis of Complex Investment Portfolios",
+    "h1": "Crypto tax report",
     "subheading": "We integrate data from all necessary sources, process high-complexity operations and generate consolidated reports with complete traceability. Ideal for portfolios with DeFi operations, multichain staking, airdrops and decentralized structures.",
     "cta": {
       "label": "Request a free evaluation",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Use cases"
+      "label": "Typical situations"
     },
     {
       "id": "faq",
@@ -93,19 +93,19 @@
     },
     {
       "id": "casos-uso",
-      "h2": "Use cases",
+      "h2": "Typical situations",
       "items": [
         {
-          "title": "DeFi investor with operations on 15 blockchains",
-          "body": "Client with active positions on Uniswap, Aave, Curve, PancakeSwap, Raydium, Osmosis and 20 other protocols. More than 200,000 on-chain transactions over 3 years. Needed to consolidate all their DeFi activity, calculate real staking and liquidity pool rewards, and prepare database for tax settlement. We integrated data from subgraphs, protocol APIs, own nodes and blockchain explorers. Result: consolidated report with complete traceability and dataset ready for tax filing."
+          "title": "DeFi activity across many chains",
+          "body": "Positions in protocols such as Uniswap, Aave, Curve or Raydium, spread over several blockchains and with tens of thousands of on-chain transactions. The work is to consolidate all that activity, separate staking and liquidity pool rewards from swaps, and leave a traceable dataset ready for the tax return. We pull data from subgraphs, protocol APIs and block explorers."
         },
         {
-          "title": "Institutional trader with 50+ exchange accounts",
-          "body": "Investment fund with accounts on Binance, Kraken, Coinbase, Bitfinex, OKX, Bybit and 45 more exchanges. Volume of 300,000 annual operations between spot, futures and options. Required global consolidation for internal reporting and quarterly audits. We processed APIs from all exchanges, reconciled inter-exchange transfers and generated consolidated views by trading strategy. We delivered custom dashboards and auditable datasets."
+          "title": "Many exchange accounts at once",
+          "body": "Activity spread over dozens of accounts —Binance, Kraken, Coinbase, OKX, Bybit…— with spot, futures and options. Most of the work here is reconciling transfers between platforms so they aren’t counted as sales, and aligning prices and time zones before applying the FIFO rule."
         },
         {
-          "title": "Early adopter with history since 2013",
-          "body": "Investor with first Bitcoin purchases in 2013, operations on now-defunct exchanges, old wallets without complete records and migration between multiple hardware wallets. Needed to reconstruct complete history to comply with form 721 and prepare income tax return. We applied blockchain forensics techniques, recovered data from closed exchanges through client backups and reconstructed complete history with traceability. Result: verifiable historical database for their entire crypto tax life."
+          "title": "History going back to the early years",
+          "body": "Bitcoin bought a decade ago, exchanges that no longer exist and old wallets without complete records. The history is rebuilt from on-chain traceability, bank statements and whatever copies you have kept. What can’t be rebuilt isn’t invented: the criterion used to cover the gap is documented."
         }
       ]
     },
@@ -168,7 +168,7 @@
     }
   ],
   "seo": {
-    "title": "Analysis of Complex Investment Portfolios | Cleriontax",
+    "title": "Crypto tax report for the Spanish AEAT | Cleriontax",
     "description": "Integration and consolidation of data from multiple exchanges, wallets and DeFi protocols. Processing of complex operations with complete traceability.",
     "keywords": [
       "crypto portfolio analysis",
@@ -183,8 +183,8 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Analysis of Complex Investment Portfolios",
-    "serviceType": "Financial Data Analysis and Portfolio Consolidation",
+    "name": "Crypto tax report",
+    "serviceType": "Portfolio reconciliation and tax report preparation",
     "provider": {
       "@type": "Organization",
       "name": "Cleriontax"

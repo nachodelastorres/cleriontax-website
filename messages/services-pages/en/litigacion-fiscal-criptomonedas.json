@@ -1,5 +1,5 @@
 {
-  "title": "Crypto Tax Litigation",
+  "title": "Crypto tax litigation",
   "slug": "litigacion-fiscal-criptomonedas",
   "excerpt": "Taxpayer defence against information requests, limited reviews, audits and penalties issued by the Spanish tax authority (AEAT) in relation to crypto assets. We respond within the deadline and build the documentary and on-chain evidence that supports your position.",
   "hero": {
@@ -190,7 +190,7 @@
     }
   ],
   "seo": {
-    "title": "Crypto Tax Litigation | AEAT Defence in Spain | Cleriontax",
+    "title": "Crypto tax litigation: defence before the AEAT | Cleriontax",
     "description": "Defence against AEAT information requests, audits and penalties over cryptocurrency. We respond within the deadline and build the documentary and on-chain evidence supporting your position.",
     "keywords": [
       "crypto tax litigation Spain",
@@ -205,7 +205,7 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Crypto Tax Litigation",
+    "name": "Crypto tax litigation",
     "serviceType": "Taxpayer defence in tax procedures concerning crypto assets",
     "provider": {
       "@type": "Organization",

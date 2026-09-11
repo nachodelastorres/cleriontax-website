@@ -1,0 +1,124 @@
+{
+  "title": "Faig staking, DeFi o he rebut airdrops",
+  "slug": "defi-staking-airdrops",
+  "excerpt": "Com tributen les operacions que no són una compravenda: recompenses d’staking, pools de liquiditat, lending, yield farming i tokens rebuts sense comprar.",
+  "hero": {
+    "etiqueta": "Operativa avançada",
+    "h1": "La teva operativa no cap en «vaig comprar i vaig vendre»",
+    "subheading": "Vas dipositar en un pool, vas rebre un token que representa la teva posició, vas cobrar recompenses, vas prestar, vas manllevar. Cap d’aquestes coses no és una compravenda, i cadascuna té el seu tractament.",
+    "cta": { "label": "Explica’ns la teva operativa", "href": "/contacto" },
+    "secundaria": { "label": "Veure el mètode", "href": "/metodo" }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "La teva situació" },
+    { "id": "dos-caminos", "label": "Dos tractaments" },
+    { "id": "por-operativa", "label": "Operativa per operativa" },
+    { "id": "como-resolvemos", "label": "Com ho resolem" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "La teva situació",
+      "fondo": "blanco",
+      "body": "La fiscalitat dels criptoactius s’explica gairebé sempre amb l’exemple més simple: compres bitcoin, el vens més car i tributes per la diferència. La teva operativa no s’hi assembla gens.\n\nEn DeFi hi ha passos intermedis que no tenen un equivalent evident en el món tradicional. Diposites dos actius en un pool i reps un token que representa la teva participació: això és una permuta? Retires i et tornen quantitats diferents de les que hi vas posar: on és el guany? Cobres recompenses en un token que no cotitza enlloc conegut: a quin valor les imputes?\n\nNo totes aquestes preguntes tenen una resposta administrativa clara i publicada, i aquí hi ha la feina real: aplicar un criteri defensable, documentar-lo i mantenir-lo amb coherència en tots els exercicis. Un criteri raonable i consistent val molt més que un d’agressiu."
+    },
+    {
+      "id": "dos-caminos",
+      "h2": "Dos tractaments que val més no barrejar",
+      "fondo": "papel",
+      "entrada": "Gairebé tota l’operativa DeFi acaba en una d’aquestes dues caselles, i no tributen igual ni es compensen igual.",
+      "columnas": [
+        {
+          "titulo": "Guany o pèrdua patrimonial",
+          "correcta": true,
+          "items": [
+            "Venda d’un criptoactiu per euros",
+            "Permuta d’un token per un altre, incloses l’entrada i la sortida de molts pools",
+            "Transmissió d’un token que representa una posició",
+            "S’integra a la base de l’estalvi i en segueix les regles de compensació"
+          ]
+        },
+        {
+          "titulo": "Rendiment del capital",
+          "correcta": false,
+          "items": [
+            "Recompenses per cedir els teus criptoactius a un tercer",
+            "Interessos percebuts en operacions de lending",
+            "S’imputen quan es perceben, no quan es venen",
+            "Segueix regles diferents: no es compensa igual que una pèrdua patrimonial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "por-operativa",
+      "h2": "Operativa per operativa",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>Staking:</strong> les recompenses s’imputen en el moment en què es perceben i al seu valor en aquella data. Aquest valor passa a ser el cost d’adquisició dels tokens rebuts, cosa que evita tributar dues vegades pel mateix quan els venguis.",
+        "<strong>Pools de liquiditat:</strong> el punt crític és com es tracten l’entrada i la sortida del pool, i el token que representa la posició. És on més divergeixen els criteris, i on és imprescindible documentar el que s’ha aplicat.",
+        "<strong>Yield farming:</strong> capes de recompenses sobre posicions ja complexes, sovint en tokens sense un mercat profund. La dificultat no és el criteri, sinó la valoració.",
+        "<strong>Lending i borrowing:</strong> els interessos cobrats i els pagats no tenen un tractament simètric, i les liquidacions de garanties generen els seus propis efectes.",
+        "<strong>Airdrops:</strong> l’essencial és fixar-ne el valor en la data de recepció, perquè serà el teu cost d’adquisició. I distingir l’airdrop real de l’spam de tokens que mai no has demanat.",
+        "<strong>Bridging i wrapping:</strong> moure un actiu entre cadenes o embolcallar-lo no sempre té el mateix tractament que una permuta, i tractar-ho malament multiplica les operacions fictícies per tota la cartera."
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Com ho resolem",
+      "steps": [
+        { "title": "Reconstruïm l’operativa on-chain", "body": "No n’hi ha prou amb el CSV d’un exchange: la major part d’això passa en cadena i s’ha de llegir d’allà, protocol per protocol." },
+        { "title": "Identifiquem la mecànica real de cada protocol", "body": "Abans de decidir el tractament fiscal cal entendre què va passar tècnicament. Dos protocols que semblen iguals poden funcionar de manera diferent per dins." },
+        { "title": "Fixem un criteri i el documentem", "body": "On no hi ha un criteri administratiu clar, se n’aplica un de raonable, s’escriu per què i es manté amb coherència en tots els exercicis. La coherència és defensable; la improvisació, no." },
+        { "title": "Valorem el que no té un preu evident", "body": "Per als tokens sense mercat profund, es documenten la font del preu i la data. És el primer que es qüestiona si algun dia hi ha una revisió." },
+        { "title": "Ho integrem amb la resta de la teva cartera", "body": "Perquè les regles de compensació ho relacionen tot, i una decisió en DeFi afecta el resultat global." }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Tributo per les recompenses encara que no les hagi venudes?",
+          "a": "Els rendiments derivats de cedir els teus criptoactius s’imputen quan es perceben, no quan es converteixen en euros. La contrapartida és que aquest valor imputat passa a ser el teu cost d’adquisició, de manera que, quan els venguis, només tributes per la diferència posterior."
+        },
+        {
+          "q": "Les meves recompenses són d’un token que gairebé no val res",
+          "a": "S’imputen igualment, al seu valor en la data de percepció, per petit que sigui. El que cal cuidar és la font del preu i la documentació, perquè en tokens sense mercat profund les cotitzacions varien molt d’una font a una altra."
+        },
+        {
+          "q": "Vaig entrar i sortir d’un pool amb imports diferents",
+          "a": "És el normal i és on hi ha la feina. Cal reconstruir què s’hi va aportar, què representava el token de posició i què se’n va recuperar, i aplicar un criteri coherent a l’entrada i a la sortida. És una de les situacions que sempre acaben en revisió manual."
+        },
+        {
+          "q": "I l’spam de tokens que apareix a la meva wallet?",
+          "a": "No és un airdrop teu pel simple fet d’aparèixer a la teva adreça. Es filtra amb criteri, no per llista automàtica, i es documenta el filtre aplicat. En cadenes com Solana poden ser milers de registres que, processats com a ingressos, espatllen la cartera sencera."
+        },
+        {
+          "q": "Podeu treballar amb qualsevol protocol?",
+          "a": "Amb la majoria. Els casos difícils són protocols molt petits, sense un explorador mantingut o ja desapareguts. Si la teva operativa té algun d’aquests trams, t’ho diem abans de començar en lloc de descobrir-ho a mig camí."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Explica’ns quins protocols has tocat",
+    "body": "Si sabem en quines cadenes operes, quins protocols has fet servir i des de quan, et podem dir quina part es pot reconstruir, on caldrà fixar un criteri i quina feina hi ha per endavant.",
+    "button": { "label": "Enviar diagnòstic", "href": "/contacto" }
+  },
+  "seo": {
+    "title": "Fiscalitat de DeFi, staking i airdrops a Espanya | Cleriontax",
+    "description": "Com tributen l’staking, els pools de liquiditat, el yield farming, el lending i els airdrops: què és rendiment i què és guany patrimonial, i com es valora el que no té un preu evident.",
+    "keywords": [
+      "fiscalitat defi",
+      "fiscalitat staking",
+      "declarar staking hisenda",
+      "declarar airdrops hisenda",
+      "declarar yield farming",
+      "declarar staking espanya",
+      "declarar airdrops espanya"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/defi-staking-airdrops"
+  }
+}

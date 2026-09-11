@@ -1,0 +1,178 @@
+{
+  "title": "Vaig tenir pèrdues i les vull compensar",
+  "slug": "compensar-perdidas",
+  "excerpt": "Com es compensen les pèrdues en criptoactius amb guanys, inclosos els d’accions i fons, quin termini hi ha per fer-ho i per què una pèrdua no declarada és una pèrdua perduda.",
+  "hero": {
+    "etiqueta": "El que ja vas perdre pot comptar",
+    "h1": "Vas vendre amb pèrdues i ara tens guanys",
+    "subheading": "Pot ser una venda ruïnosa de fa tres anys que vas preferir oblidar i, aquest any, un bon resultat en cripto o a borsa. Aquestes dues coses es parlen entre si, però només si la pèrdua es va declarar en el seu moment.",
+    "cta": {
+      "label": "Revisar el meu cas",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "Veure declaració cripto",
+      "href": "/servicios/declarar-criptomonedas"
+    }
+  },
+  "toc": [
+    {
+      "id": "lo-esencial",
+      "label": "L’essencial"
+    },
+    {
+      "id": "reconoces",
+      "label": "La teva situació"
+    },
+    {
+      "id": "el-ejemplo",
+      "label": "Un exemple amb xifres"
+    },
+    {
+      "id": "como-resolvemos",
+      "label": "Com ho fem"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
+  ],
+  "sections": [
+    {
+      "id": "lo-esencial",
+      "h2": "L’essencial",
+      "fondo": "azul",
+      "entrada": "Les regles que regeixen la compensació. Els imports exactes i els límits aplicables depenen de l’exercici i s’han de comprovar.",
+      "cifras": [
+        {
+          "valor": "4 anys",
+          "etiqueta": "per compensar una pèrdua amb guanys d’exercicis següents"
+        },
+        {
+          "valor": "0 €",
+          "etiqueta": "és el que val una pèrdua que no es va declarar mai",
+          "acento": true
+        },
+        {
+          "valor": "2",
+          "etiqueta": "blocs que es compensen entre si amb límits: patrimonials i rendiments"
+        }
+      ]
+    },
+    {
+      "id": "reconoces",
+      "h2": "La teva situació",
+      "fondo": "blanco",
+      "body": "La pèrdua sol tenir una història semblant. Vas comprar car, vas aguantar, vas acabar venent malament i, com que el resultat era negatiu, vas donar per fet que no hi havia res a declarar. És el raonament més natural del món i és justament el que surt car.\n\nUna pèrdua patrimonial declarada és un actiu fiscal: es compensa amb guanys del mateix exercici i, si en sobra, amb els dels exercicis següents dins del termini legal. Una pèrdua no declarada, senzillament, no existeix a aquests efectes.\n\nI hi ha un detall que molta gent desconeix: la compensació no distingeix per tipus d’actiu de la manera que s’esperaria. Una pèrdua per vendre criptomonedes pot compensar un guany per vendre accions o participacions d’un fons, perquè el que importa no és què vas vendre, sinó en quin bloc de la base imposable s’integra el resultat."
+    },
+    {
+      "id": "el-ejemplo",
+      "h2": "Un exemple amb xifres",
+      "fondo": "papel",
+      "entrada": "Una pèrdua antiga en criptoactius aplicada a un guany actual a borsa. Dades d’exemple.",
+      "tabla": {
+        "titulo": "Compensació entre exercicis",
+        "periodo": "exercicis 2022 i 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Pèrdua declarada el 2022 per venda de criptoactius",
+            "importe": -12400
+          },
+          {
+            "concepto": "Compensada en els exercicis 2023 i 2024",
+            "importe": 3100
+          },
+          {
+            "concepto": "Saldo pendent a l’inici del 2025",
+            "importe": -9300
+          },
+          {
+            "concepto": "Guany del 2025 per venda d’accions",
+            "importe": 14200
+          },
+          {
+            "concepto": "Base subjecta després d’aplicar el saldo pendent",
+            "importe": 4900
+          }
+        ],
+        "columnaConcepto": "Concepte",
+        "columnaValor": "Import",
+        "pie": "Dades d’exemple. Criteri FIFO."
+      }
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Com ho fem",
+      "steps": [
+        {
+          "title": "Revisem les teves declaracions anteriors",
+          "body": "Busquem saldos de pèrdues pendents de compensar que potser ni sabies que tenies. Apareixen més sovint del que sembla."
+        },
+        {
+          "title": "Reconstruïm les operacions que van generar la pèrdua",
+          "body": "Per poder-la acreditar: data, valor d’adquisició i de transmissió, i el suport documental corresponent. Una pèrdua sense suport és difícil de sostenir si es revisa."
+        },
+        {
+          "title": "Comprovem el termini",
+          "body": "Quanta vida li queda a cada saldo pendent. Les pèrdues caduquen, i fer-les servir en l’ordre correcte pot evitar que se’n perdi alguna pel camí."
+        },
+        {
+          "title": "Integrem la cripto amb la resta de la teva cartera",
+          "body": "Accions, fons, derivats. Les regles de compensació els relacionen, i aplicar-les per separat vol dir deixar diners damunt la taula."
+        },
+        {
+          "title": "I si la pèrdua no es va declarar mai, valorem la via",
+          "body": "Pot haver-hi marge per rectificar exercicis no prescrits. Et diem si en el teu cas val la pena intentar-ho."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Vaig perdre en cripto i vaig guanyar a borsa. Es poden creuar?",
+          "a": "Sí, sempre que tots dos resultats s’integrin en el mateix bloc de la base imposable, que és l’habitual en guanys i pèrdues per transmissió. El que importa no és el tipus d’actiu, sinó on s’integra el resultat."
+        },
+        {
+          "q": "No vaig declarar la pèrdua en el seu moment",
+          "a": "Si l’exercici no ha prescrit, pot haver-hi marge per sol·licitar-ne la rectificació i fer aflorar la pèrdua. No sempre compensa l’esforç, i depèn de l’import i dels exercicis implicats. S’analitza abans de moure res."
+        },
+        {
+          "q": "Vaig vendre amb pèrdues i vaig tornar a comprar poc després",
+          "a": "Hi ha regles específiques que limiten el còmput de la pèrdua quan es tornen a adquirir valors homogenis dins de determinats terminis. És un punt que convé revisar amb les dates exactes al davant, perquè canvia el resultat."
+        },
+        {
+          "q": "I si vaig perdre perquè un exchange va fer fallida?",
+          "a": "És una situació diferent d’una venda amb pèrdua i el seu tractament no és automàtic: depèn de com i quan s’acrediti la pèrdua del dret. Mereix una anàlisi pròpia i documentació específica."
+        },
+        {
+          "q": "Quant de temps tinc?",
+          "a": "El termini general per compensar amb guanys d’exercicis posteriors és de quatre anys. Per això convé revisar els saldos pendents cada any i no deixar que caduquin sense fer-los servir."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Revisem si tens pèrdues guardades",
+    "body": "Explica’ns quins exercicis vas declarar, si vas tenir vendes amb pèrdues i si també tens accions o fons. Busquem saldos pendents i et diem què es pot aplicar aquest any.",
+    "button": {
+      "label": "Enviar diagnòstic",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "Compensar pèrdues de criptomonedes amb guanys | Cleriontax",
+    "description": "Com compensar pèrdues en criptoactius amb guanys, inclosos els d’accions i fons, en quin termini i què fer si la pèrdua no es va declarar en el seu moment.",
+    "keywords": [
+      "compensar pèrdues criptomonedes",
+      "compensar pèrdues criptomonedes amb accions",
+      "compensar pèrdues criptomonedes anys anteriors",
+      "compensar pèrdues xrp",
+      "declarar accions i criptomonedes juntes",
+      "assessor fiscal accions i cripto"
+    ],
+    "canonical": "https://cleriontax.com/situaciones/compensar-perdidas"
+  }
+}

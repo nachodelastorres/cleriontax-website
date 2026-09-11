@@ -1,0 +1,250 @@
+{
+  "title": "The method: transaction by transaction",
+  "slug": "metodo",
+  "excerpt": "How we turn thousands of transactions scattered across exchanges, wallets and DeFi protocols into a single, traceable tax report, with judgement applied by hand and every figure backed up.",
+  "hero": {
+    "etiqueta": "How we work",
+    "h1": "An automated report is the starting point, never the deliverable",
+    "subheading": "Software processes. Judgement decides. Our method is to rebuild your activity from the raw data and review by hand everything a program can't resolve on its own.",
+    "cta": {
+      "label": "Tell us about your activity",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "See our services",
+      "href": "/servicios"
+    }
+  },
+  "toc": [
+    {
+      "id": "por-que",
+      "label": "Why software isn't enough"
+    },
+    {
+      "id": "tesis",
+      "label": "The thesis"
+    },
+    {
+      "id": "el-problema",
+      "label": "What goes wrong in the data"
+    },
+    {
+      "id": "las-fases",
+      "label": "The four phases"
+    },
+    {
+      "id": "a-mano",
+      "label": "What we review by hand"
+    },
+    {
+      "id": "que-recibes",
+      "label": "What you receive"
+    },
+    {
+      "id": "limites",
+      "label": "Limits of the method"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    }
+  ],
+  "sections": [
+    {
+      "id": "por-que",
+      "h2": "Why running your CSVs through a program isn't enough",
+      "body": "Crypto tax tools do one thing well: read lots of files quickly. What they don't do is decide. And in a real portfolio, most of the work is decisions: whether a transfer is a sale or a move between your own wallets, whether a token that turned up at your address is a taxable airdrop or spam, what acquisition value to give something you received without buying it, or what to do with the transactions from an exchange that has shut down and no longer lets you download anything.\n\nA program resolves those situations by applying a default value. Almost always the safest one for the software, which is not the most accurate one for you: zero acquisition cost, transfers treated as disposals, tokens with no market price valued at whatever the first available oracle says. The report comes out, it adds up internally, and it's wrong.\n\nThe problem surfaces when that report reaches the Spanish Tax Agency (AEAT). From that point on it's your tax return, and correcting it is harder than getting it right in the first place."
+    },
+    {
+      "id": "tesis",
+      "h2": "",
+      "fondo": "patron",
+      "cita": {
+        "texto": "Software processes. Judgement decides.",
+        "pie": "A program resolves grey areas by applying a default value. Almost always the safest one for the software, which is not the most accurate one for you.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "el-problema",
+      "h2": "What usually goes wrong in the data",
+      "bullets": [
+        "<strong>Internal transfers counted as sales:</strong> you send funds from your exchange to your cold wallet and the report records it as a disposal. It's the most common error, and the one that creates the most phantom gains.",
+        "<strong>Token spam:</strong> addresses that receive hundreds of worthless tokens sent by third parties. On chains such as Solana or BSC this can mean thousands of records that pollute the whole portfolio if they're processed as income.",
+        "<strong>Unidentified exchanges of assets (swaps):</strong> swapping one token for another is taxable even if it never goes through euros. Many transaction histories don't distinguish a swap from a simple transfer.",
+        "<strong>Lost acquisition cost:</strong> tokens received through staking, airdrops, forks or liquidity rewards that the program values at zero, inflating the gain when you sell them.",
+        "<strong>Duplicates across sources:</strong> the same transaction appears in the exchange's CSV and in the on-chain reading of the wallet.",
+        "<strong>Defunct exchanges:</strong> platforms that have shut down, leaving no downloadable history, whose part of the record has to be rebuilt by other means.",
+        "<strong>Dates and time zones:</strong> records timestamped in different time zones that throw the order of transactions out of sequence and, with it, the FIFO calculation."
+      ],
+      "entrada": "These are the seven failures that come up again and again, and no program resolves any of them on its own.",
+      "columnas": [
+        {
+          "titulo": "What an automated report does",
+          "correcta": false,
+          "items": [
+            "Counts a transfer to your own cold wallet as a sale",
+            "Values tokens you received without buying them at zero cost",
+            "Processes token spam as if it were income",
+            "Applies the price from the first available oracle, without cross-checking",
+            "Treats periods with no data as if they never existed"
+          ]
+        },
+        {
+          "titulo": "What a reviewed reconciliation does",
+          "correcta": true,
+          "items": [
+            "Identifies who owns the destination address and marks the transfer as internal",
+            "Rebuilds the acquisition value as at the date of receipt",
+            "Filters spam with judgement, not with an automatic list",
+            "Cross-checks the price across sources and documents which one was applied",
+            "Sets the period aside, rebuilds it indirectly and records the degree of certainty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "las-fases",
+      "h2": "The four phases",
+      "fondo": "azul",
+      "entrada": "Each phase matches one of the four pieces of the symbol, and not by chance: the symbol describes this process.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Ingestion and mapping",
+          "body": "The raw data, exactly as it arrives from the exchange. We check its integrity and spot what's missing before processing anything."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Cleaning and reconciliation",
+          "body": "The process that bends the data until it fits: formats, time zones, duplicates and internal transfers."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Tax classification",
+          "body": "The judgement. Each transaction is given its tax treatment, and anything that doesn't fit a rule is set aside for manual review."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Calculation and report",
+          "body": "The result, now closed into the report: the FIFO rule applied to the reconciled portfolio, with the detail behind every total."
+        }
+      ]
+    },
+    {
+      "id": "a-mano",
+      "h2": "What we review by hand",
+      "body": "We don't review all hundred thousand transactions by hand: we review the ones the automated process can't resolve with certainty, and those are always the ones that decide the result.\n\nThe following are set aside for manual review: transfers with no identified counterparty, tokens with no reliable market price on the date of the transaction, acquisitions with no known cost, transactions in DeFi protocols whose mechanics don't fit a standard category, and any period where the data from two sources contradict each other.\n\nIn a portfolio of fifty thousand transactions, that list usually runs to between three hundred and two thousand. That's where the risk is concentrated, and it's the work an automated report skips.",
+      "fondo": "papel",
+      "cifras": [
+        {
+          "valor": "50.000",
+          "etiqueta": "transactions in a typical complex portfolio"
+        },
+        {
+          "valor": "300–2.000",
+          "etiqueta": "that the automated process can't resolve on its own",
+          "acento": true
+        },
+        {
+          "valor": "100 %",
+          "etiqueta": "of those, reviewed by hand"
+        }
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "What you receive",
+      "bullets": [
+        "<strong>Tax report with the summary and its detail:</strong> the totals that go into your tax return and, behind each one, the transactions that make it up.",
+        "<strong>Criteria memo:</strong> which treatment was applied in each grey area and why. It's the document that supports your position if you're ever asked about it.",
+        "<strong>Issues log:</strong> what data was missing, what was rebuilt indirectly and with what degree of certainty.",
+        "<strong>Reconciled portfolio:</strong> the clean dataset, which serves as the starting point for the following tax years without repeating the work.",
+        "<strong>Supporting documentation:</strong> the original files, organised and referenced from the report."
+      ],
+      "entrada": "This is what the summary of a report looks like. Each line links to its transaction detail.",
+      "tabla": {
+        "titulo": "Tax report",
+        "periodo": "tax year 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Capital gains",
+            "importe": 18402.15
+          },
+          {
+            "concepto": "Capital losses",
+            "importe": -6117.8
+          },
+          {
+            "concepto": "Staking income",
+            "importe": 1293.44
+          },
+          {
+            "concepto": "Transactions processed",
+            "recuento": 48317
+          },
+          {
+            "concepto": "Transactions reviewed by hand",
+            "recuento": 412
+          }
+        ],
+        "columnaConcepto": "Item",
+        "columnaValor": "Amount",
+        "pie": "Sample data. FIFO rule."
+      }
+    },
+    {
+      "id": "limites",
+      "h2": "The limits of the method",
+      "body": "It's also worth saying what the method can't do.\n\nIt doesn't rebuild what doesn't exist. If there is no history, no on-chain trail and no bank statement for a period, it is documented as impossible to rebuild and the approach taken is explained, but nothing is made up.\n\nIt doesn't guarantee an outcome with the tax authorities. No methodology does, and you should be wary of anyone who promises otherwise. What it does produce is a documented, consistent position, which is what can be defended.\n\nAnd it isn't investment advice. We don't tell you what to buy, what to sell or when. Our field is compliance and the defence of your tax position.",
+      "fondo": "azul"
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How long does the process take?",
+          "a": "It depends on the volume and, above all, on the state of the data. A well-organised portfolio of a few thousand transactions can be done in one or two weeks; a multi-chain portfolio with hundreds of thousands of records and periods to rebuild can take considerably longer. After the ingestion phase we give you a specific timeframe, because until then any estimate would be guesswork."
+        },
+        {
+          "q": "Do I need to give you my private keys?",
+          "a": "No, never. We work with CSV exports, read-only API keys and public wallet addresses. A private key isn't needed to read a transaction history, and you shouldn't give yours to anyone."
+        },
+        {
+          "q": "What if I already have a report made with Koinly or CoinTracking?",
+          "a": "It works as a starting point and saves us the ingestion phase. What we do is review the reconciliation: internal transfers, the acquisition cost of anything received without a purchase, the treatment of swaps, and spam. If the report has already been filed with the AEAT, the work is different, and it's worth looking at it alongside our tax litigation page."
+        },
+        {
+          "q": "Do you work with any blockchain and protocol?",
+          "a": "With most of them. Chains and protocols with public explorers and accessible data don't usually cause problems. The difficult cases are very small protocols, chains with no maintained explorer, or platforms that have already shut down, and in those cases we tell you before we start."
+        },
+        {
+          "q": "What about previous tax years?",
+          "a": "The reconciled portfolio is built from the very beginning of your activity, not from the tax year you want to declare: without the earlier history there is no reliable acquisition cost. If rebuilding it reveals tax years that were declared incorrectly or not declared at all, we tell you and look at the options for regularising them together."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Shall we talk?",
+    "body": "Tell us roughly how many transactions you have, which exchanges and chains you use and which tax years concern you. With that, we'll tell you what work lies ahead and give you an indicative timeframe and price.",
+    "button": {
+      "label": "Request a diagnosis",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "The method: transaction by transaction | Cleriontax",
+    "description": "How we rebuild your crypto activity from the raw data: ingestion, reconciliation, transaction-by-transaction tax classification and a FIFO calculation with every figure traceable to its source.",
+    "keywords": [
+      "crypto portfolio reconciliation",
+      "crypto transaction traceability spain tax",
+      "fifo calculation crypto spain",
+      "koinly errors spanish tax return",
+      "crypto tax report methodology"
+    ],
+    "canonical": "https://cleriontax.com/metodo"
+  }
+}

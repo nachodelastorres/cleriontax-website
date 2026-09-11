@@ -1,0 +1,250 @@
+{
+  "title": "El mètode: operació a operació",
+  "slug": "metodo",
+  "excerpt": "Com convertim milers d'operacions disperses en exchanges, wallets i protocols DeFi en un informe fiscal únic i traçable, amb criteri aplicat a mà i cada xifra justificada.",
+  "hero": {
+    "etiqueta": "Com treballem",
+    "h1": "Un informe automàtic és el punt de partida, mai el lliurament final",
+    "subheading": "El programari processa. El criteri decideix. El nostre mètode consisteix a reconstruir la teva operativa des de la dada en brut i revisar a mà tot allò que un programa no pot resoldre tot sol.",
+    "cta": {
+      "label": "Explica'ns la teva operativa",
+      "href": "/contacto"
+    },
+    "secundaria": {
+      "label": "Veure els serveis",
+      "href": "/servicios"
+    }
+  },
+  "toc": [
+    {
+      "id": "por-que",
+      "label": "Per què no n'hi ha prou amb el programari"
+    },
+    {
+      "id": "tesis",
+      "label": "La tesi"
+    },
+    {
+      "id": "el-problema",
+      "label": "Què falla en les dades"
+    },
+    {
+      "id": "las-fases",
+      "label": "Les quatre fases"
+    },
+    {
+      "id": "a-mano",
+      "label": "Què revisem a mà"
+    },
+    {
+      "id": "que-recibes",
+      "label": "Què reps"
+    },
+    {
+      "id": "limites",
+      "label": "Límits del mètode"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
+  ],
+  "sections": [
+    {
+      "id": "por-que",
+      "h2": "Per què no n'hi ha prou amb passar els CSV per un programa",
+      "body": "Les eines de fiscalitat cripto fan bé una cosa: llegir molts fitxers de pressa. El que no fan és decidir. I en una cartera real la major part de la feina són decisions: si aquella transferència és una venda o un moviment entre wallets teves, si aquell token que va aparèixer a la teva adreça és un airdrop imputable o spam, quin valor d'adquisició té una cosa que vas rebre sense comprar-la, o què fas amb les operacions d'un exchange que va tancar i del qual ja no pots descarregar res.\n\nUn programa resol aquestes situacions aplicant un valor per defecte. Gairebé sempre el més conservador per al programari, que no és el més correcte per a tu: cost d'adquisició zero, transferències tractades com a transmissions, tokens sense preu de mercat valorats al que digui el primer oracle disponible. L'informe surt, quadra internament i és incorrecte.\n\nEl problema apareix quan aquest informe arriba a l'AEAT. A partir d'aquí és la teva declaració, i rectificar-la és més difícil que haver-la fet bé."
+    },
+    {
+      "id": "tesis",
+      "h2": "",
+      "fondo": "patron",
+      "cita": {
+        "texto": "El programari processa. El criteri decideix.",
+        "pie": "Un programa resol les situacions dubtoses aplicant un valor per defecte. Gairebé sempre el més conservador per al programari, que no és el més correcte per a tu.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "el-problema",
+      "h2": "Què sol fallar en les dades",
+      "bullets": [
+        "<strong>Moviments interns comptats com a vendes:</strong> envies fons del teu exchange a la teva wallet freda i l'informe ho registra com una transmissió. És l'error més freqüent i el que genera més guany fictici.",
+        "<strong>Spam de tokens:</strong> adreces que reben centenars de tokens sense valor enviats per tercers. En cadenes com Solana o BSC poden ser milers de registres que embruten tota la cartera si es processen com a ingressos.",
+        "<strong>Permutes no identificades:</strong> canviar un token per un altre tributa encara que no passi per euros. Molts històrics no distingeixen el swap d'un simple moviment.",
+        "<strong>Cost d'adquisició perdut:</strong> tokens rebuts per staking, airdrops, forks o recompenses de liquiditat que el programa valora a zero, cosa que infla el guany quan els vens.",
+        "<strong>Duplicats entre fonts:</strong> la mateixa operació apareix en el CSV de l'exchange i en la lectura on-chain de la wallet.",
+        "<strong>Exchanges desapareguts:</strong> plataformes tancades de les quals no queda cap històric descarregable i el tram de les quals s'ha de reconstruir per altres vies.",
+        "<strong>Dates i fusos horaris:</strong> registres amb marques de temps en zones horàries diferents que desordenen la seqüència de les operacions i, amb això, el càlcul FIFO."
+      ],
+      "entrada": "Aquestes són les set errades que apareixen una vegada i una altra, i un programa no en resol cap pel seu compte.",
+      "columnas": [
+        {
+          "titulo": "El que fa un informe automàtic",
+          "correcta": false,
+          "items": [
+            "Compta com a venda la transferència a la teva pròpia wallet freda",
+            "Valora a cost zero els tokens que vas rebre sense comprar-los",
+            "Processa l'spam de tokens com si fossin ingressos",
+            "Aplica el preu del primer oracle disponible, sense contrastar-lo",
+            "Deixa els trams sense dades com si no haguessin existit"
+          ]
+        },
+        {
+          "titulo": "El que fa una reconciliació revisada",
+          "correcta": true,
+          "items": [
+            "Identifica la titularitat de l'adreça de destinació i la marca com a interna",
+            "Reconstrueix el valor d'adquisició en la data de recepció",
+            "Filtra l'spam amb criteri, no per llista automàtica",
+            "Contrasta el preu entre fonts i documenta quin s'ha aplicat",
+            "Aparta el tram, el reconstrueix per via indirecta i anota el grau de certesa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "las-fases",
+      "h2": "Les quatre fases",
+      "fondo": "azul",
+      "entrada": "Cada fase correspon a una de les quatre peces del símbol, i no per casualitat: el símbol descriu aquest procés.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Ingesta i mapatge",
+          "body": "La dada en brut, tal com arriba de l'exchange. Se'n valida la integritat i es detecta el que falta abans de processar res."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Neteja i conciliació",
+          "body": "El procés que corba la dada fins a fer-la encaixar: formats, fusos horaris, duplicats i moviments interns."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Classificació fiscal",
+          "body": "El criteri. Cada operació rep la seva naturalesa fiscal, i el que no encaixa en una regla s'aparta per a revisió manual."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Càlcul i informe",
+          "body": "El resultat, ja tancat sobre l'informe: criteri FIFO sobre la cartera conciliada, amb el detall darrere de cada total."
+        }
+      ]
+    },
+    {
+      "id": "a-mano",
+      "h2": "Què revisem a mà",
+      "body": "No revisem a mà les cent mil operacions: revisem les que el procés automàtic no pot resoldre amb certesa, i aquestes són sempre les que decideixen el resultat.\n\nS'aparten per a revisió manual les transferències sense contrapart identificada, els tokens sense preu de mercat fiable en la data de l'operació, les adquisicions sense cost conegut, les operacions en protocols DeFi la mecànica dels quals no encaixa en una categoria estàndard, i qualsevol tram en què les dades de dues fonts es contradiuen.\n\nEn una cartera de cinquanta mil operacions, aquesta llista sol ser d'entre tres-centes i dues mil. És on es concentra el risc, i és la feina que un informe automàtic se salta.",
+      "fondo": "papel",
+      "cifras": [
+        {
+          "valor": "50.000",
+          "etiqueta": "operacions en una cartera complexa tipus"
+        },
+        {
+          "valor": "300–2.000",
+          "etiqueta": "que el procés automàtic no pot resoldre tot sol",
+          "acento": true
+        },
+        {
+          "valor": "100 %",
+          "etiqueta": "d'aquestes, revisades a mà"
+        }
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "Què reps",
+      "bullets": [
+        "<strong>Informe fiscal amb el resum i el seu detall:</strong> els totals que van a la declaració i, darrere de cadascun, les operacions que el componen.",
+        "<strong>Memòria de criteris:</strong> quin criteri s'ha aplicat en cada situació dubtosa i per què. És el document que sosté la teva posició si algun dia te la pregunten.",
+        "<strong>Registre d'incidències:</strong> quines dades faltaven, què s'ha reconstruït per via indirecta i amb quin grau de certesa.",
+        "<strong>Cartera conciliada:</strong> el conjunt de dades net, que serveix de punt de partida per als exercicis següents sense repetir la feina.",
+        "<strong>Documentació de suport:</strong> els fitxers originals organitzats i referenciats des de l'informe."
+      ],
+      "entrada": "Així es veu el resum d'un informe. Cada línia enllaça amb el seu detall d'operacions.",
+      "tabla": {
+        "titulo": "Informe fiscal",
+        "periodo": "exercici 2025",
+        "criterio": "FIFO",
+        "filas": [
+          {
+            "concepto": "Guanys patrimonials",
+            "importe": 18402.15
+          },
+          {
+            "concepto": "Pèrdues patrimonials",
+            "importe": -6117.8
+          },
+          {
+            "concepto": "Rendiments per staking",
+            "importe": 1293.44
+          },
+          {
+            "concepto": "Operacions processades",
+            "recuento": 48317
+          },
+          {
+            "concepto": "Operacions revisades a mà",
+            "recuento": 412
+          }
+        ],
+        "columnaConcepto": "Concepte",
+        "columnaValor": "Import",
+        "pie": "Dades d’exemple. Criteri FIFO."
+      }
+    },
+    {
+      "id": "limites",
+      "h2": "Els límits del mètode",
+      "body": "Convé dir també el que el mètode no pot fer.\n\nNo reconstrueix el que no existeix. Si d'un tram no hi ha ni històric, ni rastre on-chain, ni extracte bancari, es documenta com a no reconstruïble i s'explica el criteri aplicat, però no s'inventa.\n\nNo garanteix un resultat davant l'Administració. Cap metodologia no ho fa, i desconfia de qui ho prometi. El que sí que produeix és una posició documentada i coherent, que és el que es pot defensar.\n\nI no és assessorament d'inversió. No et diem què has de comprar, què has de vendre ni quan. El nostre terreny és el compliment i la defensa de la teva posició fiscal.",
+      "fondo": "azul"
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Quant de temps dura el procés?",
+          "a": "Depèn del volum i, sobretot, de l'estat de les dades. Una cartera ordenada d'uns quants milers d'operacions pot estar llesta en una o dues setmanes; una cartera multicadena amb centenars de milers de registres i trams per reconstruir pot requerir força més temps. Després de la fase d'ingesta et donem un termini concret, perquè fins aleshores qualsevol estimació seria inventada."
+        },
+        {
+          "q": "Us he de donar les meves claus privades?",
+          "a": "No, mai. Treballem amb exportacions CSV, claus API de només lectura i adreces públiques de wallet. Per llegir un historial no cal cap clau privada, i no l'has de donar a ningú."
+        },
+        {
+          "q": "I si ja tinc un informe fet amb Koinly o CoinTracking?",
+          "a": "Serveix com a punt de partida i ens estalvia la fase d'ingesta. El que fem és revisar la reconciliació: moviments interns, cost d'adquisició del que s'ha rebut sense compra, tractament de permutes i spam. Si l'informe ja es va presentar a l'AEAT, la feina és diferent i convé mirar-ho amb la pàgina de litigació al davant."
+        },
+        {
+          "q": "Treballeu amb qualsevol cadena i protocol?",
+          "a": "Amb la majoria. Les cadenes i els protocols amb exploradors públics i dades accessibles no solen donar problemes. Els casos difícils són protocols molt petits, cadenes sense un explorador mantingut o plataformes ja tancades, i en aquests casos t'ho diem abans de començar."
+        },
+        {
+          "q": "Què passa amb els exercicis anteriors?",
+          "a": "La cartera conciliada es construeix des de l'origen de la teva operativa, no des de l'exercici que vols declarar: sense l'històric anterior no hi ha cost d'adquisició fiable. Si en reconstruir-lo apareixen exercicis mal declarats o sense declarar, t'ho diem i valorem amb tu la via de regularització."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "En parlem?",
+    "body": "Explica'ns quantes operacions tens més o menys, en quins exchanges i cadenes operes i quins exercicis et preocupen. Amb això et diem quina feina hi ha per endavant i et donem un termini i un preu orientatius.",
+    "button": {
+      "label": "Demanar un diagnòstic",
+      "href": "/contacto"
+    }
+  },
+  "seo": {
+    "title": "El mètode: operació a operació | Cleriontax",
+    "description": "Com reconstruïm la teva operativa cripto des de la dada en brut: ingesta, conciliació, classificació fiscal operació a operació i càlcul FIFO amb cada xifra traçable fins al seu origen.",
+    "keywords": [
+      "reconciliació carteres cripto",
+      "traçabilitat criptomonedes hisenda",
+      "càlcul fifo criptomonedes",
+      "errors koinly hisenda",
+      "informe fiscal criptomonedes metodologia"
+    ],
+    "canonical": "https://cleriontax.com/metodo"
+  }
+}

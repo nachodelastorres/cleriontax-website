@@ -1,9 +1,9 @@
 {
-  "title": "Assessoria Fiscal Especialitzada en Criptomonedes",
+  "title": "Assessoria fiscal de criptomonedes",
   "slug": "asesoria-fiscal-criptomonedas",
   "excerpt": "Sessions personalitzades 1:1 per resoldre dubtes fiscals sobre criptomonedes. Criteris de presentació, compliment normatiu i revisió documental. Sense assessorament d'inversió.",
   "hero": {
-    "h1": "Assessoria Fiscal Especialitzada en Criptomonedes",
+    "h1": "Assessoria fiscal de criptomonedes",
     "subheading": "Sessions tècniques amb el nostre equip fiscal per resoldre dubtes sobre models AEAT, criteris de classificació, compliment normatiu i estructura d'informes. Enfocament exclusivament tècnic-fiscal. No oferim assessorament d'inversió.",
     "cta": {
       "label": "Sol·licitar avaluació gratuïta",
@@ -29,7 +29,7 @@
     },
     {
       "id": "casos-uso",
-      "label": "Casos d'ús"
+      "label": "Situacions habituals"
     },
     {
       "id": "faq",
@@ -72,7 +72,7 @@
         },
         {
           "title": "Sessió d'assessorament tècnic",
-          "body": "Realitzem videotrucada privada on abordem els teus dubtes de forma estructurada. Expliquem normativa aplicable, criteris DGT rellevants, interpretació de casos similars i recomanacions tècniques per a la teva situació específica. Sessió 100% enfocada en aspectes fiscals, no en decisions d'inversió."
+          "body": "Realitzem videotrucada privada on abordem els teus dubtes de forma estructurada. Expliquem normativa aplicable, criteris DGT rellevants, interpretació de casos similars i recomanacions tècniques per a la teva situació específica. La sessió se centra només en aspectes fiscals, mai en decisions d’inversió."
         },
         {
           "title": "Lliurament de resum i seguiment",
@@ -93,19 +93,19 @@
     },
     {
       "id": "casos-uso",
-      "h2": "Casos d'ús",
+      "h2": "Situacions habituals",
       "items": [
         {
-          "title": "Validació d'informe automàtic abans de presentar",
-          "body": "Client havia generat informe fiscal amb Koinly, però tenia dubtes sobre si la classificació d'operacions DeFi era correcta segons criteris espanyols. Va enviar l'informe per revisió prèvia. En sessió de 90 minuts, vam identificar diversos errors: swaps classificats com no imposables (error), staking rewards sense declarar com rendiments, i duplicats per transferències internes. Vam recomanar correccions específiques i criteris DGT aplicables. Client va corregir informe i va presentar amb confiança."
+          "title": "Revisar un informe automàtic abans de presentar-lo",
+          "body": "Tens un informe de Koinly o similar i dubtes que la classificació de les teves operacions DeFi sigui correcta segons els criteris espanyols. En una sessió el revisem i assenyalem els errors habituals —swaps tractats com a no imposables, recompenses d’staking sense declarar, transferències internes duplicades— amb el criteri de la DGT que s’aplica en cada cas."
         },
         {
-          "title": "Resposta a requeriment de l'AEAT",
-          "body": "Client va rebre requeriment d'Hisenda sol·licitant justificació d'operacions en criptomonedes declarades en IRPF. Necessitava entendre quina documentació aportar i com estructurar resposta. En sessió, vam revisar el requeriment, vam identificar quines operacions qüestionaven, vam preparar estructura de resposta amb detall transaccional, justificació de valoracions i referències normatives. Client va aportar documentació segons guia proporcionada. Requeriment tancat sense incidències."
+          "title": "Entendre un requeriment de l’AEAT",
+          "body": "T’ha arribat un requeriment i no saps quina documentació aportar ni com ordenar la resposta. A la sessió revisem quines operacions es qüestionen, quin detall transaccional cal i com justificar les valoracions. Si el cas demana alguna cosa més que orientació, t’ho diem i passa a litigació fiscal."
         },
         {
-          "title": "Dubte sobre obligació de presentar model 721",
-          "body": "Client amb criptomonedes en exchanges estrangers, dubtava si havia de presentar model 721 o no aplicava al seu cas. Sessió de 60 minuts on vam explicar llindars del model 721, què es considera saldo a l'estranger segons AEAT, diferències amb model 714, i vam simular el seu cas concret. Conclusió: sí havia de presentar 721. L'orientem sobre com complimentar-lo correctament i terminis aplicables."
+          "title": "Saber si has de presentar el model 721",
+          "body": "Tens criptomonedes en exchanges estrangers i no saps si t’afecta el model 721. Repassem el llindar de 50.000 €, què compta com a saldo custodiat fora d’Espanya, en què es diferencia del model 714 i quin termini tens, aplicat als teus saldos reals."
         }
       ]
     },
@@ -131,7 +131,7 @@
         },
         {
           "q": "Puc contractar diverses sessions si tinc un cas complex?",
-          "a": "Sí. Oferim packs de sessions amb descompte si preveus necessitar seguiment continu. També pots reservar sessions individuals segons necessitat. Si el teu cas és molt complex i requereix anàlisi profunda de dades o preparació fiscal completa, probablement et convingui més el nostre servei de Liquidacions Fiscals en lloc de múltiples sessions d'assessoria."
+          "a": "Sí. Oferim packs de sessions amb descompte si preveus necessitar seguiment continu. També pots reservar sessions individuals segons necessitat. Si el teu cas és molt complex i requereix anàlisi profunda de dades o preparació fiscal completa, probablement et convingui més el nostre servei de Declaració de la renda cripto en lloc de múltiples sessions d'assessoria."
         },
         {
           "q": "Quines garanties oferiu sobre les recomanacions fiscals que doneu?",
@@ -168,7 +168,7 @@
     }
   ],
   "seo": {
-    "title": "Assessoria Fiscal Especialitzada en Criptoactius | Cleriontax",
+    "title": "Assessor fiscal de criptomonedes: assessoria especialitzada | Cleriontax",
     "description": "Sessions tècniques 1:1 sobre fiscalitat crypto. Dubtes sobre models AEAT, requeriments d'Hisenda i compliment normatiu. Sense assessorament d'inversió.",
     "keywords": [
       "assessoria fiscal criptomonedes",
@@ -183,7 +183,7 @@
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Assessoria Fiscal Especialitzada en Criptoactius",
+    "name": "Assessoria fiscal de criptomonedes",
     "serviceType": "Consultoria Fiscal Tècnica per a Inversors en Criptomonedes",
     "provider": {
       "@type": "Organization",

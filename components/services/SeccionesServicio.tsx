@@ -45,7 +45,15 @@ export interface Seccion {
   columnas?: Columna[];
   formas?: PasoForma[];
   cita?: { texto: string; pie?: string; forma?: NombreForma };
-  tabla?: { titulo?: string; periodo?: string; filas: FilaDato[]; criterio: string };
+  tabla?: {
+    titulo?: string;
+    periodo?: string;
+    filas: FilaDato[];
+    criterio: string;
+    columnaConcepto?: string;
+    columnaValor?: string;
+    pie?: string;
+  };
   /** Solo en la sección de cierre, que monta la página aparte. */
   button?: { label: string; href: string };
 }

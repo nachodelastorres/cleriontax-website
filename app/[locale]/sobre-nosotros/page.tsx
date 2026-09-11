@@ -133,22 +133,6 @@ export default async function SobreNosotrosPage({ params }: Props) {
         </Container>
       </section>
 
-      {/* SEO Content Section - Hidden but crawlable */}
-      <section className="sr-only" aria-label="Información adicional sobre Cleriontax">
-        <Container>
-          <h2>{t('seoHidden.title')}</h2>
-          <p>{t('seoHidden.paragraph1')}</p>
-          <h3>{t('seoHidden.sectionTitle')}</h3>
-          <p>{t('seoHidden.paragraph2')}</p>
-          <h3>{t('seoHidden.teamTitle')}</h3>
-          <ul>
-            {(t.raw('seoHidden.teamItems') as string[]).map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </Container>
-      </section>
-
       {/* Individual Services Showcase */}
       <IndividualServicesShowcase />
 
