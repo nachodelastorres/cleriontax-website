@@ -115,7 +115,7 @@ export default function Footer() {
                     href="mailto:info@cleriontax.com"
                     className="flex items-center space-x-2 text-sm text-niebla transition-colors hover:text-blanco group"
                   >
-                    <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                    <Mail className="h-4 w-4" />
                     <span>info@cleriontax.com</span>
                   </a>
                 </li>
@@ -126,7 +126,7 @@ export default function Footer() {
                     rel="noopener noreferrer nofollow"
                     className="flex items-center space-x-2 text-sm text-niebla transition-colors hover:text-blanco group"
                   >
-                    <Phone className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                    <Phone className="h-4 w-4" />
                     <span>+34 663 482 301</span>
                   </a>
                 </li>
@@ -138,7 +138,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-sm text-niebla transition-colors hover:text-blanco group"
                   >
-                    <Linkedin className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                    <Linkedin className="h-4 w-4" />
                     <span>{tCommon('linkedin')}</span>
                   </a>
                 </li>

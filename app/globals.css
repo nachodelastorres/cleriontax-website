@@ -78,27 +78,6 @@
     max-width: 72ch;
   }
 
-  /*
-   * §12 — Movimiento: una sola animación autorizada, los cuatro cuadrantes
-   * entrando a su posición al cargar. Nunca en bucle ni al pasar el ratón.
-   * Las entradas por scroll pendientes de retirar (fase 02) usan todavía esta
-   * utilidad; se elimina con ellas.
-   */
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-fade-in {
-    animation: fade-in 0.8s ease-out;
-  }
-
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

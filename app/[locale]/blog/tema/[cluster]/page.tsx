@@ -123,7 +123,7 @@ export default async function ClusterPage({ params }: Props) {
           {/* Back Link */}
           <Link
             href={`/${locale}/blog`}
-            className="inline-flex items-center gap-2 text-azul hover:text-rojo transition-colors mb-4 animate-fade-in"
+            className="inline-flex items-center gap-2 text-azul hover:text-rojo transition-colors mb-4"
             style={{ animationDelay: '0.05s', animationFillMode: 'both' }}
           >
             <ArrowLeft className="w-4 h-4" />
@@ -132,7 +132,7 @@ export default async function ClusterPage({ params }: Props) {
 
           {/* Badge with Cluster Icon */}
           <div
-            className="inline-flex flex-col items-center gap-4 animate-fade-in"
+            className="inline-flex flex-col items-center gap-4"
             style={{ animationDelay: '0.1s', animationFillMode: 'both' }}
           >
             <div className="flex items-center gap-3">
@@ -148,7 +148,7 @@ export default async function ClusterPage({ params }: Props) {
 
           {/* Main Title (H1) */}
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl animate-fade-in"
+            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl"
             style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
           >
             {clusterName}
@@ -156,7 +156,7 @@ export default async function ClusterPage({ params }: Props) {
 
           {/* Subtitle/Description */}
           <p
-            className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed animate-fade-in"
+            className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed"
             style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
           >
             {clusterDescription}
@@ -164,7 +164,7 @@ export default async function ClusterPage({ params }: Props) {
 
           {/* Stats */}
           <div
-            className="flex flex-wrap justify-center gap-6 pt-4 animate-fade-in"
+            className="flex flex-wrap justify-center gap-6 pt-4"
             style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
           >
             <div className="flex items-center gap-3 bg-blanco px-6 py-3 transition- duration-300">
@@ -234,7 +234,7 @@ export default async function ClusterPage({ params }: Props) {
  font-medium transition-all duration-200
  ${colorClass}
  ${isHighlight ? 'text-base' : isMedium ? 'text-sm' : 'text-xs'}
- hover:scale-105  cursor-default
+   cursor-default
  `}
                   >
                     {keyword}

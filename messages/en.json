@@ -107,11 +107,6 @@
       "litigationTitle": "Crypto tax litigation",
       "litigationExcerpt": "Defence against AEAT information requests, reviews, audits and penalties. We respond within the deadline and build the documentary and on-chain evidence."
     },
-    "trustIndicators": {
-      "freeAnalysis": "Free analysis 24-48h",
-      "certifiedAdvisors": "Certified tax advisors",
-      "supportedExchanges": "50+ supported exchanges"
-    },
     "process": {
       "title": "How we work with you",
       "subtitle": "A transparent process from start to finish. You’ll know exactly what to expect at each stage.",
@@ -147,49 +142,6 @@
           "time": "Ongoing"
         }
       }
-    },
-    "offerings": {
-      "title": "What tax services we offer",
-      "subtitle": "Comprehensive coverage for all your tax needs related to digital and traditional investments",
-      "items": {
-        "dataAnalysis": {
-          "number": "01",
-          "title": "Data Analysis and Reconciliation",
-          "description": "We process transactions from over 50 different exchanges and blockchains. Automatic reconciliation, duplicate detection, data cleaning, and complete traceability of each transaction.",
-          "keywords": "exchanges, wallets, blockchain, tax data"
-        },
-        "taxCalculations": {
-          "number": "02",
-          "title": "Certified Tax Calculations",
-          "description": "The FIFO rule for capital gains and losses, calculation of investment income (staking, lending) and preparation of forms 100, 721 and 714, reviewed transaction by transaction.",
-          "keywords": "FIFO, gains, losses, income tax, form 100"
-        },
-        "optimization": {
-          "number": "03",
-          "title": "Tax planning",
-          "description": "Loss offsetting and tax planning for disposals and future tax years, always within the current legal framework and without recommending what to buy or sell.",
-          "keywords": "tax planning, loss offsetting"
-        },
-        "advisory": {
-          "number": "04",
-          "title": "Ongoing Tax Advisory",
-          "description": "Review by licensed tax advisors specialized in crypto assets. Support during submission to AEAT. Monitoring of regulatory changes and DGT rulings.",
-          "keywords": "tax advisor, AEAT, crypto regulation"
-        }
-      }
-    },
-    "inclusions": {
-      "title": "What our tax service includes",
-      "items": {
-        "dataProcessing": "Data reconciliation from all your exchanges, wallets, and brokers",
-        "calculations": "Certified calculation of gains, losses, and returns",
-        "models": "Generation of official forms (100, 720, 721) ready to submit",
-        "review": "Mandatory review by a licensed tax advisor",
-        "report": "Detailed and auditable tax report with full traceability",
-        "session": "Online review session to resolve questions",
-        "support": "Support during Income Tax season (April–June)",
-        "updates": "Updates if post-delivery errors are detected"
-      }
     }
   },
   "about": {
@@ -220,21 +172,7 @@
       "title": "Where Traditional Tax Advisory Meets Technological Innovation",
       "subtitle": "We are the bridge between two worlds: certified tax expertise and next-generation data analysis. Cleriontax combines the best of both to deliver an unprecedented tax service.",
       "cta": "Meet our team",
-      "tagline": "Tax Expertise × Technological Innovation",
-      "stats": {
-        "experience": {
-          "value": "500+",
-          "label": "Investors served"
-        },
-        "transactions": {
-          "value": "1M+",
-          "label": "Transactions analyzed"
-        },
-        "accuracy": {
-          "value": "100%",
-          "label": "Calculation accuracy"
-        }
-      }
+      "tagline": "Tax Expertise × Technological Innovation"
     },
     "duality": {
       "title": "The Perfect Combination: Advisory + Technology",
@@ -264,63 +202,6 @@
         ]
       }
     },
-    "methodology": {
-      "title": "Hybrid Methodology: The Best of Both Worlds",
-      "subtitle": "We combine traditional tax rigor with modern technological efficiency",
-      "steps": {
-        "automation": {
-          "number": "01",
-          "title": "Smart Automation",
-          "description": "Our systems automatically process your transactions, applying algorithms for data cleaning, duplicate detection, and cross-platform reconciliation. We minimize human error to the absolute minimum.",
-          "tech": "Technology"
-        },
-        "validation": {
-          "number": "02",
-          "title": "Expert Tax Validation",
-          "description": "Each automated result is reviewed by our tax advisors. We verify regulatory interpretation, correct application of DGT criteria, and fiscal consistency of the final outcome.",
-          "tech": "Tax Advisory"
-        },
-        "continuous": {
-          "number": "03",
-          "title": "Continuous Improvement",
-          "description": "Each case helps us refine our algorithms and processes. Feedback from the tax team fuels technological improvements. Constant innovation without losing professional rigor.",
-          "tech": "Hybrid"
-        }
-      }
-    },
-    "why": {
-      "title": "Why We’re Different",
-      "subtitle": "We’re not a traditional advisory firm nor a tech startup. We are the necessary evolution of tax services.",
-      "items": {
-        "noOldSchool": {
-          "title": "Goodbye to Obsolete Processes",
-          "description": "No more manual spreadsheets prone to error. No more slow and opaque workflows. We use modern technology to do in hours what others take weeks to complete — without sacrificing precision.",
-          "keywords": "tax automation, financial technology, modern processes"
-        },
-        "noBlackBox": {
-          "title": "Total Transparency, No Black Boxes",
-          "description": "Unlike generic tax software, every calculation is supervised by human experts. We don’t blindly trust algorithms. Every result is validated by licensed professionals.",
-          "keywords": "expert tax advisor, professional validation, transparency"
-        },
-        "speed": {
-          "title": "Speed Without Compromising Quality",
-          "description": "We automate what can be automated (data processing, math calculations, report generation) so our advisors can focus on what matters most: regulatory interpretation and tax strategy.",
-          "keywords": "fast service, efficiency, expert analysis"
-        },
-        "scalable": {
-          "title": "Scalable to Any Volume",
-          "description": "Whether you have 50 or 50,000 transactions, our technological infrastructure scales without losing precision. The same tax rigor regardless of volume.",
-          "keywords": "scalability, high volume, transaction-by-transaction review"
-        }
-      }
-    },
-    "team": {
-      "title": "A Unique Multidisciplinary Team",
-      "fiscal": "Licensed Tax Advisors",
-      "tech": "Data Engineers",
-      "analysts": "Blockchain Analysts",
-      "developers": "Full Stack Developers"
-    },
     "values": {
       "title": "Our Principles",
       "innovation": {
@@ -345,11 +226,6 @@
       "title": "Need help with your cryptocurrency taxes?",
       "subtitle": "Our team of certified tax advisors specialized in blockchain will help you correctly declare your crypto investments. Response in less than 24 hours.",
       "cta": "Request quote"
-    },
-    "trustIndicators": {
-      "freeAnalysis": "Free analysis 24-48h",
-      "certifiedAdvisors": "Certified tax advisors",
-      "supportedExchanges": "50+ supported exchanges"
     },
     "form": {
       "name": "Full name",
@@ -442,13 +318,20 @@
     "blog": {
       "title": "Taxation and Investment Blog | Crypto, Stocks, and Data Analysis Guides | Cleriontax",
       "description": "Guides on crypto and investment taxation in Spain with worked numerical examples: personal income tax, forms 100, 714 and 721, the FIFO rule, DeFi, loss offsetting and AEAT rules."
+    },
+    "site": {
+      "title": "Cleriontax · Crypto tax advisory in Spain",
+      "description": "Crypto tax advisory in Spain: tax reports reviewed transaction by transaction, income tax returns, form 721 and defence before the AEAT.",
+      "keywords": [
+        "crypto tax advisor spain",
+        "crypto tax report spain",
+        "declare crypto spain",
+        "form 721 crypto",
+        "AEAT crypto request"
+      ]
     }
   },
   "common": {
-    "included": "Included",
-    "notIncluded": "Not included",
-    "popular": "Most popular",
-    "unlimited": "Unlimited",
     "languages": {
       "es": "Spanish",
       "en": "English",
@@ -459,9 +342,6 @@
       "linkedin": "LinkedIn"
     },
     "escribirWhatsapp": "Message us on WhatsApp"
-  },
-  "serviceInclusions": {
-    "allInclude": "All services include review by a licensed tax advisor"
   },
   "blog": {
     "hero": {
@@ -855,208 +735,6 @@
     "seoText": "Tax advisory specialised in crypto, DeFi and complex portfolios. Tax reports with the source and criterion behind every figure."
   },
   "servicesPages": {
-    "hub": {
-      "title": "Tax Advisory and Data Analysis Services for Investors",
-      "slug": "servicios",
-      "excerpt": "Comprehensive data analysis and tax solutions for complex investment portfolios: cryptocurrencies, stocks, and DeFi. Data engineering applied to tax compliance.",
-      "hero": {
-        "h1": "Tax Advisory and Data Analysis Services",
-        "subheading": "We transform complex investment portfolios into precise, traceable tax reports ready to file with the AEAT. We combine data engineering with tax expertise to provide you with absolute clarity.",
-        "cta": {
-          "label": "Request a free evaluation",
-          "href": "/contacto"
-        }
-      },
-      "toc": [
-        {
-          "id": "intro",
-          "label": "What we do"
-        },
-        {
-          "id": "servicios",
-          "label": "Our services"
-        },
-        {
-          "id": "como-trabajamos",
-          "label": "How we work"
-        },
-        {
-          "id": "para-quien",
-          "label": "Who we work with"
-        },
-        {
-          "id": "faq",
-          "label": "Frequently asked questions"
-        },
-        {
-          "id": "cta",
-          "label": "Let’s talk about your case"
-        }
-      ],
-      "sections": [
-        {
-          "id": "intro",
-          "h2": "What we do",
-          "body": "At Cleriontax we specialize in two critical areas for investors with complex portfolios: financial data analysis and tax engineering. We work with investors operating across multiple platforms, exchanges, on-chain wallets and DeFi protocols, who need to consolidate thousands of transactions into verifiable tax reports compatible with the AEAT. Our approach combines advanced data processing technology with deep knowledge of Spanish tax regulations, applying FIFO, transaction classification and full traceability in every report we produce. We are not a generalist tax agency nor an automatic software: we are specialists at solving tax complexity through applied data engineering."
-        },
-        {
-          "id": "servicios",
-          "h2": "Our services",
-          "body": "We offer four specialized services designed to cover the different needs investors with high-complexity portfolios face. Each service adapts to the sophistication of your portfolio and the level of automation you require.",
-          "subsections": [
-            {
-              "title": "Analysis of Complex Investment Portfolios",
-              "body": "For investors with multiple data sources, hundreds of thousands of transactions and assets scattered across exchanges, brokers and blockchains. We integrate data from 50 or more platforms, apply advanced cleaning, reconciliation of duplicated transactions, and generate consolidated reports of performance, balances and operations. This service is essential if you operate with DeFi, multichain staking, airdrops or any decentralized investment structure. It includes data modeling, cross-validation, custom exports and full documentation for audits or tax requirements.",
-              "link": {
-                "label": "View service details →",
-                "href": "/servicios/informe-fiscal-criptomonedas"
-              }
-            },
-            {
-              "title": "Tax Settlements and AEAT Forms",
-              "body": "Complete preparation of your tax obligations: calculation of capital gains and losses using FIFO, investment income, tax scenario simulations and generation of forms 100, 721 and 714. We work with you to optimize your declaration within the legal framework, applying DGT criteria and current regulations. This service includes a full dossier with supporting documentation, justification of each calculation and review by certified tax advisors. Ideal if you have complex operations in cryptocurrencies, international stocks or multilayer tax structures.",
-              "link": {
-                "label": "View service details →",
-                "href": "/servicios/declarar-criptomonedas"
-              }
-            },
-            {
-              "title": "Real-Time Portfolio Tracking",
-              "body": "We connect your wallets and exchange accounts to tracking tools like CoinTracking to provide continuous visibility of your portfolio. You receive real-time dashboards, configurable alerts, consolidated balances and historical comparisons. This service is aimed at less complex portfolios that don't require advanced data engineering but do need constant monitoring and automated reporting. If your portfolio exceeds a certain complexity level, we will recommend our portfolio analysis service instead.",
-              "link": {
-                "label": "View service details →",
-                "href": "/servicios/asesoria-fiscal-criptomonedas"
-              }
-            },
-            {
-              "title": "Specialized Tax Advisory",
-              "body": "Personalized 1:1 sessions with our tax team to resolve specific questions about filing forms, classification criteria, regulatory compliance and report structure. We do not offer investment advice or recommendations on which assets to buy or sell. Our focus is technical and tax-oriented: we help you interpret regulations, prepare documentation for AEAT requirements and understand how to correctly apply tax criteria to your specific case. Includes document review, technical Q&A and post-session follow-up.",
-              "link": {
-                "label": "View service details →",
-                "href": "/servicios/asesoria-fiscal-criptomonedas"
-              }
-            }
-          ]
-        },
-        {
-          "id": "como-trabajamos",
-          "h2": "How we work",
-          "steps": [
-            {
-              "title": "Free initial evaluation",
-              "body": "Send us information about your platforms, approximate transaction volume and types of assets. We analyze your case within 24–48 hours and send you an initial diagnosis with no obligation. If your case requires advanced data analysis or complex tax preparation, we recommend the most suitable service."
-            },
-            {
-              "title": "Scope and pricing definition",
-              "body": "You receive a proposal with a fixed price, specific deliverables, execution timeline and working methodology. No surprises or hidden costs. If you accept, we begin immediately with the collection and consolidation of your data."
-            },
-            {
-              "title": "Execution and validation",
-              "body": "We process your data applying cleaning, reconciliation and tax classification. Each operation is manually reviewed when necessary. We generate intermediate reports for joint validation before delivering the final report."
-            },
-            {
-              "title": "Delivery and ongoing support",
-              "body": "You receive your complete tax report, ready-to-file models and a review session to answer any questions. We offer post-delivery support throughout the entire tax season and for any request from the Spanish Tax Agency."
-            }
-          ]
-        },
-        {
-          "id": "para-quien",
-          "h2": "Who we work with",
-          "bullets": [
-            "Investors with cryptocurrency portfolios across multiple exchanges, wallets and DeFi protocols who need to consolidate dispersed data into a single, traceable tax report.",
-            "Active traders with thousands of annual operations in stocks, futures, options or crypto assets requiring precise FIFO calculations and auditable documentation.",
-            "International investors with foreign assets who must comply with forms 720, 721 and 714 and need technical advice on fiscal transparency regulations.",
-            "Professionals and companies that manage treasury in cryptocurrencies, perform cross-border payments or participate in DeFi protocols as part of their economic activity.",
-            "Any investor with high tax complexity who has received incorrect automatic reports from third-party software and needs a professional review with real tax criteria."
-          ]
-        },
-        {
-          "id": "faq",
-          "h2": "Frequently asked questions",
-          "items": [
-            {
-              "q": "What differentiates your service from automatic software like Koinly or CoinTracking?",
-              "a": "Automatic software applies generic algorithms that do not account for the specificities of Spanish tax regulations, do not properly reconcile internal wallet movements and generate errors in the classification of complex DeFi operations. We apply human tax criteria, manual review of critical operations and personalized data modeling for each case. Our approach combines technology with tax expertise, ensuring traceability, accuracy and real regulatory compliance."
-            },
-            {
-              "q": "Do you only work with cryptocurrencies or also with stocks and other assets?",
-              "a": "We work with any type of financial asset: cryptocurrencies, stocks, ETFs, futures, options, bonds, investment funds and alternative assets. Our specialization lies in the complexity of data analysis and tax engineering, not in a specific asset class. If you have a mixed portfolio with multiple data sources, we can consolidate it fully."
-            },
-            {
-              "q": "How long does the full process take from first contact to delivery of the tax report?",
-              "a": "It depends on complexity. Simple cases with few platforms and moderate volume can be completed in 5–7 business days. Complex portfolios with more than 50 data sources, hundreds of thousands of transactions and DeFi operations may require 2 to 4 weeks. In the initial evaluation we will give you a precise timeline based on your specific case."
-            },
-            {
-              "q": "Do you offer advice on which cryptocurrencies to buy or how to optimize my investment strategy?",
-              "a": "No. We do not offer investment advice or recommendations on which assets to buy, sell or hold. Our service is strictly technical-tax: financial data analysis, calculation of tax obligations, preparation of AEAT forms and compliance guidance. For investment decisions, we recommend consulting an independent financial advisor."
-            },
-            {
-              "q": "What guarantees do you offer on the accuracy of tax calculations?",
-              "a": "All our tax reports are reviewed by certified tax advisors specialized in crypto assets. We apply certified FIFO methodology, full traceability of every calculation and auditable supporting documentation. If we detect errors after delivery, we correct them at no additional cost. Each report includes technical justification and applicable regulatory references."
-            },
-            {
-              "q": "How do you guarantee the confidentiality and security of my financial data?",
-              "a": "We process all data in our own secure environments without uploading it to third-party cloud services. We apply end-to-end encryption, role-restricted access and strict data retention policies. We sign confidentiality agreements with every client and comply with GDPR. Your data is deleted from our systems once the legally required retention period ends."
-            }
-          ]
-        },
-        {
-          "id": "cta",
-          "h2": "Shall we talk about your case?",
-          "body": "Tell us about your portfolio: the platforms you use, approximate number of operations, asset types and any relevant tax considerations. We send you an initial evaluation within 24–48 hours, with no commitment. If you have more than 10,000 annual operations, multiple data sources or have received automatic reports with errors, we can help you.",
-          "button": {
-            "label": "Request a free evaluation",
-            "href": "/contacto"
-          }
-        }
-      ],
-      "internal_links": [
-        {
-          "label": "Portfolio Analysis",
-          "href": "/servicios/informe-fiscal-criptomonedas"
-        },
-        {
-          "label": "Tax Settlements",
-          "href": "/servicios/declarar-criptomonedas"
-        },
-        {
-          "label": "Portfolio Tracking",
-          "href": "/servicios/asesoria-fiscal-criptomonedas"
-        },
-        {
-          "label": "Tax Advisory",
-          "href": "/servicios/asesoria-fiscal-criptomonedas"
-        }
-      ],
-      "seo": {
-        "title": "Tax Advisory and Data Analysis Services | Cleriontax",
-        "description": "Analysis of complex portfolios, AEAT tax settlements, real-time tracking and specialized advisory. Data engineering applied to tax compliance.",
-        "keywords": [
-          "crypto tax advisory",
-          "financial data analysis",
-          "AEAT tax settlement",
-          "form 721",
-          "form 714",
-          "FIFO cryptoassets",
-          "DeFi taxation",
-          "verifiable tax reports"
-        ],
-        "canonical": "https://cleriontax.com/servicios"
-      },
-      "schema_org": {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Tax Advisory and Data Analysis Services",
-        "serviceType": "Tax Advisory and Financial Data Analysis",
-        "provider": {
-          "@type": "Organization",
-          "name": "Cleriontax"
-        },
-        "areaServed": "Spain",
-        "description": "Specialized financial data analysis and tax advisory services for investors with complex portfolios in cryptocurrencies, stocks and digital assets. Includes portfolio analysis, tax settlements, real-time tracking and specialized advisory."
-      }
-    },
     "informeFiscalCriptomonedas": {
       "title": "Crypto tax report",
       "slug": "informe-fiscal-criptomonedas",

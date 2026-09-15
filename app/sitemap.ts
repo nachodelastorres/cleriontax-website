@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
 import clustersConfig from '@/messages/blog-posts/clusters-config.json';
 import { SITE_URL, LOCALES } from '@/lib/site';
+import { SITUACIONES_VIVAS } from '@/lib/situaciones';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = SITE_URL;
@@ -26,6 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     '',
     '/servicios',
+    '/situaciones',
     '/metodo',
     '/despachos',
     '/sobre-nosotros',
@@ -33,6 +35,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/blog',
     '/blog/clusters',
   ];
+
+  // Páginas legales: se indexan, pero con prioridad baja.
+  const legalPages = ['/aviso-legal', '/privacidad', '/cookies'];
 
   // Generar URLs para todas las páginas estáticas en todos los idiomas
   const staticUrls: MetadataRoute.Sitemap = [];
@@ -49,6 +54,52 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             es: `${baseUrl}/es${page}`,
             en: `${baseUrl}/en${page}`,
             ca: `${baseUrl}/ca${page}`,
+          },
+        },
+      });
+    });
+  });
+
+  const legalUrls: MetadataRoute.Sitemap = [];
+
+  locales.forEach(locale => {
+    legalPages.forEach(page => {
+      legalUrls.push({
+        url: `${baseUrl}/${locale}${page}`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0.3,
+        alternates: {
+          languages: {
+            es: `${baseUrl}/es${page}`,
+            en: `${baseUrl}/en${page}`,
+            ca: `${baseUrl}/ca${page}`,
+          },
+        },
+      });
+    });
+  });
+
+  /*
+   * Capa 2 — las situaciones. Solo las que tienen contenido escrito:
+   * SITUACIONES_VIVAS es lo que existe hoy, no el registro completo, para no
+   * anunciar en el sitemap una landing que todavía no está redactada.
+   */
+  const situacionUrls: MetadataRoute.Sitemap = [];
+
+  locales.forEach(locale => {
+    SITUACIONES_VIVAS.forEach(situacion => {
+      situacionUrls.push({
+        url: `${baseUrl}/${locale}/situaciones/${situacion.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        // Los casos con plazo administrativo son la entrada de más valor.
+        priority: situacion.urgente ? 0.9 : 0.8,
+        alternates: {
+          languages: {
+            es: `${baseUrl}/es/situaciones/${situacion.slug}`,
+            en: `${baseUrl}/en/situaciones/${situacion.slug}`,
+            ca: `${baseUrl}/ca/situaciones/${situacion.slug}`,
           },
         },
       });
@@ -121,5 +172,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
-  return [...staticUrls, ...serviceUrls, ...clusterUrls, ...blogUrls];
+  return [
+    ...staticUrls,
+    ...serviceUrls,
+    ...situacionUrls,
+    ...clusterUrls,
+    ...blogUrls,
+    ...legalUrls,
+  ];
 }

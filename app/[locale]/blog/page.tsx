@@ -128,7 +128,7 @@ export default async function BlogPage({ params }: Props) {
                       src={latestPost.image.url}
                       alt={latestPost.image.alt}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
@@ -319,7 +319,7 @@ export default async function BlogPage({ params }: Props) {
                     <span className="text-sm font-semibold text-azul group-hover:text-rojo transition-colors">
                       {t('clusters.viewAll')}
                     </span>
-                    <ArrowRight className="w-5 h-5 text-azul group-hover:text-rojo group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-5 h-5 text-azul group-hover:text-rojo transition-all" />
                   </Link>
                 </div>
               );

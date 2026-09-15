@@ -110,7 +110,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
                 return (
                   <div key={key} className="group">
                     <div className="bg-blanco p-8 transition-all duration-300 h-full border border-niebla hover:border-rojo/30">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-blanco mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-blanco mb-6">
                         <Icon className="w-8 h-8 text-rojo" strokeWidth={2} />
                       </div>
                       <h3 className="text-2xl md:text-3xl font-bold text-azul mb-4">

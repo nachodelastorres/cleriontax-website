@@ -1,3 +1,5 @@
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
@@ -5,6 +7,14 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  /*
+   * Raíz del proyecto, explícita. Hay otro package-lock.json en el directorio
+   * del usuario y Turbopack estaba eligiéndolo como raíz del workspace, con
+   * el aviso correspondiente en cada arranque.
+   */
+  turbopack: {
+    root: dirname(fileURLToPath(import.meta.url)),
+  },
   async redirects() {
     return [
       // Redirección 301 para la URL antigua de asesoría fiscal

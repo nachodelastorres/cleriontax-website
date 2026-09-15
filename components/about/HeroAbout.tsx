@@ -32,7 +32,7 @@ export default function HeroAbout() {
 
         {/* Badge */}
         <div
-          className="inline-flex flex-col items-center gap-4 animate-fade-in"
+          className="inline-flex flex-col items-center gap-4"
           style={{ animationDelay: '0.1s', animationFillMode: 'both' }}
         >
           <span className="text-xs font-semibold text-azul tracking-wider uppercase">
@@ -43,7 +43,7 @@ export default function HeroAbout() {
 
         {/* Main Title (H1) */}
         <h1
-          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl animate-fade-in"
+          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl"
           style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
         >
           {t('title')}
@@ -51,7 +51,7 @@ export default function HeroAbout() {
 
         {/* Subtitle */}
         <p
-          className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed animate-fade-in"
+          className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed"
           style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
         >
           {t('subtitle')}
@@ -59,7 +59,7 @@ export default function HeroAbout() {
 
         {/* CTA Button */}
         <div
-          className="pt-4 animate-fade-in"
+          className="pt-4"
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
           <ButtonLink
@@ -69,7 +69,7 @@ export default function HeroAbout() {
             className="group"
           >
             {t('cta')}
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-5 w-5" />
           </ButtonLink>
         </div>
 
@@ -101,7 +101,7 @@ export default function HeroAbout() {
             transform: translateY(0);
           }
         }
-        .animate-fade-in {
+        . {
           animation: fade-in 0.8s ease-out;
         }
       `}</style>

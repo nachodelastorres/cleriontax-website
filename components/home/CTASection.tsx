@@ -41,7 +41,7 @@ export default function CTASection() {
               className="group"
             >
               {t('button')}
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="ml-2 h-5 w-5" />
             </ButtonLink>
           </div>
 

@@ -1,7 +1,7 @@
 import { Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CookieConsentWrapper from "@/components/cookies/CookieConsentWrapper";
@@ -39,17 +39,15 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
 
+  // Respaldo del sitio: solo se usa donde la página no define su propia
+  // metadata. Va traducido, igual que el resto (§19).
+  const t = await getTranslations({ locale, namespace: 'seo.site' });
+
   return {
     metadataBase: new URL(SITE_URL),
-    title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
-    description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
-    keywords: [
-      'fiscalidad criptomonedas',
-      'declaración fiscal cripto',
-      'asesor fiscal bitcoin',
-      'análisis datos fiscales',
-      'hacienda criptoactivos',
-    ],
+    title: t('title'),
+    description: t('description'),
+    keywords: t.raw('keywords') as string[],
     authors: [{ name: 'Cleriontax' }],
     icons: {
       icon: [
@@ -59,8 +57,8 @@ export async function generateMetadata({ params }: Props) {
       apple: '/images/logos/icono_fondo_transparente.png',
     },
     openGraph: {
-      title: 'Cleriontax - Asesoría Fiscal Criptomonedas',
-      description: 'Especialistas en fiscalidad de criptomonedas. Te ayudamos con tu declaración fiscal de Bitcoin, Ethereum y otros criptoactivos.',
+      title: t('title'),
+      description: t('description'),
       type: 'website',
       locale: locale,
       url: `${SITE_URL}/${locale}`,

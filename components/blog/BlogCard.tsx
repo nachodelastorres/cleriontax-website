@@ -43,7 +43,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             src={post.image.url}
             alt={post.image.alt}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-700"
+            className="object-cover"
             sizes={featured ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}
             quality={85}
           />
@@ -136,7 +136,7 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
 
             <div className="flex items-center gap-2 text-rojo font-semibold text-sm group-hover:gap-3 transition-all duration-300">
               <span>{t('readMore')}</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="w-4 h-4" />
             </div>
           </div>
         </div>

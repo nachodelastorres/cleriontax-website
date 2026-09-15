@@ -35,7 +35,7 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
 
         {/* Badge */}
         <div
-          className="inline-flex flex-col items-center gap-4 animate-fade-in"
+          className="inline-flex flex-col items-center gap-4"
           style={{ animationDelay: '0.1s', animationFillMode: 'both' }}
         >
           <span className="text-xs font-semibold text-azul tracking-wider uppercase">
@@ -46,7 +46,7 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
 
         {/* Main Title (H1) */}
         <h1
-          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl animate-fade-in"
+          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-azul leading-tight tracking-tight max-w-4xl"
           style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
         >
           {t('title')}
@@ -54,7 +54,7 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
 
         {/* Subtitle */}
         <p
-          className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed animate-fade-in"
+          className="text-lg md:text-xl text-pizarra max-w-3xl leading-relaxed"
           style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
         >
           {t('subtitle')}
@@ -62,7 +62,7 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
 
         {/* Stats */}
         <div
-          className="flex flex-wrap justify-center gap-8 pt-8 animate-fade-in"
+          className="flex flex-wrap justify-center gap-8 pt-8"
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
           <div className="flex items-center gap-4 bg-blanco p-4 transition- duration-300">
@@ -112,7 +112,7 @@ export default function BlogHero({ postsCount, categoriesCount }: BlogHeroProps)
             transform: translateY(0);
           }
         }
-        .animate-fade-in {
+        . {
           animation: fade-in 0.8s ease-out;
         }
       `}</style>

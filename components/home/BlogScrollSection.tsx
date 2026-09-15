@@ -61,7 +61,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                 className="group inline-flex items-center gap-2 px-6 py-3 bg-rojo text-blanco font-semibold hover:bg-rojo/90 transition-all duration-300"
               >
                 {t('viewAllArticles')}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                             src={post.image.url}
                             alt={post.image.alt}
                             fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="object-cover"
                           />
                           {/* Category badge */}
                           <div className="absolute top-4 left-4">
@@ -140,12 +140,12 @@ export default async function BlogScrollSection({ locale }: BlogScrollSectionPro
                           {/* CTA */}
                           <div className="inline-flex items-center gap-2 text-rojo font-semibold text-sm group-hover:gap-3 transition-all">
                             {t('readArticle')}
-                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            <ArrowRight className="w-4 h-4" />
                           </div>
                         </div>
 
                         {/* Bottom accent border */}
-                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-rojo transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-rojo" />
                       </article>
                     </Link>
                   );
