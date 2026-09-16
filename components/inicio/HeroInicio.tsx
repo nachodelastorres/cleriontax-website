@@ -23,7 +23,9 @@ export default async function HeroInicio({ locale }: { locale: string }) {
             Por encima de la escala del §11 (52 px): en la home el titular es
             la pieza, no acompaña a nada.
           */}
-          <h1 className="max-w-[17ch] text-hero text-blanco md:text-[60px] md:leading-[60px] lg:text-[68px] lg:leading-[68px] lg:tracking-[-0.045em]">
+          {/* Un peso por debajo del 800 de la escala: a este tamaño el 800
+              se empasta y el 700 respira. */}
+          <h1 className="max-w-[17ch] text-hero font-bold text-blanco md:text-[60px] md:leading-[60px] lg:text-[68px] lg:leading-[68px] lg:tracking-[-0.045em]">
             {t("titulo")}
           </h1>
 
