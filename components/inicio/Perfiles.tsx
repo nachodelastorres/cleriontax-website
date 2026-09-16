@@ -23,9 +23,9 @@ export default async function Perfiles({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "inicio.perfiles" });
 
   return (
-    <section className="bg-blanco">
+    <section className="bg-papel">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <Cabecera marca="01" titulo={t("titulo")} entrada={t("entrada")} />
+        <Cabecera marca="02" titulo={t("titulo")} entrada={t("entrada")} />
 
         <div className="grid gap-px border border-niebla bg-niebla sm:grid-cols-2 lg:grid-cols-4">
           {PERFILES.map((p) => {
@@ -36,7 +36,7 @@ export default async function Perfiles({ locale }: { locale: string }) {
                 key={p.id}
                 href={p.href}
                 className={`group flex flex-col p-7 transition-colors duration-200 ${
-                  oscuro ? "bg-azul hover:bg-azul/95" : "bg-blanco hover:bg-papel"
+                  oscuro ? "bg-azul hover:bg-azul/95" : "bg-blanco hover:bg-papel/70"
                 }`}
               >
                 <span

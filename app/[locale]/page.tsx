@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import HeroInicio from "@/components/inicio/HeroInicio";
+import ElijeTuCaso from "@/components/inicio/ElijeTuCaso";
 import Perfiles from "@/components/inicio/Perfiles";
 import LineasServicio from "@/components/inicio/LineasServicio";
 import MetodoDiagrama from "@/components/inicio/MetodoDiagrama";
@@ -33,11 +34,12 @@ export async function generateMetadata({ params }: Props) {
 }
 
 /**
- * Home — puerta de clasificación (plan, fase 05).
+ * Home.
  *
- * Primero, que quien llega señale su caso; después, quién es, qué hacemos,
- * cómo lo hacemos y qué recibe. Cada sección tiene una composición distinta:
- * pestañas, rejilla, índice, figura, documento, acordeón y lista asimétrica.
+ * Primero qué hacemos y qué se recibe; después, que quien llega señale su
+ * caso; y a partir de ahí quién es, cómo trabajamos y qué entregamos. Cada
+ * sección tiene una composición distinta: tres columnas, rejilla, índice,
+ * figura, documento, acordeón y lista asimétrica.
  */
 export default async function Home({ params }: Props) {
   const { locale } = await params;
@@ -73,6 +75,7 @@ export default async function Home({ params }: Props) {
       />
 
       <HeroInicio locale={locale} />
+      <ElijeTuCaso locale={locale} />
       <Perfiles locale={locale} />
       <LineasServicio locale={locale} />
       <MetodoDiagrama locale={locale} />

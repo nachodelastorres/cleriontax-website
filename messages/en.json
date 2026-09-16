@@ -1201,11 +1201,16 @@
   },
   "inicio": {
     "hero": {
-      "etiqueta": "Crypto tax advisory in Spain",
-      "titulo": "Your trading is unique. Your questions aren’t.",
-      "entrada": "A hundred thousand transactions on Solana, a portfolio spread across six exchanges or a three-year-old loss to offset. Almost everything comes down to three questions. Pick yours and we’ll show you how it gets solved.",
-      "firma": "Chartered tax judgement and data engineering, in the same team.",
-      "elige": "Pick your question",
+      "etiqueta": "Chartered tax judgement and data engineering",
+      "titulo": "Crypto tax advisory, transaction by transaction",
+      "entrada": "An automated report is the starting point, never the deliverable. We reconcile your exchanges, wallets and protocols, review by hand what software would settle with a default value, and write down where every figure comes from.",
+      "accion": "Start the diagnosis",
+      "secundaria": "See the method",
+      "firma": "Four service lines: tax report, crypto income tax return, litigation and advisory."
+    },
+    "clasificador": {
+      "titulo": "Which of these situations looks like yours?",
+      "entrada": "A hundred thousand transactions on Solana, a portfolio spread across six exchanges or a three-year-old loss to offset. Your trading is unique; your questions aren’t: almost all of them end up in these three.",
       "conPlazo": "deadline",
       "verTodas": "See all situations",
       "otraCosa": "None of these? Tell us about your trading"

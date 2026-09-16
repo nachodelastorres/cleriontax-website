@@ -1202,11 +1202,16 @@
   },
   "inicio": {
     "hero": {
-      "etiqueta": "Asesoría fiscal de criptomonedas",
-      "titulo": "Tu operativa es única. Tus preguntas, no.",
-      "entrada": "Cien mil transacciones en Solana, una cartera repartida en seis exchanges o una pérdida de hace tres años que compensar. Casi todo acaba en tres preguntas. Elige la tuya y te enseñamos cómo se resuelve.",
-      "firma": "Criterio fiscal colegiado e ingeniería de datos, en el mismo equipo.",
-      "elige": "Elige tu pregunta",
+      "etiqueta": "Criterio fiscal colegiado e ingeniería de datos",
+      "titulo": "Asesoría fiscal de criptomonedas, operación a operación",
+      "entrada": "Un informe automático es el punto de partida, nunca el entregable. Reconciliamos tus exchanges, wallets y protocolos, revisamos a mano lo que un programa resolvería con un valor por defecto y dejamos escrito de dónde sale cada cifra.",
+      "accion": "Empezar el diagnóstico",
+      "secundaria": "Ver el método",
+      "firma": "Cuatro líneas de servicio: informe fiscal, renta cripto, litigación y asesoría."
+    },
+    "clasificador": {
+      "titulo": "¿Cuál de estas situaciones se parece a la tuya?",
+      "entrada": "Cien mil transacciones en Solana, una cartera repartida en seis exchanges o una pérdida de hace tres años que compensar. Tu operativa es única; tus preguntas, no: casi todas acaban en estas tres.",
       "conPlazo": "con plazo",
       "verTodas": "Ver todas las situaciones",
       "otraCosa": "¿No encaja ninguna? Cuéntanos tu operativa"

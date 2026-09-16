@@ -1201,11 +1201,16 @@
   },
   "inicio": {
     "hero": {
-      "etiqueta": "Assessoria fiscal de criptomonedes",
-      "titulo": "La teva operativa és única. Les teves preguntes, no.",
-      "entrada": "Cent mil transaccions a Solana, una cartera repartida en sis exchanges o una pèrdua de fa tres anys per compensar. Gairebé tot acaba en tres preguntes. Tria la teva i t’ensenyem com es resol.",
-      "firma": "Criteri fiscal col·legiat i enginyeria de dades, en el mateix equip.",
-      "elige": "Tria la teva pregunta",
+      "etiqueta": "Criteri fiscal col·legiat i enginyeria de dades",
+      "titulo": "Assessoria fiscal de criptomonedes, operació a operació",
+      "entrada": "Un informe automàtic és el punt de partida, mai el lliurament. Conciliem els teus exchanges, wallets i protocols, revisem a mà el que un programa resoldria amb un valor per defecte i deixem escrit d’on surt cada xifra.",
+      "accion": "Començar el diagnòstic",
+      "secundaria": "Veure el mètode",
+      "firma": "Quatre línies de servei: informe fiscal, renda cripto, litigació i assessoria."
+    },
+    "clasificador": {
+      "titulo": "Quina d’aquestes situacions s’assembla a la teva?",
+      "entrada": "Cent mil transaccions a Solana, una cartera repartida en sis exchanges o una pèrdua de fa tres anys per compensar. La teva operativa és única; les teves preguntes, no: gairebé totes acaben en aquestes tres.",
       "conPlazo": "amb termini",
       "verTodas": "Veure totes les situacions",
       "otraCosa": "No encaixa cap? Explica’ns la teva operativa"

@@ -32,15 +32,22 @@ export default function SimboloAnimado({
       <style
         dangerouslySetInnerHTML={{
           __html: `
-@keyframes ct-entra-tl { from { transform: translate(-42%, -42%); opacity: 0 } to { transform: none; opacity: 1 } }
-@keyframes ct-entra-tr { from { transform: translate(42%, -42%);  opacity: 0 } to { transform: none; opacity: 1 } }
-@keyframes ct-entra-bl { from { transform: translate(-42%, 42%);  opacity: 0 } to { transform: none; opacity: 1 } }
-@keyframes ct-entra-br { from { transform: translate(42%, 42%);   opacity: 0 } to { transform: none; opacity: 1 } }
+/* Solo se mueve la posicion: la opacidad nunca entra en juego, para que el
+   simbolo se vea aunque la animacion no llegue a ejecutarse. */
+@keyframes ct-entra-tl { from { transform: translate(-42%, -42%) } to { transform: none } }
+@keyframes ct-entra-tr { from { transform: translate(42%, -42%) }  to { transform: none } }
+@keyframes ct-entra-bl { from { transform: translate(-42%, 42%) }  to { transform: none } }
+@keyframes ct-entra-br { from { transform: translate(42%, 42%) }   to { transform: none } }
 
+/*
+ * Las piezas parten de visibles: la animación solo desplaza, nunca atenúa.
+ * Antes arrancaban con opacity 0, así que si la animación no se ejecutaba
+ * —una captura, un motor sin animaciones, una hoja de estilo que no carga—
+ * el logotipo no aparecía nunca.
+ */
 .${id} .ct-q {
-  opacity: 0;
   animation-duration: 620ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.22,.61,.36,1);
 }
 .${id} .ct-tl { animation-name: ct-entra-tl; animation-delay: ${retraso}ms }
@@ -49,7 +56,7 @@ export default function SimboloAnimado({
 .${id} .ct-br { animation-name: ct-entra-br; animation-delay: ${retraso + 270}ms }
 
 @media (prefers-reduced-motion: reduce) {
-  .${id} .ct-q { animation: none; opacity: 1 }
+  .${id} .ct-q { animation: none }
 }
 `,
         }}

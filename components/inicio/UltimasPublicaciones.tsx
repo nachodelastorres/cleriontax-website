@@ -37,7 +37,7 @@ export default async function UltimasPublicaciones({ locale }: { locale: string 
     <section className="bg-blanco">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <Cabecera marca="06" titulo={t("titulo")} entrada={t("entrada")} />
+          <Cabecera marca="07" titulo={t("titulo")} entrada={t("entrada")} />
           <Link
             href="/blog"
             className="mb-9 inline-flex flex-none items-center gap-2 text-nota font-semibold text-azul underline-offset-4 hover:underline"

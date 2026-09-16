@@ -60,7 +60,7 @@ export default async function MetodoDiagrama({ locale }: { locale: string }) {
   return (
     <section className="bg-azul">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <Cabecera marca="03" titulo={t("titulo")} entrada={t("entrada")} oscuro />
+        <Cabecera marca="04" titulo={t("titulo")} entrada={t("entrada")} oscuro />
 
         <figure className="m-0 grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-14">
           {/* Izquierda — lo que llega, de longitudes distintas */}
