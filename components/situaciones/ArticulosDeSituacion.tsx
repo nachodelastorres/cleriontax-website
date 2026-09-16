@@ -49,7 +49,7 @@ export default async function ArticulosDeSituacion({
             href={`/${locale}/servicios/${situacion.servicio}`}
             className="group bg-papel p-8 transition-colors duration-200 hover:bg-blanco"
           >
-            <span className="font-mono text-dato text-pizarra">{t("resuelveEste")}</span>
+            <span className="font-semibold text-dato text-pizarra">{t("resuelveEste")}</span>
 
             <div className="mt-5 flex items-start gap-4">
               {Forma ? (
@@ -69,7 +69,7 @@ export default async function ArticulosDeSituacion({
 
           {/* Baja: los artículos que sostienen el tema. */}
           <div className="bg-blanco p-8">
-            <span className="font-mono text-dato text-pizarra">{t("paraEntenderlo")}</span>
+            <span className="font-semibold text-dato text-pizarra">{t("paraEntenderlo")}</span>
 
             <ul className="mt-5 grid gap-px bg-niebla">
               {articulos.map((a) => (
@@ -82,7 +82,7 @@ export default async function ArticulosDeSituacion({
                       {a.titulo}
                     </span>
                     {a.minutos ? (
-                      <span className="flex-none font-mono text-dato text-pizarra">
+                      <span className="flex-none font-semibold text-dato text-pizarra">
                         {a.minutos} min
                       </span>
                     ) : null}

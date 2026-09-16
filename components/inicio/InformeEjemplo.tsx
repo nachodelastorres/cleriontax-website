@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Angulo, Simbolo } from "@/components/brand/Formas";
 import { Cabecera } from "@/components/secciones/Bloques";
 import TablaDatos from "@/components/brand/TablaDatos";
-import ChipEstado from "@/components/brand/ChipEstado";
+import CifrasEstado from "@/components/brand/CifrasEstado";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { formatearNumero } from "@/lib/format";
 import { CONCILIADAS, REVISADAS_A_MANO } from "@/components/inicio/MetodoDiagrama";
@@ -44,20 +44,18 @@ export default async function InformeEjemplo({ locale }: { locale: string }) {
         {/* El documento, sobre Papel para que se lea como pieza aparte. */}
         <div className="bg-papel p-4 sm:p-8 lg:col-span-7 lg:p-10">
           <div className="border border-niebla bg-blanco p-5 sm:p-7">
-            <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-niebla pb-5">
-              <div className="flex items-center gap-3">
-                <Simbolo tam={28} />
-                <span className="font-mono text-dato text-pizarra">{t("periodo")}</span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <ChipEstado estado="conciliado">
-                  {formatearNumero(CONCILIADAS)} {t("chipConciliado")}
-                </ChipEstado>
-                <ChipEstado estado="revision">
-                  {REVISADAS_A_MANO} {t("chipRevision")}
-                </ChipEstado>
-              </div>
+            <div className="mb-6 flex items-center gap-3 border-b border-niebla pb-5">
+              <Simbolo tam={28} />
+              <span className="font-dato tabular-nums text-dato text-pizarra">{t("periodo")}</span>
             </div>
+
+            <CifrasEstado
+              className="mb-7 border border-niebla"
+              cifras={[
+                { valor: formatearNumero(CONCILIADAS), etiqueta: t("chipConciliado") },
+                { valor: formatearNumero(REVISADAS_A_MANO), etiqueta: t("chipRevision"), acento: true },
+              ]}
+            />
 
             <TablaDatos
               titulo={t("tablaTitulo")}

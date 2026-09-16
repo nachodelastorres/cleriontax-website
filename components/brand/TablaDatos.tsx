@@ -61,7 +61,7 @@ export default function TablaDatos({
         <figcaption className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
           <span className="text-subtitulo text-azul">{titulo}</span>
           {periodo ? (
-            <span className="font-mono text-dato text-pizarra">{periodo}</span>
+            <span className="font-dato tabular-nums text-dato text-pizarra">{periodo}</span>
           ) : null}
         </figcaption>
       ) : null}

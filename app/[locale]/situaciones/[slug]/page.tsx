@@ -138,7 +138,7 @@ export default async function SituacionPage({ params }: Props) {
         <section id="cierre" className="scroll-mt-20 bg-papel py-14 md:py-16">
           <div className="mx-auto max-w-5xl px-6">
             <div className="mb-8 grid grid-cols-[44px_1fr] gap-3">
-              <span className="pt-2 font-mono text-dato text-rojo">&rarr;</span>
+              <span className="pt-2 font-semibold text-dato text-rojo">&rarr;</span>
               <div>
                 <h2 className="text-seccion text-azul">{cierre.h2}</h2>
                 <p className="mt-4 max-w-[68ch] text-lectura text-pizarra">{cierre.body}</p>

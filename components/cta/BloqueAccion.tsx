@@ -54,7 +54,7 @@ export default function BloqueAccion({
       <div className="relative mx-auto max-w-5xl px-6">
         <div className="relative py-14 md:py-16 lg:w-[70%] lg:bg-azul lg:before:absolute lg:before:inset-y-0 lg:before:right-full lg:before:w-screen lg:before:bg-azul">
         {temperatura === "urgente" && plazo ? (
-          <p className="mb-4 inline-block border-l-2 border-rojo bg-rojo/10 px-3 py-1.5 font-mono text-dato text-blanco">
+          <p className="mb-4 inline-block border-l-2 border-rojo bg-rojo/10 px-3 py-1.5 font-semibold text-dato text-blanco">
             {plazo}
           </p>
         ) : null}

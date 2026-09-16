@@ -63,7 +63,7 @@ export function Cabecera({
 }) {
   return (
     <div className="mb-9 grid grid-cols-[44px_1fr] gap-3">
-      <span className="pt-2 font-mono text-dato text-rojo">{marca}</span>
+      <span className="pt-2 font-semibold text-dato text-rojo">{marca}</span>
       <div>
         <h2 className={`text-seccion ${oscuro ? "text-blanco" : "text-azul"}`}>{titulo}</h2>
         {entrada ? (
@@ -98,7 +98,7 @@ export function BloqueCifras({ cifras, oscuro }: { cifras: Cifra[]; oscuro?: boo
       {cifras.map((c, i) => (
         <div key={i} className={`${oscuro ? "bg-azul" : "bg-blanco"} p-7`}>
           <div
-            className={`font-mono text-[44px] leading-none tracking-[-0.03em] ${
+            className={`font-dato tabular-nums text-[44px] leading-none tracking-[-0.03em] ${
               c.acento ? "text-rojo" : oscuro ? "text-blanco" : "text-azul"
             }`}
             style={{ fontVariantNumeric: "tabular-nums" }}
@@ -140,7 +140,7 @@ export function BloqueCronologia({ hitos }: { hitos: Hito[] }) {
               aria-hidden="true"
             />
             <span
-              className={`font-mono text-dato ${h.critico ? "text-rojo" : "text-pizarra"}`}
+              className={`font-dato tabular-nums text-dato ${h.critico ? "text-rojo" : "text-pizarra"}`}
             >
               {h.cuando}
             </span>

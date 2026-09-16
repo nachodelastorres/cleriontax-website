@@ -207,7 +207,7 @@ export default function FormularioDiagnostico({
         <Button type="submit" variant="principal" size="lg" disabled={estado === "enviando"}>
           {estado === "enviando" ? t("enviando") : accion ?? t("enviar")}
         </Button>
-        <span className="font-mono text-dato text-pizarra">{t("respuesta")}</span>
+        <span className="font-semibold text-dato text-pizarra">{t("respuesta")}</span>
       </div>
 
       {estado === "error" ? (

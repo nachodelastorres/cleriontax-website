@@ -69,7 +69,7 @@
   }
 
   .cifra-tabla {
-    @apply font-mono text-right;
+    @apply font-dato text-right;
     font-variant-numeric: tabular-nums;
   }
 

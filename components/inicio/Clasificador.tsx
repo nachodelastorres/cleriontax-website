@@ -76,7 +76,7 @@ export default function Clasificador({ grupos, inicial, textos }: ClasificadorPr
               {abierta ? (
                 <span className="absolute inset-x-0 top-0 h-[3px] bg-rojo" aria-hidden="true" />
               ) : null}
-              <span className={`block font-mono text-dato ${abierta ? "text-rojo" : "text-pizarra"}`}>
+              <span className={`block font-semibold text-dato ${abierta ? "text-rojo" : "text-pizarra"}`}>
                 {g.id}
               </span>
               <span

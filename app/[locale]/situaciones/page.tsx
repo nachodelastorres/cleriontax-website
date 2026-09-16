@@ -98,7 +98,7 @@ export default async function SituacionesHub({ params }: Props) {
         >
           <div className="mx-auto max-w-5xl px-6">
             <div className="mb-8 grid grid-cols-[44px_1fr] gap-3">
-              <span className="pt-2 font-mono text-dato text-rojo">{p}</span>
+              <span className="pt-2 font-semibold text-dato text-rojo">{p}</span>
               <div>
                 <h2 className="text-seccion text-azul">{t(`preguntas.${p}.titulo`)}</h2>
                 <p className="mt-3 max-w-[64ch] text-lectura text-pizarra">
@@ -122,7 +122,7 @@ export default async function SituacionesHub({ params }: Props) {
                       </p>
                     </div>
                     {s.urgente ? (
-                      <span className="flex-none bg-rojo/10 px-2.5 py-1 font-mono text-dato text-rojo">
+                      <span className="flex-none bg-rojo/10 px-2.5 py-1 font-semibold text-dato text-rojo">
                         {t('conPlazo')}
                       </span>
                     ) : null}

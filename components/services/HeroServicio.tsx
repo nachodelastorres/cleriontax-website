@@ -42,10 +42,10 @@ export default function HeroServicio({
       <div className="relative mx-auto max-w-5xl px-6">
         <div className="relative bg-azul py-20 before:absolute before:inset-y-0 before:right-full before:w-screen before:bg-azul md:py-24 lg:w-[66%] lg:pr-12">
         <div className="flex items-center gap-3">
-          <span className="font-mono text-dato text-rojo">
+          <span className="font-semibold text-dato text-rojo">
             {String(indice).padStart(2, "0")} / 04
           </span>
-          <span className="font-mono text-dato text-niebla">{etiqueta}</span>
+          <span className="font-semibold text-dato text-niebla">{etiqueta}</span>
         </div>
 
         <div className="mt-6 flex items-start gap-6">

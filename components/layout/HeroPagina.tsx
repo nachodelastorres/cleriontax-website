@@ -53,7 +53,7 @@ export default function HeroPagina({
           <div className="relative grid gap-10 xl:grid-cols-[1fr_auto] xl:items-center">
             <div>
               {etiqueta ? (
-                <span className="font-mono text-dato text-rojo">{etiqueta}</span>
+                <span className="font-semibold text-dato text-rojo">{etiqueta}</span>
               ) : null}
 
               <h1 className="mt-5 max-w-[18ch] text-hero text-blanco">{titulo}</h1>

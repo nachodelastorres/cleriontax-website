@@ -69,7 +69,7 @@ export default async function MetodoDiagrama({ locale }: { locale: string }) {
             <ul className="space-y-4">
               {FUENTES.map((f) => (
                 <li key={f.nombre}>
-                  <div className="flex items-baseline justify-between gap-4 font-mono text-dato">
+                  <div className="flex items-baseline justify-between gap-4 font-dato tabular-nums text-dato">
                     <span className="truncate text-niebla">{f.nombre}</span>
                     <span className="cifra-tabla text-blanco">{formatearNumero(f.n)}</span>
                   </div>
@@ -109,7 +109,7 @@ export default async function MetodoDiagrama({ locale }: { locale: string }) {
                   <dt className={`text-nota ${f.total || f.rojo ? "font-semibold text-blanco" : "text-niebla"}`}>
                     {t(`filas.${f.clave}`)}
                   </dt>
-                  <dd className="cifra-tabla m-0 font-mono text-dato text-blanco">{f.valor}</dd>
+                  <dd className="cifra-tabla m-0 font-dato tabular-nums text-dato text-blanco">{f.valor}</dd>
                 </div>
               ))}
             </dl>

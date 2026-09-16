@@ -55,7 +55,7 @@ export default function IndividualServicesShowcase() {
               >
                 <article className="flex items-start gap-6 p-8 md:p-10">
                   <div className="flex flex-none items-start gap-4">
-                    <span className="pt-1 font-mono text-dato text-pizarra">
+                    <span className="pt-1 font-semibold text-dato text-pizarra">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <Forma tam={44} className={acento ? "text-rojo" : "text-azul"} />

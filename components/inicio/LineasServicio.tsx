@@ -28,7 +28,7 @@ export default async function LineasServicio({ locale }: { locale: string }) {
                 >
                   <Forma tam={56} className={acento ? "text-rojo" : "text-azul"} />
                   <div>
-                    <span className="font-mono text-dato text-pizarra">0{i + 1}</span>
+                    <span className="font-semibold text-dato text-pizarra">0{i + 1}</span>
                     <h3 className="mt-1 text-subtitulo text-azul">{t(`items.${slug}.nombre`)}</h3>
                   </div>
                   <p className="max-w-[60ch] text-lectura text-pizarra">{t(`items.${slug}.descripcion`)}</p>

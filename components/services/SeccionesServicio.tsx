@@ -91,7 +91,7 @@ function Pasos({ items }: { items: { title: string; body: string }[] }) {
     <ol className="grid max-w-[76ch] gap-px border border-niebla bg-niebla">
       {items.map((s, i) => (
         <li key={i} className="grid grid-cols-[52px_1fr] gap-3 bg-blanco p-6">
-          <span className="pt-1 font-mono text-dato text-rojo">
+          <span className="pt-1 font-semibold text-dato text-rojo">
             {String(i + 1).padStart(2, "0")}
           </span>
           <div>
