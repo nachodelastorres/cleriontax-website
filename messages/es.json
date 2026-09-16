@@ -1202,12 +1202,10 @@
   },
   "inicio": {
     "hero": {
-      "etiqueta": "Criterio fiscal colegiado e ingeniería de datos",
-      "titulo": "Asesoría fiscal de criptomonedas, operación a operación",
+      "titulo": "Asesoría fiscal de criptomonedas y declaración de la renta cripto",
       "entrada": "Un informe automático es el punto de partida, nunca el entregable. Reconciliamos tus exchanges, wallets y protocolos, revisamos a mano lo que un programa resolvería con un valor por defecto y dejamos escrito de dónde sale cada cifra.",
       "accion": "Empezar el diagnóstico",
-      "secundaria": "Ver el método",
-      "firma": "Cuatro líneas de servicio"
+      "secundaria": "Ver el método"
     },
     "clasificador": {
       "titulo": "¿Cuál de estas situaciones se parece a la tuya?",

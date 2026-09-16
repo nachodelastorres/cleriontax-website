@@ -1,72 +1,48 @@
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import SimboloAnimado from "@/components/brand/SimboloAnimado";
 import ButtonLink from "@/components/ui/ButtonLink";
-import { ORDEN_LINEAS } from "@/components/brand/lineas";
 
 /**
- * Cabecera de la home. Una sola columna y el titular a toda escala.
+ * Cabecera de la home.
  *
- * Aquí no va ninguna prueba ni ninguna tabla: el informe de ejemplo se enseña
- * dos veces más abajo —en el diagrama del método y en la sección del
- * entregable— y en la primera pantalla solo restaba sitio al titular.
+ * A la izquierda, el titular y la entradilla; a la derecha, el símbolo
+ * entrando a su posición —la única animación que autoriza el §12— con las dos
+ * acciones debajo.
  *
- * Los cuatro nombres de servicio van debajo, como enlaces. Es donde viven los
- * términos que el H1 no puede llevar sin competir con las páginas que ya los
- * defienden: la renta cripto y la litigación tienen su propia landing.
+ * El titular carga las búsquedas de cabecera. Aquí no va ninguna prueba ni
+ * tabla: el informe de ejemplo se enseña dos veces más abajo.
  */
 export default async function HeroInicio({ locale }: { locale: string }) {
-  const t = await getTranslations({ locale, namespace: "inicio" });
+  const t = await getTranslations({ locale, namespace: "inicio.hero" });
 
   return (
     <section className="bg-azul">
-      <div className="mx-auto max-w-6xl px-6 pb-16 pt-28 md:pb-20 md:pt-36 lg:pb-24">
-        <span className="inline-flex items-center gap-3 text-nota font-semibold text-niebla">
-          <span className="h-[3px] w-6 bg-rojo" aria-hidden="true" />
-          {t("hero.etiqueta")}
-        </span>
+      <div className="mx-auto grid max-w-6xl gap-14 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-12 lg:items-center lg:gap-12 lg:pb-24">
+        <div className="lg:col-span-7">
+          {/*
+            Por encima de la escala del §11 (52 px): en la home el titular es
+            la pieza, no acompaña a nada.
+          */}
+          <h1 className="max-w-[17ch] text-hero text-blanco md:text-[60px] md:leading-[60px] lg:text-[68px] lg:leading-[68px] lg:tracking-[-0.045em]">
+            {t("titulo")}
+          </h1>
 
-        {/*
-          Por encima de la escala del §11 (52 px): en la home el titular es la
-          pieza, no acompaña a nada. Interletrado y altura de línea bajan en
-          proporción para que siga leyéndose como un bloque.
-        */}
-        <h1 className="mt-6 max-w-[15ch] text-hero text-blanco md:text-[68px] md:leading-[68px] lg:text-[84px] lg:leading-[82px] lg:tracking-[-0.045em]">
-          {t("hero.titulo")}
-        </h1>
-
-        <p className="mt-8 max-w-[58ch] text-lectura text-niebla md:text-subtitulo md:font-normal md:leading-[32px]">
-          {t("hero.entrada")}
-        </p>
-
-        <div className="mt-10 flex flex-wrap items-center gap-4">
-          <ButtonLink href="/contacto" variant="principal" size="lg">
-            {t("hero.accion")}
-          </ButtonLink>
-          <ButtonLink href="/metodo" variant="secundaria-inversa" size="lg">
-            {t("hero.secundaria")}
-          </ButtonLink>
+          <p className="mt-8 max-w-[58ch] text-lectura text-niebla md:text-subtitulo md:font-normal md:leading-[32px]">
+            {t("entrada")}
+          </p>
         </div>
 
-        <div className="mt-14 border-t border-blanco/15 pt-7">
-          <div className="flex items-center gap-4">
-            <SimboloAnimado tam={36} className="flex-none text-blanco" retraso={120} />
-            <p className="text-nota font-semibold text-niebla">{t("hero.firma")}</p>
-          </div>
+        <div className="flex flex-col items-start gap-10 lg:col-span-5 lg:items-center">
+          <SimboloAnimado tam={260} className="w-full max-w-[260px] text-blanco" retraso={160} />
 
-          <ul className="mt-5 grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
-            {ORDEN_LINEAS.map((slug) => (
-              <li key={slug}>
-                {/* Sin flecha: con el nombre en dos líneas queda descolgada. */}
-                <Link
-                  href={`/servicios/${slug}`}
-                  className="block border-l-2 border-rojo/70 pl-3 text-lectura text-blanco underline-offset-4 hover:underline"
-                >
-                  {t(`lineas.items.${slug}.nombre`)}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="flex w-full flex-wrap items-center gap-4 lg:justify-center">
+            <ButtonLink href="/contacto" variant="principal" size="lg">
+              {t("accion")}
+            </ButtonLink>
+            <ButtonLink href="/metodo" variant="secundaria-inversa" size="lg">
+              {t("secundaria")}
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </section>

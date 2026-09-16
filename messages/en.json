@@ -1201,12 +1201,10 @@
   },
   "inicio": {
     "hero": {
-      "etiqueta": "Chartered tax judgement and data engineering",
-      "titulo": "Crypto tax advisory, transaction by transaction",
+      "titulo": "Crypto tax advisory and crypto income tax returns in Spain",
       "entrada": "An automated report is the starting point, never the deliverable. We reconcile your exchanges, wallets and protocols, review by hand what software would settle with a default value, and write down where every figure comes from.",
       "accion": "Start the diagnosis",
-      "secundaria": "See the method",
-      "firma": "Four service lines"
+      "secundaria": "See the method"
     },
     "clasificador": {
       "titulo": "Which of these situations looks like yours?",
