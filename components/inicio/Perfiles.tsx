@@ -25,7 +25,7 @@ export default async function Perfiles({ locale }: { locale: string }) {
   return (
     <section className="bg-papel">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <Cabecera marca="02" titulo={t("titulo")} entrada={t("entrada")} />
+        <Cabecera titulo={t("titulo")} entrada={t("entrada")} />
 
         <div className="grid gap-px border border-niebla bg-niebla sm:grid-cols-2 lg:grid-cols-4">
           {PERFILES.map((p) => {

@@ -23,7 +23,7 @@ export default async function InformeEjemplo({ locale }: { locale: string }) {
     <section className="bg-blanco">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:py-20 lg:grid-cols-12 lg:items-center lg:gap-10">
         <div className="lg:col-span-5">
-          <Cabecera marca="05" titulo={t("titulo")} entrada={t("entrada")} />
+          <Cabecera titulo={t("titulo")} entrada={t("entrada")} />
 
           <ul className="space-y-4 sm:pl-[56px]">
             {puntos.map((p) => (

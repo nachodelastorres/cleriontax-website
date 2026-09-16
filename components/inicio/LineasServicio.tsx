@@ -15,7 +15,7 @@ export default async function LineasServicio({ locale }: { locale: string }) {
   return (
     <section className="bg-blanco">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <Cabecera marca="03" titulo={t("titulo")} entrada={t("entrada")} />
+        <Cabecera titulo={t("titulo")} entrada={t("entrada")} />
 
         <ul className="border-t-2 border-azul">
           {ORDEN_LINEAS.map((slug, i) => {

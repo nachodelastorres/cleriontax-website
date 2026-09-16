@@ -34,7 +34,7 @@ export default async function PreguntasInicio({ locale }: { locale: string }) {
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:py-20 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">
-            <Cabecera marca="06" titulo={t("titulo")} />
+            <Cabecera titulo={t("titulo")} />
           </div>
         </div>
 

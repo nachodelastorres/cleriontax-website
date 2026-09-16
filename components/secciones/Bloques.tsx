@@ -56,14 +56,17 @@ export function Cabecera({
   entrada,
   oscuro = false,
 }: {
-  marca: string;
+  /** Marca de sección. Sin ella, la cabecera empieza en el margen. */
+  marca?: string;
   titulo: string;
   entrada?: string;
   oscuro?: boolean;
 }) {
   return (
-    <div className="mb-9 grid grid-cols-[44px_1fr] gap-3">
-      <span className="pt-2 font-semibold text-dato text-rojo">{marca}</span>
+    <div className={`mb-9 ${marca ? "grid grid-cols-[44px_1fr] gap-3" : ""}`}>
+      {marca ? (
+        <span className="pt-2 font-semibold text-dato text-rojo">{marca}</span>
+      ) : null}
       <div>
         <h2 className={`text-seccion ${oscuro ? "text-blanco" : "text-azul"}`}>{titulo}</h2>
         {entrada ? (
