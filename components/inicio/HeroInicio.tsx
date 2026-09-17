@@ -35,7 +35,7 @@ export default async function HeroInicio({ locale }: { locale: string }) {
         </div>
 
         <div className="flex flex-col items-start gap-10 lg:col-span-5 lg:items-center">
-          <SimboloAnimado tam={260} className="w-full max-w-[260px] text-blanco" retraso={160} />
+          <SimboloAnimado tam={260} className="w-full max-w-[280px] text-blanco" retraso={160} dispersa />
 
           <div className="flex w-full flex-wrap items-center gap-4 lg:justify-center">
             <ButtonLink href="/contacto" variant="principal" size="lg">

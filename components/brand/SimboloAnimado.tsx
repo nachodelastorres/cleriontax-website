@@ -1,8 +1,12 @@
 /**
- * El símbolo entrando a su posición — Manual de marca §12.
+ * El símbolo entrando a su posición — Manual de marca §12, enmienda v1.3.
  *
  * «Una sola animación autorizada: los cuatro cuadrantes entrando a su posición
  *  al cargar. Nunca en bucle ni al pasar el ratón.»
+ *
+ * La enmienda añade una excepción y solo una: con `dispersa`, al pasar el
+ * ratón las piezas se separan y vuelven a encajar al salir. No es un gesto
+ * nuevo, es la entrada reproducida al revés, y sigue sin haber bucle.
  *
  * Es la firma de movimiento de la marca y cuenta el argumento entero: cuatro
  * piezas distintas —el dato en bruto, el criterio, el proceso, el resultado—
@@ -17,6 +21,11 @@ interface SimboloAnimadoProps {
   titulo?: string;
   /** Retraso antes de arrancar, en milisegundos. */
   retraso?: number;
+  /**
+   * Al pasar el ratón, los cuadrantes se separan y vuelven al salir (§12,
+   * enmienda v1.3). Solo para el símbolo de portada.
+   */
+  dispersa?: boolean;
 }
 
 export default function SimboloAnimado({
@@ -24,8 +33,15 @@ export default function SimboloAnimado({
   className,
   titulo = "Cleriontax",
   retraso = 0,
+  dispersa = false,
 }: SimboloAnimadoProps) {
-  const id = `sim-${retraso}-${tam}`;
+  const id = `sim-${retraso}-${tam}${dispersa ? "-d" : ""}`;
+  /*
+   * El SVG recorta lo que se sale de su caja, así que al dispersarse hace
+   * falta margen: el lienzo se amplía y el dibujo se queda del mismo tamaño
+   * relativo. Sin dispersión, el símbolo ocupa la caja entera.
+   */
+  const lienzo = dispersa ? "-26 -26 311 311" : "0 0 259 259";
 
   return (
     <>
@@ -55,8 +71,18 @@ export default function SimboloAnimado({
 .${id} .ct-bl { animation-name: ct-entra-bl; animation-delay: ${retraso + 180}ms }
 .${id} .ct-br { animation-name: ct-entra-br; animation-delay: ${retraso + 270}ms }
 
+${dispersa ? `
+/* La dispersión al pasar el ratón: cada pieza se aleja del centro por su
+   propia diagonal, la misma por la que entró. Al salir, vuelve sola. */
+.${id} .ct-q { transition: transform 280ms cubic-bezier(.22,.61,.36,1) }
+.${id}:hover .ct-tl { transform: translate(-7%, -7%) }
+.${id}:hover .ct-tr { transform: translate(7%, -7%) }
+.${id}:hover .ct-bl { transform: translate(-7%, 7%) }
+.${id}:hover .ct-br { transform: translate(7%, 7%) }
+` : ""}
 @media (prefers-reduced-motion: reduce) {
-  .${id} .ct-q { animation: none }
+  .${id} .ct-q { animation: none; transition: none }
+  .${id}:hover .ct-q { transform: none }
 }
 `,
         }}
@@ -64,7 +90,7 @@ export default function SimboloAnimado({
       <svg
         width={tam}
         height={tam}
-        viewBox="0 0 259 259"
+        viewBox={lienzo}
         className={`${id} ${className ?? ""}`}
         role="img"
         aria-label={titulo}
