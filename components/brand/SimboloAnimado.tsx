@@ -75,9 +75,10 @@ export default function SimboloAnimado({
 
 ${dispersa ? `
 /* La dispersión al pasar el ratón: cada pieza se aleja del centro por su
-   propia diagonal, la misma por la que entró. Al salir, vuelve sola. */
-.${id} .ct-q { transition: transform 280ms cubic-bezier(.22,.61,.36,1) ${retraso + 1100}ms }
-.${id}:hover .ct-q { transition-delay: 0ms }
+   propia diagonal, la misma por la que entró. Al salir vuelve de inmediato:
+   sin retardo, porque la transición solo se dispara cuando cambia el destino
+   —es decir, al entrar y al salir del hover—, nunca durante la entrada. */
+.${id} .ct-q { transition: transform 240ms cubic-bezier(.22,.61,.36,1) }
 .${id}:hover .ct-tl { transform: translate(-7%, -7%) }
 .${id}:hover .ct-tr { transform: translate(7%, -7%) }
 .${id}:hover .ct-bl { transform: translate(-7%, 7%) }
