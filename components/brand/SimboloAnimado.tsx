@@ -48,12 +48,14 @@ export default function SimboloAnimado({
       <style
         dangerouslySetInnerHTML={{
           __html: `
-/* Solo se mueve la posicion: la opacidad nunca entra en juego, para que el
-   simbolo se vea aunque la animacion no llegue a ejecutarse. */
-@keyframes ct-entra-tl { from { transform: translate(-42%, -42%) } to { transform: none } }
-@keyframes ct-entra-tr { from { transform: translate(42%, -42%) }  to { transform: none } }
-@keyframes ct-entra-bl { from { transform: translate(-42%, 42%) }  to { transform: none } }
-@keyframes ct-entra-br { from { transform: translate(42%, 42%) }   to { transform: none } }
+/* La opacidad vive solo dentro de la animacion; el estado de reposo es
+   visible. Con fill-mode backwards, la pieza toma el estado inicial durante
+   su retraso y vuelve al suyo propio al acabar: entra fundiendo y, si la
+   animacion no llega a ejecutarse, se ve igualmente. */
+@keyframes ct-entra-tl { from { transform: translate(-42%, -42%); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes ct-entra-tr { from { transform: translate(42%, -42%);  opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes ct-entra-bl { from { transform: translate(-42%, 42%);  opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes ct-entra-br { from { transform: translate(42%, 42%);   opacity: 0 } to { transform: none; opacity: 1 } }
 
 /*
  * Las piezas parten de visibles: la animación solo desplaza, nunca atenúa.
@@ -62,7 +64,7 @@ export default function SimboloAnimado({
  * el logotipo no aparecía nunca.
  */
 .${id} .ct-q {
-  animation-duration: 620ms;
+  animation-duration: 760ms;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.22,.61,.36,1);
 }
@@ -74,7 +76,8 @@ export default function SimboloAnimado({
 ${dispersa ? `
 /* La dispersión al pasar el ratón: cada pieza se aleja del centro por su
    propia diagonal, la misma por la que entró. Al salir, vuelve sola. */
-.${id} .ct-q { transition: transform 280ms cubic-bezier(.22,.61,.36,1) }
+.${id} .ct-q { transition: transform 280ms cubic-bezier(.22,.61,.36,1) ${retraso + 1100}ms }
+.${id}:hover .ct-q { transition-delay: 0ms }
 .${id}:hover .ct-tl { transform: translate(-7%, -7%) }
 .${id}:hover .ct-tr { transform: translate(7%, -7%) }
 .${id}:hover .ct-bl { transform: translate(-7%, 7%) }
