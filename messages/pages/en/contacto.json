@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Contact: tell us about your case | Cleriontax",
-    "description": "Message us on WhatsApp, call us or send us your case in writing. A person from the team replies, usually within a few working hours, with no commitment."
+    "description": "Message us on WhatsApp, call us or send us your case in writing. A person from the team replies, within 24–48 working hours, with no commitment."
   },
   "hero": {
     "etiqueta": "Contact",
@@ -37,7 +37,7 @@
     "h2": "What happens next",
     "pasos": [
       "A person from the team reads it, not an automated system.",
-      "We reply, usually within a few working hours, with what we need or with a proposal.",
+      "We reply, within 24–48 working hours, with what we need or with a proposal.",
       "If it's a fit, we send you a fixed quote before we start."
     ],
     "nota": "No commitment"

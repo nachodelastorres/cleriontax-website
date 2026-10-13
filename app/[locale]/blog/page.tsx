@@ -100,8 +100,7 @@ export default async function BlogPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      {/* Hero Section Original */}
-      <BlogHero postsCount={allPosts.length} categoriesCount={activeClusters} />
+      <BlogHero locale={locale} postsCount={allPosts.length} categoriesCount={activeClusters} />
 
       {/* Latest Post Featured */}
       {latestPost && (

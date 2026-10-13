@@ -70,8 +70,8 @@
   },
   "blog": {
     "hero": {
-      "badge": "Taxation, Investment, and Data Analysis Blog",
-      "title": "Guides, News, and Analysis for Investors",
+      "badge": "Blog",
+      "title": "Crypto tax, explained with cases and numbers",
       "subtitle": "Everything you need to know about the taxation of crypto, investments and financial data: regulatory changes and practical cases with worked numerical examples.",
       "stats": {
         "articles": "Articles",

@@ -148,7 +148,7 @@ export default async function ContactoPage({ params }: Props) {
           <div>
             <h2 className="text-seccion text-azul">{formulario.h2}</h2>
             <p className="mt-4 max-w-[60ch] text-lectura text-pizarra">{formulario.entrada}</p>
-            <div className="mt-8 border border-niebla bg-blanco p-6 md:p-8">
+            <div className="mt-8">
               <FormularioDiagnostico situacion="Contacto" />
             </div>
           </div>

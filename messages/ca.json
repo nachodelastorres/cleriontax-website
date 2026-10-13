@@ -70,8 +70,8 @@
   },
   "blog": {
     "hero": {
-      "badge": "Blog de Fiscalitat, Inversió i Anàlisi de Dades",
-      "title": "Guies, Notícies i Anàlisi per a Inversors",
+      "badge": "Blog",
+      "title": "Fiscalitat cripto, explicada amb casos i números",
       "subtitle": "Tot el que necessites saber sobre la fiscalitat de criptomonedes, inversions i dades financeres: canvis normatius i casos pràctics amb exemples numèrics resolts.",
       "stats": {
         "articles": "Articles",

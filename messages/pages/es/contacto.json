@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Contacto: cuéntanos tu caso | Cleriontax",
-    "description": "Escríbenos por WhatsApp, llámanos o déjanos tu caso por escrito. Te responde una persona del equipo, normalmente en pocas horas laborables, y sin compromiso."
+    "description": "Escríbenos por WhatsApp, llámanos o déjanos tu caso por escrito. Te responde una persona del equipo, en 24–48 horas laborables, y sin compromiso."
   },
   "hero": {
     "etiqueta": "Contacto",
@@ -37,7 +37,7 @@
     "h2": "Qué pasa después",
     "pasos": [
       "Lo lee una persona del equipo, no un sistema automático.",
-      "Te respondemos, normalmente en pocas horas laborables, con lo que necesitamos o con una propuesta.",
+      "Te respondemos, en 24–48 horas laborables, con lo que necesitamos o con una propuesta.",
       "Si encaja, te enviamos un presupuesto cerrado antes de empezar."
     ],
     "nota": "Sin compromiso"
