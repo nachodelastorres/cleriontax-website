@@ -192,9 +192,13 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
       {/* Cabeceras: solo en pantalla ancha, donde las columnas se alinean. */}
       <div className="hidden grid-cols-[10rem_1fr_2.5rem_1fr] items-end gap-x-6 border-b border-niebla px-7 py-6 md:grid">
         <span aria-hidden="true" />
-        <h3 className="text-center text-subtitulo text-pizarra">{antes}</h3>
+        <h3 className="bg-ambar-revision/15 px-4 py-3 text-center text-subtitulo text-azul">
+          {antes}
+        </h3>
         <span aria-hidden="true" />
-        <h3 className="text-center text-subtitulo text-azul">{despues}</h3>
+        <h3 className="bg-verde-conciliado/10 px-4 py-3 text-center text-subtitulo text-azul">
+          {despues}
+        </h3>
       </div>
 
       <ul>
@@ -209,12 +213,9 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
               {f.aspecto}
             </span>
 
-            <span className="grid grid-cols-[12px_1fr] gap-3 text-nota text-pizarra">
-              <span className="mt-2 h-2 w-2 bg-ambar-revision" aria-hidden="true" />
-              <span>
-                <span className="sr-only">{antes}: </span>
-                {f.antes}
-              </span>
+            <span className="text-nota text-azul">
+              <span className="sr-only">{antes}: </span>
+              {f.antes}
             </span>
 
             <ArrowRight
@@ -223,12 +224,9 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
               aria-hidden="true"
             />
 
-            <span className="grid grid-cols-[12px_1fr] gap-3 text-nota font-semibold text-azul">
-              <span className="mt-2 h-2 w-2 bg-verde-conciliado" aria-hidden="true" />
-              <span>
-                <span className="sr-only">{despues}: </span>
-                {f.despues}
-              </span>
+            <span className="text-nota text-azul">
+              <span className="sr-only">{despues}: </span>
+              {f.despues}
             </span>
           </li>
         ))}
