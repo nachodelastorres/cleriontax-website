@@ -68,6 +68,11 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* Toda cifra marcada como dato alinea en columna, la lleve o no el componente. */
+  .font-dato {
+    font-variant-numeric: tabular-nums;
+  }
+
   .cifra-tabla {
     @apply font-dato text-right;
     font-variant-numeric: tabular-nums;

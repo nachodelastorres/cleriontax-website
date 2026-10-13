@@ -53,10 +53,9 @@ const config: Config = {
         // Familia principal: todo el texto.
         sans: ["var(--font-jakarta)", "system-ui", "-apple-system", "sans-serif"],
         // Familia de datos: cifras, importes, hashes, modelos, fechas en tabla.
-        // Nunca para texto corrido ni para etiquetas sin datos. Serif desde la
-        // enmienda v1.2 del §11: la alineación en columna la dan las cifras
-        // tabulares, no la monoespaciada.
-        dato: ["var(--font-dato)", "Georgia", "serif"],
+        // Es la principal; lo que la distingue son las cifras tabulares, que
+        // globals.css activa en toda clase font-dato.
+        dato: ["var(--font-jakarta)", "system-ui", "-apple-system", "sans-serif"],
         // Sin monoespaciada en todo el sitio, código del blog incluido. Tailwind
         // aplica esta familia por defecto a code, pre, kbd y samp: apunta a la
         // principal para que ninguna monoespaciada se cuele por ahí.

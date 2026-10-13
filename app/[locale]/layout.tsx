@@ -1,4 +1,4 @@
-import { Plus_Jakarta_Sans, Source_Serif_4 } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
@@ -18,22 +18,13 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 /*
- * §11, enmienda v1.2 — Familia de datos.
+ * §11 — Familia de datos.
  *
- * Era IBM Plex Mono. La monoespaciada daba a las cifras un aire de terminal
- * que no encaja con una asesoría, así que el dato pasa a una serif de lectura.
- * Lo que el manual busca —que las columnas de cifras queden alineadas— no lo
- * da la monoespaciada, lo dan las cifras tabulares, y Source Serif las tiene.
- *
- * Solo para cifras, importes, hashes, modelos y fechas en tabla. Las etiquetas
- * que no contienen datos van en la familia principal.
+ * Fue IBM Plex Mono y después Source Serif 4. Ahora las cifras van en la
+ * familia principal: lo que el manual busca —columnas de cifras alineadas— lo
+ * dan las cifras tabulares, y Plus Jakarta Sans las tiene. `font-dato` sigue
+ * existiendo para marcar qué es un dato y activar esas cifras (globals.css).
  */
-const serifDatos = Source_Serif_4({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  variable: "--font-dato",
-  display: "swap",
-});
 
 const locales = LOCALES;
 
@@ -134,7 +125,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className={`${jakarta.variable} ${serifDatos.variable} font-sans`}>
+      <body className={`${jakarta.variable} font-sans`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <main className="min-h-screen">{children}</main>
