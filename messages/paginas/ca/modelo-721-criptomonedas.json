@@ -44,10 +44,6 @@
       "label": "Qui està obligat"
     },
     {
-      "id": "estas-obligado",
-      "label": "Hi estàs obligat?"
-    },
-    {
       "id": "cifras",
       "label": "Llindar i termini"
     },
@@ -86,28 +82,9 @@
       ]
     },
     {
-      "id": "estas-obligado",
-      "h2": "Hi estàs obligat aquest any?",
-      "entrada": "Suma el que tenies a 31 de desembre a cada plataforma situada fora d’Espanya. Si ja el vas presentar un altre any, indica l’últim saldo declarat.",
-      "comprobador721": {
-        "plataforma": "Plataforma {n} a l’estranger",
-        "anadir": "Afegir plataforma",
-        "quitar": "Treure plataforma",
-        "total": "Total a 31 de desembre",
-        "yaPresentado": "Ja vaig presentar el model 721 algun any",
-        "ultimoSaldo": "Últim saldo declarat",
-        "obligado": "Has de presentar el model 721.",
-        "noObligado": "No hi estàs obligat aquest any, però torna-ho a comprovar l’any vinent.",
-        "obligadoOtraVez": "L’has de tornar a presentar: el saldo ha pujat més de 20.000 €.",
-        "noOtraVez": "No l’has de tornar a presentar aquest any.",
-        "aviso": "Orientatiu: només compta el que custodien plataformes de fora d’Espanya, valorat a 31 de desembre. Hi ha matisos, com deixar de ser titular del que es va declarar, que també obliguen."
-      },
-      "fondo": "papel"
-    },
-    {
       "id": "cifras",
       "h2": "Llindar i termini del model 721",
-      "fondo": "blanco",
+      "fondo": "papel",
       "entrada": "Les magnituds que defineixen l’obligació. Hi ha matisos segons el cas, i per això el primer que fem és comprovar si t’afecta.",
       "cifras": [
         {
@@ -132,7 +109,7 @@
     {
       "id": "que-entra",
       "h2": "Què entra al 721 i què no",
-      "fondo": "papel",
+      "fondo": "blanco",
       "entrada": "El dubte més freqüent no és el termini, és saber quina part de la teva cartera compta.",
       "items": [
         {
@@ -156,7 +133,7 @@
     {
       "id": "otros-modelos",
       "h2": "Model 721, model 720, model 714 i la renda: què fa cadascun",
-      "fondo": "blanco",
+      "fondo": "papel",
       "entrada": "Quatre obligacions diferents que se solapen al calendari i es confonen constantment. Presentar-ne una no cobreix les altres.",
       "fichas": {
         "etiqueta": "Model",
@@ -184,13 +161,13 @@
     {
       "id": "fuera-de-plazo",
       "h2": "Si no vas presentar el model 721 a temps",
-      "fondo": "papel",
+      "fondo": "blanco",
       "body": "Es pot presentar fora de termini, i no és el mateix fer-ho pel teu compte que esperar que ho detecti l’Administració. Presentar-lo abans de qualsevol requeriment redueix la sanció i evita que l’omissió es converteixi en el punt de partida d’una comprovació.\n\nDesprés de la sentència del Tribunal de Justícia de la Unió Europea sobre el model 720, el règim de sancions desproporcionades va desaparèixer i les declaracions informatives sobre béns a l’estranger, inclòs el 721, queden en el règim sancionador general. Això no vol dir que no passi res: vol dir que el cost de regularitzar aviat és raonable i el d’esperar, incert.\n\nAbans de presentar un exercici endarrerit, convé revisar també la renda d’aquell any. Si el 721 reflecteix un saldo que la teva declaració no explica, la incoherència és el que crida l’atenció. Si és el teu cas, ho enfoquem com una regularització completa: el 721 i la renda de cada exercici, alhora."
     },
     {
       "id": "como-lo-hacemos",
       "h2": "Com preparem i presentem el teu model 721",
-      "fondo": "blanco",
+      "fondo": "papel",
       "steps": [
         {
           "title": "Comprovem si hi estàs obligat",

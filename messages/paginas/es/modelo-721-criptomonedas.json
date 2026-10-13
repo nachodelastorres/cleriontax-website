@@ -44,10 +44,6 @@
       "label": "Quién está obligado"
     },
     {
-      "id": "estas-obligado",
-      "label": "¿Estás obligado?"
-    },
-    {
       "id": "cifras",
       "label": "Umbral y plazo"
     },
@@ -86,28 +82,9 @@
       ]
     },
     {
-      "id": "estas-obligado",
-      "h2": "¿Estás obligado este año?",
-      "entrada": "Suma lo que tenías a 31 de diciembre en cada plataforma situada fuera de España. Si ya lo presentaste otro año, indica el último saldo declarado.",
-      "comprobador721": {
-        "plataforma": "Plataforma {n} en el extranjero",
-        "anadir": "Añadir plataforma",
-        "quitar": "Quitar plataforma",
-        "total": "Total a 31 de diciembre",
-        "yaPresentado": "Ya presenté el modelo 721 algún año",
-        "ultimoSaldo": "Último saldo declarado",
-        "obligado": "Tienes que presentar el modelo 721.",
-        "noObligado": "No estás obligado este año, pero vuelve a comprobarlo el próximo.",
-        "obligadoOtraVez": "Tienes que volver a presentarlo: el saldo ha subido más de 20.000 €.",
-        "noOtraVez": "No tienes que volver a presentarlo este año.",
-        "aviso": "Orientativo: solo cuenta lo custodiado por plataformas fuera de España, valorado a 31 de diciembre. Hay matices, como dejar de ser titular de lo declarado, que también obligan."
-      },
-      "fondo": "papel"
-    },
-    {
       "id": "cifras",
       "h2": "Umbral y plazo del modelo 721",
-      "fondo": "blanco",
+      "fondo": "papel",
       "entrada": "Las magnitudes que definen la obligación. Hay matices según el caso, y por eso lo primero que hacemos es comprobar si te aplica.",
       "cifras": [
         {
@@ -132,7 +109,7 @@
     {
       "id": "que-entra",
       "h2": "Qué entra en el 721 y qué no",
-      "fondo": "papel",
+      "fondo": "blanco",
       "entrada": "La duda más frecuente no es el plazo, es saber qué parte de tu cartera cuenta.",
       "items": [
         {
@@ -156,7 +133,7 @@
     {
       "id": "otros-modelos",
       "h2": "Modelo 721, modelo 720, modelo 714 y la renta: qué hace cada uno",
-      "fondo": "blanco",
+      "fondo": "papel",
       "entrada": "Cuatro obligaciones distintas que se solapan en el calendario y se confunden constantemente. Presentar una no cubre las demás.",
       "fichas": {
         "etiqueta": "Modelo",
@@ -184,13 +161,13 @@
     {
       "id": "fuera-de-plazo",
       "h2": "Si no presentaste el modelo 721 a tiempo",
-      "fondo": "papel",
+      "fondo": "blanco",
       "body": "Se puede presentar fuera de plazo, y no es lo mismo hacerlo por tu cuenta que esperar a que lo detecte la Administración. Presentarlo antes de cualquier requerimiento reduce la sanción y evita que la omisión se convierta en el punto de partida de una comprobación.\n\nTras la sentencia del Tribunal de Justicia de la Unión Europea sobre el modelo 720, el régimen de sanciones desproporcionadas desapareció y las declaraciones informativas sobre bienes en el extranjero, incluido el 721, quedan en el régimen sancionador general. Eso no significa que no pase nada: significa que el coste de regularizar pronto es razonable y el de esperar, incierto.\n\nAntes de presentar un ejercicio atrasado, conviene revisar también la renta de ese año. Si el 721 refleja un saldo que tu declaración no explica, la incoherencia es lo que llama la atención. Si es tu caso, lo enfocamos como una regularización completa: el 721 y la renta de cada ejercicio, a la vez."
     },
     {
       "id": "como-lo-hacemos",
       "h2": "Cómo preparamos y presentamos tu modelo 721",
-      "fondo": "blanco",
+      "fondo": "papel",
       "steps": [
         {
           "title": "Comprobamos si estás obligado",

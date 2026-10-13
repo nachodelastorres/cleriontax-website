@@ -44,10 +44,6 @@
       "label": "Who has to file"
     },
     {
-      "id": "estas-obligado",
-      "label": "Do you have to?"
-    },
-    {
       "id": "cifras",
       "label": "Threshold and deadline"
     },
@@ -86,28 +82,9 @@
       ]
     },
     {
-      "id": "estas-obligado",
-      "h2": "Do you have to file this year?",
-      "entrada": "Add up what you held at 31 December on each platform based outside Spain. If you've filed in a previous year, enter the last balance declared.",
-      "comprobador721": {
-        "plataforma": "Platform {n} abroad",
-        "anadir": "Add platform",
-        "quitar": "Remove platform",
-        "total": "Total at 31 December",
-        "yaPresentado": "I've filed Form 721 in a previous year",
-        "ultimoSaldo": "Last balance declared",
-        "obligado": "You have to file Form 721.",
-        "noObligado": "You're not required to file this year, but check again next year.",
-        "obligadoOtraVez": "You have to file it again: the balance has risen by more than €20,000.",
-        "noOtraVez": "You don't have to file it again this year.",
-        "aviso": "Indicative: only holdings with platforms outside Spain count, valued at 31 December. There are nuances, such as ceasing to hold what you declared, that also trigger the obligation."
-      },
-      "fondo": "papel"
-    },
-    {
       "id": "cifras",
       "h2": "Form 721 threshold and deadline",
-      "fondo": "blanco",
+      "fondo": "papel",
       "entrada": "The figures that define the obligation. There are nuances depending on the case, which is why the first thing we do is check whether it applies to you.",
       "cifras": [
         {
@@ -132,7 +109,7 @@
     {
       "id": "que-entra",
       "h2": "What goes into form 721 and what doesn't",
-      "fondo": "papel",
+      "fondo": "blanco",
       "entrada": "The most common doubt isn't the deadline, it's knowing which part of your portfolio counts.",
       "items": [
         {
@@ -156,7 +133,7 @@
     {
       "id": "otros-modelos",
       "h2": "Form 721, form 720, form 714 and income tax: what each one does",
-      "fondo": "blanco",
+      "fondo": "papel",
       "entrada": "Four separate obligations that overlap on the calendar and get confused all the time. Filing one doesn't cover the others.",
       "fichas": {
         "etiqueta": "Form",
@@ -184,13 +161,13 @@
     {
       "id": "fuera-de-plazo",
       "h2": "If you didn't file form 721 on time",
-      "fondo": "papel",
+      "fondo": "blanco",
       "body": "It can be filed late, and doing it on your own initiative is not the same as waiting for the Tax Agency to spot it. Filing before any formal request reduces the penalty and keeps the omission from becoming the starting point of a review.\n\nAfter the Court of Justice of the European Union ruling on form 720, the disproportionate penalty regime disappeared, and reporting returns on assets abroad, form 721 included, fall under the general penalty regime. That doesn't mean nothing happens: it means the cost of putting things right early is reasonable and the cost of waiting is uncertain.\n\nBefore filing an overdue year, it is worth reviewing that year's income tax return too. If form 721 shows a balance your return doesn't explain, the inconsistency is what draws attention. If that's your case, we treat it as a full regularisation: form 721 and the income tax return for each year, together."
     },
     {
       "id": "como-lo-hacemos",
       "h2": "How we prepare and file your form 721",
-      "fondo": "blanco",
+      "fondo": "papel",
       "steps": [
         {
           "title": "We check whether you have to file",

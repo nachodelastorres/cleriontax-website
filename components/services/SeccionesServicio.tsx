@@ -28,7 +28,6 @@ import DosFrentes, { type Frentes } from "@/components/expediente/DosFrentes";
 import CartaDerechos, { type Derecho } from "@/components/expediente/CartaDerechos";
 import BloqueIntercambio, { type Intercambio } from "@/components/expediente/Intercambio";
 import CalculadoraCuota, { type TextosCuota } from "@/components/formulario/CalculadoraCuota";
-import Comprobador721, { type TextosComprobador } from "@/components/formulario/Comprobador721";
 import AnioFiscal, { type Ventana } from "@/components/formulario/AnioFiscal";
 import Mitos, { type TextosMitos } from "@/components/formulario/Mitos";
 import FichasModelo, { type Ficha } from "@/components/formulario/FichasModelo";
@@ -72,7 +71,6 @@ export interface Seccion {
   intercambio?: Intercambio;
   /* Bloques de las páginas de «¿Cómo lo declaro?». */
   cuota?: TextosCuota;
-  comprobador721?: TextosComprobador;
   anio?: Ventana[];
   mitos?: TextosMitos;
   fichas?: { etiqueta: string; fichas: Ficha[] };
@@ -298,9 +296,6 @@ export default function SeccionesServicio({
               {s.derechos ? <CartaDerechos derechos={s.derechos} /> : null}
               {s.intercambio ? <BloqueIntercambio {...s.intercambio} locale={locale} /> : null}
               {s.cuota ? <CalculadoraCuota locale={locale ?? "es"} textos={s.cuota} /> : null}
-              {s.comprobador721 ? (
-                <Comprobador721 locale={locale ?? "es"} textos={s.comprobador721} />
-              ) : null}
               {s.anio ? <AnioFiscal locale={locale ?? "es"} ventanas={s.anio} /> : null}
               {s.mitos ? <Mitos {...s.mitos} /> : null}
               {s.fichas ? <FichasModelo {...s.fichas} /> : null}
