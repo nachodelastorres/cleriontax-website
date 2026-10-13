@@ -393,6 +393,11 @@
           "body": "Starting at the notice of inspection is not the same as arriving with a proposed assessment or an appeal."
         },
         {
+          "icono": "plazo",
+          "titulo": "The deadline",
+          "body": "With a deadline running and little time left, the work is packed into fewer days."
+        },
+        {
           "icono": "aportado",
           "titulo": "What has already been provided",
           "body": "What is already on the file shapes what needs redoing or correcting."

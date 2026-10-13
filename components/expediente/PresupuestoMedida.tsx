@@ -1,4 +1,4 @@
-import { ArrowRight, Check, FileStack, Route, Scale, ScanSearch, Wallet } from "lucide-react";
+import { ArrowRight, Check, FileStack, Route, Scale, ScanSearch, Timer, Wallet } from "lucide-react";
 import { Cabecera, Envoltura } from "@/components/secciones/Bloques";
 
 /**
@@ -16,6 +16,7 @@ const ICONOS = {
   fase: Route,
   aportado: FileStack,
   enJuego: Scale,
+  plazo: Timer,
 };
 
 export interface TextosPresupuesto {

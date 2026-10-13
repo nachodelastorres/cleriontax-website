@@ -393,6 +393,11 @@
           "body": "No és el mateix començar amb la comunicació d’inici que arribar amb una proposta de liquidació o un recurs."
         },
         {
+          "icono": "plazo",
+          "titulo": "El termini",
+          "body": "Amb un termini corrent i poc marge, la feina es concentra en menys dies."
+        },
+        {
           "icono": "aportado",
           "titulo": "El que ja s’ha aportat",
           "body": "El que consta a l’expedient condiciona el que cal refer o corregir."

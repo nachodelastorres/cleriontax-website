@@ -393,6 +393,11 @@
           "body": "No es lo mismo empezar con la comunicación de inicio que llegar con una propuesta de liquidación o un recurso."
         },
         {
+          "icono": "plazo",
+          "titulo": "El plazo",
+          "body": "Con un plazo corriendo y poco margen, el trabajo se concentra en menos días."
+        },
+        {
           "icono": "aportado",
           "titulo": "Lo que ya se ha aportado",
           "body": "Lo que consta en el expediente condiciona lo que hay que rehacer o corregir."
