@@ -13,7 +13,6 @@
   "toc": [
     { "id": "por-que-no-cuadra", "label": "Per què no quadra" },
     { "id": "errores", "label": "Els errors habituals" },
-    { "id": "el-ejemplo", "label": "El mateix cas, dues xifres" },
     { "id": "comparativa", "label": "Automàtic davant de revisat" },
     { "id": "como-revisamos", "label": "Com el revisem" },
     { "id": "alternativa", "label": "Alternativa a Koinly?" },
@@ -40,27 +39,6 @@
         "<strong>Spam de tokens tractat com a ingrés:</strong> en xarxes com Solana o BSC poden ser milers de registres brossa que embruten tot el resultat.",
         "<strong>Duplicats i buits:</strong> la mateixa operació llegida del CSV de l'exchange i de la wallet, o el període d'un exchange tancat que simplement no apareix i s'emporta el teu cost d'adquisició."
       ]
-    },
-    {
-      "id": "el-ejemplo",
-      "h2": "El mateix cas, dues xifres",
-      "fondo": "papel",
-      "entrada": "Una cartera amb transferències entre wallets pròpies i tokens rebuts per staking. Així la llegeix un informe automàtic i així queda després de la revisió.",
-      "tabla": {
-        "titulo": "Resultat abans i després de revisar",
-        "periodo": "exercici 2025",
-        "criterio": "FIFO",
-        "filas": [
-          { "concepto": "Guany segons l'informe automàtic", "importe": 41280.6 },
-          { "concepto": "Menys: transferències internes comptades com a vendes", "importe": -19750.4 },
-          { "concepto": "Menys: cost d'adquisició recuperat de tokens de staking", "importe": -4128.05 },
-          { "concepto": "Guany després de la revisió", "importe": 17402.15 },
-          { "concepto": "Operacions reclassificades a mà", "recuento": 386 }
-        ],
-        "columnaConcepto": "Concepte",
-        "columnaValor": "Import",
-        "pie": "Dades d’exemple. Criteri FIFO."
-      }
     },
     {
       "id": "comparativa",

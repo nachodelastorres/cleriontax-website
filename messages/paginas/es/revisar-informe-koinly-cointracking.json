@@ -13,7 +13,6 @@
   "toc": [
     { "id": "por-que-no-cuadra", "label": "Por qué no cuadra" },
     { "id": "errores", "label": "Los errores habituales" },
-    { "id": "el-ejemplo", "label": "El mismo caso, dos cifras" },
     { "id": "comparativa", "label": "Automático frente a revisado" },
     { "id": "como-revisamos", "label": "Cómo lo revisamos" },
     { "id": "alternativa", "label": "¿Alternativa a Koinly?" },
@@ -40,24 +39,6 @@
         "<strong>Spam de tokens tratado como ingreso:</strong> en redes como Solana o BSC pueden ser miles de registros basura que ensucian el resultado entero.",
         "<strong>Duplicados y huecos:</strong> la misma operación leída del CSV del exchange y de la wallet, o el periodo de un exchange cerrado que simplemente no aparece y se lleva con él tu coste de adquisición."
       ]
-    },
-    {
-      "id": "el-ejemplo",
-      "h2": "El mismo caso, dos cifras",
-      "fondo": "papel",
-      "entrada": "Una cartera con transferencias entre wallets propias y tokens recibidos por staking. Así la lee un informe automático y así queda tras la revisión.",
-      "tabla": {
-        "titulo": "Resultado antes y después de revisar",
-        "periodo": "ejercicio 2025",
-        "criterio": "FIFO",
-        "filas": [
-          { "concepto": "Ganancia según el informe automático", "importe": 41280.6 },
-          { "concepto": "Menos: transferencias internas contadas como ventas", "importe": -19750.4 },
-          { "concepto": "Menos: coste de adquisición recuperado de tokens de staking", "importe": -4128.05 },
-          { "concepto": "Ganancia tras la revisión", "importe": 17402.15 },
-          { "concepto": "Operaciones reclasificadas a mano", "recuento": 386 }
-        ]
-      }
     },
     {
       "id": "comparativa",

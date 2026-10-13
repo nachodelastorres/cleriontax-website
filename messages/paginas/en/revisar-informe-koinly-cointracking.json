@@ -13,7 +13,6 @@
   "toc": [
     { "id": "por-que-no-cuadra", "label": "Why it doesn't add up" },
     { "id": "errores", "label": "The usual errors" },
-    { "id": "el-ejemplo", "label": "Same case, two figures" },
     { "id": "comparativa", "label": "Automated vs. reviewed" },
     { "id": "como-revisamos", "label": "How we review it" },
     { "id": "alternativa", "label": "A Koinly alternative?" },
@@ -40,27 +39,6 @@
         "<strong>Token spam treated as income:</strong> on networks like Solana or BSC there can be thousands of junk records polluting the whole result.",
         "<strong>Duplicates and gaps:</strong> the same transaction read from the exchange CSV and from the wallet, or the history of a closed exchange that simply isn't there and takes your acquisition cost with it."
       ]
-    },
-    {
-      "id": "el-ejemplo",
-      "h2": "The same case, two figures",
-      "fondo": "papel",
-      "entrada": "A portfolio with transfers between your own wallets and tokens received from staking. This is how an automated report reads it, and this is how it looks after review.",
-      "tabla": {
-        "titulo": "Result before and after review",
-        "periodo": "tax year 2025",
-        "criterio": "FIFO",
-        "filas": [
-          { "concepto": "Gain according to the automated report", "importe": 41280.6 },
-          { "concepto": "Less: internal transfers counted as sales", "importe": -19750.4 },
-          { "concepto": "Less: recovered acquisition cost of staking tokens", "importe": -4128.05 },
-          { "concepto": "Gain after review", "importe": 17402.15 },
-          { "concepto": "Transactions reclassified by hand", "recuento": 386 }
-        ],
-        "columnaConcepto": "Item",
-        "columnaValor": "Amount",
-        "pie": "Sample data. FIFO rule."
-      }
     },
     {
       "id": "comparativa",
