@@ -22,7 +22,6 @@
     { "id": "que-recibes", "label": "What you get" },
     { "id": "fifo-trazabilidad", "label": "FIFO and traceability" },
     { "id": "como-trabajamos", "label": "How we work" },
-    { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
     { "id": "que-necesitamos", "label": "What we need from you" },
     { "id": "precio", "label": "Pricing" },
     { "id": "faq", "label": "Frequently asked questions" }
@@ -154,30 +153,6 @@
       ]
     },
     {
-      "id": "por-plataforma",
-      "h2": "Tax report for Binance, Kraken, MetaMask and DeFi",
-      "fondo": "papel",
-      "entrada": "Each platform exports in its own way and each has its own traps.",
-      "items": [
-        {
-          "title": "Binance",
-          "body": "It splits spot, earn, futures and conversions into separate exports, and some only cover limited periods. They have to be joined without duplicating transactions and without losing the small conversions."
-        },
-        {
-          "title": "Kraken",
-          "body": "The ledger and the trades history are separate, and staking shows up as transfers between sub-accounts. Read wrongly, they create sales that never happened."
-        },
-        {
-          "title": "MetaMask and DeFi",
-          "body": "There is no tax export: activity is rebuilt from the blockchain using your public addresses, including swaps, pool deposits, rewards and gas fees."
-        },
-        {
-          "title": "Exchanges that no longer exist",
-          "body": "When the history can't be downloaded, it is rebuilt from on-chain traceability, bank statements and any copies you kept. What can't be rebuilt isn't invented: the criterion applied is documented."
-        }
-      ]
-    },
-    {
       "id": "que-necesitamos",
       "h2": "What we need from you",
       "fondo": "blanco",
@@ -201,6 +176,14 @@
         {
           "q": "What if I have thousands of transactions?",
           "a": "That's not a problem. Volume is processed automatically; what takes time is dispersion: small protocols, poorly documented chains or exchanges that have since closed. In portfolios active across several chains, a large share of the records is often token spam, and we filter it with clear criteria. That's why the price depends on how many sources there are, not on how many transactions."
+        },
+        {
+          "q": "Do you prepare tax reports for Binance, Kraken or MetaMask?",
+          "a": "Yes, and for any other exchange, wallet or protocol. Each has its traps: Binance splits spot, earn, futures and conversions into separate exports that must be merged without duplicates; Kraken records staking as transfers between sub-accounts that, misread, look like sales; and MetaMask has no tax export, so the activity is rebuilt from the blockchain using your public addresses, including swaps, pools, rewards and gas fees."
+        },
+        {
+          "q": "What if the exchange I used no longer exists?",
+          "a": "We rebuild the history from on-chain traceability, bank statements and any copies you kept. What can't be rebuilt isn't made up: the criterion applied is documented."
         },
         {
           "q": "Which calculation method do you use?",

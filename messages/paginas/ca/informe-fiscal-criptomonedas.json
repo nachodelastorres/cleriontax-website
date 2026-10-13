@@ -22,7 +22,6 @@
     { "id": "que-recibes", "label": "Què reps" },
     { "id": "fifo-trazabilidad", "label": "FIFO i traçabilitat" },
     { "id": "como-trabajamos", "label": "Com treballem" },
-    { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
     { "id": "que-necesitamos", "label": "Què necessitem de tu" },
     { "id": "precio", "label": "Preu" },
     { "id": "faq", "label": "Preguntes freqüents" }
@@ -154,30 +153,6 @@
       ]
     },
     {
-      "id": "por-plataforma",
-      "h2": "Informe fiscal de Binance, Kraken, MetaMask i DeFi",
-      "fondo": "papel",
-      "entrada": "Cada plataforma exporta a la seva manera i cadascuna té els seus paranys.",
-      "items": [
-        {
-          "title": "Binance",
-          "body": "Separa spot, earn, futurs i conversions en exportacions diferents, i algunes només cobreixen períodes limitats. Cal unir-les sense duplicar operacions i sense perdre les conversions petites."
-        },
-        {
-          "title": "Kraken",
-          "body": "El registre de moviments i el d’operacions van per separat, i l’staking apareix com a transferències entre subcomptes. Mal llegits, generen vendes que no van existir."
-        },
-        {
-          "title": "MetaMask i DeFi",
-          "body": "No hi ha exportació fiscal: l’activitat es reconstrueix des de la blockchain a partir de les teves adreces públiques, inclosos swaps, aportacions a pools, recompenses i comissions de gas."
-        },
-        {
-          "title": "Exchanges que ja no existeixen",
-          "body": "Quan no es pot descarregar l’historial, es reconstrueix amb la traçabilitat on-chain, els extractes bancaris i les còpies que conservis. El que no es pot reconstruir no s’inventa: es documenta el criteri aplicat."
-        }
-      ]
-    },
-    {
       "id": "que-necesitamos",
       "h2": "Què necessitem de tu",
       "fondo": "blanco",
@@ -201,6 +176,14 @@
         {
           "q": "I si tinc milers de transaccions?",
           "a": "No és cap problema. El volum es processa de manera automàtica; el que porta temps és la dispersió: protocols petits, cadenes poc documentades o exchanges que ja han tancat. En carteres actives en diverses cadenes és habitual que bona part dels registres sigui spam de tokens, i el filtrem amb criteri. Per això el preu depèn de quantes fonts hi ha, no de quantes operacions."
+        },
+        {
+          "q": "Feu l’informe fiscal de Binance, Kraken o MetaMask?",
+          "a": "Sí, i de qualsevol altre exchange, wallet o protocol. Cadascun té els seus paranys: Binance separa spot, earn, futurs i conversions en exportacions diferents que cal unir sense duplicar; Kraken registra l’staking com a transferències entre subcomptes que, mal llegides, semblen vendes; i MetaMask no té exportació fiscal, així que l’activitat es reconstrueix des de la blockchain a partir de les teves adreces públiques, amb swaps, pools, recompenses i comissions de gas."
+        },
+        {
+          "q": "I si l’exchange on operava ja no existeix?",
+          "a": "Reconstruïm l’històric amb la traçabilitat on-chain, els extractes bancaris i les còpies que conservis. El que no es pot reconstruir no s’inventa: es documenta el criteri aplicat."
         },
         {
           "q": "Quin mètode de càlcul feu servir?",
