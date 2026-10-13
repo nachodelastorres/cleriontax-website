@@ -141,17 +141,17 @@
           {
             "valor": "50 %",
             "titulo": "Minor offence",
-            "body": "Minor offence: penalty on the amount left unpaid"
+            "body": "Penalty on the amount left unpaid"
           },
           {
             "valor": "50–100 %",
             "titulo": "Serious offence",
-            "body": "Serious offence, where concealment is found"
+            "body": "Where concealment is found"
           },
           {
             "valor": "100–150 %",
             "titulo": "Very serious offence",
-            "body": "Very serious offence, where fraudulent means are found"
+            "body": "Where fraudulent means are found"
           },
           {
             "valor": "€120,000",

@@ -141,17 +141,17 @@
           {
             "valor": "50 %",
             "titulo": "Infracció lleu",
-            "body": "Infracció lleu: sanció sobre la quantitat deixada d'ingressar"
+            "body": "Sanció sobre la quantitat deixada d'ingressar"
           },
           {
             "valor": "50–100 %",
             "titulo": "Infracció greu",
-            "body": "Infracció greu, quan s'aprecia ocultació"
+            "body": "Quan s'aprecia ocultació"
           },
           {
             "valor": "100–150 %",
             "titulo": "Infracció molt greu",
-            "body": "Infracció molt greu, quan s'aprecien mitjans fraudulents"
+            "body": "Quan s'aprecien mitjans fraudulents"
           },
           {
             "valor": "120.000 €",

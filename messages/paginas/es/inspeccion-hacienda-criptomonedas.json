@@ -141,17 +141,17 @@
           {
             "valor": "50 %",
             "titulo": "Infracción leve",
-            "body": "Infracción leve: sanción sobre la cantidad dejada de ingresar"
+            "body": "Sanción sobre la cantidad dejada de ingresar"
           },
           {
             "valor": "50–100 %",
             "titulo": "Infracción grave",
-            "body": "Infracción grave, cuando se aprecia ocultación"
+            "body": "Cuando se aprecia ocultación"
           },
           {
             "valor": "100–150 %",
             "titulo": "Infracción muy grave",
-            "body": "Infracción muy grave, cuando se aprecian medios fraudulentos"
+            "body": "Cuando se aprecian medios fraudulentos"
           },
           {
             "valor": "120.000 €",
