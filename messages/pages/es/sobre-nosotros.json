@@ -4,13 +4,14 @@
     "description": "Cleriontax es la rama de fiscalidad de inversiones y criptoactivos del despacho Benavides: ingeniería de datos y criterio fiscal para carteras que un despacho generalista no alcanza."
   },
   "hero": {
-    "etiqueta": "Sobre nosotros",
-    "h1": "Fiscalidad cripto con la precisión que un despacho generalista no alcanza",
-    "subheading": "Somos Cleriontax, la rama del despacho Benavides dedicada a la fiscalidad de las inversiones y los criptoactivos. Unimos ingeniería de datos y criterio fiscal para que cada cifra de tu declaración se pueda explicar.",
-    "cta": {
-      "label": "Cuéntanos tu caso",
-      "href": "/contacto"
-    }
+    "etiqueta": "Sobre Cleriontax",
+    "h1": "La fiscalidad cripto no cabía en un despacho generalista. Por eso existimos.",
+    "subheading": "Somos la rama del despacho Benavides dedicada a la fiscalidad de las inversiones y los criptoactivos: un equipo pequeño que trata los datos con rigor de ingeniero y los impuestos con criterio de asesor.",
+    "meta": [
+      "Fiscalidad de inversiones y criptoactivos",
+      "Parte del despacho Benavides",
+      "Desde España"
+    ]
   },
   "origen": {
     "etiqueta": "Formamos parte de",
@@ -21,69 +22,61 @@
       "Por eso somos un equipo propio, con el respaldo de Benavides y dedicado solo a esto."
     ]
   },
-  "duo": {
-    "h2": "Datos y fiscalidad, en el mismo equipo",
-    "entrada": "Casi todos los errores de una declaración cripto empiezan en los datos, no en la ley. Por eso trabajamos las dos mitades a la vez.",
-    "datos": {
-      "titulo": "Ingeniería de datos",
-      "items": [
-        "Reunimos exchanges, wallets y protocolos en un solo histórico",
-        "Limpiamos, normalizamos y reconciliamos cada operación",
-        "Dejamos rastro de cada cifra hasta su origen"
-      ]
-    },
-    "fiscal": {
-      "titulo": "Criterio fiscal",
-      "items": [
-        "Clasificamos cada operación según la norma española",
-        "Aplicamos FIFO y las compensaciones que correspondan",
-        "Documentamos cada decisión para poder defenderla ante Hacienda"
-      ]
-    },
-    "resultado": "Cifras que se pueden defender"
-  },
   "equipo": {
-    "h2": "Quiénes somos",
-    "entrada": "Dos personas, las dos mitades del trabajo. Hablas con nosotros directamente, del primer mensaje a la presentación.",
+    "etiqueta": "Las personas",
+    "h2": "Detrás de cada cifra hay alguien que la ha revisado",
+    "seOcupa": "Se ocupa de que",
     "personas": [
       {
         "id": "nacho",
         "nombre": "Nacho Torres",
         "rol": "Datos e ingeniería",
-        "body": "Lleva la parte técnica: cómo se reúnen, limpian y reconcilian los datos de cada cliente hasta convertir miles de operaciones dispersas en una cartera conciliada y trazable."
+        "body": "Lleva la parte técnica: cómo se reúnen, limpian y reconcilian los datos de cada cliente hasta convertir miles de operaciones dispersas en una cartera conciliada y trazable.",
+        "foco": "los datos cuenten la historia completa."
       },
       {
         "id": "gonzalo",
         "nombre": "Gonzalo Benavides",
         "rol": "Fiscalidad",
-        "body": "Lleva la parte fiscal: qué tributa y cómo, qué criterio se aplica en cada caso dudoso y cómo se declara y se defiende ante la Agencia Tributaria."
+        "body": "Lleva la parte fiscal: qué tributa y cómo, qué criterio se aplica en cada caso dudoso y cómo se declara y se defiende ante la Agencia Tributaria.",
+        "foco": "cada criterio se pueda defender."
       }
     ]
   },
-  "boutique": {
-    "h2": "Un despacho boutique",
-    "entrada": "Pocos clientes a la vez y bien atendidos. Es la única forma de trabajar como creemos que hay que hacerlo.",
-    "items": [
-      {
-        "icono": "proactividad",
-        "titulo": "Proactividad",
-        "body": "No esperamos a que preguntes: te avisamos de plazos, cambios normativos y riesgos en tu cartera antes de que se conviertan en un problema."
-      },
-      {
-        "icono": "comunicacion",
-        "titulo": "Comunicación constante",
-        "body": "Sabes en todo momento en qué punto está tu caso. Hablas con quien lo lleva, sin intermediarios ni tickets."
-      },
-      {
-        "icono": "precision",
-        "titulo": "Precisión",
-        "body": "Cada cifra tiene detrás su operación y su criterio. Preferimos tardar un día más a entregar algo que no se pueda explicar."
-      }
-    ]
+  "trato": {
+    "etiqueta": "Cómo trabajamos",
+    "h2": "Un despacho boutique: pocos clientes y mucha conversación",
+    "principios": [
+      "Te avisamos antes de que preguntes.",
+      "Hablas siempre con quien lleva tu caso.",
+      "Cada cifra llega con su porqué."
+    ],
+    "chat": {
+      "titulo": "Un mensaje nuestro, un martes cualquiera",
+      "nota": "Conversación de ejemplo",
+      "nosotros": "Cleriontax",
+      "mensajes": [
+        {
+          "de": "nosotros",
+          "hora": "10:02",
+          "texto": "Hola. Tu saldo en Kraken a 31 de diciembre supera los 50.000 €, así que este año te toca el modelo 721. Vence el 31 de marzo. ¿Lo preparamos?"
+        },
+        {
+          "de": "cliente",
+          "hora": "10:15",
+          "texto": "No tenía ni idea. Sí, adelante."
+        },
+        {
+          "de": "nosotros",
+          "hora": "17:40",
+          "texto": "Hecho y presentado. Te dejamos el justificante y la valoración de cada saldo en tu carpeta."
+        }
+      ]
+    }
   },
   "cierre": {
-    "titulo": "¿Hablamos de tu caso?",
-    "apoyo": "Cuéntanos qué tienes y qué necesitas. Te respondemos nosotros, no un sistema automático.",
-    "accion": "Contactar"
+    "h2": "¿Hablamos?",
+    "body": "Cuéntanos qué tienes entre manos. Te responde una persona, no un formulario.",
+    "enlace": "Escríbenos"
   }
 }

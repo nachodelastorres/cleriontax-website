@@ -4,13 +4,14 @@
     "description": "Cleriontax is the investment and crypto tax branch of the Benavides firm: data engineering and tax judgement for portfolios a general practice can't reach."
   },
   "hero": {
-    "etiqueta": "About us",
-    "h1": "Crypto tax with the precision a general practice can't reach",
-    "subheading": "We are Cleriontax, the branch of the Benavides firm dedicated to the taxation of investments and crypto assets. We combine data engineering and tax judgement so that every figure on your return can be explained.",
-    "cta": {
-      "label": "Tell us about your case",
-      "href": "/contacto"
-    }
+    "etiqueta": "About Cleriontax",
+    "h1": "Crypto tax didn't fit in a general practice. That's why we exist.",
+    "subheading": "We are the branch of the Benavides firm dedicated to the taxation of investments and crypto assets: a small team that treats data with an engineer's rigour and tax with an adviser's judgement.",
+    "meta": [
+      "Investment and crypto asset taxation",
+      "Part of the Benavides firm",
+      "Based in Spain"
+    ]
   },
   "origen": {
     "etiqueta": "We are part of",
@@ -21,69 +22,61 @@
       "That's why we are a team of our own, backed by Benavides and dedicated to this alone."
     ]
   },
-  "duo": {
-    "h2": "Data and tax, in the same team",
-    "entrada": "Almost every mistake in a crypto tax return starts in the data, not in the law. That's why we work on both halves at once.",
-    "datos": {
-      "titulo": "Data engineering",
-      "items": [
-        "We bring exchanges, wallets and protocols together into one history",
-        "We clean, normalise and reconcile every transaction",
-        "We leave a trail from every figure back to its source"
-      ]
-    },
-    "fiscal": {
-      "titulo": "Tax judgement",
-      "items": [
-        "We classify every transaction under Spanish rules",
-        "We apply FIFO and whatever offsets apply",
-        "We document every decision so it can be defended before the tax agency"
-      ]
-    },
-    "resultado": "Figures that can be defended"
-  },
   "equipo": {
-    "h2": "Who we are",
-    "entrada": "Two people, the two halves of the work. You talk to us directly, from the first message to the filing.",
+    "etiqueta": "The people",
+    "h2": "Behind every figure there's someone who has checked it",
+    "seOcupa": "Makes sure that",
     "personas": [
       {
         "id": "nacho",
         "nombre": "Nacho Torres",
         "rol": "Data and engineering",
-        "body": "Handles the technical side: how each client's data is gathered, cleaned and reconciled until thousands of scattered transactions become a reconciled, traceable portfolio."
+        "body": "Handles the technical side: how each client's data is gathered, cleaned and reconciled until thousands of scattered transactions become a reconciled, traceable portfolio.",
+        "foco": "the data tells the whole story."
       },
       {
         "id": "gonzalo",
         "nombre": "Gonzalo Benavides",
         "rol": "Tax",
-        "body": "Handles the tax side: what is taxed and how, which criterion applies in each doubtful case, and how it is declared and defended before the Spanish Tax Agency."
+        "body": "Handles the tax side: what is taxed and how, which criterion applies in each doubtful case, and how it is declared and defended before the Spanish Tax Agency.",
+        "foco": "every criterion can be defended."
       }
     ]
   },
-  "boutique": {
-    "h2": "A boutique firm",
-    "entrada": "Few clients at a time, properly looked after. It's the only way to work the way we think it should be done.",
-    "items": [
-      {
-        "icono": "proactividad",
-        "titulo": "Proactivity",
-        "body": "We don't wait for you to ask: we warn you about deadlines, rule changes and risks in your portfolio before they become a problem."
-      },
-      {
-        "icono": "comunicacion",
-        "titulo": "Constant communication",
-        "body": "You always know where your case stands. You talk to the person handling it, with no middlemen or tickets."
-      },
-      {
-        "icono": "precision",
-        "titulo": "Precision",
-        "body": "Every figure has its transaction and its criterion behind it. We'd rather take one more day than deliver something that can't be explained."
-      }
-    ]
+  "trato": {
+    "etiqueta": "How we work",
+    "h2": "A boutique firm: few clients and a lot of conversation",
+    "principios": [
+      "We tell you before you ask.",
+      "You always talk to whoever handles your case.",
+      "Every figure comes with its reason."
+    ],
+    "chat": {
+      "titulo": "A message from us, on any given Tuesday",
+      "nota": "Sample conversation",
+      "nosotros": "Cleriontax",
+      "mensajes": [
+        {
+          "de": "nosotros",
+          "hora": "10:02",
+          "texto": "Hi. Your Kraken balance at 31 December is over €50,000, so this year you need to file Form 721. The deadline is 31 March. Shall we prepare it?"
+        },
+        {
+          "de": "cliente",
+          "hora": "10:15",
+          "texto": "I had no idea. Yes, go ahead."
+        },
+        {
+          "de": "nosotros",
+          "hora": "17:40",
+          "texto": "Done and filed. The receipt and the valuation of each balance are in your folder."
+        }
+      ]
+    }
   },
   "cierre": {
-    "titulo": "Shall we talk about your case?",
-    "apoyo": "Tell us what you have and what you need. We reply ourselves, not an automated system.",
-    "accion": "Contact us"
+    "h2": "Shall we talk?",
+    "body": "Tell us what you're dealing with. A person will reply, not a form.",
+    "enlace": "Write to us"
   }
 }
