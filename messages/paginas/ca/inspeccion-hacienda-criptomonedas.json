@@ -168,7 +168,6 @@
       "fondo": "papel",
       "entrada": "Pot ser que la quota estigui ben calculada i tot i així la sanció no sigui procedent. Per això s'analitzen a part i, de vegades, convé acceptar-ne una i recórrer l'altra.",
       "frentes": {
-        "nexo": "Es defensen per separat",
         "cuota": {
           "etiqueta": "La quota",
           "lema": "Es discuteix amb xifres",
@@ -177,20 +176,35 @@
             "Quota",
             "Interessos"
           ],
-          "nota": "La liquidació corregeix el que havies d'haver pagat. Si l'AEAT ha partit del que li va reportar un exchange, és freqüent que compti com a vendes les transferències entre els teus propis wallets o que valori a zero el cost del que vas comprar. Refer l'operativa redueix la base, i amb ella tot el que es calcula a sobre."
+          "intro": "La liquidació corregeix el que havies d’haver pagat. Si la base està inflada, tot el que es calcula a sobre també.",
+          "defensas": [
+            {
+              "titulo": "Les transferències entre les teves wallets, fora de la base",
+              "body": "Moure fons entre comptes teus no és vendre."
+            },
+            {
+              "titulo": "El cost d’adquisició, recuperat",
+              "body": "El que vas comprar té un cost, encara que l’exchange el valori a zero."
+            }
+          ]
         },
         "sancion": {
           "etiqueta": "La sanció",
           "lema": "Es discuteix amb la conducta",
-          "intro": "Per sancionar, l'Administració ha de motivar que hi va haver culpabilitat, encara que sigui per simple negligència. No n'hi ha prou de constatar que vas declarar de menys. Un acord que descriu el resultat sense raonar la conducta és atacable precisament per això.",
+          "flujo": [
+            "Conducta",
+            "Culpabilitat",
+            "Sanció"
+          ],
+          "intro": "Per sancionar cal motivar que hi va haver culpa, encara que sigui negligència. No n’hi ha prou de constatar que vas declarar de menys.",
           "defensas": [
             {
               "titulo": "La interpretació raonable de la norma",
-              "body": "Durant anys, bona part de l'operativa cripto, com les permutes, l'staking, els airdrops o el DeFi, no va tenir un criteri administratiu clar. Si en la data de la teva declaració no n'hi havia, haver aplicat una interpretació raonable no és sancionable per no coincidir amb el criteri d'avui."
+              "body": "Si en declarar no hi havia un criteri clar, aplicar-ne un de raonable no és sancionable."
             },
             {
               "titulo": "L'absència d'ocultació",
-              "body": "Operar en plataformes que reporten, moure els diners pel teu banc i no fer servir estructures opaques són fets que pesen en la qualificació de la infracció, i s'aporten."
+              "body": "Operar en plataformes que informen i moure els diners pel teu banc pesa en la qualificació."
             }
           ]
         }

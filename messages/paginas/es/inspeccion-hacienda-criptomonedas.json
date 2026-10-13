@@ -168,7 +168,6 @@
       "fondo": "papel",
       "entrada": "Puede que la cuota esté bien calculada y aun así la sanción no proceda. Por eso se analizan aparte y, a veces, conviene aceptar una y recurrir la otra.",
       "frentes": {
-        "nexo": "Se defienden por separado",
         "cuota": {
           "etiqueta": "La cuota",
           "lema": "Se discute con cifras",
@@ -177,20 +176,35 @@
             "Cuota",
             "Intereses"
           ],
-          "nota": "La liquidación corrige lo que debías haber pagado. Si la AEAT ha partido de lo que le reportó un exchange, es frecuente que cuente como ventas las transferencias entre tus propias wallets o que valore a cero el coste de lo que compraste. Rehacer la operativa reduce la base, y con ella todo lo que se calcula encima."
+          "intro": "La liquidación corrige lo que debías haber pagado. Si la base está inflada, todo lo que se calcula encima también.",
+          "defensas": [
+            {
+              "titulo": "Las transferencias entre tus wallets, fuera de la base",
+              "body": "Mover fondos entre cuentas tuyas no es vender."
+            },
+            {
+              "titulo": "El coste de adquisición, recuperado",
+              "body": "Lo que compraste tiene un coste, aunque el exchange lo valore a cero."
+            }
+          ]
         },
         "sancion": {
           "etiqueta": "La sanción",
           "lema": "Se discute con la conducta",
-          "intro": "Para sancionar, la Administración tiene que motivar que hubo culpabilidad, aunque sea por simple negligencia. No basta con constatar que declaraste de menos. Un acuerdo que describe el resultado sin razonar la conducta es atacable precisamente por eso.",
+          "flujo": [
+            "Conducta",
+            "Culpabilidad",
+            "Sanción"
+          ],
+          "intro": "Para sancionar hay que motivar que hubo culpa, aunque sea negligencia. No basta con constatar que declaraste de menos.",
           "defensas": [
             {
               "titulo": "La interpretación razonable de la norma",
-              "body": "Durante años, buena parte de la operativa cripto, como las permutas, el staking, los airdrops o el DeFi, no tuvo un criterio administrativo claro. Si en la fecha de tu declaración no lo había, haber aplicado una interpretación razonable no es sancionable por no coincidir con el criterio de hoy."
+              "body": "Si al declarar no había un criterio claro, aplicar uno razonable no es sancionable."
             },
             {
               "titulo": "La ausencia de ocultación",
-              "body": "Operar en plataformas que reportan, mover el dinero por tu banco y no usar estructuras opacas son hechos que pesan en la calificación de la infracción, y se aportan."
+              "body": "Operar en plataformas que reportan y mover el dinero por tu banco pesa en la calificación."
             }
           ]
         }

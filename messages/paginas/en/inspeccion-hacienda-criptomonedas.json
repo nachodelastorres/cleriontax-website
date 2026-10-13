@@ -168,7 +168,6 @@
       "fondo": "papel",
       "entrada": "The tax may be correctly calculated and the penalty still not be justified. That's why they are analysed separately and, sometimes, it makes sense to accept one and appeal the other.",
       "frentes": {
-        "nexo": "Defended separately",
         "cuota": {
           "etiqueta": "The tax due",
           "lema": "Argued with figures",
@@ -177,20 +176,35 @@
             "Tax due",
             "Interest"
           ],
-          "nota": "The assessment corrects what you should have paid. If the AEAT started from what an exchange reported, it often counts transfers between your own wallets as sales or values the cost of what you bought at zero. Rebuilding your activity reduces the base, and with it everything calculated on top."
+          "intro": "The assessment corrects what you should have paid. If the base is inflated, everything calculated on top of it is too.",
+          "defensas": [
+            {
+              "titulo": "Transfers between your wallets, out of the base",
+              "body": "Moving funds between your own accounts is not selling."
+            },
+            {
+              "titulo": "The acquisition cost, recovered",
+              "body": "What you bought has a cost, even if the exchange values it at zero."
+            }
+          ]
         },
         "sancion": {
           "etiqueta": "The penalty",
           "lema": "Argued on conduct",
-          "intro": "To impose a penalty, the tax authority has to show there was fault, even if only simple negligence. It isn't enough to establish that you under-declared. A decision that describes the result without reasoning about conduct can be challenged precisely for that.",
+          "flujo": [
+            "Conduct",
+            "Fault",
+            "Penalty"
+          ],
+          "intro": "To penalise, fault has to be reasoned, even if it is only negligence. Showing that you under-declared is not enough.",
           "defensas": [
             {
               "titulo": "Reasonable interpretation of the law",
-              "body": "For years, much crypto activity, such as swaps, staking, airdrops or DeFi, had no clear administrative criterion. If there was none on the date of your return, having applied a reasonable interpretation isn't punishable just because it differs from today's criterion."
+              "body": "If there was no clear criterion when you filed, applying a reasonable one cannot be penalised."
             },
             {
               "titulo": "No concealment",
-              "body": "Trading on platforms that report, moving money through your bank and not using opaque structures are facts that weigh in how the offence is classified, and they are put forward."
+              "body": "Using platforms that report and moving money through your bank weigh in the classification."
             }
           ]
         }
