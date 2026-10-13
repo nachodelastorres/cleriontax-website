@@ -22,7 +22,6 @@
     { "id": "que-recibes", "label": "What you get" },
     { "id": "fifo-trazabilidad", "label": "FIFO and traceability" },
     { "id": "como-trabajamos", "label": "How we work" },
-    { "id": "carteras-grandes", "label": "Large portfolios" },
     { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
     { "id": "que-necesitamos", "label": "What we need from you" },
     { "id": "precio", "label": "Pricing" },
@@ -155,19 +154,6 @@
       ]
     },
     {
-      "id": "carteras-grandes",
-      "h2": "Portfolios with thousands of transactions",
-      "fondo": "azul",
-      "entrada": "Figures from a real portfolio active on several chains. They are not your case, but they explain why this can't be solved with a spreadsheet.",
-      "cifras": [
-        { "valor": "100,000+", "etiqueta": "transactions in a portfolio active on several chains" },
-        { "valor": "60–90 %", "etiqueta": "of records on chains like Solana can be token spam" },
-        { "valor": "300–2,000", "etiqueta": "transactions that have to be resolved by hand because no rule covers them", "acento": true },
-        { "valor": "1", "etiqueta": "final figure, with every euro traceable to its origin" }
-      ],
-      "body": "Volume is not the hard part; dispersion is. A large but orderly portfolio reconciles quickly. What takes time are small protocols with no maintained explorer, poorly documented chains and exchanges that have already closed."
-    },
-    {
       "id": "por-plataforma",
       "h2": "Tax report for Binance, Kraken, MetaMask and DeFi",
       "fondo": "papel",
@@ -211,6 +197,10 @@
         {
           "q": "How much does a crypto tax report cost?",
           "a": "It depends on how many data sources need reconciling. Single platform, with all your activity on one exchange, costs €250. Multi-exchange, with two or three centralised exchanges, €350. Mixed portfolio, combining exchanges with self-custody wallets, DeFi, NFTs or stocks up to three sources, €450. Complex portfolio, from €700. We confirm your tier before starting, and the details are on the pricing page."
+        },
+        {
+          "q": "What if I have thousands of transactions?",
+          "a": "That's not a problem. Volume is processed automatically; what takes time is dispersion: small protocols, poorly documented chains or exchanges that have since closed. In portfolios active across several chains, a large share of the records is often token spam, and we filter it with clear criteria. That's why the price depends on how many sources there are, not on how many transactions."
         },
         {
           "q": "Which calculation method do you use?",

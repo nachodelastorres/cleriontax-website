@@ -22,7 +22,6 @@
     { "id": "que-recibes", "label": "Qué recibes" },
     { "id": "fifo-trazabilidad", "label": "FIFO y trazabilidad" },
     { "id": "como-trabajamos", "label": "Cómo trabajamos" },
-    { "id": "carteras-grandes", "label": "Carteras grandes" },
     { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
     { "id": "que-necesitamos", "label": "Qué necesitamos de ti" },
     { "id": "precio", "label": "Precio" },
@@ -155,19 +154,6 @@
       ]
     },
     {
-      "id": "carteras-grandes",
-      "h2": "Carteras con miles de transacciones",
-      "fondo": "azul",
-      "entrada": "Magnitudes de una cartera real activa en varias cadenas. No son tu caso, pero explican por qué esto no se resuelve con una hoja de cálculo.",
-      "cifras": [
-        { "valor": "100.000+", "etiqueta": "operaciones en una cartera activa en varias cadenas" },
-        { "valor": "60–90 %", "etiqueta": "de los registros en cadenas como Solana pueden ser spam de tokens" },
-        { "valor": "300–2.000", "etiqueta": "operaciones que hay que resolver a mano porque ninguna regla las cubre", "acento": true },
-        { "valor": "1", "etiqueta": "cifra final, con cada euro trazable hasta su origen" }
-      ],
-      "body": "El volumen no es el problema difícil; la dispersión sí. Una cartera grande pero ordenada se reconcilia rápido. Lo que lleva tiempo son los protocolos pequeños sin explorador mantenido, las cadenas poco documentadas y los exchanges que ya cerraron."
-    },
-    {
       "id": "por-plataforma",
       "h2": "Informe fiscal de Binance, Kraken, MetaMask y DeFi",
       "fondo": "papel",
@@ -211,6 +197,10 @@
         {
           "q": "¿Cuánto cuesta un informe fiscal de criptomonedas?",
           "a": "Depende de cuántas fuentes de datos hay que reconciliar. Plataforma única, con toda tu operativa en un exchange, cuesta 250 €. Multiexchange, con dos o tres exchanges centralizados, 350 €. Cartera mixta, que combina exchanges con wallets propias, DeFi, NFT o acciones hasta tres fuentes, 450 €. Cartera compleja, a partir de 700 €. Te confirmamos el tramo antes de empezar y tienes el detalle en la página de precios."
+        },
+        {
+          "q": "¿Y si tengo miles de transacciones?",
+          "a": "No es un problema. El volumen se procesa de forma automática; lo que lleva tiempo es la dispersión: protocolos pequeños, cadenas poco documentadas o exchanges que ya cerraron. En carteras activas en varias cadenas es habitual que buena parte de los registros sea spam de tokens, y lo filtramos con criterio. Por eso el precio depende de cuántas fuentes hay, no de cuántas operaciones."
         },
         {
           "q": "¿Qué método de cálculo usáis?",

@@ -22,7 +22,6 @@
     { "id": "que-recibes", "label": "Què reps" },
     { "id": "fifo-trazabilidad", "label": "FIFO i traçabilitat" },
     { "id": "como-trabajamos", "label": "Com treballem" },
-    { "id": "carteras-grandes", "label": "Carteres grans" },
     { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
     { "id": "que-necesitamos", "label": "Què necessitem de tu" },
     { "id": "precio", "label": "Preu" },
@@ -155,19 +154,6 @@
       ]
     },
     {
-      "id": "carteras-grandes",
-      "h2": "Carteres amb milers de transaccions",
-      "fondo": "azul",
-      "entrada": "Magnituds d’una cartera real activa en diverses cadenes. No són el teu cas, però expliquen per què això no es resol amb un full de càlcul.",
-      "cifras": [
-        { "valor": "100.000+", "etiqueta": "operacions en una cartera activa en diverses cadenes" },
-        { "valor": "60–90 %", "etiqueta": "dels registres en cadenes com Solana poden ser spam de tokens" },
-        { "valor": "300–2.000", "etiqueta": "operacions que cal resoldre a mà perquè cap regla no les cobreix", "acento": true },
-        { "valor": "1", "etiqueta": "xifra final, amb cada euro traçable fins al seu origen" }
-      ],
-      "body": "El volum no és el problema difícil; la dispersió sí. Una cartera gran però ordenada es reconcilia ràpid. El que porta temps són els protocols petits sense explorador mantingut, les cadenes poc documentades i els exchanges que ja han tancat."
-    },
-    {
       "id": "por-plataforma",
       "h2": "Informe fiscal de Binance, Kraken, MetaMask i DeFi",
       "fondo": "papel",
@@ -211,6 +197,10 @@
         {
           "q": "Quant costa un informe fiscal de criptomonedes?",
           "a": "Depèn de quantes fonts de dades cal reconciliar. Plataforma única, amb tota la teva operativa en un exchange, costa 250 €. Multiexchange, amb dos o tres exchanges centralitzats, 350 €. Cartera mixta, que combina exchanges amb wallets pròpies, DeFi, NFT o accions fins a tres fonts, 450 €. Cartera complexa, a partir de 700 €. Et confirmem el tram abans de començar i tens el detall a la pàgina de preus."
+        },
+        {
+          "q": "I si tinc milers de transaccions?",
+          "a": "No és cap problema. El volum es processa de manera automàtica; el que porta temps és la dispersió: protocols petits, cadenes poc documentades o exchanges que ja han tancat. En carteres actives en diverses cadenes és habitual que bona part dels registres sigui spam de tokens, i el filtrem amb criteri. Per això el preu depèn de quantes fonts hi ha, no de quantes operacions."
         },
         {
           "q": "Quin mètode de càlcul feu servir?",
