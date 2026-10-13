@@ -48,13 +48,13 @@
     "personas": [
       {
         "id": "nacho",
-        "nombre": "Nacho",
+        "nombre": "Nacho Torres",
         "rol": "Data and engineering",
         "body": "Handles the technical side: how each client's data is gathered, cleaned and reconciled until thousands of scattered transactions become a reconciled, traceable portfolio."
       },
       {
         "id": "gonzalo",
-        "nombre": "Gonzalo",
+        "nombre": "Gonzalo Benavides",
         "rol": "Tax",
         "body": "Handles the tax side: what is taxed and how, which criterion applies in each doubtful case, and how it is declared and defended before the Spanish Tax Agency."
       }

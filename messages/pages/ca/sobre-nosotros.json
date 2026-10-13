@@ -48,13 +48,13 @@
     "personas": [
       {
         "id": "nacho",
-        "nombre": "Nacho",
+        "nombre": "Nacho Torres",
         "rol": "Dades i enginyeria",
         "body": "Porta la part tècnica: com es reuneixen, netegen i reconcilien les dades de cada client fins a convertir milers d’operacions disperses en una cartera conciliada i traçable."
       },
       {
         "id": "gonzalo",
-        "nombre": "Gonzalo",
+        "nombre": "Gonzalo Benavides",
         "rol": "Fiscalitat",
         "body": "Porta la part fiscal: què tributa i com, quin criteri s’aplica en cada cas dubtós i com es declara i es defensa davant l’Agència Tributària."
       }

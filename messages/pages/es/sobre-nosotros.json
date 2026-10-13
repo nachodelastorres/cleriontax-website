@@ -48,13 +48,13 @@
     "personas": [
       {
         "id": "nacho",
-        "nombre": "Nacho",
+        "nombre": "Nacho Torres",
         "rol": "Datos e ingeniería",
         "body": "Lleva la parte técnica: cómo se reúnen, limpian y reconcilian los datos de cada cliente hasta convertir miles de operaciones dispersas en una cartera conciliada y trazable."
       },
       {
         "id": "gonzalo",
-        "nombre": "Gonzalo",
+        "nombre": "Gonzalo Benavides",
         "rol": "Fiscalidad",
         "body": "Lleva la parte fiscal: qué tributa y cómo, qué criterio se aplica en cada caso dudoso y cómo se declara y se defiende ante la Agencia Tributaria."
       }
