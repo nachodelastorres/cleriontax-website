@@ -1066,6 +1066,7 @@
     "titulo": "How much it costs",
     "entrada": "The price depends on how many data sources need reconciling, not on how much you made or how many transactions you have. You know it before we start and it doesn’t change halfway through.",
     "desde": "from",
+    "iva": "VAT included",
     "incluyeTitulo": "Included in every tier",
     "incluye": [
       "Reconciliation of all your sources: buys, sells, swaps, transfers and fees",
@@ -1099,7 +1100,7 @@
   },
   "precios": {
     "seoTitulo": "Crypto tax advisor pricing in Spain | Cleriontax",
-    "seoDescripcion": "How much it costs to declare crypto with a tax advisor in Spain: fixed tiers from €250 based on your portfolio’s data sources. No surprises halfway.",
+    "seoDescripcion": "How much it costs to declare crypto with a tax advisor in Spain: fixed tiers from €250, VAT included, based on your portfolio’s data sources. No surprises halfway.",
     "etiqueta": "Pricing",
     "titulo": "How much a crypto tax advisor costs",
     "entrada": "Four fixed tiers based on how complex your portfolio is. We confirm yours as soon as we see your data, before any work starts.",

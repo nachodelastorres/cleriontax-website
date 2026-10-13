@@ -1066,6 +1066,7 @@
     "titulo": "Quant costa",
     "entrada": "El preu depèn de quantes fonts de dades cal conciliar, no de quant hagis guanyat ni de quantes operacions tinguis. Ho saps abans de començar i no canvia a meitat de la feina.",
     "desde": "des de",
+    "iva": "IVA inclòs",
     "incluyeTitulo": "Inclòs en tots els trams",
     "incluye": [
       "Conciliació de totes les teves fonts: compres, vendes, permutes, transferències i comissions",
@@ -1099,7 +1100,7 @@
   },
   "precios": {
     "seoTitulo": "Preu assessor fiscal de criptomonedes | Cleriontax",
-    "seoDescripcion": "Quant costa declarar criptomonedes amb un assessor fiscal: trams tancats des de 250 € segons les fonts de dades de la teva cartera. Sense sorpreses.",
+    "seoDescripcion": "Quant costa declarar criptomonedes amb un assessor fiscal: trams tancats des de 250 €, IVA inclòs, segons les fonts de dades de la teva cartera. Sense sorpreses.",
     "etiqueta": "Preus",
     "titulo": "Quant costa un assessor fiscal de criptomonedes",
     "entrada": "Quatre trams tancats segons la complexitat de la teva cartera. Et confirmem el teu tan bon punt veiem les teves dades, abans de començar a treballar.",

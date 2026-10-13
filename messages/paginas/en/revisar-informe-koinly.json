@@ -122,7 +122,7 @@
         },
         {
           "q": "How much does a report review cost?",
-          "a": "It depends on how many data sources feed the report. If everything comes from a single exchange, it's the «Single platform» tier, €250; two or three exchanges, «Multi-exchange», €350; if you combine exchanges with your own wallets, DeFi, NFTs or stocks up to three sources, «Mixed portfolio», €450; and beyond that, «Complex portfolio», from €700. We confirm the tier before we start. The details are on the prices page."
+          "a": "It depends on how many data sources feed the report. If everything comes from a single exchange, it's the «Single platform» tier, €250; two or three exchanges, «Multi-exchange», €350; if you combine exchanges with your own wallets, DeFi, NFTs or stocks up to three sources, «Mixed portfolio», €450; and beyond that, «Complex portfolio», from €700. All prices include VAT. We confirm the tier before we start. The details are on the prices page."
         },
         {
           "q": "Do you need access to my Koinly account?",

@@ -65,6 +65,10 @@ export default async function Tarifas({
                   {formato.format(tarifa.precio)}
                 </span>
               </p>
+              {/* Junto al importe y no en una nota al pie: la duda surge al ver la cifra. */}
+              <p className={`mt-2 text-dato ${ultima ? "text-niebla" : "text-pizarra"}`}>
+                {t("iva")}
+              </p>
               <p className={`mt-5 flex-1 text-nota ${ultima ? "text-niebla" : "text-pizarra"}`}>
                 {t(`items.${tarifa.id}.para`)}
               </p>

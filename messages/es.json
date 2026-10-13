@@ -1066,6 +1066,7 @@
     "titulo": "Cuánto cuesta",
     "entrada": "El precio depende de cuántas fuentes de datos hay que reconciliar, no de cuánto hayas ganado ni de cuántas operaciones tengas. Lo sabes antes de empezar y no cambia a mitad del trabajo.",
     "desde": "desde",
+    "iva": "IVA incluido",
     "incluyeTitulo": "Incluido en todos los tramos",
     "incluye": [
       "Reconciliación de todas tus fuentes: compras, ventas, permutas, transferencias y comisiones",
@@ -1099,7 +1100,7 @@
   },
   "precios": {
     "seoTitulo": "Precio asesor fiscal de criptomonedas | Cleriontax",
-    "seoDescripcion": "Cuánto cuesta declarar criptomonedas con un asesor fiscal: tramos cerrados desde 250 € según las fuentes de datos de tu cartera. Sin sorpresas a mitad.",
+    "seoDescripcion": "Cuánto cuesta declarar criptomonedas con un asesor fiscal: tramos cerrados desde 250 €, IVA incluido, según las fuentes de datos de tu cartera. Sin sorpresas a mitad.",
     "etiqueta": "Precios",
     "titulo": "Cuánto cuesta un asesor fiscal de criptomonedas",
     "entrada": "Cuatro tramos cerrados según la complejidad de tu cartera. Te confirmamos el tuyo en cuanto vemos tus datos, antes de empezar a trabajar.",

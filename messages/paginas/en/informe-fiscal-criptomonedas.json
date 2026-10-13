@@ -171,7 +171,7 @@
       "items": [
         {
           "q": "How much does a crypto tax report cost?",
-          "a": "It depends on how many data sources need reconciling. Single platform, with all your activity on one exchange, costs €250. Multi-exchange, with two or three centralised exchanges, €350. Mixed portfolio, combining exchanges with self-custody wallets, DeFi, NFTs or stocks up to three sources, €450. Complex portfolio, from €700. We confirm your tier before starting, and the details are on the pricing page."
+          "a": "It depends on how many data sources need reconciling. Single platform, with all your activity on one exchange, costs €250. Multi-exchange, with two or three centralised exchanges, €350. Mixed portfolio, combining exchanges with self-custody wallets, DeFi, NFTs or stocks up to three sources, €450. Complex portfolio, from €700. All prices include VAT. We confirm your tier before starting, and the details are on the pricing page."
         },
         {
           "q": "What if I have thousands of transactions?",
