@@ -190,15 +190,11 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
   return (
     <div className="mt-10 border border-niebla bg-blanco">
       {/* Cabeceras: solo en pantalla ancha, donde las columnas se alinean. */}
-      <div className="hidden grid-cols-[10rem_1fr_2.5rem_1fr] gap-x-6 border-b border-niebla px-7 py-4 md:grid">
+      <div className="hidden grid-cols-[10rem_1fr_2.5rem_1fr] items-end gap-x-6 border-b border-niebla px-7 py-6 md:grid">
         <span aria-hidden="true" />
-        <ChipEstado estado="revision" className="justify-self-start">
-          {antes}
-        </ChipEstado>
+        <h3 className="text-center text-subtitulo text-pizarra">{antes}</h3>
         <span aria-hidden="true" />
-        <ChipEstado estado="conciliado" className="justify-self-start">
-          {despues}
-        </ChipEstado>
+        <h3 className="text-center text-subtitulo text-azul">{despues}</h3>
       </div>
 
       <ul>
