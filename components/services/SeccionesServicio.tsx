@@ -31,6 +31,7 @@ import CalculadoraCuota, { type TextosCuota } from "@/components/formulario/Calc
 import AnioFiscal, { type Ventana } from "@/components/formulario/AnioFiscal";
 import Mitos, { type TextosMitos } from "@/components/formulario/Mitos";
 import FichasModelo, { type Ficha } from "@/components/formulario/FichasModelo";
+import Casillas, { type TextosCasillas } from "@/components/formulario/Casillas";
 
 /**
  * Renderiza las secciones de una página.
@@ -74,6 +75,7 @@ export interface Seccion {
   anio?: Ventana[];
   mitos?: TextosMitos;
   fichas?: { etiqueta: string; fichas: Ficha[] };
+  casillas?: TextosCasillas;
   /** Franja final que lleva a otra página de servicio. */
   derivacion?: Derivacion;
   formas?: PasoForma[];
@@ -299,6 +301,7 @@ export default function SeccionesServicio({
               {s.anio ? <AnioFiscal locale={locale ?? "es"} ventanas={s.anio} /> : null}
               {s.mitos ? <Mitos {...s.mitos} /> : null}
               {s.fichas ? <FichasModelo {...s.fichas} /> : null}
+              {s.casillas ? <Casillas {...s.casillas} /> : null}
               {s.formas ? <BloqueFormas pasos={s.formas} oscuro={oscuro} /> : null}
               {s.tabla ? <BloqueTabla {...s.tabla} /> : null}
               {s.bullets ? (

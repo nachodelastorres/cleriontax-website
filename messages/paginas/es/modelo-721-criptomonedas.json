@@ -6,7 +6,7 @@
   "excerpt": "Quién está obligado a presentar el modelo 721 por criptomonedas custodiadas en el extranjero, el umbral de 50.000 euros, el plazo de presentación y qué hacer si no lo presentaste a tiempo.",
   "hero": {
     "etiqueta": "Declaración informativa",
-    "h1": "Modelo 721 de criptomonedas: si tu saldo está en un exchange extranjero, Hacienda quiere saberlo",
+    "h1": "Modelo 721: criptomonedas en exchanges extranjeros",
     "subheading": "El 721 no calcula ningún impuesto: informa de lo que tenías a 31 de diciembre en plataformas situadas fuera de España. Por eso se olvida con facilidad, y por eso conviene comprobar cada año si te toca. Lo preparamos con el saldo valorado, el respaldo de cada cifra y la presentación hecha.",
     "cta": {
       "label": "Pedir presupuesto",
@@ -90,24 +90,36 @@
       "h2": "Qué entra en el 721 y qué no",
       "fondo": "blanco",
       "entrada": "La duda más frecuente no es el plazo, es saber qué parte de tu cartera cuenta.",
-      "items": [
-        {
-          "title": "Exchange extranjero: entra",
-          "body": "Binance, Kraken, Coinbase, Bybit o cualquier plataforma situada fuera de España que guarde tus criptomonedas. Es el caso típico del 721."
+      "casillas": {
+        "pregunta": "¿Va al 721?",
+        "opciones": {
+          "si": "Sí",
+          "no": "No",
+          "depende": "Depende"
         },
-        {
-          "title": "Wallet con tus propias claves: en principio, no",
-          "body": "Una Ledger, una Trezor o una MetaMask cuyas claves solo controlas tú no tienen un tercero custodio. No van al 721, aunque sí cuentan para tu renta y, si procede, para el patrimonio."
-        },
-        {
-          "title": "Plataforma situada en España: no",
-          "body": "Si el custodio está en España, no hay obligación informativa por el 721. Esa información le llega a la AEAT por otras vías."
-        },
-        {
-          "title": "Staking, earn y DeFi: hay que mirarlo",
-          "body": "Lo que está en un producto de staking o earn dentro de un exchange extranjero sigue custodiado por él. En DeFi, la respuesta depende de quién controla de verdad las claves. Son los casos que analizamos uno a uno."
-        }
-      ]
+        "filas": [
+          {
+            "caso": "Exchange extranjero",
+            "body": "Binance, Kraken, Coinbase, Bybit o cualquier plataforma situada fuera de España que guarde tus criptomonedas. Es el caso típico del 721.",
+            "veredicto": "si"
+          },
+          {
+            "caso": "Wallet con tus propias claves",
+            "body": "Una Ledger, una Trezor o una MetaMask cuyas claves solo controlas tú no tienen un tercero custodio. No van al 721, aunque sí cuentan para tu renta y, si procede, para el patrimonio.",
+            "veredicto": "no"
+          },
+          {
+            "caso": "Plataforma situada en España",
+            "body": "Si el custodio está en España, no hay obligación informativa por el 721. Esa información le llega a la AEAT por otras vías.",
+            "veredicto": "no"
+          },
+          {
+            "caso": "Staking, earn y DeFi",
+            "body": "Lo que está en un producto de staking o earn dentro de un exchange extranjero sigue custodiado por él. En DeFi, la respuesta depende de quién controla de verdad las claves. Son los casos que analizamos uno a uno.",
+            "veredicto": "depende"
+          }
+        ]
+      }
     },
     {
       "id": "otros-modelos",

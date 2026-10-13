@@ -6,7 +6,7 @@
   "excerpt": "Qui està obligat a presentar el model 721 per criptomonedes custodiades a l’estranger, el llindar de 50.000 euros, el termini de presentació i què fer si no el vas presentar a temps.",
   "hero": {
     "etiqueta": "Declaració informativa",
-    "h1": "Model 721 de criptomonedes: si el teu saldo és en un exchange estranger, Hisenda ho vol saber",
+    "h1": "Model 721: criptomonedes en exchanges estrangers",
     "subheading": "El 721 no calcula cap impost: informa del que tenies a 31 de desembre en plataformes situades fora d’Espanya. Per això s’oblida fàcilment, i per això convé comprovar cada any si et toca. El preparem amb el saldo valorat, el suport de cada xifra i la presentació feta.",
     "cta": {
       "label": "Demanar pressupost",
@@ -90,24 +90,36 @@
       "h2": "Què entra al 721 i què no",
       "fondo": "blanco",
       "entrada": "El dubte més freqüent no és el termini, és saber quina part de la teva cartera compta.",
-      "items": [
-        {
-          "title": "Exchange estranger: hi entra",
-          "body": "Binance, Kraken, Coinbase, Bybit o qualsevol plataforma situada fora d’Espanya que guardi les teves criptomonedes. És el cas típic del 721."
+      "casillas": {
+        "pregunta": "Va al 721?",
+        "opciones": {
+          "si": "Sí",
+          "no": "No",
+          "depende": "Depèn"
         },
-        {
-          "title": "Wallet amb les teves pròpies claus: en principi, no",
-          "body": "Una Ledger, una Trezor o una MetaMask les claus de la qual només controles tu no tenen un tercer custodi. No van al 721, tot i que sí compten per a la teva renda i, si escau, per al patrimoni."
-        },
-        {
-          "title": "Plataforma situada a Espanya: no",
-          "body": "Si el custodi és a Espanya, no hi ha obligació informativa pel 721. Aquesta informació arriba a l’AEAT per altres vies."
-        },
-        {
-          "title": "Staking, earn i DeFi: cal mirar-ho",
-          "body": "El que tens en un producte de staking o earn dins d’un exchange estranger continua custodiat per ell. A DeFi, la resposta depèn de qui controla de debò les claus. Són els casos que analitzem un per un."
-        }
-      ]
+        "filas": [
+          {
+            "caso": "Exchange estranger",
+            "body": "Binance, Kraken, Coinbase, Bybit o qualsevol plataforma situada fora d’Espanya que guardi les teves criptomonedes. És el cas típic del 721.",
+            "veredicto": "si"
+          },
+          {
+            "caso": "Wallet amb les teves pròpies claus",
+            "body": "Una Ledger, una Trezor o una MetaMask les claus de la qual només controles tu no tenen un tercer custodi. No van al 721, tot i que sí compten per a la teva renda i, si escau, per al patrimoni.",
+            "veredicto": "no"
+          },
+          {
+            "caso": "Plataforma situada a Espanya",
+            "body": "Si el custodi és a Espanya, no hi ha obligació informativa pel 721. Aquesta informació arriba a l’AEAT per altres vies.",
+            "veredicto": "no"
+          },
+          {
+            "caso": "Staking, earn i DeFi",
+            "body": "El que tens en un producte de staking o earn dins d’un exchange estranger continua custodiat per ell. A DeFi, la resposta depèn de qui controla de debò les claus. Són els casos que analitzem un per un.",
+            "veredicto": "depende"
+          }
+        ]
+      }
     },
     {
       "id": "otros-modelos",

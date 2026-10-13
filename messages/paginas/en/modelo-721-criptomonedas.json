@@ -6,7 +6,7 @@
   "excerpt": "Who must file Spanish form 721 (modelo 721) for crypto held by custodians abroad, the €50,000 threshold, the filing deadline and what to do if you missed it.",
   "hero": {
     "etiqueta": "Reporting obligation",
-    "h1": "Form 721 for crypto: if your balance sits on a foreign exchange, the Spanish Tax Agency wants to know",
+    "h1": "Form 721: crypto held on foreign exchanges",
     "subheading": "Form 721 doesn't calculate any tax: it reports what you held on 31 December on platforms located outside Spain. That is why it is easy to forget, and why it is worth checking every year whether it applies to you. We prepare it with the balance valued, the backing for every figure and the filing done.",
     "cta": {
       "label": "Request a quote",
@@ -90,24 +90,36 @@
       "h2": "What goes into form 721 and what doesn't",
       "fondo": "blanco",
       "entrada": "The most common doubt isn't the deadline, it's knowing which part of your portfolio counts.",
-      "items": [
-        {
-          "title": "Foreign exchange: it counts",
-          "body": "Binance, Kraken, Coinbase, Bybit or any platform located outside Spain that holds your crypto. This is the typical form 721 case."
+      "casillas": {
+        "pregunta": "Does it go on Form 721?",
+        "opciones": {
+          "si": "Yes",
+          "no": "No",
+          "depende": "It depends"
         },
-        {
-          "title": "Wallet with your own keys: in principle, no",
-          "body": "A Ledger, a Trezor or a MetaMask whose keys only you control has no third-party custodian. It doesn't go into form 721, although it does count for your income tax and, where applicable, for wealth tax."
-        },
-        {
-          "title": "Platform located in Spain: no",
-          "body": "If the custodian is in Spain, there is no form 721 reporting obligation. That information reaches the Tax Agency through other channels."
-        },
-        {
-          "title": "Staking, earn and DeFi: needs checking",
-          "body": "What sits in a staking or earn product inside a foreign exchange is still held by that exchange. In DeFi, the answer depends on who really controls the keys. These are the cases we look at one by one."
-        }
-      ]
+        "filas": [
+          {
+            "caso": "Foreign exchange",
+            "body": "Binance, Kraken, Coinbase, Bybit or any platform located outside Spain that holds your crypto. This is the typical form 721 case.",
+            "veredicto": "si"
+          },
+          {
+            "caso": "Wallet with your own keys",
+            "body": "A Ledger, a Trezor or a MetaMask whose keys only you control has no third-party custodian. It doesn't go into form 721, although it does count for your income tax and, where applicable, for wealth tax.",
+            "veredicto": "no"
+          },
+          {
+            "caso": "Platform located in Spain",
+            "body": "If the custodian is in Spain, there is no form 721 reporting obligation. That information reaches the Tax Agency through other channels.",
+            "veredicto": "no"
+          },
+          {
+            "caso": "Staking, earn and DeFi",
+            "body": "What sits in a staking or earn product inside a foreign exchange is still held by that exchange. In DeFi, the answer depends on who really controls the keys. These are the cases we look at one by one.",
+            "veredicto": "depende"
+          }
+        ]
+      }
     },
     {
       "id": "otros-modelos",
