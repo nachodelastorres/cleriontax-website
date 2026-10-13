@@ -209,7 +209,7 @@ export default function BlogContentStorytelling({ content, metadata }: BlogConte
             code({ node, inline, className, children, ...props }: any) {
               return (
                 <code
-                  className={inline ? "px-2 py-1 bg-rojo/10 text-rojo  font-mono text-base" : className}
+                  className={inline ? "px-2 py-1 bg-rojo/10 text-rojo text-base" : className}
                   {...props}
                 >
                   {children}

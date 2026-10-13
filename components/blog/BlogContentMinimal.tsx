@@ -200,13 +200,13 @@ export default function BlogContentMinimal({ content, metadata }: BlogContentMin
             code({ node, inline, className, children, ...props }: any) {
               return inline ? (
                 <code
-                  className="px-2 py-0.5 bg-papel text-azul font-mono text-base"
+                  className="px-2 py-0.5 bg-papel text-azul text-base"
                   {...props}
                 >
                   {children}
                 </code>
               ) : (
-                <pre className="bg-papel border-l-4 border-azul text-azul p-8 my-12 overflow-x-auto font-mono text-base leading-relaxed">
+                <pre className="bg-papel border-l-4 border-azul text-azul p-8 my-12 overflow-x-auto text-base leading-relaxed">
                   <code className={className} {...props}>
                     {children}
                   </code>

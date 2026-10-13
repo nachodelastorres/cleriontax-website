@@ -19,7 +19,7 @@ export default function BlogContent({ content }: BlogContentProps) {
       prose-p:text-pizarra prose-p:leading-loose prose-p:mb-6 prose-p:text-lg
       prose-a:text-rojo prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-a:transition-all
       prose-strong:text-azul prose-strong:font-bold
-      prose-code:text-rojo prose-code:bg-rojo/10 prose-code:px-2 prose-code:py-1  prose-code:font-mono prose-code:text-base prose-code:before:content-[''] prose-code:after:content-['']
+      prose-code:text-rojo prose-code:bg-rojo/10 prose-code:px-2 prose-code:py-1 prose-code:text-base prose-code:before:content-[''] prose-code:after:content-['']
       prose-pre:bg-azul prose-pre:text-blanco prose-pre:border-2 prose-pre:border-azul/50  prose-pre:p-6 prose-pre:my-8 prose-pre:overflow-x-auto
       prose-ul:my-6 prose-ul:list-disc prose-ul:pl-7 prose-ul:space-y-3
       prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-7 prose-ol:space-y-3

@@ -209,7 +209,7 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
               i > 0 ? "border-t border-niebla" : ""
             }`}
           >
-            <span className="font-mono text-dato uppercase tracking-wide text-pizarra">
+            <span className="text-dato font-semibold uppercase tracking-wide text-pizarra">
               {f.aspecto}
             </span>
 

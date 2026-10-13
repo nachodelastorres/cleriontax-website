@@ -72,13 +72,13 @@ export default function TablaDatos({
             <tr>
               <th
                 scope="col"
-                className="border-b border-niebla bg-papel px-4 py-2.5 text-left font-mono text-dato font-normal text-pizarra"
+                className="border-b border-niebla bg-papel px-4 py-2.5 text-left text-dato font-normal text-pizarra"
               >
                 {columnaConcepto}
               </th>
               <th
                 scope="col"
-                className="border-b border-niebla bg-papel px-4 py-2.5 text-right font-mono text-dato font-normal text-pizarra"
+                className="border-b border-niebla bg-papel px-4 py-2.5 text-right text-dato font-normal text-pizarra"
               >
                 {columnaValor}
               </th>

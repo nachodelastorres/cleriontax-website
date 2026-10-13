@@ -38,7 +38,7 @@ export default function ChipEstado({ estado, children, className }: ChipEstadoPr
 
   return (
     <span
-      className={`inline-flex items-center gap-2 px-2.5 py-1 font-mono text-dato ${e.fondo} ${e.texto} ${className ?? ""}`}
+      className={`inline-flex items-center gap-2 px-2.5 py-1 text-dato ${e.fondo} ${e.texto} ${className ?? ""}`}
     >
       <span className={`h-2 w-2 flex-none ${e.marca}`} aria-hidden="true" />
       {children}

@@ -64,7 +64,7 @@
 
   /* §11 — Cifras en tabla con tabular-nums y alineadas a la derecha. */
   .cifra {
-    @apply font-mono;
+    @apply font-dato;
     font-variant-numeric: tabular-nums;
   }
 

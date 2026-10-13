@@ -287,7 +287,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             code({ node, inline, className, children, ...props }: any) {
               return (
                 <code
-                  className={inline ? "px-2 py-1 bg-rojo/10 text-rojo  font-mono text-base font-semibold" : className}
+                  className={inline ? "px-2 py-1 bg-rojo/10 text-rojo text-base font-semibold" : className}
                   {...props}
                 >
                   {children}

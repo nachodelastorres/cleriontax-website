@@ -57,8 +57,10 @@ const config: Config = {
         // enmienda v1.2 del §11: la alineación en columna la dan las cifras
         // tabulares, no la monoespaciada.
         dato: ["var(--font-dato)", "Georgia", "serif"],
-        // Monoespaciada real, solo para código en los artículos del blog.
-        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        // Sin monoespaciada en todo el sitio, código del blog incluido. Tailwind
+        // aplica esta familia por defecto a code, pre, kbd y samp: apunta a la
+        // principal para que ninguna monoespaciada se cuele por ahí.
+        mono: ["var(--font-jakarta)", "system-ui", "-apple-system", "sans-serif"],
       },
 
       // ---- Esquinas rectas (§12) ----
