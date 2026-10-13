@@ -7,142 +7,8 @@
     "contact": "Contacto",
     "requestQuote": "Solicitar presupuesto",
     "openMenu": "Abrir menú",
-    "method": "El método"
-  },
-  "whyChooseUs": {
-    "title": "Por qué Cleriontax es diferente",
-    "subtitle": "Un informe automático es el punto de partida, nunca el entregable. Revisamos tus datos operación a operación y justificamos de dónde sale cada cifra.",
-    "intro": "Nuestro equipo une criterio fiscal colegiado e ingeniería de datos. Reconstruimos operativas multicadena, clasificamos cada operación según los criterios de la AEAT y la DGT, y entregamos un informe trazable: cada cifra con su origen y su criterio escritos al lado.",
-    "reasons": {
-      "reason1": {
-        "title": "Análisis fiscal real, no automatizado",
-        "description": "No dependemos de software automático. Clasificamos y verificamos cada operación según la normativa fiscal española."
-      },
-      "reason2": {
-        "title": "Cobertura DeFi y multichain",
-        "description": "Ethereum, BSC, Polygon, Solana, Cosmos, Osmosis... Entendemos cada ecosistema y su impacto fiscal."
-      },
-      "reason3": {
-        "title": "Informes trazables y auditables",
-        "description": "Cada cifra se justifica con su origen, y ese origen queda documentado por si la AEAT lo pide."
-      },
-      "reason4": {
-        "title": "Seguridad y confidencialidad",
-        "description": "Procesamos los datos en entornos propios y seguros, sin subirlos a servidores externos."
-      },
-      "reason5": {
-        "title": "Soporte personalizado",
-        "description": "Te acompañamos durante todo el proceso, explicando cada resultado de forma comprensible y fiscalmente sólida."
-      },
-      "reason6": {
-        "title": "Ingeniería de datos aplicada",
-        "description": "Limpieza, normalización y reconciliación avanzada de datos. Procesamos archivos CSV complejos, APIs y registros blockchain con precisión técnica."
-      }
-    },
-    "cta": "Descubre cómo podemos ayudarte"
-  },
-  "services": {
-    "title": "Servicios de Asesoría Fiscal para Inversiones en Criptomonedas y Acciones",
-    "subtitle": "Análisis personalizado de tu caso en 24-48h. Presupuesto claro sin compromiso. Cada inversor es único, cada solución también.",
-    "hero": {
-      "badge": "Expertos en fiscalidad crypto y activos digitales",
-      "title": "Servicios fiscales personalizados para inversores en criptomonedas y DeFi",
-      "subtitle": "Desde informes fiscales verificables hasta asesoramiento especializado, te ayudamos a cumplir con la AEAT con precisión, transparencia y confianza.",
-      "cta": "Solicita tu informe fiscal",
-      "seoText": "Asesoría fiscal en criptomonedas, DeFi, NFTs y activos digitales. Cleriontax combina ingeniería de datos y experiencia fiscal para ofrecer soluciones integrales adaptadas a cada tipo de inversor."
-    },
-    "structuredData": {
-      "name": "Cleriontax - Asesoría Fiscal Criptomonedas y Acciones",
-      "description": "Servicios de asesoría fiscal especializada en criptomonedas, acciones y activos digitales. Cálculos FIFO, modelos 100, 720 y 721.",
-      "areaServed": "España",
-      "serviceTypes": [
-        "Asesoría Fiscal Criptomonedas",
-        "Declaración IRPF Crypto",
-        "Cálculo Ganancias Patrimoniales",
-        "Modelo 100 Criptoactivos",
-        "Modelo 720 Activos Digitales"
-      ],
-      "images": {
-        "diagnosis": {
-          "description": "Diagnóstico fiscal de datos de criptomonedas y análisis de carteras digitales",
-          "name": "Diagnóstico fiscal crypto - Cleriontax"
-        },
-        "analysis": {
-          "description": "Análisis de complejidad fiscal para operaciones en exchanges y DeFi",
-          "name": "Análisis fiscal DeFi - Cleriontax"
-        },
-        "budget": {
-          "description": "Presupuesto personalizado de servicios fiscales para inversores crypto",
-          "name": "Presupuesto fiscal crypto - Cleriontax"
-        },
-        "processing": {
-          "description": "Procesamiento de datos blockchain y cálculos fiscales certificados FIFO",
-          "name": "Cálculos FIFO blockchain - Cleriontax"
-        },
-        "report": {
-          "description": "Informe fiscal de criptoactivos con el origen y el criterio de cada cifra",
-          "name": "Informe fiscal AEAT - Cleriontax"
-        }
-      }
-    },
-    "mainSection": {
-      "title": "Nuestros servicios fiscales especializados",
-      "subtitle": "Soluciones integrales en fiscalidad crypto y activos digitales, adaptadas a cada tipo de inversor.",
-      "paragraph1": "En Cleriontax combinamos análisis fiscal y ciencia de datos para ofrecer un servicio integral y transparente. Nuestro equipo aborda cada cartera de inversión —ya sea en criptomonedas, DeFi o activos digitales tradicionales— con la precisión que requiere la normativa vigente.",
-      "paragraph2": "Trabajamos con una metodología propia: reconstruimos la trazabilidad de cada operación, la clasificamos fiscalmente y dejamos escrito el criterio aplicado. Cada informe fiscal lo revisan profesionales especializados en fiscalidad de criptoactivos antes de entregarlo.",
-      "paragraph3": "Además, ofrecemos acompañamiento personalizado durante todo el proceso fiscal: desde la revisión inicial hasta la entrega de modelos oficiales y soporte post-presentación. Nuestro objetivo es que cada cliente declare con seguridad y sin incertidumbre, respaldado por una asesoría fiscal criptomonedas de máxima calidad.",
-      "cta": "Solicita tu informe fiscal"
-    },
-    "showcase": {
-      "sectionTitle": "Servicios especializados",
-      "sectionSubtitle": "Soluciones personalizadas para cada tipo de inversor. Desde análisis de datos hasta asesoramiento fiscal experto.",
-      "analysisTitle": "Informe fiscal de criptomonedas",
-      "analysisExcerpt": "Reconciliamos exchanges, wallets y protocolos DeFi hasta obtener una cartera única y trazable. Clasificamos cada operación y justificamos de dónde sale cada cifra.",
-      "taxReturnsTitle": "Declaración de la renta cripto",
-      "taxReturnsExcerpt": "Integramos tus resultados en criptoactivos y otros activos en el IRPF, con criterio FIFO, compensación de pérdidas y documentación de respaldo.",
-      "advisoryTitle": "Asesoría fiscal de criptomonedas",
-      "advisoryExcerpt": "Consultoría continuada sobre tu operativa y tu patrimonio en criptoactivos: modelo 721, planificación de la venta y planificación patrimonial.",
-      "learnMore": "Más información",
-      "needHelpChoosing": "¿No estás seguro de qué servicio necesitas? Solicita una evaluación gratuita y te ayudaremos a encontrar la solución perfecta para tu caso.",
-      "litigationTitle": "Litigación fiscal de criptomonedas",
-      "litigationExcerpt": "Defensa ante requerimientos, comprobaciones, inspecciones y sanciones de la AEAT. Contestamos dentro de plazo y construimos la prueba documental y on-chain."
-    },
-    "process": {
-      "title": "Cómo trabajamos contigo",
-      "subtitle": "Proceso transparente de principio a fin. Sabrás exactamente qué esperar en cada fase.",
-      "steps": {
-        "diagnosis": {
-          "number": "01",
-          "title": "Diagnóstico Gratuito",
-          "description": "Envíanos información básica sobre tus plataformas, volumen de operaciones y tipo de activos. Te respondemos en 24-48h con un análisis inicial sin compromiso.",
-          "time": "24-48 horas"
-        },
-        "analysis": {
-          "number": "02",
-          "title": "Análisis de Complejidad",
-          "description": "Evaluamos la complejidad de tu caso: número de exchanges, tipos de operaciones (trading, staking, DeFi), años fiscales a procesar y requisitos especiales.",
-          "time": "48 horas"
-        },
-        "proposal": {
-          "number": "03",
-          "title": "Presupuesto Personalizado",
-          "description": "Recibes presupuesto detallado con precio fijo, alcance del trabajo, timeline de ejecución y entregables específicos. Sin sorpresas ni costes ocultos.",
-          "time": "Inmediato"
-        },
-        "execution": {
-          "number": "04",
-          "title": "Ejecución del Servicio",
-          "description": "Procesamos tus datos, realizamos cálculos fiscales certificados y preparamos informes auditables. Revisión por asesor fiscal colegiado incluida.",
-          "time": "1-3 semanas"
-        },
-        "delivery": {
-          "number": "05",
-          "title": "Entrega y Soporte",
-          "description": "Recibes informe fiscal completo, modelos oficiales listos para presentar y sesión de revisión. Soporte post-entrega incluido durante la campaña de Renta.",
-          "time": "Continuo"
-        }
-      }
-    }
+    "prices": "Precios",
+    "verTodo": "Ver precios"
   },
   "about": {
     "title": "Donde la Asesoría Fiscal Tradicional Encuentra la Innovación Tecnológica",
@@ -287,14 +153,8 @@
       "privacy": "Política de privacidad",
       "legal": "Aviso legal",
       "cookies": "Cookies",
-      "method": "El método",
-      "firms": "Para despachos"
-    },
-    "serviceLinks": {
-      "informeFiscal": "Informe fiscal",
-      "declararCripto": "Renta cripto",
-      "litigacion": "Litigación",
-      "asesoriaFiscal": "Asesoría fiscal"
+      "firms": "Para despachos",
+      "prices": "Precios"
     },
     "copyright": "Todos los derechos reservados."
   },
@@ -734,209 +594,6 @@
     },
     "seoText": "Asesoría fiscal especializada en criptomonedas, DeFi y carteras complejas. Informes fiscales con el origen y el criterio de cada cifra."
   },
-  "servicesPages": {
-    "informeFiscalCriptomonedas": {
-      "title": "Informe fiscal de criptomonedas",
-      "slug": "informe-fiscal-criptomonedas",
-      "excerpt": "Integración, limpieza y consolidación de datos desde todas las fuentes necesarias: exchanges, brokers, wallets y protocolos DeFi. Convertimos carteras dispersas en informes unificados, trazables y auditables sin límite de complejidad.",
-      "hero": {
-        "h1": "Informe fiscal de criptomonedas",
-        "subheading": "Integramos datos de todas las fuentes necesarias, procesamos operaciones de alta complejidad y generamos informes consolidados con trazabilidad completa. Ideal para carteras con operaciones DeFi, staking multichain, airdrops y estructuras descentralizadas.",
-        "cta": {
-          "label": "Solicitar evaluación gratuita",
-          "href": "/contacto"
-        }
-      },
-      "internal_links": [
-        {
-          "label": "Volver a todos los servicios",
-          "href": "/servicios"
-        },
-        {
-          "label": "Declaración de la renta cripto",
-          "href": "/servicios/declarar-criptomonedas"
-        },
-        {
-          "label": "Litigación fiscal de criptomonedas",
-          "href": "/servicios/litigacion-fiscal-criptomonedas"
-        },
-        {
-          "label": "Asesoría fiscal de criptomonedas",
-          "href": "/servicios/asesoria-fiscal-criptomonedas"
-        }
-      ],
-      "seo": {
-        "title": "Informe fiscal de criptomonedas para la AEAT | Cleriontax",
-        "description": "Integración y consolidación de datos desde múltiples exchanges, wallets y protocolos DeFi. Procesamiento de operaciones complejas con trazabilidad completa.",
-        "keywords": [
-          "análisis carteras cripto",
-          "consolidación datos exchanges",
-          "reconciliación transacciones DeFi",
-          "ingeniería datos blockchain",
-          "informes carteras complejas",
-          "trazabilidad fiscal cripto"
-        ],
-        "canonical": "https://cleriontax.com/servicios/informe-fiscal-criptomonedas"
-      }
-    },
-    "declararCriptomonedas": {
-      "title": "Declaración de la renta cripto",
-      "slug": "declarar-criptomonedas",
-      "excerpt": "Cálculo de plusvalías, pérdidas y rendimientos con criterio FIFO. Preparación de modelos 100, 721 y 714 con documentación completa y revisión por asesores fiscales colegiados.",
-      "hero": {
-        "h1": "Declaración de la renta cripto",
-        "subheading": "Calculamos tus obligaciones fiscales con criterio FIFO, aplicamos normativa DGT vigente y generamos modelos listos para presentar. Incluye simulaciones de escenarios, documentación de soporte y revisión por asesores fiscales colegiados.",
-        "cta": {
-          "label": "Solicitar evaluación gratuita",
-          "href": "/contacto"
-        }
-      },
-      "internal_links": [
-        {
-          "label": "Volver a todos los servicios",
-          "href": "/servicios"
-        },
-        {
-          "label": "Informe fiscal de criptomonedas",
-          "href": "/servicios/informe-fiscal-criptomonedas"
-        },
-        {
-          "label": "Litigación fiscal de criptomonedas",
-          "href": "/servicios/litigacion-fiscal-criptomonedas"
-        },
-        {
-          "label": "Asesoría fiscal de criptomonedas",
-          "href": "/servicios/asesoria-fiscal-criptomonedas"
-        }
-      ],
-      "seo": {
-        "title": "Declarar criptomonedas en la renta: modelos 100, 721 y 714 | Cleriontax",
-        "description": "Cálculo de ganancias y pérdidas con criterio FIFO, integración en el IRPF y modelos de la AEAT, con revisión de asesores colegiados y la documentación de cada cifra.",
-        "keywords": [
-          "liquidación fiscal criptomonedas",
-          "modelo 100 crypto",
-          "modelo 721 AEAT",
-          "modelo 714 patrimonio",
-          "FIFO criptoactivos",
-          "declaración renta cripto",
-          "asesoría fiscal AEAT"
-        ],
-        "canonical": "https://cleriontax.com/servicios/declarar-criptomonedas"
-      }
-    },
-    "litigacionFiscalCriptomonedas": {
-      "title": "Litigación fiscal de criptomonedas",
-      "slug": "litigacion-fiscal-criptomonedas",
-      "excerpt": "Defensa del contribuyente ante requerimientos, comprobaciones limitadas, inspecciones y sanciones de la AEAT relacionadas con criptoactivos. Contestamos dentro de plazo y construimos la prueba documental y on-chain que sostiene tu posición.",
-      "hero": {
-        "h1": "Litigación fiscal de criptomonedas",
-        "subheading": "Si tienes una notificación de la AEAT encima de la mesa, lo primero es el plazo. Contestamos requerimientos, presentamos alegaciones y recursos, y construimos la prueba documental y on-chain que respalda cada cifra.",
-        "cta": {
-          "label": "Cuéntanos tu caso",
-          "href": "/contacto"
-        }
-      },
-      "internal_links": [
-        {
-          "label": "Volver a todos los servicios",
-          "href": "/servicios"
-        },
-        {
-          "label": "Informe fiscal de criptomonedas",
-          "href": "/servicios/informe-fiscal-criptomonedas"
-        },
-        {
-          "label": "Declaración de la renta cripto",
-          "href": "/servicios/declarar-criptomonedas"
-        },
-        {
-          "label": "Asesoría fiscal de criptomonedas",
-          "href": "/servicios/asesoria-fiscal-criptomonedas"
-        }
-      ],
-      "seo": {
-        "title": "Litigación fiscal de criptomonedas: defensa ante la AEAT | Cleriontax",
-        "description": "Defensa ante requerimientos, inspecciones y sanciones de la AEAT por criptomonedas. Contestamos dentro de plazo y construimos la prueba documental y on-chain que respalda tu posición.",
-        "keywords": [
-          "litigación fiscal criptomonedas",
-          "abogado fiscal criptomonedas",
-          "requerimiento hacienda criptomonedas",
-          "inspección hacienda criptomonedas",
-          "defensa hacienda criptomonedas",
-          "recurso sanción criptomonedas",
-          "reclamación económico-administrativa criptomonedas"
-        ],
-        "canonical": "https://cleriontax.com/servicios/litigacion-fiscal-criptomonedas"
-      }
-    },
-    "asesoriaFiscalCriptomonedas": {
-      "title": "Asesoría fiscal de criptomonedas",
-      "slug": "asesoria-fiscal-criptomonedas",
-      "excerpt": "Sesiones personalizadas 1:1 para resolver dudas fiscales sobre criptomonedas. Criterios de presentación, cumplimiento normativo y revisión documental. Sin asesoramiento de inversión.",
-      "hero": {
-        "h1": "Asesoría fiscal de criptomonedas",
-        "subheading": "Sesiones técnicas con nuestro equipo fiscal para resolver dudas sobre modelos AEAT, criterios de clasificación, cumplimiento normativo y estructura de informes. Enfoque exclusivamente técnico-fiscal. No ofrecemos asesoramiento de inversión.",
-        "cta": {
-          "label": "Solicitar evaluación gratuita",
-          "href": "/contacto"
-        }
-      },
-      "internal_links": [
-        {
-          "label": "Volver a todos los servicios",
-          "href": "/servicios"
-        },
-        {
-          "label": "Informe fiscal de criptomonedas",
-          "href": "/servicios/informe-fiscal-criptomonedas"
-        },
-        {
-          "label": "Declaración de la renta cripto",
-          "href": "/servicios/declarar-criptomonedas"
-        },
-        {
-          "label": "Litigación fiscal de criptomonedas",
-          "href": "/servicios/litigacion-fiscal-criptomonedas"
-        }
-      ],
-      "seo": {
-        "title": "Asesor fiscal de criptomonedas: asesoría especializada | Cleriontax",
-        "description": "Sesiones técnicas 1:1 sobre fiscalidad de criptomonedas: modelos de la AEAT, requerimientos y cumplimiento normativo. Sin asesoramiento de inversión.",
-        "keywords": [
-          "asesoría fiscal criptomonedas",
-          "consultoría fiscal crypto",
-          "requerimiento AEAT cripto",
-          "modelo 721 asesoría",
-          "DGT criptoactivos",
-          "cumplimiento fiscal crypto"
-        ],
-        "canonical": "https://cleriontax.com/servicios/asesoria-fiscal-criptomonedas"
-      }
-    },
-    "relatedServices": {
-      "badge": "Explora más",
-      "title": "Otros servicios que pueden interesarte",
-      "subtitle": "Soluciones complementarias para cubrir todas tus necesidades fiscales",
-      "viewDetails": "Ver detalles",
-      "viewAllServices": "Ver todos los servicios",
-      "descriptions": {
-        "informe-fiscal-criptomonedas": "Reconciliamos exchanges, wallets y protocolos DeFi hasta obtener una cartera única y trazable, operación a operación.",
-        "declarar-criptomonedas": "Integración de tus resultados en criptoactivos en el IRPF, con criterio FIFO y la documentación de respaldo de cada cifra.",
-        "litigacion-fiscal-criptomonedas": "Defensa ante requerimientos, inspecciones y sanciones de la AEAT, con la prueba documental y on-chain que sostiene tu posición.",
-        "asesoria-fiscal-criptomonedas": "Consultoría fiscal continuada sobre tu operativa y tu patrimonio en criptoactivos, incluido el modelo 721."
-      }
-    },
-    "cierre": {
-      "etiquetaLinea": "Línea de servicio",
-      "verMetodo": "Cómo trabajamos",
-      "titulo": "¿Hablamos?",
-      "enviar": "Enviar diagnóstico",
-      "barraAccion": "Cuéntanos tu operativa",
-      "plazoAviso": "Los plazos de la AEAT corren desde la notificación",
-      "urgenteTitulo": "¿Tienes ya una notificación con fecha?",
-      "urgenteApoyo": "Si hay un plazo administrativo corriendo, llámanos y lo miramos hoy. No des una respuesta a la AEAT sin haber reconstruido antes tus cifras."
-    }
-  },
   "cookies": {
     "banner": {
       "title": "Utilizamos cookies",
@@ -1169,128 +826,43 @@
       }
     }
   },
-  "situaciones": {
-    "etiqueta": "Encuentra tu caso",
-    "titulo": "¿Cuál de estas situaciones se parece a la tuya?",
-    "entrada": "Hay muchas formas de operar con criptoactivos, pero casi todas acaban en tres preguntas. Busca la tuya y verás cómo la resolvemos, qué necesitamos de ti y en cuánto tiempo.",
-    "verSituacion": "Ver cómo lo resolvemos",
-    "conPlazo": "con plazo",
-    "barraAccion": "Cuéntanos tu operativa",
-    "enviar": "Enviar diagnóstico",
-    "resuelveEste": "Lo resuelve esta línea",
-    "verServicio": "Ver el servicio",
-    "paraEntenderlo": "Para entenderlo por tu cuenta",
-    "plazoAviso": "Los plazos de la AEAT corren desde la notificación",
-    "urgenteTitulo": "¿Tienes ya una notificación con fecha?",
-    "urgenteApoyo": "Si hay un plazo administrativo corriendo, llámanos y lo miramos hoy. No respondas a la AEAT sin haber reconstruido antes tus cifras.",
-    "seoTitulo": "Situaciones: encuentra tu caso | Cleriontax",
-    "seoDescripcion": "Requerimientos de la AEAT, regularización de años anteriores, informes automáticos que no cuadran, carteras con miles de operaciones. Busca tu situación y mira cómo la resolvemos.",
-    "preguntas": {
-      "P1": {
-        "titulo": "«¿Cuánto he ganado o perdido?»",
-        "quien": "Tienes los datos pero no la cifra. Llegaste buscando una herramienta y descubriste que tu caso no cabe en una herramienta."
-      },
-      "P2": {
-        "titulo": "«¿Cómo lo justifico ante la AEAT?»",
-        "quien": "Ya tienes un problema con fecha. Aquí lo primero es el plazo, y lo segundo poder demostrar de dónde sale cada cifra."
-      },
-      "P3": {
-        "titulo": "«¿Cómo lo declaro?»",
-        "quien": "Sabes que tienes que declarar y no sabes por dónde empezar. O sí sabes, pero tu operativa no encaja en lo que explican los manuales."
-      }
-    }
-  },
   "inicio": {
     "hero": {
       "titulo": "Asesoría fiscal de criptomonedas y declaración de la renta cripto",
       "entrada": "Un informe automático es el punto de partida, nunca el entregable. Reconciliamos tus exchanges, wallets y protocolos, revisamos a mano lo que un programa resolvería con un valor por defecto y dejamos escrito de dónde sale cada cifra.",
       "accion": "Empezar el diagnóstico",
-      "secundaria": "Ver el método"
+      "secundaria": "Ver precios"
     },
     "clasificador": {
       "titulo": "¿Cuál de estas situaciones se parece a la tuya?",
       "entrada": "Cien mil transacciones en Solana, una cartera repartida en seis exchanges o una pérdida de hace tres años que compensar. Tu operativa es única; tus preguntas, no: casi todas acaban en estas tres.",
       "conPlazo": "con plazo",
-      "verTodas": "Ver todas las situaciones",
       "otraCosa": "¿No encaja ninguna? Cuéntanos tu operativa"
     },
-    "preguntas": {
-      "P1": {
-        "titulo": "¿Cuánto he ganado o perdido?",
-        "quien": "Tienes los datos, pero no la cifra."
-      },
-      "P2": {
-        "titulo": "¿Cómo lo justifico ante la AEAT?",
-        "quien": "Tienes un problema con fecha."
-      },
-      "P3": {
-        "titulo": "¿Cómo lo declaro?",
-        "quien": "Sabes que toca declarar, pero no por dónde empezar."
-      }
-    },
-    "situaciones": {
-      "requerimiento-de-hacienda": "He recibido un requerimiento de la AEAT",
-      "recurrir-una-sancion": "Me han sancionado y quiero recurrir",
-      "regularizar-anos-anteriores": "No declaré criptomonedas de años anteriores",
-      "errores-en-mi-informe-automatico": "Mi informe de Koinly o CoinTracking no cuadra",
-      "inspeccion-por-criptomonedas": "Estoy en una inspección por criptomonedas",
-      "miles-de-transacciones": "Tengo miles de operaciones repartidas en varios sitios",
-      "declarar-criptomonedas": "Quiero declarar mis criptomonedas este año",
-      "modelo-721": "Tengo criptomonedas custodiadas fuera de España",
-      "defi-staking-airdrops": "Hago staking, uso DeFi o he recibido airdrops",
-      "compensar-perdidas": "Tuve pérdidas y quiero compensarlas"
-    },
     "perfiles": {
-      "titulo": "Cuatro perfiles, una misma exigencia",
-      "entrada": "Quien llega hasta aquí suele estar en una de estas cuatro situaciones. Cambian el grado de detalle y la urgencia; no cambia que cada cifra tenga que poder explicarse.",
+      "titulo": "A quién asesoramos y qué necesita cada perfil",
+      "entrada": "Quien llega hasta aquí suele estar en una de estas situaciones. Cambian el grado de detalle y la urgencia; no cambia que cada cifra tenga que poder explicarse.",
       "mensaje": "Lo que necesitas",
       "items": {
         "A": {
           "nombre": "Cartera compleja",
           "descripcion": "Miles de operaciones, varios exchanges, DeFi en varias cadenas. Temes que un informe automático te deje expuesto.",
-          "mensaje": "Precisión y trazabilidad",
-          "enlace": "Ver cómo lo resolvemos"
+          "mensaje": "Precisión y trazabilidad"
         },
         "B": {
           "nombre": "Inversor ordinario",
           "descripcion": "Acciones, fondos y algo de criptomonedas. Quieres declarar bien sin tener que aprender el vocabulario.",
-          "mensaje": "Tranquilidad y acompañamiento",
-          "enlace": "Ver cómo se declara"
+          "mensaje": "Tranquilidad y acompañamiento"
         },
         "C": {
           "nombre": "Contribuyente requerido",
           "descripcion": "Ya tienes una carta de la AEAT encima de la mesa. Necesitas saber qué hacer y en qué plazo.",
-          "mensaje": "Defensa y plazos claros",
-          "enlace": "Ver qué hacer ahora"
+          "mensaje": "Defensa y plazos claros"
         },
         "D": {
           "nombre": "Despacho que deriva",
           "descripcion": "Gestoría o asesoría sin especialización en criptoactivos. Necesitas apoyo técnico y respaldo de responsabilidad.",
-          "mensaje": "Metodología y colegiación",
-          "enlace": "Ver cómo trabajamos con despachos"
-        }
-      }
-    },
-    "lineas": {
-      "titulo": "Qué hacemos",
-      "entrada": "Cuatro líneas de servicio. Toda consulta acaba en una de ellas, aunque llegue por otra puerta.",
-      "verServicio": "Ver el servicio",
-      "items": {
-        "informe-fiscal-criptomonedas": {
-          "nombre": "Informe fiscal de criptomonedas",
-          "descripcion": "Consolidamos, limpiamos y conciliamos los datos de exchanges, wallets y protocolos DeFi hasta obtener una cartera única y trazable. El método es la reconciliación; el entregable, el informe."
-        },
-        "declarar-criptomonedas": {
-          "nombre": "Declaración de la renta cripto",
-          "descripcion": "Integramos en tu IRPF los resultados en criptoactivos y en otros activos, con criterio FIFO y la documentación que respalda cada cifra."
-        },
-        "litigacion-fiscal-criptomonedas": {
-          "nombre": "Litigación fiscal de criptomonedas",
-          "descripcion": "Te defendemos ante requerimientos, comprobaciones e inspecciones de la AEAT: contestación, alegaciones, recursos y prueba documental y on-chain."
-        },
-        "asesoria-fiscal-criptomonedas": {
-          "nombre": "Asesoría fiscal de criptomonedas",
-          "descripcion": "Consultoría continuada sobre tu operativa y tu patrimonio en criptoactivos: modelo 721, planificación fiscal de la venta y planificación patrimonial."
+          "mensaje": "Metodología y colegiación"
         }
       }
     },
@@ -1309,8 +881,7 @@
         "fiscales": "Operaciones con efecto fiscal",
         "manual": "Revisadas a mano"
       },
-      "nota": "Datos de ejemplo: cartera ficticia de un solo ejercicio.",
-      "accion": "Ver el método completo"
+      "nota": "Datos de ejemplo: cartera ficticia de un solo ejercicio."
     },
     "informe": {
       "titulo": "Un informe que se sostiene ante la AEAT",
@@ -1322,7 +893,7 @@
         "Los resultados se trasladan al modelo 100 y, si procede, al 721."
       ],
       "tablaTitulo": "Resumen de resultados",
-      "periodo": "Informe fiscal · ejercicio 2025",
+      "periodo": "Informe fiscal · ejercicio 2026",
       "columnaConcepto": "Concepto",
       "columnaValor": "Importe",
       "filas": {
@@ -1332,6 +903,8 @@
         "revisadas": "Operaciones revisadas a mano"
       },
       "pie": "Datos de ejemplo. Criterio FIFO. Cada línea enlaza con su detalle de operaciones.",
+      "vistaPreviaEtiqueta": "Vista previa.",
+      "vistaPrevia": "Esto es la página de resultados: el resumen de lo que vas a declarar, que es al final lo que necesitas saber. Detrás van las páginas que reconstruyen, operación a operación, cómo se llega hasta cada cifra; extensas, pero escritas para que las siga cualquiera que las revise, empezando por la AEAT.",
       "chipConciliado": "conciliadas",
       "chipRevision": "revisadas a mano",
       "accion": "Ver el informe fiscal"
@@ -1371,7 +944,7 @@
       "titulo": "Cuéntanos tu operativa",
       "apoyo": "Cuántas operaciones, en qué plataformas y qué ejercicios. Con eso te decimos qué tipo de trabajo es tu caso, qué necesitamos de ti y cuánto puede llevar.",
       "accion": "Empezar el diagnóstico",
-      "secundaria": "Ver todas las situaciones"
+      "secundaria": "Ver precios"
     }
   },
   "diagnostico": {
@@ -1443,5 +1016,153 @@
       "situacionAeat": "Indica si hay algo de la AEAT de por medio",
       "privacidad": "Debes aceptar la política de privacidad"
     }
+  },
+  "paginas": {
+    "nombres": {
+      "informe-fiscal-criptomonedas": "Informe fiscal cripto",
+      "revisar-informe-koinly": "Revisar informe de Koinly",
+      "requerimiento-hacienda-criptomonedas": "Requerimiento de Hacienda",
+      "inspeccion-hacienda-criptomonedas": "Inspección y sanciones",
+      "regularizar-criptomonedas": "Regularizar criptomonedas",
+      "declarar-criptomonedas": "Declarar criptomonedas",
+      "modelo-721-criptomonedas": "Modelo 721"
+    },
+    "casos": {
+      "informe-fiscal-criptomonedas": "Tengo miles de operaciones y no sé cuánto he ganado",
+      "revisar-informe-koinly": "Mi informe de Koinly o CoinTracking no cuadra",
+      "requerimiento-hacienda-criptomonedas": "He recibido una carta o un requerimiento de Hacienda",
+      "inspeccion-hacienda-criptomonedas": "Estoy en una inspección o me han sancionado",
+      "regularizar-criptomonedas": "No declaré criptomonedas en años anteriores",
+      "declarar-criptomonedas": "Quiero declarar mis criptomonedas en la renta",
+      "modelo-721-criptomonedas": "Tengo criptomonedas en exchanges fuera de España"
+    },
+    "grupos": {
+      "cifra": {
+        "titulo": "¿Cuánto he ganado o perdido?",
+        "quien": "Tienes los datos, pero no la cifra."
+      },
+      "aeat": {
+        "titulo": "¿Cómo lo justifico ante la AEAT?",
+        "quien": "Tienes un problema con fecha."
+      },
+      "declarar": {
+        "titulo": "¿Cómo lo declaro?",
+        "quien": "Sabes que toca declarar, pero no por dónde empezar."
+      }
+    },
+    "conPlazo": "con plazo",
+    "verPagina": "Ver cómo lo resolvemos",
+    "barraAccion": "Pide presupuesto cerrado",
+    "enviar": "Pedir presupuesto",
+    "plazoAviso": "Los plazos de la AEAT corren desde la notificación",
+    "urgenteTitulo": "¿Tienes ya una notificación con fecha?",
+    "urgenteApoyo": "Si hay un plazo administrativo corriendo, llámanos y lo miramos hoy. No respondas a la AEAT sin haber reconstruido antes tus cifras.",
+    "articulos": "Para entenderlo a fondo",
+    "minutos": "min de lectura",
+    "otras": "También te puede interesar",
+    "barraContacto": "Cuéntanos tu operativa"
+  },
+  "tarifas": {
+    "titulo": "Cuánto cuesta",
+    "entrada": "El precio depende de cuántas fuentes de datos hay que reconciliar, no de cuánto hayas ganado ni de cuántas operaciones tengas. Lo sabes antes de empezar y no cambia a mitad del trabajo.",
+    "desde": "desde",
+    "incluyeTitulo": "Incluido en todos los tramos",
+    "incluye": [
+      "Reconciliación de todas tus fuentes: compras, ventas, permutas, transferencias y comisiones",
+      "Ganancias y pérdidas calculadas con FIFO, el criterio que aplica la AEAT",
+      "Informe con el detalle operación a operación que hay detrás de cada cifra",
+      "Memoria de criterios: qué se decidió en cada punto dudoso y por qué",
+      "Las cifras listas para trasladar a tu declaración"
+    ],
+    "fuenteTitulo": "Qué cuenta como fuente de datos",
+    "fuenteTexto": "Cada exchange, cada wallet propia, cada protocolo DeFi y cada bróker es una fuente. Tres exchanges son tres fuentes; un exchange, una MetaMask y un bróker de acciones, también.",
+    "accion": "Pedir presupuesto cerrado",
+    "verPrecios": "Ver precios y qué incluye cada tramo",
+    "items": {
+      "plataforma": {
+        "nombre": "Plataforma única",
+        "para": "Toda tu operativa está en un solo exchange centralizado: Binance, Coinbase, Kraken, Bit2Me…"
+      },
+      "multiexchange": {
+        "nombre": "Multiexchange",
+        "para": "Operas en dos o tres exchanges centralizados y mueves fondos entre ellos. Cada transferencia se casa para que no cuente como una venta."
+      },
+      "mixta": {
+        "nombre": "Cartera mixta",
+        "para": "Combinas exchanges con wallets propias, DeFi, NFT o acciones, con un máximo de tres fuentes de datos en total."
+      },
+      "compleja": {
+        "nombre": "Cartera compleja",
+        "para": "Más de tres fuentes, miles de operaciones, varias redes, protocolos DeFi encadenados o históricos incompletos que hay que reconstruir."
+      }
+    }
+  },
+  "precios": {
+    "seoTitulo": "Precio asesor fiscal de criptomonedas | Cleriontax",
+    "seoDescripcion": "Cuánto cuesta declarar criptomonedas con un asesor fiscal: tramos cerrados desde 250 € según las fuentes de datos de tu cartera. Sin sorpresas a mitad.",
+    "etiqueta": "Precios",
+    "titulo": "Cuánto cuesta un asesor fiscal de criptomonedas",
+    "entrada": "Cuatro tramos cerrados según la complejidad de tu cartera. Te confirmamos el tuyo en cuanto vemos tus datos, antes de empezar a trabajar.",
+    "accion": "Pedir presupuesto cerrado",
+    "aparteTitulo": "Lo que se presupuesta aparte",
+    "aparteEntrada": "Los tramos cubren la reconciliación y el informe. Hay encargos que dependen de otras cosas, y esos se cierran por separado y también antes de empezar.",
+    "aparte": [
+      {
+        "title": "Defensa ante la AEAT",
+        "body": "Contestar un requerimiento, presentar alegaciones o recurrir una sanción depende del expediente. Te damos precio en cuanto leemos la notificación."
+      },
+      {
+        "title": "Modelo 721",
+        "body": "La declaración informativa de criptomonedas en el extranjero se presupuesta según el número de custodios y saldos que haya que informar."
+      },
+      {
+        "title": "Asesoría continuada",
+        "body": "Planificación de una venta importante, seguimiento de cartera durante el año o consultas recurrentes: a medida de lo que necesites."
+      },
+      {
+        "title": "Despachos y gestorías",
+        "body": "Si derivas clientes, trabajamos con condiciones propias para despachos."
+      }
+    ],
+    "comoTitulo": "Cómo se cierra el precio",
+    "como": [
+      {
+        "title": "Nos cuentas tu operativa",
+        "body": "Qué plataformas usas, qué ejercicios y si hay algo de la AEAT de por medio. Con el formulario de abajo basta."
+      },
+      {
+        "title": "Vemos tus datos y confirmamos el tramo",
+        "body": "Con las exportaciones o la lista de fuentes te decimos qué tramo es el tuyo y qué plazo de entrega manejamos."
+      },
+      {
+        "title": "Empezamos con el precio cerrado",
+        "body": "Si al reconstruir aparece algo que cambia el alcance, te lo explicamos y lo decides tú antes de seguir. Nunca hay sorpresas en la factura."
+      }
+    ],
+    "faqTitulo": "Preguntas frecuentes sobre el precio",
+    "faq": [
+      {
+        "q": "¿Por qué no cobráis por número de operaciones?",
+        "a": "Porque el trabajo no está en contar operaciones, sino en casar fuentes. Mil compras en un exchange se procesan igual que diez; lo que lleva tiempo es seguir un mismo activo cuando pasa de un exchange a una wallet y de ahí a un protocolo."
+      },
+      {
+        "q": "¿El precio depende de lo que haya ganado?",
+        "a": "No. Cobramos por el trabajo de reconciliación, no por el resultado. Una cartera con pérdidas lleva el mismo trabajo que una con ganancias, y a menudo es la que más interesa documentar bien."
+      },
+      {
+        "q": "¿Y si al ver mis datos la cartera es más compleja de lo que pensaba?",
+        "a": "Te lo decimos antes de empezar. El tramo se confirma con tus datos delante, no a mitad del trabajo, así que el precio que aceptas es el que pagas."
+      },
+      {
+        "q": "¿Cuánto cuesta responder a un requerimiento de Hacienda?",
+        "a": "La reconstrucción de tus cifras sigue estos mismos tramos. El escrito de contestación y la representación ante la AEAT se presupuestan aparte en cuanto leemos la notificación, normalmente el mismo día."
+      },
+      {
+        "q": "¿Qué necesito para que me deis precio?",
+        "a": "Basta con la lista de plataformas, wallets y protocolos que has usado y los ejercicios que te preocupan. Si ya tienes las exportaciones o un informe de Koinly o CoinTracking, mejor: afinamos más."
+      }
+    ],
+    "cierreTitulo": "Pide tu presupuesto cerrado",
+    "cierreTexto": "Cuéntanos qué plataformas usas y qué ejercicios te preocupan. Te respondemos con el tramo que te corresponde y el plazo de entrega."
   }
 }

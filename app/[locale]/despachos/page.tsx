@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: Props) {
 export default async function Pagina({ params }: Props) {
   const { locale } = await params;
   const datos = await cargarPagina(locale, SLUG);
-  const t = await getTranslations({ locale, namespace: 'servicesPages.cierre' });
+  const t = await getTranslations({ locale, namespace: 'paginas' });
 
   return (
-    <PaginaContenido locale={locale} datos={datos} accionBarra={t('barraAccion')} />
+    <PaginaContenido locale={locale} datos={datos} accionBarra={t('barraContacto')} />
   );
 }

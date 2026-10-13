@@ -242,7 +242,7 @@ export const commonHowToSchemas = {
       description: descriptions[locale],
       steps: steps[locale],
       totalTime: 'PT8H',
-      url: `${baseUrl}/${locale}/servicios`,
+      url: `${baseUrl}/${locale}/declarar-criptomonedas`,
       baseUrl
     });
   }

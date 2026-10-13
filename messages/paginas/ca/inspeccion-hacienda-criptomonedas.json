@@ -1,0 +1,241 @@
+{
+  "title": "Inspecció d'Hisenda per criptomonedes",
+  "slug": "inspeccion-hacienda-criptomonedas",
+  "nav": "Inspecció i sancions",
+  "excerpt": "Defensa davant d'una inspecció d'Hisenda per criptomonedes i de tot el que ve després: proposta de liquidació, sanció, recurs de reposició i reclamació economicoadministrativa.",
+  "hero": {
+    "etiqueta": "Procediment obert",
+    "h1": "Inspecció d'Hisenda per criptomonedes: defensa de principi a fi",
+    "subheading": "Una inspecció no es contesta com un requeriment. Cada compareixença es prepara, cada document que entra queda a l'expedient i la liquidació i la sanció es defensen per separat. T'acompanyem des de la comunicació d'inici fins a l'última reclamació.",
+    "cta": {
+      "label": "Truca'ns: +34 663 482 301",
+      "href": "tel:+34663482301"
+    },
+    "secundaria": {
+      "label": "Explica'ns el teu cas",
+      "href": "#diagnostico"
+    }
+  },
+  "toc": [
+    { "id": "donde-estas", "label": "On ets" },
+    { "id": "recorrido", "label": "El recorregut" },
+    { "id": "en-juego", "label": "Què hi ha en joc" },
+    { "id": "cuota-y-sancion", "label": "Quota i sanció" },
+    { "id": "derechos", "label": "Els teus drets" },
+    { "id": "como-lo-llevamos", "label": "Com el portem" },
+    { "id": "que-necesitamos", "label": "Què necessitem" },
+    { "id": "precio", "label": "Preu" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "donde-estas",
+      "h2": "On ets",
+      "fondo": "blanco",
+      "body": "T'ha arribat una comunicació d'inici d'actuacions inspectores, una proposta de liquidació o un acord sancionador per les teves criptomonedes. Cadascun és un moment diferent del mateix procediment, i en cadascun encara hi ha alguna cosa a fer.\n\nLa inspecció és el procediment de més abast: la porta un actuari, pot abastar diversos exercicis i demanar informació a tercers, com bancs i exchanges. Si el que tens és un requeriment d'informació o una comprovació limitada, el que necessites és a la nostra pàgina sobre el requeriment d'Hisenda.\n\nEn criptoactius, gairebé tot es decideix demostrant d'on surt cada euro. Una inspecció no es guanya amb l'eloqüència de l'escrit, sinó amb la reconstrucció de l'operativa: quins moviments eren transferències entre els teus propis wallets, quines permutes hi va haver i quin va ser el cost real de cada venda."
+    },
+    {
+      "id": "recorrido",
+      "h2": "El recorregut, de la inspecció al recurs",
+      "fondo": "papel",
+      "entrada": "Les dates concretes les marca cada notificació. Aquest és l'ordre habitual, i a cada tram hi ha alguna cosa a fer.",
+      "hitos": [
+        {
+          "cuando": "Inici",
+          "titulo": "Comunicació d'inici d'actuacions",
+          "body": "Fixa l'abast: quins exercicis i quins conceptes es comproven. El procediment té un termini màxim de divuit mesos, ampliable a vint-i-set en els casos que preveu la llei."
+        },
+        {
+          "cuando": "Compareixences",
+          "titulo": "Requeriments i diligències",
+          "body": "Cada compareixença es prepara: què s'aporta, en quin ordre i amb quina explicació. Les diligències recullen fets que després sostenen la proposta, així que es revisen abans de signar-les."
+        },
+        {
+          "cuando": "Audiència",
+          "titulo": "Proposta de liquidació i al·legacions",
+          "body": "És el moment de rebatre amb la teva pròpia quantificació al davant, abans que es formalitzi res. És la defensa més econòmica del procediment."
+        },
+        {
+          "cuando": "Acta",
+          "titulo": "Conformitat o disconformitat",
+          "body": "L'elecció condiciona el que podràs discutir després i les reduccions de la sanció. Es decideix amb els números fets, no abans."
+        },
+        {
+          "cuando": "Sanció",
+          "titulo": "Expedient sancionador",
+          "body": "Va per un expedient propi, amb les seves pròpies al·legacions. Acceptar la quota no t'obliga a acceptar la sanció."
+        },
+        {
+          "cuando": "1 mes",
+          "titulo": "Recurs de reposició o reclamació economicoadministrativa",
+          "body": "Des de la notificació de la resolució tens un mes per recórrer en via administrativa: reposició davant la mateixa AEAT o reclamació davant el TEAR o el TEAC. Són alternatives, i cal triar-ne una.",
+          "critico": true
+        },
+        {
+          "cuando": "Després",
+          "titulo": "Recurs contenciós administratiu",
+          "body": "Esgotada la via administrativa, queda la via judicial davant els tribunals, amb advocat i procurador."
+        }
+      ]
+    },
+    {
+      "id": "en-juego",
+      "h2": "Què hi ha en joc",
+      "fondo": "blanco",
+      "entrada": "Sobre la quota que es liquidi s'hi sumen interessos de demora i, si hi ha sanció, un percentatge que depèn de com es qualifiqui la infracció.",
+      "cifras": [
+        { "valor": "50 %", "etiqueta": "Infracció lleu: sanció sobre la quantitat deixada d'ingressar" },
+        { "valor": "50–100 %", "etiqueta": "Infracció greu, quan s'aprecia ocultació" },
+        { "valor": "100–150 %", "etiqueta": "Infracció molt greu, quan s'aprecien mitjans fraudulents" },
+        { "valor": "120.000 €", "etiqueta": "Quota defraudada per tribut i exercici a partir de la qual el cas pot passar a la via penal com a delicte fiscal", "acento": true }
+      ]
+    },
+    {
+      "id": "cuota-y-sancion",
+      "h2": "La quota i la sanció es defensen per separat",
+      "fondo": "papel",
+      "entrada": "Pot ser que la quota estigui ben calculada i tot i així la sanció no sigui procedent. Per això s'analitzen a part i, de vegades, convé acceptar-ne una i recórrer l'altra.",
+      "items": [
+        {
+          "title": "La quota es discuteix amb xifres",
+          "body": "La liquidació corregeix el que havies d'haver pagat. Si l'AEAT ha partit del que li va reportar un exchange, és freqüent que compti com a vendes les transferències entre els teus propis wallets o que valori a zero el cost del que vas comprar. Refer l'operativa redueix la base, i amb ella tot el que es calcula a sobre."
+        },
+        {
+          "title": "La sanció es discuteix amb la conducta",
+          "body": "Per sancionar, l'Administració ha de motivar que hi va haver culpabilitat, encara que sigui per simple negligència. No n'hi ha prou de constatar que vas declarar de menys. Un acord que descriu el resultat sense raonar la conducta és atacable precisament per això."
+        },
+        {
+          "title": "La interpretació raonable de la norma",
+          "body": "Durant anys, bona part de l'operativa cripto, com les permutes, l'staking, els airdrops o el DeFi, no va tenir un criteri administratiu clar. Si en la data de la teva declaració no n'hi havia, haver aplicat una interpretació raonable no és sancionable per no coincidir amb el criteri d'avui."
+        },
+        {
+          "title": "L'absència d'ocultació",
+          "body": "Operar en plataformes que reporten, moure els diners pel teu banc i no fer servir estructures opaques són fets que pesen en la qualificació de la infracció, i s'aporten."
+        }
+      ]
+    },
+    {
+      "id": "derechos",
+      "h2": "El que pots exigir durant la inspecció",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>Conèixer l'abast:</strong> quins exercicis i conceptes es comproven, i que no s'ampliï sense notificar-t'ho formalment.",
+        "<strong>Comparèixer amb assessor</strong> o mitjançant representant. En un procediment tècnic és l'habitual, i evita que una resposta improvisada acabi recollida en una diligència.",
+        "<strong>No autoinculpar-te</strong> en allò que pugui tenir abast sancionador o penal. És un dret amb matisos, diferent de l'obligació d'aportar la documentació de les teves operacions.",
+        "<strong>Al·legar abans de l'acta</strong>, en el tràmit d'audiència, amb la documentació que consideris.",
+        "<strong>Obtenir còpia</strong> del que consta a l'expedient.",
+        "<strong>Invocar la prescripció:</strong> l'AEAT té quatre anys per liquidar un exercici, comptats des de la fi del termini per declarar-lo, llevat que alguna cosa els hagi interromput.",
+        "<strong>Recórrer</strong> la liquidació i, per separat, la sanció."
+      ]
+    },
+    {
+      "id": "como-lo-llevamos",
+      "h2": "Com el portem",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Llegim l'expedient tal com està",
+          "body": "L'abast, els exercicis, la prescripció de cadascun i tot el que ja s'ha aportat. Abans que hi entri un document més."
+        },
+        {
+          "title": "Reconstruïm l'operativa de tot el període",
+          "body": "Exchanges, wallets i protocols, operació per operació. Aquí sol aparèixer l'origen de la diferència: moviments interns comptats com a vendes, permutes sense declarar o rendiments sense imputar."
+        },
+        {
+          "title": "Construïm la prova",
+          "body": "Titularitat de les adreces, traçabilitat de wallet a wallet i correspondència amb els extractes bancaris. Si un exchange ha tancat, el rastre on-chain i els moviments en euros supleixen l'històric perdut."
+        },
+        {
+          "title": "Preparem cada compareixença i cada escrit",
+          "body": "Què s'aporta, en quin ordre i amb quina explicació. Abans de presentar res, t'expliquem què se sostindrà i amb quin suport."
+        },
+        {
+          "title": "Separem quota i sanció",
+          "body": "Valorem amb tu, amb els dos números al davant, si convé la conformitat, què s'al·lega contra la liquidació i què contra la sanció."
+        },
+        {
+          "title": "Recorrem si compensa",
+          "body": "Recurs de reposició o reclamació davant el TEAR o el TEAC, segons la quantia i l'estratègia. Si el cost del recurs no compensa el que hi ha en joc, t'ho diem."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Què necessitem de tu",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Tot el que t'han notificat:</strong> la comunicació d'inici, els requeriments, les diligències signades, la proposta de liquidació i l'acord sancionador, si ja han arribat.",
+        "<strong>Les teves declaracions</strong> dels exercicis inclosos en l'abast.",
+        "<strong>L'històric d'exchanges i wallets</strong> del període: CSV, claus API de només lectura i adreces públiques. Mai claus privades.",
+        "<strong>Extractes bancaris</strong> de totes les entrades i sortides a euros.",
+        "<strong>El que ja hagis aportat</strong> a la inspecció, exactament com ho vas aportar, inclosos els informes generats amb programari."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Necessito un advocat fiscal per a una inspecció de criptomonedes?",
+          "a": "Per a la via administrativa, no necessàriament. La inspecció, les al·legacions, el recurs de reposició i la reclamació economicoadministrativa els pots portar amb un assessor fiscal, i és el que fem: l'expedient el porta un assessor fiscal col·legiat. Si el cas arriba al contenciós administratiu o a la via penal, cal advocat. En aquest punt aportem la reconstrucció de l'operativa i l'informe tècnic que sosté les xifres, en coordinació amb l'advocat que et representi."
+        },
+        {
+          "q": "Quan és delicte fiscal i no una sanció administrativa?",
+          "a": "Quan la quota defraudada supera els 120.000 € per tribut i exercici i es donen els altres requisits del delicte, el cas pot passar a la via penal. Per sota d'aquest llindar, la discussió és administrativa. Per això la quantificació és tan important: una base inflada per transferències internes comptades com a vendes pot situar artificialment el cas a prop del llindar."
+        },
+        {
+          "q": "Puc acceptar la liquidació i recórrer només la sanció?",
+          "a": "Sí, i en criptoactius és una estratègia freqüent, perquè la quota pot estar ben calculada i la sanció no estar motivada. Acceptar la liquidació pot afectar les reduccions aplicables a la sanció, així que es decideix amb els dos números al davant."
+        },
+        {
+          "q": "Recurs de reposició o reclamació economicoadministrativa?",
+          "a": "Són alternatives: si en presentes una, no pots presentar l'altra alhora. El termini de totes dues és d'un mes des de la notificació. La reposició la resol la mateixa AEAT. La reclamació la resol un tribunal economicoadministratiu, el TEAR o el TEAC segons la quantia, i obre després la via contenciosa. Triem segons el fonament i el que hi hagi en joc."
+        },
+        {
+          "q": "Recórrer suspèn el pagament?",
+          "a": "No automàticament. La suspensió sol requerir garantia, tot i que les sancions recorregudes en termini tenen un règim propi. És de les primeres coses que cal resoldre, perquè afecta la teva tresoreria mentre dura el procediment."
+        },
+        {
+          "q": "Pot Hisenda veure els meus wallets no custodiats?",
+          "a": "La cadena és pública: qualsevol pot veure els moviments d'una adreça. El que no és públic és qui n'és el titular, però l'AEAT creua el que li reporten exchanges i bancs i disposa d'eines d'anàlisi per atribuir adreces. Convé partir que la traçabilitat existeix i fer-la servir al teu favor."
+        },
+        {
+          "q": "Quant costa la defensa en una inspecció?",
+          "a": "Hi ha dues parts. La reconstrucció de les teves xifres segueix els trams de la reconciliació: Plataforma única, 250 €; Multiexchange, 350 €; Cartera mixta, 450 €; i Cartera complexa, des de 700 €. La feina de defensa, és a dir, les compareixences, al·legacions, recursos i reclamacions, es pressuposta a part tan bon punt veiem l'expedient. En tens el detall a la pàgina de preus."
+        },
+        {
+          "q": "Em podeu garantir que no hi haurà sanció?",
+          "a": "No, i desconfia de qui t'ho garanteixi. Ningú no pot anticipar el sentit d'una resolució. El que sí que fem és construir la millor posició documentada possible, explicar-te amb franquesa els escenaris, inclosos els desfavorables, i presentar-ho tot dins de termini, que és on es perden molts expedients."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "El que costa reconstruir les teves xifres",
+    "entrada": "La base de qualsevol defensa és l'operativa refeta. El preu depèn de quantes fonts de dades cal reconciliar, no del que hi hagi en joc a l'expedient.",
+    "nota": "La reconstrucció segueix aquests trams. La feina de defensa (compareixences, al·legacions, recursos i reclamacions) es pressuposta a part tan bon punt veiem l'expedient."
+  },
+  "cierre": {
+    "h2": "No aportis res més sense revisar-ho",
+    "body": "Explica'ns en quin punt és el procediment, quins exercicis abasta i què has aportat ja. El primer que farem és revisar l'expedient tal com està i dir-te quin termini tens. Si el termini apreta, truca'ns al +34 663 482 301.",
+    "button": {
+      "label": "Explica'ns el teu cas"
+    }
+  },
+  "seo": {
+    "title": "Inspecció d'Hisenda per criptomonedes: defensa | Cleriontax",
+    "description": "Inspecció d'Hisenda per criptomonedes, sanció o proposta de liquidació: defensa, al·legacions, recurs de reposició i reclamació davant el TEAR o el TEAC.",
+    "keywords": [
+      "inspecció hisenda criptomonedes",
+      "inspecció fiscal criptomonedes",
+      "defensa inspecció hisenda cripto",
+      "sanció hisenda criptomonedes",
+      "recurs sanció criptomonedes",
+      "reclamació economicoadministrativa criptomonedes",
+      "litigació fiscal criptomonedes",
+      "advocat fiscal criptomonedes",
+      "defensa hisenda criptomonedes",
+      "delicte fiscal criptomonedes"
+    ]
+  }
+}

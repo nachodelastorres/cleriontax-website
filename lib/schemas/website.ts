@@ -38,21 +38,21 @@ export function generateWebSiteSchema(
   const navigationLinks: Record<Locale, Array<{ name: string; url: string }>> = {
     es: [
       { name: 'Inicio', url: `${baseUrl}/es` },
-      { name: 'Servicios', url: `${baseUrl}/es/servicios` },
+      { name: 'Precios', url: `${baseUrl}/es/precios` },
       { name: 'Blog', url: `${baseUrl}/es/blog` },
       { name: 'Sobre Nosotros', url: `${baseUrl}/es/sobre-nosotros` },
       { name: 'Contacto', url: `${baseUrl}/es/contacto` }
     ],
     en: [
       { name: 'Home', url: `${baseUrl}/en` },
-      { name: 'Services', url: `${baseUrl}/en/servicios` },
+      { name: 'Prices', url: `${baseUrl}/en/precios` },
       { name: 'Blog', url: `${baseUrl}/en/blog` },
       { name: 'About Us', url: `${baseUrl}/en/sobre-nosotros` },
       { name: 'Contact', url: `${baseUrl}/en/contacto` }
     ],
     ca: [
       { name: 'Inici', url: `${baseUrl}/ca` },
-      { name: 'Serveis', url: `${baseUrl}/ca/servicios` },
+      { name: 'Preus', url: `${baseUrl}/ca/precios` },
       { name: 'Blog', url: `${baseUrl}/ca/blog` },
       { name: 'Sobre Nosaltres', url: `${baseUrl}/ca/sobre-nosotros` },
       { name: 'Contacte', url: `${baseUrl}/ca/contacto` }

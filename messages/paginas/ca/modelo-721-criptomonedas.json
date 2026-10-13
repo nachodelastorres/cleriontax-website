@@ -1,0 +1,194 @@
+{
+  "title": "Model 721 de criptomonedes: qui el presenta, termini i com fer-ho",
+  "slug": "modelo-721-criptomonedas",
+  "nav": "Model 721",
+  "excerpt": "Qui està obligat a presentar el model 721 per criptomonedes custodiades a l’estranger, el llindar de 50.000 euros, el termini de presentació i què fer si no el vas presentar a temps.",
+  "hero": {
+    "etiqueta": "Declaració informativa",
+    "h1": "Model 721 de criptomonedes: si el teu saldo és en un exchange estranger, Hisenda ho vol saber",
+    "subheading": "El 721 no calcula cap impost: informa del que tenies a 31 de desembre en plataformes situades fora d’Espanya. Per això s’oblida fàcilment, i per això convé comprovar cada any si et toca. El preparem amb el saldo valorat, el suport de cada xifra i la presentació feta.",
+    "cta": {
+      "label": "Demanar pressupost",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Qui està obligat",
+      "href": "#quien-esta-obligado"
+    }
+  },
+  "toc": [
+    { "id": "quien-esta-obligado", "label": "Qui està obligat" },
+    { "id": "cifras", "label": "Llindar i termini" },
+    { "id": "que-entra", "label": "Què hi entra i què no" },
+    { "id": "otros-modelos", "label": "721, 720, 714 i renda" },
+    { "id": "fuera-de-plazo", "label": "Si no el vas presentar" },
+    { "id": "como-lo-hacemos", "label": "Com ho fem" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "quien-esta-obligado",
+      "h2": "Qui està obligat a presentar el model 721",
+      "fondo": "blanco",
+      "body": "Has de presentar el model 721 si ets resident fiscal a Espanya i, a 31 de desembre, el valor conjunt de les teves criptomonedes custodiades per plataformes situades a l’estranger supera els 50.000 euros.\n\nL’expressió que ho decideix tot és «custodiades per tercers». Compta el que tens en un exchange o en un servei que guarda les claus privades per tu. No compta, en principi, el que tens en una wallet les claus de la qual controles només tu. I el tercer ha d’estar situat fora d’Espanya: una plataforma espanyola no entra al 721.",
+      "bullets": [
+        "<strong>Se suma tot el que està custodiat a l’estranger.</strong> Ningú supera el llindar amb un sol exchange, però sí sumant Binance, Kraken i Coinbase. El càlcul és conjunt, no per plataforma.",
+        "<strong>Es mira la foto del 31 de desembre</strong>, no el que vas comprar ni el màxim que va assolir la teva cartera durant l’any.",
+        "<strong>No cal haver venut res.</strong> El 721 informa del que tens, no del que has guanyat. Una cartera quieta tot l’any també pot estar obligada.",
+        "<strong>Els anys següents</strong> només el tornes a presentar si el saldo conjunt puja més de 20.000 euros respecte a l’últim declarat, o si deixes de tenir aquests criptoactius i cal comunicar-ho."
+      ]
+    },
+    {
+      "id": "cifras",
+      "h2": "Llindar i termini del model 721",
+      "fondo": "azul",
+      "entrada": "Les magnituds que defineixen l’obligació. Hi ha matisos segons el cas, i per això el primer que fem és comprovar si t’afecta.",
+      "cifras": [
+        { "valor": "50.000 €", "etiqueta": "saldo conjunt a l’estranger a 31 de desembre que activa l’obligació" },
+        { "valor": "1 gen – 31 març", "etiqueta": "termini per presentar el model 721 de l’exercici anterior", "acento": true },
+        { "valor": "+20.000 €", "etiqueta": "increment sobre l’últim declarat que obliga a tornar-lo a presentar" },
+        { "valor": "0 €", "etiqueta": "de quota: és una declaració informativa, no un impost" }
+      ]
+    },
+    {
+      "id": "que-entra",
+      "h2": "Què entra al 721 i què no",
+      "fondo": "papel",
+      "entrada": "El dubte més freqüent no és el termini, és saber quina part de la teva cartera compta.",
+      "items": [
+        {
+          "title": "Exchange estranger: hi entra",
+          "body": "Binance, Kraken, Coinbase, Bybit o qualsevol plataforma situada fora d’Espanya que guardi les teves criptomonedes. És el cas típic del 721."
+        },
+        {
+          "title": "Wallet amb les teves pròpies claus: en principi, no",
+          "body": "Una Ledger, una Trezor o una MetaMask les claus de la qual només controles tu no tenen un tercer custodi. No van al 721, tot i que sí compten per a la teva renda i, si escau, per al patrimoni."
+        },
+        {
+          "title": "Plataforma situada a Espanya: no",
+          "body": "Si el custodi és a Espanya, no hi ha obligació informativa pel 721. Aquesta informació arriba a l’AEAT per altres vies."
+        },
+        {
+          "title": "Staking, earn i DeFi: cal mirar-ho",
+          "body": "El que tens en un producte de staking o earn dins d’un exchange estranger continua custodiat per ell. A DeFi, la resposta depèn de qui controla de debò les claus. Són els casos que analitzem un per un."
+        }
+      ]
+    },
+    {
+      "id": "otros-modelos",
+      "h2": "Model 721, model 720, model 714 i la renda: què fa cadascun",
+      "fondo": "blanco",
+      "entrada": "Quatre obligacions diferents que se solapen al calendari i es confonen constantment. Presentar-ne una no cobreix les altres.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Model 721",
+          "body": "Informa de les criptomonedes custodiades a l’estranger a 31 de desembre. No es paga res. Es presenta entre gener i març."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Model 720",
+          "body": "Informa de comptes, valors i immobles a l’estranger. Les criptomonedes no hi van: des que existeix el 721, tenen el seu propi model."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Model 714",
+          "body": "L’impost sobre el patrimoni. Sí que hi pot haver quota, i les teves criptomonedes hi compten siguin on siguin, també a la teva wallet. Depèn de la teva comunitat i del teu patrimoni total."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Model 100",
+          "body": "La declaració de la renda, on van els guanys, les pèrdues i els rendiments de l’any. El que declaris al 721 ha de ser coherent amb el que expliqui la teva renda."
+        }
+      ]
+    },
+    {
+      "id": "fuera-de-plazo",
+      "h2": "Si no vas presentar el model 721 a temps",
+      "fondo": "papel",
+      "body": "Es pot presentar fora de termini, i no és el mateix fer-ho pel teu compte que esperar que ho detecti l’Administració. Presentar-lo abans de qualsevol requeriment redueix la sanció i evita que l’omissió es converteixi en el punt de partida d’una comprovació.\n\nDesprés de la sentència del Tribunal de Justícia de la Unió Europea sobre el model 720, el règim de sancions desproporcionades va desaparèixer i les declaracions informatives sobre béns a l’estranger, inclòs el 721, queden en el règim sancionador general. Això no vol dir que no passi res: vol dir que el cost de regularitzar aviat és raonable i el d’esperar, incert.\n\nAbans de presentar un exercici endarrerit, convé revisar també la renda d’aquell any. Si el 721 reflecteix un saldo que la teva declaració no explica, la incoherència és el que crida l’atenció. Si és el teu cas, ho enfoquem com una regularització completa: el 721 i la renda de cada exercici, alhora."
+    },
+    {
+      "id": "como-lo-hacemos",
+      "h2": "Com preparem i presentem el teu model 721",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Comprovem si hi estàs obligat",
+          "body": "Què està custodiat per un tercer i què no, on és situat cada custodi i quin saldo conjunt hi havia a 31 de desembre. De vegades la resposta és que no t’afecta, i t’ho diem."
+        },
+        {
+          "title": "Valorem a la data correcta",
+          "body": "Saldo per actiu i per plataforma a 31 de desembre, amb la font de preu anotada. Una captura de l’app no serveix com a suport."
+        },
+        {
+          "title": "Identifiquem cada custodi",
+          "body": "Raó social, país i dades de la plataforma que exigeix el model. És la part que més es complica quan un exchange opera amb diverses entitats segons la regió."
+        },
+        {
+          "title": "Revisem els anys anteriors",
+          "body": "Si en algun exercici es va superar el llindar i no es va presentar, t’expliquem quines opcions tens abans de presentar l’actual."
+        },
+        {
+          "title": "Presentem i et deixem el suport",
+          "body": "Presentació telemàtica i un arxiu amb com s’ha arribat a cada xifra, per si el model es revisa més endavant."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents sobre el model 721",
+      "items": [
+        {
+          "q": "Quin és el termini del model 721?",
+          "a": "De l’1 de gener al 31 de març de l’any següent a l’exercici que es declara. Va per davant de la campanya de la renda, que és justament per què s’oblida: quan et poses amb els impostos, la data del 721 ja ha passat."
+        },
+        {
+          "q": "He de pagar alguna cosa amb el model 721?",
+          "a": "No. És una declaració informativa. El que sí que importa és que expliqui la mateixa història que la teva renda: un saldo alt al 721 sense rendes que l’expliquin és una incoherència visible."
+        },
+        {
+          "q": "El que tinc en una wallet freda amb les meves claus va al 721?",
+          "a": "En principi, no: el 721 es refereix a criptomonedes custodiades per un tercer. El que tens en una wallet les claus de la qual controles només tu no té custodi. Hi ha situacions intermèdies, sobretot a DeFi, que convé revisar cas per cas."
+        },
+        {
+          "q": "Tinc saldo en diversos exchanges i cap no arriba a 50.000 euros",
+          "a": "El llindar es calcula amb el saldo conjunt de totes les plataformes estrangeres, no amb cadascuna per separat. És l’error més freqüent: cap no hi arriba sola, però sumades sí."
+        },
+        {
+          "q": "En què es diferencia el model 721 del 720?",
+          "a": "El 720 informa de comptes, valors i immobles a l’estranger; el 721, de criptomonedes custodiades a l’estranger. Són models separats i les criptomonedes no es declaren al 720."
+        },
+        {
+          "q": "I el model 714 de patrimoni?",
+          "a": "És un impost, no una declaració informativa, i hi compten totes les teves criptomonedes, també les de la teva wallet. Si t’afecta depèn de la teva comunitat autònoma i del teu patrimoni total. Ho expliquem en detall al nostre article sobre el model 714 i les criptomonedes, enllaçat al final d’aquesta pàgina."
+        },
+        {
+          "q": "Quant costa que us n’encarregueu del model 721?",
+          "a": "El 721 es pressuposta tancat tan bon punt veiem les teves plataformes i els teus saldos, perquè la feina depèn de quants custodis hi ha i de com de complet és l’historial. Si a més necessites conciliar la teva operativa per a la renda, s’apliquen els trams de la nostra pàgina de preus: Plataforma única, Multiexchange, Cartera mixta o Cartera complexa, segons les teves fonts de dades."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Digues-nos on tens les criptomonedes i et direm si et toca",
+    "body": "Indica en quines plataformes tens saldo i un import aproximat a 31 de desembre. Et responem si hi estàs obligat, de quins exercicis i quant costa preparar-ho.",
+    "button": {
+      "label": "Enviar diagnòstic"
+    }
+  },
+  "seo": {
+    "title": "Model 721 criptomonedes: qui el presenta i termini | Cleriontax",
+    "description": "Model 721 de criptomonedes: qui hi està obligat, llindar de 50.000 €, termini de gener a març i què fer si no el vas presentar. T’ajudem a presentar-lo.",
+    "keywords": [
+      "model 721 criptomonedes",
+      "presentar model 721",
+      "ajuda model 721 criptomonedes",
+      "model 721 termini",
+      "model 721 50.000 euros",
+      "model 721 fora de termini",
+      "model 720 criptomonedes",
+      "modelo 721 criptomonedas"
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Informe fiscal de criptomonedes",
+  "slug": "informe-fiscal-criptomonedas",
+  "nav": "Informe fiscal cripto",
+  "excerpt": "Reconciliem els teus exchanges, wallets i protocols i et lliurem un informe fiscal de criptomonedes amb els teus guanys i pèrdues calculats per FIFO i cada xifra traçable fins a la seva operació d’origen.",
+  "hero": {
+    "etiqueta": "Tens les dades, et falta la xifra",
+    "h1": "Informe fiscal de criptomonedes, amb cada xifra traçable",
+    "subheading": "Reunim tot el que tens repartit en exchanges, wallets i protocols, separem el que va ser una venda del que va ser moure fons entre comptes teus i calculem els teus guanys i pèrdues amb FIFO. Reps la xifra per a la teva declaració i el detall operació per operació que la sosté.",
+    "cta": {
+      "label": "Demanar pressupost",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Veure preus",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "que-es", "label": "Què és" },
+    { "id": "fuentes", "label": "Fonts de dades" },
+    { "id": "que-recibes", "label": "Què reps" },
+    { "id": "fifo-trazabilidad", "label": "FIFO i traçabilitat" },
+    { "id": "como-trabajamos", "label": "Com treballem" },
+    { "id": "carteras-grandes", "label": "Carteres grans" },
+    { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
+    { "id": "que-necesitamos", "label": "Què necessitem de tu" },
+    { "id": "precio", "label": "Preu" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "que-es",
+      "h2": "Què és un informe fiscal de criptomonedes",
+      "fondo": "blanco",
+      "body": "És el document que converteix el teu historial d’operacions en les xifres que demana la declaració de la renda: quant has guanyat, quant has perdut i quant has cobrat en rendiments durant l’exercici.\n\nPer arribar-hi no n’hi ha prou de descarregar un CSV i passar-lo per un programa. Cal ajuntar totes les plataformes on has operat, reconèixer les transferències entre comptes teus perquè no comptin com a vendes, posar preu en euros a cada permuta i aplicar el criteri FIFO sobre la cartera completa. Aquesta feina prèvia és la reconciliació, i és el que fem.\n\nUn programa automàtic és un bon punt de partida, però no és el lliurable. El que cap regla no resol amb certesa ho revisem a mà i deixem escrit per què es va decidir així."
+    },
+    {
+      "id": "fuentes",
+      "h2": "Què compta com una font de dades",
+      "fondo": "papel",
+      "entrada": "El preu i la feina depenen de quantes fonts cal reconciliar, no de quant hagis guanyat. Cadascuna d’aquestes compta com una font.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Un exchange centralitzat",
+          "body": "Binance, Coinbase, Kraken, Bit2Me, Bybit, OKX… Cada compte d’exchange és una font, amb la seva exportació i el seu format."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Una wallet pròpia",
+          "body": "MetaMask, Ledger, Phantom, Trust Wallet… Treballem amb les seves adreces públiques i reconstruïm l’activitat on-chain."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Un protocol DeFi",
+          "body": "Staking, liquidity pools, préstecs o farming en protocols com Uniswap, Aave o Curve, amb les seves recompenses i les seves permutes implícites."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Un broker o un marketplace",
+          "body": "Plataformes d’accions o ETF, o mercats de NFT, quan formen part de la mateixa cartera que cal declarar."
+        }
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "Què reps: el teu informe de guanys i pèrdues",
+      "fondo": "blanco",
+      "entrada": "Un resum que cap en una pantalla, amb tot el detall a sota. Els imports són d’exemple.",
+      "tabla": {
+        "titulo": "Informe fiscal",
+        "periodo": "exercici 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Guanys patrimonials", "importe": 18402.15 },
+          { "concepto": "Pèrdues patrimonials", "importe": -6117.8 },
+          { "concepto": "Rendiments de staking", "importe": 1293.44 },
+          { "concepto": "Registres processats", "recuento": 104882 },
+          { "concepto": "Descartats com a spam", "recuento": 71204 },
+          { "concepto": "Revisats a mà", "recuento": 947 }
+        ]
+      },
+      "bullets": [
+        "<strong>Les xifres per a la teva declaració:</strong> guanys i pèrdues patrimonials i rendiments del capital mobiliari, separats com els demana la renda.",
+        "<strong>El detall operació per operació:</strong> data, actiu, quantitat, valor en euros, cost d’adquisició assignat i resultat de cada venda o permuta.",
+        "<strong>La memòria de criteris:</strong> què es va decidir en cada punt dubtós i amb quin fonament. És el que et permet defensar la xifra si Hisenda pregunta.",
+        "<strong>La cartera conciliada:</strong> saldos de tancament per actiu i plataforma, quadrats amb el que realment tens. És el punt de partida de l’exercici següent."
+      ]
+    },
+    {
+      "id": "fifo-trazabilidad",
+      "h2": "Càlcul FIFO i traçabilitat davant d’Hisenda",
+      "fondo": "papel",
+      "body": "L’AEAT exigeix el criteri FIFO: quan vens o permutes un actiu, es considera que surt primer el que vas comprar abans. Aplicar-lo bé exigeix tenir l’historial complet des de la teva primera compra, no només el de l’any que declares, i tractar cada criptomoneda com un actiu homogeni encara que estigui repartida en diverses plataformes.\n\nLa traçabilitat és l’altra meitat. Cada euro del resultat s’ha de poder seguir fins a l’operació que el genera i fins a la dada d’origen: el CSV de l’exchange, la transacció on-chain o l’extracte bancari. Si algun dia t’arriba un requeriment, això és el que s’aporta.",
+      "columnas": [
+        {
+          "titulo": "Un informe sense reconciliar",
+          "items": [
+            "Les transferències entre els teus comptes apareixen com a vendes",
+            "Els tokens que no reconeix queden amb cost zero",
+            "El FIFO es calcula plataforma per plataforma",
+            "No queda escrit per què es va decidir cada cas"
+          ]
+        },
+        {
+          "titulo": "Un informe reconciliat",
+          "correcta": true,
+          "items": [
+            "Cada transferència interna es casa amb la seva entrada",
+            "Cada actiu té el seu cost d’adquisició documentat",
+            "El FIFO s’aplica sobre la cartera completa",
+            "Cada criteri queda a la memòria, a punt per justificar-lo"
+          ]
+        }
+      ],
+      "bullets": [
+        "Ja tens un informe d’una eina i no et quadra? Això ho veiem a <a href=\"/revisar-informe-koinly\">revisar el teu informe de Koinly o CoinTracking</a>."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Com fem el teu informe fiscal",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Inventari de fonts",
+          "body": "Quins exchanges, quines wallets, quines cadenes i quins períodes. T’ensenyem el que hi ha i el que falta abans de processar res: saber què no tens és tan important com el que sí."
+        },
+        {
+          "title": "Normalització",
+          "body": "Unifiquem formats, noms d’actius, fusos horaris i decimals. Sense això l’ordre de les operacions surt malament, i el FIFO amb ell."
+        },
+        {
+          "title": "Reconciliació",
+          "body": "Casem cada sortida amb la seva entrada per separar les vendes dels moviments entre comptes teus, filtrem l’spam amb criteri i comprovem que els saldos finals coincideixen amb els reals."
+        },
+        {
+          "title": "Classificació fiscal i revisió manual",
+          "body": "Cada operació rep la seva naturalesa: venda, permuta, recompensa, comissió o transferència. El que cap regla no resol amb certesa es revisa a mà i la decisió queda documentada."
+        },
+        {
+          "title": "Càlcul i lliurament",
+          "body": "Apliquem FIFO sobre la cartera conciliada, et lliurem l’informe i el repassem amb tu perquè entenguis d’on surt cada xifra."
+        }
+      ]
+    },
+    {
+      "id": "carteras-grandes",
+      "h2": "Carteres amb milers de transaccions",
+      "fondo": "azul",
+      "entrada": "Magnituds d’una cartera real activa en diverses cadenes. No són el teu cas, però expliquen per què això no es resol amb un full de càlcul.",
+      "cifras": [
+        { "valor": "100.000+", "etiqueta": "operacions en una cartera activa en diverses cadenes" },
+        { "valor": "60–90 %", "etiqueta": "dels registres en cadenes com Solana poden ser spam de tokens" },
+        { "valor": "300–2.000", "etiqueta": "operacions que cal resoldre a mà perquè cap regla no les cobreix", "acento": true },
+        { "valor": "1", "etiqueta": "xifra final, amb cada euro traçable fins al seu origen" }
+      ],
+      "body": "El volum no és el problema difícil; la dispersió sí. Una cartera gran però ordenada es reconcilia ràpid. El que porta temps són els protocols petits sense explorador mantingut, les cadenes poc documentades i els exchanges que ja han tancat."
+    },
+    {
+      "id": "por-plataforma",
+      "h2": "Informe fiscal de Binance, Kraken, MetaMask i DeFi",
+      "fondo": "papel",
+      "entrada": "Cada plataforma exporta a la seva manera i cadascuna té els seus paranys.",
+      "items": [
+        {
+          "title": "Binance",
+          "body": "Separa spot, earn, futurs i conversions en exportacions diferents, i algunes només cobreixen períodes limitats. Cal unir-les sense duplicar operacions i sense perdre les conversions petites."
+        },
+        {
+          "title": "Kraken",
+          "body": "El registre de moviments i el d’operacions van per separat, i l’staking apareix com a transferències entre subcomptes. Mal llegits, generen vendes que no van existir."
+        },
+        {
+          "title": "MetaMask i DeFi",
+          "body": "No hi ha exportació fiscal: l’activitat es reconstrueix des de la blockchain a partir de les teves adreces públiques, inclosos swaps, aportacions a pools, recompenses i comissions de gas."
+        },
+        {
+          "title": "Exchanges que ja no existeixen",
+          "body": "Quan no es pot descarregar l’historial, es reconstrueix amb la traçabilitat on-chain, els extractes bancaris i les còpies que conservis. El que no es pot reconstruir no s’inventa: es documenta el criteri aplicat."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Què necessitem de tu",
+      "fondo": "blanco",
+      "bullets": [
+        "<strong>Exportacions de cada exchange</strong> que hagis fet servir, encara que estiguin incompletes o el període estigui partit.",
+        "<strong>Claus API de només lectura</strong> on sigui possible, que eviten errors d’exportació manual. Mai claus privades.",
+        "<strong>Adreces públiques de totes les teves wallets</strong>, incloses les que ja no facis servir. Sense elles no es poden identificar els moviments interns.",
+        "<strong>Quines cadenes i protocols has fet servir</strong>, encara que sigui de memòria i aproximat.",
+        "<strong>Extractes bancaris</strong> de les entrades i sortides a euros, que ancoren la reconstrucció a alguna cosa verificable.",
+        "<strong>Qualsevol informe previ</strong> que hagis generat, encara que no et quadri. Estalvia temps."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Quant costa un informe fiscal de criptomonedes?",
+          "a": "Depèn de quantes fonts de dades cal reconciliar. Plataforma única, amb tota la teva operativa en un exchange, costa 250 €. Multiexchange, amb dos o tres exchanges centralitzats, 350 €. Cartera mixta, que combina exchanges amb wallets pròpies, DeFi, NFT o accions fins a tres fonts, 450 €. Cartera complexa, a partir de 700 €. Et confirmem el tram abans de començar i tens el detall a la pàgina de preus."
+        },
+        {
+          "q": "Quin mètode de càlcul feu servir?",
+          "a": "FIFO, que és el que exigeix la normativa espanyola: el primer que entra és el primer que surt. L’apliquem sobre la cartera completa i amb l’historial des de la teva primera compra, perquè sense aquest historial no hi ha cost d’adquisició fiable."
+        },
+        {
+          "q": "Per què no em serveix l’informe que descarrego del meu exchange?",
+          "a": "Perquè només veu el que va passar dins d’aquella plataforma. No sap a quin preu vas comprar el que va arribar des d’un altre compte ni reconeix que una retirada va anar a una wallet teva. Amb una sola plataforma i sense transferències s’hi pot acostar; tan bon punt mous fons, el resultat deixa de ser fiable."
+        },
+        {
+          "q": "L’informe serveix si Hisenda em demana justificar les meves xifres?",
+          "a": "Sí. Està fet per a això: cada xifra es pot seguir fins a l’operació i la dada d’origen, i la memòria de criteris explica cada decisió. Si ja tens un requeriment obert, la feina és la mateixa però amb el termini al davant; ho expliquem a la pàgina de requeriments d’Hisenda."
+        },
+        {
+          "q": "Inclou la declaració de la renda?",
+          "a": "L’informe deixa les xifres a punt per traslladar-les a la teva declaració. Si a més vols que ens encarreguem de declarar-les, ho expliquem a la pàgina de declarar criptomonedes."
+        },
+        {
+          "q": "Quant triga?",
+          "a": "Depèn més de l’estat de les dades que de la seva quantitat. Una cartera gran però ordenada va ràpid; una de mitjana amb trams per reconstruir pot portar setmanes. Després de l’inventari de fonts et donem un termini concret."
+        },
+        {
+          "q": "L’any que ve, cal repetir-ho tot?",
+          "a": "No. Et lliurem la cartera conciliada, que és el punt de partida net dels exercicis següents. La feina gran es fa una vegada."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Quant costa el teu informe fiscal",
+    "entrada": "El preu depèn de quantes fonts de dades cal reconciliar, no de quant hagis guanyat. Ho saps abans de començar.",
+    "nota": "Et confirmem el tram tan bon punt veiem una mostra de les teves dades, abans de començar a treballar."
+  },
+  "cierre": {
+    "h2": "Comencem per saber què hi ha",
+    "body": "Digues-nos en quins exchanges, wallets i protocols has operat, més o menys quantes operacions tens i quin exercici vols declarar. Amb això sabem en quin tram és la teva cartera i et donem termini i preu tancats.",
+    "button": {
+      "label": "Demanar pressupost"
+    }
+  },
+  "seo": {
+    "title": "Informe fiscal de criptomonedes amb càlcul FIFO | Cleriontax",
+    "description": "Informe fiscal de criptomonedes: reconciliem exchanges, wallets i DeFi, calculem guanys i pèrdues amb FIFO i deixem cada xifra traçable. Des de 250 €.",
+    "keywords": [
+      "informe fiscal criptomonedes",
+      "informe fiscal cripto",
+      "informe guanys pèrdues criptomonedes",
+      "càlcul fifo criptomonedes",
+      "traçabilitat criptomonedes hisenda",
+      "informe fiscal binance",
+      "informe fiscal kraken",
+      "informe fiscal metamask defi",
+      "milers de transaccions criptomonedes impostos"
+    ]
+  }
+}

@@ -35,7 +35,7 @@ export default async function InformeEjemplo({ locale }: { locale: string }) {
           </ul>
 
           <div className="mt-10 sm:pl-[56px]">
-            <ButtonLink href="/servicios/informe-fiscal-criptomonedas" variant="secundaria" size="lg">
+            <ButtonLink href="/informe-fiscal-criptomonedas" variant="secundaria" size="lg">
               {t("accion")}
             </ButtonLink>
           </div>
@@ -72,6 +72,12 @@ export default async function InformeEjemplo({ locale }: { locale: string }) {
               pie={t("pie")}
             />
           </div>
+
+          {/* Lo que se ve es el resumen final; el informe completo va detras. */}
+          <p className="mt-5 max-w-[68ch] text-nota text-pizarra">
+            <span className="font-semibold text-azul">{t("vistaPreviaEtiqueta")}</span>{" "}
+            {t("vistaPrevia")}
+          </p>
         </div>
       </div>
     </section>

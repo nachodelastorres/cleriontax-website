@@ -58,19 +58,71 @@ export interface Seccion {
   button?: { label: string; href: string };
 }
 
-function Cuerpo({ texto, oscuro }: { texto: string; oscuro?: boolean }) {
+/**
+ * Texto plano con enlaces internos escritos como `[texto](/ruta)`. Es la única
+ * marca que admite la prosa: lo justo para enlazar páginas entre sí sin abrir
+ * la puerta a HTML en el contenido.
+ */
+function ConEnlaces({
+  texto,
+  locale,
+  oscuro,
+}: {
+  texto: string;
+  locale?: string;
+  oscuro?: boolean;
+}) {
+  // Con dos grupos, split devuelve: texto, etiqueta, ruta, texto, etiqueta, ruta…
+  const partes = texto.split(/\[([^\]]+)\]\((\/[^)\s]*)\)/g);
+  return (
+    <>
+      {partes.map((parte, i) => {
+        if (i % 3 === 0) return parte;
+        if (i % 3 === 2) return null;
+        const ruta = partes[i + 1];
+        const href = locale && !ruta.startsWith("/#") ? `/${locale}${ruta}` : ruta;
+        return (
+          <a
+            key={i}
+            href={href}
+            className={`font-semibold underline decoration-rojo underline-offset-4 ${
+              oscuro ? "text-blanco" : "text-azul hover:text-rojo"
+            }`}
+          >
+            {parte}
+          </a>
+        );
+      })}
+    </>
+  );
+}
+
+function Cuerpo({ texto, oscuro, locale }: { texto: string; oscuro?: boolean; locale?: string }) {
   return (
     <div className="max-w-[72ch] space-y-4">
       {texto.split(/\n{2,}/).map((p, i) => (
         <p key={i} className={`text-lectura ${oscuro ? "text-niebla" : "text-pizarra"}`}>
-          {p}
+          <ConEnlaces texto={p} locale={locale} oscuro={oscuro} />
         </p>
       ))}
     </div>
   );
 }
 
-function Vinetas({ items, oscuro }: { items: string[]; oscuro?: boolean }) {
+/** Los enlaces internos del contenido se escriben sin idioma: aquí se les añade. */
+function conIdioma(html: string, locale?: string) {
+  return locale ? html.replace(/href="\/(?!\/)/g, `href="/${locale}/`) : html;
+}
+
+function Vinetas({
+  items,
+  oscuro,
+  locale,
+}: {
+  items: string[];
+  oscuro?: boolean;
+  locale?: string;
+}) {
   return (
     <ul className="grid max-w-[72ch] gap-4">
       {items.map((b, i) => (
@@ -78,7 +130,7 @@ function Vinetas({ items, oscuro }: { items: string[]; oscuro?: boolean }) {
           <Angulo tam={10} className="mt-2 text-rojo" />
           <span
             className={`text-lectura ${oscuro ? "text-niebla [&_strong]:text-blanco" : "text-pizarra [&_strong]:text-azul"} [&_strong]:font-semibold`}
-            dangerouslySetInnerHTML={{ __html: b }}
+            dangerouslySetInnerHTML={{ __html: conIdioma(b, locale) }}
           />
         </li>
       ))}
@@ -90,10 +142,8 @@ function Pasos({ items }: { items: { title: string; body: string }[] }) {
   return (
     <ol className="grid max-w-[76ch] gap-px border border-niebla bg-niebla">
       {items.map((s, i) => (
-        <li key={i} className="grid grid-cols-[52px_1fr] gap-3 bg-blanco p-6">
-          <span className="pt-1 font-semibold text-dato text-rojo">
-            {String(i + 1).padStart(2, "0")}
-          </span>
+        <li key={i} className="grid grid-cols-[24px_1fr] gap-3 bg-blanco p-6">
+          <Angulo tam={12} className="mt-2 text-rojo" />
           <div>
             <h3 className="text-subtitulo text-azul">{s.title}</h3>
             <p className="mt-2 text-lectura text-pizarra">{s.body}</p>
@@ -117,20 +167,29 @@ function Casos({ items }: { items: { title: string; body: string }[] }) {
   );
 }
 
-function Preguntas({ items }: { items: { q: string; a: string }[] }) {
+function Preguntas({ items, locale }: { items: { q: string; a: string }[]; locale?: string }) {
   return (
     <dl className="grid max-w-[76ch] gap-px border border-niebla bg-niebla">
       {items.map((f, i) => (
         <div key={i} className="bg-blanco p-6">
           <dt className="text-subtitulo text-azul">{f.q}</dt>
-          <dd className="mt-2 text-lectura text-pizarra">{f.a}</dd>
+          <dd className="mt-2 text-lectura text-pizarra">
+            <ConEnlaces texto={f.a} locale={locale} />
+          </dd>
         </div>
       ))}
     </dl>
   );
 }
 
-export default function SeccionesServicio({ secciones }: { secciones: Seccion[] }) {
+export default function SeccionesServicio({
+  secciones,
+  locale,
+}: {
+  secciones: Seccion[];
+  /** Para prefijar los enlaces internos y traducir las etiquetas fijas. */
+  locale?: string;
+}) {
   const visibles = secciones.filter((s) => s.id !== "cta");
 
   return (
@@ -152,22 +211,21 @@ export default function SeccionesServicio({ secciones }: { secciones: Seccion[] 
         return (
           <Envoltura key={s.id} id={s.id} fondo={fondo}>
             <Cabecera
-              marca={String(i + 1).padStart(2, "0")}
               titulo={s.h2}
               entrada={s.entrada}
               oscuro={oscuro}
             />
 
-            <div className="md:pl-[56px]">
-              {s.body ? <Cuerpo texto={s.body} oscuro={oscuro} /> : null}
+            <div>
+              {s.body ? <Cuerpo texto={s.body} oscuro={oscuro} locale={locale} /> : null}
               {s.cifras ? <BloqueCifras cifras={s.cifras} oscuro={oscuro} /> : null}
               {s.hitos ? <BloqueCronologia hitos={s.hitos} /> : null}
-              {s.columnas ? <BloqueComparativa columnas={s.columnas} /> : null}
+              {s.columnas ? <BloqueComparativa columnas={s.columnas} locale={locale} /> : null}
               {s.formas ? <BloqueFormas pasos={s.formas} oscuro={oscuro} /> : null}
               {s.tabla ? <BloqueTabla {...s.tabla} /> : null}
               {s.bullets ? (
                 <div className={s.body ? "mt-8" : ""}>
-                  <Vinetas items={s.bullets} oscuro={oscuro} />
+                  <Vinetas items={s.bullets} oscuro={oscuro} locale={locale} />
                 </div>
               ) : null}
               {s.steps ? <Pasos items={s.steps} /> : null}
@@ -175,7 +233,7 @@ export default function SeccionesServicio({ secciones }: { secciones: Seccion[] 
                 <Casos items={s.items as { title: string; body: string }[]} />
               ) : null}
               {s.items && esFaq ? (
-                <Preguntas items={s.items as { q: string; a: string }[]} />
+                <Preguntas items={s.items as { q: string; a: string }[]} locale={locale} />
               ) : null}
             </div>
           </Envoltura>

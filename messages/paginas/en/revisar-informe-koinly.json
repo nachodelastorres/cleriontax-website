@@ -1,0 +1,166 @@
+{
+  "title": "Review your Koinly report before filing it with the Spanish tax agency",
+  "slug": "revisar-informe-koinly",
+  "nav": "Koinly report review",
+  "excerpt": "The Koinly and CoinTracking errors that matter most to the Spanish tax agency: internal transfers counted as sales, zero acquisition cost and token spam. How the report is corrected before you file it.",
+  "hero": {
+    "etiqueta": "Before you file it",
+    "h1": "Koinly errors and the Spanish tax agency: we review your report before you file it",
+    "subheading": "You've run your data through Koinly, CoinTracking or a similar tool and the gain looks nothing like what you think you made. There's no need to start from scratch: we start from your report, correct what the software resolved with a default value and explain every change.",
+    "cta": { "label": "Request a quote", "href": "#diagnostico" },
+    "secundaria": { "label": "See prices", "href": "#precio" }
+  },
+  "toc": [
+    { "id": "por-que-no-cuadra", "label": "Why it doesn't add up" },
+    { "id": "errores", "label": "The usual errors" },
+    { "id": "el-ejemplo", "label": "Same case, two figures" },
+    { "id": "comparativa", "label": "Automated vs. reviewed" },
+    { "id": "como-revisamos", "label": "How we review it" },
+    { "id": "alternativa", "label": "A Koinly alternative?" },
+    { "id": "precio", "label": "Price" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+  "sections": [
+    {
+      "id": "por-que-no-cuadra",
+      "h2": "Why your Koinly report doesn't match what you made",
+      "fondo": "blanco",
+      "body": "The tool hasn't failed: it has done what it knows how to do. It reads your CSVs and wallets, matches what it can match and, when a transaction can't be resolved with certainty, applies a default value. That value is rarely the right one for your case.\n\nThe typical result is an inflated gain. Not because you made more, but because the report counts movements that aren't sales as sales, and values at zero tokens that did have a cost.\n\nAll of this can be fixed as long as the report hasn't been filed. Once it reaches the AEAT it becomes your tax return, and correcting it is a different job, longer and more delicate."
+    },
+    {
+      "id": "errores",
+      "h2": "The Koinly and CoinTracking errors that matter most to the tax agency",
+      "fondo": "azul",
+      "entrada": "They aren't bugs in the tool, but situations no tool can decide on its own. They're what we check first.",
+      "bullets": [
+        "<strong>Transfers between your own accounts counted as sales:</strong> you move funds from the exchange to your cold wallet and, if the software doesn't recognise both addresses as yours, it records a disposal. It's the biggest source of phantom gains.",
+        "<strong>Zero acquisition cost:</strong> tokens received from staking, airdrops, forks or liquidity rewards with no entry value. When you sell them, the entire proceeds show up as gain.",
+        "<strong>A calculation method other than the one the AEAT applies:</strong> the Spanish tax agency calculates with FIFO for each crypto-asset. It's worth checking that the report is configured that way and not another.",
+        "<strong>Unclassified DeFi:</strong> pool deposits, loans, wraps and bridges the software can't interpret and leaves as loose inflows or outflows.",
+        "<strong>Token spam treated as income:</strong> on networks like Solana or BSC there can be thousands of junk records polluting the whole result.",
+        "<strong>Duplicates and gaps:</strong> the same transaction read from the exchange CSV and from the wallet, or the history of a closed exchange that simply isn't there and takes your acquisition cost with it."
+      ]
+    },
+    {
+      "id": "el-ejemplo",
+      "h2": "The same case, two figures",
+      "fondo": "papel",
+      "entrada": "A portfolio with transfers between your own wallets and tokens received from staking. This is how an automated report reads it, and this is how it looks after review.",
+      "tabla": {
+        "titulo": "Result before and after review",
+        "periodo": "tax year 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Gain according to the automated report", "importe": 41280.6 },
+          { "concepto": "Less: internal transfers counted as sales", "importe": -19750.4 },
+          { "concepto": "Less: recovered acquisition cost of staking tokens", "importe": -4128.05 },
+          { "concepto": "Gain after review", "importe": 17402.15 },
+          { "concepto": "Transactions reclassified by hand", "recuento": 386 }
+        ],
+        "columnaConcepto": "Item",
+        "columnaValor": "Amount",
+        "pie": "Sample data. FIFO rule."
+      }
+    },
+    {
+      "id": "comparativa",
+      "h2": "Automated report vs. reviewed report",
+      "fondo": "blanco",
+      "entrada": "What changes isn't the tool, it's what is done with its output before filing it.",
+      "columnas": [
+        {
+          "titulo": "The report as it comes out of the tool",
+          "items": [
+            "Every movement between your accounts may count as a sale",
+            "Tokens received without a purchase come in at zero cost",
+            "Token spam is processed as if it were real activity",
+            "Gaps in incomplete histories go unnoticed",
+            "A final figure with no explanation of how it was reached"
+          ]
+        },
+        {
+          "titulo": "The reviewed report",
+          "correcta": true,
+          "items": [
+            "Internal transfers are identified and excluded from the calculation",
+            "Every token received has its value on the date of receipt and the price source",
+            "Noise is filtered with judgement, transaction by transaction",
+            "Gaps are rebuilt from statements, emails and on-chain traces",
+            "Every change from your report, explained and documented"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "como-revisamos",
+      "h2": "How we correct your Koinly report",
+      "steps": [
+        { "title": "We start from your report, not from scratch", "body": "You send us the Koinly or CoinTracking export and the sources behind it. The import is already done: we audit the reconciliation, we don't redo what's right." },
+        { "title": "We isolate transfers between your own accounts", "body": "We identify who owns each destination address and mark as internal the movements that are. That's usually where most of the difference lies." },
+        { "title": "We recover the missing acquisition cost", "body": "For each token received without a purchase we determine its value on the date of receipt and record the price source." },
+        { "title": "We classify what was left loose", "body": "DeFi, bridges, spam and duplicates, one by one. Not with an automatic rule: with the judgement you'll later need to be able to defend." },
+        { "title": "We hand over the difference, explained", "body": "What changes from your report, why and with what support, together with the figures ready for your tax return." }
+      ]
+    },
+    {
+      "id": "alternativa",
+      "h2": "Looking for a Koinly alternative in Spain?",
+      "fondo": "papel",
+      "body": "You may not need one. Koinly, CoinTracking and similar tools are useful for processing volume, and if your data is already loaded, the quickest and cheapest option is usually to review it, not to migrate to another tool only to face the same undecided questions again.\n\nIf, on the other hand, you haven't started, your data is spread across many sources or the report is so far from reality that it isn't worth correcting, what you need is a report built from the ground up. That's what our crypto tax report does."
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Is Koinly good enough for filing in Spain?",
+          "a": "It works as a starting point: it processes your transactions and can calculate with FIFO, which is the AEAT's rule. What it can't do is decide for you which movements are yours, what a token received without a purchase was worth, or what is spam. Those are the decisions worth reviewing before you carry the figures over to your tax return."
+        },
+        {
+          "q": "What if I use CoinTracking or another tool?",
+          "a": "The work is the same. We review the output of CoinTracking, Koinly, Accointing and similar tools, and your own spreadsheets too. What matters isn't which software generated the report, but how it resolved the doubtful situations."
+        },
+        {
+          "q": "How much does a report review cost?",
+          "a": "It depends on how many data sources feed the report. If everything comes from a single exchange, it's the «Single platform» tier, €250; two or three exchanges, «Multi-exchange», €350; if you combine exchanges with your own wallets, DeFi, NFTs or stocks up to three sources, «Mixed portfolio», €450; and beyond that, «Complex portfolio», from €700. We confirm the tier before we start. The details are on the prices page."
+        },
+        {
+          "q": "Do you need access to my Koinly account?",
+          "a": "No. The export of your report, your exchange CSVs, read-only API keys if you prefer, and your public wallet addresses are enough. Never private keys."
+        },
+        {
+          "q": "I've already filed the report and I think it's wrong",
+          "a": "Then it's no longer a review before filing, but correcting a return that's already in. If you overpaid, you can request a rectification; if you underpaid, it's best to regularise before a letter arrives. And if you've already received a notice from the AEAT, the first thing is to check the deadline."
+        },
+        {
+          "q": "What if the review shows the report was right?",
+          "a": "We tell you so. You keep the check and the criteria memo backing every figure, which is what you'd need if the tax agency asks. There isn't always an error, but knowing there isn't one is worth something too."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "How much a report review costs",
+    "entrada": "The price depends on how many data sources feed your report, not on how much you made. If your report is already generated, the review builds on that work.",
+    "nota": "Send us your tool's export and we'll confirm the tier before we start."
+  },
+  "cierre": {
+    "h2": "Before you file it, have someone review it",
+    "body": "Tell us which tool generated the report, which exchanges, wallets and networks you use and what figure it gives you. After a first pass we'll know whether there's a difference and how big it is.",
+    "button": { "label": "Request a review" }
+  },
+  "seo": {
+    "title": "Koinly errors and Spanish tax: we review your report | Cleriontax",
+    "description": "Your Koinly or CoinTracking report doesn't add up? We fix transfers counted as sales, zero cost basis and spam before you file with the Spanish tax agency.",
+    "keywords": [
+      "koinly errors spain tax",
+      "review koinly report",
+      "correct koinly report",
+      "koinly spain",
+      "cointracking spain",
+      "koinly alternative spain",
+      "review crypto tax report",
+      "wrong crypto tax report spain"
+    ]
+  }
+}

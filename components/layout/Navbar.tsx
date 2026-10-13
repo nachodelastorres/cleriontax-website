@@ -1,16 +1,23 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from 'next-intl';
-import { Menu, X, Languages, MessageCircle } from "lucide-react";
+import { Menu, X, Languages, MessageCircle, ChevronDown } from "lucide-react";
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
+import { GRUPOS, porGrupo } from "@/lib/paginas";
+
+const PAGINAS_POR_GRUPO = porGrupo();
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [serviciosOpen, setServiciosOpen] = useState(false);
+  const [serviciosMovil, setServiciosMovil] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
+  const serviciosRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('nav');
+  const tPag = useTranslations('paginas');
   const tCommon = useTranslations('common');
   const locale = useLocale();
   const pathname = usePathname();
@@ -29,10 +36,29 @@ export default function Navbar() {
       };
     }
   }, [langMenuOpen]);
+  // El desplegable de servicios se cierra al pulsar fuera, con Escape o al navegar.
+  useEffect(() => {
+    if (!serviciosOpen) return;
+    function fuera(event: MouseEvent) {
+      if (serviciosRef.current && !serviciosRef.current.contains(event.target as Node)) {
+        setServiciosOpen(false);
+      }
+    }
+    function escape(event: KeyboardEvent) {
+      if (event.key === 'Escape') setServiciosOpen(false);
+    }
+    document.addEventListener('mousedown', fuera);
+    document.addEventListener('keydown', escape);
+    return () => {
+      document.removeEventListener('mousedown', fuera);
+      document.removeEventListener('keydown', escape);
+    };
+  }, [serviciosOpen]);
+  useEffect(() => {
+    setServiciosOpen(false);
+  }, [pathname]);
   const navigation = [
-    { name: t('home'), href: '/' },
-    { name: t('services'), href: '/servicios' },
-    { name: t('method'), href: '/metodo' },
+    { name: t('prices'), href: '/precios' },
     { name: t('blog'), href: '/blog' },
     { name: t('about'), href: '/sobre-nosotros' },
     { name: t('contact'), href: '/contacto' },
@@ -59,6 +85,52 @@ export default function Navbar() {
           />
           {/* Desktop Navigation */}
           <div className="hidden items-center space-x-8 md:flex">
+            {/* Servicios: las páginas agrupadas por la pregunta del cliente */}
+            <div
+              className="relative"
+              ref={serviciosRef}
+              onMouseEnter={() => setServiciosOpen(true)}
+              onMouseLeave={() => setServiciosOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setServiciosOpen(!serviciosOpen)}
+                aria-expanded={serviciosOpen}
+                aria-controls="menu-servicios"
+                className="flex items-center gap-1 text-sm font-medium text-azul transition-colors hover:text-pizarra"
+              >
+                {t('services')}
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${serviciosOpen ? 'rotate-180' : ''}`}
+                  aria-hidden="true"
+                />
+              </button>
+              {serviciosOpen && (
+                <div id="menu-servicios" className="absolute left-0 top-full z-50 pt-4">
+                  <div className="grid w-[640px] grid-cols-3 gap-px border border-niebla bg-niebla">
+                    {GRUPOS.map((g) => (
+                      <div key={g} className="bg-blanco p-5">
+                        <p className="text-dato font-semibold text-pizarra">
+                          {tPag(`grupos.${g}.titulo`)}
+                        </p>
+                        <ul className="mt-3 space-y-1">
+                          {PAGINAS_POR_GRUPO[g].map((p) => (
+                            <li key={p.slug}>
+                              <Link
+                                href={`/${p.slug}`}
+                                className="block py-1 text-sm font-medium text-azul transition-colors hover:text-rojo"
+                              >
+                                {tPag(`nombres.${p.slug}`)}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -132,6 +204,42 @@ export default function Navbar() {
           >
             <Container>
               <div className="space-y-1 py-4">
+                <button
+                  type="button"
+                  onClick={() => setServiciosMovil(!serviciosMovil)}
+                  aria-expanded={serviciosMovil}
+                  className="flex w-full items-center justify-between px-3 py-2 text-base font-medium text-azul hover:bg-niebla/10 transition-colors"
+                >
+                  {t('services')}
+                  <ChevronDown
+                    className={`h-5 w-5 transition-transform ${serviciosMovil ? 'rotate-180' : ''}`}
+                    aria-hidden="true"
+                  />
+                </button>
+                {serviciosMovil && (
+                  <div className="space-y-4 px-3 pb-2">
+                    {GRUPOS.map((g) => (
+                      <div key={g}>
+                        <p className="text-dato font-semibold text-pizarra">
+                          {tPag(`grupos.${g}.titulo`)}
+                        </p>
+                        <ul className="mt-1">
+                          {PAGINAS_POR_GRUPO[g].map((p) => (
+                            <li key={p.slug}>
+                              <Link
+                                href={`/${p.slug}`}
+                                className="block py-1.5 pl-3 text-base text-azul hover:text-rojo"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {tPag(`nombres.${p.slug}`)}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 {navigation.map((item) => (
                   <Link
                     key={item.name}

@@ -5,28 +5,24 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Mail, Phone, Linkedin } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
+import { PAGINAS } from "@/lib/paginas";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const t = useTranslations('footer');
   const tCommon = useTranslations('common.socialNetworks');
+  const tPag = useTranslations('paginas.nombres');
   const locale = useLocale();
 
   const footerLinks = {
     empresa: [
       { name: t('links.about'), href: '/sobre-nosotros' },
-      { name: t('links.services'), href: '/servicios' },
-      { name: t('links.method'), href: '/metodo' },
+      { name: t('links.prices'), href: '/precios' },
       { name: t('links.firms'), href: '/despachos' },
       { name: t('links.blog'), href: '/blog' },
       { name: t('links.contact'), href: '/contacto' },
     ],
-    servicios: [
-      { name: t('serviceLinks.informeFiscal'), href: '/servicios/informe-fiscal-criptomonedas' },
-      { name: t('serviceLinks.declararCripto'), href: '/servicios/declarar-criptomonedas' },
-      { name: t('serviceLinks.litigacion'), href: '/servicios/litigacion-fiscal-criptomonedas' },
-      { name: t('serviceLinks.asesoriaFiscal'), href: '/servicios/asesoria-fiscal-criptomonedas' },
-    ],
+    servicios: PAGINAS.map((p) => ({ name: tPag(p.slug), href: `/${p.slug}` })),
     legal: [
       { name: t('links.privacy'), href: '/privacidad' },
       { name: t('links.legal'), href: '/aviso-legal' },

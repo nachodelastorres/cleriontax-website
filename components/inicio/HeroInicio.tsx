@@ -41,7 +41,7 @@ export default async function HeroInicio({ locale }: { locale: string }) {
             <ButtonLink href="/contacto" variant="principal" size="lg">
               {t("accion")}
             </ButtonLink>
-            <ButtonLink href="/metodo" variant="secundaria-inversa" size="lg">
+            <ButtonLink href="/precios" variant="secundaria-inversa" size="lg">
               {t("secundaria")}
             </ButtonLink>
           </div>

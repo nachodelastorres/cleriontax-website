@@ -1,0 +1,241 @@
+{
+  "title": "Inspección de Hacienda por criptomonedas",
+  "slug": "inspeccion-hacienda-criptomonedas",
+  "nav": "Inspección y sanciones",
+  "excerpt": "Defensa ante una inspección de Hacienda por criptomonedas y todo lo que viene después: propuesta de liquidación, sanción, recurso de reposición y reclamación económico-administrativa.",
+  "hero": {
+    "etiqueta": "Procedimiento abierto",
+    "h1": "Inspección de Hacienda por criptomonedas: defensa de principio a fin",
+    "subheading": "Una inspección no se contesta como un requerimiento. Cada comparecencia se prepara, cada documento que entra se queda en el expediente y la liquidación y la sanción se defienden por separado. Te acompañamos desde la comunicación de inicio hasta la última reclamación.",
+    "cta": {
+      "label": "Llámanos: +34 663 482 301",
+      "href": "tel:+34663482301"
+    },
+    "secundaria": {
+      "label": "Cuéntanos tu caso",
+      "href": "#diagnostico"
+    }
+  },
+  "toc": [
+    { "id": "donde-estas", "label": "Dónde estás" },
+    { "id": "recorrido", "label": "El recorrido" },
+    { "id": "en-juego", "label": "Qué está en juego" },
+    { "id": "cuota-y-sancion", "label": "Cuota y sanción" },
+    { "id": "derechos", "label": "Tus derechos" },
+    { "id": "como-lo-llevamos", "label": "Cómo lo llevamos" },
+    { "id": "que-necesitamos", "label": "Qué necesitamos" },
+    { "id": "precio", "label": "Precio" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "donde-estas",
+      "h2": "Dónde estás",
+      "fondo": "blanco",
+      "body": "Te ha llegado una comunicación de inicio de actuaciones inspectoras, una propuesta de liquidación o un acuerdo sancionador por tus criptomonedas. Cada uno es un momento distinto del mismo procedimiento, y en cada uno hay algo que todavía se puede hacer.\n\nLa inspección es el procedimiento de mayor alcance: la lleva un actuario, puede abarcar varios ejercicios y pedir información a terceros, como bancos y exchanges. Si lo que tienes es un requerimiento de información o una comprobación limitada, lo que necesitas está en nuestra página sobre el requerimiento de Hacienda.\n\nEn criptoactivos, casi todo se decide demostrando de dónde sale cada euro. Una inspección no se gana con la elocuencia del escrito, sino con la reconstrucción de la operativa: qué movimientos eran transferencias entre tus propias wallets, qué permutas hubo y cuál fue el coste real de cada venta."
+    },
+    {
+      "id": "recorrido",
+      "h2": "El recorrido, de la inspección al recurso",
+      "fondo": "papel",
+      "entrada": "Las fechas concretas las marca cada notificación. Este es el orden habitual, y en cada tramo hay algo que hacer.",
+      "hitos": [
+        {
+          "cuando": "Inicio",
+          "titulo": "Comunicación de inicio de actuaciones",
+          "body": "Fija el alcance: qué ejercicios y qué conceptos se comprueban. El procedimiento tiene un plazo máximo de dieciocho meses, ampliable a veintisiete en los casos que prevé la ley."
+        },
+        {
+          "cuando": "Comparecencias",
+          "titulo": "Requerimientos y diligencias",
+          "body": "Cada comparecencia se prepara: qué se aporta, en qué orden y con qué explicación. Las diligencias recogen hechos que luego sostienen la propuesta, así que se revisan antes de firmarlas."
+        },
+        {
+          "cuando": "Audiencia",
+          "titulo": "Propuesta de liquidación y alegaciones",
+          "body": "Es el momento de rebatir con tu propia cuantificación delante, antes de que se formalice nada. Es la defensa más barata del procedimiento."
+        },
+        {
+          "cuando": "Acta",
+          "titulo": "Conformidad o disconformidad",
+          "body": "La elección condiciona lo que podrás discutir después y las reducciones de la sanción. Se decide con los números hechos, no antes."
+        },
+        {
+          "cuando": "Sanción",
+          "titulo": "Expediente sancionador",
+          "body": "Va por un expediente propio, con sus propias alegaciones. Aceptar la cuota no te obliga a aceptar la sanción."
+        },
+        {
+          "cuando": "1 mes",
+          "titulo": "Recurso de reposición o reclamación económico-administrativa",
+          "body": "Desde la notificación de la resolución tienes un mes para recurrir en vía administrativa: reposición ante la propia AEAT o reclamación ante el TEAR o el TEAC. Son alternativas, y hay que elegir.",
+          "critico": true
+        },
+        {
+          "cuando": "Después",
+          "titulo": "Recurso contencioso-administrativo",
+          "body": "Agotada la vía administrativa, queda la vía judicial ante los tribunales, con abogado y procurador."
+        }
+      ]
+    },
+    {
+      "id": "en-juego",
+      "h2": "Qué está en juego",
+      "fondo": "blanco",
+      "entrada": "Sobre la cuota que se liquide se suman intereses de demora y, si hay sanción, un porcentaje que depende de cómo se califique la infracción.",
+      "cifras": [
+        { "valor": "50 %", "etiqueta": "Infracción leve: sanción sobre la cantidad dejada de ingresar" },
+        { "valor": "50–100 %", "etiqueta": "Infracción grave, cuando se aprecia ocultación" },
+        { "valor": "100–150 %", "etiqueta": "Infracción muy grave, cuando se aprecian medios fraudulentos" },
+        { "valor": "120.000 €", "etiqueta": "Cuota defraudada por tributo y ejercicio a partir de la cual el caso puede pasar a la vía penal como delito fiscal", "acento": true }
+      ]
+    },
+    {
+      "id": "cuota-y-sancion",
+      "h2": "La cuota y la sanción se defienden por separado",
+      "fondo": "papel",
+      "entrada": "Puede que la cuota esté bien calculada y aun así la sanción no proceda. Por eso se analizan aparte y, a veces, conviene aceptar una y recurrir la otra.",
+      "items": [
+        {
+          "title": "La cuota se discute con cifras",
+          "body": "La liquidación corrige lo que debías haber pagado. Si la AEAT ha partido de lo que le reportó un exchange, es frecuente que cuente como ventas las transferencias entre tus propias wallets o que valore a cero el coste de lo que compraste. Rehacer la operativa reduce la base, y con ella todo lo que se calcula encima."
+        },
+        {
+          "title": "La sanción se discute con la conducta",
+          "body": "Para sancionar, la Administración tiene que motivar que hubo culpabilidad, aunque sea por simple negligencia. No basta con constatar que declaraste de menos. Un acuerdo que describe el resultado sin razonar la conducta es atacable precisamente por eso."
+        },
+        {
+          "title": "La interpretación razonable de la norma",
+          "body": "Durante años, buena parte de la operativa cripto, como las permutas, el staking, los airdrops o el DeFi, no tuvo un criterio administrativo claro. Si en la fecha de tu declaración no lo había, haber aplicado una interpretación razonable no es sancionable por no coincidir con el criterio de hoy."
+        },
+        {
+          "title": "La ausencia de ocultación",
+          "body": "Operar en plataformas que reportan, mover el dinero por tu banco y no usar estructuras opacas son hechos que pesan en la calificación de la infracción, y se aportan."
+        }
+      ]
+    },
+    {
+      "id": "derechos",
+      "h2": "Lo que puedes exigir durante la inspección",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>Conocer el alcance:</strong> qué ejercicios y conceptos se comprueban, y que no se amplíe sin notificártelo formalmente.",
+        "<strong>Comparecer con asesor</strong> o mediante representante. En un procedimiento técnico es lo habitual, y evita que una respuesta improvisada acabe recogida en una diligencia.",
+        "<strong>No autoincriminarte</strong> en lo que pueda tener alcance sancionador o penal. Es un derecho con matices, distinto de la obligación de aportar la documentación de tus operaciones.",
+        "<strong>Alegar antes del acta</strong>, en el trámite de audiencia, con la documentación que consideres.",
+        "<strong>Obtener copia</strong> de lo que consta en el expediente.",
+        "<strong>Invocar la prescripción:</strong> la AEAT tiene cuatro años para liquidar un ejercicio, contados desde el fin del plazo para declararlo, salvo que algo los haya interrumpido.",
+        "<strong>Recurrir</strong> la liquidación y, por separado, la sanción."
+      ]
+    },
+    {
+      "id": "como-lo-llevamos",
+      "h2": "Cómo lo llevamos",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Leemos el expediente tal como está",
+          "body": "El alcance, los ejercicios, la prescripción de cada uno y todo lo que ya se ha aportado. Antes de que entre un documento más."
+        },
+        {
+          "title": "Reconstruimos la operativa de todo el periodo",
+          "body": "Exchanges, wallets y protocolos, operación a operación. Aquí suele aparecer el origen de la diferencia: movimientos internos contados como ventas, permutas sin declarar o rendimientos sin imputar."
+        },
+        {
+          "title": "Construimos la prueba",
+          "body": "Titularidad de las direcciones, trazabilidad de wallet a wallet y correspondencia con los extractos bancarios. Si un exchange ha cerrado, el rastro on-chain y los movimientos en euros suplen el histórico perdido."
+        },
+        {
+          "title": "Preparamos cada comparecencia y cada escrito",
+          "body": "Qué se aporta, en qué orden y con qué explicación. Antes de presentar nada, te explicamos qué se va a sostener y con qué respaldo."
+        },
+        {
+          "title": "Separamos cuota y sanción",
+          "body": "Valoramos contigo, con los dos números delante, si conviene la conformidad, qué se alega contra la liquidación y qué contra la sanción."
+        },
+        {
+          "title": "Recurrimos si compensa",
+          "body": "Recurso de reposición o reclamación ante el TEAR o el TEAC, según la cuantía y la estrategia. Si el coste del recurso no compensa lo que hay en juego, te lo decimos."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Qué necesitamos de ti",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Todo lo notificado:</strong> la comunicación de inicio, los requerimientos, las diligencias firmadas, la propuesta de liquidación y el acuerdo sancionador, si ya han llegado.",
+        "<strong>Tus declaraciones</strong> de los ejercicios incluidos en el alcance.",
+        "<strong>El histórico de exchanges y wallets</strong> del periodo: CSV, claves API de solo lectura y direcciones públicas. Nunca claves privadas.",
+        "<strong>Extractos bancarios</strong> de todas las entradas y salidas a euros.",
+        "<strong>Lo que ya hayas aportado</strong> a la inspección, exactamente como lo aportaste, incluidos los informes generados con software."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Necesito un abogado fiscal para una inspección de criptomonedas?",
+          "a": "Para la vía administrativa, no necesariamente. La inspección, las alegaciones, el recurso de reposición y la reclamación económico-administrativa los puedes llevar con un asesor fiscal, y es lo que hacemos: el expediente lo lleva un asesor fiscal colegiado. Si el caso llega al contencioso-administrativo o a la vía penal, hace falta abogado. En ese punto aportamos la reconstrucción de la operativa y el informe técnico que sostiene las cifras, en coordinación con el abogado que te represente."
+        },
+        {
+          "q": "¿Cuándo es delito fiscal y no una sanción administrativa?",
+          "a": "Cuando la cuota defraudada supera los 120.000 € por tributo y ejercicio y concurren los demás requisitos del delito, el caso puede pasar a la vía penal. Por debajo de ese umbral, la discusión es administrativa. Por eso la cuantificación es tan importante: una base inflada por transferencias internas contadas como ventas puede situar artificialmente el caso cerca del umbral."
+        },
+        {
+          "q": "¿Puedo aceptar la liquidación y recurrir solo la sanción?",
+          "a": "Sí, y en criptoactivos es una estrategia frecuente, porque la cuota puede estar bien calculada y la sanción no estar motivada. Aceptar la liquidación puede afectar a las reducciones aplicables a la sanción, así que se decide con los dos números delante."
+        },
+        {
+          "q": "¿Recurso de reposición o reclamación económico-administrativa?",
+          "a": "Son alternativas: si presentas una, no puedes presentar la otra a la vez. El plazo de ambas es de un mes desde la notificación. La reposición la resuelve la propia AEAT. La reclamación la resuelve un tribunal económico-administrativo, el TEAR o el TEAC según la cuantía, y abre después la vía contenciosa. Elegimos según el fundamento y lo que esté en juego."
+        },
+        {
+          "q": "¿Recurrir suspende el pago?",
+          "a": "No automáticamente. La suspensión suele requerir garantía, aunque las sanciones recurridas en plazo tienen un régimen propio. Es de lo primero que hay que resolver, porque afecta a tu tesorería mientras dura el procedimiento."
+        },
+        {
+          "q": "¿Puede Hacienda ver mis wallets no custodiadas?",
+          "a": "La cadena es pública: cualquiera puede ver los movimientos de una dirección. Lo que no es público es quién es su titular, pero la AEAT cruza lo que le reportan exchanges y bancos y dispone de herramientas de análisis para atribuir direcciones. Conviene partir de que la trazabilidad existe y usarla a tu favor."
+        },
+        {
+          "q": "¿Cuánto cuesta la defensa en una inspección?",
+          "a": "Hay dos partes. La reconstrucción de tus cifras sigue los tramos de la reconciliación: Plataforma única, 250 €; Multiexchange, 350 €; Cartera mixta, 450 €; y Cartera compleja, desde 700 €. El trabajo de defensa, es decir, las comparecencias, alegaciones, recursos y reclamaciones, se presupuesta aparte en cuanto vemos el expediente. Tienes el detalle en la página de precios."
+        },
+        {
+          "q": "¿Podéis garantizarme que no habrá sanción?",
+          "a": "No, y desconfía de quien te lo garantice. Nadie puede anticipar el sentido de una resolución. Lo que sí hacemos es construir la mejor posición documentada posible, explicarte con franqueza los escenarios, incluidos los desfavorables, y presentar todo dentro de plazo, que es donde se pierden muchos expedientes."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Lo que cuesta reconstruir tus cifras",
+    "entrada": "La base de cualquier defensa es la operativa rehecha. Su precio depende de cuántas fuentes de datos hay que reconciliar, no de lo que esté en juego en el expediente.",
+    "nota": "La reconstrucción sigue estos tramos. El trabajo de defensa (comparecencias, alegaciones, recursos y reclamaciones) se presupuesta aparte en cuanto vemos el expediente."
+  },
+  "cierre": {
+    "h2": "No aportes nada más sin revisarlo",
+    "body": "Cuéntanos en qué punto está el procedimiento, qué ejercicios abarca y qué has aportado ya. Lo primero que haremos es revisar el expediente tal como está y decirte qué plazo tienes. Si el plazo aprieta, llámanos al +34 663 482 301.",
+    "button": {
+      "label": "Cuéntanos tu caso"
+    }
+  },
+  "seo": {
+    "title": "Inspección de Hacienda por criptomonedas: defensa | Cleriontax",
+    "description": "Inspección de Hacienda por criptomonedas, sanción o propuesta de liquidación: defensa, alegaciones, recurso de reposición y reclamación ante el TEAR o el TEAC.",
+    "keywords": [
+      "inspección hacienda criptomonedas",
+      "inspección fiscal criptomonedas",
+      "defensa inspección hacienda cripto",
+      "sanción hacienda criptomonedas",
+      "recurso sanción criptomonedas",
+      "reclamación económico-administrativa criptomonedas",
+      "litigación fiscal criptomonedas",
+      "abogado fiscal criptomonedas",
+      "defensa hacienda criptomonedas",
+      "delito fiscal criptomonedas"
+    ]
+  }
+}

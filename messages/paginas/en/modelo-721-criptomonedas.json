@@ -1,0 +1,194 @@
+{
+  "title": "Spanish form 721 for crypto: who files it, deadline and how to do it",
+  "slug": "modelo-721-criptomonedas",
+  "nav": "Form 721",
+  "excerpt": "Who must file Spanish form 721 (modelo 721) for crypto held by custodians abroad, the €50,000 threshold, the filing deadline and what to do if you missed it.",
+  "hero": {
+    "etiqueta": "Reporting obligation",
+    "h1": "Form 721 for crypto: if your balance sits on a foreign exchange, the Spanish Tax Agency wants to know",
+    "subheading": "Form 721 doesn't calculate any tax: it reports what you held on 31 December on platforms located outside Spain. That is why it is easy to forget, and why it is worth checking every year whether it applies to you. We prepare it with the balance valued, the backing for every figure and the filing done.",
+    "cta": {
+      "label": "Request a quote",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Who has to file",
+      "href": "#quien-esta-obligado"
+    }
+  },
+  "toc": [
+    { "id": "quien-esta-obligado", "label": "Who has to file" },
+    { "id": "cifras", "label": "Threshold and deadline" },
+    { "id": "que-entra", "label": "What counts and what doesn't" },
+    { "id": "otros-modelos", "label": "721, 720, 714 and income tax" },
+    { "id": "fuera-de-plazo", "label": "If you didn't file it" },
+    { "id": "como-lo-hacemos", "label": "How we do it" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "quien-esta-obligado",
+      "h2": "Who has to file form 721",
+      "fondo": "blanco",
+      "body": "You have to file form 721 if you are tax resident in Spain and, on 31 December, the combined value of your crypto held by custodial platforms located abroad exceeds €50,000.\n\nThe phrase that decides everything is “held by third parties”. What counts is what sits on an exchange or with a service that keeps the private keys for you. What sits in a wallet whose keys only you control does not, in principle, count. And the third party must be located outside Spain: a Spanish platform does not fall under form 721.",
+      "bullets": [
+        "<strong>Everything held abroad is added up.</strong> Nobody crosses the threshold with a single exchange, but they do once Binance, Kraken and Coinbase are combined. The calculation is joint, not per platform.",
+        "<strong>What matters is the snapshot on 31 December</strong>, not what you paid or the peak your portfolio reached during the year.",
+        "<strong>You don't need to have sold anything.</strong> Form 721 reports what you hold, not what you earned. A portfolio that sat still all year can still be caught.",
+        "<strong>In later years</strong> you only file again if the combined balance rises by more than €20,000 over the last amount reported, or if you stop holding those assets and it has to be reported."
+      ]
+    },
+    {
+      "id": "cifras",
+      "h2": "Form 721 threshold and deadline",
+      "fondo": "azul",
+      "entrada": "The figures that define the obligation. There are nuances depending on the case, which is why the first thing we do is check whether it applies to you.",
+      "cifras": [
+        { "valor": "€50,000", "etiqueta": "combined balance abroad on 31 December that triggers the obligation" },
+        { "valor": "1 Jan – 31 Mar", "etiqueta": "window to file form 721 for the previous year", "acento": true },
+        { "valor": "+€20,000", "etiqueta": "increase over the last amount reported that requires filing again" },
+        { "valor": "€0", "etiqueta": "payable: it is a reporting return, not a tax" }
+      ]
+    },
+    {
+      "id": "que-entra",
+      "h2": "What goes into form 721 and what doesn't",
+      "fondo": "papel",
+      "entrada": "The most common doubt isn't the deadline, it's knowing which part of your portfolio counts.",
+      "items": [
+        {
+          "title": "Foreign exchange: it counts",
+          "body": "Binance, Kraken, Coinbase, Bybit or any platform located outside Spain that holds your crypto. This is the typical form 721 case."
+        },
+        {
+          "title": "Wallet with your own keys: in principle, no",
+          "body": "A Ledger, a Trezor or a MetaMask whose keys only you control has no third-party custodian. It doesn't go into form 721, although it does count for your income tax and, where applicable, for wealth tax."
+        },
+        {
+          "title": "Platform located in Spain: no",
+          "body": "If the custodian is in Spain, there is no form 721 reporting obligation. That information reaches the Tax Agency through other channels."
+        },
+        {
+          "title": "Staking, earn and DeFi: needs checking",
+          "body": "What sits in a staking or earn product inside a foreign exchange is still held by that exchange. In DeFi, the answer depends on who really controls the keys. These are the cases we look at one by one."
+        }
+      ]
+    },
+    {
+      "id": "otros-modelos",
+      "h2": "Form 721, form 720, form 714 and income tax: what each one does",
+      "fondo": "blanco",
+      "entrada": "Four separate obligations that overlap on the calendar and get confused all the time. Filing one doesn't cover the others.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Form 721",
+          "body": "Reports crypto held by custodians abroad on 31 December. Nothing is paid. Filed between January and March."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Form 720",
+          "body": "Reports accounts, securities and property abroad. Crypto doesn't go here: since form 721 exists, it has its own return."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Form 714",
+          "body": "Wealth tax. There can be tax to pay, and your crypto counts wherever it is, including your own wallet. It depends on your region and your total wealth."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Form 100",
+          "body": "The income tax return, where the year's gains, losses and income go. What you report on form 721 has to be consistent with what your income tax return shows."
+        }
+      ]
+    },
+    {
+      "id": "fuera-de-plazo",
+      "h2": "If you didn't file form 721 on time",
+      "fondo": "papel",
+      "body": "It can be filed late, and doing it on your own initiative is not the same as waiting for the Tax Agency to spot it. Filing before any formal request reduces the penalty and keeps the omission from becoming the starting point of a review.\n\nAfter the Court of Justice of the European Union ruling on form 720, the disproportionate penalty regime disappeared, and reporting returns on assets abroad, form 721 included, fall under the general penalty regime. That doesn't mean nothing happens: it means the cost of putting things right early is reasonable and the cost of waiting is uncertain.\n\nBefore filing an overdue year, it is worth reviewing that year's income tax return too. If form 721 shows a balance your return doesn't explain, the inconsistency is what draws attention. If that's your case, we treat it as a full regularisation: form 721 and the income tax return for each year, together."
+    },
+    {
+      "id": "como-lo-hacemos",
+      "h2": "How we prepare and file your form 721",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "We check whether you have to file",
+          "body": "What is held by a third party and what isn't, where each custodian is located and what the combined balance was on 31 December. Sometimes the answer is that it doesn't apply to you, and we tell you so."
+        },
+        {
+          "title": "We value at the right date",
+          "body": "Balance per asset and per platform on 31 December, with the price source recorded. A screenshot from the app is not valid backing."
+        },
+        {
+          "title": "We identify each custodian",
+          "body": "Legal name, country and the platform details the form requires. This is the part that gets complicated when an exchange operates through different entities depending on the region."
+        },
+        {
+          "title": "We review previous years",
+          "body": "If the threshold was exceeded in an earlier year and nothing was filed, we explain your options before filing the current one."
+        },
+        {
+          "title": "We file and leave you the backing",
+          "body": "Electronic filing plus a file showing how every figure was reached, in case the return is reviewed later."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions about form 721",
+      "items": [
+        {
+          "q": "What is the form 721 deadline?",
+          "a": "From 1 January to 31 March of the year after the one being reported. It comes before the income tax campaign, which is exactly why it gets forgotten: by the time you sit down to do your taxes, the form 721 date has passed."
+        },
+        {
+          "q": "Do I have to pay anything with form 721?",
+          "a": "No. It is a reporting return. What does matter is that it tells the same story as your income tax return: a high balance on form 721 with no income to explain it is a visible inconsistency."
+        },
+        {
+          "q": "Does what I keep in a cold wallet with my own keys go into form 721?",
+          "a": "In principle, no: form 721 covers crypto held by a third-party custodian. What sits in a wallet whose keys only you control has no custodian. There are in-between situations, especially in DeFi, that are worth checking case by case."
+        },
+        {
+          "q": "I have balances on several exchanges and none reaches €50,000",
+          "a": "The threshold is calculated on the combined balance across all foreign platforms, not on each one separately. It is the most common mistake: none gets there on its own, but together they do."
+        },
+        {
+          "q": "How is form 721 different from form 720?",
+          "a": "Form 720 reports accounts, securities and property abroad; form 721 reports crypto held by custodians abroad. They are separate returns and crypto is not reported on form 720."
+        },
+        {
+          "q": "What about form 714 for wealth tax?",
+          "a": "It is a tax, not a reporting return, and all your crypto counts towards it, including what's in your own wallet. Whether it affects you depends on your region and your total wealth. We cover it in detail in our article on form 714 and crypto, linked at the end of this page."
+        },
+        {
+          "q": "How much does it cost for you to handle my form 721?",
+          "a": "Form 721 is quoted as a fixed price once we see your platforms and balances, because the work depends on how many custodians there are and how complete the history is. If you also need your activity reconciled for your income tax return, the tiers on our pricing page apply: Single platform, Multi-exchange, Mixed portfolio or Complex portfolio, depending on your data sources."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Tell us where your crypto is and we'll tell you whether you have to file",
+    "body": "List the platforms where you hold a balance and an approximate amount on 31 December. We'll tell you whether you are obliged to file, for which years and how much it costs to prepare.",
+    "button": {
+      "label": "Send diagnosis"
+    }
+  },
+  "seo": {
+    "title": "Modelo 721 criptomonedas: Spanish crypto form 721 | Cleriontax",
+    "description": "Spanish form 721 for crypto: who must file, the €50,000 threshold, the January–March deadline and what to do if you missed it. We help you file it.",
+    "keywords": [
+      "form 721 crypto spain",
+      "modelo 721 crypto",
+      "spain crypto reporting form 721",
+      "form 721 deadline",
+      "form 721 50000 euros",
+      "form 721 late filing",
+      "form 720 crypto",
+      "modelo 721 criptomonedas"
+    ]
+  }
+}

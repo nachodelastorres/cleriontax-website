@@ -85,12 +85,21 @@ export default function BarraAccion({
             </>
           ) : (
             <>
-              <Link
-                href={href}
-                className="inline-flex h-11 flex-1 items-center justify-center bg-rojo px-6 font-semibold text-blanco transition-colors hover:bg-rojo/90 sm:flex-none"
-              >
-                {accion}
-              </Link>
+              {href.startsWith("#") ? (
+                <a
+                  href={href}
+                  className="inline-flex h-11 flex-1 items-center justify-center bg-rojo px-6 font-semibold text-blanco transition-colors hover:bg-rojo/90 sm:flex-none"
+                >
+                  {accion}
+                </a>
+              ) : (
+                <Link
+                  href={href}
+                  className="inline-flex h-11 flex-1 items-center justify-center bg-rojo px-6 font-semibold text-blanco transition-colors hover:bg-rojo/90 sm:flex-none"
+                >
+                  {accion}
+                </Link>
+              )}
               <a
                 href={WHATSAPP}
                 target="_blank"

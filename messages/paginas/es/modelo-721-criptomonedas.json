@@ -1,0 +1,194 @@
+{
+  "title": "Modelo 721 de criptomonedas: quién lo presenta, plazo y cómo hacerlo",
+  "slug": "modelo-721-criptomonedas",
+  "nav": "Modelo 721",
+  "excerpt": "Quién está obligado a presentar el modelo 721 por criptomonedas custodiadas en el extranjero, el umbral de 50.000 euros, el plazo de presentación y qué hacer si no lo presentaste a tiempo.",
+  "hero": {
+    "etiqueta": "Declaración informativa",
+    "h1": "Modelo 721 de criptomonedas: si tu saldo está en un exchange extranjero, Hacienda quiere saberlo",
+    "subheading": "El 721 no calcula ningún impuesto: informa de lo que tenías a 31 de diciembre en plataformas situadas fuera de España. Por eso se olvida con facilidad, y por eso conviene comprobar cada año si te toca. Lo preparamos con el saldo valorado, el respaldo de cada cifra y la presentación hecha.",
+    "cta": {
+      "label": "Pedir presupuesto",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Quién está obligado",
+      "href": "#quien-esta-obligado"
+    }
+  },
+  "toc": [
+    { "id": "quien-esta-obligado", "label": "Quién está obligado" },
+    { "id": "cifras", "label": "Umbral y plazo" },
+    { "id": "que-entra", "label": "Qué entra y qué no" },
+    { "id": "otros-modelos", "label": "721, 720, 714 y renta" },
+    { "id": "fuera-de-plazo", "label": "Si no lo presentaste" },
+    { "id": "como-lo-hacemos", "label": "Cómo lo hacemos" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "quien-esta-obligado",
+      "h2": "Quién está obligado a presentar el modelo 721",
+      "fondo": "blanco",
+      "body": "Tienes que presentar el modelo 721 si eres residente fiscal en España y, a 31 de diciembre, el valor conjunto de tus criptomonedas custodiadas por plataformas situadas en el extranjero supera los 50.000 euros.\n\nLa expresión que decide todo es «custodiadas por terceros». Cuenta lo que está en un exchange o en un servicio que guarda las claves privadas por ti. No cuenta, en principio, lo que tienes en una wallet cuyas claves controlas solo tú. Y el tercero tiene que estar situado fuera de España: una plataforma española no entra en el 721.",
+      "bullets": [
+        "<strong>Se suma todo lo custodiado en el extranjero.</strong> Nadie supera el umbral con un solo exchange, pero sí sumando Binance, Kraken y Coinbase. El cómputo es conjunto, no por plataforma.",
+        "<strong>Se mira la foto del 31 de diciembre</strong>, no lo que compraste ni el máximo que alcanzó tu cartera durante el año.",
+        "<strong>No hace falta haber vendido nada.</strong> El 721 informa de lo que tienes, no de lo que ganaste. Una cartera quieta todo el año también puede estar obligada.",
+        "<strong>Los años siguientes</strong> solo vuelves a presentarlo si el saldo conjunto sube más de 20.000 euros respecto al último declarado, o si dejas de tener esos criptoactivos y hay que comunicarlo."
+      ]
+    },
+    {
+      "id": "cifras",
+      "h2": "Umbral y plazo del modelo 721",
+      "fondo": "azul",
+      "entrada": "Las magnitudes que definen la obligación. Hay matices según el caso, y por eso lo primero que hacemos es comprobar si te aplica.",
+      "cifras": [
+        { "valor": "50.000 €", "etiqueta": "saldo conjunto en el extranjero a 31 de diciembre que activa la obligación" },
+        { "valor": "1 ene – 31 mar", "etiqueta": "plazo para presentar el modelo 721 del ejercicio anterior", "acento": true },
+        { "valor": "+20.000 €", "etiqueta": "incremento sobre lo último declarado que obliga a volver a presentarlo" },
+        { "valor": "0 €", "etiqueta": "de cuota: es una declaración informativa, no un impuesto" }
+      ]
+    },
+    {
+      "id": "que-entra",
+      "h2": "Qué entra en el 721 y qué no",
+      "fondo": "papel",
+      "entrada": "La duda más frecuente no es el plazo, es saber qué parte de tu cartera cuenta.",
+      "items": [
+        {
+          "title": "Exchange extranjero: entra",
+          "body": "Binance, Kraken, Coinbase, Bybit o cualquier plataforma situada fuera de España que guarde tus criptomonedas. Es el caso típico del 721."
+        },
+        {
+          "title": "Wallet con tus propias claves: en principio, no",
+          "body": "Una Ledger, una Trezor o una MetaMask cuyas claves solo controlas tú no tienen un tercero custodio. No van al 721, aunque sí cuentan para tu renta y, si procede, para el patrimonio."
+        },
+        {
+          "title": "Plataforma situada en España: no",
+          "body": "Si el custodio está en España, no hay obligación informativa por el 721. Esa información le llega a la AEAT por otras vías."
+        },
+        {
+          "title": "Staking, earn y DeFi: hay que mirarlo",
+          "body": "Lo que está en un producto de staking o earn dentro de un exchange extranjero sigue custodiado por él. En DeFi, la respuesta depende de quién controla de verdad las claves. Son los casos que analizamos uno a uno."
+        }
+      ]
+    },
+    {
+      "id": "otros-modelos",
+      "h2": "Modelo 721, modelo 720, modelo 714 y la renta: qué hace cada uno",
+      "fondo": "blanco",
+      "entrada": "Cuatro obligaciones distintas que se solapan en el calendario y se confunden constantemente. Presentar una no cubre las demás.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Modelo 721",
+          "body": "Informa de las criptomonedas custodiadas en el extranjero a 31 de diciembre. No se paga nada. Se presenta entre enero y marzo."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Modelo 720",
+          "body": "Informa de cuentas, valores e inmuebles en el extranjero. Las criptomonedas no van aquí: desde que existe el 721, tienen su propio modelo."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Modelo 714",
+          "body": "El impuesto sobre el patrimonio. Sí puede haber cuota, y tus criptomonedas cuentan estén donde estén, también en tu wallet. Depende de tu comunidad y de tu patrimonio total."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Modelo 100",
+          "body": "La declaración de la renta, donde van las ganancias, pérdidas y rendimientos del año. Lo que declares en el 721 tiene que ser coherente con lo que cuente tu renta."
+        }
+      ]
+    },
+    {
+      "id": "fuera-de-plazo",
+      "h2": "Si no presentaste el modelo 721 a tiempo",
+      "fondo": "papel",
+      "body": "Se puede presentar fuera de plazo, y no es lo mismo hacerlo por tu cuenta que esperar a que lo detecte la Administración. Presentarlo antes de cualquier requerimiento reduce la sanción y evita que la omisión se convierta en el punto de partida de una comprobación.\n\nTras la sentencia del Tribunal de Justicia de la Unión Europea sobre el modelo 720, el régimen de sanciones desproporcionadas desapareció y las declaraciones informativas sobre bienes en el extranjero, incluido el 721, quedan en el régimen sancionador general. Eso no significa que no pase nada: significa que el coste de regularizar pronto es razonable y el de esperar, incierto.\n\nAntes de presentar un ejercicio atrasado, conviene revisar también la renta de ese año. Si el 721 refleja un saldo que tu declaración no explica, la incoherencia es lo que llama la atención. Si es tu caso, lo enfocamos como una regularización completa: el 721 y la renta de cada ejercicio, a la vez."
+    },
+    {
+      "id": "como-lo-hacemos",
+      "h2": "Cómo preparamos y presentamos tu modelo 721",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Comprobamos si estás obligado",
+          "body": "Qué está custodiado por un tercero y qué no, dónde está situado cada custodio y qué saldo conjunto había a 31 de diciembre. A veces la respuesta es que no te aplica, y te lo decimos."
+        },
+        {
+          "title": "Valoramos a la fecha correcta",
+          "body": "Saldo por activo y por plataforma a 31 de diciembre, con la fuente de precio anotada. Una captura de la app no sirve como respaldo."
+        },
+        {
+          "title": "Identificamos cada custodio",
+          "body": "Razón social, país y datos de la plataforma que el modelo exige. Es la parte que más se complica cuando un exchange opera con varias entidades según la región."
+        },
+        {
+          "title": "Revisamos los años anteriores",
+          "body": "Si en algún ejercicio se superó el umbral y no se presentó, te explicamos qué opciones tienes antes de presentar el actual."
+        },
+        {
+          "title": "Presentamos y te dejamos el respaldo",
+          "body": "Presentación telemática y un archivo con cómo se llegó a cada cifra, por si el modelo se revisa más adelante."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes sobre el modelo 721",
+      "items": [
+        {
+          "q": "¿Cuál es el plazo del modelo 721?",
+          "a": "Del 1 de enero al 31 de marzo del año siguiente al ejercicio que se declara. Va por delante de la campaña de la renta, que es justo por lo que se olvida: cuando te sientas a hacer los impuestos, la fecha del 721 ya ha pasado."
+        },
+        {
+          "q": "¿Tengo que pagar algo con el modelo 721?",
+          "a": "No. Es una declaración informativa. Lo que sí importa es que cuente la misma historia que tu renta: un saldo alto en el 721 sin rentas que lo expliquen es una incoherencia visible."
+        },
+        {
+          "q": "¿Lo que tengo en una wallet fría con mis claves va al 721?",
+          "a": "En principio, no: el 721 se refiere a criptomonedas custodiadas por un tercero. Lo que está en una wallet cuyas claves controlas solo tú no tiene custodio. Hay situaciones intermedias, sobre todo en DeFi, que conviene revisar caso a caso."
+        },
+        {
+          "q": "Tengo saldo en varios exchanges y ninguno llega a 50.000 euros",
+          "a": "El umbral se calcula con el saldo conjunto de todas las plataformas extranjeras, no con cada una por separado. Es el error más frecuente: ninguna llega sola, pero sumadas sí."
+        },
+        {
+          "q": "¿En qué se diferencia el modelo 721 del 720?",
+          "a": "El 720 informa de cuentas, valores e inmuebles en el extranjero; el 721, de criptomonedas custodiadas en el extranjero. Son modelos separados y las criptomonedas no se declaran en el 720."
+        },
+        {
+          "q": "¿Y el modelo 714 de patrimonio?",
+          "a": "Es un impuesto, no una declaración informativa, y en él cuentan todas tus criptomonedas, también las de tu wallet. Si te afecta depende de tu comunidad autónoma y de tu patrimonio total. Lo explicamos en detalle en nuestro artículo sobre el modelo 714 y las criptomonedas, enlazado al final de esta página."
+        },
+        {
+          "q": "¿Cuánto cuesta que me ayudéis con el modelo 721?",
+          "a": "El 721 se presupuesta cerrado en cuanto vemos tus plataformas y tus saldos, porque el trabajo depende de cuántos custodios hay y de cómo de completo está el histórico. Si además necesitas reconciliar tu operativa para la renta, se aplican los tramos de nuestra página de precios: Plataforma única, Multiexchange, Cartera mixta o Cartera compleja, según tus fuentes de datos."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "h2": "Dinos dónde tienes tus criptomonedas y te decimos si te toca",
+    "body": "Indica en qué plataformas tienes saldo y un importe aproximado a 31 de diciembre. Te respondemos si estás obligado, de qué ejercicios y cuánto cuesta prepararlo.",
+    "button": {
+      "label": "Enviar diagnóstico"
+    }
+  },
+  "seo": {
+    "title": "Modelo 721 criptomonedas: quién lo presenta y plazo | Cleriontax",
+    "description": "Modelo 721 de criptomonedas: quién está obligado, umbral de 50.000 €, plazo de enero a marzo y qué hacer si no lo presentaste. Te ayudamos a presentarlo.",
+    "keywords": [
+      "modelo 721 criptomonedas",
+      "presentar modelo 721",
+      "ayuda modelo 721 criptomonedas",
+      "modelo 721 plazo",
+      "modelo 721 50.000 euros",
+      "modelo 721 fuera de plazo",
+      "modelo 720 criptomonedas",
+      "modelo 721 vs 720"
+    ]
+  }
+}

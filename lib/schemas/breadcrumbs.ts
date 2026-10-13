@@ -8,7 +8,7 @@ import type { Locale, BreadcrumbItem } from './types';
 
 interface BreadcrumbConfig {
   locale: Locale;
-  path: string; // e.g., '/es/servicios/informe-fiscal-criptomonedas'
+  path: string; // e.g., '/es/informe-fiscal-criptomonedas'
   customLabels?: Record<string, string>; // Custom labels for specific paths
   baseUrl?: string;
 }
@@ -64,7 +64,7 @@ const homeLabels: Record<Locale, string> = {
  * @example
  * generateBreadcrumbSchema({
  *   locale: 'es',
- *   path: '/es/servicios/informe-fiscal-criptomonedas',
+ *   path: '/es/informe-fiscal-criptomonedas',
  *   baseUrl: 'https://www.cleriontax.com'
  * })
  *
@@ -186,7 +186,7 @@ export function generateBlogBreadcrumbSchema(config: {
 
 /**
  * Generates breadcrumb schema for service pages
- * Includes the services index page in the breadcrumb trail
+ * Service pages hang directly from home
  *
  * @example
  * generateServiceBreadcrumbSchema({
@@ -211,14 +211,11 @@ export function generateServiceBreadcrumbSchema(config: {
       position: 1
     },
     {
-      name: defaultLabels[locale]['servicios'],
-      url: `${baseUrl}/${locale}/servicios`,
-      position: 2
-    },
-    {
+      // Las páginas de servicio viven en la raíz (lib/paginas.ts): no hay
+      // un nivel intermedio de servicios.
       name: serviceTitle,
-      url: `${baseUrl}/${locale}/servicios/${serviceSlug}`,
-      position: 3
+      url: `${baseUrl}/${locale}/${serviceSlug}`,
+      position: 2
     }
   ];
 

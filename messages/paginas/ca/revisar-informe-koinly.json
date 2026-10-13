@@ -1,0 +1,166 @@
+{
+  "title": "Revisar el teu informe de Koinly abans de presentar-lo a Hisenda",
+  "slug": "revisar-informe-koinly",
+  "nav": "Revisar informe de Koinly",
+  "excerpt": "Els errors de Koinly i CoinTracking que més pesen davant d'Hisenda: transferències internes comptades com a vendes, cost d'adquisició zero i spam de tokens. Com es corregeix l'informe abans de presentar-lo.",
+  "hero": {
+    "etiqueta": "Abans de presentar-lo",
+    "h1": "Errors de Koinly davant d'Hisenda: revisem el teu informe abans que el presentis",
+    "subheading": "Has passat les teves dades per Koinly, CoinTracking o una eina semblant i el guany no s'assembla al que creus que vas guanyar. No cal començar de zero: partim del teu informe, corregim el que el programa va resoldre amb un valor per defecte i t'expliquem cada canvi.",
+    "cta": { "label": "Demanar pressupost", "href": "#diagnostico" },
+    "secundaria": { "label": "Veure preus", "href": "#precio" }
+  },
+  "toc": [
+    { "id": "por-que-no-cuadra", "label": "Per què no quadra" },
+    { "id": "errores", "label": "Els errors habituals" },
+    { "id": "el-ejemplo", "label": "El mateix cas, dues xifres" },
+    { "id": "comparativa", "label": "Automàtic davant de revisat" },
+    { "id": "como-revisamos", "label": "Com el revisem" },
+    { "id": "alternativa", "label": "Alternativa a Koinly?" },
+    { "id": "precio", "label": "Preu" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "por-que-no-cuadra",
+      "h2": "Per què el teu informe de Koinly no quadra amb el que vas guanyar",
+      "fondo": "blanco",
+      "body": "L'eina no ha fallat: ha fet el que sap fer. Llegeix els teus CSV i les teves wallets, casa el que pot casar i, quan una operació no es pot resoldre amb certesa, aplica un valor per defecte. Aquest valor poques vegades és el que correspon al teu cas.\n\nEl resultat típic és un guany inflat. No perquè hagis guanyat més, sinó perquè l'informe compta com a vendes moviments que no ho són i valora a zero tokens que sí que van tenir un cost.\n\nTot això té solució mentre l'informe no s'hagi presentat. Un cop a l'AEAT passa a ser la teva declaració, i corregir-lo és una altra feina, més llarga i més delicada."
+    },
+    {
+      "id": "errores",
+      "h2": "Els errors de Koinly i CoinTracking que més pesen davant d'Hisenda",
+      "fondo": "azul",
+      "entrada": "No són errors de l'eina, sinó situacions que cap eina no pot decidir sola. Són les que revisem primer.",
+      "bullets": [
+        "<strong>Transferències entre els teus comptes comptades com a vendes:</strong> mous fons de l'exchange a la teva wallet freda i, si el programa no reconeix les dues adreces com a teves, ho registra com una disposició. És la font més gran de guany fictici.",
+        "<strong>Cost d'adquisició zero:</strong> tokens rebuts per staking, airdrops, forks o recompenses de liquiditat sense valor d'entrada. Quan els vens, tota la contraprestació apareix com a guany.",
+        "<strong>Mètode de càlcul diferent del que aplica l'AEAT:</strong> Hisenda calcula amb FIFO per a cada criptoactiu. Convé comprovar que la configuració de l'informe és aquesta i no una altra.",
+        "<strong>DeFi sense classificar:</strong> dipòsits en pools, préstecs, wraps i bridges que el programa no sap interpretar i deixa com a entrades o sortides soltes.",
+        "<strong>Spam de tokens tractat com a ingrés:</strong> en xarxes com Solana o BSC poden ser milers de registres brossa que embruten tot el resultat.",
+        "<strong>Duplicats i buits:</strong> la mateixa operació llegida del CSV de l'exchange i de la wallet, o el període d'un exchange tancat que simplement no apareix i s'emporta el teu cost d'adquisició."
+      ]
+    },
+    {
+      "id": "el-ejemplo",
+      "h2": "El mateix cas, dues xifres",
+      "fondo": "papel",
+      "entrada": "Una cartera amb transferències entre wallets pròpies i tokens rebuts per staking. Així la llegeix un informe automàtic i així queda després de la revisió.",
+      "tabla": {
+        "titulo": "Resultat abans i després de revisar",
+        "periodo": "exercici 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Guany segons l'informe automàtic", "importe": 41280.6 },
+          { "concepto": "Menys: transferències internes comptades com a vendes", "importe": -19750.4 },
+          { "concepto": "Menys: cost d'adquisició recuperat de tokens de staking", "importe": -4128.05 },
+          { "concepto": "Guany després de la revisió", "importe": 17402.15 },
+          { "concepto": "Operacions reclassificades a mà", "recuento": 386 }
+        ],
+        "columnaConcepto": "Concepte",
+        "columnaValor": "Import",
+        "pie": "Dades d’exemple. Criteri FIFO."
+      }
+    },
+    {
+      "id": "comparativa",
+      "h2": "Informe automàtic davant d'informe revisat",
+      "fondo": "blanco",
+      "entrada": "El que canvia no és l'eina, és el que es fa amb el seu resultat abans de presentar-lo.",
+      "columnas": [
+        {
+          "titulo": "L'informe tal com surt de l'eina",
+          "items": [
+            "Cada moviment entre els teus comptes pot comptar com una venda",
+            "Els tokens rebuts sense compra entren amb cost zero",
+            "L'spam de tokens es processa com si fos operativa real",
+            "Els buits dels historials incomplets no es veuen",
+            "Una xifra final sense explicació de com s'hi ha arribat"
+          ]
+        },
+        {
+          "titulo": "L'informe revisat",
+          "correcta": true,
+          "items": [
+            "Les transferències internes s'identifiquen i s'exclouen del càlcul",
+            "Cada token rebut té el seu valor a la data d'entrada i la font del preu",
+            "El soroll es filtra amb criteri, operació per operació",
+            "Els buits es reconstrueixen amb extractes, correus i traces on-chain",
+            "Cada canvi respecte al teu informe, explicat i documentat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "como-revisamos",
+      "h2": "Com corregim el teu informe de Koinly",
+      "steps": [
+        { "title": "Partim del teu informe, no de zero", "body": "Ens envies l'exportació de Koinly o CoinTracking i les fonts que l'alimenten. La ingesta ja està feta: auditem la reconciliació, no refem el que està bé." },
+        { "title": "Aïllem les transferències entre comptes teus", "body": "Identifiquem la titularitat de cada adreça de destí i marquem com a interns els moviments que ho són. Aquí sol haver-hi la major part de la diferència." },
+        { "title": "Recuperem el cost d'adquisició perdut", "body": "Per a cada token rebut sense compra determinem el seu valor a la data de recepció i deixem anotada la font del preu." },
+        { "title": "Classifiquem el que va quedar solt", "body": "DeFi, bridges, spam i duplicats, un per un. No amb una regla automàtica: amb el criteri que després hauràs de poder defensar." },
+        { "title": "T'entreguem el diferencial explicat", "body": "Què canvia respecte al teu informe, per què i amb quin suport, juntament amb les xifres llestes per a la teva declaració." }
+      ]
+    },
+    {
+      "id": "alternativa",
+      "h2": "Busques una alternativa a Koinly a Espanya?",
+      "fondo": "papel",
+      "body": "Potser no la necessites. Koinly, CoinTracking i eines semblants són útils per processar volum, i si ja tens les dades carregades, el més ràpid i econòmic sol ser revisar-les, no migrar a una altra eina per tornar-te a trobar les mateixes decisions sense prendre.\n\nSi, en canvi, no has començat, les teves dades estan repartides en moltes fonts o l'informe està tan lluny de la realitat que no val la pena corregir-lo, el que et convé és un informe fet des del principi. És el que fem al nostre informe fiscal de criptomonedes."
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Koinly serveix per declarar a Espanya?",
+          "a": "Serveix com a punt de partida: processa les teves operacions i pot calcular amb FIFO, que és el criteri de l'AEAT. El que no pot fer és decidir per tu quins moviments són teus, quin valor tenia un token rebut sense compra o què és spam. Aquestes decisions són les que convé revisar abans de traslladar les xifres a la teva declaració."
+        },
+        {
+          "q": "I si faig servir CoinTracking o una altra eina?",
+          "a": "La feina és la mateixa. Revisem el resultat de CoinTracking, Koinly, Accointing o similars, i també fulls de càlcul propis. El que importa no és quin programa va generar l'informe, sinó com va resoldre les situacions dubtoses."
+        },
+        {
+          "q": "Quant costa revisar el meu informe?",
+          "a": "Depèn de quantes fonts de dades alimenten l'informe. Si tot ve d'un sol exchange és el tram «Plataforma única», 250 €; de dos o tres exchanges, «Multiexchange», 350 €; si combines exchanges amb wallets pròpies, DeFi, NFT o accions fins a tres fonts, «Cartera mixta», 450 €; i per sobre d'això, «Cartera complexa», des de 700 €. Et confirmem el tram abans de començar. Tens el detall a la pàgina de preus."
+        },
+        {
+          "q": "Necessiteu accés al meu compte de Koinly?",
+          "a": "No. N'hi ha prou amb l'exportació del teu informe, els CSV dels teus exchanges, claus API de només lectura si ho prefereixes i les adreces públiques de les teves wallets. Mai claus privades."
+        },
+        {
+          "q": "Ja vaig presentar l'informe a Hisenda i crec que està malament",
+          "a": "Aleshores ja no és una revisió prèvia, sinó corregir una declaració presentada. Si vas pagar de més es pot demanar la rectificació; si vas pagar de menys, convé regularitzar abans que arribi una carta. I si ja t'ha arribat una notificació de l'AEAT, el primer és mirar el termini."
+        },
+        {
+          "q": "I si en revisar-lo resulta que l'informe estava bé?",
+          "a": "T'ho diem. Et quedes amb la comprovació feta i amb la memòria de criteris que avala cada xifra, que és el que necessitaries si Hisenda pregunta. No sempre hi ha error, però saber que no n'hi ha també val."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Quant costa revisar el teu informe",
+    "entrada": "El preu el marca quantes fonts de dades alimenten el teu informe, no quant hagis guanyat. Si ja tens l'informe generat, la revisió parteix d'aquesta feina.",
+    "nota": "Envia'ns l'exportació de la teva eina i et confirmem el tram abans de començar."
+  },
+  "cierre": {
+    "h2": "Abans de presentar-lo, que el revisi algú",
+    "body": "Explica'ns amb quina eina has generat l'informe, en quins exchanges, wallets i xarxes operes i quina xifra et dona. Amb una primera passada sabem si hi ha diferència i de quina mida.",
+    "button": { "label": "Demanar revisió" }
+  },
+  "seo": {
+    "title": "Errors de Koinly amb Hisenda: revisem el teu informe | Cleriontax",
+    "description": "El teu informe de Koinly o CoinTracking no quadra? Corregim transferències comptades com a vendes, cost zero i spam abans que el presentis a Hisenda.",
+    "keywords": [
+      "errors koinly hisenda",
+      "revisar informe koinly",
+      "corregir informe koinly",
+      "koinly espanya",
+      "cointracking espanya",
+      "alternativa koinly espanya",
+      "revisar informe fiscal cripto",
+      "informe cripto incorrecte hisenda"
+    ]
+  }
+}

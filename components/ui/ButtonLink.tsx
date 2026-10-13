@@ -58,8 +58,19 @@ export default function ButtonLink({
   className,
   children,
 }: ButtonLinkProps) {
+  const clases = cn(buttonVariants({ variant, size, className }));
+
+  // Anclas y esquemas (tel:, mailto:) no llevan prefijo de idioma.
+  if (href.startsWith("#") || /^[a-z]+:/i.test(href)) {
+    return (
+      <a href={href} className={clases}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link href={href} className={cn(buttonVariants({ variant, size, className }))}>
+    <Link href={href} className={clases}>
       {children}
     </Link>
   );

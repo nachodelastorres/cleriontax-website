@@ -1,0 +1,246 @@
+{
+  "title": "Requeriment d'Hisenda per criptomonedes",
+  "slug": "requerimiento-hacienda-criptomonedas",
+  "nav": "Requeriment d'Hisenda",
+  "excerpt": "Què significa el requeriment d'Hisenda que has rebut per les teves criptomonedes, quin termini tens de debò per respondre i què cal reconstruir abans de contestar.",
+  "hero": {
+    "etiqueta": "El termini ja corre",
+    "h1": "Requeriment d'Hisenda per criptomonedes: què fer abans de contestar",
+    "subheading": "El primer no és la resposta, és la data: el termini corre des de la notificació, no des que obres la carta. El segon és saber què et demanen exactament. I el tercer, tenir les teves xifres reconstruïdes abans d'enviar res.",
+    "cta": {
+      "label": "Truca'ns: +34 663 482 301",
+      "href": "tel:+34663482301"
+    },
+    "secundaria": {
+      "label": "Explica'ns el teu cas",
+      "href": "#diagnostico"
+    }
+  },
+  "toc": [
+    { "id": "que-ha-pasado", "label": "Per què t'ha arribat" },
+    { "id": "que-has-recibido", "label": "Què has rebut" },
+    { "id": "el-plazo", "label": "El termini" },
+    { "id": "antes-de-contestar", "label": "Abans de contestar" },
+    { "id": "como-lo-resolvemos", "label": "Com ho resolem" },
+    { "id": "que-necesitamos", "label": "Què necessitem de tu" },
+    { "id": "que-recibes", "label": "Què reps" },
+    { "id": "precio", "label": "Preu" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "que-ha-pasado",
+      "h2": "Per què Hisenda et reclama informació sobre les teves criptomonedes",
+      "body": "T'ha arribat una notificació de l'Agència Tributària, per correu certificat o a la seu electrònica, que demana informació sobre les teves operacions amb criptomonedes d'un exercici concret.\n\nNo vol dir que hagis fet res malament. Vol dir que l'AEAT té una dada que no quadra amb la teva declaració, gairebé sempre el volum que li ha comunicat un exchange. Aquest encreuament avui és automàtic i massiu.\n\nHi ha moltes raons legítimes perquè els dos números no coincideixin. La més freqüent: les transferències entre les teves pròpies wallets, que l'informe compta com a operacions encara que no hagis venut res. També les permutes d'un token per un altre que no sabies que tributaven, o l'històric d'un exchange que va tancar i del qual ja no pots descarregar res."
+    },
+    {
+      "id": "que-has-recibido",
+      "h2": "Requeriment, comprovació limitada o inspecció: què tens al davant",
+      "entrada": "La carta diu quin procediment s'ha obert. D'això depenen el termini, l'abast i la manera de respondre.",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Requeriment d'informació:</strong> et demanen dades concretes. És el més lleu i no implica necessàriament que t'estiguin comprovant. El termini habitual per contestar és de deu dies hàbils des de la notificació.",
+        "<strong>Comprovació limitada:</strong> ja és un procediment de gestió amb un abast acotat. L'Administració revisa elements concrets de la teva declaració i pot acabar amb una proposta de liquidació.",
+        "<strong>Proposta de liquidació:</strong> ja han calculat el que creuen que deus. Aquí toca al·legar, i fer-ho amb la teva pròpia quantificació al davant.",
+        "<strong>Inspecció o expedient sancionador:</strong> són procediments diferents, amb altres terminis i una altra defensa. Si és el teu cas, ho expliquem a la pàgina d'inspecció i sancions d'Hisenda per criptomonedes."
+      ]
+    },
+    {
+      "id": "el-plazo",
+      "h2": "Termini per respondre un requeriment d'Hisenda, dia a dia",
+      "entrada": "El ritme típic d'un requeriment d'informació amb deu dies hàbils. Les teves dates concretes depenen de la notificació.",
+      "hitos": [
+        {
+          "cuando": "Dia 0",
+          "titulo": "Notificació",
+          "body": "Comença a córrer el termini. A la seu electrònica, si no hi accedeixes, s'entén notificat als deu dies naturals d'haver-se posat a la teva disposició: aquest és el dia 0 real."
+        },
+        {
+          "cuando": "Dies 1–2",
+          "titulo": "Lectura i abast",
+          "body": "Quin procediment és, quins exercicis abasta i què es demana exactament. Aquí es decideix si convé demanar ampliació de termini; demanar-la tard no serveix."
+        },
+        {
+          "cuando": "Dies 2–6",
+          "titulo": "Reconstrucció de l'operativa",
+          "body": "El tram llarg, el que no es pot comprimir: consolidar exchanges, wallets i protocols de l'exercici i localitzar l'origen de la discrepància."
+        },
+        {
+          "cuando": "Dies 7–8",
+          "titulo": "Quantificació i estratègia",
+          "body": "Contrast amb el que es va declarar, quantificació de la diferència i decisió sobre què s'aporta. Ho revises abans que es presenti res."
+        },
+        {
+          "cuando": "Dia 9",
+          "titulo": "Presentació",
+          "body": "Es presenta amb un dia de marge. Mai l'últim: una incidència a la seu el dia del venciment no l'arregla ningú."
+        },
+        {
+          "cuando": "Dia 10",
+          "titulo": "Venç el termini",
+          "body": "Sense resposta, l'Administració pot sancionar per no atendre el requeriment i liquidar amb les dades que tingui.",
+          "critico": true
+        }
+      ]
+    },
+    {
+      "id": "cita",
+      "h2": "El que contestis queda a l'expedient",
+      "fondo": "azul",
+      "cita": {
+        "texto": "El que contestis ara queda a l'expedient.",
+        "pie": "La primera resposta condiciona tot el que vingui després. Rectificar un escrit ja presentat és més difícil, i més car, que haver-lo preparat bé la primera vegada.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "antes-de-contestar",
+      "h2": "Com respondre un requeriment d'Hisenda per criptomonedes",
+      "entrada": "La diferència entre una resposta que tanca l'assumpte i una que l'obre sol ser en el que es fa abans d'escriure.",
+      "columnas": [
+        {
+          "titulo": "Contestar de pressa",
+          "items": [
+            "Enviar el CSV de l'exchange tal com es descarrega.",
+            "Aportar un informe automàtic sense revisar.",
+            "Explicar la diferència sense poder quantificar-la.",
+            "Presentar l'últim dia."
+          ]
+        },
+        {
+          "titulo": "Contestar amb les xifres reconstruïdes",
+          "correcta": true,
+          "items": [
+            "Calcular primer la data límit real.",
+            "Reconstruir l'operativa completa de l'exercici requerit.",
+            "Explicar cada diferència amb la seva causa i la seva prova.",
+            "Aportar només el que es demana, amb un criteri documentat al darrere."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "como-lo-resolvemos",
+      "h2": "Com ho resolem",
+      "steps": [
+        {
+          "title": "Llegim la notificació i fixem la data límit",
+          "body": "Quin procediment s'ha obert, quins exercicis abasta i quants dies hàbils queden de debò. En notificació electrònica la data real no sempre és la que sembla."
+        },
+        {
+          "title": "Reconstruïm la teva operativa de l'exercici",
+          "body": "Consolidem exchanges, wallets i protocols fins a tenir l'històric complet. Aquí apareix gairebé sempre l'origen de la discrepància: moviments interns comptats com a vendes, permutes sense declarar o rendiments sense imputar."
+        },
+        {
+          "title": "Quantifiquem la diferència i la seva causa",
+          "body": "Comparem la teva operativa real amb el que vas declarar i amb la dada de l'AEAT. Separem què és un error teu, què és una dada incompleta de l'Administració i què és interpretació."
+        },
+        {
+          "title": "Preparem la resposta amb la seva prova",
+          "body": "T'expliquem abans què s'aportarà, amb quin suport i quins escenaris s'obren després, també els desfavorables. No es presenta res sense que sàpigues què signes."
+        },
+        {
+          "title": "Presentem dins de termini i seguim l'expedient",
+          "body": "Atenem els requeriments successius que puguin arribar i et mantenim al corrent de cada moviment fins que es tanqui."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Què necessitem de tu",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>La notificació completa</strong>, amb totes les pàgines i la data de notificació visible.",
+        "<strong>La teva declaració de l'exercici requerit</strong>, i les anteriors si n'hi va haver.",
+        "<strong>Exportacions dels teus exchanges</strong> del període: CSV o claus API de només lectura. Mai claus privades.",
+        "<strong>Adreces públiques de les teves wallets</strong>, per reconstruir el rastre on-chain i demostrar quins moviments eren entre comptes teus.",
+        "<strong>Extractes bancaris</strong> de les entrades i sortides a euros, la prova més sòlida quan falta històric.",
+        "<strong>El que ja hagis enviat</strong> a l'Administració, si vas contestar abans pel teu compte."
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "Què reps",
+      "items": [
+        {
+          "title": "La resposta presentada dins de termini",
+          "body": "L'escrit de contestació amb el seu justificant de presentació."
+        },
+        {
+          "title": "L'informe de reconstrucció",
+          "body": "El detall operació per operació que hi ha darrere de cada xifra de l'exercici."
+        },
+        {
+          "title": "La memòria de criteris",
+          "body": "Quin criteri s'ha aplicat a cada punt dubtós i amb quin fonament. És el que sosté la teva posició si el procediment continua."
+        },
+        {
+          "title": "El mapa d'escenaris i la teva cartera conciliada",
+          "body": "Què pot passar a partir d'aquí i què implicaria cada sortida. La cartera queda conciliada i et serveix per als exercicis següents."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents sobre el requeriment d'Hisenda",
+      "items": [
+        {
+          "q": "Quin termini tinc per respondre un requeriment d'Hisenda?",
+          "a": "L'habitual en un requeriment d'informació és de deu dies hàbils des de la notificació, tot i que mana el que digui la mateixa carta. Compta des de la data de notificació, no des que obres el document, i a la seu electrònica s'entén notificat als deu dies naturals d'haver-se posat a la teva disposició encara que no hi hagis entrat. El primer que fem és calcular la teva data límit real."
+        },
+        {
+          "q": "Puc demanar una ampliació de termini?",
+          "a": "En alguns procediments es pot demanar, i convé valorar-ho quan la reconstrucció portarà més temps del disponible. No és automàtica ni es concedeix sempre, així que es prepara amb criteri i com més aviat millor."
+        },
+        {
+          "q": "M'ha arribat una carta o un avís d'Hisenda, és un requeriment?",
+          "a": "No sempre. Hi ha cartes informatives, campanyes d'avís que conviden a revisar la teva declaració, requeriments d'informació i comprovacions limitades. Cadascuna té un abast i un termini diferents. Si ens la llegeixes o ens l'envies, et diem al moment què és i què exigeix."
+        },
+        {
+          "q": "I si contesto jo i us truco només si es complica?",
+          "a": "Pots, però el que aportis queda a l'expedient i condiciona el que vingui després. Si contestaràs pel teu compte, almenys assegura't que les teves xifres són reconstruïbles i coherents amb el que vas declarar."
+        },
+        {
+          "q": "No tinc l'històric complet d'un exchange que va tancar",
+          "a": "És d'allò més habitual. La reconstrucció es basa en el que sí que existeix: el rastre on-chain de les teves wallets, els extractes bancaris d'entrades i sortides a euros, correus de confirmació i dades parcials de tercers. No sempre s'arriba al cent per cent, però sí a una posició documentada i coherent, que és el que es pot defensar."
+        },
+        {
+          "q": "Acabarà en sanció?",
+          "a": "No es pot anticipar, i desconfia de qui digui que ho sap. El que sí que es pot fer és construir la millor posició documentada amb les dades que hi ha. Si arriba un expedient sancionador, es defensa a part; ho expliquem a la pàgina d'inspecció i sancions d'Hisenda per criptomonedes."
+        },
+        {
+          "q": "Quant costa respondre un requeriment?",
+          "a": "La reconstrucció de les teves xifres segueix els nostres trams: Plataforma única, 250 €, si tota la teva operativa és en un exchange; Multiexchange, 350 €, amb dos o tres exchanges; Cartera mixta, 450 €, si combines exchanges amb wallets, DeFi, NFT o accions fins a tres fonts; i Cartera complexa, des de 700 €. La contestació davant l'AEAT es pressuposta a part tan bon punt llegim la notificació. Tens el detall a la pàgina de preus."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Quant costa",
+    "entrada": "Abans de contestar cal tenir les xifres. El que costa reconstruir-les depèn de quantes fonts de dades cal casar, no del que et reclamin.",
+    "nota": "La reconstrucció de les teves xifres segueix aquests trams. La contestació i la representació davant l'AEAT es pressuposten a part, tan bon punt hem llegit la notificació."
+  },
+  "cierre": {
+    "h2": "El termini no espera",
+    "body": "Si tens la notificació al davant, el més útil que pots fer ara és dir-nos la data i què et demanen. En cinc minuts saps quin procediment és, quants dies hàbils et queden de debò i què cal reunir.",
+    "button": {
+      "label": "Enviar el meu cas"
+    }
+  },
+  "seo": {
+    "title": "Requeriment d'Hisenda per criptomonedes | Cleriontax",
+    "description": "T'ha arribat un requeriment d'Hisenda per criptomonedes? Què significa, quin termini tens per respondre i què reconstruir abans de contestar.",
+    "keywords": [
+      "requeriment hisenda criptomonedes",
+      "requeriment aeat criptomonedes",
+      "respondre requeriment hisenda criptomonedes",
+      "carta hisenda criptomonedes",
+      "notificació hisenda criptomonedes",
+      "avís hisenda criptomonedes",
+      "hisenda em reclama criptomonedes",
+      "termini respondre requeriment hisenda",
+      "requeriment informació criptomonedes",
+      "comprovació limitada criptomonedes"
+    ]
+  }
+}

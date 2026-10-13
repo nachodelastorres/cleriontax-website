@@ -1,0 +1,228 @@
+{
+  "title": "Regularizar criptomonedas no declaradas",
+  "slug": "regularizar-criptomonedas",
+  "nav": "Regularizar criptomonedas",
+  "excerpt": "Cómo regularizar criptomonedas que no declaraste en años anteriores: qué ejercicios siguen abiertos, qué recargo se aplica según cuándo presentes y por qué adelantarte a la AEAT cambia el resultado.",
+  "hero": {
+    "etiqueta": "Antes de que te lo reclamen",
+    "h1": "Regularizar criptomonedas que no declaraste",
+    "subheading": "Si operaste con cripto en años anteriores y no lo declaraste, o lo declaraste mal, todavía puedes presentarlo tú. Mientras no llegue un requerimiento, regularizar cuesta un recargo y no una sanción. Reconstruimos tus cifras ejercicio por ejercicio y te decimos qué hay que presentar antes de presentar nada.",
+    "cta": {
+      "label": "Pedir presupuesto",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Ver precios",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "Tu situación" },
+    { "id": "la-diferencia", "label": "Adelantarte o esperar" },
+    { "id": "el-reloj", "label": "Cuánto cuesta esperar" },
+    { "id": "que-presentar", "label": "Qué se presenta" },
+    { "id": "como-resolvemos", "label": "Cómo lo hacemos" },
+    { "id": "que-necesitamos", "label": "Qué necesitamos" },
+    { "id": "precio", "label": "Precio" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "No declaraste tus criptomonedas: qué hacer ahora",
+      "fondo": "blanco",
+      "body": "Compraste cripto hace años, operaste y quizá vendiste. Nadie te dijo que cambiar un token por otro tributaba aunque no sacaras euros, o lo diste por hecho hasta que leíste lo contrario. A veces se descubre al revés: declaras bien el último ejercicio y te das cuenta de que los anteriores no cuadran.\n\nTiene una salida ordenada. Mientras la AEAT no te haya requerido nada, puedes regularizar por tu cuenta, y la ley trata de forma muy distinta a quien se adelanta que a quien espera a que le llamen.\n\nLo que no conviene es quedarse quieto. Los exchanges ya informan a Hacienda de forma automática, y con DAC8 ese intercambio se amplía. El cruce de datos ya no depende de que alguien mire tu expediente a mano."
+    },
+    {
+      "id": "la-tesis",
+      "fondo": "azul",
+      "cita": {
+        "texto": "Hacienda ya tiene el dato. Lo que decides es quién llega primero.",
+        "pie": "Regularizar no te pone en un radar en el que ya estás. Hace que la cifra que queda en el expediente sea la tuya, reconstruida y documentada, y no la que calcule la Administración con lo que le haya reportado el exchange.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "la-diferencia",
+      "h2": "Regularización voluntaria frente a que te lo reclamen",
+      "fondo": "papel",
+      "entrada": "La cuota que debías es la misma en los dos casos. Todo lo demás cambia.",
+      "columnas": [
+        {
+          "titulo": "Regularizas tú",
+          "correcta": true,
+          "items": [
+            "Presentas por iniciativa propia la declaración del ejercicio que faltaba o la que corrige la que hiciste",
+            "Se aplica un recargo por presentación fuera de plazo, que crece con el tiempo",
+            "No hay sanción, porque no ha mediado requerimiento previo",
+            "Decides el calendario y el orden de los ejercicios",
+            "La cifra que queda en el expediente es la tuya, con su criterio documentado"
+          ]
+        },
+        {
+          "titulo": "Esperas a que llegue el requerimiento",
+          "correcta": false,
+          "items": [
+            "La AEAT abre el procedimiento y marca los plazos",
+            "A la cuota se suman intereses de demora",
+            "Puede abrirse un expediente sancionador aparte",
+            "Se liquida con los datos de la Administración, no con los tuyos",
+            "Rebatirlo exige reconstruir igualmente tu operativa, pero con días hábiles contados"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el-reloj",
+      "h2": "Cuánto cuesta esperar",
+      "fondo": "blanco",
+      "entrada": "Recargos del artículo 27 de la Ley General Tributaria cuando presentas fuera de plazo sin requerimiento previo. Se cuentan desde el día en que terminó el plazo de declaración de ese ejercicio. Son las magnitudes generales; el cálculo exacto depende de tu caso.",
+      "hitos": [
+        {
+          "cuando": "Primer mes",
+          "titulo": "Recargo del 1 %",
+          "body": "Sobre la cuota que resulte de la declaración, sin intereses de demora ni sanción."
+        },
+        {
+          "cuando": "Hasta 12 meses",
+          "titulo": "Un punto más por cada mes completo",
+          "body": "El recargo sube un punto porcentual por cada mes entero de retraso. Cada mes que pasa sin presentar tiene un coste concreto."
+        },
+        {
+          "cuando": "Más de 12 meses",
+          "titulo": "Recargo del 15 % e intereses",
+          "body": "A partir del año, el recargo se fija en el 15 % y se suman intereses de demora desde el día siguiente a esos doce meses. Si ingresas en plazo y se cumplen las condiciones legales, el recargo puede reducirse un 25 %."
+        },
+        {
+          "cuando": "Con requerimiento",
+          "titulo": "Deja de ser voluntario",
+          "body": "Si la AEAT te notifica antes cualquier actuación sobre ese ejercicio, ya no hay recargo: hay cuota, intereses de demora y la posible apertura de un expediente sancionador, con sanciones que con carácter general parten del 50 % de lo que se dejó de ingresar.",
+          "critico": true
+        }
+      ]
+    },
+    {
+      "id": "que-presentar",
+      "h2": "Declaración complementaria o rectificación: qué se presenta en cada caso",
+      "fondo": "papel",
+      "entrada": "Regularizar no siempre es pagar más. Depende de qué falta y de hacia dónde sale la diferencia.",
+      "items": [
+        {
+          "title": "No declaraste nada de cripto ese año",
+          "body": "Se presenta la declaración del ejercicio con las ganancias y pérdidas reconstruidas. Si la presentaste sin incluir la cripto, se corrige esa declaración para añadirla."
+        },
+        {
+          "title": "Lo declaraste, pero mal",
+          "body": "Permutas que no incluiste, costes de adquisición que no eran, transferencias entre tus wallets contadas como ventas. Se rectifica el ejercicio con las cifras correctas, salgan a pagar o a devolver."
+        },
+        {
+          "title": "La diferencia sale a tu favor",
+          "body": "Pasa con pérdidas que no declaraste o con ganancias infladas por un informe automático. Corregirlo dentro del plazo de prescripción te permite recuperar lo pagado de más o dejar las pérdidas listas para compensar."
+        },
+        {
+          "title": "Ejercicios recientes y antiguos",
+          "body": "En el IRPF de los ejercicios más recientes se usa la autoliquidación rectificativa, que sirve en los dos sentidos. En ejercicios anteriores se sigue la vía de la declaración complementaria o de la solicitud de rectificación. Te decimos cuál toca en cada año."
+        }
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Cómo regularizamos tus criptomonedas",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Reconstruimos desde tu primera compra",
+          "body": "Sin el histórico anterior no hay coste de adquisición fiable, y sin él la ganancia sale inflada. Se empieza por el origen aunque ese año esté prescrito: reconstruir no es lo mismo que declarar."
+        },
+        {
+          "title": "Separamos los ejercicios abiertos de los prescritos",
+          "body": "Con carácter general, Hacienda puede revisar los cuatro últimos ejercicios cuyo plazo de declaración ya terminó, salvo que alguna actuación haya interrumpido ese plazo. Lo calculamos con las fechas reales de tu caso."
+        },
+        {
+          "title": "Cuantificamos cada ejercicio por separado",
+          "body": "Cuota, recargo según la fecha de presentación y, si los hay, intereses. Ves el coste total para Hacienda antes de decidir nada."
+        },
+        {
+          "title": "Decides con las cifras delante",
+          "body": "Te explicamos las opciones y sus consecuencias, también las desfavorables. Regularizar es una decisión tuya y conviene tomarla con números, no por miedo."
+        },
+        {
+          "title": "Presentamos y archivamos la prueba",
+          "body": "Las declaraciones se presentan en el orden que conviene, y la documentación que sostiene cada cifra queda guardada por si algún ejercicio se revisa más adelante."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Qué necesitamos de ti",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Todo el histórico que conserves</strong>, desde la primera compra: CSV de los exchanges, claves API de solo lectura y direcciones públicas de tus wallets. Nunca claves privadas.",
+        "<strong>Las declaraciones que sí presentaste</strong> en los ejercicios afectados.",
+        "<strong>Extractos bancarios</strong> de las entradas y salidas a euros. En los tramos antiguos suelen ser la prueba más sólida.",
+        "<strong>Cualquier rastro de plataformas que ya no existen:</strong> correos de registro, confirmaciones, capturas antiguas.",
+        "<strong>Si ya te ha llegado una carta de la AEAT</strong>, la regularización deja de ser voluntaria y la estrategia cambia. En ese caso, mira <a href=\"/requerimiento-hacienda-criptomonedas\">qué hacer con un requerimiento de Hacienda</a>."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes sobre regularizar criptomonedas",
+      "items": [
+        {
+          "q": "¿Si regularizo me pongo en el punto de mira de Hacienda?",
+          "a": "Es el miedo más habitual. Los exchanges ya reportan a la AEAT y con DAC8 ese flujo crece, así que el dato existe aunque tú no hagas nada. Regularizar hace que llegues antes que la Administración, con recargo en lugar de sanción y con tus propias cifras."
+        },
+        {
+          "q": "¿Cuántos años atrás tengo que regularizar?",
+          "a": "Con carácter general, el derecho de Hacienda a liquidar prescribe a los cuatro años desde que terminó el plazo de declaración, y se interrumpe con cualquier actuación notificada. Pero para calcular bien tus costes de adquisición hay que reconstruir desde el origen, incluidos los años prescritos, aunque esos no se declaren."
+        },
+        {
+          "q": "Ya me ha llegado una carta de Hacienda. ¿Puedo regularizar todavía?",
+          "a": "Para el ejercicio y el concepto que te requieren, ya no hay regularización voluntaria: hay que responder al procedimiento, y eso se trata en nuestra página sobre el requerimiento de Hacienda por criptomonedas. Otros ejercicios no afectados por la carta sí pueden seguir regularizándose; conviene revisarlo cuanto antes."
+        },
+        {
+          "q": "No tengo el histórico de casi nada",
+          "a": "Es lo normal en operativa antigua. Se reconstruye con lo que sí existe: rastro on-chain de las wallets, extractos bancarios de compras y ventas contra euros y correos de confirmación. No siempre se llega al cien por cien, pero sí a una posición documentada, y esa es la que se puede defender."
+        },
+        {
+          "q": "¿Cuánto cuesta regularizar mis criptomonedas con vosotros?",
+          "a": "Nuestro trabajo tiene precio cerrado según las fuentes de datos que haya que reconciliar: Plataforma única, 250 €; Multiexchange, 350 €; Cartera mixta, 450 €; y Cartera compleja, desde 700 €. Te damos el presupuesto de todos los ejercicios antes de empezar; tienes el detalle en la página de precios. Lo que pagues a Hacienda (cuota, recargo e intereses, si los hay) va aparte, y te lo cuantificamos antes de presentar."
+        },
+        {
+          "q": "¿Puedo aplazar o fraccionar lo que salga a pagar?",
+          "a": "Sí, el aplazamiento y el fraccionamiento de deudas tributarias se solicitan por los cauces habituales. Ten en cuenta que pueden afectar a la reducción del recargo, así que si el importe es alto conviene plantearlo desde el principio."
+        },
+        {
+          "q": "¿Merece la pena si la cuota va a ser pequeña?",
+          "a": "Casi siempre, porque el problema rara vez es la cuota de ese año: sin regularizar arrastras un coste de adquisición mal calculado a todos los ejercicios siguientes. Se corrige una vez o se paga cada año."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Cuánto cuesta regularizar tus criptomonedas",
+    "entrada": "El precio de reconstruir tus cifras depende de cuántas fuentes de datos hay que reconciliar, no de cuánto debas a Hacienda. Lo sabes antes de empezar.",
+    "nota": "Lo que pagues a la AEAT —cuota, recargo e intereses, si los hay— va aparte, y te lo cuantificamos antes de presentar nada."
+  },
+  "cierre": {
+    "h2": "Cuanto antes lo mires, menos cuesta",
+    "body": "Cuéntanos desde cuándo operas, en qué plataformas y qué ejercicios crees que están sin declarar. Te decimos qué está prescrito, qué hay que regularizar y cuánto costaría hacerlo ahora frente a dentro de unos meses.",
+    "button": {
+      "label": "Pedir presupuesto"
+    }
+  },
+  "seo": {
+    "title": "Regularizar criptomonedas no declaradas | Cleriontax",
+    "description": "Regulariza las criptomonedas que no declaraste antes de que Hacienda te requiera: ejercicios abiertos, recargos, declaración complementaria y precio cerrado.",
+    "keywords": [
+      "regularizar criptomonedas",
+      "regularizar criptomonedas hacienda",
+      "declaración complementaria criptomonedas",
+      "no declaré criptomonedas años anteriores",
+      "regularización voluntaria criptomonedas",
+      "criptomonedas sin declarar qué hacer",
+      "rectificar declaración criptomonedas",
+      "recargo declaración extemporánea criptomonedas"
+    ]
+  }
+}

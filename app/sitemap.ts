@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
 import clustersConfig from '@/messages/blog-posts/clusters-config.json';
 import { SITE_URL, LOCALES } from '@/lib/site';
-import { SITUACIONES_VIVAS } from '@/lib/situaciones';
+import { PAGINAS } from '@/lib/paginas';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = SITE_URL;
@@ -11,24 +11,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Obtener todos los posts del blog
   const blogPosts = getAllBlogPosts();
 
-  // Servicios dinámicos
-  // Las cuatro líneas del manual de marca v1.1, §02.
-  const serviceSlugs = [
-    'informe-fiscal-criptomonedas',
-    'declarar-criptomonedas',
-    'litigacion-fiscal-criptomonedas',
-    'asesoria-fiscal-criptomonedas',
-  ];
-
   // Clusters temáticos
   const clusterSlugs = clustersConfig.clusters.map(c => c.id);
 
   // Páginas estáticas principales
   const staticPages = [
     '',
-    '/servicios',
-    '/situaciones',
-    '/metodo',
+    '/precios',
     '/despachos',
     '/sobre-nosotros',
     '/contacto',
@@ -81,46 +70,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   /*
-   * Capa 2 — las situaciones. Solo las que tienen contenido escrito:
-   * SITUACIONES_VIVAS es lo que existe hoy, no el registro completo, para no
-   * anunciar en el sitemap una landing que todavía no está redactada.
+   * Las páginas de servicio: una por intención de búsqueda, en la raíz. Son
+   * las de más valor después de la home.
    */
-  const situacionUrls: MetadataRoute.Sitemap = [];
+  const paginaUrls: MetadataRoute.Sitemap = [];
 
   locales.forEach(locale => {
-    SITUACIONES_VIVAS.forEach(situacion => {
-      situacionUrls.push({
-        url: `${baseUrl}/${locale}/situaciones/${situacion.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        // Los casos con plazo administrativo son la entrada de más valor.
-        priority: situacion.urgente ? 0.9 : 0.8,
-        alternates: {
-          languages: {
-            es: `${baseUrl}/es/situaciones/${situacion.slug}`,
-            en: `${baseUrl}/en/situaciones/${situacion.slug}`,
-            ca: `${baseUrl}/ca/situaciones/${situacion.slug}`,
-          },
-        },
-      });
-    });
-  });
-
-  // Generar URLs para todos los servicios dinámicos en todos los idiomas
-  const serviceUrls: MetadataRoute.Sitemap = [];
-
-  locales.forEach(locale => {
-    serviceSlugs.forEach(slug => {
-      serviceUrls.push({
-        url: `${baseUrl}/${locale}/servicios/${slug}`,
+    PAGINAS.forEach(pagina => {
+      paginaUrls.push({
+        url: `${baseUrl}/${locale}/${pagina.slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.9,
         alternates: {
           languages: {
-            es: `${baseUrl}/es/servicios/${slug}`,
-            en: `${baseUrl}/en/servicios/${slug}`,
-            ca: `${baseUrl}/ca/servicios/${slug}`,
+            es: `${baseUrl}/es/${pagina.slug}`,
+            en: `${baseUrl}/en/${pagina.slug}`,
+            ca: `${baseUrl}/ca/${pagina.slug}`,
           },
         },
       });
@@ -174,8 +140,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...staticUrls,
-    ...serviceUrls,
-    ...situacionUrls,
+    ...paginaUrls,
     ...clusterUrls,
     ...blogUrls,
     ...legalUrls,

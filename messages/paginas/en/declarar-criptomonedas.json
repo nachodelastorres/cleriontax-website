@@ -1,0 +1,266 @@
+{
+  "title": "Declaring cryptocurrency on your 2026 Spanish tax return",
+  "slug": "declarar-criptomonedas",
+  "nav": "Declare cryptocurrency",
+  "excerpt": "What in your crypto activity is taxable —including token swaps, staking and airdrops—, how it fits into the 2026 income tax return and what you need to gather. Every figure, backed up.",
+  "hero": {
+    "etiqueta": "2026 income tax campaign",
+    "h1": "Declaring cryptocurrency on your tax return, with every figure backed up",
+    "subheading": "We reconcile your activity from your very first purchase, calculate gains, losses and income using FIFO and hand you the figures ready for your return, with the detail behind them in case the Spanish Tax Agency asks.",
+    "cta": {
+      "label": "Get a quote",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "See prices",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "que-tributa", "label": "What is taxable" },
+    { "id": "el-malentendido", "label": "The misconception" },
+    { "id": "en-la-renta", "label": "How it is declared" },
+    { "id": "staking-airdrops", "label": "Staking and airdrops" },
+    { "id": "perdidas", "label": "Losses" },
+    { "id": "calendario", "label": "Calendar" },
+    { "id": "como-lo-hacemos", "label": "How we do it" },
+    { "id": "que-necesitamos", "label": "What we need" },
+    { "id": "precio", "label": "Price" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+  "sections": [
+    {
+      "id": "que-tributa",
+      "h2": "What is taxable when you declare cryptocurrency, and it is not just selling",
+      "fondo": "azul",
+      "entrada": "The four operations people overlook most. None of them requires you to have cashed out to your bank.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Selling for euros",
+          "body": "The obvious case: a capital gain or loss for the difference between the transfer value and the acquisition value."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Swapping one token for another",
+          "body": "It is an exchange and it generates a capital gain or loss even if you never go through euros. It is the one most often forgotten."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Earning from staking or lending",
+          "body": "Rewards for lending out your crypto-assets are income, not gains, and they are taxed when you receive them, not when you sell them."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Receiving without buying",
+          "body": "Airdrops, forks and protocol rewards. Their value on the date received becomes your acquisition cost when you sell them."
+        }
+      ]
+    },
+    {
+      "id": "el-malentendido",
+      "h2": "The misconception that costs the most",
+      "fondo": "papel",
+      "entrada": "Almost everyone arrives with one of these ideas. All of them cause problems later.",
+      "columnas": [
+        {
+          "titulo": "What many people believe",
+          "correcta": false,
+          "items": [
+            "“As long as I don’t convert to euros, it isn’t taxed”",
+            "“I’m at a loss, so I don’t have to declare anything”",
+            "“Nobody can see what is in my private wallet”",
+            "“If the exchange doesn’t give me a tax report, there’s nothing to declare”"
+          ]
+        },
+        {
+          "titulo": "How it actually works",
+          "correcta": true,
+          "items": [
+            "Token-to-token swaps are taxed the same, without going through euros",
+            "Losses must be declared too: it is the only way to offset them later",
+            "The blockchain is public and platforms report to the authorities",
+            "The obligation to declare is yours, whether or not the exchange gives you a report"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-la-renta",
+      "h2": "How to declare cryptocurrency on the 2026 income tax return",
+      "fondo": "blanco",
+      "body": "The return filed in 2026 covers the 2025 tax year. Gains and losses from selling or swapping crypto-assets go in the specific virtual currency section within capital gains and losses, operation by operation or grouped by asset, with their acquisition and transfer values.\n\nThat result is added to the savings tax base, which has its own scale. Staking rewards and lending interest follow a different path: they are investment income, also in the savings base, but with different offsetting rules.\n\nAcquisition cost is calculated using FIFO: the first units you bought are deemed the first sold. That is why the history of the year you are declaring is not enough. Without earlier purchases, the cost comes out incomplete and the gain inflated.",
+      "bullets": [
+        "<strong>Up to €6,000:</strong> 19%",
+        "<strong>€6,000 to €50,000:</strong> 21%",
+        "<strong>€50,000 to €200,000:</strong> 23%",
+        "<strong>€200,000 to €300,000:</strong> 27%",
+        "<strong>Over €300,000:</strong> 30%"
+      ]
+    },
+    {
+      "id": "staking-airdrops",
+      "h2": "Declaring staking, airdrops and DeFi to the Spanish Tax Agency",
+      "fondo": "azul",
+      "entrada": "What is not a purchase or sale is declared too, and each type of activity has its own treatment.",
+      "bullets": [
+        "<strong>Staking:</strong> rewards are taxed when received, at their value on that date. That value becomes their acquisition cost, so when you sell them you are only taxed on the later difference.",
+        "<strong>Airdrops:</strong> the value is fixed on the date received, which will be your cost when you sell. And genuine airdrops are separated from spam tokens you never asked for.",
+        "<strong>Lending:</strong> interest earned is income. Collateral liquidations have their own effects and should be reviewed one by one.",
+        "<strong>Liquidity pools and yield farming:</strong> entry, exit and the token representing your position are the delicate part. Where there is no clear administrative criterion, a reasonable one is applied, documented and kept consistent across all years.",
+        "<strong>Tokens without a deep market:</strong> they are taxed anyway. What matters is the price source, because it is the first thing questioned in a review."
+      ]
+    },
+    {
+      "id": "perdidas",
+      "h2": "Declaring losses so you can offset them",
+      "fondo": "papel",
+      "entrada": "A declared loss is offset against gains over the following four tax years, including gains on shares or funds. An undeclared loss does not exist. Sample data.",
+      "tabla": {
+        "titulo": "An old loss applied this year",
+        "periodo": "tax years 2022 to 2025",
+        "criterio": "FIFO",
+        "columnaConcepto": "Item",
+        "columnaValor": "Amount",
+        "filas": [
+          { "concepto": "Loss declared in 2022 on the sale of crypto-assets", "importe": -12400.0 },
+          { "concepto": "Offset in tax years 2023 and 2024", "importe": 3100.0 },
+          { "concepto": "Balance pending at the start of 2025", "importe": -9300.0 },
+          { "concepto": "2025 gain on the sale of crypto-assets and shares", "importe": 14200.0 },
+          { "concepto": "Taxable gain after applying the pending balance", "importe": 4900.0 }
+        ]
+      }
+    },
+    {
+      "id": "calendario",
+      "h2": "Calendar for declaring cryptocurrency",
+      "fondo": "blanco",
+      "entrada": "The Spanish Tax Agency publishes the exact dates every year. This is the rhythm, and rebuilding your activity takes weeks, not days.",
+      "hitos": [
+        {
+          "cuando": "January–March",
+          "titulo": "Form 721",
+          "body": "If on 31 December you held more than €50,000 in crypto custodied abroad, it is reported before the income tax return. We explain it on the Form 721 page."
+        },
+        {
+          "cuando": "February–March",
+          "titulo": "Gather and reconcile",
+          "body": "This is the time to export histories and rebuild your activity. Starting here is what lets you file without rushing."
+        },
+        {
+          "cuando": "April",
+          "titulo": "The income tax campaign opens",
+          "body": "You can file from day one with your crypto figures already closed, instead of correcting the draft on the fly."
+        },
+        {
+          "cuando": "End of June",
+          "titulo": "Voluntary deadline ends",
+          "body": "Direct debit of the payment closes a few days earlier. After that, the return carries a surcharge.",
+          "critico": true
+        },
+        {
+          "cuando": "Afterwards",
+          "titulo": "Late filing",
+          "body": "Filing late without a prior request from the Tax Agency carries surcharges that grow with the delay. It is still better than waiting for the Tax Agency to ask."
+        }
+      ]
+    },
+    {
+      "id": "como-lo-hacemos",
+      "h2": "How we do it",
+      "steps": [
+        {
+          "title": "We gather and reconcile your activity from the start",
+          "body": "Exchanges, wallets and protocols from your first purchase, not just the year you are declaring. We match every transfer between your own accounts so it does not count as a sale."
+        },
+        {
+          "title": "We classify operation by operation",
+          "body": "What is a sale, what is a swap, what is income and what is a zero-cost acquisition. Anything that does not fit a rule is reviewed by hand."
+        },
+        {
+          "title": "We calculate with FIFO and apply offsets",
+          "body": "On the already reconciled portfolio, with pending losses from previous years and the rest of your assets, because the offsetting rules link them."
+        },
+        {
+          "title": "We explain the options before closing",
+          "body": "When the rules allow more than one correct way to declare something, we show you the effect of each and you decide with the information in front of you."
+        },
+        {
+          "title": "We hand you the figures and their backing",
+          "body": "What goes in each section of the return, the report with per-operation detail and the criteria memo that justifies it."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Exports from your exchanges</strong> from your first operation: CSV or read-only API keys. Never private keys.",
+        "<strong>Public addresses of your wallets</strong>, including ones you no longer use.",
+        "<strong>Which DeFi protocols you have used</strong>, even roughly.",
+        "<strong>Your previous returns</strong>, especially if you had losses pending offset.",
+        "<strong>Bank statements</strong> showing money in and out in euros.",
+        "<strong>If you hold shares or funds</strong>, those too: they go on the same return and offset each other."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "I have only bought and never sold. Do I have to declare my cryptocurrency?",
+          "a": "Buying and holding does not create a gain or loss. But it is worth checking whether there were token swaps you did not recognise as such, staking rewards or airdrops, or whether you exceed €50,000 on foreign platforms, which requires filing Form 721."
+        },
+        {
+          "q": "I lost money. Why should I declare?",
+          "a": "To be able to offset that loss against gains this year and in the following four, including gains on shares or funds. If you do not declare it, it does not exist for offsetting purposes."
+        },
+        {
+          "q": "Am I taxed on staking even if I have not sold the rewards?",
+          "a": "Yes. Rewards are taxed when received, at their value on that date. In return, that value becomes your acquisition cost and when you sell you are only taxed on the difference."
+        },
+        {
+          "q": "I hold crypto on foreign exchanges. Does anything change?",
+          "a": "Gains are declared the same way on the income tax return. What is added is a reporting obligation: if the balance on foreign platforms exceeds €50,000 on 31 December, Form 721 must be filed between January and March. It is explained on the Form 721 page."
+        },
+        {
+          "q": "I have been trading for years and never declared. Do I declare just this year?",
+          "a": "It is worth looking at before you file, because declaring this year properly makes the earlier years visible. There is an orderly way out: we explain it on the page about regularising cryptocurrency."
+        },
+        {
+          "q": "How much does it cost to declare cryptocurrency?",
+          "a": "It depends on how many data sources need reconciling. Single platform, with all your activity on one exchange: €250. Multi-exchange, two or three exchanges: €350. Mixed portfolio, with your own wallets, DeFi, NFTs or shares up to three sources: €450. Complex portfolio: from €700. We confirm the tier before starting; the detail is on the pricing page."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "How much it costs to declare cryptocurrency",
+    "entrada": "The price is set by how many data sources need reconciling, not by how much you have earned. You know it before we start.",
+    "nota": "If you have losses from previous years or shares on the same return, tell us in the assessment and we will take it into account when confirming the tier."
+  },
+  "cierre": {
+    "h2": "The sooner you start, the calmer you file",
+    "body": "Tell us where you have traded, how many operations you have and which tax years concern you. We confirm the price tier and timeline before we start.",
+    "button": {
+      "label": "Get a quote"
+    }
+  },
+  "seo": {
+    "title": "Declare cryptocurrency on your 2026 tax return | Cleriontax",
+    "description": "Declaring cryptocurrency on the 2026 Spanish tax return: swaps, staking, airdrops and losses, with FIFO and every figure backed up. Fixed price from €250.",
+    "keywords": [
+      "declare cryptocurrency spain",
+      "how to declare cryptocurrency in spain",
+      "declare crypto tax return spain 2026",
+      "declare crypto to spanish tax agency",
+      "declare crypto gains spain",
+      "declare staking spain",
+      "declare airdrops spain",
+      "crypto tax return service spain",
+      "help declaring cryptocurrency",
+      "cost to declare cryptocurrency"
+    ]
+  }
+}

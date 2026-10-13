@@ -17,44 +17,50 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // Redirección 301 para la URL antigua de asesoría fiscal
-      {
-        source: '/servicios/asesoria-fiscal',
-        destination: '/servicios/asesoria-fiscal-criptomonedas',
-        permanent: true,
-      },
-      {
-        // El parámetro va acotado a los idiomas reales a propósito: sin la
-        // restricción, `:locale` casa con cualquier primer segmento, `api`
-        // incluido, y /api/... acaba redirigido a una ruta que no existe.
-        source: '/:locale(es|en|ca)/servicios/asesoria-fiscal',
-        destination: '/:locale/servicios/asesoria-fiscal-criptomonedas',
-        permanent: true,
-      },
       /*
-       * Renombrado de las cuatro líneas de servicio (manual v1.1, §02).
-       * Los slugs antiguos describían el servicio hacia dentro; los nuevos
-       * usan la forma con la que el cliente lo busca. Permanentes porque el
-       * cambio es definitivo, y con el parámetro de idioma acotado para que
-       * no capturen /api ni ningún otro primer segmento.
+       * Las capas de servicios y situaciones desaparecen: cada búsqueda tiene
+       * ahora una sola página, en la raíz (lib/paginas.ts). Cada URL vieja va
+       * directa a su destino final, sin cadenas de saltos. Las de servicios
+       * están publicadas; las de situaciones y /metodo nunca llegaron a
+       * producción, pero se cubren igual por si alguien las enlazó.
+       *
+       * El parámetro de idioma va acotado a propósito: sin la restricción,
+       * `:locale` casa con cualquier primer segmento, `api` incluido.
+       * Las URLs sin idioma no hacen falta: el middleware les pone uno y la
+       * segunda petición ya cae aquí.
        */
-      {
-        source: '/:locale(es|en|ca)/servicios/analisis-carteras',
-        destination: '/:locale/servicios/informe-fiscal-criptomonedas',
+      ...[
+        // Servicios publicados y sus slugs anteriores
+        ['servicios', ''],
+        ['servicios/asesoria-fiscal', ''],
+        ['servicios/asesoria-fiscal-criptomonedas', ''],
+        ['servicios/seguimiento-cartera', ''],
+        ['servicios/analisis-carteras', 'informe-fiscal-criptomonedas'],
+        ['servicios/informe-fiscal-criptomonedas', 'informe-fiscal-criptomonedas'],
+        ['servicios/liquidaciones-fiscales', 'declarar-criptomonedas'],
+        ['servicios/declarar-criptomonedas', 'declarar-criptomonedas'],
+        ['servicios/litigacion-fiscal-criptomonedas', 'inspeccion-hacienda-criptomonedas'],
+        // Situaciones
+        ['situaciones', ''],
+        ['situaciones/requerimiento-de-hacienda', 'requerimiento-hacienda-criptomonedas'],
+        ['situaciones/recurrir-una-sancion', 'inspeccion-hacienda-criptomonedas'],
+        ['situaciones/inspeccion-por-criptomonedas', 'inspeccion-hacienda-criptomonedas'],
+        ['situaciones/regularizar-anos-anteriores', 'regularizar-criptomonedas'],
+        ['situaciones/errores-en-mi-informe-automatico', 'revisar-informe-koinly'],
+        ['situaciones/miles-de-transacciones', 'informe-fiscal-criptomonedas'],
+        ['situaciones/declarar-criptomonedas', 'declarar-criptomonedas'],
+        ['situaciones/modelo-721', 'modelo-721-criptomonedas'],
+        // Las dos situaciones informativas: su búsqueda es de blog
+        ['situaciones/compensar-perdidas', 'blog/perdidas-criptomonedas-compensar-declaracion'],
+        ['situaciones/defi-staking-airdrops', 'blog/fiscalidad-defi-espana'],
+        // Páginas internas retiradas
+        ['metodo', ''],
+        ['muestrario', ''],
+      ].map(([origen, destino]) => ({
+        source: `/:locale(es|en|ca)/${origen}`,
+        destination: destino ? `/:locale/${destino}` : '/:locale',
         permanent: true,
-      },
-      {
-        source: '/:locale(es|en|ca)/servicios/liquidaciones-fiscales',
-        destination: '/:locale/servicios/declarar-criptomonedas',
-        permanent: true,
-      },
-      {
-        // Seguimiento de cartera se absorbe como prestación dentro de
-        // asesoría fiscal: cuatro líneas se recuerdan, cinco se diluyen.
-        source: '/:locale(es|en|ca)/servicios/seguimiento-cartera',
-        destination: '/:locale/servicios/asesoria-fiscal-criptomonedas',
-        permanent: true,
-      },
+      })),
       // Redirect /contact → /contacto (el slug real de la página)
       {
         source: '/contact',

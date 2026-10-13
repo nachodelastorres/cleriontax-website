@@ -1,0 +1,266 @@
+{
+  "title": "Declarar criptomonedes a la renda 2026",
+  "slug": "declarar-criptomonedas",
+  "nav": "Declarar criptomonedes",
+  "excerpt": "Què tributa de la teva operativa cripto —també les permutes, l’staking i els airdrops—, com s’integra a la renda 2026 i què has de reunir. Cada xifra, justificada.",
+  "hero": {
+    "etiqueta": "Campanya de la renda 2026",
+    "h1": "Declarar criptomonedes a la renda, amb cada xifra justificada",
+    "subheading": "Reconciliem la teva operativa des de la primera compra, calculem guanys, pèrdues i rendiments amb criteri FIFO i et lliurem les xifres llestes per a la teva declaració, amb el detall que les sosté si Hisenda pregunta.",
+    "cta": {
+      "label": "Demanar pressupost",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Veure preus",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "que-tributa", "label": "Què tributa" },
+    { "id": "el-malentendido", "label": "El malentès" },
+    { "id": "en-la-renta", "label": "Com es declara" },
+    { "id": "staking-airdrops", "label": "Staking i airdrops" },
+    { "id": "perdidas", "label": "Pèrdues" },
+    { "id": "calendario", "label": "Calendari" },
+    { "id": "como-lo-hacemos", "label": "Com ho fem" },
+    { "id": "que-necesitamos", "label": "Què necessitem" },
+    { "id": "precio", "label": "Preu" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "que-tributa",
+      "h2": "Què tributa en declarar criptomonedes, i no és només vendre",
+      "fondo": "azul",
+      "entrada": "Les quatre operacions que més es passen per alt. Cap no exigeix que hagis tret euros al banc.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Vendre per euros",
+          "body": "El cas evident: guany o pèrdua patrimonial per la diferència entre el valor de transmissió i el d’adquisició."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Canviar un token per un altre",
+          "body": "És una permuta i genera un guany o una pèrdua patrimonial encara que no passis per euros en cap moment. És la que més s’oblida."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Cobrar per staking o lending",
+          "body": "Les recompenses per cedir els teus criptoactius són rendiments, no guanys, i s’imputen quan les reps, no quan les vens."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Rebre sense comprar",
+          "body": "Airdrops, forks i recompenses de protocols. El seu valor en la data de recepció serà el teu cost d’adquisició quan els venguis."
+        }
+      ]
+    },
+    {
+      "id": "el-malentendido",
+      "h2": "El malentès que surt més car",
+      "fondo": "papel",
+      "entrada": "Gairebé tothom arriba amb alguna d’aquestes idees. Totes generen problemes després.",
+      "columnas": [
+        {
+          "titulo": "El que molta gent creu",
+          "correcta": false,
+          "items": [
+            "«Mentre no ho passi a euros, no tributa»",
+            "«Com que vaig en pèrdues, no he de declarar res»",
+            "«El que tinc a la meva wallet privada no ho veu ningú»",
+            "«Si l’exchange no em dona informe fiscal, no hi ha res a declarar»"
+          ]
+        },
+        {
+          "titulo": "Com funciona en realitat",
+          "correcta": true,
+          "items": [
+            "La permuta entre tokens tributa igual, sense passar per euros",
+            "Les pèrdues també es declaren: és l’única manera de compensar-les després",
+            "La cadena és pública i les plataformes informen l’Administració",
+            "L’obligació de declarar és teva, hi hagi o no informe de l’exchange"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-la-renta",
+      "h2": "Com declarar criptomonedes a la renda 2026",
+      "fondo": "blanco",
+      "body": "La renda que es presenta el 2026 correspon a l’exercici 2025. Els guanys i les pèrdues per vendre o permutar criptoactius es declaren a l’apartat específic de monedes virtuals dins dels guanys i pèrdues patrimonials, operació a operació o agrupats per actiu, amb el seu valor d’adquisició i de transmissió.\n\nAquest resultat s’integra a la base imposable de l’estalvi, que té la seva pròpia escala. Les recompenses d’staking i els interessos de lending van per un altre camí: són rendiments del capital mobiliari, també a la base de l’estalvi, però amb regles de compensació diferents.\n\nEl cost d’adquisició es calcula amb criteri FIFO: les primeres unitats que vas comprar són les primeres que es consideren venudes. Per això no n’hi ha prou amb l’històric de l’any que declares. Sense les compres d’anys anteriors, el cost surt incomplet i el guany, inflat.",
+      "bullets": [
+        "<strong>Fins a 6.000 €:</strong> 19 %",
+        "<strong>De 6.000 a 50.000 €:</strong> 21 %",
+        "<strong>De 50.000 a 200.000 €:</strong> 23 %",
+        "<strong>De 200.000 a 300.000 €:</strong> 27 %",
+        "<strong>Més de 300.000 €:</strong> 30 %"
+      ]
+    },
+    {
+      "id": "staking-airdrops",
+      "h2": "Declarar staking, airdrops i DeFi a Hisenda",
+      "fondo": "azul",
+      "entrada": "El que no és una compravenda també es declara, i cada operativa té el seu tractament.",
+      "bullets": [
+        "<strong>Staking:</strong> les recompenses s’imputen quan es perceben, al seu valor en aquella data. Aquest valor passa a ser el seu cost d’adquisició, de manera que en vendre-les només tributes per la diferència posterior.",
+        "<strong>Airdrops:</strong> es fixa el valor en la data de recepció, que serà el teu cost quan els venguis. I se separa l’airdrop real de l’spam de tokens que mai no vas demanar.",
+        "<strong>Lending:</strong> els interessos cobrats són rendiments. Les liquidacions de garanties generen els seus propis efectes i convé revisar-les una per una.",
+        "<strong>Pools de liquiditat i yield farming:</strong> l’entrada, la sortida i el token que representa la teva posició són el punt delicat. On no hi ha criteri administratiu clar, se n’aplica un de raonable, es documenta i es manté en tots els exercicis.",
+        "<strong>Tokens sense mercat profund:</strong> s’imputen igualment. El que cal cuidar és la font del preu, perquè és el primer que es qüestiona si es revisa."
+      ]
+    },
+    {
+      "id": "perdidas",
+      "h2": "Declarar les pèrdues per poder compensar-les",
+      "fondo": "papel",
+      "entrada": "Una pèrdua declarada es compensa amb guanys durant els quatre exercicis següents, també amb els d’accions o fons. Una pèrdua no declarada no existeix. Dades d’exemple.",
+      "tabla": {
+        "titulo": "Una pèrdua antiga aplicada aquest any",
+        "periodo": "exercicis 2022 a 2025",
+        "criterio": "FIFO",
+        "columnaConcepto": "Concepte",
+        "columnaValor": "Import",
+        "filas": [
+          { "concepto": "Pèrdua declarada el 2022 per venda de criptoactius", "importe": -12400.0 },
+          { "concepto": "Compensada als exercicis 2023 i 2024", "importe": 3100.0 },
+          { "concepto": "Saldo pendent en començar el 2025", "importe": -9300.0 },
+          { "concepto": "Guany del 2025 per venda de criptoactius i accions", "importe": 14200.0 },
+          { "concepto": "Guany subjecte després d’aplicar el saldo pendent", "importe": 4900.0 }
+        ]
+      }
+    },
+    {
+      "id": "calendario",
+      "h2": "Calendari per declarar criptomonedes",
+      "fondo": "blanco",
+      "entrada": "Les dates exactes les publica l’AEAT cada any. El ritme és aquest, i la reconstrucció de la teva operativa porta setmanes, no dies.",
+      "hitos": [
+        {
+          "cuando": "Gener–març",
+          "titulo": "Model 721",
+          "body": "Si a 31 de desembre tenies més de 50.000 € en criptomonedes custodiades a l’estranger, s’informa abans que la renda. Ho expliquem a la pàgina del model 721."
+        },
+        {
+          "cuando": "Febrer–març",
+          "titulo": "Reunir i reconciliar",
+          "body": "És el moment d’exportar històrics i reconstruir l’operativa. Començar aquí és el que permet presentar sense presses."
+        },
+        {
+          "cuando": "Abril",
+          "titulo": "S’obre la campanya de la renda",
+          "body": "Pots presentar des del primer dia amb les xifres de cripto ja tancades, en lloc de corregir l’esborrany sobre la marxa."
+        },
+        {
+          "cuando": "Finals de juny",
+          "titulo": "Fi del termini voluntari",
+          "body": "La domiciliació del pagament tanca uns dies abans. Després, la declaració va amb recàrrec.",
+          "critico": true
+        },
+        {
+          "cuando": "Després",
+          "titulo": "Fora de termini",
+          "body": "Presentar tard sense requeriment previ comporta recàrrecs creixents segons el retard. Continua sent millor que esperar que pregunti Hisenda."
+        }
+      ]
+    },
+    {
+      "id": "como-lo-hacemos",
+      "h2": "Com ho fem",
+      "steps": [
+        {
+          "title": "Reunim i conciliem la teva operativa des de l’origen",
+          "body": "Exchanges, wallets i protocols des de la teva primera compra, no només l’any que declares. Casem cada transferència entre comptes teus perquè no compti com a venda."
+        },
+        {
+          "title": "Classifiquem operació a operació",
+          "body": "Què és venda, què és permuta, què és rendiment i què és adquisició sense cost. El que no encaixa en una regla es revisa a mà."
+        },
+        {
+          "title": "Calculem amb FIFO i apliquem compensacions",
+          "body": "Sobre la cartera ja conciliada, amb les pèrdues pendents d’exercicis anteriors i la resta dels teus actius, perquè les regles de compensació els relacionen."
+        },
+        {
+          "title": "T’expliquem les opcions abans de tancar",
+          "body": "Quan la norma admet més d’una manera correcta de declarar alguna cosa, t’ensenyem l’efecte de cadascuna i decideixes amb la informació al davant."
+        },
+        {
+          "title": "Et lliurem les xifres i el seu suport",
+          "body": "El que va a cada apartat de la renda, l’informe amb el detall per operació i la memòria de criteris que ho justifica."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Què necessitem de tu",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Exportacions dels teus exchanges</strong> des de la teva primera operació: CSV o claus API de només lectura. Mai claus privades.",
+        "<strong>Adreces públiques de les teves wallets</strong>, incloses les que ja no facis servir.",
+        "<strong>Quins protocols DeFi has fet servir</strong>, encara que sigui de manera aproximada.",
+        "<strong>Les teves declaracions anteriors</strong>, sobretot si vas tenir pèrdues pendents de compensar.",
+        "<strong>Extractes bancaris</strong> d’entrades i sortides a euros.",
+        "<strong>Si tens accions o fons</strong>, també: van a la mateixa declaració i es compensen entre si."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents",
+      "items": [
+        {
+          "q": "Només he comprat i no he venut res. He de declarar criptomonedes?",
+          "a": "Comprar i mantenir no genera guany ni pèrdua. Però convé revisar si hi va haver permutes entre tokens que no vas identificar com a tals, recompenses d’staking o airdrops, o si superes els 50.000 € en plataformes estrangeres, cosa que obliga a presentar el model 721."
+        },
+        {
+          "q": "He perdut diners. Per què he de declarar?",
+          "a": "Per poder compensar aquesta pèrdua amb guanys d’aquest exercici i dels quatre següents, inclosos els d’accions o fons. Si no la declares, no existeix a efectes de compensació."
+        },
+        {
+          "q": "Tributo per l’staking encara que no hagi venut les recompenses?",
+          "a": "Sí. Les recompenses s’imputen quan es perceben, al seu valor en aquella data. A canvi, aquest valor passa a ser el teu cost d’adquisició i en vendre-les només tributes per la diferència."
+        },
+        {
+          "q": "Tinc criptomonedes en exchanges estrangers. Canvia alguna cosa?",
+          "a": "Els guanys es declaren igual a la renda. El que s’hi afegeix és una obligació informativa: si el saldo en plataformes estrangeres supera els 50.000 € a 31 de desembre, cal presentar el model 721 entre gener i març. Ho tens explicat a la pàgina del model 721."
+        },
+        {
+          "q": "Fa anys que opero i no ho he declarat mai. Declaro només aquest any?",
+          "a": "Convé mirar-ho abans de presentar, perquè declarar bé aquest exercici fa visible l’anterior. Té una sortida ordenada: ho expliquem a la pàgina de regularitzar criptomonedes."
+        },
+        {
+          "q": "Quant costa declarar criptomonedes?",
+          "a": "Depèn de quantes fonts de dades calgui reconciliar. Plataforma única, amb tota la teva operativa en un exchange: 250 €. Multiexchange, de dos a tres exchanges: 350 €. Cartera mixta, amb wallets pròpies, DeFi, NFT o accions fins a tres fonts: 450 €. Cartera complexa: des de 700 €. Et confirmem el tram abans de començar; el detall és a la pàgina de preus."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Quant costa declarar criptomonedes",
+    "entrada": "El preu el marca quantes fonts de dades cal reconciliar, no quant hagis guanyat. Ho saps abans de començar.",
+    "nota": "Si tens pèrdues d’anys anteriors o accions a la mateixa declaració, digues-nos-ho al diagnòstic i ho tindrem en compte en confirmar el tram."
+  },
+  "cierre": {
+    "h2": "Com més aviat comencis, més tranquil presentes",
+    "body": "Explica’ns on has operat, quantes operacions tens i quins exercicis et preocupen. Et confirmem el tram de preu i el termini abans de començar.",
+    "button": {
+      "label": "Demanar pressupost"
+    }
+  },
+  "seo": {
+    "title": "Declarar criptomonedes a la renda 2026 | Cleriontax",
+    "description": "Declarar criptomonedes a la renda 2026: permutes, staking, airdrops i pèrdues, amb criteri FIFO i cada xifra justificada. Preu tancat des de 250 €.",
+    "keywords": [
+      "declarar criptomonedes",
+      "com declarar criptomonedes",
+      "declarar criptomonedes renda 2026",
+      "declarar criptomonedes hisenda",
+      "declarar guanys criptomonedes",
+      "declarar staking hisenda",
+      "declarar airdrops hisenda",
+      "servei declaració criptomonedes",
+      "ajuda declarar criptomonedes",
+      "quant costa declarar criptomonedes"
+    ]
+  }
+}

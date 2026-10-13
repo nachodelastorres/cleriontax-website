@@ -168,14 +168,27 @@ export interface Columna {
 }
 
 /** Dos columnas enfrentadas. Para contrastes del tipo «así sí / así no» (§15). */
-export function BloqueComparativa({ columnas }: { columnas: Columna[] }) {
+const ETIQUETAS_COMPARATIVA: Record<string, { si: string; no: string }> = {
+  es: { si: "Así sí", no: "Así no" },
+  ca: { si: "Així sí", no: "Així no" },
+  en: { si: "The right way", no: "The wrong way" },
+};
+
+export function BloqueComparativa({
+  columnas,
+  locale = "es",
+}: {
+  columnas: Columna[];
+  locale?: string;
+}) {
+  const etiquetas = ETIQUETAS_COMPARATIVA[locale] ?? ETIQUETAS_COMPARATIVA.es;
   return (
     <div className="grid gap-px border border-niebla bg-niebla md:grid-cols-2">
       {columnas.map((c, i) => (
         <div key={i} className="bg-blanco p-7">
           <div className="flex items-center gap-3">
             <ChipEstado estado={c.correcta ? "conciliado" : "revision"}>
-              {c.correcta ? "Así sí" : "Así no"}
+              {c.correcta ? etiquetas.si : etiquetas.no}
             </ChipEstado>
           </div>
           <h3 className="mt-5 text-subtitulo text-azul">{c.titulo}</h3>

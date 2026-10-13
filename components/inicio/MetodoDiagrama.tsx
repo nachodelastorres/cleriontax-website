@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Angulo, AnguloInverso, Arco, CuartoDeCirculo } from "@/components/brand/Formas";
 import { Cabecera } from "@/components/secciones/Bloques";
-import ButtonLink from "@/components/ui/ButtonLink";
 import { formatearNumero } from "@/lib/format";
 
 /**
@@ -117,12 +116,6 @@ export default async function MetodoDiagrama({ locale }: { locale: string }) {
 
           <figcaption className="text-nota text-niebla lg:col-span-3">{t("nota")}</figcaption>
         </figure>
-
-        <div className="mt-10">
-          <ButtonLink href="/metodo" variant="secundaria-inversa" size="lg">
-            {t("accion")}
-          </ButtonLink>
-        </div>
       </div>
     </section>
   );

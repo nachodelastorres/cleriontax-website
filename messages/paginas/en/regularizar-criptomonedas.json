@@ -1,0 +1,228 @@
+{
+  "title": "Regularising undeclared crypto in Spain",
+  "slug": "regularizar-criptomonedas",
+  "nav": "Regularise crypto",
+  "excerpt": "How to regularise crypto you didn't declare in previous years in Spain: which tax years are still open, which surcharge applies depending on when you file, and why getting ahead of the AEAT changes the outcome.",
+  "hero": {
+    "etiqueta": "Before they come asking",
+    "h1": "Regularising crypto you didn't declare",
+    "subheading": "If you traded crypto in previous years and didn't declare it, or declared it wrongly, you can still file it yourself. As long as no request has arrived, regularising costs a surcharge, not a penalty. We rebuild your figures tax year by tax year and tell you what needs filing before anything is filed.",
+    "cta": {
+      "label": "Get a quote",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "See prices",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "Your situation" },
+    { "id": "la-diferencia", "label": "Act first or wait" },
+    { "id": "el-reloj", "label": "What waiting costs" },
+    { "id": "que-presentar", "label": "What gets filed" },
+    { "id": "como-resolvemos", "label": "How we do it" },
+    { "id": "que-necesitamos", "label": "What we need" },
+    { "id": "precio", "label": "Price" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "You didn't declare your crypto: what to do now",
+      "fondo": "blanco",
+      "body": "You bought crypto years ago, traded, perhaps sold. Nobody told you that swapping one token for another was taxable even if you never cashed out into euros, or you took it for granted until you read otherwise. Sometimes it surfaces the other way round: you declare the latest tax year correctly and realise the earlier ones don't add up.\n\nThere is an orderly way out. As long as the Spanish Tax Agency (AEAT) hasn't asked you for anything, you can regularise on your own initiative, and the law treats people who come forward very differently from those who wait to be contacted.\n\nWhat doesn't make sense is to sit still. Exchanges already report to the tax authorities automatically, and DAC8 widens that exchange of information. The cross-check no longer depends on someone looking at your file by hand."
+    },
+    {
+      "id": "la-tesis",
+      "fondo": "azul",
+      "cita": {
+        "texto": "The tax office already has the data. What you decide is who gets there first.",
+        "pie": "Regularising doesn't put you on a radar you're already on. It means the figure on file is yours, rebuilt and documented, rather than the one the authorities calculate from whatever the exchange reported.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "la-diferencia",
+      "h2": "Voluntary regularisation versus waiting to be asked",
+      "fondo": "papel",
+      "entrada": "The tax you owed is the same in both cases. Everything else changes.",
+      "columnas": [
+        {
+          "titulo": "You regularise",
+          "correcta": true,
+          "items": [
+            "You file, on your own initiative, the missing return for the tax year or the one that corrects the return you filed",
+            "A late-filing surcharge applies, which grows over time",
+            "There is no penalty, because there has been no prior request",
+            "You decide the timing and the order of the tax years",
+            "The figure on file is yours, with your approach documented"
+          ]
+        },
+        {
+          "titulo": "You wait for the request to arrive",
+          "correcta": false,
+          "items": [
+            "The AEAT opens the procedure and sets the deadlines",
+            "Late-payment interest is added to the tax due",
+            "Separate penalty proceedings may be opened",
+            "The assessment uses the authorities' data, not yours",
+            "Challenging it still means rebuilding your transactions, but with the working days counted"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el-reloj",
+      "h2": "What waiting costs",
+      "fondo": "blanco",
+      "entrada": "Surcharges under article 27 of the Spanish General Tax Act when you file late without a prior request. They run from the day the filing period for that tax year ended. These are the general orders of magnitude; the exact calculation depends on your case.",
+      "hitos": [
+        {
+          "cuando": "First month",
+          "titulo": "1 % surcharge",
+          "body": "On the tax resulting from the return, with no late-payment interest and no penalty."
+        },
+        {
+          "cuando": "Up to 12 months",
+          "titulo": "One more point for each full month",
+          "body": "The surcharge rises by one percentage point for each full month of delay. Every month you don't file has a specific cost."
+        },
+        {
+          "cuando": "Over 12 months",
+          "titulo": "15 % surcharge plus interest",
+          "body": "After a year, the surcharge is fixed at 15 % and late-payment interest is added from the day after those twelve months. If you pay on time and the legal conditions are met, the surcharge can be reduced by 25 %."
+        },
+        {
+          "cuando": "With a request",
+          "titulo": "It's no longer voluntary",
+          "body": "If the AEAT first notifies you of any action on that tax year, there is no surcharge any more: there is tax, late-payment interest and possible penalty proceedings, with penalties that generally start at 50 % of the amount left unpaid.",
+          "critico": true
+        }
+      ]
+    },
+    {
+      "id": "que-presentar",
+      "h2": "Supplementary or corrective return: what gets filed in each case",
+      "fondo": "papel",
+      "entrada": "Regularising doesn't always mean paying more. It depends on what's missing and which way the difference goes.",
+      "items": [
+        {
+          "title": "You declared no crypto at all that year",
+          "body": "The return for the tax year is filed with the rebuilt gains and losses. If you filed it without including crypto, that return is corrected to add it."
+        },
+        {
+          "title": "You declared it, but wrongly",
+          "body": "Swaps you left out, acquisition costs that were wrong, transfers between your own wallets counted as sales. The tax year is corrected with the right figures, whether they result in more tax or a refund."
+        },
+        {
+          "title": "The difference is in your favour",
+          "body": "This happens with losses you didn't declare or gains inflated by an automated report. Correcting it within the limitation period lets you recover what you overpaid or leave the losses ready to offset."
+        },
+        {
+          "title": "Recent and older tax years",
+          "body": "For personal income tax (IRPF) in the most recent tax years, the corrective self-assessment (autoliquidación rectificativa) is used, and it works both ways. For earlier years, the route is still the supplementary return or the request for correction. We tell you which applies to each year."
+        }
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "How we regularise your crypto",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "We rebuild from your first purchase",
+          "body": "Without the earlier history there is no reliable acquisition cost, and without it the gain comes out inflated. We start at the origin even if that year is time-barred: rebuilding is not the same as declaring."
+        },
+        {
+          "title": "We separate open tax years from time-barred ones",
+          "body": "As a general rule, the tax authorities can review the last four tax years whose filing period has ended, unless some action has interrupted that period. We work it out using the real dates of your case."
+        },
+        {
+          "title": "We quantify each tax year separately",
+          "body": "Tax, surcharge according to the filing date and, where applicable, interest. You see the total cost to the tax office before deciding anything."
+        },
+        {
+          "title": "You decide with the figures in front of you",
+          "body": "We explain the options and their consequences, including the unfavourable ones. Regularising is your decision and it's best made with numbers, not out of fear."
+        },
+        {
+          "title": "We file and keep the evidence",
+          "body": "The returns are filed in the right order, and the documentation behind each figure is kept in case any tax year is reviewed later."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>All the history you still have</strong>, from your first purchase: exchange CSVs, read-only API keys and the public addresses of your wallets. Never private keys.",
+        "<strong>The returns you did file</strong> for the tax years involved.",
+        "<strong>Bank statements</strong> showing money in and out in euros. For older periods they are usually the strongest evidence.",
+        "<strong>Any trace of platforms that no longer exist:</strong> sign-up emails, confirmations, old screenshots.",
+        "<strong>If you've already received a letter from the AEAT</strong>, regularisation is no longer voluntary and the strategy changes. In that case, see <a href=\"/requerimiento-hacienda-criptomonedas\">what to do with a request from the Spanish tax office</a>."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions about regularising crypto",
+      "items": [
+        {
+          "q": "If I regularise, will I put myself in the tax office's sights?",
+          "a": "It's the most common fear. Exchanges already report to the AEAT and DAC8 increases that flow, so the data exists whether or not you do anything. Regularising means you get there before the authorities do, with a surcharge instead of a penalty and with your own figures."
+        },
+        {
+          "q": "How many years back do I need to regularise?",
+          "a": "As a general rule, the tax authorities' right to assess expires four years after the filing period ended, and any notified action interrupts that period. But to calculate your acquisition costs correctly you have to rebuild from the origin, including time-barred years, even though those aren't declared."
+        },
+        {
+          "q": "I've already received a letter from the tax office. Can I still regularise?",
+          "a": "For the tax year and the item they are asking about, voluntary regularisation is no longer possible: you have to respond to the procedure, which we cover on our page about requests from the Spanish tax office over crypto. Other tax years not covered by the letter can still be regularised; it's worth reviewing them as soon as possible."
+        },
+        {
+          "q": "I have hardly any history left",
+          "a": "That's normal with older activity. It's rebuilt from what does exist: on-chain traces from your wallets, bank statements of purchases and sales against euros, and confirmation emails. You don't always reach one hundred per cent, but you do reach a documented position, and that's the one that can be defended."
+        },
+        {
+          "q": "How much does it cost to regularise my crypto with you?",
+          "a": "Our work has a fixed price based on the data sources that need reconciling: Single platform, €250; Multi-exchange, €350; Mixed portfolio, €450; and Complex portfolio, from €700. We give you the quote for all the tax years before we start; the details are on our pricing page. What you pay the tax office (tax, surcharge and interest, if any) is separate, and we quantify it before anything is filed."
+        },
+        {
+          "q": "Can I defer or pay in instalments?",
+          "a": "Yes, deferral and instalment payment of tax debts are requested through the usual channels. Bear in mind they can affect the surcharge reduction, so if the amount is high it's worth raising it from the start."
+        },
+        {
+          "q": "Is it worth it if the tax due will be small?",
+          "a": "Almost always, because the problem is rarely that year's tax: without regularising you carry a miscalculated acquisition cost into every following tax year. You fix it once or you pay for it every year."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "How much it costs to regularise your crypto",
+    "entrada": "The price of rebuilding your figures depends on how many data sources need reconciling, not on how much you owe the tax office. You know it before we start.",
+    "nota": "What you pay the AEAT — tax, surcharge and interest, if any — is separate, and we quantify it before anything is filed."
+  },
+  "cierre": {
+    "h2": "The sooner you look at it, the less it costs",
+    "body": "Tell us since when you've been trading, on which platforms and which tax years you think are undeclared. We'll tell you what's time-barred, what needs regularising and how much it would cost to do it now compared with a few months from now.",
+    "button": {
+      "label": "Get a quote"
+    }
+  },
+  "seo": {
+    "title": "Regularise undeclared crypto in Spain | Cleriontax",
+    "description": "Regularise crypto you didn't declare before the Spanish tax office asks: open tax years, surcharges, supplementary returns and a fixed price.",
+    "keywords": [
+      "regularise crypto spain",
+      "undeclared crypto spain",
+      "supplementary tax return crypto spain",
+      "didn't declare crypto previous years spain",
+      "voluntary disclosure crypto spain",
+      "undeclared crypto what to do",
+      "amend tax return crypto spain",
+      "late filing surcharge crypto spain"
+    ]
+  }
+}

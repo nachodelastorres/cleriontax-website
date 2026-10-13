@@ -1,0 +1,228 @@
+{
+  "title": "Regularitzar criptomonedes no declarades",
+  "slug": "regularizar-criptomonedas",
+  "nav": "Regularitzar criptomonedes",
+  "excerpt": "Com regularitzar criptomonedes que no vas declarar en anys anteriors: quins exercicis continuen oberts, quin recàrrec s'aplica segons quan presentis i per què avançar-te a l'AEAT canvia el resultat.",
+  "hero": {
+    "etiqueta": "Abans que t'ho reclamin",
+    "h1": "Regularitzar criptomonedes que no vas declarar",
+    "subheading": "Si vas operar amb cripto en anys anteriors i no ho vas declarar, o ho vas declarar malament, encara pots presentar-ho tu. Mentre no arribi un requeriment, regularitzar costa un recàrrec i no una sanció. Reconstruïm les teves xifres exercici per exercici i et diem què cal presentar abans de presentar res.",
+    "cta": {
+      "label": "Demanar pressupost",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Veure preus",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "reconoces", "label": "La teva situació" },
+    { "id": "la-diferencia", "label": "Avançar-te o esperar" },
+    { "id": "el-reloj", "label": "Què costa esperar" },
+    { "id": "que-presentar", "label": "Què es presenta" },
+    { "id": "como-resolvemos", "label": "Com ho fem" },
+    { "id": "que-necesitamos", "label": "Què necessitem" },
+    { "id": "precio", "label": "Preu" },
+    { "id": "faq", "label": "Preguntes freqüents" }
+  ],
+  "sections": [
+    {
+      "id": "reconoces",
+      "h2": "No vas declarar les teves criptomonedes: què fer ara",
+      "fondo": "blanco",
+      "body": "Vas comprar cripto fa anys, vas operar i potser vas vendre. Ningú no et va dir que canviar un token per un altre tributava encara que no en traguessis euros, o ho vas donar per fet fins que vas llegir el contrari. De vegades es descobreix al revés: declares bé l'últim exercici i t'adones que els anteriors no quadren.\n\nTé una sortida ordenada. Mentre l'AEAT no t'hagi requerit res, pots regularitzar pel teu compte, i la llei tracta de manera molt diferent qui s'avança i qui espera que el truquin.\n\nEl que no convé és quedar-se quiet. Els exchanges ja informen Hisenda de manera automàtica, i amb la DAC8 aquest intercanvi s'amplia. L'encreuament de dades ja no depèn que algú miri el teu expedient a mà."
+    },
+    {
+      "id": "la-tesis",
+      "fondo": "azul",
+      "cita": {
+        "texto": "Hisenda ja té la dada. El que decideixes és qui arriba primer.",
+        "pie": "Regularitzar no et posa en un radar on ja ets. Fa que la xifra que queda a l'expedient sigui la teva, reconstruïda i documentada, i no la que calculi l'Administració amb el que li hagi reportat l'exchange.",
+        "forma": "cuarto"
+      }
+    },
+    {
+      "id": "la-diferencia",
+      "h2": "Regularització voluntària o esperar que t'ho reclamin",
+      "fondo": "papel",
+      "entrada": "La quota que devies és la mateixa en tots dos casos. Tota la resta canvia.",
+      "columnas": [
+        {
+          "titulo": "Regularitzes tu",
+          "correcta": true,
+          "items": [
+            "Presentes per iniciativa pròpia la declaració de l'exercici que faltava o la que corregeix la que vas fer",
+            "S'aplica un recàrrec per presentació fora de termini, que creix amb el temps",
+            "No hi ha sanció, perquè no hi ha hagut requeriment previ",
+            "Decideixes el calendari i l'ordre dels exercicis",
+            "La xifra que queda a l'expedient és la teva, amb el criteri documentat"
+          ]
+        },
+        {
+          "titulo": "Esperes que arribi el requeriment",
+          "correcta": false,
+          "items": [
+            "L'AEAT obre el procediment i marca els terminis",
+            "A la quota s'hi sumen interessos de demora",
+            "Es pot obrir un expedient sancionador a banda",
+            "Es liquida amb les dades de l'Administració, no amb les teves",
+            "Rebatre-ho exigeix reconstruir igualment la teva operativa, però amb els dies hàbils comptats"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el-reloj",
+      "h2": "Què costa esperar",
+      "fondo": "blanco",
+      "entrada": "Recàrrecs de l'article 27 de la Llei general tributària quan presentes fora de termini sense requeriment previ. Es compten des del dia que va acabar el termini de declaració d'aquell exercici. Són les magnituds generals; el càlcul exacte depèn del teu cas.",
+      "hitos": [
+        {
+          "cuando": "Primer mes",
+          "titulo": "Recàrrec de l'1 %",
+          "body": "Sobre la quota que resulti de la declaració, sense interessos de demora ni sanció."
+        },
+        {
+          "cuando": "Fins a 12 mesos",
+          "titulo": "Un punt més per cada mes complet",
+          "body": "El recàrrec puja un punt percentual per cada mes sencer de retard. Cada mes que passa sense presentar té un cost concret."
+        },
+        {
+          "cuando": "Més de 12 mesos",
+          "titulo": "Recàrrec del 15 % i interessos",
+          "body": "A partir de l'any, el recàrrec es fixa en el 15 % i s'hi sumen interessos de demora des de l'endemà d'aquests dotze mesos. Si ingresses dins de termini i es compleixen les condicions legals, el recàrrec es pot reduir un 25 %."
+        },
+        {
+          "cuando": "Amb requeriment",
+          "titulo": "Deixa de ser voluntari",
+          "body": "Si l'AEAT et notifica abans qualsevol actuació sobre aquell exercici, ja no hi ha recàrrec: hi ha quota, interessos de demora i la possible obertura d'un expedient sancionador, amb sancions que amb caràcter general parteixen del 50 % del que es va deixar d'ingressar.",
+          "critico": true
+        }
+      ]
+    },
+    {
+      "id": "que-presentar",
+      "h2": "Declaració complementària o rectificació: què es presenta en cada cas",
+      "fondo": "papel",
+      "entrada": "Regularitzar no sempre és pagar més. Depèn de què falta i cap a on surt la diferència.",
+      "items": [
+        {
+          "title": "No vas declarar res de cripto aquell any",
+          "body": "Es presenta la declaració de l'exercici amb els guanys i les pèrdues reconstruïts. Si la vas presentar sense incloure-hi la cripto, es corregeix aquella declaració per afegir-la."
+        },
+        {
+          "title": "Ho vas declarar, però malament",
+          "body": "Permutes que no vas incloure, costos d'adquisició que no eren, transferències entre les teves wallets comptades com a vendes. Es rectifica l'exercici amb les xifres correctes, tant si surten a pagar com a retornar."
+        },
+        {
+          "title": "La diferència surt a favor teu",
+          "body": "Passa amb pèrdues que no vas declarar o amb guanys inflats per un informe automàtic. Corregir-ho dins del termini de prescripció et permet recuperar el que vas pagar de més o deixar les pèrdues a punt per compensar."
+        },
+        {
+          "title": "Exercicis recents i antics",
+          "body": "En l'IRPF dels exercicis més recents s'utilitza l'autoliquidació rectificativa, que serveix en tots dos sentits. En exercicis anteriors se segueix la via de la declaració complementària o de la sol·licitud de rectificació. Et diem quina toca cada any."
+        }
+      ]
+    },
+    {
+      "id": "como-resolvemos",
+      "h2": "Com regularitzem les teves criptomonedes",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Reconstruïm des de la teva primera compra",
+          "body": "Sense l'històric anterior no hi ha cost d'adquisició fiable, i sense ell el guany surt inflat. Es comença per l'origen encara que aquell any estigui prescrit: reconstruir no és el mateix que declarar."
+        },
+        {
+          "title": "Separem els exercicis oberts dels prescrits",
+          "body": "Amb caràcter general, Hisenda pot revisar els quatre últims exercicis el termini de declaració dels quals ja ha acabat, llevat que alguna actuació hagi interromput aquest termini. Ho calculem amb les dates reals del teu cas."
+        },
+        {
+          "title": "Quantifiquem cada exercici per separat",
+          "body": "Quota, recàrrec segons la data de presentació i, si n'hi ha, interessos. Veus el cost total per a Hisenda abans de decidir res."
+        },
+        {
+          "title": "Decideixes amb les xifres al davant",
+          "body": "T'expliquem les opcions i les seves conseqüències, també les desfavorables. Regularitzar és una decisió teva i convé prendre-la amb números, no per por."
+        },
+        {
+          "title": "Presentem i arxivem la prova",
+          "body": "Les declaracions es presenten en l'ordre que convé, i la documentació que sosté cada xifra queda guardada per si algun exercici es revisa més endavant."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Què necessitem de tu",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Tot l'històric que conservis</strong>, des de la primera compra: CSV dels exchanges, claus API de només lectura i adreces públiques de les teves wallets. Mai claus privades.",
+        "<strong>Les declaracions que sí que vas presentar</strong> en els exercicis afectats.",
+        "<strong>Extractes bancaris</strong> de les entrades i sortides a euros. En els trams antics solen ser la prova més sòlida.",
+        "<strong>Qualsevol rastre de plataformes que ja no existeixen:</strong> correus de registre, confirmacions, captures antigues.",
+        "<strong>Si ja t'ha arribat una carta de l'AEAT</strong>, la regularització deixa de ser voluntària i l'estratègia canvia. En aquest cas, mira <a href=\"/requerimiento-hacienda-criptomonedas\">què fer amb un requeriment d'Hisenda</a>."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntes freqüents sobre regularitzar criptomonedes",
+      "items": [
+        {
+          "q": "Si regularitzo, em poso en el punt de mira d'Hisenda?",
+          "a": "És la por més habitual. Els exchanges ja reporten a l'AEAT i amb la DAC8 aquest flux creix, així que la dada existeix encara que tu no facis res. Regularitzar fa que hi arribis abans que l'Administració, amb recàrrec en lloc de sanció i amb les teves pròpies xifres."
+        },
+        {
+          "q": "Quants anys enrere he de regularitzar?",
+          "a": "Amb caràcter general, el dret d'Hisenda a liquidar prescriu als quatre anys des que va acabar el termini de declaració, i s'interromp amb qualsevol actuació notificada. Però per calcular bé els teus costos d'adquisició cal reconstruir des de l'origen, inclosos els anys prescrits, encara que aquests no es declarin."
+        },
+        {
+          "q": "Ja m'ha arribat una carta d'Hisenda. Encara puc regularitzar?",
+          "a": "Per a l'exercici i el concepte que et requereixen, ja no hi ha regularització voluntària: cal respondre al procediment, i això ho tractem a la nostra pàgina sobre el requeriment d'Hisenda per criptomonedes. Altres exercicis no afectats per la carta sí que es poden continuar regularitzant; convé revisar-ho com més aviat millor."
+        },
+        {
+          "q": "No tinc l'històric de gairebé res",
+          "a": "És el normal en operativa antiga. Es reconstrueix amb el que sí que existeix: rastre on-chain de les wallets, extractes bancaris de compres i vendes contra euros i correus de confirmació. No sempre s'arriba al cent per cent, però sí a una posició documentada, i aquesta és la que es pot defensar."
+        },
+        {
+          "q": "Quant costa regularitzar les meves criptomonedes amb vosaltres?",
+          "a": "La nostra feina té preu tancat segons les fonts de dades que calgui conciliar: Plataforma única, 250 €; Multiexchange, 350 €; Cartera mixta, 450 €; i Cartera complexa, des de 700 €. Et donem el pressupost de tots els exercicis abans de començar; en tens el detall a la pàgina de preus. El que paguis a Hisenda (quota, recàrrec i interessos, si n'hi ha) va a banda, i t'ho quantifiquem abans de presentar."
+        },
+        {
+          "q": "Puc ajornar o fraccionar el que surti a pagar?",
+          "a": "Sí, l'ajornament i el fraccionament de deutes tributaris se sol·liciten pels canals habituals. Tingues en compte que poden afectar la reducció del recàrrec, així que si l'import és alt convé plantejar-ho des del principi."
+        },
+        {
+          "q": "Val la pena si la quota serà petita?",
+          "a": "Gairebé sempre, perquè el problema rarament és la quota d'aquell any: sense regularitzar arrossegues un cost d'adquisició mal calculat a tots els exercicis següents. Es corregeix una vegada o es paga cada any."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Quant costa regularitzar les teves criptomonedes",
+    "entrada": "El preu de reconstruir les teves xifres depèn de quantes fonts de dades cal conciliar, no de quant deguis a Hisenda. Ho saps abans de començar.",
+    "nota": "El que paguis a l'AEAT —quota, recàrrec i interessos, si n'hi ha— va a banda, i t'ho quantifiquem abans de presentar res."
+  },
+  "cierre": {
+    "h2": "Com més aviat ho miris, menys costa",
+    "body": "Explica'ns des de quan operes, en quines plataformes i quins exercicis creus que estan sense declarar. Et diem què està prescrit, què cal regularitzar i quant costaria fer-ho ara en comparació amb d'aquí a uns mesos.",
+    "button": {
+      "label": "Demanar pressupost"
+    }
+  },
+  "seo": {
+    "title": "Regularitzar criptomonedes no declarades | Cleriontax",
+    "description": "Regularitza les criptomonedes que no vas declarar abans que Hisenda et requereixi: exercicis oberts, recàrrecs, declaració complementària i preu tancat.",
+    "keywords": [
+      "regularitzar criptomonedes",
+      "regularitzar criptomonedes hisenda",
+      "declaració complementària criptomonedes",
+      "no vaig declarar criptomonedes anys anteriors",
+      "regularització voluntària criptomonedes",
+      "criptomonedes sense declarar què fer",
+      "rectificar declaració criptomonedes",
+      "recàrrec declaració extemporània criptomonedes"
+    ]
+  }
+}

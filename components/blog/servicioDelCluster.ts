@@ -1,34 +1,35 @@
 /**
- * A qué línea de servicio lleva cada cluster del blog.
+ * A qué página de servicio lleva cada cluster del blog.
  *
- * Es la escalera de temperatura del plan: a quien está leyendo un artículo no
- * se le pide contratar, se le lleva a ver cómo se resuelve su caso. El destino
- * depende de lo que estaba leyendo, no de una regla única para todo el blog.
- *
- * Cuando exista la capa de situaciones, este mapeo apuntará ahí en lugar de
- * al servicio: es el único punto que habrá que cambiar.
+ * A quien está leyendo un artículo no se le pide contratar: se le lleva a la
+ * página que resuelve el caso del que estaba leyendo. El destino depende del
+ * tema, no de una regla única para todo el blog.
  */
 export const SERVICIO_POR_CLUSTER: Record<string, string> = {
-  // Tributación general, modelos, inspecciones: el grueso del blog.
-  "fiscalidad-criptomonedas": "/servicios/declarar-criptomonedas",
+  // Tributación general y modelos: el grueso del blog.
+  "fiscalidad-criptomonedas": "/declarar-criptomonedas",
   // DeFi, staking, pools: casos que exigen reconstruir la operativa.
-  "fiscalidad-defi-avanzada": "/servicios/informe-fiscal-criptomonedas",
+  "fiscalidad-defi-avanzada": "/informe-fiscal-criptomonedas",
   // Pipelines, limpieza de datos, clasificación: el método en estado puro.
-  "ingenieria-datos-fiscalidad": "/servicios/informe-fiscal-criptomonedas",
+  "ingenieria-datos-fiscalidad": "/informe-fiscal-criptomonedas",
   // Cómo exportar históricos: quien llega aquí está reuniendo sus datos.
-  "guias-practicas-especificas": "/servicios/informe-fiscal-criptomonedas",
+  "guias-practicas-especificas": "/informe-fiscal-criptomonedas",
 };
 
-/** Artículos cuyo tema pide litigación, por encima de su cluster. */
+/** Artículos cuyo tema pide otra página, por encima de su cluster. */
 const POR_ARTICULO: Record<string, string> = {
-  "inspeccion-hacienda-criptomonedas": "/servicios/litigacion-fiscal-criptomonedas",
-  "errores-declarar-criptomonedas": "/servicios/litigacion-fiscal-criptomonedas",
+  "errores-declarar-criptomonedas": "/regularizar-criptomonedas",
+  "herramientas-rastrear-criptomonedas": "/revisar-informe-koinly",
+  "modelos-100-721-714-criptomonedas": "/modelo-721-criptomonedas",
+  "modelo-714-criptomonedas-patrimonio": "/modelo-721-criptomonedas",
+  "directiva-dac8-criptomonedas-exchanges-hacienda": "/requerimiento-hacienda-criptomonedas",
+  "dac8-guia-practica-inversores-cripto": "/requerimiento-hacienda-criptomonedas",
 };
 
 export function servicioSugerido(slug: string, cluster?: string): string {
   return (
     POR_ARTICULO[slug] ??
     (cluster ? SERVICIO_POR_CLUSTER[cluster] : undefined) ??
-    "/servicios"
+    "/precios"
   );
 }

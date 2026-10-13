@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import HeroInicio from "@/components/inicio/HeroInicio";
 import ElijeTuCaso from "@/components/inicio/ElijeTuCaso";
 import Perfiles from "@/components/inicio/Perfiles";
-import LineasServicio from "@/components/inicio/LineasServicio";
+import Tarifas from "@/components/precios/Tarifas";
 import MetodoDiagrama from "@/components/inicio/MetodoDiagrama";
 import InformeEjemplo from "@/components/inicio/InformeEjemplo";
 import PreguntasInicio from "@/components/inicio/PreguntasInicio";
@@ -77,7 +77,7 @@ export default async function Home({ params }: Props) {
       <HeroInicio locale={locale} />
       <ElijeTuCaso locale={locale} />
       <Perfiles locale={locale} />
-      <LineasServicio locale={locale} />
+      <Tarifas locale={locale} fondo="blanco" resumida />
       <MetodoDiagrama locale={locale} />
       <InformeEjemplo locale={locale} />
       <PreguntasInicio locale={locale} />
@@ -87,7 +87,7 @@ export default async function Home({ params }: Props) {
         titulo={tCierre('titulo')}
         apoyo={tCierre('apoyo')}
         accion={{ texto: tCierre('accion'), href: '/contacto' }}
-        secundaria={{ texto: tCierre('secundaria'), href: '/situaciones' }}
+        secundaria={{ texto: tCierre('secundaria'), href: '/precios' }}
       />
     </>
   );

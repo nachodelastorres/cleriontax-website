@@ -1,0 +1,260 @@
+{
+  "title": "Informe fiscal de criptomonedas",
+  "slug": "informe-fiscal-criptomonedas",
+  "nav": "Informe fiscal cripto",
+  "excerpt": "Reconciliamos tus exchanges, wallets y protocolos y te entregamos un informe fiscal de criptomonedas con tus ganancias y pérdidas calculadas por FIFO y cada cifra trazable hasta su operación de origen.",
+  "hero": {
+    "etiqueta": "Tienes los datos, te falta la cifra",
+    "h1": "Informe fiscal de criptomonedas, con cada cifra trazable",
+    "subheading": "Reunimos todo lo que tienes repartido en exchanges, wallets y protocolos, separamos lo que fue una venta de lo que fue mover fondos entre cuentas tuyas y calculamos tus ganancias y pérdidas con FIFO. Recibes la cifra para tu declaración y el detalle operación a operación que la sostiene.",
+    "cta": {
+      "label": "Pedir presupuesto",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Ver precios",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "que-es", "label": "Qué es" },
+    { "id": "fuentes", "label": "Fuentes de datos" },
+    { "id": "que-recibes", "label": "Qué recibes" },
+    { "id": "fifo-trazabilidad", "label": "FIFO y trazabilidad" },
+    { "id": "como-trabajamos", "label": "Cómo trabajamos" },
+    { "id": "carteras-grandes", "label": "Carteras grandes" },
+    { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
+    { "id": "que-necesitamos", "label": "Qué necesitamos de ti" },
+    { "id": "precio", "label": "Precio" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "que-es",
+      "h2": "Qué es un informe fiscal de criptomonedas",
+      "fondo": "blanco",
+      "body": "Es el documento que convierte tu historial de operaciones en las cifras que pide la declaración de la renta: cuánto has ganado, cuánto has perdido y cuánto has cobrado en rendimientos durante el ejercicio.\n\nPara llegar ahí no basta con descargar un CSV y pasarlo por un programa. Hay que juntar todas las plataformas donde has operado, reconocer las transferencias entre cuentas tuyas para que no cuenten como ventas, poner precio en euros a cada permuta y aplicar el criterio FIFO sobre la cartera completa. Ese trabajo previo es la reconciliación, y es lo que hacemos.\n\nUn programa automático es un buen punto de partida, pero no es el entregable. Lo que ninguna regla resuelve con certeza lo revisamos a mano y dejamos escrito por qué se decidió así."
+    },
+    {
+      "id": "fuentes",
+      "h2": "Qué cuenta como una fuente de datos",
+      "fondo": "papel",
+      "entrada": "El precio y el trabajo dependen de cuántas fuentes hay que reconciliar, no de cuánto hayas ganado. Cada una de estas cuenta como una fuente.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Un exchange centralizado",
+          "body": "Binance, Coinbase, Kraken, Bit2Me, Bybit, OKX… Cada cuenta de exchange es una fuente, con su exportación y su formato."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Una wallet propia",
+          "body": "MetaMask, Ledger, Phantom, Trust Wallet… Trabajamos con sus direcciones públicas y reconstruimos la actividad on-chain."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Un protocolo DeFi",
+          "body": "Staking, liquidity pools, préstamos o farming en protocolos como Uniswap, Aave o Curve, con sus recompensas y sus permutas implícitas."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Un broker o un marketplace",
+          "body": "Plataformas de acciones o ETF, o mercados de NFT, cuando forman parte de la misma cartera que hay que declarar."
+        }
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "Qué recibes: tu informe de ganancias y pérdidas",
+      "fondo": "blanco",
+      "entrada": "Un resumen que cabe en una pantalla, con todo el detalle debajo. Los importes son de ejemplo.",
+      "tabla": {
+        "titulo": "Informe fiscal",
+        "periodo": "ejercicio 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Ganancias patrimoniales", "importe": 18402.15 },
+          { "concepto": "Pérdidas patrimoniales", "importe": -6117.8 },
+          { "concepto": "Rendimientos de staking", "importe": 1293.44 },
+          { "concepto": "Registros procesados", "recuento": 104882 },
+          { "concepto": "Descartados como spam", "recuento": 71204 },
+          { "concepto": "Revisados a mano", "recuento": 947 }
+        ]
+      },
+      "bullets": [
+        "<strong>Las cifras para tu declaración:</strong> ganancias y pérdidas patrimoniales y rendimientos del capital mobiliario, separados como los pide la renta.",
+        "<strong>El detalle operación a operación:</strong> fecha, activo, cantidad, valor en euros, coste de adquisición asignado y resultado de cada venta o permuta.",
+        "<strong>La memoria de criterios:</strong> qué se decidió en cada punto dudoso y con qué fundamento. Es lo que te permite defender la cifra si Hacienda pregunta.",
+        "<strong>La cartera conciliada:</strong> saldos de cierre por activo y plataforma, cuadrados con lo que realmente tienes. Es el punto de partida del ejercicio siguiente."
+      ]
+    },
+    {
+      "id": "fifo-trazabilidad",
+      "h2": "Cálculo FIFO y trazabilidad ante Hacienda",
+      "fondo": "papel",
+      "body": "La AEAT exige el criterio FIFO: cuando vendes o permutas un activo, se considera que sale primero lo que compraste antes. Aplicarlo bien exige tener el histórico completo desde tu primera compra, no solo el del año que declaras, y tratar cada criptomoneda como un activo homogéneo aunque esté repartida en varias plataformas.\n\nLa trazabilidad es la otra mitad. Cada euro del resultado tiene que poder seguirse hasta la operación que lo genera y hasta el dato de origen: el CSV del exchange, la transacción on-chain o el extracto bancario. Si algún día te llega un requerimiento, eso es lo que se aporta.",
+      "columnas": [
+        {
+          "titulo": "Un informe sin reconciliar",
+          "items": [
+            "Las transferencias entre tus cuentas aparecen como ventas",
+            "Los tokens que no reconoce quedan con coste cero",
+            "El FIFO se calcula plataforma a plataforma",
+            "No queda escrito por qué se decidió cada caso"
+          ]
+        },
+        {
+          "titulo": "Un informe reconciliado",
+          "correcta": true,
+          "items": [
+            "Cada transferencia interna se casa con su entrada",
+            "Cada activo tiene su coste de adquisición documentado",
+            "El FIFO se aplica sobre la cartera completa",
+            "Cada criterio queda en la memoria, listo para justificarlo"
+          ]
+        }
+      ],
+      "bullets": [
+        "¿Ya tienes un informe de una herramienta y no te cuadra? Eso lo vemos en <a href=\"/revisar-informe-koinly\">revisar tu informe de Koinly o CoinTracking</a>."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "Cómo hacemos tu informe fiscal",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Inventario de fuentes",
+          "body": "Qué exchanges, qué wallets, qué cadenas y qué periodos. Te enseñamos lo que hay y lo que falta antes de procesar nada: saber qué no tienes es tan importante como lo que sí."
+        },
+        {
+          "title": "Normalización",
+          "body": "Unificamos formatos, nombres de activos, husos horarios y decimales. Sin esto el orden de las operaciones sale mal, y el FIFO con él."
+        },
+        {
+          "title": "Reconciliación",
+          "body": "Casamos cada salida con su entrada para separar las ventas de los movimientos entre cuentas tuyas, filtramos el spam con criterio y comprobamos que los saldos finales coinciden con los reales."
+        },
+        {
+          "title": "Clasificación fiscal y revisión manual",
+          "body": "Cada operación recibe su naturaleza: venta, permuta, recompensa, comisión o transferencia. Lo que ninguna regla resuelve con certeza se revisa a mano y la decisión queda documentada."
+        },
+        {
+          "title": "Cálculo y entrega",
+          "body": "Aplicamos FIFO sobre la cartera conciliada, te entregamos el informe y lo repasamos contigo para que entiendas de dónde sale cada cifra."
+        }
+      ]
+    },
+    {
+      "id": "carteras-grandes",
+      "h2": "Carteras con miles de transacciones",
+      "fondo": "azul",
+      "entrada": "Magnitudes de una cartera real activa en varias cadenas. No son tu caso, pero explican por qué esto no se resuelve con una hoja de cálculo.",
+      "cifras": [
+        { "valor": "100.000+", "etiqueta": "operaciones en una cartera activa en varias cadenas" },
+        { "valor": "60–90 %", "etiqueta": "de los registros en cadenas como Solana pueden ser spam de tokens" },
+        { "valor": "300–2.000", "etiqueta": "operaciones que hay que resolver a mano porque ninguna regla las cubre", "acento": true },
+        { "valor": "1", "etiqueta": "cifra final, con cada euro trazable hasta su origen" }
+      ],
+      "body": "El volumen no es el problema difícil; la dispersión sí. Una cartera grande pero ordenada se reconcilia rápido. Lo que lleva tiempo son los protocolos pequeños sin explorador mantenido, las cadenas poco documentadas y los exchanges que ya cerraron."
+    },
+    {
+      "id": "por-plataforma",
+      "h2": "Informe fiscal de Binance, Kraken, MetaMask y DeFi",
+      "fondo": "papel",
+      "entrada": "Cada plataforma exporta a su manera y cada una tiene sus trampas.",
+      "items": [
+        {
+          "title": "Binance",
+          "body": "Separa spot, earn, futuros y conversiones en exportaciones distintas, y algunas solo cubren periodos limitados. Hay que unirlas sin duplicar operaciones y sin perder las conversiones pequeñas."
+        },
+        {
+          "title": "Kraken",
+          "body": "El registro de movimientos y el de operaciones van por separado, y el staking aparece como transferencias entre subcuentas. Mal leídos, generan ventas que no existieron."
+        },
+        {
+          "title": "MetaMask y DeFi",
+          "body": "No hay exportación fiscal: la actividad se reconstruye desde la blockchain a partir de tus direcciones públicas, incluidos swaps, aportaciones a pools, recompensas y comisiones de gas."
+        },
+        {
+          "title": "Exchanges que ya no existen",
+          "body": "Cuando no se puede descargar el histórico, se reconstruye con la trazabilidad on-chain, los extractos bancarios y las copias que conserves. Lo que no se puede reconstruir no se inventa: se documenta el criterio aplicado."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Qué necesitamos de ti",
+      "fondo": "blanco",
+      "bullets": [
+        "<strong>Exportaciones de cada exchange</strong> que hayas usado, aunque estén incompletas o el periodo esté partido.",
+        "<strong>Claves API de solo lectura</strong> donde sea posible, que evitan errores de exportación manual. Nunca claves privadas.",
+        "<strong>Direcciones públicas de todas tus wallets</strong>, incluidas las que ya no uses. Sin ellas no se pueden identificar los movimientos internos.",
+        "<strong>Qué cadenas y protocolos has usado</strong>, aunque sea de memoria y aproximado.",
+        "<strong>Extractos bancarios</strong> de las entradas y salidas a euros, que anclan la reconstrucción a algo verificable.",
+        "<strong>Cualquier informe previo</strong> que hayas generado, aunque no te cuadre. Ahorra tiempo."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Cuánto cuesta un informe fiscal de criptomonedas?",
+          "a": "Depende de cuántas fuentes de datos hay que reconciliar. Plataforma única, con toda tu operativa en un exchange, cuesta 250 €. Multiexchange, con dos o tres exchanges centralizados, 350 €. Cartera mixta, que combina exchanges con wallets propias, DeFi, NFT o acciones hasta tres fuentes, 450 €. Cartera compleja, a partir de 700 €. Te confirmamos el tramo antes de empezar y tienes el detalle en la página de precios."
+        },
+        {
+          "q": "¿Qué método de cálculo usáis?",
+          "a": "FIFO, que es el que exige la normativa española: lo primero que entra es lo primero que sale. Lo aplicamos sobre la cartera completa y con el histórico desde tu primera compra, porque sin ese histórico no hay coste de adquisición fiable."
+        },
+        {
+          "q": "¿Por qué no me sirve el informe que descargo de mi exchange?",
+          "a": "Porque solo ve lo que pasó dentro de esa plataforma. No sabe a qué precio compraste lo que llegó desde otra cuenta ni reconoce que una retirada fue a una wallet tuya. Con una sola plataforma y sin transferencias puede acercarse; en cuanto mueves fondos, el resultado deja de ser fiable."
+        },
+        {
+          "q": "¿El informe sirve si Hacienda me pide justificar mis cifras?",
+          "a": "Sí. Está hecho para eso: cada cifra se puede seguir hasta la operación y el dato de origen, y la memoria de criterios explica cada decisión. Si ya tienes un requerimiento abierto, el trabajo es el mismo pero con el plazo por delante; lo explicamos en la página de requerimientos de Hacienda."
+        },
+        {
+          "q": "¿Incluye la declaración de la renta?",
+          "a": "El informe deja las cifras listas para trasladarlas a tu declaración. Si además quieres que nos encarguemos de declararlas, lo explicamos en la página de declarar criptomonedas."
+        },
+        {
+          "q": "¿Cuánto tarda?",
+          "a": "Depende más del estado de los datos que de su cantidad. Una cartera grande pero ordenada va rápido; una mediana con tramos que reconstruir puede llevar semanas. Tras el inventario de fuentes te damos un plazo concreto."
+        },
+        {
+          "q": "El año que viene, ¿hay que repetirlo todo?",
+          "a": "No. Te entregamos la cartera conciliada, que es el punto de partida limpio de los ejercicios siguientes. El trabajo grande se hace una vez."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Cuánto cuesta tu informe fiscal",
+    "entrada": "El precio depende de cuántas fuentes de datos hay que reconciliar, no de cuánto hayas ganado. Lo sabes antes de empezar.",
+    "nota": "Te confirmamos el tramo en cuanto vemos una muestra de tus datos, antes de empezar a trabajar."
+  },
+  "cierre": {
+    "h2": "Empecemos por saber qué hay",
+    "body": "Dinos en qué exchanges, wallets y protocolos has operado, más o menos cuántas operaciones tienes y qué ejercicio quieres declarar. Con eso sabemos en qué tramo está tu cartera y te damos plazo y precio cerrados.",
+    "button": {
+      "label": "Pedir presupuesto"
+    }
+  },
+  "seo": {
+    "title": "Informe fiscal de criptomonedas con cálculo FIFO | Cleriontax",
+    "description": "Informe fiscal de criptomonedas: reconciliamos exchanges, wallets y DeFi, calculamos ganancias y pérdidas con FIFO y dejamos cada cifra trazable. Desde 250 €.",
+    "keywords": [
+      "informe fiscal criptomonedas",
+      "informe fiscal cripto",
+      "informe ganancias pérdidas criptomonedas",
+      "cálculo fifo criptomonedas",
+      "trazabilidad criptomonedas hacienda",
+      "informe fiscal binance",
+      "informe fiscal kraken",
+      "informe fiscal metamask defi",
+      "miles de transacciones criptomonedas impuestos"
+    ]
+  }
+}

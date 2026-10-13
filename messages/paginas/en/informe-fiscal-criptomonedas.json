@@ -1,0 +1,260 @@
+{
+  "title": "Crypto tax report",
+  "slug": "informe-fiscal-criptomonedas",
+  "nav": "Crypto tax report",
+  "excerpt": "We reconcile your exchanges, wallets and protocols and deliver a crypto tax report with your gains and losses calculated under FIFO and every figure traceable back to the transaction it comes from.",
+  "hero": {
+    "etiqueta": "You have the data, not the figure",
+    "h1": "Crypto tax report, with every figure traceable",
+    "subheading": "We bring together everything you have spread across exchanges, wallets and protocols, separate what was a sale from what was moving funds between your own accounts, and calculate your gains and losses under FIFO. You get the figure for your tax return and the transaction-by-transaction detail behind it.",
+    "cta": {
+      "label": "Request a quote",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "See pricing",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "que-es", "label": "What it is" },
+    { "id": "fuentes", "label": "Data sources" },
+    { "id": "que-recibes", "label": "What you get" },
+    { "id": "fifo-trazabilidad", "label": "FIFO and traceability" },
+    { "id": "como-trabajamos", "label": "How we work" },
+    { "id": "carteras-grandes", "label": "Large portfolios" },
+    { "id": "por-plataforma", "label": "Binance, Kraken, MetaMask" },
+    { "id": "que-necesitamos", "label": "What we need from you" },
+    { "id": "precio", "label": "Pricing" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "que-es",
+      "h2": "What a crypto tax report is",
+      "fondo": "blanco",
+      "body": "It is the document that turns your transaction history into the figures your Spanish income tax return asks for: how much you gained, how much you lost and how much you earned in yields during the tax year.\n\nGetting there takes more than downloading a CSV and running it through a program. Every platform you have used has to be brought together, transfers between your own accounts have to be recognised so they don't count as sales, every swap needs a euro value, and the FIFO method has to be applied across the whole portfolio. That groundwork is reconciliation, and it is what we do.\n\nAn automated tool is a good starting point, but it is not the deliverable. Whatever no rule can settle with certainty we review by hand, and we write down why it was decided that way."
+    },
+    {
+      "id": "fuentes",
+      "h2": "What counts as a data source",
+      "fondo": "papel",
+      "entrada": "Price and workload depend on how many sources need reconciling, not on how much you gained. Each of these counts as one source.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "A centralised exchange",
+          "body": "Binance, Coinbase, Kraken, Bit2Me, Bybit, OKX… Each exchange account is one source, with its own export and its own format."
+        },
+        {
+          "forma": "arco",
+          "titulo": "A self-custody wallet",
+          "body": "MetaMask, Ledger, Phantom, Trust Wallet… We work from the public addresses and rebuild the on-chain activity."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "A DeFi protocol",
+          "body": "Staking, liquidity pools, lending or farming on protocols such as Uniswap, Aave or Curve, with their rewards and implicit swaps."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "A broker or marketplace",
+          "body": "Stock or ETF platforms, or NFT marketplaces, when they are part of the same portfolio that has to be declared."
+        }
+      ]
+    },
+    {
+      "id": "que-recibes",
+      "h2": "What you get: your gains and losses report",
+      "fondo": "blanco",
+      "entrada": "A summary that fits on one screen, with all the detail underneath. The amounts are an example.",
+      "tabla": {
+        "titulo": "Tax report",
+        "periodo": "tax year 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Capital gains", "importe": 18402.15 },
+          { "concepto": "Capital losses", "importe": -6117.8 },
+          { "concepto": "Staking income", "importe": 1293.44 },
+          { "concepto": "Records processed", "recuento": 104882 },
+          { "concepto": "Discarded as spam", "recuento": 71204 },
+          { "concepto": "Reviewed by hand", "recuento": 947 }
+        ]
+      },
+      "bullets": [
+        "<strong>The figures for your tax return:</strong> capital gains and losses and investment income, separated the way the Spanish return asks for them.",
+        "<strong>Transaction-by-transaction detail:</strong> date, asset, amount, euro value, assigned acquisition cost and result of every sale or swap.",
+        "<strong>The criteria memo:</strong> what was decided on each grey area and on what basis. It is what lets you defend the figure if the tax authority asks.",
+        "<strong>The reconciled portfolio:</strong> closing balances by asset and platform, matched to what you actually hold. It is the starting point for the next tax year."
+      ]
+    },
+    {
+      "id": "fifo-trazabilidad",
+      "h2": "FIFO calculation and traceability for the tax authority",
+      "fondo": "papel",
+      "body": "The Spanish tax agency (AEAT) requires the FIFO method: when you sell or swap an asset, what you bought first is deemed to leave first. Applying it properly requires your full history from your very first purchase, not just the year you are declaring, and treating each cryptocurrency as a single homogeneous asset even when it is spread across several platforms.\n\nTraceability is the other half. Every euro in the result must be traceable to the transaction that produced it and to the source data: the exchange CSV, the on-chain transaction or the bank statement. If you ever receive an information request, that is what you provide.",
+      "columnas": [
+        {
+          "titulo": "An unreconciled report",
+          "items": [
+            "Transfers between your accounts show up as sales",
+            "Tokens it doesn't recognise are left at zero cost",
+            "FIFO is calculated platform by platform",
+            "Nothing records why each case was decided"
+          ]
+        },
+        {
+          "titulo": "A reconciled report",
+          "correcta": true,
+          "items": [
+            "Each internal transfer is matched to its deposit",
+            "Each asset has a documented acquisition cost",
+            "FIFO is applied across the whole portfolio",
+            "Every criterion is in the memo, ready to be justified"
+          ]
+        }
+      ],
+      "bullets": [
+        "Already have a report from a tool that doesn't add up? We cover that in <a href=\"/revisar-informe-koinly\">reviewing your Koinly or CoinTracking report</a>."
+      ]
+    },
+    {
+      "id": "como-trabajamos",
+      "h2": "How we build your tax report",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "Source inventory",
+          "body": "Which exchanges, which wallets, which chains and which periods. We show you what is there and what is missing before processing anything: knowing what you don't have matters as much as what you do."
+        },
+        {
+          "title": "Normalisation",
+          "body": "We unify formats, asset names, time zones and decimals. Without this the order of transactions comes out wrong, and FIFO with it."
+        },
+        {
+          "title": "Reconciliation",
+          "body": "We match every withdrawal to its deposit to separate sales from movements between your own accounts, filter spam with judgement and check that closing balances match the real ones."
+        },
+        {
+          "title": "Tax classification and manual review",
+          "body": "Each transaction gets its nature: sale, swap, reward, fee or transfer. Anything no rule settles with certainty is reviewed by hand and the decision is documented."
+        },
+        {
+          "title": "Calculation and delivery",
+          "body": "We apply FIFO to the reconciled portfolio, deliver the report and go through it with you so you understand where each figure comes from."
+        }
+      ]
+    },
+    {
+      "id": "carteras-grandes",
+      "h2": "Portfolios with thousands of transactions",
+      "fondo": "azul",
+      "entrada": "Figures from a real portfolio active on several chains. They are not your case, but they explain why this can't be solved with a spreadsheet.",
+      "cifras": [
+        { "valor": "100,000+", "etiqueta": "transactions in a portfolio active on several chains" },
+        { "valor": "60–90 %", "etiqueta": "of records on chains like Solana can be token spam" },
+        { "valor": "300–2,000", "etiqueta": "transactions that have to be resolved by hand because no rule covers them", "acento": true },
+        { "valor": "1", "etiqueta": "final figure, with every euro traceable to its origin" }
+      ],
+      "body": "Volume is not the hard part; dispersion is. A large but orderly portfolio reconciles quickly. What takes time are small protocols with no maintained explorer, poorly documented chains and exchanges that have already closed."
+    },
+    {
+      "id": "por-plataforma",
+      "h2": "Tax report for Binance, Kraken, MetaMask and DeFi",
+      "fondo": "papel",
+      "entrada": "Each platform exports in its own way and each has its own traps.",
+      "items": [
+        {
+          "title": "Binance",
+          "body": "It splits spot, earn, futures and conversions into separate exports, and some only cover limited periods. They have to be joined without duplicating transactions and without losing the small conversions."
+        },
+        {
+          "title": "Kraken",
+          "body": "The ledger and the trades history are separate, and staking shows up as transfers between sub-accounts. Read wrongly, they create sales that never happened."
+        },
+        {
+          "title": "MetaMask and DeFi",
+          "body": "There is no tax export: activity is rebuilt from the blockchain using your public addresses, including swaps, pool deposits, rewards and gas fees."
+        },
+        {
+          "title": "Exchanges that no longer exist",
+          "body": "When the history can't be downloaded, it is rebuilt from on-chain traceability, bank statements and any copies you kept. What can't be rebuilt isn't invented: the criterion applied is documented."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "fondo": "blanco",
+      "bullets": [
+        "<strong>Exports from every exchange</strong> you have used, even if they are incomplete or the period is split.",
+        "<strong>Read-only API keys</strong> where possible, which avoid manual export errors. Never private keys.",
+        "<strong>Public addresses of all your wallets</strong>, including ones you no longer use. Without them internal movements can't be identified.",
+        "<strong>Which chains and protocols you have used</strong>, even if from memory and approximate.",
+        "<strong>Bank statements</strong> of euro deposits and withdrawals, which anchor the reconstruction to something verifiable.",
+        "<strong>Any previous report</strong> you have generated, even if it doesn't add up. It saves time."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How much does a crypto tax report cost?",
+          "a": "It depends on how many data sources need reconciling. Single platform, with all your activity on one exchange, costs €250. Multi-exchange, with two or three centralised exchanges, €350. Mixed portfolio, combining exchanges with self-custody wallets, DeFi, NFTs or stocks up to three sources, €450. Complex portfolio, from €700. We confirm your tier before starting, and the details are on the pricing page."
+        },
+        {
+          "q": "Which calculation method do you use?",
+          "a": "FIFO, which is what Spanish tax rules require: first in, first out. We apply it across the whole portfolio and with your history from your first purchase, because without that history there is no reliable acquisition cost."
+        },
+        {
+          "q": "Why isn't the report I download from my exchange enough?",
+          "a": "Because it only sees what happened inside that platform. It doesn't know what you paid for assets that arrived from another account, and it doesn't recognise that a withdrawal went to your own wallet. With a single platform and no transfers it can come close; as soon as you move funds, the result stops being reliable."
+        },
+        {
+          "q": "Does the report hold up if the tax authority asks me to justify my figures?",
+          "a": "Yes. That is what it is built for: every figure can be traced to the transaction and the source data, and the criteria memo explains each decision. If you already have an open information request, the work is the same but with the deadline in front; we explain it on the tax authority requests page."
+        },
+        {
+          "q": "Does it include filing the tax return?",
+          "a": "The report leaves the figures ready to carry over to your return. If you also want us to take care of declaring them, we explain it on the declaring crypto page."
+        },
+        {
+          "q": "How long does it take?",
+          "a": "It depends more on the state of the data than on its volume. A large but orderly portfolio goes quickly; a medium one with stretches to rebuild can take weeks. After the source inventory we give you a concrete timeframe."
+        },
+        {
+          "q": "Next year, does it all have to be done again?",
+          "a": "No. We hand over the reconciled portfolio, which is the clean starting point for the following years. The heavy lifting is done once."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "How much your tax report costs",
+    "entrada": "The price depends on how many data sources need reconciling, not on how much you gained. You know it before we start.",
+    "nota": "We confirm your tier as soon as we see a sample of your data, before any work begins."
+  },
+  "cierre": {
+    "h2": "Let's start by finding out what's there",
+    "body": "Tell us which exchanges, wallets and protocols you have used, roughly how many transactions you have and which tax year you want to declare. With that we know which tier your portfolio falls into and give you a fixed timeframe and price.",
+    "button": {
+      "label": "Request a quote"
+    }
+  },
+  "seo": {
+    "title": "Crypto tax report with FIFO calculation | Cleriontax",
+    "description": "Crypto tax report for Spain: we reconcile exchanges, wallets and DeFi, calculate gains and losses under FIFO and keep every figure traceable. From €250.",
+    "keywords": [
+      "crypto tax report spain",
+      "cryptocurrency tax report",
+      "crypto gains and losses report",
+      "fifo crypto calculation",
+      "crypto traceability spanish tax agency",
+      "binance tax report",
+      "kraken tax report",
+      "metamask defi tax report",
+      "thousands of crypto transactions taxes"
+    ]
+  }
+}

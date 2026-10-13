@@ -1,0 +1,265 @@
+{
+  "title": "Declarar criptomonedas en la renta 2026",
+  "slug": "declarar-criptomonedas",
+  "nav": "Declarar criptomonedas",
+  "excerpt": "Qué tributa de tu operativa cripto —también las permutas, el staking y los airdrops—, cómo se integra en la renta 2026 y qué necesitas reunir. Cada cifra, justificada.",
+  "hero": {
+    "etiqueta": "Campaña de la renta 2026",
+    "h1": "Declarar criptomonedas en la renta, con cada cifra justificada",
+    "subheading": "Reconciliamos tu operativa desde la primera compra, calculamos ganancias, pérdidas y rendimientos con criterio FIFO y te entregamos las cifras listas para tu declaración, con el detalle que las sostiene si Hacienda pregunta.",
+    "cta": {
+      "label": "Pedir presupuesto",
+      "href": "#diagnostico"
+    },
+    "secundaria": {
+      "label": "Ver precios",
+      "href": "#precio"
+    }
+  },
+  "toc": [
+    { "id": "que-tributa", "label": "Qué tributa" },
+    { "id": "el-malentendido", "label": "El malentendido" },
+    { "id": "en-la-renta", "label": "Cómo se declara" },
+    { "id": "staking-airdrops", "label": "Staking y airdrops" },
+    { "id": "perdidas", "label": "Pérdidas" },
+    { "id": "calendario", "label": "Calendario" },
+    { "id": "como-lo-hacemos", "label": "Cómo lo hacemos" },
+    { "id": "que-necesitamos", "label": "Qué necesitamos" },
+    { "id": "precio", "label": "Precio" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": [
+    {
+      "id": "que-tributa",
+      "h2": "Qué tributa al declarar criptomonedas, y no es solo vender",
+      "fondo": "azul",
+      "entrada": "Las cuatro operaciones que más se pasan por alto. Ninguna exige que hayas sacado euros al banco.",
+      "formas": [
+        {
+          "forma": "angulo",
+          "titulo": "Vender por euros",
+          "body": "El caso evidente: ganancia o pérdida patrimonial por la diferencia entre el valor de transmisión y el de adquisición."
+        },
+        {
+          "forma": "cuarto",
+          "titulo": "Cambiar un token por otro",
+          "body": "Es una permuta y genera ganancia o pérdida patrimonial aunque no pases por euros en ningún momento. Es la que más se olvida."
+        },
+        {
+          "forma": "arco",
+          "titulo": "Cobrar por staking o lending",
+          "body": "Las recompensas por ceder tus criptoactivos son rendimientos, no ganancias, y se imputan cuando las recibes, no cuando las vendes."
+        },
+        {
+          "forma": "inverso",
+          "titulo": "Recibir sin comprar",
+          "body": "Airdrops, forks y recompensas de protocolos. Su valor en la fecha de recepción será tu coste de adquisición cuando los vendas."
+        }
+      ]
+    },
+    {
+      "id": "el-malentendido",
+      "h2": "El malentendido que sale más caro",
+      "fondo": "papel",
+      "entrada": "Casi todo el mundo llega con alguna de estas ideas. Todas generan problemas después.",
+      "columnas": [
+        {
+          "titulo": "Lo que mucha gente cree",
+          "correcta": false,
+          "items": [
+            "«Mientras no lo pase a euros, no tributa»",
+            "«Como voy en pérdidas, no tengo que declarar nada»",
+            "«Lo que está en mi wallet privada no lo ve nadie»",
+            "«Si el exchange no me da informe fiscal, no hay nada que declarar»"
+          ]
+        },
+        {
+          "titulo": "Cómo funciona en realidad",
+          "correcta": true,
+          "items": [
+            "La permuta entre tokens tributa igual, sin pasar por euros",
+            "Las pérdidas también se declaran: es la única forma de compensarlas después",
+            "La cadena es pública y las plataformas reportan a la Administración",
+            "La obligación de declarar es tuya, exista o no informe del exchange"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-la-renta",
+      "h2": "Cómo declarar criptomonedas en la renta 2026",
+      "fondo": "blanco",
+      "body": "La renta que se presenta en 2026 corresponde al ejercicio 2025. Las ganancias y pérdidas por vender o permutar criptoactivos se declaran en el apartado específico de monedas virtuales dentro de las ganancias y pérdidas patrimoniales, operación a operación o agrupadas por activo, con su valor de adquisición y de transmisión.\n\nEse resultado se integra en la base imponible del ahorro, que tiene su propia escala. Las recompensas de staking y los intereses de lending van por otro camino: son rendimientos del capital mobiliario, también en la base del ahorro, pero con reglas de compensación distintas.\n\nEl coste de adquisición se calcula con criterio FIFO: las primeras unidades que compraste son las primeras que se consideran vendidas. Por eso no basta con el histórico del año que declaras. Sin las compras de años anteriores, el coste sale incompleto y la ganancia, inflada.",
+      "bullets": [
+        "<strong>Hasta 6.000 €:</strong> 19 %",
+        "<strong>De 6.000 a 50.000 €:</strong> 21 %",
+        "<strong>De 50.000 a 200.000 €:</strong> 23 %",
+        "<strong>De 200.000 a 300.000 €:</strong> 27 %",
+        "<strong>Más de 300.000 €:</strong> 30 %"
+      ]
+    },
+    {
+      "id": "staking-airdrops",
+      "h2": "Declarar staking, airdrops y DeFi en Hacienda",
+      "fondo": "azul",
+      "entrada": "Lo que no es una compraventa también se declara, y cada operativa tiene su tratamiento.",
+      "bullets": [
+        "<strong>Staking:</strong> las recompensas se imputan cuando se perciben, a su valor en esa fecha. Ese valor pasa a ser su coste de adquisición, así que al venderlas solo tributas por la diferencia posterior.",
+        "<strong>Airdrops:</strong> se fija el valor en la fecha de recepción, que será tu coste cuando los vendas. Y se separa el airdrop real del spam de tokens que nunca pediste.",
+        "<strong>Lending:</strong> los intereses cobrados son rendimientos. Las liquidaciones de garantías generan sus propios efectos y conviene revisarlas una a una.",
+        "<strong>Pools de liquidez y yield farming:</strong> la entrada, la salida y el token que representa tu posición son el punto delicado. Donde no hay criterio administrativo claro, se aplica uno razonable, se documenta y se mantiene en todos los ejercicios.",
+        "<strong>Tokens sin mercado profundo:</strong> se imputan igualmente. Lo que hay que cuidar es la fuente del precio, porque es lo primero que se cuestiona si se revisa."
+      ]
+    },
+    {
+      "id": "perdidas",
+      "h2": "Declarar las pérdidas para poder compensarlas",
+      "fondo": "papel",
+      "entrada": "Una pérdida declarada se compensa contra ganancias durante los cuatro ejercicios siguientes, también contra las de acciones o fondos. Una pérdida no declarada no existe. Datos de ejemplo.",
+      "tabla": {
+        "titulo": "Una pérdida antigua aplicada este año",
+        "periodo": "ejercicios 2022 a 2025",
+        "criterio": "FIFO",
+        "filas": [
+          { "concepto": "Pérdida declarada en 2022 por venta de criptoactivos", "importe": -12400.0 },
+          { "concepto": "Compensada en los ejercicios 2023 y 2024", "importe": 3100.0 },
+          { "concepto": "Saldo pendiente al empezar 2025", "importe": -9300.0 },
+          { "concepto": "Ganancia de 2025 por venta de criptoactivos y acciones", "importe": 14200.0 },
+          { "concepto": "Ganancia sujeta tras aplicar el saldo pendiente", "importe": 4900.0 }
+        ]
+      }
+    },
+    {
+      "id": "calendario",
+      "h2": "Calendario para declarar criptomonedas",
+      "fondo": "blanco",
+      "entrada": "Las fechas exactas las publica la AEAT cada año. El ritmo es este, y la reconstrucción de tu operativa lleva semanas, no días.",
+      "hitos": [
+        {
+          "cuando": "Enero–marzo",
+          "titulo": "Modelo 721",
+          "body": "Si a 31 de diciembre tenías más de 50.000 € en criptomonedas custodiadas en el extranjero, se informa antes que la renta. Lo explicamos en la página del modelo 721."
+        },
+        {
+          "cuando": "Febrero–marzo",
+          "titulo": "Reunir y reconciliar",
+          "body": "Es el momento de exportar históricos y reconstruir la operativa. Empezar aquí es lo que permite presentar sin prisas."
+        },
+        {
+          "cuando": "Abril",
+          "titulo": "Abre la campaña de la renta",
+          "body": "Puedes presentar desde el primer día con las cifras de cripto ya cerradas, en lugar de corregir el borrador sobre la marcha."
+        },
+        {
+          "cuando": "Finales de junio",
+          "titulo": "Fin del plazo voluntario",
+          "body": "La domiciliación del pago cierra unos días antes. Después, la declaración va con recargo.",
+          "critico": true
+        },
+        {
+          "cuando": "Después",
+          "titulo": "Fuera de plazo",
+          "body": "Presentar tarde sin requerimiento previo lleva recargos crecientes según el retraso. Sigue siendo mejor que esperar a que pregunte Hacienda."
+        }
+      ]
+    },
+    {
+      "id": "como-lo-hacemos",
+      "h2": "Cómo lo hacemos",
+      "steps": [
+        {
+          "title": "Reunimos y conciliamos tu operativa desde el origen",
+          "body": "Exchanges, wallets y protocolos desde tu primera compra, no solo el año que declaras. Casamos cada transferencia entre cuentas tuyas para que no cuente como venta."
+        },
+        {
+          "title": "Clasificamos operación a operación",
+          "body": "Qué es venta, qué es permuta, qué es rendimiento y qué es adquisición sin coste. Lo que no encaja en una regla se revisa a mano."
+        },
+        {
+          "title": "Calculamos con FIFO y aplicamos compensaciones",
+          "body": "Sobre la cartera ya conciliada, con las pérdidas pendientes de ejercicios anteriores y el resto de tus activos, porque las reglas de compensación los relacionan."
+        },
+        {
+          "title": "Te explicamos las opciones antes de cerrar",
+          "body": "Cuando la norma admite más de una forma correcta de declarar algo, te enseñamos el efecto de cada una y decides con la información delante."
+        },
+        {
+          "title": "Te entregamos las cifras y su respaldo",
+          "body": "Lo que va en cada apartado de la renta, el informe con el detalle por operación y la memoria de criterios que lo justifica."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "Qué necesitamos de ti",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Exportaciones de tus exchanges</strong> desde tu primera operación: CSV o claves API de solo lectura. Nunca claves privadas.",
+        "<strong>Direcciones públicas de tus wallets</strong>, incluidas las que ya no uses.",
+        "<strong>Qué protocolos DeFi has usado</strong>, aunque sea de forma aproximada.",
+        "<strong>Tus declaraciones anteriores</strong>, sobre todo si tuviste pérdidas pendientes de compensar.",
+        "<strong>Extractos bancarios</strong> de entradas y salidas a euros.",
+        "<strong>Si tienes acciones o fondos</strong>, también: van en la misma declaración y se compensan entre sí."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "Solo he comprado y no he vendido nada. ¿Tengo que declarar criptomonedas?",
+          "a": "Comprar y mantener no genera ganancia ni pérdida. Pero conviene revisar si hubo permutas entre tokens que no identificaste como tales, recompensas de staking o airdrops, o si superas los 50.000 € en plataformas extranjeras, que obliga a presentar el modelo 721."
+        },
+        {
+          "q": "He perdido dinero. ¿Para qué voy a declarar?",
+          "a": "Para poder compensar esa pérdida contra ganancias de este ejercicio y de los cuatro siguientes, incluidas las de acciones o fondos. Si no la declaras, no existe a efectos de compensación."
+        },
+        {
+          "q": "¿Tributo por el staking aunque no haya vendido las recompensas?",
+          "a": "Sí. Las recompensas se imputan cuando se perciben, a su valor en esa fecha. A cambio, ese valor pasa a ser tu coste de adquisición y al venderlas solo tributas por la diferencia."
+        },
+        {
+          "q": "Tengo criptomonedas en exchanges extranjeros. ¿Cambia algo?",
+          "a": "Las ganancias se declaran igual en la renta. Lo que se añade es una obligación informativa: si el saldo en plataformas extranjeras supera los 50.000 € a 31 de diciembre, hay que presentar el modelo 721 entre enero y marzo. Lo tienes explicado en la página del modelo 721."
+        },
+        {
+          "q": "Llevo años operando y nunca declaré. ¿Declaro solo este año?",
+          "a": "Conviene mirarlo antes de presentar, porque declarar bien este ejercicio hace visible lo anterior. Tiene salida ordenada: lo explicamos en la página de regularizar criptomonedas."
+        },
+        {
+          "q": "¿Cuánto cuesta declarar criptomonedas?",
+          "a": "Depende de cuántas fuentes de datos haya que reconciliar. Plataforma única, con toda tu operativa en un exchange: 250 €. Multiexchange, de dos a tres exchanges: 350 €. Cartera mixta, con wallets propias, DeFi, NFT o acciones hasta tres fuentes: 450 €. Cartera compleja: desde 700 €. Te confirmamos el tramo antes de empezar; el detalle está en la página de precios."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "Cuánto cuesta declarar criptomonedas",
+    "entrada": "El precio lo marca cuántas fuentes de datos hay que reconciliar, no cuánto hayas ganado. Lo sabes antes de empezar.",
+    "nota": "Si tienes pérdidas de años anteriores o acciones en la misma declaración, dínoslo en el diagnóstico y lo tenemos en cuenta al confirmar el tramo."
+  },
+  "cierre": {
+    "h2": "Cuanto antes empieces, más tranquilo presentas",
+    "body": "Cuéntanos dónde has operado, cuántas operaciones tienes y qué ejercicios te preocupan. Te confirmamos el tramo de precio y el plazo antes de empezar.",
+    "button": {
+      "label": "Pedir presupuesto"
+    }
+  },
+  "seo": {
+    "title": "Declarar criptomonedas en la renta 2026 | Cleriontax",
+    "description": "Declarar criptomonedas en la renta 2026: permutas, staking, airdrops y pérdidas, con criterio FIFO y cada cifra justificada. Precio cerrado desde 250 €.",
+    "keywords": [
+      "declarar criptomonedas",
+      "cómo declarar criptomonedas",
+      "declarar criptomonedas renta 2026",
+      "declarar criptomonedas hacienda",
+      "declarar ganancias criptomonedas",
+      "declarar staking hacienda",
+      "declarar airdrops hacienda",
+      "servicio declaración criptomonedas",
+      "ayuda declarar criptomonedas",
+      "cuánto cuesta declarar criptomonedas",
+      "declarar criptomonedas extranjero"
+    ]
+  }
+}

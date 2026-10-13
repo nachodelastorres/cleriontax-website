@@ -1,0 +1,241 @@
+{
+  "title": "Spanish tax inspection for cryptocurrency",
+  "slug": "inspeccion-hacienda-criptomonedas",
+  "nav": "Inspections and penalties",
+  "excerpt": "Defence in a Spanish tax inspection (AEAT) over cryptocurrency and everything that follows: proposed assessment, penalty, appeal for reconsideration and economic-administrative claim.",
+  "hero": {
+    "etiqueta": "Procedure under way",
+    "h1": "AEAT tax inspection for cryptocurrency: defence from start to finish",
+    "subheading": "An inspection isn't answered like an information request. Every appearance is prepared, every document that goes in stays on the file, and the assessment and the penalty are defended separately. We work with you from the notice of commencement to the last claim.",
+    "cta": {
+      "label": "Call us: +34 663 482 301",
+      "href": "tel:+34663482301"
+    },
+    "secundaria": {
+      "label": "Tell us about your case",
+      "href": "#diagnostico"
+    }
+  },
+  "toc": [
+    { "id": "donde-estas", "label": "Where you stand" },
+    { "id": "recorrido", "label": "The path" },
+    { "id": "en-juego", "label": "What's at stake" },
+    { "id": "cuota-y-sancion", "label": "Tax and penalty" },
+    { "id": "derechos", "label": "Your rights" },
+    { "id": "como-lo-llevamos", "label": "How we handle it" },
+    { "id": "que-necesitamos", "label": "What we need" },
+    { "id": "precio", "label": "Price" },
+    { "id": "faq", "label": "Frequently asked questions" }
+  ],
+  "sections": [
+    {
+      "id": "donde-estas",
+      "h2": "Where you stand",
+      "fondo": "blanco",
+      "body": "You've received a notice of commencement of inspection proceedings, a proposed assessment or a penalty decision over your cryptocurrency. Each is a different moment in the same procedure, and at each one there is still something that can be done.\n\nThe inspection is the procedure with the widest scope: it is handled by a tax inspector (actuario), it can cover several tax years and it can request information from third parties such as banks and exchanges. If what you have is an information request or a limited review, what you need is on our page about AEAT information requests.\n\nWith crypto assets, almost everything is decided by showing where every euro comes from. An inspection isn't won with an eloquent submission but with the reconstruction of your activity: which movements were transfers between your own wallets, which swaps took place and what the real cost of each sale was."
+    },
+    {
+      "id": "recorrido",
+      "h2": "The path, from inspection to appeal",
+      "fondo": "papel",
+      "entrada": "The exact dates are set by each notice. This is the usual order, and at every stage there is something to do.",
+      "hitos": [
+        {
+          "cuando": "Start",
+          "titulo": "Notice of commencement",
+          "body": "It sets the scope: which tax years and which items are reviewed. The procedure has a maximum duration of eighteen months, extendable to twenty-seven in the cases provided for by law."
+        },
+        {
+          "cuando": "Appearances",
+          "titulo": "Requests and formal records (diligencias)",
+          "body": "Every appearance is prepared: what is provided, in what order and with what explanation. The formal records capture facts that later support the proposal, so they are reviewed before signing."
+        },
+        {
+          "cuando": "Hearing",
+          "titulo": "Proposed assessment and submissions",
+          "body": "This is the time to challenge it with your own figures in front of you, before anything is formalised. It is the cheapest defence in the whole procedure."
+        },
+        {
+          "cuando": "Record",
+          "titulo": "Agreement or disagreement",
+          "body": "The choice determines what you can dispute later and the reductions on the penalty. It is decided once the numbers are done, not before."
+        },
+        {
+          "cuando": "Penalty",
+          "titulo": "Penalty proceedings",
+          "body": "They run as a separate file, with their own submissions. Accepting the tax doesn't mean you have to accept the penalty."
+        },
+        {
+          "cuando": "1 month",
+          "titulo": "Appeal for reconsideration or economic-administrative claim",
+          "body": "From notification of the decision you have one month to appeal through the administrative route: reconsideration before the AEAT itself, or a claim before the TEAR or the TEAC. They are alternatives, and you have to choose.",
+          "critico": true
+        },
+        {
+          "cuando": "After",
+          "titulo": "Judicial review",
+          "body": "Once the administrative route is exhausted, the case can go to the courts (contencioso-administrativo), with a lawyer and a court representative."
+        }
+      ]
+    },
+    {
+      "id": "en-juego",
+      "h2": "What's at stake",
+      "fondo": "blanco",
+      "entrada": "Late-payment interest is added to the assessed tax and, if there is a penalty, a percentage that depends on how the offence is classified.",
+      "cifras": [
+        { "valor": "50 %", "etiqueta": "Minor offence: penalty on the amount left unpaid" },
+        { "valor": "50–100 %", "etiqueta": "Serious offence, where concealment is found" },
+        { "valor": "100–150 %", "etiqueta": "Very serious offence, where fraudulent means are found" },
+        { "valor": "€120,000", "etiqueta": "Evaded tax per tax and year above which the case may move to the criminal courts as tax fraud", "acento": true }
+      ]
+    },
+    {
+      "id": "cuota-y-sancion",
+      "h2": "The tax and the penalty are defended separately",
+      "fondo": "papel",
+      "entrada": "The tax may be correctly calculated and the penalty still not be justified. That's why they are analysed separately and, sometimes, it makes sense to accept one and appeal the other.",
+      "items": [
+        {
+          "title": "The tax is disputed with figures",
+          "body": "The assessment corrects what you should have paid. If the AEAT started from what an exchange reported, it often counts transfers between your own wallets as sales or values the cost of what you bought at zero. Rebuilding your activity reduces the base, and with it everything calculated on top."
+        },
+        {
+          "title": "The penalty is disputed on conduct",
+          "body": "To impose a penalty, the tax authority has to show there was fault, even if only simple negligence. It isn't enough to establish that you under-declared. A decision that describes the result without reasoning about conduct can be challenged precisely for that."
+        },
+        {
+          "title": "Reasonable interpretation of the law",
+          "body": "For years, much crypto activity, such as swaps, staking, airdrops or DeFi, had no clear administrative criterion. If there was none on the date of your return, having applied a reasonable interpretation isn't punishable just because it differs from today's criterion."
+        },
+        {
+          "title": "No concealment",
+          "body": "Trading on platforms that report, moving money through your bank and not using opaque structures are facts that weigh in how the offence is classified, and they are put forward."
+        }
+      ]
+    },
+    {
+      "id": "derechos",
+      "h2": "What you can demand during the inspection",
+      "fondo": "azul",
+      "bullets": [
+        "<strong>To know the scope:</strong> which tax years and items are reviewed, and that it isn't extended without formal notice to you.",
+        "<strong>To attend with an adviser</strong> or through a representative. In a technical procedure that is the norm, and it prevents an improvised answer from ending up in a formal record.",
+        "<strong>Not to incriminate yourself</strong> in matters that may lead to penalties or criminal proceedings. It's a nuanced right, separate from the obligation to provide records of your transactions.",
+        "<strong>To make submissions before the record</strong> is drawn up, at the hearing stage, with whatever documentation you see fit.",
+        "<strong>To obtain a copy</strong> of what is on the file.",
+        "<strong>To invoke the statute of limitations:</strong> the AEAT has four years to assess a tax year, counted from the end of the filing period, unless something has interrupted them.",
+        "<strong>To appeal</strong> the assessment and, separately, the penalty."
+      ]
+    },
+    {
+      "id": "como-lo-llevamos",
+      "h2": "How we handle it",
+      "fondo": "blanco",
+      "steps": [
+        {
+          "title": "We read the file as it stands",
+          "body": "The scope, the tax years, the limitation period of each and everything already provided. Before one more document goes in."
+        },
+        {
+          "title": "We rebuild your activity for the whole period",
+          "body": "Exchanges, wallets and protocols, transaction by transaction. This is usually where the source of the difference appears: internal movements counted as sales, undeclared swaps or unreported income."
+        },
+        {
+          "title": "We build the evidence",
+          "body": "Ownership of addresses, wallet-to-wallet traceability and matching against bank statements. If an exchange has closed, the on-chain trail and the euro movements make up for the lost history."
+        },
+        {
+          "title": "We prepare every appearance and every submission",
+          "body": "What is provided, in what order and with what explanation. Before anything is filed, we explain what will be argued and what supports it."
+        },
+        {
+          "title": "We separate tax and penalty",
+          "body": "With both numbers in front of you, we assess together whether agreement makes sense, what to argue against the assessment and what against the penalty."
+        },
+        {
+          "title": "We appeal if it's worth it",
+          "body": "Appeal for reconsideration or a claim before the TEAR or the TEAC, depending on the amount and the strategy. If the cost of appealing doesn't justify what's at stake, we'll tell you."
+        }
+      ]
+    },
+    {
+      "id": "que-necesitamos",
+      "h2": "What we need from you",
+      "fondo": "papel",
+      "bullets": [
+        "<strong>Everything you've been notified:</strong> the notice of commencement, requests, signed records, the proposed assessment and the penalty decision, if they have arrived.",
+        "<strong>Your tax returns</strong> for the years within the scope.",
+        "<strong>Your exchange and wallet history</strong> for the period: CSV files, read-only API keys and public addresses. Never private keys.",
+        "<strong>Bank statements</strong> for all money moved in and out in euros.",
+        "<strong>Whatever you've already provided</strong> to the inspection, exactly as you provided it, including reports generated with software."
+      ]
+    },
+    {
+      "id": "faq",
+      "h2": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Do I need a tax lawyer for a crypto tax inspection?",
+          "a": "For the administrative route, not necessarily. The inspection, submissions, the appeal for reconsideration and the economic-administrative claim can be handled with a tax adviser, and that's what we do: the file is handled by a registered tax adviser. If the case reaches the courts or the criminal route, a lawyer is required. At that point we provide the reconstruction of your activity and the technical report behind the figures, working alongside the lawyer who represents you."
+        },
+        {
+          "q": "When is it tax fraud rather than an administrative penalty?",
+          "a": "When the evaded tax exceeds €120,000 per tax and year and the other elements of the offence are present, the case may move to the criminal courts. Below that threshold, the dispute is administrative. That's why the figures matter so much: a base inflated by internal transfers counted as sales can artificially push a case close to the threshold."
+        },
+        {
+          "q": "Can I accept the assessment and appeal only the penalty?",
+          "a": "Yes, and with crypto assets it's a common strategy, because the tax may be correctly calculated while the penalty is not properly reasoned. Accepting the assessment can affect the reductions applicable to the penalty, so the decision is made with both numbers in front of you."
+        },
+        {
+          "q": "Appeal for reconsideration or economic-administrative claim?",
+          "a": "They are alternatives: if you file one, you can't file the other at the same time. Both have a one-month deadline from notification. Reconsideration is decided by the AEAT itself. The claim is decided by an economic-administrative tribunal, the TEAR or the TEAC depending on the amount, and it later opens the way to the courts. We choose based on the grounds and what's at stake."
+        },
+        {
+          "q": "Does appealing suspend payment?",
+          "a": "Not automatically. Suspension usually requires a guarantee, although penalties appealed in time have their own rules. It's one of the first things to sort out, because it affects your cash flow while the procedure lasts."
+        },
+        {
+          "q": "Can the Spanish tax authority see my self-custody wallets?",
+          "a": "The blockchain is public: anyone can see the movements of an address. What isn't public is who owns it, but the AEAT cross-checks what exchanges and banks report and has analysis tools to attribute addresses. It's best to assume traceability exists and use it in your favour."
+        },
+        {
+          "q": "How much does defence in an inspection cost?",
+          "a": "There are two parts. Rebuilding your figures follows the reconciliation tiers: Single platform, €250; Multi-exchange, €350; Mixed portfolio, €450; and Complex portfolio, from €700. The defence work, meaning appearances, submissions, appeals and claims, is quoted separately once we've seen the file. You'll find the details on our pricing page."
+        },
+        {
+          "q": "Can you guarantee there won't be a penalty?",
+          "a": "No, and be wary of anyone who does. Nobody can predict how a decision will go. What we do is build the best documented position possible, explain the scenarios to you frankly, including the unfavourable ones, and file everything on time, which is where many cases are lost."
+        }
+      ]
+    }
+  ],
+  "tarifas": {
+    "h2": "What it costs to rebuild your figures",
+    "entrada": "The basis of any defence is your activity rebuilt. Its price depends on how many data sources have to be reconciled, not on what's at stake in the case.",
+    "nota": "The reconstruction follows these tiers. The defence work (appearances, submissions, appeals and claims) is quoted separately once we've seen the file."
+  },
+  "cierre": {
+    "h2": "Don't provide anything else without reviewing it",
+    "body": "Tell us where the procedure stands, which tax years it covers and what you've already provided. The first thing we'll do is review the file as it stands and tell you what deadline you have. If time is tight, call us on +34 663 482 301.",
+    "button": {
+      "label": "Tell us about your case"
+    }
+  },
+  "seo": {
+    "title": "Crypto tax inspection in Spain (AEAT): defence | Cleriontax",
+    "description": "AEAT tax inspection, penalty or proposed assessment over cryptocurrency: defence, submissions, appeal for reconsideration and claims before the TEAR or TEAC.",
+    "keywords": [
+      "AEAT tax inspection crypto",
+      "crypto tax audit spain",
+      "defence in AEAT inspection crypto",
+      "AEAT penalty crypto",
+      "appeal crypto tax penalty spain",
+      "economic-administrative claim crypto",
+      "crypto tax litigation spain",
+      "crypto tax lawyer spain",
+      "defence against Hacienda crypto",
+      "crypto tax fraud spain"
+    ]
+  }
+}
