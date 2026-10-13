@@ -93,27 +93,32 @@
       "h2": "FIFO calculation and traceability for the tax authority",
       "fondo": "papel",
       "body": "The Spanish tax agency (AEAT) requires the FIFO method: when you sell or swap an asset, what you bought first is deemed to leave first. Applying it properly requires your full history from your very first purchase, not just the year you are declaring, and treating each cryptocurrency as a single homogeneous asset even when it is spread across several platforms.\n\nTraceability is the other half. Every euro in the result must be traceable to the transaction that produced it and to the source data: the exchange CSV, the on-chain transaction or the bank statement. If you ever receive an information request, that is what you provide.",
-      "columnas": [
-        {
-          "titulo": "An unreconciled report",
-          "items": [
-            "Transfers between your accounts show up as sales",
-            "Tokens it doesn't recognise are left at zero cost",
-            "FIFO is calculated platform by platform",
-            "Nothing records why each case was decided"
-          ]
-        },
-        {
-          "titulo": "A reconciled report",
-          "correcta": true,
-          "items": [
-            "Each internal transfer is matched to its deposit",
-            "Each asset has a documented acquisition cost",
-            "FIFO is applied across the whole portfolio",
-            "Every criterion is in the memo, ready to be justified"
-          ]
-        }
-      ],
+      "contraste": {
+        "antes": "An unreconciled report",
+        "despues": "A reconciled report",
+        "filas": [
+          {
+            "aspecto": "Transfers",
+            "antes": "Transfers between your accounts show up as sales",
+            "despues": "Each internal transfer is matched to its deposit"
+          },
+          {
+            "aspecto": "Cost basis",
+            "antes": "Tokens it doesn't recognise are left at zero cost",
+            "despues": "Each asset has a documented acquisition cost"
+          },
+          {
+            "aspecto": "FIFO",
+            "antes": "FIFO is calculated platform by platform",
+            "despues": "FIFO is applied across the whole portfolio"
+          },
+          {
+            "aspecto": "Criteria",
+            "antes": "Nothing records why each case was decided",
+            "despues": "Every criterion is in the memo, ready to be justified"
+          }
+        ]
+      },
       "bullets": [
         "Already have a report from a tool that doesn't add up? We cover that in <a href=\"/revisar-informe-koinly\">reviewing your Koinly or CoinTracking report</a>."
       ]

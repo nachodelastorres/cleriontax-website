@@ -5,6 +5,7 @@ import {
   BloqueCifras,
   BloqueCronologia,
   BloqueComparativa,
+  BloqueContraste,
   BloqueCita,
   BloqueFormas,
   BloqueTabla,
@@ -12,6 +13,7 @@ import {
   type Cifra,
   type Hito,
   type Columna,
+  type Contraste,
   type PasoForma,
   type NombreForma,
 } from "@/components/secciones/Bloques";
@@ -43,6 +45,7 @@ export interface Seccion {
   cifras?: Cifra[];
   hitos?: Hito[];
   columnas?: Columna[];
+  contraste?: Contraste;
   formas?: PasoForma[];
   cita?: { texto: string; pie?: string; forma?: NombreForma };
   tabla?: {
@@ -221,6 +224,7 @@ export default function SeccionesServicio({
               {s.cifras ? <BloqueCifras cifras={s.cifras} oscuro={oscuro} /> : null}
               {s.hitos ? <BloqueCronologia hitos={s.hitos} /> : null}
               {s.columnas ? <BloqueComparativa columnas={s.columnas} locale={locale} /> : null}
+              {s.contraste ? <BloqueContraste {...s.contraste} /> : null}
               {s.formas ? <BloqueFormas pasos={s.formas} oscuro={oscuro} /> : null}
               {s.tabla ? <BloqueTabla {...s.tabla} /> : null}
               {s.bullets ? (

@@ -93,27 +93,32 @@
       "h2": "Cálculo FIFO y trazabilidad ante Hacienda",
       "fondo": "papel",
       "body": "La AEAT exige el criterio FIFO: cuando vendes o permutas un activo, se considera que sale primero lo que compraste antes. Aplicarlo bien exige tener el histórico completo desde tu primera compra, no solo el del año que declaras, y tratar cada criptomoneda como un activo homogéneo aunque esté repartida en varias plataformas.\n\nLa trazabilidad es la otra mitad. Cada euro del resultado tiene que poder seguirse hasta la operación que lo genera y hasta el dato de origen: el CSV del exchange, la transacción on-chain o el extracto bancario. Si algún día te llega un requerimiento, eso es lo que se aporta.",
-      "columnas": [
-        {
-          "titulo": "Un informe sin reconciliar",
-          "items": [
-            "Las transferencias entre tus cuentas aparecen como ventas",
-            "Los tokens que no reconoce quedan con coste cero",
-            "El FIFO se calcula plataforma a plataforma",
-            "No queda escrito por qué se decidió cada caso"
-          ]
-        },
-        {
-          "titulo": "Un informe reconciliado",
-          "correcta": true,
-          "items": [
-            "Cada transferencia interna se casa con su entrada",
-            "Cada activo tiene su coste de adquisición documentado",
-            "El FIFO se aplica sobre la cartera completa",
-            "Cada criterio queda en la memoria, listo para justificarlo"
-          ]
-        }
-      ],
+      "contraste": {
+        "antes": "Un informe sin reconciliar",
+        "despues": "Un informe reconciliado",
+        "filas": [
+          {
+            "aspecto": "Transferencias",
+            "antes": "Las transferencias entre tus cuentas aparecen como ventas",
+            "despues": "Cada transferencia interna se casa con su entrada"
+          },
+          {
+            "aspecto": "Coste",
+            "antes": "Los tokens que no reconoce quedan con coste cero",
+            "despues": "Cada activo tiene su coste de adquisición documentado"
+          },
+          {
+            "aspecto": "FIFO",
+            "antes": "El FIFO se calcula plataforma a plataforma",
+            "despues": "El FIFO se aplica sobre la cartera completa"
+          },
+          {
+            "aspecto": "Criterios",
+            "antes": "No queda escrito por qué se decidió cada caso",
+            "despues": "Cada criterio queda en la memoria, listo para justificarlo"
+          }
+        ]
+      },
       "bullets": [
         "¿Ya tienes un informe de una herramienta y no te cuadra? Eso lo vemos en <a href=\"/revisar-informe-koinly\">revisar tu informe de Koinly o CoinTracking</a>."
       ]

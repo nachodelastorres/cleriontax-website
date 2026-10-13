@@ -93,27 +93,32 @@
       "h2": "Càlcul FIFO i traçabilitat davant d’Hisenda",
       "fondo": "papel",
       "body": "L’AEAT exigeix el criteri FIFO: quan vens o permutes un actiu, es considera que surt primer el que vas comprar abans. Aplicar-lo bé exigeix tenir l’historial complet des de la teva primera compra, no només el de l’any que declares, i tractar cada criptomoneda com un actiu homogeni encara que estigui repartida en diverses plataformes.\n\nLa traçabilitat és l’altra meitat. Cada euro del resultat s’ha de poder seguir fins a l’operació que el genera i fins a la dada d’origen: el CSV de l’exchange, la transacció on-chain o l’extracte bancari. Si algun dia t’arriba un requeriment, això és el que s’aporta.",
-      "columnas": [
-        {
-          "titulo": "Un informe sense reconciliar",
-          "items": [
-            "Les transferències entre els teus comptes apareixen com a vendes",
-            "Els tokens que no reconeix queden amb cost zero",
-            "El FIFO es calcula plataforma per plataforma",
-            "No queda escrit per què es va decidir cada cas"
-          ]
-        },
-        {
-          "titulo": "Un informe reconciliat",
-          "correcta": true,
-          "items": [
-            "Cada transferència interna es casa amb la seva entrada",
-            "Cada actiu té el seu cost d’adquisició documentat",
-            "El FIFO s’aplica sobre la cartera completa",
-            "Cada criteri queda a la memòria, a punt per justificar-lo"
-          ]
-        }
-      ],
+      "contraste": {
+        "antes": "Un informe sense reconciliar",
+        "despues": "Un informe reconciliat",
+        "filas": [
+          {
+            "aspecto": "Transferències",
+            "antes": "Les transferències entre els teus comptes apareixen com a vendes",
+            "despues": "Cada transferència interna es casa amb la seva entrada"
+          },
+          {
+            "aspecto": "Cost",
+            "antes": "Els tokens que no reconeix queden amb cost zero",
+            "despues": "Cada actiu té el seu cost d’adquisició documentat"
+          },
+          {
+            "aspecto": "FIFO",
+            "antes": "El FIFO es calcula plataforma per plataforma",
+            "despues": "El FIFO s’aplica sobre la cartera completa"
+          },
+          {
+            "aspecto": "Criteris",
+            "antes": "No queda escrit per què es va decidir cada cas",
+            "despues": "Cada criteri queda a la memòria, a punt per justificar-lo"
+          }
+        ]
+      },
       "bullets": [
         "Ja tens un informe d’una eina i no et quadra? Això ho veiem a <a href=\"/revisar-informe-koinly\">revisar el teu informe de Koinly o CoinTracking</a>."
       ]

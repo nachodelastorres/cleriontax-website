@@ -2,7 +2,7 @@ import { Angulo, AnguloInverso, Arco, CuartoDeCirculo } from "@/components/brand
 import Patron from "@/components/brand/Patron";
 import TablaDatos, { type FilaDato } from "@/components/brand/TablaDatos";
 import ChipEstado from "@/components/brand/ChipEstado";
-import { Blocks, ChartCandlestick, Store, Wallet } from "lucide-react";
+import { ArrowRight, Blocks, ChartCandlestick, Store, Wallet } from "lucide-react";
 
 /**
  * Biblioteca de bloques de sección.
@@ -169,6 +169,75 @@ export function BloqueCronologia({ hitos }: { hitos: Hito[] }) {
         </li>
       ))}
     </ol>
+  );
+}
+
+/* ---------------------------------------------------------------- Contraste */
+
+export interface Contraste {
+  /** Cabeceras de las dos columnas: lo que falla y cómo queda bien hecho. */
+  antes: string;
+  despues: string;
+  filas: { aspecto: string; antes: string; despues: string }[];
+}
+
+/**
+ * Antes y después, emparejados fila a fila. Cuando cada fallo tiene su
+ * corrección, ponerlos uno frente a otro deja leer cada par de un vistazo, sin
+ * tener que cruzar dos listas en paralelo.
+ */
+export function BloqueContraste({ antes, despues, filas }: Contraste) {
+  return (
+    <div className="border border-niebla bg-blanco">
+      {/* Cabeceras: solo en pantalla ancha, donde las columnas se alinean. */}
+      <div className="hidden grid-cols-[10rem_1fr_2.5rem_1fr] gap-x-6 border-b border-niebla px-7 py-4 md:grid">
+        <span aria-hidden="true" />
+        <ChipEstado estado="revision" className="justify-self-start">
+          {antes}
+        </ChipEstado>
+        <span aria-hidden="true" />
+        <ChipEstado estado="conciliado" className="justify-self-start">
+          {despues}
+        </ChipEstado>
+      </div>
+
+      <ul>
+        {filas.map((f, i) => (
+          <li
+            key={i}
+            className={`grid gap-x-6 gap-y-3 px-7 py-6 md:grid-cols-[10rem_1fr_2.5rem_1fr] md:items-center ${
+              i > 0 ? "border-t border-niebla" : ""
+            }`}
+          >
+            <span className="font-mono text-dato uppercase tracking-wide text-pizarra">
+              {f.aspecto}
+            </span>
+
+            <span className="grid grid-cols-[12px_1fr] gap-3 text-nota text-pizarra">
+              <span className="mt-2 h-2 w-2 bg-ambar-revision" aria-hidden="true" />
+              <span>
+                <span className="sr-only">{antes}: </span>
+                {f.antes}
+              </span>
+            </span>
+
+            <ArrowRight
+              className="hidden h-5 w-5 text-rojo md:block"
+              strokeWidth={2}
+              aria-hidden="true"
+            />
+
+            <span className="grid grid-cols-[12px_1fr] gap-3 text-nota font-semibold text-azul">
+              <span className="mt-2 h-2 w-2 bg-verde-conciliado" aria-hidden="true" />
+              <span>
+                <span className="sr-only">{despues}: </span>
+                {f.despues}
+              </span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
