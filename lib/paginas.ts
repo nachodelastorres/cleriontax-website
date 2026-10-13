@@ -77,7 +77,8 @@ export const PAGINAS: Pagina[] = [
     grupo: "aeat",
     forma: "cuarto",
     urgente: true,
-    tarifas: true,
+    // Se presupuesta a medida: no hay tabla que aplicar.
+    tarifas: false,
     articulos: [
       "como-documentar-transacciones-defi-hacienda",
       "errores-declarar-criptomonedas",

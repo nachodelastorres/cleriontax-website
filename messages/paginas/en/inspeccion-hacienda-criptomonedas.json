@@ -334,7 +334,7 @@
         },
         {
           "q": "How much does defence in an inspection cost?",
-          "a": "There are two parts. Rebuilding your figures follows the reconciliation tiers: Single platform, €400; Multi-exchange, €500; Mixed portfolio, €600; and Complex portfolio, from €850. All prices include VAT. The defence work, meaning appearances, submissions, appeals and claims, is quoted separately once we've seen the file. You'll find the details on our pricing page."
+          "a": "There's no price list: every inspection is different. We give you a fixed quote in writing before we start, based on the scope, what your portfolio looks like, where the procedure stands and what has already been provided. It covers rebuilding your figures and the defence. If the AEAT widens the scope, we tell you before going on."
         },
         {
           "q": "Can you guarantee there won't be a penalty?",
@@ -371,23 +371,53 @@
       "crypto tax fraud spain"
     ]
   },
-  "precioFases": {
+  "presupuesto": {
     "h2": "What it costs",
-    "entrada": "The basis of any defence is your activity rebuilt. Its price depends on how many data sources have to be reconciled, not on what's at stake in the case.",
-    "suplemento": 150,
-    "reconstruccion": {
-      "titulo": "Rebuilding your figures",
-      "body": "The cost depends on how many data sources need matching, not on what is at stake in the file.",
-      "nota": "The defence (appearances, submissions, appeals and claims) is not included in these prices: it is quoted separately."
+    "entrada": "An inspection isn't priced by tiers: every file is different. So there's no table, but a fixed quote, in writing, before we start.",
+    "factores": {
+      "titulo": "What it depends on",
+      "items": [
+        {
+          "icono": "alcance",
+          "titulo": "The scope",
+          "body": "Which tax years and items are being reviewed."
+        },
+        {
+          "icono": "cartera",
+          "titulo": "Your portfolio",
+          "body": "How many exchanges, wallets and protocols need rebuilding, and what state their data is in."
+        },
+        {
+          "icono": "fase",
+          "titulo": "Where it stands",
+          "body": "Starting at the notice of inspection is not the same as arriving with a proposed assessment or an appeal."
+        },
+        {
+          "icono": "aportado",
+          "titulo": "What has already been provided",
+          "body": "What is already on the file shapes what needs redoing or correcting."
+        },
+        {
+          "icono": "enJuego",
+          "titulo": "What is at stake",
+          "body": "The tax due, the penalty and the appeal route worth pursuing."
+        }
+      ]
     },
-    "contestacion": {
-      "titulo": "Defending you before the tax agency",
-      "precio": "Fixed quote",
-      "body": "As soon as we've seen the file we tell you what the defence will cost, before we start and with no surprises.",
+    "cerrado": {
+      "etiqueta": "Tailored",
+      "titulo": "Fixed quote",
+      "pasos": [
+        "You tell us about your case and send us what you've been notified.",
+        "We study it and send you the quote in writing, with what it covers.",
+        "If you accept it, the price doesn't change. Only if the AEAT widens the scope do we tell you before going on."
+      ],
+      "incluyeTitulo": "It includes",
       "incluye": [
+        "Rebuilding your figures for the whole period",
         "Preparing every appearance and every submission",
         "Submissions against the proposed assessment and the penalty proceedings",
-        "The appeal for reconsideration or the claim before the TEAR or the TEAC"
+        "The appeal for reconsideration or the claim before the TEAR or the TEAC, if it's worth it"
       ]
     },
     "accion": "Ask for a quote"

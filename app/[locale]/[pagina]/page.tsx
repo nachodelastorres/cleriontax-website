@@ -14,6 +14,7 @@ import { TARIFAS } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
 import HeroExpediente from "@/components/expediente/HeroExpediente";
 import PrecioFases, { type TextosPrecioFases } from "@/components/expediente/PrecioFases";
+import PresupuestoMedida, { type TextosPresupuesto } from "@/components/expediente/PresupuestoMedida";
 import type { TextosCalculadora } from "@/components/expediente/CalculadoraPlazo";
 import IndiceServicio from "@/components/services/IndiceServicio";
 import SeccionesServicio, { type Seccion } from "@/components/services/SeccionesServicio";
@@ -62,6 +63,8 @@ interface Contenido {
   tarifas?: { h2: string; entrada?: string; nota?: string };
   /** Precio en dos partes, solo en la plantilla expediente. */
   precioFases?: TextosPrecioFases;
+  /** Sin tabla de precios: presupuesto cerrado a medida (inspección). */
+  presupuesto?: TextosPresupuesto;
   cierre: { h2: string; body: string; button?: { label: string } };
   seo: { title: string; description: string; keywords?: string[] };
 }
@@ -199,7 +202,9 @@ export default async function PaginaServicio({ params }: Props) {
 
       <SeccionesServicio secciones={contenido} locale={locale} />
 
-      {expediente && datos.precioFases ? (
+      {datos.presupuesto ? (
+        <PresupuestoMedida textos={datos.presupuesto} />
+      ) : expediente && datos.precioFases ? (
         <PrecioFases locale={locale} textos={datos.precioFases} />
       ) : conTarifas ? (
         <Tarifas

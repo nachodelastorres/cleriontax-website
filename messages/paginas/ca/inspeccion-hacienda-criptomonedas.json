@@ -334,7 +334,7 @@
         },
         {
           "q": "Quant costa la defensa en una inspecció?",
-          "a": "Hi ha dues parts. La reconstrucció de les teves xifres segueix els trams de la reconciliació: Plataforma única, 400 €; Multiexchange, 500 €; Cartera mixta, 600 €; i Cartera complexa, des de 850 €. Tots els imports porten l’IVA inclòs. La feina de defensa, és a dir, les compareixences, al·legacions, recursos i reclamacions, es pressuposta a part tan bon punt veiem l'expedient. En tens el detall a la pàgina de preus."
+          "a": "No té un preu de taula: cada inspecció és diferent. Et donem un pressupost tancat i per escrit abans de començar, en funció de l’abast, de com és la teva cartera, de en quin punt és el procediment i del que ja s’ha aportat. Inclou la reconstrucció de les teves xifres i la defensa. Si l’AEAT amplia l’abast, t’ho diem abans de continuar."
         },
         {
           "q": "Em podeu garantir que no hi haurà sanció?",
@@ -371,23 +371,53 @@
       "delicte fiscal criptomonedes"
     ]
   },
-  "precioFases": {
+  "presupuesto": {
     "h2": "Quant costa",
-    "entrada": "La base de qualsevol defensa és l'operativa refeta. El preu depèn de quantes fonts de dades cal reconciliar, no del que hi hagi en joc a l'expedient.",
-    "suplemento": 150,
-    "reconstruccion": {
-      "titulo": "Reconstruir les teves xifres",
-      "body": "El que costa depèn de quantes fonts de dades cal casar, no del que hi hagi en joc a l’expedient.",
-      "nota": "La defensa (compareixences, al·legacions, recursos i reclamacions) no està inclosa en aquests preus: es pressuposta a part."
+    "entrada": "Una inspecció no es cotitza per trams: cada expedient és diferent. Per això no hi ha taula, sinó un pressupost tancat, per escrit i abans de començar.",
+    "factores": {
+      "titulo": "De què depèn",
+      "items": [
+        {
+          "icono": "alcance",
+          "titulo": "L’abast",
+          "body": "Quins exercicis i quins conceptes es comproven."
+        },
+        {
+          "icono": "cartera",
+          "titulo": "La teva cartera",
+          "body": "Quants exchanges, wallets i protocols cal reconstruir, i en quin estat són les seves dades."
+        },
+        {
+          "icono": "fase",
+          "titulo": "En quin punt és",
+          "body": "No és el mateix començar amb la comunicació d’inici que arribar amb una proposta de liquidació o un recurs."
+        },
+        {
+          "icono": "aportado",
+          "titulo": "El que ja s’ha aportat",
+          "body": "El que consta a l’expedient condiciona el que cal refer o corregir."
+        },
+        {
+          "icono": "enJuego",
+          "titulo": "El que hi ha en joc",
+          "body": "La quota, la sanció i la via de recurs que tingui sentit seguir."
+        }
+      ]
     },
-    "contestacion": {
-      "titulo": "Defensar-te davant d’Hisenda",
-      "precio": "Pressupost tancat",
-      "body": "Tan bon punt veiem l’expedient et diem què costa la defensa, abans de començar i sense sorpreses.",
+    "cerrado": {
+      "etiqueta": "A mida",
+      "titulo": "Pressupost tancat",
+      "pasos": [
+        "Ens expliques el teu cas i ens envies el que t’han notificat.",
+        "L’estudiem i t’enviem el pressupost per escrit, amb el que inclou.",
+        "Si l’acceptes, el preu no canvia. Només si l’AEAT amplia l’abast t’ho diem abans de continuar."
+      ],
+      "incluyeTitulo": "Inclou",
       "incluye": [
+        "La reconstrucció de les teves xifres de tot el període",
         "La preparació de cada compareixença i de cada escrit",
         "Les al·legacions a la proposta de liquidació i a l’expedient sancionador",
-        "El recurs de reposició o la reclamació davant el TEAR o el TEAC"
+        "El recurs de reposició o la reclamació davant el TEAR o el TEAC, si compensa"
       ]
     },
     "accion": "Demanar pressupost"

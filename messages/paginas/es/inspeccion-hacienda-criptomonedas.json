@@ -334,7 +334,7 @@
         },
         {
           "q": "¿Cuánto cuesta la defensa en una inspección?",
-          "a": "Hay dos partes. La reconstrucción de tus cifras sigue los tramos de la reconciliación: Plataforma única, 400 €; Multiexchange, 500 €; Cartera mixta, 600 €; y Cartera compleja, desde 850 €. Todos los importes llevan el IVA incluido. El trabajo de defensa, es decir, las comparecencias, alegaciones, recursos y reclamaciones, se presupuesta aparte en cuanto vemos el expediente. Tienes el detalle en la página de precios."
+          "a": "No tiene un precio de tabla: cada inspección es distinta. Te damos un presupuesto cerrado y por escrito antes de empezar, en función del alcance, de cómo es tu cartera, de en qué punto está el procedimiento y de lo que ya se ha aportado. Incluye la reconstrucción de tus cifras y la defensa. Si la AEAT amplía el alcance, te lo decimos antes de seguir."
         },
         {
           "q": "¿Podéis garantizarme que no habrá sanción?",
@@ -371,23 +371,53 @@
       "delito fiscal criptomonedas"
     ]
   },
-  "precioFases": {
+  "presupuesto": {
     "h2": "Cuánto cuesta",
-    "entrada": "La base de cualquier defensa es la operativa rehecha. Su precio depende de cuántas fuentes de datos hay que reconciliar, no de lo que esté en juego en el expediente.",
-    "suplemento": 150,
-    "reconstruccion": {
-      "titulo": "Reconstruir tus cifras",
-      "body": "Lo que cuesta depende de cuántas fuentes de datos hay que casar, no de lo que esté en juego en el expediente.",
-      "nota": "La defensa (comparecencias, alegaciones, recursos y reclamaciones) no está incluida en estos precios: se presupuesta aparte."
+    "entrada": "Una inspección no se cotiza por tramos: cada expediente es distinto. Por eso no hay tabla, sino un presupuesto cerrado, por escrito y antes de empezar.",
+    "factores": {
+      "titulo": "De qué depende",
+      "items": [
+        {
+          "icono": "alcance",
+          "titulo": "El alcance",
+          "body": "Qué ejercicios y qué conceptos se comprueban."
+        },
+        {
+          "icono": "cartera",
+          "titulo": "Tu cartera",
+          "body": "Cuántos exchanges, wallets y protocolos hay que reconstruir, y en qué estado están sus datos."
+        },
+        {
+          "icono": "fase",
+          "titulo": "En qué punto está",
+          "body": "No es lo mismo empezar con la comunicación de inicio que llegar con una propuesta de liquidación o un recurso."
+        },
+        {
+          "icono": "aportado",
+          "titulo": "Lo que ya se ha aportado",
+          "body": "Lo que consta en el expediente condiciona lo que hay que rehacer o corregir."
+        },
+        {
+          "icono": "enJuego",
+          "titulo": "Lo que hay en juego",
+          "body": "La cuota, la sanción y la vía de recurso que tenga sentido seguir."
+        }
+      ]
     },
-    "contestacion": {
-      "titulo": "Defenderte ante Hacienda",
-      "precio": "Presupuesto cerrado",
-      "body": "En cuanto vemos el expediente te decimos qué cuesta la defensa, antes de empezar y sin sorpresas.",
+    "cerrado": {
+      "etiqueta": "A medida",
+      "titulo": "Presupuesto cerrado",
+      "pasos": [
+        "Nos cuentas tu caso y nos envías lo que te han notificado.",
+        "Lo estudiamos y te enviamos el presupuesto por escrito, con lo que incluye.",
+        "Si lo aceptas, el precio no cambia. Solo si la AEAT amplía el alcance te lo decimos antes de seguir."
+      ],
+      "incluyeTitulo": "Incluye",
       "incluye": [
+        "La reconstrucción de tus cifras de todo el periodo",
         "La preparación de cada comparecencia y de cada escrito",
         "Las alegaciones a la propuesta de liquidación y al expediente sancionador",
-        "El recurso de reposición o la reclamación ante el TEAR o el TEAC"
+        "El recurso de reposición o la reclamación ante el TEAR o el TEAC, si compensa"
       ]
     },
     "accion": "Pedir presupuesto"
