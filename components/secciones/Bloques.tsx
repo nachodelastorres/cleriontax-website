@@ -188,7 +188,7 @@ export interface Contraste {
  */
 export function BloqueContraste({ antes, despues, filas }: Contraste) {
   return (
-    <div className="border border-niebla bg-blanco">
+    <div className="mt-10 border border-niebla bg-blanco">
       {/* Cabeceras: solo en pantalla ancha, donde las columnas se alinean. */}
       <div className="hidden grid-cols-[10rem_1fr_2.5rem_1fr] gap-x-6 border-b border-niebla px-7 py-4 md:grid">
         <span aria-hidden="true" />
