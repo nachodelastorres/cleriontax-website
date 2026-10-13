@@ -10,59 +10,6 @@
     "prices": "Preus",
     "verTodo": "Veure preus"
   },
-  "contact": {
-    "title": "Sol·licita el teu pressupost sense compromís",
-    "subtitle": "Explica'ns el teu cas: exchanges que utilitzes, volum d'operacions i tipus d'actius. T'enviarem un pressupost personalitzat en poques hores.",
-    "hero": {
-      "badge": "Assessoria Fiscal Especialitzada",
-      "title": "Necessites ajuda amb la fiscalitat de les teves criptomonedes?",
-      "subtitle": "El nostre equip d'assessors fiscals col·legiats especialitzats en blockchain t'ajudarà a declarar correctament les teves inversions en crypto. Resposta en menys de 24 hores.",
-      "cta": "Sol·licitar pressupost"
-    },
-    "form": {
-      "name": "Nom complet",
-      "namePlaceholder": "Joan Pérez",
-      "email": "Correu electrònic",
-      "emailPlaceholder": "el.teu@email.com",
-      "phone": "Telèfon",
-      "phonePlaceholder": "+34 600 000 000",
-      "service": "Tipus de servei",
-      "message": "Explica’ns el teu cas: plataformes, volum, tipus d’operacions",
-      "messagePlaceholder": "Descriu el teu cas: nombre aproximat de transaccions, exchanges utilitzats, tipus d’operacions...",
-      "file": "Adjunta un fitxer (opcional)",
-      "fileDragText": "Arrossega el teu fitxer CSV o Excel aquí",
-      "fileClickText": "o fes clic per seleccionar (màx. 10MB)",
-      "fileErrorType": "Si us plau, selecciona un fitxer CSV o Excel",
-      "fileErrorSize": "El fitxer és massa gran. Màxim 10MB",
-      "submit": "Enviar sol·licitud",
-      "submitting": "Enviant...",
-      "submitError": "Error en enviar el formulari",
-      "successMessage": "Missatge enviat correctament! Et respondrem en poques hores.",
-      "errorMessage": "Hi ha hagut un error en enviar el missatge. Si us plau, torna-ho a provar o contacta'ns per correu.",
-      "privacyConsentText": "He llegit i accepto la",
-      "privacyLink": "Política de Privadesa",
-      "privacyConsentRequired": "Has d'acceptar la política de privadesa per continuar"
-    },
-    "info": {
-      "title": "Prefereixes contactar-nos directament?",
-      "email": "info@cleriontax.com",
-      "phone": "+34 663 482 301",
-      "schedule": "Dilluns a Divendres, 9:00 - 18:00",
-      "offHoursText": "Fora d’horari? Truca o escriu-nos, et respondrem aviat.",
-      "emailLabel": "Correu electrònic",
-      "phoneLabel": "Telèfon",
-      "scheduleLabel": "Horari",
-      "quickResponseTitle": "Resposta ràpida",
-      "quickResponseText": "Normalment responem totes les consultes en poques hores laborables. Si el teu cas és urgent, indica-ho al missatge.",
-      "infoToIncludeTitle": "Quina informació incloure?",
-      "infoToInclude": {
-        "transactions": "Nombre aproximat de transaccions",
-        "exchanges": "Exchanges o plataformes utilitzades",
-        "operations": "Tipus d’operacions (trading, staking, DeFi, etc.)",
-        "year": "Any fiscal a declarar"
-      }
-    }
-  },
   "footer": {
     "description": "Firma boutique d'anàlisi de dades i assessoria fiscal especialitzada en criptoactius i inversions globals.",
     "sections": {
@@ -92,10 +39,6 @@
     "services": {
       "title": "Serveis Fiscals Cripto | Declaració Renda Criptoactius | Cleriontax",
       "description": "Plans des de 600€ per a la teva declaració fiscal cripto. Informe IRPF, model 100, models 720/721. Trading, staking, DeFi, NFTs. Anàlisi de dades + assessoria fiscal especialitzada per a inversors en criptomonedes a Espanya."
-    },
-    "contact": {
-      "title": "Contacte | Pressupost Declaració Fiscal Cripto | Cleriontax",
-      "description": "Sol·licita un pressupost personalitzat per a la teva declaració de criptoactius. Informe fiscal per a IRPF, model 720, model 721. Resposta ràpida. Assessoria fiscal cripto a Espanya sense compromís."
     },
     "blog": {
       "title": "Blog Fiscalitat i Inversió | Guies Crypto, Accions i Anàlisi de Dades | Cleriontax",

@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
+import IconoWhatsApp from "@/components/brand/IconoWhatsApp";
 
 /**
  * Barra de acción fija — páginas de situación.
@@ -79,7 +80,7 @@ export default function BarraAccion({
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center gap-2 border-2 border-blanco px-5 font-semibold text-blanco transition-colors hover:bg-blanco hover:text-azul"
               >
-                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                <IconoWhatsApp className="h-5 w-5" />
                 WhatsApp
               </a>
             </>
@@ -107,7 +108,7 @@ export default function BarraAccion({
                 className="inline-flex h-11 items-center justify-center gap-2 border-2 border-blanco px-5 font-semibold text-blanco transition-colors hover:bg-blanco hover:text-azul"
                 aria-label={t("escribirWhatsapp")}
               >
-                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                <IconoWhatsApp className="h-5 w-5" />
                 <span className="hidden sm:inline">WhatsApp</span>
               </a>
             </>

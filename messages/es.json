@@ -10,59 +10,6 @@
     "prices": "Precios",
     "verTodo": "Ver precios"
   },
-  "contact": {
-    "title": "Solicita tu presupuesto sin compromiso",
-    "subtitle": "Cuéntanos tu caso: exchanges que usas, volumen de operaciones y tipos de activos. Te enviamos presupuesto personalizado en pocas horas.",
-    "hero": {
-      "badge": "Asesoría Fiscal Especializada",
-      "title": "¿Necesitas ayuda con la fiscalidad de tus criptomonedas?",
-      "subtitle": "Nuestro equipo de asesores fiscales colegiados especializados en blockchain te ayudará a declarar correctamente tus inversiones en crypto. Respuesta en menos de 24 horas.",
-      "cta": "Solicitar presupuesto"
-    },
-    "form": {
-      "name": "Nombre completo",
-      "namePlaceholder": "Juan Pérez",
-      "email": "Email",
-      "emailPlaceholder": "tu@email.com",
-      "phone": "Teléfono",
-      "phonePlaceholder": "+34 600 000 000",
-      "service": "Tipo de servicio",
-      "message": "Cuéntanos sobre tu caso: plataformas, volumen, tipos de operaciones",
-      "messagePlaceholder": "Describe tu caso: número aproximado de transacciones, exchanges utilizados, tipo de operaciones...",
-      "file": "Adjuntar archivo (opcional)",
-      "fileDragText": "Arrastra tu archivo CSV o Excel aquí",
-      "fileClickText": "o haz clic para seleccionar (máx. 10MB)",
-      "fileErrorType": "Por favor, selecciona un archivo CSV o Excel",
-      "fileErrorSize": "El archivo es demasiado grande. Máximo 10MB",
-      "submit": "Enviar solicitud",
-      "submitting": "Enviando...",
-      "submitError": "Error al enviar el formulario",
-      "successMessage": "¡Mensaje enviado correctamente! Te responderemos en pocas horas.",
-      "errorMessage": "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contáctanos por email.",
-      "privacyConsentText": "He leído y acepto la",
-      "privacyLink": "Política de Privacidad",
-      "privacyConsentRequired": "Debes aceptar la política de privacidad para continuar"
-    },
-    "info": {
-      "title": "¿Prefieres contactarnos directamente?",
-      "email": "info@cleriontax.com",
-      "phone": "+34 663 482 301",
-      "schedule": "Lunes a Viernes, 9:00 - 18:00",
-      "offHoursText": "¿Fuera de horario? Llama o escribe, responderemos pronto",
-      "emailLabel": "Email",
-      "phoneLabel": "Teléfono",
-      "scheduleLabel": "Horario",
-      "quickResponseTitle": "Respuesta rápida",
-      "quickResponseText": "Normalmente respondemos a todas las consultas en pocas horas laborables. Si tu caso es urgente, indícalo en el mensaje.",
-      "infoToIncludeTitle": "¿Qué información incluir?",
-      "infoToInclude": {
-        "transactions": "Número aproximado de transacciones",
-        "exchanges": "Exchanges o plataformas utilizadas",
-        "operations": "Tipo de operaciones (trading, staking, DeFi, etc.)",
-        "year": "Año fiscal a declarar"
-      }
-    }
-  },
   "footer": {
     "description": "Firma boutique de análisis de datos y asesoría fiscal especializada en criptoactivos e inversiones globales.",
     "sections": {
@@ -92,10 +39,6 @@
     "services": {
       "title": "Servicios Fiscales Cripto | Declaración Renta Criptoactivos | Cleriontax",
       "description": "Planes desde 600€ para tu declaración fiscal cripto. Informe IRPF, modelo 100, modelo 720/721. Trading, staking, DeFi, NFTs. Análisis de datos + asesoría fiscal especializada para inversores en criptomonedas en España."
-    },
-    "contact": {
-      "title": "Contacto | Presupuesto Declaración Fiscal Cripto | Cleriontax",
-      "description": "Solicita presupuesto personalizado para tu declaración de criptoactivos. Informe fiscal para IRPF, modelo 720, modelo 721. Respuesta en pocas horas. Asesoría fiscal cripto en España sin compromiso."
     },
     "blog": {
       "title": "Blog Fiscalidad e Inversión | Guías Crypto, Acciones y Análisis de Datos | Cleriontax",

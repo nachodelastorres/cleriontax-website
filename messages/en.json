@@ -10,59 +10,6 @@
     "prices": "Pricing",
     "verTodo": "See pricing"
   },
-  "contact": {
-    "title": "Request your quote with no obligation",
-    "subtitle": "Tell us about your case: exchanges you use, transaction volume, and types of assets. We'll send you a personalized quote within a few hours.",
-    "hero": {
-      "badge": "Specialized Tax Advisory",
-      "title": "Need help with your cryptocurrency taxes?",
-      "subtitle": "Our team of certified tax advisors specialized in blockchain will help you correctly declare your crypto investments. Response in less than 24 hours.",
-      "cta": "Request quote"
-    },
-    "form": {
-      "name": "Full name",
-      "namePlaceholder": "John Smith",
-      "email": "Email",
-      "emailPlaceholder": "your@email.com",
-      "phone": "Phone",
-      "phonePlaceholder": "+34 600 000 000",
-      "service": "Type of service",
-      "message": "Tell us about your case: platforms, volume, types of operations",
-      "messagePlaceholder": "Describe your case: approximate number of transactions, exchanges used, types of operations...",
-      "file": "Attach file (optional)",
-      "fileDragText": "Drag your CSV or Excel file here",
-      "fileClickText": "or click to select (max 10MB)",
-      "fileErrorType": "Please select a CSV or Excel file",
-      "fileErrorSize": "The file is too large. Maximum 10MB",
-      "submit": "Send request",
-      "submitting": "Sending...",
-      "submitError": "Error sending the form",
-      "successMessage": "Message sent successfully! We'll get back to you within a few hours.",
-      "errorMessage": "There was an error sending the message. Please try again or contact us by email.",
-      "privacyConsentText": "I have read and accept the",
-      "privacyLink": "Privacy Policy",
-      "privacyConsentRequired": "You must accept the privacy policy to continue"
-    },
-    "info": {
-      "title": "Prefer to contact us directly?",
-      "email": "info@cleriontax.com",
-      "phone": "+34 663 482 301",
-      "schedule": "Monday to Friday, 9:00 AM – 6:00 PM",
-      "offHoursText": "Outside office hours? Call or message us, we’ll reply soon.",
-      "emailLabel": "Email",
-      "phoneLabel": "Phone",
-      "scheduleLabel": "Schedule",
-      "quickResponseTitle": "Quick response",
-      "quickResponseText": "We usually respond to all inquiries within a few working hours. If your case is urgent, please mention it in the message.",
-      "infoToIncludeTitle": "What information to include?",
-      "infoToInclude": {
-        "transactions": "Approximate number of transactions",
-        "exchanges": "Exchanges or platforms used",
-        "operations": "Types of operations (trading, staking, DeFi, etc.)",
-        "year": "Fiscal year to declare"
-      }
-    }
-  },
   "footer": {
     "description": "Boutique firm specializing in data analysis and tax advisory for crypto assets and global investments.",
     "sections": {
@@ -92,10 +39,6 @@
     "services": {
       "title": "Crypto Tax Services | Crypto Income Tax Return | Cleriontax",
       "description": "Plans starting at €600 for your crypto tax return. IRPF report, form 100, forms 720/721. Trading, staking, DeFi, NFTs. Data analysis + specialized tax advisory for crypto investors in Spain."
-    },
-    "contact": {
-      "title": "Contact | Crypto Tax Return Quote | Cleriontax",
-      "description": "Request a personalized quote for your crypto tax return. Complete tax report for IRPF, form 720, form 721. Fast response. Specialized crypto tax advisory in Spain with no obligation."
     },
     "blog": {
       "title": "Taxation and Investment Blog | Crypto, Stocks, and Data Analysis Guides | Cleriontax",

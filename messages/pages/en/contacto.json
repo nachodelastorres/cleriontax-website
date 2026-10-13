@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Contact: tell us about your case | Cleriontax",
+    "description": "Message us on WhatsApp, call us or send us your case in writing. A person from the team replies, usually within a few working hours, with no commitment."
+  },
+  "hero": {
+    "etiqueta": "Contact",
+    "h1": "Tell us about your case. A person will reply.",
+    "subheading": "Whichever way suits you best. If you have a tax agency deadline running, phone or WhatsApp is better."
+  },
+  "canales": [
+    {
+      "tipo": "whatsapp",
+      "etiqueta": "WhatsApp",
+      "valor": "+34 663 482 301",
+      "nota": "The quickest way for a first question"
+    },
+    {
+      "tipo": "telefono",
+      "etiqueta": "Phone",
+      "valor": "+34 663 482 301",
+      "nota": "If you have a deadline running"
+    },
+    {
+      "tipo": "email",
+      "etiqueta": "Email",
+      "valor": "info@cleriontax.com",
+      "nota": "To send us documents"
+    }
+  ],
+  "horario": "Monday to Friday, 9:00 to 18:00",
+  "formulario": {
+    "h2": "Or leave us your case in writing",
+    "entrada": "With these details we can already tell you what kind of work it is and what it might cost."
+  },
+  "despues": {
+    "h2": "What happens next",
+    "pasos": [
+      "A person from the team reads it, not an automated system.",
+      "We reply, usually within a few working hours, with what we need or with a proposal.",
+      "If it's a fit, we send you a fixed quote before we start."
+    ],
+    "nota": "No commitment"
+  }
+}

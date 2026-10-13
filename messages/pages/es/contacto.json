@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Contacto: cuéntanos tu caso | Cleriontax",
+    "description": "Escríbenos por WhatsApp, llámanos o déjanos tu caso por escrito. Te responde una persona del equipo, normalmente en pocas horas laborables, y sin compromiso."
+  },
+  "hero": {
+    "etiqueta": "Contacto",
+    "h1": "Cuéntanos tu caso. Te responde una persona.",
+    "subheading": "Por donde te resulte más cómodo. Si tienes un plazo de Hacienda corriendo, mejor por teléfono o WhatsApp."
+  },
+  "canales": [
+    {
+      "tipo": "whatsapp",
+      "etiqueta": "WhatsApp",
+      "valor": "+34 663 482 301",
+      "nota": "Lo más rápido para una primera consulta"
+    },
+    {
+      "tipo": "telefono",
+      "etiqueta": "Teléfono",
+      "valor": "+34 663 482 301",
+      "nota": "Si tienes un plazo corriendo"
+    },
+    {
+      "tipo": "email",
+      "etiqueta": "Email",
+      "valor": "info@cleriontax.com",
+      "nota": "Para enviarnos documentos"
+    }
+  ],
+  "horario": "Lunes a viernes, de 9:00 a 18:00",
+  "formulario": {
+    "h2": "O déjanos tu caso por escrito",
+    "entrada": "Con estos datos ya podemos decirte qué tipo de trabajo es y cuánto puede costar."
+  },
+  "despues": {
+    "h2": "Qué pasa después",
+    "pasos": [
+      "Lo lee una persona del equipo, no un sistema automático.",
+      "Te respondemos, normalmente en pocas horas laborables, con lo que necesitamos o con una propuesta.",
+      "Si encaja, te enviamos un presupuesto cerrado antes de empezar."
+    ],
+    "nota": "Sin compromiso"
+  }
+}

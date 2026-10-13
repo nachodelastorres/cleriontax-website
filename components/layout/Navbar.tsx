@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from 'next-intl';
-import { Menu, X, Languages, MessageCircle, ChevronDown } from "lucide-react";
+import { Menu, X, Languages, ChevronDown } from "lucide-react";
+import IconoWhatsApp from "@/components/brand/IconoWhatsApp";
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
@@ -168,15 +169,16 @@ export default function Navbar() {
                   </div>
                 )}
             </div>
-            {/* WhatsApp Button */}
+            {/* WhatsApp: solo el logotipo oficial, en su verde. */}
             <a
               href="https://wa.me/34663482301"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="flex items-center space-x-2 bg-green-500 px-4 py-2 text-sm font-medium text-blanco transition-all hover:bg-green-600"
+              aria-label="WhatsApp"
+              title="WhatsApp"
+              className="flex h-10 w-10 items-center justify-center transition-transform duration-200 hover:scale-110"
             >
-              <MessageCircle className="h-4 w-4" />
-              <span>WhatsApp</span>
+              <IconoWhatsApp className="h-7 w-7" />
             </a>
             <ButtonLink variant="principal" size="sm" href="/contacto">
               {t('requestQuote')}
@@ -276,9 +278,9 @@ export default function Navbar() {
                     href="https://wa.me/34663482301"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="flex items-center justify-center space-x-2 bg-green-500 px-4 py-2.5 text-base font-medium text-blanco transition-all hover:bg-green-600 w-full"
+                    className="flex w-full items-center justify-center gap-3 border border-niebla px-4 py-2.5 text-base font-medium text-azul transition-colors hover:bg-papel"
                   >
-                    <MessageCircle className="h-5 w-5" />
+                    <IconoWhatsApp className="h-6 w-6" />
                     <span>WhatsApp</span>
                   </a>
                 </div>

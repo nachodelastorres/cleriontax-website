@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Contacte: explica’ns el teu cas | Cleriontax",
+    "description": "Escriu-nos per WhatsApp, truca’ns o deixa’ns el teu cas per escrit. Et respon una persona de l’equip, normalment en poques hores laborables, i sense compromís."
+  },
+  "hero": {
+    "etiqueta": "Contacte",
+    "h1": "Explica’ns el teu cas. Et respon una persona.",
+    "subheading": "Per on et vagi més bé. Si tens un termini d’Hisenda corrent, millor per telèfon o WhatsApp."
+  },
+  "canales": [
+    {
+      "tipo": "whatsapp",
+      "etiqueta": "WhatsApp",
+      "valor": "+34 663 482 301",
+      "nota": "El més ràpid per a una primera consulta"
+    },
+    {
+      "tipo": "telefono",
+      "etiqueta": "Telèfon",
+      "valor": "+34 663 482 301",
+      "nota": "Si tens un termini corrent"
+    },
+    {
+      "tipo": "email",
+      "etiqueta": "Correu",
+      "valor": "info@cleriontax.com",
+      "nota": "Per enviar-nos documents"
+    }
+  ],
+  "horario": "De dilluns a divendres, de 9:00 a 18:00",
+  "formulario": {
+    "h2": "O deixa’ns el teu cas per escrit",
+    "entrada": "Amb aquestes dades ja et podem dir quin tipus de feina és i quant pot costar."
+  },
+  "despues": {
+    "h2": "Què passa després",
+    "pasos": [
+      "El llegeix una persona de l’equip, no un sistema automàtic.",
+      "Et responem, normalment en poques hores laborables, amb el que necessitem o amb una proposta.",
+      "Si encaixa, t’enviem un pressupost tancat abans de començar."
+    ],
+    "nota": "Sense compromís"
+  }
+}
