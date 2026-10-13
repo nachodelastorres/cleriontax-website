@@ -11,8 +11,19 @@ import { ArrowRight } from "lucide-react";
 export interface Escalera {
   extremos: { leve: string; grave: string };
   /** Etiqueta del peldaño de esta página. */
-  actual: string;
-  niveles: { titulo: string; body: string; href?: string; enlace?: string; aqui?: boolean }[];
+  actual?: string;
+  niveles: {
+    titulo: string;
+    body: string;
+    /** Cifra grande del peldaño, cuando el peldaño es un número (una sanción). */
+    valor?: string;
+    href?: string;
+    enlace?: string;
+    /** El peldaño del que trata la página: rojo y con etiqueta. */
+    aqui?: boolean;
+    /** Rojo sin etiqueta: el peldaño que más pesa. */
+    acento?: boolean;
+  }[];
 }
 
 const ALTURAS = ["h-6", "h-10", "h-14", "h-20", "h-24"];
@@ -32,16 +43,25 @@ export default function EscaleraGravedad({
             <div className="flex h-24 items-end" aria-hidden="true">
               <div
                 className={`w-full ${ALTURAS[Math.min(i, ALTURAS.length - 1)]} ${
-                  n.aqui ? "bg-rojo" : "bg-azul/15"
+                  n.aqui || n.acento ? "bg-rojo" : "bg-azul/15"
                 }`}
               />
             </div>
-            {n.aqui ? (
+            {n.valor ? (
+              <p
+                className={`mt-4 font-dato text-[34px] font-semibold leading-none tracking-[-0.02em] ${
+                  n.acento ? "text-rojo" : "text-azul"
+                }`}
+              >
+                {n.valor}
+              </p>
+            ) : null}
+            {n.aqui && actual ? (
               <span className="mt-4 text-dato font-semibold uppercase tracking-wide text-rojo">
                 {actual}
               </span>
             ) : null}
-            <h3 className={`text-subtitulo text-azul ${n.aqui ? "mt-1" : "mt-4"}`}>{n.titulo}</h3>
+            <h3 className={`text-subtitulo text-azul ${n.aqui || n.valor ? "mt-2" : "mt-4"}`}>{n.titulo}</h3>
             <p className="mt-2 flex-1 text-nota text-pizarra">{n.body}</p>
             {n.href && n.enlace ? (
               <a

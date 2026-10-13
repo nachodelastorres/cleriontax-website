@@ -23,6 +23,7 @@ import type { FilaDato } from "@/components/brand/TablaDatos";
 import AnatomiaCarta, { type Carta } from "@/components/expediente/AnatomiaCarta";
 import EscaleraGravedad, { type Escalera } from "@/components/expediente/EscaleraGravedad";
 import CalendarioPlazo, { type Calendario } from "@/components/expediente/CalendarioPlazo";
+import Recorrido, { type Parada } from "@/components/expediente/Recorrido";
 
 /**
  * Renderiza las secciones de una página.
@@ -57,6 +58,7 @@ export interface Seccion {
   carta?: Carta;
   escalera?: Escalera;
   calendario?: Calendario;
+  recorrido?: Parada[];
   /** Franja final que lleva a otra página de servicio. */
   derivacion?: Derivacion;
   formas?: PasoForma[];
@@ -274,6 +276,7 @@ export default function SeccionesServicio({
               {s.carta ? <AnatomiaCarta {...s.carta} /> : null}
               {s.escalera ? <EscaleraGravedad {...s.escalera} locale={locale} /> : null}
               {s.calendario ? <CalendarioPlazo {...s.calendario} /> : null}
+              {s.recorrido ? <Recorrido hitos={s.recorrido} /> : null}
               {s.formas ? <BloqueFormas pasos={s.formas} oscuro={oscuro} /> : null}
               {s.tabla ? <BloqueTabla {...s.tabla} /> : null}
               {s.bullets ? (

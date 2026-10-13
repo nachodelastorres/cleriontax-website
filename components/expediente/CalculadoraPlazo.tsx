@@ -10,12 +10,26 @@ import { useEffect, useMemo, useState } from "react";
  * abierto, la notificación se da por hecha a los diez días naturales de
  * ponerse a disposición, y desde ahí empieza a contar.
  *
+ * Si la página tiene varios trámites con plazos distintos (alegaciones en días
+ * hábiles, recursos en meses), se elige el trámite primero. Los plazos por
+ * meses van de fecha a fecha y, si el último día es inhábil, pasan al
+ * siguiente hábil.
+ *
  * Es orientativa y lo dice: los festivos autonómicos y locales no entran, y
  * manda lo que diga la carta.
  */
 
+export interface Tramite {
+  etiqueta: string;
+  tipo: "habiles" | "meses";
+  cantidad: number;
+}
+
 export interface TextosCalculadora {
   titulo: string;
+  /** Pregunta del selector, solo si hay varios trámites. */
+  tramite?: string;
+  opciones?: Tramite[];
   fecha: string;
   sede: string;
   resultado: string;
@@ -67,6 +81,16 @@ function ultimoDia(notificacion: Date, habiles: number) {
   return d;
 }
 
+/** Fecha a fecha; sin día equivalente, el último del mes; si es inhábil, el siguiente hábil. */
+function ultimoDiaMeses(notificacion: Date, meses: number) {
+  const y = notificacion.getFullYear();
+  const m = notificacion.getMonth() + meses;
+  const ultimoDelMes = new Date(y, m + 1, 0).getDate();
+  let d = new Date(y, m, Math.min(notificacion.getDate(), ultimoDelMes));
+  while (!esHabil(d)) d = sumarDias(d, 1);
+  return d;
+}
+
 function habilAnterior(d: Date) {
   let r = sumarDias(d, -1);
   while (!esHabil(r)) r = sumarDias(r, -1);
@@ -107,6 +131,12 @@ export default function CalculadoraPlazo({
   // por la zona horaria y no casaría con lo que pinta el navegador.
   const [valor, setValor] = useState("");
   const [sede, setSede] = useState(false);
+  const [elegido, setElegido] = useState(0);
+  const tramite: Tramite = textos.opciones?.[elegido] ?? {
+    etiqueta: "",
+    tipo: "habiles",
+    cantidad: habiles,
+  };
   useEffect(() => setValor(aValor(new Date())), []);
 
   const formato = new Intl.DateTimeFormat(locale === "en" ? "en-GB" : `${locale}-ES`, {
@@ -121,7 +151,10 @@ export default function CalculadoraPlazo({
     const puesta = aFecha(valor);
     if (Number.isNaN(puesta.getTime())) return null;
     const notificacion = sede ? sumarDias(puesta, 10) : puesta;
-    const fin = ultimoDia(notificacion, habiles);
+    const fin =
+      tramite.tipo === "meses"
+        ? ultimoDiaMeses(notificacion, tramite.cantidad)
+        : ultimoDia(notificacion, tramite.cantidad);
     const hoy = aFecha(aValor(new Date()));
     const presentar = habilAnterior(fin);
     const quedan = habilesHasta(hoy, fin);
@@ -136,11 +169,31 @@ export default function CalculadoraPlazo({
       esHoy,
       urgente: esHoy || quedan <= MARGEN_URGENTE,
     };
-  }, [valor, sede, habiles]);
+  }, [valor, sede, tramite.tipo, tramite.cantidad]);
 
   return (
     <div className="bg-blanco p-6 text-azul md:p-8">
       <p className="text-subtitulo">{textos.titulo}</p>
+
+      {textos.opciones && textos.opciones.length > 1 ? (
+        <>
+          <label className="mt-5 block text-nota text-pizarra" htmlFor="tramite">
+            {textos.tramite}
+          </label>
+          <select
+            id="tramite"
+            value={elegido}
+            onChange={(e) => setElegido(Number(e.target.value))}
+            className="mt-2 h-12 w-full border border-niebla bg-blanco px-3 text-nota text-azul focus:border-azul focus:outline-none"
+          >
+            {textos.opciones.map((o, i) => (
+              <option key={i} value={i}>
+                {o.etiqueta}
+              </option>
+            ))}
+          </select>
+        </>
+      ) : null}
 
       <label className="mt-5 block text-nota text-pizarra" htmlFor="fecha-notificacion">
         {textos.fecha}

@@ -1,4 +1,5 @@
 {
+  "plantilla": "expediente",
   "title": "Inspecció d'Hisenda per criptomonedes",
   "slug": "inspeccion-hacienda-criptomonedas",
   "nav": "Inspecció i sancions",
@@ -14,18 +15,70 @@
     "secundaria": {
       "label": "Explica'ns el teu cas",
       "href": "#diagnostico"
+    },
+    "calculadora": {
+      "titulo": "Calcula el teu termini",
+      "tramite": "Què t’han notificat",
+      "opciones": [
+        {
+          "etiqueta": "Acta o proposta de sanció: al·legacions (15 dies hàbils)",
+          "tipo": "habiles",
+          "cantidad": 15
+        },
+        {
+          "etiqueta": "Liquidació o sanció: recurs o reclamació (1 mes)",
+          "tipo": "meses",
+          "cantidad": 1
+        }
+      ],
+      "fecha": "Data de la notificació",
+      "resultado": "El teu últim dia",
+      "recomendado": "Nosaltres el presentaríem el",
+      "quedan": "Et queden {n} dies hàbils",
+      "hoy": "Venç avui",
+      "vencido": "El termini ja ha vençut. Truca’ns: segons el cas, encara hi ha vies.",
+      "aviso": "Càlcul orientatiu amb festius nacionals. Mana el que digui la teva notificació: cada tràmit té el seu termini i els festius autonòmics i locals el poden moure. Amb terminis molt ajustats o encàrrecs d’última hora, el servei pot tenir un cost més alt.",
+      "sede": "És a la seu electrònica i encara no l’he obert",
+      "urgente": "Amb aquest marge la feina és urgent: pot tenir un cost més alt i te’l confirmem abans de començar."
     }
   },
   "toc": [
-    { "id": "donde-estas", "label": "On ets" },
-    { "id": "recorrido", "label": "El recorregut" },
-    { "id": "en-juego", "label": "Què hi ha en joc" },
-    { "id": "cuota-y-sancion", "label": "Quota i sanció" },
-    { "id": "derechos", "label": "Els teus drets" },
-    { "id": "como-lo-llevamos", "label": "Com el portem" },
-    { "id": "que-necesitamos", "label": "Què necessitem" },
-    { "id": "precio", "label": "Preu" },
-    { "id": "faq", "label": "Preguntes freqüents" }
+    {
+      "id": "donde-estas",
+      "label": "On ets"
+    },
+    {
+      "id": "recorrido",
+      "label": "El recorregut"
+    },
+    {
+      "id": "en-juego",
+      "label": "Què hi ha en joc"
+    },
+    {
+      "id": "cuota-y-sancion",
+      "label": "Quota i sanció"
+    },
+    {
+      "id": "derechos",
+      "label": "Els teus drets"
+    },
+    {
+      "id": "como-lo-llevamos",
+      "label": "Com el portem"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "Què necessitem"
+    },
+    {
+      "id": "precio",
+      "label": "Preu"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
   ],
   "sections": [
     {
@@ -39,7 +92,7 @@
       "h2": "El recorregut, de la inspecció al recurs",
       "fondo": "papel",
       "entrada": "Les dates concretes les marca cada notificació. Aquest és l'ordre habitual, i a cada tram hi ha alguna cosa a fer.",
-      "hitos": [
+      "recorrido": [
         {
           "cuando": "Inici",
           "titulo": "Comunicació d'inici d'actuacions",
@@ -83,12 +136,35 @@
       "h2": "Què hi ha en joc",
       "fondo": "blanco",
       "entrada": "Sobre la quota que es liquidi s'hi sumen interessos de demora i, si hi ha sanció, un percentatge que depèn de com es qualifiqui la infracció.",
-      "cifras": [
-        { "valor": "50 %", "etiqueta": "Infracció lleu: sanció sobre la quantitat deixada d'ingressar" },
-        { "valor": "50–100 %", "etiqueta": "Infracció greu, quan s'aprecia ocultació" },
-        { "valor": "100–150 %", "etiqueta": "Infracció molt greu, quan s'aprecien mitjans fraudulents" },
-        { "valor": "120.000 €", "etiqueta": "Quota defraudada per tribut i exercici a partir de la qual el cas pot passar a la via penal com a delicte fiscal", "acento": true }
-      ]
+      "escalera": {
+        "extremos": {
+          "leve": "Més lleu",
+          "grave": "Més greu"
+        },
+        "niveles": [
+          {
+            "valor": "50 %",
+            "titulo": "Infracció lleu",
+            "body": "Infracció lleu: sanció sobre la quantitat deixada d'ingressar"
+          },
+          {
+            "valor": "50–100 %",
+            "titulo": "Infracció greu",
+            "body": "Infracció greu, quan s'aprecia ocultació"
+          },
+          {
+            "valor": "100–150 %",
+            "titulo": "Infracció molt greu",
+            "body": "Infracció molt greu, quan s'aprecien mitjans fraudulents"
+          },
+          {
+            "valor": "120.000 €",
+            "titulo": "Delicte fiscal",
+            "body": "Quota defraudada per tribut i exercici a partir de la qual el cas pot passar a la via penal com a delicte fiscal",
+            "acento": true
+          }
+        ]
+      }
     },
     {
       "id": "cuota-y-sancion",
@@ -131,7 +207,7 @@
     {
       "id": "como-lo-llevamos",
       "h2": "Com el portem",
-      "fondo": "blanco",
+      "fondo": "papel",
       "steps": [
         {
           "title": "Llegim l'expedient tal com està",
@@ -162,7 +238,7 @@
     {
       "id": "que-necesitamos",
       "h2": "Què necessitem de tu",
-      "fondo": "papel",
+      "fondo": "blanco",
       "bullets": [
         "<strong>Tot el que t'han notificat:</strong> la comunicació d'inici, els requeriments, les diligències signades, la proposta de liquidació i l'acord sancionador, si ja han arribat.",
         "<strong>Les teves declaracions</strong> dels exercicis inclosos en l'abast.",
@@ -201,7 +277,7 @@
         },
         {
           "q": "Quant costa la defensa en una inspecció?",
-          "a": "Hi ha dues parts. La reconstrucció de les teves xifres segueix els trams de la reconciliació: Plataforma única, 250 €; Multiexchange, 350 €; Cartera mixta, 450 €; i Cartera complexa, des de 700 €. Tots els imports porten l’IVA inclòs. La feina de defensa, és a dir, les compareixences, al·legacions, recursos i reclamacions, es pressuposta a part tan bon punt veiem l'expedient. En tens el detall a la pàgina de preus."
+          "a": "Hi ha dues parts. La reconstrucció de les teves xifres segueix els trams de la reconciliació: Plataforma única, 400 €; Multiexchange, 500 €; Cartera mixta, 600 €; i Cartera complexa, des de 850 €. Tots els imports porten l’IVA inclòs. La feina de defensa, és a dir, les compareixences, al·legacions, recursos i reclamacions, es pressuposta a part tan bon punt veiem l'expedient. En tens el detall a la pàgina de preus."
         },
         {
           "q": "Em podeu garantir que no hi haurà sanció?",
@@ -237,5 +313,26 @@
       "defensa hisenda criptomonedes",
       "delicte fiscal criptomonedes"
     ]
+  },
+  "precioFases": {
+    "h2": "Quant costa",
+    "entrada": "La base de qualsevol defensa és l'operativa refeta. El preu depèn de quantes fonts de dades cal reconciliar, no del que hi hagi en joc a l'expedient.",
+    "suplemento": 150,
+    "reconstruccion": {
+      "titulo": "Reconstruir les teves xifres",
+      "body": "El que costa depèn de quantes fonts de dades cal casar, no del que hi hagi en joc a l’expedient.",
+      "nota": "La defensa (compareixences, al·legacions, recursos i reclamacions) no està inclosa en aquests preus: es pressuposta a part."
+    },
+    "contestacion": {
+      "titulo": "Defensar-te davant d’Hisenda",
+      "precio": "Pressupost tancat",
+      "body": "Tan bon punt veiem l’expedient et diem què costa la defensa, abans de començar i sense sorpreses.",
+      "incluye": [
+        "La preparació de cada compareixença i de cada escrit",
+        "Les al·legacions a la proposta de liquidació i a l’expedient sancionador",
+        "El recurs de reposició o la reclamació davant el TEAR o el TEAC"
+      ]
+    },
+    "accion": "Demanar pressupost"
   }
 }

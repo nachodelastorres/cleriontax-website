@@ -1,4 +1,5 @@
 {
+  "plantilla": "expediente",
   "title": "Spanish tax inspection for cryptocurrency",
   "slug": "inspeccion-hacienda-criptomonedas",
   "nav": "Inspections and penalties",
@@ -14,18 +15,70 @@
     "secundaria": {
       "label": "Tell us about your case",
       "href": "#diagnostico"
+    },
+    "calculadora": {
+      "titulo": "Work out your deadline",
+      "tramite": "What you've been notified of",
+      "opciones": [
+        {
+          "etiqueta": "Report or proposed penalty: submissions (15 working days)",
+          "tipo": "habiles",
+          "cantidad": 15
+        },
+        {
+          "etiqueta": "Assessment or penalty: appeal or claim (1 month)",
+          "tipo": "meses",
+          "cantidad": 1
+        }
+      ],
+      "fecha": "Date of notification",
+      "resultado": "Your last day",
+      "recomendado": "We would file it on",
+      "quedan": "{n} working days left",
+      "hoy": "It's due today",
+      "vencido": "The deadline has passed. Call us: depending on the case, there are still options.",
+      "aviso": "Rough calculation with national holidays. Your notification is what counts: each step has its own deadline, and regional and local holidays can shift it. Very tight deadlines or last-minute requests may increase the cost of the service.",
+      "sede": "It's in the electronic office and I haven't opened it yet",
+      "urgente": "With this little time the work is urgent: it may cost more, and we confirm the price before we start."
     }
   },
   "toc": [
-    { "id": "donde-estas", "label": "Where you stand" },
-    { "id": "recorrido", "label": "The path" },
-    { "id": "en-juego", "label": "What's at stake" },
-    { "id": "cuota-y-sancion", "label": "Tax and penalty" },
-    { "id": "derechos", "label": "Your rights" },
-    { "id": "como-lo-llevamos", "label": "How we handle it" },
-    { "id": "que-necesitamos", "label": "What we need" },
-    { "id": "precio", "label": "Price" },
-    { "id": "faq", "label": "Frequently asked questions" }
+    {
+      "id": "donde-estas",
+      "label": "Where you stand"
+    },
+    {
+      "id": "recorrido",
+      "label": "The path"
+    },
+    {
+      "id": "en-juego",
+      "label": "What's at stake"
+    },
+    {
+      "id": "cuota-y-sancion",
+      "label": "Tax and penalty"
+    },
+    {
+      "id": "derechos",
+      "label": "Your rights"
+    },
+    {
+      "id": "como-lo-llevamos",
+      "label": "How we handle it"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "What we need"
+    },
+    {
+      "id": "precio",
+      "label": "Price"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    }
   ],
   "sections": [
     {
@@ -39,7 +92,7 @@
       "h2": "The path, from inspection to appeal",
       "fondo": "papel",
       "entrada": "The exact dates are set by each notice. This is the usual order, and at every stage there is something to do.",
-      "hitos": [
+      "recorrido": [
         {
           "cuando": "Start",
           "titulo": "Notice of commencement",
@@ -83,12 +136,35 @@
       "h2": "What's at stake",
       "fondo": "blanco",
       "entrada": "Late-payment interest is added to the assessed tax and, if there is a penalty, a percentage that depends on how the offence is classified.",
-      "cifras": [
-        { "valor": "50 %", "etiqueta": "Minor offence: penalty on the amount left unpaid" },
-        { "valor": "50–100 %", "etiqueta": "Serious offence, where concealment is found" },
-        { "valor": "100–150 %", "etiqueta": "Very serious offence, where fraudulent means are found" },
-        { "valor": "€120,000", "etiqueta": "Evaded tax per tax and year above which the case may move to the criminal courts as tax fraud", "acento": true }
-      ]
+      "escalera": {
+        "extremos": {
+          "leve": "Milder",
+          "grave": "More serious"
+        },
+        "niveles": [
+          {
+            "valor": "50 %",
+            "titulo": "Minor offence",
+            "body": "Minor offence: penalty on the amount left unpaid"
+          },
+          {
+            "valor": "50–100 %",
+            "titulo": "Serious offence",
+            "body": "Serious offence, where concealment is found"
+          },
+          {
+            "valor": "100–150 %",
+            "titulo": "Very serious offence",
+            "body": "Very serious offence, where fraudulent means are found"
+          },
+          {
+            "valor": "€120,000",
+            "titulo": "Tax crime",
+            "body": "Evaded tax per tax and year above which the case may move to the criminal courts as tax fraud",
+            "acento": true
+          }
+        ]
+      }
     },
     {
       "id": "cuota-y-sancion",
@@ -131,7 +207,7 @@
     {
       "id": "como-lo-llevamos",
       "h2": "How we handle it",
-      "fondo": "blanco",
+      "fondo": "papel",
       "steps": [
         {
           "title": "We read the file as it stands",
@@ -162,7 +238,7 @@
     {
       "id": "que-necesitamos",
       "h2": "What we need from you",
-      "fondo": "papel",
+      "fondo": "blanco",
       "bullets": [
         "<strong>Everything you've been notified:</strong> the notice of commencement, requests, signed records, the proposed assessment and the penalty decision, if they have arrived.",
         "<strong>Your tax returns</strong> for the years within the scope.",
@@ -201,7 +277,7 @@
         },
         {
           "q": "How much does defence in an inspection cost?",
-          "a": "There are two parts. Rebuilding your figures follows the reconciliation tiers: Single platform, €250; Multi-exchange, €350; Mixed portfolio, €450; and Complex portfolio, from €700. All prices include VAT. The defence work, meaning appearances, submissions, appeals and claims, is quoted separately once we've seen the file. You'll find the details on our pricing page."
+          "a": "There are two parts. Rebuilding your figures follows the reconciliation tiers: Single platform, €400; Multi-exchange, €500; Mixed portfolio, €600; and Complex portfolio, from €850. All prices include VAT. The defence work, meaning appearances, submissions, appeals and claims, is quoted separately once we've seen the file. You'll find the details on our pricing page."
         },
         {
           "q": "Can you guarantee there won't be a penalty?",
@@ -237,5 +313,26 @@
       "defence against Hacienda crypto",
       "crypto tax fraud spain"
     ]
+  },
+  "precioFases": {
+    "h2": "What it costs",
+    "entrada": "The basis of any defence is your activity rebuilt. Its price depends on how many data sources have to be reconciled, not on what's at stake in the case.",
+    "suplemento": 150,
+    "reconstruccion": {
+      "titulo": "Rebuilding your figures",
+      "body": "The cost depends on how many data sources need matching, not on what is at stake in the file.",
+      "nota": "The defence (appearances, submissions, appeals and claims) is not included in these prices: it is quoted separately."
+    },
+    "contestacion": {
+      "titulo": "Defending you before the tax agency",
+      "precio": "Fixed quote",
+      "body": "As soon as we've seen the file we tell you what the defence will cost, before we start and with no surprises.",
+      "incluye": [
+        "Preparing every appearance and every submission",
+        "Submissions against the proposed assessment and the penalty proceedings",
+        "The appeal for reconsideration or the claim before the TEAR or the TEAC"
+      ]
+    },
+    "accion": "Ask for a quote"
   }
 }

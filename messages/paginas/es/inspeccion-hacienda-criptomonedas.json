@@ -1,4 +1,5 @@
 {
+  "plantilla": "expediente",
   "title": "Inspección de Hacienda por criptomonedas",
   "slug": "inspeccion-hacienda-criptomonedas",
   "nav": "Inspección y sanciones",
@@ -14,18 +15,70 @@
     "secundaria": {
       "label": "Cuéntanos tu caso",
       "href": "#diagnostico"
+    },
+    "calculadora": {
+      "titulo": "Calcula tu plazo",
+      "tramite": "Qué te han notificado",
+      "opciones": [
+        {
+          "etiqueta": "Acta o propuesta de sanción: alegaciones (15 días hábiles)",
+          "tipo": "habiles",
+          "cantidad": 15
+        },
+        {
+          "etiqueta": "Liquidación o sanción: recurso o reclamación (1 mes)",
+          "tipo": "meses",
+          "cantidad": 1
+        }
+      ],
+      "fecha": "Fecha de la notificación",
+      "resultado": "Tu último día",
+      "recomendado": "Nosotros lo presentaríamos el",
+      "quedan": "Te quedan {n} días hábiles",
+      "hoy": "Vence hoy",
+      "vencido": "El plazo ya ha vencido. Llámanos: según el caso, todavía hay vías.",
+      "aviso": "Cálculo orientativo con festivos nacionales. Manda lo que diga tu notificación: cada trámite tiene su plazo y los festivos autonómicos y locales pueden moverlo. Con plazos muy ajustados o encargos de última hora, el servicio puede tener un coste mayor.",
+      "sede": "Está en la sede electrónica y todavía no la he abierto",
+      "urgente": "Con este margen el trabajo es urgente: puede tener un coste mayor y te lo confirmamos antes de empezar."
     }
   },
   "toc": [
-    { "id": "donde-estas", "label": "Dónde estás" },
-    { "id": "recorrido", "label": "El recorrido" },
-    { "id": "en-juego", "label": "Qué está en juego" },
-    { "id": "cuota-y-sancion", "label": "Cuota y sanción" },
-    { "id": "derechos", "label": "Tus derechos" },
-    { "id": "como-lo-llevamos", "label": "Cómo lo llevamos" },
-    { "id": "que-necesitamos", "label": "Qué necesitamos" },
-    { "id": "precio", "label": "Precio" },
-    { "id": "faq", "label": "Preguntas frecuentes" }
+    {
+      "id": "donde-estas",
+      "label": "Dónde estás"
+    },
+    {
+      "id": "recorrido",
+      "label": "El recorrido"
+    },
+    {
+      "id": "en-juego",
+      "label": "Qué está en juego"
+    },
+    {
+      "id": "cuota-y-sancion",
+      "label": "Cuota y sanción"
+    },
+    {
+      "id": "derechos",
+      "label": "Tus derechos"
+    },
+    {
+      "id": "como-lo-llevamos",
+      "label": "Cómo lo llevamos"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "Qué necesitamos"
+    },
+    {
+      "id": "precio",
+      "label": "Precio"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    }
   ],
   "sections": [
     {
@@ -39,7 +92,7 @@
       "h2": "El recorrido, de la inspección al recurso",
       "fondo": "papel",
       "entrada": "Las fechas concretas las marca cada notificación. Este es el orden habitual, y en cada tramo hay algo que hacer.",
-      "hitos": [
+      "recorrido": [
         {
           "cuando": "Inicio",
           "titulo": "Comunicación de inicio de actuaciones",
@@ -83,12 +136,35 @@
       "h2": "Qué está en juego",
       "fondo": "blanco",
       "entrada": "Sobre la cuota que se liquide se suman intereses de demora y, si hay sanción, un porcentaje que depende de cómo se califique la infracción.",
-      "cifras": [
-        { "valor": "50 %", "etiqueta": "Infracción leve: sanción sobre la cantidad dejada de ingresar" },
-        { "valor": "50–100 %", "etiqueta": "Infracción grave, cuando se aprecia ocultación" },
-        { "valor": "100–150 %", "etiqueta": "Infracción muy grave, cuando se aprecian medios fraudulentos" },
-        { "valor": "120.000 €", "etiqueta": "Cuota defraudada por tributo y ejercicio a partir de la cual el caso puede pasar a la vía penal como delito fiscal", "acento": true }
-      ]
+      "escalera": {
+        "extremos": {
+          "leve": "Más leve",
+          "grave": "Más grave"
+        },
+        "niveles": [
+          {
+            "valor": "50 %",
+            "titulo": "Infracción leve",
+            "body": "Infracción leve: sanción sobre la cantidad dejada de ingresar"
+          },
+          {
+            "valor": "50–100 %",
+            "titulo": "Infracción grave",
+            "body": "Infracción grave, cuando se aprecia ocultación"
+          },
+          {
+            "valor": "100–150 %",
+            "titulo": "Infracción muy grave",
+            "body": "Infracción muy grave, cuando se aprecian medios fraudulentos"
+          },
+          {
+            "valor": "120.000 €",
+            "titulo": "Delito fiscal",
+            "body": "Cuota defraudada por tributo y ejercicio a partir de la cual el caso puede pasar a la vía penal como delito fiscal",
+            "acento": true
+          }
+        ]
+      }
     },
     {
       "id": "cuota-y-sancion",
@@ -131,7 +207,7 @@
     {
       "id": "como-lo-llevamos",
       "h2": "Cómo lo llevamos",
-      "fondo": "blanco",
+      "fondo": "papel",
       "steps": [
         {
           "title": "Leemos el expediente tal como está",
@@ -162,7 +238,7 @@
     {
       "id": "que-necesitamos",
       "h2": "Qué necesitamos de ti",
-      "fondo": "papel",
+      "fondo": "blanco",
       "bullets": [
         "<strong>Todo lo notificado:</strong> la comunicación de inicio, los requerimientos, las diligencias firmadas, la propuesta de liquidación y el acuerdo sancionador, si ya han llegado.",
         "<strong>Tus declaraciones</strong> de los ejercicios incluidos en el alcance.",
@@ -201,7 +277,7 @@
         },
         {
           "q": "¿Cuánto cuesta la defensa en una inspección?",
-          "a": "Hay dos partes. La reconstrucción de tus cifras sigue los tramos de la reconciliación: Plataforma única, 250 €; Multiexchange, 350 €; Cartera mixta, 450 €; y Cartera compleja, desde 700 €. Todos los importes llevan el IVA incluido. El trabajo de defensa, es decir, las comparecencias, alegaciones, recursos y reclamaciones, se presupuesta aparte en cuanto vemos el expediente. Tienes el detalle en la página de precios."
+          "a": "Hay dos partes. La reconstrucción de tus cifras sigue los tramos de la reconciliación: Plataforma única, 400 €; Multiexchange, 500 €; Cartera mixta, 600 €; y Cartera compleja, desde 850 €. Todos los importes llevan el IVA incluido. El trabajo de defensa, es decir, las comparecencias, alegaciones, recursos y reclamaciones, se presupuesta aparte en cuanto vemos el expediente. Tienes el detalle en la página de precios."
         },
         {
           "q": "¿Podéis garantizarme que no habrá sanción?",
@@ -237,5 +313,26 @@
       "defensa hacienda criptomonedas",
       "delito fiscal criptomonedas"
     ]
+  },
+  "precioFases": {
+    "h2": "Cuánto cuesta",
+    "entrada": "La base de cualquier defensa es la operativa rehecha. Su precio depende de cuántas fuentes de datos hay que reconciliar, no de lo que esté en juego en el expediente.",
+    "suplemento": 150,
+    "reconstruccion": {
+      "titulo": "Reconstruir tus cifras",
+      "body": "Lo que cuesta depende de cuántas fuentes de datos hay que casar, no de lo que esté en juego en el expediente.",
+      "nota": "La defensa (comparecencias, alegaciones, recursos y reclamaciones) no está incluida en estos precios: se presupuesta aparte."
+    },
+    "contestacion": {
+      "titulo": "Defenderte ante Hacienda",
+      "precio": "Presupuesto cerrado",
+      "body": "En cuanto vemos el expediente te decimos qué cuesta la defensa, antes de empezar y sin sorpresas.",
+      "incluye": [
+        "La preparación de cada comparecencia y de cada escrito",
+        "Las alegaciones a la propuesta de liquidación y al expediente sancionador",
+        "El recurso de reposición o la reclamación ante el TEAR o el TEAC"
+      ]
+    },
+    "accion": "Pedir presupuesto"
   }
 }
