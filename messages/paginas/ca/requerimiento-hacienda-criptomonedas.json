@@ -271,7 +271,7 @@
         },
         {
           "q": "Quant costa respondre un requeriment?",
-          "a": "La reconstrucció de les teves xifres segueix els nostres trams: Plataforma única, 250 €, si tota la teva operativa és en un exchange; Multiexchange, 350 €, amb dos o tres exchanges; Cartera mixta, 450 €, si combines exchanges amb wallets, DeFi, NFT o accions fins a tres fonts; i Cartera complexa, des de 700 €. Tots els imports porten l’IVA inclòs. La contestació davant l'AEAT es pressuposta a part tan bon punt llegim la notificació. Tens el detall a la pàgina de preus."
+          "a": "La reconstrucció de les teves xifres segueix els nostres trams: Plataforma única, 400 €, si tota la teva operativa és en un exchange; Multiexchange, 500 €, amb dos o tres exchanges; Cartera mixta, 600 €, si combines exchanges amb wallets, DeFi, NFT o accions fins a tres fonts; i Cartera complexa, des de 850 €. Tots els imports porten l’IVA inclòs. La contestació davant l'AEAT es pressuposta a part tan bon punt llegim la notificació. Tens el detall a la pàgina de preus."
         }
       ]
     }
@@ -309,7 +309,8 @@
     "entrada": "Abans de contestar cal tenir les xifres. El que costa reconstruir-les depèn de quantes fonts de dades cal casar, no del que et reclamin.",
     "reconstruccion": {
       "titulo": "Reconstruir les teves xifres",
-      "body": "El que costa depèn de quantes fonts de dades cal casar, no del que et reclamin."
+      "body": "El que costa depèn de quantes fonts de dades cal casar, no del que et reclamin.",
+      "nota": "La contestació a Hisenda no està inclosa en aquests preus: es pressuposta a part."
     },
     "contestacion": {
       "titulo": "Contestar a Hisenda",
@@ -321,6 +322,7 @@
         "El seguiment dels requeriments que arribin després"
       ]
     },
-    "accion": "Demanar pressupost"
+    "accion": "Demanar pressupost",
+    "suplemento": 150
   }
 }

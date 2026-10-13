@@ -15,7 +15,12 @@ import { TARIFAS } from "@/lib/tarifas";
 export interface TextosPrecioFases {
   h2: string;
   entrada?: string;
-  reconstruccion: { titulo: string; body: string };
+  /**
+   * Euros que se suman a cada tramo: reconstruir cifras para un procedimiento
+   * abierto no es el mismo trabajo que un informe sin plazo.
+   */
+  suplemento?: number;
+  reconstruccion: { titulo: string; body: string; nota?: string };
   contestacion: { titulo: string; precio: string; body: string; incluye: string[] };
   accion: string;
 }
@@ -56,12 +61,17 @@ export default async function PrecioFases({
                   {tarifa.desde ? (
                     <span className="mr-1.5 text-nota text-pizarra">{t("desde")}</span>
                   ) : null}
-                  {formato.format(tarifa.precio)}
+                  {formato.format(tarifa.precio + (textos.suplemento ?? 0))}
                 </dd>
               </div>
             ))}
           </dl>
           <p className="border-t border-niebla pt-3 text-dato text-pizarra">{t("iva")}</p>
+          {textos.reconstruccion.nota ? (
+            <p className="mt-4 border-l-2 border-rojo pl-3 text-nota text-azul">
+              {textos.reconstruccion.nota}
+            </p>
+          ) : null}
         </div>
 
         <div className="flex items-center justify-center" aria-hidden="true">

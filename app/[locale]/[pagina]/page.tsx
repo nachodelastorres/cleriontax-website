@@ -135,7 +135,9 @@ export default async function PaginaServicio({ params }: Props) {
     servicio.offers = {
       "@type": "AggregateOffer",
       priceCurrency: "EUR",
-      lowPrice: Math.min(...TARIFAS.map((x) => x.precio)),
+      lowPrice:
+        Math.min(...TARIFAS.map((x) => x.precio)) +
+        (expediente ? datos.precioFases?.suplemento ?? 0 : 0),
       offerCount: TARIFAS.length,
     };
   }

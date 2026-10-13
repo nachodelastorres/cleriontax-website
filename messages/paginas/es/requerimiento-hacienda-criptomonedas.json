@@ -271,7 +271,7 @@
         },
         {
           "q": "¿Cuánto cuesta responder un requerimiento?",
-          "a": "La reconstrucción de tus cifras sigue nuestros tramos: Plataforma única, 250 €, si toda tu operativa está en un exchange; Multiexchange, 350 €, con dos o tres exchanges; Cartera mixta, 450 €, si combinas exchanges con wallets, DeFi, NFT o acciones hasta tres fuentes; y Cartera compleja, desde 700 €. Todos los importes llevan el IVA incluido. La contestación ante la AEAT se presupuesta aparte en cuanto leemos la notificación. Tienes el detalle en la página de precios."
+          "a": "La reconstrucción de tus cifras sigue nuestros tramos: Plataforma única, 400 €, si toda tu operativa está en un exchange; Multiexchange, 500 €, con dos o tres exchanges; Cartera mixta, 600 €, si combinas exchanges con wallets, DeFi, NFT o acciones hasta tres fuentes; y Cartera compleja, desde 850 €. Todos los importes llevan el IVA incluido. La contestación ante la AEAT se presupuesta aparte en cuanto leemos la notificación. Tienes el detalle en la página de precios."
         }
       ]
     }
@@ -309,7 +309,8 @@
     "entrada": "Antes de contestar hay que tener las cifras. Lo que cuesta reconstruirlas depende de cuántas fuentes de datos hay que casar, no de lo que te reclamen.",
     "reconstruccion": {
       "titulo": "Reconstruir tus cifras",
-      "body": "Lo que cuesta depende de cuántas fuentes de datos hay que casar, no de lo que te reclamen."
+      "body": "Lo que cuesta depende de cuántas fuentes de datos hay que casar, no de lo que te reclamen.",
+      "nota": "La contestación a Hacienda no está incluida en estos precios: se presupuesta aparte."
     },
     "contestacion": {
       "titulo": "Contestar a Hacienda",
@@ -321,6 +322,7 @@
         "El seguimiento de los requerimientos que lleguen después"
       ]
     },
-    "accion": "Pedir presupuesto"
+    "accion": "Pedir presupuesto",
+    "suplemento": 150
   }
 }
