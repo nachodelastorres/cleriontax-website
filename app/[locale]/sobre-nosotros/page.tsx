@@ -3,6 +3,7 @@ import path from "path";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import SimboloAnimado from "@/components/brand/SimboloAnimado";
+import ButtonLink from "@/components/ui/ButtonLink";
 import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 
@@ -258,18 +259,17 @@ export default async function SobreNosotrosPage({ params }: Props) {
 
       {/* Cierre: una invitación, no un bloque de venta. */}
       <section className="bg-blanco">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-          <h2 className="text-[48px] font-extrabold leading-none tracking-[-0.04em] text-azul md:text-[72px]">
-            {cierre.h2}
-          </h2>
-          <p className="mt-6 max-w-[48ch] text-lectura text-pizarra">{cierre.body}</p>
-          <a
-            href={`/${locale}/contacto`}
-            className="group mt-10 inline-flex items-center gap-3 text-seccion text-rojo underline decoration-2 underline-offset-8 hover:decoration-4"
-          >
+        <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between md:py-28">
+          <div>
+            <h2 className="text-[48px] font-extrabold leading-none tracking-[-0.04em] text-azul md:text-[72px]">
+              {cierre.h2}
+            </h2>
+            <p className="mt-6 max-w-[48ch] text-lectura text-pizarra">{cierre.body}</p>
+          </div>
+          <ButtonLink href="/contacto" variant="principal" size="lg" className="group flex-none gap-3">
             {cierre.enlace}
-            <ArrowRight className="h-8 w-8 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
-          </a>
+            <ArrowRight className="h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+          </ButtonLink>
         </div>
       </section>
     </>
