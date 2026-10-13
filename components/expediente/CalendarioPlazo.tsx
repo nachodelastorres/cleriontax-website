@@ -45,9 +45,10 @@ export default function CalendarioPlazo({ dia, dias, fases }: Calendario) {
         <div className="grid gap-y-2 px-2 py-4" style={rejilla}>
           {fases.map((f, i) => {
             // Una fase de un solo día no cabe en su barra: la etiqueta va fuera,
-            // a la derecha, o a la izquierda si es la última columna.
+            // a la derecha, o a la izquierda en las dos últimas columnas, donde
+            // ya no hay sitio a la derecha.
             const corta = f.desde === f.hasta;
-            const alFinal = f.hasta === dias;
+            const alFinal = f.hasta >= dias - 1;
             return (
               <div
                 key={i}
