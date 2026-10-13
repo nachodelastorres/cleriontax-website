@@ -110,8 +110,11 @@ export default function ClasificadorPestanas({ grupos, inicial, textos }: Props)
               className={`[grid-area:1/1] ${abierta ? "" : "invisible"}`}
             >
               {/* Todos los casos de la pregunta en una sola fila: tantas columnas
-                  como casos, para que ningún panel deje una fila a medias. */}
-              <ul className={`grid ${COLUMNAS[g.casos.length] ?? "md:grid-cols-3"}`}>
+                  como casos, para que ningún panel deje una fila a medias. La
+                  lista ocupa todo el alto del panel: los tres comparten celda y
+                  miden lo que el más alto, y sin esto los cortos dejaban una
+                  franja vacía bajo las tarjetas. */}
+              <ul className={`grid h-full ${COLUMNAS[g.casos.length] ?? "md:grid-cols-3"}`}>
                 {g.casos.map((s, i) => {
                   return (
                   <li
