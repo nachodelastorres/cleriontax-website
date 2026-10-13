@@ -231,7 +231,8 @@ export default async function PaginaServicio({ params }: Props) {
         </div>
       </section>
 
-      {meta.urgente ? (
+      {/* En la plantilla expediente sobra: la calculadora del hero ya lo hace. */}
+      {meta.urgente && !expediente ? (
         <BloqueAccion
           temperatura="urgente"
           plazo={t("plazoAviso")}
