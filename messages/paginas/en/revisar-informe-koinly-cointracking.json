@@ -5,7 +5,7 @@
   "excerpt": "The Koinly and CoinTracking errors that matter most to the Spanish tax agency: internal transfers counted as sales, zero acquisition cost and token spam. How the report is corrected before you file it.",
   "hero": {
     "etiqueta": "Before you file it",
-    "h1": "Koinly and CoinTracking errors and the Spanish tax agency: we review your report before you file it",
+    "h1": "We correct your Koinly or CoinTracking report",
     "subheading": "You've run your data through Koinly, CoinTracking or a similar tool and the gain looks nothing like what you think you made. There's no need to start from scratch: we start from your report, correct what the software resolved with a default value and explain every change.",
     "cta": { "label": "Request a quote", "href": "#diagnostico" },
     "secundaria": { "label": "See prices", "href": "#precio" }
@@ -67,33 +67,42 @@
       "h2": "Automated report vs. reviewed report",
       "fondo": "blanco",
       "entrada": "What changes isn't the tool, it's what is done with its output before filing it.",
-      "columnas": [
-        {
-          "titulo": "The report as it comes out of the tool",
-          "items": [
-            "Every movement between your accounts may count as a sale",
-            "Tokens received without a purchase come in at zero cost",
-            "Token spam is processed as if it were real activity",
-            "Gaps in incomplete histories go unnoticed",
-            "A final figure with no explanation of how it was reached"
-          ]
-        },
-        {
-          "titulo": "The reviewed report",
-          "correcta": true,
-          "items": [
-            "Internal transfers are identified and excluded from the calculation",
-            "Every token received has its value on the date of receipt and the price source",
-            "Noise is filtered with judgement, transaction by transaction",
-            "Gaps are rebuilt from statements, emails and on-chain traces",
-            "Every change from your report, explained and documented"
-          ]
-        }
-      ]
+      "contraste": {
+        "antes": "The report as it comes out of the tool",
+        "despues": "The reviewed report",
+        "filas": [
+          {
+            "aspecto": "Transfers",
+            "antes": "Every movement between your accounts may count as a sale",
+            "despues": "Internal transfers are identified and excluded from the calculation"
+          },
+          {
+            "aspecto": "Cost basis",
+            "antes": "Tokens received without a purchase come in at zero cost",
+            "despues": "Every token received has its value on the date of receipt and the price source"
+          },
+          {
+            "aspecto": "Spam",
+            "antes": "Token spam is processed as if it were real activity",
+            "despues": "Noise is filtered with judgement, transaction by transaction"
+          },
+          {
+            "aspecto": "History gaps",
+            "antes": "Gaps in incomplete histories go unnoticed",
+            "despues": "Gaps are rebuilt from statements, emails and on-chain traces"
+          },
+          {
+            "aspecto": "Explanation",
+            "antes": "A final figure with no explanation of how it was reached",
+            "despues": "Every change from your report, explained and documented"
+          }
+        ]
+      }
     },
     {
       "id": "como-revisamos",
       "h2": "How we correct your Koinly or CoinTracking report",
+      "numerada": true,
       "steps": [
         { "title": "We start from your report, not from scratch", "body": "You send us the Koinly or CoinTracking export and the sources behind it. The import is already done: we audit the reconciliation, we don't redo what's right." },
         { "title": "We isolate transfers between your own accounts", "body": "We identify who owns each destination address and mark as internal the movements that are. That's usually where most of the difference lies." },
@@ -106,7 +115,13 @@
       "id": "alternativa",
       "h2": "Looking for a Koinly or CoinTracking alternative in Spain?",
       "fondo": "papel",
-      "body": "You may not need one. Koinly, CoinTracking and similar tools are useful for processing volume, and if your data is already loaded, the quickest and cheapest option is usually to review it, not to migrate to another tool only to face the same undecided questions again.\n\nIf, on the other hand, you haven't started, your data is spread across many sources or the report is so far from reality that it isn't worth correcting, what you need is a report built from the ground up. That's what our crypto tax report does."
+      "body": "You may not need one. Koinly, CoinTracking and similar tools are useful for processing volume, and if your data is already loaded, the quickest and cheapest option is usually to review it, not to migrate to another tool only to face the same undecided questions again.\n\nIf, on the other hand, you haven't started, your data is spread across many sources or the report is so far from reality that it isn't worth correcting, what you need is a report built from the ground up. That's what our crypto tax report does.",
+      "derivacion": {
+        "pregunta": "Haven't started yet, or is your report far from reality?",
+        "apoyo": "You're better off with a report built from scratch, with all your sources reconciled.",
+        "accion": "See the crypto tax report",
+        "href": "/informe-fiscal-criptomonedas"
+      }
     },
     {
       "id": "faq",

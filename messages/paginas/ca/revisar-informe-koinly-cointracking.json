@@ -5,7 +5,7 @@
   "excerpt": "Els errors de Koinly i CoinTracking que més pesen davant d'Hisenda: transferències internes comptades com a vendes, cost d'adquisició zero i spam de tokens. Com es corregeix l'informe abans de presentar-lo.",
   "hero": {
     "etiqueta": "Abans de presentar-lo",
-    "h1": "Errors de Koinly i CoinTracking davant d'Hisenda: revisem el teu informe abans que el presentis",
+    "h1": "Corregim el teu informe de Koinly o CoinTracking",
     "subheading": "Has passat les teves dades per Koinly, CoinTracking o una eina semblant i el guany no s'assembla al que creus que vas guanyar. No cal començar de zero: partim del teu informe, corregim el que el programa va resoldre amb un valor per defecte i t'expliquem cada canvi.",
     "cta": { "label": "Demanar pressupost", "href": "#diagnostico" },
     "secundaria": { "label": "Veure preus", "href": "#precio" }
@@ -67,33 +67,42 @@
       "h2": "Informe automàtic davant d'informe revisat",
       "fondo": "blanco",
       "entrada": "El que canvia no és l'eina, és el que es fa amb el seu resultat abans de presentar-lo.",
-      "columnas": [
-        {
-          "titulo": "L'informe tal com surt de l'eina",
-          "items": [
-            "Cada moviment entre els teus comptes pot comptar com una venda",
-            "Els tokens rebuts sense compra entren amb cost zero",
-            "L'spam de tokens es processa com si fos operativa real",
-            "Els buits dels historials incomplets no es veuen",
-            "Una xifra final sense explicació de com s'hi ha arribat"
-          ]
-        },
-        {
-          "titulo": "L'informe revisat",
-          "correcta": true,
-          "items": [
-            "Les transferències internes s'identifiquen i s'exclouen del càlcul",
-            "Cada token rebut té el seu valor a la data d'entrada i la font del preu",
-            "El soroll es filtra amb criteri, operació per operació",
-            "Els buits es reconstrueixen amb extractes, correus i traces on-chain",
-            "Cada canvi respecte al teu informe, explicat i documentat"
-          ]
-        }
-      ]
+      "contraste": {
+        "antes": "L'informe tal com surt de l'eina",
+        "despues": "L'informe revisat",
+        "filas": [
+          {
+            "aspecto": "Transferències",
+            "antes": "Cada moviment entre els teus comptes pot comptar com una venda",
+            "despues": "Les transferències internes s'identifiquen i s'exclouen del càlcul"
+          },
+          {
+            "aspecto": "Cost",
+            "antes": "Els tokens rebuts sense compra entren amb cost zero",
+            "despues": "Cada token rebut té el seu valor a la data d'entrada i la font del preu"
+          },
+          {
+            "aspecto": "Spam",
+            "antes": "L'spam de tokens es processa com si fos operativa real",
+            "despues": "El soroll es filtra amb criteri, operació per operació"
+          },
+          {
+            "aspecto": "Històrics",
+            "antes": "Els buits dels historials incomplets no es veuen",
+            "despues": "Els buits es reconstrueixen amb extractes, correus i traces on-chain"
+          },
+          {
+            "aspecto": "Explicació",
+            "antes": "Una xifra final sense explicació de com s'hi ha arribat",
+            "despues": "Cada canvi respecte al teu informe, explicat i documentat"
+          }
+        ]
+      }
     },
     {
       "id": "como-revisamos",
       "h2": "Com corregim el teu informe de Koinly o CoinTracking",
+      "numerada": true,
       "steps": [
         { "title": "Partim del teu informe, no de zero", "body": "Ens envies l'exportació de Koinly o CoinTracking i les fonts que l'alimenten. La ingesta ja està feta: auditem la reconciliació, no refem el que està bé." },
         { "title": "Aïllem les transferències entre comptes teus", "body": "Identifiquem la titularitat de cada adreça de destí i marquem com a interns els moviments que ho són. Aquí sol haver-hi la major part de la diferència." },
@@ -106,7 +115,13 @@
       "id": "alternativa",
       "h2": "Busques una alternativa a Koinly o CoinTracking a Espanya?",
       "fondo": "papel",
-      "body": "Potser no la necessites. Koinly, CoinTracking i eines semblants són útils per processar volum, i si ja tens les dades carregades, el més ràpid i econòmic sol ser revisar-les, no migrar a una altra eina per tornar-te a trobar les mateixes decisions sense prendre.\n\nSi, en canvi, no has començat, les teves dades estan repartides en moltes fonts o l'informe està tan lluny de la realitat que no val la pena corregir-lo, el que et convé és un informe fet des del principi. És el que fem al nostre informe fiscal de criptomonedes."
+      "body": "Potser no la necessites. Koinly, CoinTracking i eines semblants són útils per processar volum, i si ja tens les dades carregades, el més ràpid i econòmic sol ser revisar-les, no migrar a una altra eina per tornar-te a trobar les mateixes decisions sense prendre.\n\nSi, en canvi, no has començat, les teves dades estan repartides en moltes fonts o l'informe està tan lluny de la realitat que no val la pena corregir-lo, el que et convé és un informe fet des del principi. És el que fem al nostre informe fiscal de criptomonedes.",
+      "derivacion": {
+        "pregunta": "Encara no has començat o el teu informe és molt lluny de la realitat?",
+        "apoyo": "Et convé un informe fet des del principi, amb totes les teves fonts reconciliades.",
+        "accion": "Veure l’informe fiscal de criptomonedes",
+        "href": "/informe-fiscal-criptomonedas"
+      }
     },
     {
       "id": "faq",

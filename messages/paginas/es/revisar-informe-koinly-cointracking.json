@@ -5,7 +5,7 @@
   "excerpt": "Los errores de Koinly y CoinTracking que más pesan ante Hacienda: transferencias internas contadas como ventas, coste de adquisición cero y spam de tokens. Cómo se corrige el informe antes de presentarlo.",
   "hero": {
     "etiqueta": "Antes de presentarlo",
-    "h1": "Errores de Koinly y CoinTracking ante Hacienda: revisamos tu informe antes de que lo presentes",
+    "h1": "Corregimos tu informe de Koinly o CoinTracking",
     "subheading": "Has pasado tus datos por Koinly, CoinTracking o una herramienta parecida y la ganancia no se parece a lo que crees que ganaste. No hace falta empezar de cero: partimos de tu informe, corregimos lo que el programa resolvió con un valor por defecto y te explicamos cada cambio.",
     "cta": { "label": "Pedir presupuesto", "href": "#diagnostico" },
     "secundaria": { "label": "Ver precios", "href": "#precio" }
@@ -64,33 +64,42 @@
       "h2": "Informe automático frente a informe revisado",
       "fondo": "blanco",
       "entrada": "Lo que cambia no es la herramienta, es lo que se hace con su salida antes de presentarla.",
-      "columnas": [
-        {
-          "titulo": "El informe tal como sale de la herramienta",
-          "items": [
-            "Cada movimiento entre tus cuentas puede contar como una venta",
-            "Los tokens recibidos sin compra entran con coste cero",
-            "El spam de tokens se procesa como si fuera operativa real",
-            "Los huecos de históricos incompletos no se ven",
-            "Una cifra final sin explicación de cómo se llegó a ella"
-          ]
-        },
-        {
-          "titulo": "El informe revisado",
-          "correcta": true,
-          "items": [
-            "Las transferencias internas se identifican y se excluyen del cálculo",
-            "Cada token recibido tiene su valor en la fecha de entrada y la fuente del precio",
-            "El ruido se filtra con criterio, operación por operación",
-            "Los huecos se reconstruyen con extractos, correos y trazas on-chain",
-            "Cada cambio respecto a tu informe, explicado y documentado"
-          ]
-        }
-      ]
+      "contraste": {
+        "antes": "El informe tal como sale de la herramienta",
+        "despues": "El informe revisado",
+        "filas": [
+          {
+            "aspecto": "Transferencias",
+            "antes": "Cada movimiento entre tus cuentas puede contar como una venta",
+            "despues": "Las transferencias internas se identifican y se excluyen del cálculo"
+          },
+          {
+            "aspecto": "Coste",
+            "antes": "Los tokens recibidos sin compra entran con coste cero",
+            "despues": "Cada token recibido tiene su valor en la fecha de entrada y la fuente del precio"
+          },
+          {
+            "aspecto": "Spam",
+            "antes": "El spam de tokens se procesa como si fuera operativa real",
+            "despues": "El ruido se filtra con criterio, operación por operación"
+          },
+          {
+            "aspecto": "Históricos",
+            "antes": "Los huecos de históricos incompletos no se ven",
+            "despues": "Los huecos se reconstruyen con extractos, correos y trazas on-chain"
+          },
+          {
+            "aspecto": "Explicación",
+            "antes": "Una cifra final sin explicación de cómo se llegó a ella",
+            "despues": "Cada cambio respecto a tu informe, explicado y documentado"
+          }
+        ]
+      }
     },
     {
       "id": "como-revisamos",
       "h2": "Cómo corregimos tu informe de Koinly o CoinTracking",
+      "numerada": true,
       "steps": [
         { "title": "Partimos de tu informe, no de cero", "body": "Nos mandas la exportación de Koinly o CoinTracking y las fuentes que la alimentan. La ingesta ya está hecha: auditamos la reconciliación, no rehacemos lo que está bien." },
         { "title": "Aislamos las transferencias entre cuentas tuyas", "body": "Identificamos la titularidad de cada dirección de destino y marcamos como internos los movimientos que lo son. Aquí suele estar la mayor parte de la diferencia." },
@@ -103,7 +112,13 @@
       "id": "alternativa",
       "h2": "¿Buscas una alternativa a Koinly o CoinTracking en España?",
       "fondo": "papel",
-      "body": "Quizá no la necesites. Koinly, CoinTracking y herramientas parecidas son útiles para procesar volumen, y si ya tienes tus datos cargados, lo más rápido y barato suele ser revisarlos, no migrar a otra herramienta para volver a encontrarte las mismas decisiones sin tomar.\n\nSi en cambio no has empezado, tus datos están repartidos en muchas fuentes o el informe está tan lejos de la realidad que no merece la pena corregirlo, lo que te conviene es un informe hecho desde el principio. Es lo que hacemos en nuestro informe fiscal de criptomonedas."
+      "body": "Quizá no la necesites. Koinly, CoinTracking y herramientas parecidas son útiles para procesar volumen, y si ya tienes tus datos cargados, lo más rápido y barato suele ser revisarlos, no migrar a otra herramienta para volver a encontrarte las mismas decisiones sin tomar.\n\nSi en cambio no has empezado, tus datos están repartidos en muchas fuentes o el informe está tan lejos de la realidad que no merece la pena corregirlo, lo que te conviene es un informe hecho desde el principio. Es lo que hacemos en nuestro informe fiscal de criptomonedas.",
+      "derivacion": {
+        "pregunta": "¿Todavía no has empezado o tu informe está muy lejos de la realidad?",
+        "apoyo": "Te conviene un informe hecho desde el principio, con todas tus fuentes reconciliadas.",
+        "accion": "Ver el informe fiscal de criptomonedas",
+        "href": "/informe-fiscal-criptomonedas"
+      }
     },
     {
       "id": "faq",
