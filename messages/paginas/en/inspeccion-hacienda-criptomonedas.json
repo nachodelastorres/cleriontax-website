@@ -334,7 +334,7 @@
         },
         {
           "q": "How much does defence in an inspection cost?",
-          "a": "There's no price list: every inspection is different. We give you a fixed quote in writing before we start, based on the scope, what your portfolio looks like, where the procedure stands and what has already been provided. It covers rebuilding your figures and the defence. If the AEAT widens the scope, we tell you before going on."
+          "a": "There's no price list: every inspection is different. We give you a fixed quote in writing before we start, based on the scope, what your portfolio looks like, where the procedure stands and what has already been provided. It covers rebuilding your figures and the defence. If the AEAT widens the scope, we tell you before going on. Studying the file and the quote are free of charge and with no commitment."
         },
         {
           "q": "Can you guarantee there won't be a penalty?",
@@ -414,7 +414,7 @@
       "titulo": "Fixed quote",
       "pasos": [
         "You tell us about your case and send us what you've been notified.",
-        "We study it and send you the quote in writing, with what it covers.",
+        "We study it free of charge and with no commitment, and send you the quote in writing, with what it covers.",
         "If you accept it, the price doesn't change. Only if the AEAT widens the scope do we tell you before going on."
       ],
       "incluyeTitulo": "It includes",
@@ -425,6 +425,10 @@
         "The appeal for reconsideration or the claim before the TEAR or the TEAC, if it's worth it"
       ]
     },
-    "accion": "Ask for a quote"
+    "accion": "Ask for a quote",
+    "cta": {
+      "gancho": "We study your file free of charge and with no commitment",
+      "apoyo": "Send us what you've been notified and we'll tell you your deadline and what the defence would cost, before you decide anything."
+    }
   }
 }

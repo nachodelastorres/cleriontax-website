@@ -334,7 +334,7 @@
         },
         {
           "q": "¿Cuánto cuesta la defensa en una inspección?",
-          "a": "No tiene un precio de tabla: cada inspección es distinta. Te damos un presupuesto cerrado y por escrito antes de empezar, en función del alcance, de cómo es tu cartera, de en qué punto está el procedimiento y de lo que ya se ha aportado. Incluye la reconstrucción de tus cifras y la defensa. Si la AEAT amplía el alcance, te lo decimos antes de seguir."
+          "a": "No tiene un precio de tabla: cada inspección es distinta. Te damos un presupuesto cerrado y por escrito antes de empezar, en función del alcance, de cómo es tu cartera, de en qué punto está el procedimiento y de lo que ya se ha aportado. Incluye la reconstrucción de tus cifras y la defensa. Si la AEAT amplía el alcance, te lo decimos antes de seguir. El estudio del expediente y el presupuesto son gratuitos y sin compromiso."
         },
         {
           "q": "¿Podéis garantizarme que no habrá sanción?",
@@ -414,7 +414,7 @@
       "titulo": "Presupuesto cerrado",
       "pasos": [
         "Nos cuentas tu caso y nos envías lo que te han notificado.",
-        "Lo estudiamos y te enviamos el presupuesto por escrito, con lo que incluye.",
+        "Lo estudiamos gratis y sin compromiso, y te enviamos el presupuesto por escrito, con lo que incluye.",
         "Si lo aceptas, el precio no cambia. Solo si la AEAT amplía el alcance te lo decimos antes de seguir."
       ],
       "incluyeTitulo": "Incluye",
@@ -425,6 +425,10 @@
         "El recurso de reposición o la reclamación ante el TEAR o el TEAC, si compensa"
       ]
     },
-    "accion": "Pedir presupuesto"
+    "accion": "Pedir presupuesto",
+    "cta": {
+      "gancho": "Estudiamos tu expediente gratis y sin compromiso",
+      "apoyo": "Envíanos lo que te han notificado y te decimos qué plazo tienes y qué costaría la defensa, antes de que decidas nada."
+    }
   }
 }

@@ -334,7 +334,7 @@
         },
         {
           "q": "Quant costa la defensa en una inspecció?",
-          "a": "No té un preu de taula: cada inspecció és diferent. Et donem un pressupost tancat i per escrit abans de començar, en funció de l’abast, de com és la teva cartera, de en quin punt és el procediment i del que ja s’ha aportat. Inclou la reconstrucció de les teves xifres i la defensa. Si l’AEAT amplia l’abast, t’ho diem abans de continuar."
+          "a": "No té un preu de taula: cada inspecció és diferent. Et donem un pressupost tancat i per escrit abans de començar, en funció de l’abast, de com és la teva cartera, de en quin punt és el procediment i del que ja s’ha aportat. Inclou la reconstrucció de les teves xifres i la defensa. Si l’AEAT amplia l’abast, t’ho diem abans de continuar. L’estudi de l’expedient i el pressupost són gratuïts i sense compromís."
         },
         {
           "q": "Em podeu garantir que no hi haurà sanció?",
@@ -414,7 +414,7 @@
       "titulo": "Pressupost tancat",
       "pasos": [
         "Ens expliques el teu cas i ens envies el que t’han notificat.",
-        "L’estudiem i t’enviem el pressupost per escrit, amb el que inclou.",
+        "L’estudiem gratis i sense compromís, i t’enviem el pressupost per escrit, amb el que inclou.",
         "Si l’acceptes, el preu no canvia. Només si l’AEAT amplia l’abast t’ho diem abans de continuar."
       ],
       "incluyeTitulo": "Inclou",
@@ -425,6 +425,10 @@
         "El recurs de reposició o la reclamació davant el TEAR o el TEAC, si compensa"
       ]
     },
-    "accion": "Demanar pressupost"
+    "accion": "Demanar pressupost",
+    "cta": {
+      "gancho": "Estudiem el teu expedient gratis i sense compromís",
+      "apoyo": "Envia’ns el que t’han notificat i et direm quin termini tens i què costaria la defensa, abans que decideixis res."
+    }
   }
 }

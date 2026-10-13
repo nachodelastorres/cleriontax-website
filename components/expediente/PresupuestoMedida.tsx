@@ -1,5 +1,6 @@
 import { ArrowRight, Check, FileStack, Route, Scale, ScanSearch, Timer, Wallet } from "lucide-react";
 import { Cabecera, Envoltura } from "@/components/secciones/Bloques";
+import ButtonLink from "@/components/ui/ButtonLink";
 
 /**
  * Precio de los procedimientos que no se cotizan por tramos.
@@ -30,6 +31,8 @@ export interface TextosPresupuesto {
     incluyeTitulo: string;
     incluye: string[];
   };
+  /** Franja final: el gancho (el estudio es gratis) y su apoyo. */
+  cta: { gancho: string; apoyo: string };
   accion: string;
 }
 
@@ -101,13 +104,21 @@ export default function PresupuestoMedida({
         </div>
       </div>
 
-      <a
-        href="#diagnostico"
-        className="mt-8 inline-flex items-center gap-2 text-nota font-semibold text-rojo underline-offset-4 hover:underline"
-      >
-        {textos.accion}
-        <ArrowRight className="h-4 w-4" aria-hidden="true" />
-      </a>
+      {/*
+        La acción de la sección, con su propia franja: aquí el lector ya sabe
+        cómo se presupuesta y lo que le frena es pedirlo. Por eso el gancho es
+        que el estudio no cuesta nada.
+      */}
+      <div className="mt-8 flex flex-col gap-6 border border-niebla border-l-4 border-l-rojo bg-blanco px-7 py-7 md:flex-row md:items-center md:justify-between md:gap-10 md:px-8">
+        <div>
+          <p className="text-subtitulo text-azul">{textos.cta.gancho}</p>
+          <p className="mt-2 text-nota text-pizarra">{textos.cta.apoyo}</p>
+        </div>
+        <ButtonLink href="#diagnostico" variant="principal" size="lg" className="flex-none gap-3">
+          {textos.accion}
+          <ArrowRight className="h-5 w-5" aria-hidden="true" />
+        </ButtonLink>
+      </div>
     </Envoltura>
   );
 }
