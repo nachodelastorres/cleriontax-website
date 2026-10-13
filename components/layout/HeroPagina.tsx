@@ -50,8 +50,10 @@ export default function HeroPagina({
           Caja sólida sobre el patrón. En pantalla grande se separa del borde
           de la cabecera para que el patrón la rodee, y el margen negativo
           compensa su relleno: el texto sigue alineado con el resto de la página.
+          Arriba el margen suma los 64 px del menú fijo, que tapa el principio
+          de la cabecera: así se ve el mismo patrón encima que debajo.
         */}
-        <div className="relative bg-azul py-20 md:py-24 lg:-mx-12 lg:my-14 lg:w-fit lg:max-w-[52rem] lg:px-12 lg:py-12">
+        <div className="relative bg-azul py-20 md:py-24 lg:-mx-12 lg:mb-14 lg:mt-[7.5rem] lg:w-fit lg:max-w-[52rem] lg:px-12 lg:py-12">
           <div className="relative grid gap-10 xl:grid-cols-[1fr_auto] xl:items-center">
             <div>
               {etiqueta ? (
