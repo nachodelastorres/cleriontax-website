@@ -1,4 +1,5 @@
 {
+  "plantilla": "formulario",
   "title": "Modelo 721 de criptomonedas: quién lo presenta, plazo y cómo hacerlo",
   "slug": "modelo-721-criptomonedas",
   "nav": "Modelo 721",
@@ -14,16 +15,62 @@
     "secundaria": {
       "label": "Quién está obligado",
       "href": "#quien-esta-obligado"
+    },
+    "borrador": {
+      "titulo": "Modelo 721 · Ejercicio 2025",
+      "apartado": "Monedas virtuales custodiadas en el extranjero",
+      "filas": [
+        {
+          "etiqueta": "Exchange A · saldo a 31/12",
+          "valor": "31.200,00 €"
+        },
+        {
+          "etiqueta": "Exchange B · saldo a 31/12",
+          "valor": "24.600,00 €"
+        },
+        {
+          "etiqueta": "Total custodiado fuera de España",
+          "valor": "55.800,00 €",
+          "total": true
+        }
+      ],
+      "estado": "Listo para presentar",
+      "nota": "Datos de ejemplo"
     }
   },
   "toc": [
-    { "id": "quien-esta-obligado", "label": "Quién está obligado" },
-    { "id": "cifras", "label": "Umbral y plazo" },
-    { "id": "que-entra", "label": "Qué entra y qué no" },
-    { "id": "otros-modelos", "label": "721, 720, 714 y renta" },
-    { "id": "fuera-de-plazo", "label": "Si no lo presentaste" },
-    { "id": "como-lo-hacemos", "label": "Cómo lo hacemos" },
-    { "id": "faq", "label": "Preguntas frecuentes" }
+    {
+      "id": "quien-esta-obligado",
+      "label": "Quién está obligado"
+    },
+    {
+      "id": "estas-obligado",
+      "label": "¿Estás obligado?"
+    },
+    {
+      "id": "cifras",
+      "label": "Umbral y plazo"
+    },
+    {
+      "id": "que-entra",
+      "label": "Qué entra y qué no"
+    },
+    {
+      "id": "otros-modelos",
+      "label": "721, 720, 714 y renta"
+    },
+    {
+      "id": "fuera-de-plazo",
+      "label": "Si no lo presentaste"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "label": "Cómo lo hacemos"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    }
   ],
   "sections": [
     {
@@ -39,15 +86,47 @@
       ]
     },
     {
+      "id": "estas-obligado",
+      "h2": "¿Estás obligado este año?",
+      "entrada": "Suma lo que tenías a 31 de diciembre en cada plataforma situada fuera de España. Si ya lo presentaste otro año, indica el último saldo declarado.",
+      "comprobador721": {
+        "plataforma": "Plataforma {n} en el extranjero",
+        "anadir": "Añadir plataforma",
+        "quitar": "Quitar plataforma",
+        "total": "Total a 31 de diciembre",
+        "yaPresentado": "Ya presenté el modelo 721 algún año",
+        "ultimoSaldo": "Último saldo declarado",
+        "obligado": "Tienes que presentar el modelo 721.",
+        "noObligado": "No estás obligado este año, pero vuelve a comprobarlo el próximo.",
+        "obligadoOtraVez": "Tienes que volver a presentarlo: el saldo ha subido más de 20.000 €.",
+        "noOtraVez": "No tienes que volver a presentarlo este año.",
+        "aviso": "Orientativo: solo cuenta lo custodiado por plataformas fuera de España, valorado a 31 de diciembre. Hay matices, como dejar de ser titular de lo declarado, que también obligan."
+      },
+      "fondo": "papel"
+    },
+    {
       "id": "cifras",
       "h2": "Umbral y plazo del modelo 721",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "Las magnitudes que definen la obligación. Hay matices según el caso, y por eso lo primero que hacemos es comprobar si te aplica.",
       "cifras": [
-        { "valor": "50.000 €", "etiqueta": "saldo conjunto en el extranjero a 31 de diciembre que activa la obligación" },
-        { "valor": "1 ene – 31 mar", "etiqueta": "plazo para presentar el modelo 721 del ejercicio anterior", "acento": true },
-        { "valor": "+20.000 €", "etiqueta": "incremento sobre lo último declarado que obliga a volver a presentarlo" },
-        { "valor": "0 €", "etiqueta": "de cuota: es una declaración informativa, no un impuesto" }
+        {
+          "valor": "50.000 €",
+          "etiqueta": "saldo conjunto en el extranjero a 31 de diciembre que activa la obligación"
+        },
+        {
+          "valor": "1 ene – 31 mar",
+          "etiqueta": "plazo para presentar el modelo 721 del ejercicio anterior",
+          "acento": true
+        },
+        {
+          "valor": "+20.000 €",
+          "etiqueta": "incremento sobre lo último declarado que obliga a volver a presentarlo"
+        },
+        {
+          "valor": "0 €",
+          "etiqueta": "de cuota: es una declaración informativa, no un impuesto"
+        }
       ]
     },
     {
@@ -79,28 +158,28 @@
       "h2": "Modelo 721, modelo 720, modelo 714 y la renta: qué hace cada uno",
       "fondo": "blanco",
       "entrada": "Cuatro obligaciones distintas que se solapan en el calendario y se confunden constantemente. Presentar una no cubre las demás.",
-      "formas": [
-        {
-          "forma": "angulo",
-          "titulo": "Modelo 721",
-          "body": "Informa de las criptomonedas custodiadas en el extranjero a 31 de diciembre. No se paga nada. Se presenta entre enero y marzo."
-        },
-        {
-          "forma": "arco",
-          "titulo": "Modelo 720",
-          "body": "Informa de cuentas, valores e inmuebles en el extranjero. Las criptomonedas no van aquí: desde que existe el 721, tienen su propio modelo."
-        },
-        {
-          "forma": "inverso",
-          "titulo": "Modelo 714",
-          "body": "El impuesto sobre el patrimonio. Sí puede haber cuota, y tus criptomonedas cuentan estén donde estén, también en tu wallet. Depende de tu comunidad y de tu patrimonio total."
-        },
-        {
-          "forma": "cuarto",
-          "titulo": "Modelo 100",
-          "body": "La declaración de la renta, donde van las ganancias, pérdidas y rendimientos del año. Lo que declares en el 721 tiene que ser coherente con lo que cuente tu renta."
-        }
-      ]
+      "fichas": {
+        "etiqueta": "Modelo",
+        "fichas": [
+          {
+            "numero": "721",
+            "body": "Informa de las criptomonedas custodiadas en el extranjero a 31 de diciembre. No se paga nada. Se presenta entre enero y marzo.",
+            "actual": true
+          },
+          {
+            "numero": "720",
+            "body": "Informa de cuentas, valores e inmuebles en el extranjero. Las criptomonedas no van aquí: desde que existe el 721, tienen su propio modelo."
+          },
+          {
+            "numero": "714",
+            "body": "El impuesto sobre el patrimonio. Sí puede haber cuota, y tus criptomonedas cuentan estén donde estén, también en tu wallet. Depende de tu comunidad y de tu patrimonio total."
+          },
+          {
+            "numero": "100",
+            "body": "La declaración de la renta, donde van las ganancias, pérdidas y rendimientos del año. Lo que declares en el 721 tiene que ser coherente con lo que cuente tu renta."
+          }
+        ]
+      }
     },
     {
       "id": "fuera-de-plazo",

@@ -1,4 +1,5 @@
 {
+  "plantilla": "formulario",
   "title": "Declaring cryptocurrency on your 2026 Spanish tax return",
   "slug": "declarar-criptomonedas",
   "nav": "Declare cryptocurrency",
@@ -14,46 +15,109 @@
     "secundaria": {
       "label": "See prices",
       "href": "#precio"
+    },
+    "borrador": {
+      "titulo": "2025 income tax draft",
+      "apartado": "Capital gains · Virtual currencies",
+      "filas": [
+        {
+          "etiqueta": "Transfer value",
+          "valor": "€38,250.00"
+        },
+        {
+          "etiqueta": "Acquisition value",
+          "valor": "€24,050.00"
+        },
+        {
+          "etiqueta": "Gain",
+          "valor": "€14,200.00"
+        },
+        {
+          "etiqueta": "Prior losses applied",
+          "valor": "−€9,300.00"
+        },
+        {
+          "etiqueta": "Taxable gain",
+          "valor": "€4,900.00",
+          "total": true
+        }
+      ],
+      "estado": "Ready to file",
+      "nota": "Sample data"
     }
   },
   "toc": [
-    { "id": "que-tributa", "label": "What is taxable" },
-    { "id": "el-malentendido", "label": "The misconception" },
-    { "id": "en-la-renta", "label": "How it is declared" },
-    { "id": "staking-airdrops", "label": "Staking and airdrops" },
-    { "id": "perdidas", "label": "Losses" },
-    { "id": "calendario", "label": "Calendar" },
-    { "id": "como-lo-hacemos", "label": "How we do it" },
-    { "id": "que-necesitamos", "label": "What we need" },
-    { "id": "precio", "label": "Price" },
-    { "id": "faq", "label": "FAQ" }
+    {
+      "id": "que-tributa",
+      "label": "What is taxable"
+    },
+    {
+      "id": "el-malentendido",
+      "label": "The misconception"
+    },
+    {
+      "id": "en-la-renta",
+      "label": "How it is declared"
+    },
+    {
+      "id": "cuanto-pagaras",
+      "label": "What you'll pay"
+    },
+    {
+      "id": "staking-airdrops",
+      "label": "Staking and airdrops"
+    },
+    {
+      "id": "perdidas",
+      "label": "Losses"
+    },
+    {
+      "id": "calendario",
+      "label": "Calendar"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "label": "How we do it"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "What we need"
+    },
+    {
+      "id": "precio",
+      "label": "Price"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    }
   ],
   "sections": [
     {
       "id": "que-tributa",
       "h2": "What is taxable when you declare cryptocurrency, and it is not just selling",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "The four operations people overlook most. None of them requires you to have cashed out to your bank.",
       "formas": [
         {
-          "forma": "angulo",
           "titulo": "Selling for euros",
-          "body": "The obvious case: a capital gain or loss for the difference between the transfer value and the acquisition value."
+          "body": "The obvious case: a capital gain or loss for the difference between the transfer value and the acquisition value.",
+          "icono": "euros"
         },
         {
-          "forma": "cuarto",
           "titulo": "Swapping one token for another",
-          "body": "It is an exchange and it generates a capital gain or loss even if you never go through euros. It is the one most often forgotten."
+          "body": "It is an exchange and it generates a capital gain or loss even if you never go through euros. It is the one most often forgotten.",
+          "icono": "permuta"
         },
         {
-          "forma": "arco",
           "titulo": "Earning from staking or lending",
-          "body": "Rewards for lending out your crypto-assets are income, not gains, and they are taxed when you receive them, not when you sell them."
+          "body": "Rewards for lending out your crypto-assets are income, not gains, and they are taxed when you receive them, not when you sell them.",
+          "icono": "rendimiento"
         },
         {
-          "forma": "inverso",
           "titulo": "Receiving without buying",
-          "body": "Airdrops, forks and protocol rewards. Their value on the date received becomes your acquisition cost when you sell them."
+          "body": "Airdrops, forks and protocol rewards. Their value on the date received becomes your acquisition cost when you sell them.",
+          "icono": "regalo"
         }
       ]
     },
@@ -62,28 +126,28 @@
       "h2": "The misconception that costs the most",
       "fondo": "papel",
       "entrada": "Almost everyone arrives with one of these ideas. All of them cause problems later.",
-      "columnas": [
-        {
-          "titulo": "What many people believe",
-          "correcta": false,
-          "items": [
-            "“As long as I don’t convert to euros, it isn’t taxed”",
-            "“I’m at a loss, so I don’t have to declare anything”",
-            "“Nobody can see what is in my private wallet”",
-            "“If the exchange doesn’t give me a tax report, there’s nothing to declare”"
-          ]
-        },
-        {
-          "titulo": "How it actually works",
-          "correcta": true,
-          "items": [
-            "Token-to-token swaps are taxed the same, without going through euros",
-            "Losses must be declared too: it is the only way to offset them later",
-            "The blockchain is public and platforms report to the authorities",
-            "The obligation to declare is yours, whether or not the exchange gives you a report"
-          ]
-        }
-      ]
+      "mitos": {
+        "etiquetaMito": "What people think",
+        "etiquetaRealidad": "How it works",
+        "pares": [
+          {
+            "mito": "“As long as I don’t convert to euros, it isn’t taxed”",
+            "realidad": "Token-to-token swaps are taxed the same, without going through euros"
+          },
+          {
+            "mito": "“I’m at a loss, so I don’t have to declare anything”",
+            "realidad": "Losses must be declared too: it is the only way to offset them later"
+          },
+          {
+            "mito": "“Nobody can see what is in my private wallet”",
+            "realidad": "The blockchain is public and platforms report to the authorities"
+          },
+          {
+            "mito": "“If the exchange doesn’t give me a tax report, there’s nothing to declare”",
+            "realidad": "The obligation to declare is yours, whether or not the exchange gives you a report"
+          }
+        ]
+      }
     },
     {
       "id": "en-la-renta",
@@ -99,9 +163,23 @@
       ]
     },
     {
+      "id": "cuanto-pagaras",
+      "h2": "How much will you pay on your gain?",
+      "entrada": "Gains on your crypto are taxed in the savings base, by bands. Enter your net gain and see how it is split.",
+      "cuota": {
+        "ganancia": "Your net gain for the year",
+        "cuota": "Estimated tax",
+        "tipoMedio": "Average rate",
+        "hasta": "up to",
+        "masDe": "over",
+        "aviso": "Estimate using the 2025 savings scale. It doesn't add other savings income, offset losses or apply deductions: that's what the full calculation is for."
+      },
+      "fondo": "papel"
+    },
+    {
       "id": "staking-airdrops",
       "h2": "Declaring staking, airdrops and DeFi to the Spanish Tax Agency",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "What is not a purchase or sale is declared too, and each type of activity has its own treatment.",
       "bullets": [
         "<strong>Staking:</strong> rewards are taxed when received, at their value on that date. That value becomes their acquisition cost, so when you sell them you are only taxed on the later difference.",
@@ -123,11 +201,26 @@
         "columnaConcepto": "Item",
         "columnaValor": "Amount",
         "filas": [
-          { "concepto": "Loss declared in 2022 on the sale of crypto-assets", "importe": -12400.0 },
-          { "concepto": "Offset in tax years 2023 and 2024", "importe": 3100.0 },
-          { "concepto": "Balance pending at the start of 2025", "importe": -9300.0 },
-          { "concepto": "2025 gain on the sale of crypto-assets and shares", "importe": 14200.0 },
-          { "concepto": "Taxable gain after applying the pending balance", "importe": 4900.0 }
+          {
+            "concepto": "Loss declared in 2022 on the sale of crypto-assets",
+            "importe": -12400.0
+          },
+          {
+            "concepto": "Offset in tax years 2023 and 2024",
+            "importe": 3100.0
+          },
+          {
+            "concepto": "Balance pending at the start of 2025",
+            "importe": -9300.0
+          },
+          {
+            "concepto": "2025 gain on the sale of crypto-assets and shares",
+            "importe": 14200.0
+          },
+          {
+            "concepto": "Taxable gain after applying the pending balance",
+            "importe": 4900.0
+          }
         ]
       }
     },
@@ -136,32 +229,43 @@
       "h2": "Calendar for declaring cryptocurrency",
       "fondo": "blanco",
       "entrada": "The Spanish Tax Agency publishes the exact dates every year. This is the rhythm, and rebuilding your activity takes weeks, not days.",
-      "hitos": [
+      "anio": [
         {
+          "desde": 1,
+          "hasta": 3,
           "cuando": "January–March",
           "titulo": "Form 721",
           "body": "If on 31 December you held more than €50,000 in crypto custodied abroad, it is reported before the income tax return. We explain it on the Form 721 page."
         },
         {
+          "desde": 2,
+          "hasta": 3,
           "cuando": "February–March",
           "titulo": "Gather and reconcile",
           "body": "This is the time to export histories and rebuild your activity. Starting here is what lets you file without rushing."
         },
         {
+          "desde": 4,
+          "hasta": 6,
           "cuando": "April",
           "titulo": "The income tax campaign opens",
           "body": "You can file from day one with your crypto figures already closed, instead of correcting the draft on the fly."
         },
         {
+          "desde": 6,
+          "hasta": 6,
           "cuando": "End of June",
           "titulo": "Voluntary deadline ends",
           "body": "Direct debit of the payment closes a few days earlier. After that, the return carries a surcharge.",
           "critico": true
         },
         {
+          "desde": 7,
+          "hasta": 12,
           "cuando": "Afterwards",
           "titulo": "Late filing",
-          "body": "Filing late without a prior request from the Tax Agency carries surcharges that grow with the delay. It is still better than waiting for the Tax Agency to ask."
+          "body": "Filing late without a prior request from the Tax Agency carries surcharges that grow with the delay. It is still better than waiting for the Tax Agency to ask.",
+          "tenue": true
         }
       ]
     },
@@ -189,12 +293,13 @@
           "title": "We hand you the figures and their backing",
           "body": "What goes in each section of the return, the report with per-operation detail and the criteria memo that justifies it."
         }
-      ]
+      ],
+      "fondo": "papel"
     },
     {
       "id": "que-necesitamos",
       "h2": "What we need from you",
-      "fondo": "papel",
+      "fondo": "blanco",
       "bullets": [
         "<strong>Exports from your exchanges</strong> from your first operation: CSV or read-only API keys. Never private keys.",
         "<strong>Public addresses of your wallets</strong>, including ones you no longer use.",

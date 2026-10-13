@@ -13,6 +13,7 @@ import { SLUGS_PAGINA, getPagina } from "@/lib/paginas";
 import { TARIFAS } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
 import HeroExpediente from "@/components/expediente/HeroExpediente";
+import HeroFormulario, { type Borrador } from "@/components/formulario/HeroFormulario";
 import PrecioFases, { type TextosPrecioFases } from "@/components/expediente/PrecioFases";
 import PresupuestoMedida, { type TextosPresupuesto } from "@/components/expediente/PresupuestoMedida";
 import type { TextosCalculadora } from "@/components/expediente/CalculadoraPlazo";
@@ -47,7 +48,7 @@ interface Contenido {
    * AEAT?», con calculadora de plazo y precio en dos partes. Sin ella, la de
    * siempre.
    */
-  plantilla?: "expediente";
+  plantilla?: "expediente" | "formulario";
   title: string;
   excerpt: string;
   hero: {
@@ -57,6 +58,8 @@ interface Contenido {
     cta?: { label: string; href: string };
     secundaria?: { label: string; href: string };
     calculadora?: TextosCalculadora;
+    /** Plantilla formulario: el borrador dibujado del hero. */
+    borrador?: Borrador;
   };
   toc: { id: string; label: string }[];
   sections: Seccion[];
@@ -177,7 +180,16 @@ export default async function PaginaServicio({ params }: Props) {
         />
       ))}
 
-      {expediente ? (
+      {datos.plantilla === "formulario" ? (
+        <HeroFormulario
+          etiqueta={hero.etiqueta}
+          titulo={hero.h1}
+          entrada={hero.subheading}
+          accion={hero.cta}
+          secundaria={hero.secundaria}
+          borrador={hero.borrador}
+        />
+      ) : expediente ? (
         <HeroExpediente
           locale={locale}
           etiqueta={hero.etiqueta}

@@ -1,4 +1,5 @@
 {
+  "plantilla": "formulario",
   "title": "Declarar criptomonedes a la renda 2026",
   "slug": "declarar-criptomonedas",
   "nav": "Declarar criptomonedes",
@@ -14,46 +15,109 @@
     "secundaria": {
       "label": "Veure preus",
       "href": "#precio"
+    },
+    "borrador": {
+      "titulo": "Esborrany de la renda 2025",
+      "apartado": "Guanys patrimonials · Monedes virtuals",
+      "filas": [
+        {
+          "etiqueta": "Valor de transmissió",
+          "valor": "38.250,00 €"
+        },
+        {
+          "etiqueta": "Valor d’adquisició",
+          "valor": "24.050,00 €"
+        },
+        {
+          "etiqueta": "Guany",
+          "valor": "14.200,00 €"
+        },
+        {
+          "etiqueta": "Pèrdues pendents aplicades",
+          "valor": "−9.300,00 €"
+        },
+        {
+          "etiqueta": "Guany subjecte",
+          "valor": "4.900,00 €",
+          "total": true
+        }
+      ],
+      "estado": "A punt per presentar",
+      "nota": "Dades d’exemple"
     }
   },
   "toc": [
-    { "id": "que-tributa", "label": "Què tributa" },
-    { "id": "el-malentendido", "label": "El malentès" },
-    { "id": "en-la-renta", "label": "Com es declara" },
-    { "id": "staking-airdrops", "label": "Staking i airdrops" },
-    { "id": "perdidas", "label": "Pèrdues" },
-    { "id": "calendario", "label": "Calendari" },
-    { "id": "como-lo-hacemos", "label": "Com ho fem" },
-    { "id": "que-necesitamos", "label": "Què necessitem" },
-    { "id": "precio", "label": "Preu" },
-    { "id": "faq", "label": "Preguntes freqüents" }
+    {
+      "id": "que-tributa",
+      "label": "Què tributa"
+    },
+    {
+      "id": "el-malentendido",
+      "label": "El malentès"
+    },
+    {
+      "id": "en-la-renta",
+      "label": "Com es declara"
+    },
+    {
+      "id": "cuanto-pagaras",
+      "label": "Quant pagaràs"
+    },
+    {
+      "id": "staking-airdrops",
+      "label": "Staking i airdrops"
+    },
+    {
+      "id": "perdidas",
+      "label": "Pèrdues"
+    },
+    {
+      "id": "calendario",
+      "label": "Calendari"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "label": "Com ho fem"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "Què necessitem"
+    },
+    {
+      "id": "precio",
+      "label": "Preu"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
   ],
   "sections": [
     {
       "id": "que-tributa",
       "h2": "Què tributa en declarar criptomonedes, i no és només vendre",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "Les quatre operacions que més es passen per alt. Cap no exigeix que hagis tret euros al banc.",
       "formas": [
         {
-          "forma": "angulo",
           "titulo": "Vendre per euros",
-          "body": "El cas evident: guany o pèrdua patrimonial per la diferència entre el valor de transmissió i el d’adquisició."
+          "body": "El cas evident: guany o pèrdua patrimonial per la diferència entre el valor de transmissió i el d’adquisició.",
+          "icono": "euros"
         },
         {
-          "forma": "cuarto",
           "titulo": "Canviar un token per un altre",
-          "body": "És una permuta i genera un guany o una pèrdua patrimonial encara que no passis per euros en cap moment. És la que més s’oblida."
+          "body": "És una permuta i genera un guany o una pèrdua patrimonial encara que no passis per euros en cap moment. És la que més s’oblida.",
+          "icono": "permuta"
         },
         {
-          "forma": "arco",
           "titulo": "Cobrar per staking o lending",
-          "body": "Les recompenses per cedir els teus criptoactius són rendiments, no guanys, i s’imputen quan les reps, no quan les vens."
+          "body": "Les recompenses per cedir els teus criptoactius són rendiments, no guanys, i s’imputen quan les reps, no quan les vens.",
+          "icono": "rendimiento"
         },
         {
-          "forma": "inverso",
           "titulo": "Rebre sense comprar",
-          "body": "Airdrops, forks i recompenses de protocols. El seu valor en la data de recepció serà el teu cost d’adquisició quan els venguis."
+          "body": "Airdrops, forks i recompenses de protocols. El seu valor en la data de recepció serà el teu cost d’adquisició quan els venguis.",
+          "icono": "regalo"
         }
       ]
     },
@@ -62,28 +126,28 @@
       "h2": "El malentès que surt més car",
       "fondo": "papel",
       "entrada": "Gairebé tothom arriba amb alguna d’aquestes idees. Totes generen problemes després.",
-      "columnas": [
-        {
-          "titulo": "El que molta gent creu",
-          "correcta": false,
-          "items": [
-            "«Mentre no ho passi a euros, no tributa»",
-            "«Com que vaig en pèrdues, no he de declarar res»",
-            "«El que tinc a la meva wallet privada no ho veu ningú»",
-            "«Si l’exchange no em dona informe fiscal, no hi ha res a declarar»"
-          ]
-        },
-        {
-          "titulo": "Com funciona en realitat",
-          "correcta": true,
-          "items": [
-            "La permuta entre tokens tributa igual, sense passar per euros",
-            "Les pèrdues també es declaren: és l’única manera de compensar-les després",
-            "La cadena és pública i les plataformes informen l’Administració",
-            "L’obligació de declarar és teva, hi hagi o no informe de l’exchange"
-          ]
-        }
-      ]
+      "mitos": {
+        "etiquetaMito": "El que es creu",
+        "etiquetaRealidad": "Com és",
+        "pares": [
+          {
+            "mito": "«Mentre no ho passi a euros, no tributa»",
+            "realidad": "La permuta entre tokens tributa igual, sense passar per euros"
+          },
+          {
+            "mito": "«Com que vaig en pèrdues, no he de declarar res»",
+            "realidad": "Les pèrdues també es declaren: és l’única manera de compensar-les després"
+          },
+          {
+            "mito": "«El que tinc a la meva wallet privada no ho veu ningú»",
+            "realidad": "La cadena és pública i les plataformes informen l’Administració"
+          },
+          {
+            "mito": "«Si l’exchange no em dona informe fiscal, no hi ha res a declarar»",
+            "realidad": "L’obligació de declarar és teva, hi hagi o no informe de l’exchange"
+          }
+        ]
+      }
     },
     {
       "id": "en-la-renta",
@@ -99,9 +163,23 @@
       ]
     },
     {
+      "id": "cuanto-pagaras",
+      "h2": "Quant pagaràs pel teu guany?",
+      "entrada": "El guany de les teves criptomonedes tributa a la base de l’estalvi, per trams. Escriu el teu guany net i mira com es reparteix.",
+      "cuota": {
+        "ganancia": "El teu guany net de l’any",
+        "cuota": "Quota estimada",
+        "tipoMedio": "Tipus mitjà",
+        "hasta": "fins a",
+        "masDe": "més de",
+        "aviso": "Estimació amb l’escala de l’estalvi del 2025. No suma altres rendes de l’estalvi, no compensa pèrdues ni aplica deduccions: per això hi ha el càlcul complet."
+      },
+      "fondo": "papel"
+    },
+    {
       "id": "staking-airdrops",
       "h2": "Declarar staking, airdrops i DeFi a Hisenda",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "El que no és una compravenda també es declara, i cada operativa té el seu tractament.",
       "bullets": [
         "<strong>Staking:</strong> les recompenses s’imputen quan es perceben, al seu valor en aquella data. Aquest valor passa a ser el seu cost d’adquisició, de manera que en vendre-les només tributes per la diferència posterior.",
@@ -123,11 +201,26 @@
         "columnaConcepto": "Concepte",
         "columnaValor": "Import",
         "filas": [
-          { "concepto": "Pèrdua declarada el 2022 per venda de criptoactius", "importe": -12400.0 },
-          { "concepto": "Compensada als exercicis 2023 i 2024", "importe": 3100.0 },
-          { "concepto": "Saldo pendent en començar el 2025", "importe": -9300.0 },
-          { "concepto": "Guany del 2025 per venda de criptoactius i accions", "importe": 14200.0 },
-          { "concepto": "Guany subjecte després d’aplicar el saldo pendent", "importe": 4900.0 }
+          {
+            "concepto": "Pèrdua declarada el 2022 per venda de criptoactius",
+            "importe": -12400.0
+          },
+          {
+            "concepto": "Compensada als exercicis 2023 i 2024",
+            "importe": 3100.0
+          },
+          {
+            "concepto": "Saldo pendent en començar el 2025",
+            "importe": -9300.0
+          },
+          {
+            "concepto": "Guany del 2025 per venda de criptoactius i accions",
+            "importe": 14200.0
+          },
+          {
+            "concepto": "Guany subjecte després d’aplicar el saldo pendent",
+            "importe": 4900.0
+          }
         ]
       }
     },
@@ -136,32 +229,43 @@
       "h2": "Calendari per declarar criptomonedes",
       "fondo": "blanco",
       "entrada": "Les dates exactes les publica l’AEAT cada any. El ritme és aquest, i la reconstrucció de la teva operativa porta setmanes, no dies.",
-      "hitos": [
+      "anio": [
         {
+          "desde": 1,
+          "hasta": 3,
           "cuando": "Gener–març",
           "titulo": "Model 721",
           "body": "Si a 31 de desembre tenies més de 50.000 € en criptomonedes custodiades a l’estranger, s’informa abans que la renda. Ho expliquem a la pàgina del model 721."
         },
         {
+          "desde": 2,
+          "hasta": 3,
           "cuando": "Febrer–març",
           "titulo": "Reunir i reconciliar",
           "body": "És el moment d’exportar històrics i reconstruir l’operativa. Començar aquí és el que permet presentar sense presses."
         },
         {
+          "desde": 4,
+          "hasta": 6,
           "cuando": "Abril",
           "titulo": "S’obre la campanya de la renda",
           "body": "Pots presentar des del primer dia amb les xifres de cripto ja tancades, en lloc de corregir l’esborrany sobre la marxa."
         },
         {
+          "desde": 6,
+          "hasta": 6,
           "cuando": "Finals de juny",
           "titulo": "Fi del termini voluntari",
           "body": "La domiciliació del pagament tanca uns dies abans. Després, la declaració va amb recàrrec.",
           "critico": true
         },
         {
+          "desde": 7,
+          "hasta": 12,
           "cuando": "Després",
           "titulo": "Fora de termini",
-          "body": "Presentar tard sense requeriment previ comporta recàrrecs creixents segons el retard. Continua sent millor que esperar que pregunti Hisenda."
+          "body": "Presentar tard sense requeriment previ comporta recàrrecs creixents segons el retard. Continua sent millor que esperar que pregunti Hisenda.",
+          "tenue": true
         }
       ]
     },
@@ -189,12 +293,13 @@
           "title": "Et lliurem les xifres i el seu suport",
           "body": "El que va a cada apartat de la renda, l’informe amb el detall per operació i la memòria de criteris que ho justifica."
         }
-      ]
+      ],
+      "fondo": "papel"
     },
     {
       "id": "que-necesitamos",
       "h2": "Què necessitem de tu",
-      "fondo": "papel",
+      "fondo": "blanco",
       "bullets": [
         "<strong>Exportacions dels teus exchanges</strong> des de la teva primera operació: CSV o claus API de només lectura. Mai claus privades.",
         "<strong>Adreces públiques de les teves wallets</strong>, incloses les que ja no facis servir.",

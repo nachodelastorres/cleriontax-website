@@ -1,4 +1,5 @@
 {
+  "plantilla": "formulario",
   "title": "Model 721 de criptomonedes: qui el presenta, termini i com fer-ho",
   "slug": "modelo-721-criptomonedas",
   "nav": "Model 721",
@@ -14,16 +15,62 @@
     "secundaria": {
       "label": "Qui està obligat",
       "href": "#quien-esta-obligado"
+    },
+    "borrador": {
+      "titulo": "Model 721 · Exercici 2025",
+      "apartado": "Monedes virtuals custodiades a l’estranger",
+      "filas": [
+        {
+          "etiqueta": "Exchange A · saldo a 31/12",
+          "valor": "31.200,00 €"
+        },
+        {
+          "etiqueta": "Exchange B · saldo a 31/12",
+          "valor": "24.600,00 €"
+        },
+        {
+          "etiqueta": "Total custodiat fora d’Espanya",
+          "valor": "55.800,00 €",
+          "total": true
+        }
+      ],
+      "estado": "A punt per presentar",
+      "nota": "Dades d’exemple"
     }
   },
   "toc": [
-    { "id": "quien-esta-obligado", "label": "Qui està obligat" },
-    { "id": "cifras", "label": "Llindar i termini" },
-    { "id": "que-entra", "label": "Què hi entra i què no" },
-    { "id": "otros-modelos", "label": "721, 720, 714 i renda" },
-    { "id": "fuera-de-plazo", "label": "Si no el vas presentar" },
-    { "id": "como-lo-hacemos", "label": "Com ho fem" },
-    { "id": "faq", "label": "Preguntes freqüents" }
+    {
+      "id": "quien-esta-obligado",
+      "label": "Qui està obligat"
+    },
+    {
+      "id": "estas-obligado",
+      "label": "Hi estàs obligat?"
+    },
+    {
+      "id": "cifras",
+      "label": "Llindar i termini"
+    },
+    {
+      "id": "que-entra",
+      "label": "Què hi entra i què no"
+    },
+    {
+      "id": "otros-modelos",
+      "label": "721, 720, 714 i renda"
+    },
+    {
+      "id": "fuera-de-plazo",
+      "label": "Si no el vas presentar"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "label": "Com ho fem"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntes freqüents"
+    }
   ],
   "sections": [
     {
@@ -39,15 +86,47 @@
       ]
     },
     {
+      "id": "estas-obligado",
+      "h2": "Hi estàs obligat aquest any?",
+      "entrada": "Suma el que tenies a 31 de desembre a cada plataforma situada fora d’Espanya. Si ja el vas presentar un altre any, indica l’últim saldo declarat.",
+      "comprobador721": {
+        "plataforma": "Plataforma {n} a l’estranger",
+        "anadir": "Afegir plataforma",
+        "quitar": "Treure plataforma",
+        "total": "Total a 31 de desembre",
+        "yaPresentado": "Ja vaig presentar el model 721 algun any",
+        "ultimoSaldo": "Últim saldo declarat",
+        "obligado": "Has de presentar el model 721.",
+        "noObligado": "No hi estàs obligat aquest any, però torna-ho a comprovar l’any vinent.",
+        "obligadoOtraVez": "L’has de tornar a presentar: el saldo ha pujat més de 20.000 €.",
+        "noOtraVez": "No l’has de tornar a presentar aquest any.",
+        "aviso": "Orientatiu: només compta el que custodien plataformes de fora d’Espanya, valorat a 31 de desembre. Hi ha matisos, com deixar de ser titular del que es va declarar, que també obliguen."
+      },
+      "fondo": "papel"
+    },
+    {
       "id": "cifras",
       "h2": "Llindar i termini del model 721",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "Les magnituds que defineixen l’obligació. Hi ha matisos segons el cas, i per això el primer que fem és comprovar si t’afecta.",
       "cifras": [
-        { "valor": "50.000 €", "etiqueta": "saldo conjunt a l’estranger a 31 de desembre que activa l’obligació" },
-        { "valor": "1 gen – 31 març", "etiqueta": "termini per presentar el model 721 de l’exercici anterior", "acento": true },
-        { "valor": "+20.000 €", "etiqueta": "increment sobre l’últim declarat que obliga a tornar-lo a presentar" },
-        { "valor": "0 €", "etiqueta": "de quota: és una declaració informativa, no un impost" }
+        {
+          "valor": "50.000 €",
+          "etiqueta": "saldo conjunt a l’estranger a 31 de desembre que activa l’obligació"
+        },
+        {
+          "valor": "1 gen – 31 març",
+          "etiqueta": "termini per presentar el model 721 de l’exercici anterior",
+          "acento": true
+        },
+        {
+          "valor": "+20.000 €",
+          "etiqueta": "increment sobre l’últim declarat que obliga a tornar-lo a presentar"
+        },
+        {
+          "valor": "0 €",
+          "etiqueta": "de quota: és una declaració informativa, no un impost"
+        }
       ]
     },
     {
@@ -79,28 +158,28 @@
       "h2": "Model 721, model 720, model 714 i la renda: què fa cadascun",
       "fondo": "blanco",
       "entrada": "Quatre obligacions diferents que se solapen al calendari i es confonen constantment. Presentar-ne una no cobreix les altres.",
-      "formas": [
-        {
-          "forma": "angulo",
-          "titulo": "Model 721",
-          "body": "Informa de les criptomonedes custodiades a l’estranger a 31 de desembre. No es paga res. Es presenta entre gener i març."
-        },
-        {
-          "forma": "arco",
-          "titulo": "Model 720",
-          "body": "Informa de comptes, valors i immobles a l’estranger. Les criptomonedes no hi van: des que existeix el 721, tenen el seu propi model."
-        },
-        {
-          "forma": "inverso",
-          "titulo": "Model 714",
-          "body": "L’impost sobre el patrimoni. Sí que hi pot haver quota, i les teves criptomonedes hi compten siguin on siguin, també a la teva wallet. Depèn de la teva comunitat i del teu patrimoni total."
-        },
-        {
-          "forma": "cuarto",
-          "titulo": "Model 100",
-          "body": "La declaració de la renda, on van els guanys, les pèrdues i els rendiments de l’any. El que declaris al 721 ha de ser coherent amb el que expliqui la teva renda."
-        }
-      ]
+      "fichas": {
+        "etiqueta": "Model",
+        "fichas": [
+          {
+            "numero": "721",
+            "body": "Informa de les criptomonedes custodiades a l’estranger a 31 de desembre. No es paga res. Es presenta entre gener i març.",
+            "actual": true
+          },
+          {
+            "numero": "720",
+            "body": "Informa de comptes, valors i immobles a l’estranger. Les criptomonedes no hi van: des que existeix el 721, tenen el seu propi model."
+          },
+          {
+            "numero": "714",
+            "body": "L’impost sobre el patrimoni. Sí que hi pot haver quota, i les teves criptomonedes hi compten siguin on siguin, també a la teva wallet. Depèn de la teva comunitat i del teu patrimoni total."
+          },
+          {
+            "numero": "100",
+            "body": "La declaració de la renda, on van els guanys, les pèrdues i els rendiments de l’any. El que declaris al 721 ha de ser coherent amb el que expliqui la teva renda."
+          }
+        ]
+      }
     },
     {
       "id": "fuera-de-plazo",

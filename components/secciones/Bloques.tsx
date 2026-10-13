@@ -3,7 +3,17 @@ import Patron from "@/components/brand/Patron";
 import TablaDatos, { type FilaDato } from "@/components/brand/TablaDatos";
 import ChipEstado from "@/components/brand/ChipEstado";
 import ButtonLink from "@/components/ui/ButtonLink";
-import { ArrowRight, Blocks, ChartCandlestick, Store, Wallet } from "lucide-react";
+import {
+  ArrowLeftRight,
+  ArrowRight,
+  Banknote,
+  Blocks,
+  ChartCandlestick,
+  Coins,
+  Gift,
+  Store,
+  Wallet,
+} from "lucide-react";
 
 /**
  * Biblioteca de bloques de sección.
@@ -33,6 +43,10 @@ const ICONOS = {
   wallet: Wallet,
   defi: Blocks,
   mercado: Store,
+  euros: Banknote,
+  permuta: ArrowLeftRight,
+  rendimiento: Coins,
+  regalo: Gift,
 };
 export type NombreIcono = keyof typeof ICONOS;
 

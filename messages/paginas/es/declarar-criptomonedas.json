@@ -1,4 +1,5 @@
 {
+  "plantilla": "formulario",
   "title": "Declarar criptomonedas en la renta 2026",
   "slug": "declarar-criptomonedas",
   "nav": "Declarar criptomonedas",
@@ -14,46 +15,109 @@
     "secundaria": {
       "label": "Ver precios",
       "href": "#precio"
+    },
+    "borrador": {
+      "titulo": "Borrador de la renta 2025",
+      "apartado": "Ganancias patrimoniales · Monedas virtuales",
+      "filas": [
+        {
+          "etiqueta": "Valor de transmisión",
+          "valor": "38.250,00 €"
+        },
+        {
+          "etiqueta": "Valor de adquisición",
+          "valor": "24.050,00 €"
+        },
+        {
+          "etiqueta": "Ganancia",
+          "valor": "14.200,00 €"
+        },
+        {
+          "etiqueta": "Pérdidas pendientes aplicadas",
+          "valor": "−9.300,00 €"
+        },
+        {
+          "etiqueta": "Ganancia sujeta",
+          "valor": "4.900,00 €",
+          "total": true
+        }
+      ],
+      "estado": "Listo para presentar",
+      "nota": "Datos de ejemplo"
     }
   },
   "toc": [
-    { "id": "que-tributa", "label": "Qué tributa" },
-    { "id": "el-malentendido", "label": "El malentendido" },
-    { "id": "en-la-renta", "label": "Cómo se declara" },
-    { "id": "staking-airdrops", "label": "Staking y airdrops" },
-    { "id": "perdidas", "label": "Pérdidas" },
-    { "id": "calendario", "label": "Calendario" },
-    { "id": "como-lo-hacemos", "label": "Cómo lo hacemos" },
-    { "id": "que-necesitamos", "label": "Qué necesitamos" },
-    { "id": "precio", "label": "Precio" },
-    { "id": "faq", "label": "Preguntas frecuentes" }
+    {
+      "id": "que-tributa",
+      "label": "Qué tributa"
+    },
+    {
+      "id": "el-malentendido",
+      "label": "El malentendido"
+    },
+    {
+      "id": "en-la-renta",
+      "label": "Cómo se declara"
+    },
+    {
+      "id": "cuanto-pagaras",
+      "label": "Cuánto pagarás"
+    },
+    {
+      "id": "staking-airdrops",
+      "label": "Staking y airdrops"
+    },
+    {
+      "id": "perdidas",
+      "label": "Pérdidas"
+    },
+    {
+      "id": "calendario",
+      "label": "Calendario"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "label": "Cómo lo hacemos"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "Qué necesitamos"
+    },
+    {
+      "id": "precio",
+      "label": "Precio"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    }
   ],
   "sections": [
     {
       "id": "que-tributa",
       "h2": "Qué tributa al declarar criptomonedas, y no es solo vender",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "Las cuatro operaciones que más se pasan por alto. Ninguna exige que hayas sacado euros al banco.",
       "formas": [
         {
-          "forma": "angulo",
           "titulo": "Vender por euros",
-          "body": "El caso evidente: ganancia o pérdida patrimonial por la diferencia entre el valor de transmisión y el de adquisición."
+          "body": "El caso evidente: ganancia o pérdida patrimonial por la diferencia entre el valor de transmisión y el de adquisición.",
+          "icono": "euros"
         },
         {
-          "forma": "cuarto",
           "titulo": "Cambiar un token por otro",
-          "body": "Es una permuta y genera ganancia o pérdida patrimonial aunque no pases por euros en ningún momento. Es la que más se olvida."
+          "body": "Es una permuta y genera ganancia o pérdida patrimonial aunque no pases por euros en ningún momento. Es la que más se olvida.",
+          "icono": "permuta"
         },
         {
-          "forma": "arco",
           "titulo": "Cobrar por staking o lending",
-          "body": "Las recompensas por ceder tus criptoactivos son rendimientos, no ganancias, y se imputan cuando las recibes, no cuando las vendes."
+          "body": "Las recompensas por ceder tus criptoactivos son rendimientos, no ganancias, y se imputan cuando las recibes, no cuando las vendes.",
+          "icono": "rendimiento"
         },
         {
-          "forma": "inverso",
           "titulo": "Recibir sin comprar",
-          "body": "Airdrops, forks y recompensas de protocolos. Su valor en la fecha de recepción será tu coste de adquisición cuando los vendas."
+          "body": "Airdrops, forks y recompensas de protocolos. Su valor en la fecha de recepción será tu coste de adquisición cuando los vendas.",
+          "icono": "regalo"
         }
       ]
     },
@@ -62,28 +126,28 @@
       "h2": "El malentendido que sale más caro",
       "fondo": "papel",
       "entrada": "Casi todo el mundo llega con alguna de estas ideas. Todas generan problemas después.",
-      "columnas": [
-        {
-          "titulo": "Lo que mucha gente cree",
-          "correcta": false,
-          "items": [
-            "«Mientras no lo pase a euros, no tributa»",
-            "«Como voy en pérdidas, no tengo que declarar nada»",
-            "«Lo que está en mi wallet privada no lo ve nadie»",
-            "«Si el exchange no me da informe fiscal, no hay nada que declarar»"
-          ]
-        },
-        {
-          "titulo": "Cómo funciona en realidad",
-          "correcta": true,
-          "items": [
-            "La permuta entre tokens tributa igual, sin pasar por euros",
-            "Las pérdidas también se declaran: es la única forma de compensarlas después",
-            "La cadena es pública y las plataformas reportan a la Administración",
-            "La obligación de declarar es tuya, exista o no informe del exchange"
-          ]
-        }
-      ]
+      "mitos": {
+        "etiquetaMito": "Lo que se cree",
+        "etiquetaRealidad": "Cómo es",
+        "pares": [
+          {
+            "mito": "«Mientras no lo pase a euros, no tributa»",
+            "realidad": "La permuta entre tokens tributa igual, sin pasar por euros"
+          },
+          {
+            "mito": "«Como voy en pérdidas, no tengo que declarar nada»",
+            "realidad": "Las pérdidas también se declaran: es la única forma de compensarlas después"
+          },
+          {
+            "mito": "«Lo que está en mi wallet privada no lo ve nadie»",
+            "realidad": "La cadena es pública y las plataformas reportan a la Administración"
+          },
+          {
+            "mito": "«Si el exchange no me da informe fiscal, no hay nada que declarar»",
+            "realidad": "La obligación de declarar es tuya, exista o no informe del exchange"
+          }
+        ]
+      }
     },
     {
       "id": "en-la-renta",
@@ -99,9 +163,23 @@
       ]
     },
     {
+      "id": "cuanto-pagaras",
+      "h2": "¿Cuánto pagarás por tu ganancia?",
+      "entrada": "La ganancia de tus criptomonedas tributa en la base del ahorro, por tramos. Escribe tu ganancia neta y mira cómo se reparte.",
+      "cuota": {
+        "ganancia": "Tu ganancia neta del año",
+        "cuota": "Cuota estimada",
+        "tipoMedio": "Tipo medio",
+        "hasta": "hasta",
+        "masDe": "más de",
+        "aviso": "Estimación con la escala del ahorro de 2025. No suma otras rentas del ahorro, no compensa pérdidas ni aplica deducciones: para eso está el cálculo completo."
+      },
+      "fondo": "papel"
+    },
+    {
       "id": "staking-airdrops",
       "h2": "Declarar staking, airdrops y DeFi en Hacienda",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "Lo que no es una compraventa también se declara, y cada operativa tiene su tratamiento.",
       "bullets": [
         "<strong>Staking:</strong> las recompensas se imputan cuando se perciben, a su valor en esa fecha. Ese valor pasa a ser su coste de adquisición, así que al venderlas solo tributas por la diferencia posterior.",
@@ -121,11 +199,26 @@
         "periodo": "ejercicios 2022 a 2025",
         "criterio": "FIFO",
         "filas": [
-          { "concepto": "Pérdida declarada en 2022 por venta de criptoactivos", "importe": -12400.0 },
-          { "concepto": "Compensada en los ejercicios 2023 y 2024", "importe": 3100.0 },
-          { "concepto": "Saldo pendiente al empezar 2025", "importe": -9300.0 },
-          { "concepto": "Ganancia de 2025 por venta de criptoactivos y acciones", "importe": 14200.0 },
-          { "concepto": "Ganancia sujeta tras aplicar el saldo pendiente", "importe": 4900.0 }
+          {
+            "concepto": "Pérdida declarada en 2022 por venta de criptoactivos",
+            "importe": -12400.0
+          },
+          {
+            "concepto": "Compensada en los ejercicios 2023 y 2024",
+            "importe": 3100.0
+          },
+          {
+            "concepto": "Saldo pendiente al empezar 2025",
+            "importe": -9300.0
+          },
+          {
+            "concepto": "Ganancia de 2025 por venta de criptoactivos y acciones",
+            "importe": 14200.0
+          },
+          {
+            "concepto": "Ganancia sujeta tras aplicar el saldo pendiente",
+            "importe": 4900.0
+          }
         ]
       }
     },
@@ -134,32 +227,43 @@
       "h2": "Calendario para declarar criptomonedas",
       "fondo": "blanco",
       "entrada": "Las fechas exactas las publica la AEAT cada año. El ritmo es este, y la reconstrucción de tu operativa lleva semanas, no días.",
-      "hitos": [
+      "anio": [
         {
+          "desde": 1,
+          "hasta": 3,
           "cuando": "Enero–marzo",
           "titulo": "Modelo 721",
           "body": "Si a 31 de diciembre tenías más de 50.000 € en criptomonedas custodiadas en el extranjero, se informa antes que la renta. Lo explicamos en la página del modelo 721."
         },
         {
+          "desde": 2,
+          "hasta": 3,
           "cuando": "Febrero–marzo",
           "titulo": "Reunir y reconciliar",
           "body": "Es el momento de exportar históricos y reconstruir la operativa. Empezar aquí es lo que permite presentar sin prisas."
         },
         {
+          "desde": 4,
+          "hasta": 6,
           "cuando": "Abril",
           "titulo": "Abre la campaña de la renta",
           "body": "Puedes presentar desde el primer día con las cifras de cripto ya cerradas, en lugar de corregir el borrador sobre la marcha."
         },
         {
+          "desde": 6,
+          "hasta": 6,
           "cuando": "Finales de junio",
           "titulo": "Fin del plazo voluntario",
           "body": "La domiciliación del pago cierra unos días antes. Después, la declaración va con recargo.",
           "critico": true
         },
         {
+          "desde": 7,
+          "hasta": 12,
           "cuando": "Después",
           "titulo": "Fuera de plazo",
-          "body": "Presentar tarde sin requerimiento previo lleva recargos crecientes según el retraso. Sigue siendo mejor que esperar a que pregunte Hacienda."
+          "body": "Presentar tarde sin requerimiento previo lleva recargos crecientes según el retraso. Sigue siendo mejor que esperar a que pregunte Hacienda.",
+          "tenue": true
         }
       ]
     },
@@ -187,12 +291,13 @@
           "title": "Te entregamos las cifras y su respaldo",
           "body": "Lo que va en cada apartado de la renta, el informe con el detalle por operación y la memoria de criterios que lo justifica."
         }
-      ]
+      ],
+      "fondo": "papel"
     },
     {
       "id": "que-necesitamos",
       "h2": "Qué necesitamos de ti",
-      "fondo": "papel",
+      "fondo": "blanco",
       "bullets": [
         "<strong>Exportaciones de tus exchanges</strong> desde tu primera operación: CSV o claves API de solo lectura. Nunca claves privadas.",
         "<strong>Direcciones públicas de tus wallets</strong>, incluidas las que ya no uses.",

@@ -1,4 +1,5 @@
 {
+  "plantilla": "formulario",
   "title": "Spanish form 721 for crypto: who files it, deadline and how to do it",
   "slug": "modelo-721-criptomonedas",
   "nav": "Form 721",
@@ -14,16 +15,62 @@
     "secundaria": {
       "label": "Who has to file",
       "href": "#quien-esta-obligado"
+    },
+    "borrador": {
+      "titulo": "Form 721 · Tax year 2025",
+      "apartado": "Virtual currencies held abroad",
+      "filas": [
+        {
+          "etiqueta": "Exchange A · balance at 31/12",
+          "valor": "€31,200.00"
+        },
+        {
+          "etiqueta": "Exchange B · balance at 31/12",
+          "valor": "€24,600.00"
+        },
+        {
+          "etiqueta": "Total held outside Spain",
+          "valor": "€55,800.00",
+          "total": true
+        }
+      ],
+      "estado": "Ready to file",
+      "nota": "Sample data"
     }
   },
   "toc": [
-    { "id": "quien-esta-obligado", "label": "Who has to file" },
-    { "id": "cifras", "label": "Threshold and deadline" },
-    { "id": "que-entra", "label": "What counts and what doesn't" },
-    { "id": "otros-modelos", "label": "721, 720, 714 and income tax" },
-    { "id": "fuera-de-plazo", "label": "If you didn't file it" },
-    { "id": "como-lo-hacemos", "label": "How we do it" },
-    { "id": "faq", "label": "Frequently asked questions" }
+    {
+      "id": "quien-esta-obligado",
+      "label": "Who has to file"
+    },
+    {
+      "id": "estas-obligado",
+      "label": "Do you have to?"
+    },
+    {
+      "id": "cifras",
+      "label": "Threshold and deadline"
+    },
+    {
+      "id": "que-entra",
+      "label": "What counts and what doesn't"
+    },
+    {
+      "id": "otros-modelos",
+      "label": "721, 720, 714 and income tax"
+    },
+    {
+      "id": "fuera-de-plazo",
+      "label": "If you didn't file it"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "label": "How we do it"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    }
   ],
   "sections": [
     {
@@ -39,15 +86,47 @@
       ]
     },
     {
+      "id": "estas-obligado",
+      "h2": "Do you have to file this year?",
+      "entrada": "Add up what you held at 31 December on each platform based outside Spain. If you've filed in a previous year, enter the last balance declared.",
+      "comprobador721": {
+        "plataforma": "Platform {n} abroad",
+        "anadir": "Add platform",
+        "quitar": "Remove platform",
+        "total": "Total at 31 December",
+        "yaPresentado": "I've filed Form 721 in a previous year",
+        "ultimoSaldo": "Last balance declared",
+        "obligado": "You have to file Form 721.",
+        "noObligado": "You're not required to file this year, but check again next year.",
+        "obligadoOtraVez": "You have to file it again: the balance has risen by more than €20,000.",
+        "noOtraVez": "You don't have to file it again this year.",
+        "aviso": "Indicative: only holdings with platforms outside Spain count, valued at 31 December. There are nuances, such as ceasing to hold what you declared, that also trigger the obligation."
+      },
+      "fondo": "papel"
+    },
+    {
       "id": "cifras",
       "h2": "Form 721 threshold and deadline",
-      "fondo": "azul",
+      "fondo": "blanco",
       "entrada": "The figures that define the obligation. There are nuances depending on the case, which is why the first thing we do is check whether it applies to you.",
       "cifras": [
-        { "valor": "€50,000", "etiqueta": "combined balance abroad on 31 December that triggers the obligation" },
-        { "valor": "1 Jan – 31 Mar", "etiqueta": "window to file form 721 for the previous year", "acento": true },
-        { "valor": "+€20,000", "etiqueta": "increase over the last amount reported that requires filing again" },
-        { "valor": "€0", "etiqueta": "payable: it is a reporting return, not a tax" }
+        {
+          "valor": "€50,000",
+          "etiqueta": "combined balance abroad on 31 December that triggers the obligation"
+        },
+        {
+          "valor": "1 Jan – 31 Mar",
+          "etiqueta": "window to file form 721 for the previous year",
+          "acento": true
+        },
+        {
+          "valor": "+€20,000",
+          "etiqueta": "increase over the last amount reported that requires filing again"
+        },
+        {
+          "valor": "€0",
+          "etiqueta": "payable: it is a reporting return, not a tax"
+        }
       ]
     },
     {
@@ -79,28 +158,28 @@
       "h2": "Form 721, form 720, form 714 and income tax: what each one does",
       "fondo": "blanco",
       "entrada": "Four separate obligations that overlap on the calendar and get confused all the time. Filing one doesn't cover the others.",
-      "formas": [
-        {
-          "forma": "angulo",
-          "titulo": "Form 721",
-          "body": "Reports crypto held by custodians abroad on 31 December. Nothing is paid. Filed between January and March."
-        },
-        {
-          "forma": "arco",
-          "titulo": "Form 720",
-          "body": "Reports accounts, securities and property abroad. Crypto doesn't go here: since form 721 exists, it has its own return."
-        },
-        {
-          "forma": "inverso",
-          "titulo": "Form 714",
-          "body": "Wealth tax. There can be tax to pay, and your crypto counts wherever it is, including your own wallet. It depends on your region and your total wealth."
-        },
-        {
-          "forma": "cuarto",
-          "titulo": "Form 100",
-          "body": "The income tax return, where the year's gains, losses and income go. What you report on form 721 has to be consistent with what your income tax return shows."
-        }
-      ]
+      "fichas": {
+        "etiqueta": "Form",
+        "fichas": [
+          {
+            "numero": "721",
+            "body": "Reports crypto held by custodians abroad on 31 December. Nothing is paid. Filed between January and March.",
+            "actual": true
+          },
+          {
+            "numero": "720",
+            "body": "Reports accounts, securities and property abroad. Crypto doesn't go here: since form 721 exists, it has its own return."
+          },
+          {
+            "numero": "714",
+            "body": "Wealth tax. There can be tax to pay, and your crypto counts wherever it is, including your own wallet. It depends on your region and your total wealth."
+          },
+          {
+            "numero": "100",
+            "body": "The income tax return, where the year's gains, losses and income go. What you report on form 721 has to be consistent with what your income tax return shows."
+          }
+        ]
+      }
     },
     {
       "id": "fuera-de-plazo",
