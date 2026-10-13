@@ -241,6 +241,11 @@
           "body": "Del que consta a l'expedient."
         },
         {
+          "icono": "yaConsta",
+          "titulo": "No aportar el que ja tenen",
+          "body": "No has de presentar documents que ja tingui l’Administració actuant: n’hi ha prou d’indicar quan i on els vas aportar."
+        },
+        {
           "icono": "prescripcion",
           "titulo": "Invocar la prescripció",
           "body": "L'AEAT té quatre anys per liquidar un exercici, comptats des de la fi del termini per declarar-lo, llevat que alguna cosa els hagi interromput."

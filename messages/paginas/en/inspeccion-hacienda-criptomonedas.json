@@ -241,6 +241,11 @@
           "body": "Of what is on the file."
         },
         {
+          "icono": "yaConsta",
+          "titulo": "Not to provide what they already have",
+          "body": "You don't have to submit documents the acting authority already holds: it's enough to say when and where you provided them."
+        },
+        {
           "icono": "prescripcion",
           "titulo": "To invoke the statute of limitations",
           "body": "The AEAT has four years to assess a tax year, counted from the end of the filing period, unless something has interrupted them."

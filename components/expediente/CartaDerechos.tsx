@@ -1,11 +1,20 @@
-import { Copy, Eye, Hourglass, MessageSquareText, Scale, ShieldAlert, Users } from "lucide-react";
+import {
+  Copy,
+  Eye,
+  FolderCheck,
+  Hourglass,
+  MessageSquareText,
+  Scale,
+  ShieldAlert,
+  Users,
+} from "lucide-react";
 
 /**
  * Carta de derechos ante una inspección.
  *
  * Cada derecho en su tarjeta y con su icono: se recorren de un vistazo y se
  * recuerdan mejor que una lista. Va sobre azul, con tarjetas sueltas de borde
- * fino: siete no llenan una rejilla de cuatro y el hueco queda como espacio.
+ * fino. Conviene que sean múltiplo de cuatro: una fila a medias se ve coja.
  */
 
 const ICONOS = {
@@ -14,6 +23,7 @@ const ICONOS = {
   autoincriminacion: ShieldAlert,
   alegar: MessageSquareText,
   copia: Copy,
+  yaConsta: FolderCheck,
   prescripcion: Hourglass,
   recurrir: Scale,
 };

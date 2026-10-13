@@ -241,6 +241,11 @@
           "body": "De lo que consta en el expediente."
         },
         {
+          "icono": "yaConsta",
+          "titulo": "No aportar lo que ya tienen",
+          "body": "No tienes que presentar documentos que ya estén en poder de la Administración actuante: basta con indicar cuándo y dónde los aportaste."
+        },
+        {
           "icono": "prescripcion",
           "titulo": "Invocar la prescripción",
           "body": "La AEAT tiene cuatro años para liquidar un ejercicio, contados desde el fin del plazo para declararlo, salvo que algo los haya interrumpido."
