@@ -130,6 +130,7 @@
       "id": "como-trabajamos",
       "h2": "Com fem el teu informe fiscal",
       "fondo": "blanco",
+      "numerada": true,
       "steps": [
         {
           "title": "Inventari de fonts",

@@ -42,6 +42,8 @@ export interface Seccion {
   body?: string;
   bullets?: string[];
   steps?: { title: string; body: string }[];
+  /** Muestra el número de cada paso. Solo donde el orden es el contenido. */
+  numerada?: boolean;
   items?: ({ title: string; body: string } | { q: string; a: string })[];
 
   cifras?: Cifra[];
@@ -145,13 +147,37 @@ function Vinetas({
   );
 }
 
-function Pasos({ items }: { items: { title: string; body: string }[] }) {
+/**
+ * Pasos de un proceso. Sin número por defecto: la web no enumera salvo donde
+ * el orden es el contenido, y entonces la sección lo pide con `numerada`.
+ */
+function Pasos({
+  items,
+  numerada = false,
+}: {
+  items: { title: string; body: string }[];
+  numerada?: boolean;
+}) {
   return (
     <ol className="grid max-w-[76ch] gap-px border border-niebla bg-niebla">
       {items.map((s, i) => (
-        <li key={i} className="grid grid-cols-[24px_1fr] gap-3 bg-blanco p-6">
-          <Angulo tam={12} className="mt-2 text-rojo" />
-          <div>
+        <li
+          key={i}
+          className={`grid bg-blanco p-6 ${
+            numerada ? "grid-cols-[4.5rem_1fr] gap-4 md:grid-cols-[6rem_1fr] md:p-8" : "grid-cols-[24px_1fr] gap-3"
+          }`}
+        >
+          {numerada ? (
+            <span
+              className="font-dato text-[44px] font-semibold leading-none tracking-[-0.03em] text-rojo md:text-[56px]"
+              aria-hidden="true"
+            >
+              {String(i + 1).padStart(2, "0")}
+            </span>
+          ) : (
+            <Angulo tam={12} className="mt-2 text-rojo" />
+          )}
+          <div className={numerada ? "md:pt-1" : ""}>
             <h3 className="text-subtitulo text-azul">{s.title}</h3>
             <p className="mt-2 text-lectura text-pizarra">{s.body}</p>
           </div>
@@ -236,7 +262,7 @@ export default function SeccionesServicio({
                   <Vinetas items={s.bullets} oscuro={oscuro} locale={locale} />
                 </div>
               ) : null}
-              {s.steps ? <Pasos items={s.steps} /> : null}
+              {s.steps ? <Pasos items={s.steps} numerada={s.numerada} /> : null}
               {s.items && !esFaq ? (
                 <Casos items={s.items as { title: string; body: string }[]} />
               ) : null}
