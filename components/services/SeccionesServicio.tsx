@@ -24,6 +24,9 @@ import AnatomiaCarta, { type Carta } from "@/components/expediente/AnatomiaCarta
 import EscaleraGravedad, { type Escalera } from "@/components/expediente/EscaleraGravedad";
 import CalendarioPlazo, { type Calendario } from "@/components/expediente/CalendarioPlazo";
 import Recorrido, { type Parada } from "@/components/expediente/Recorrido";
+import DosFrentes, { type Frentes } from "@/components/expediente/DosFrentes";
+import CartaDerechos, { type Derecho } from "@/components/expediente/CartaDerechos";
+import BloqueIntercambio, { type Intercambio } from "@/components/expediente/Intercambio";
 
 /**
  * Renderiza las secciones de una página.
@@ -59,6 +62,9 @@ export interface Seccion {
   escalera?: Escalera;
   calendario?: Calendario;
   recorrido?: Parada[];
+  frentes?: Frentes;
+  derechos?: Derecho[];
+  intercambio?: Intercambio;
   /** Franja final que lleva a otra página de servicio. */
   derivacion?: Derivacion;
   formas?: PasoForma[];
@@ -277,6 +283,9 @@ export default function SeccionesServicio({
               {s.escalera ? <EscaleraGravedad {...s.escalera} locale={locale} /> : null}
               {s.calendario ? <CalendarioPlazo {...s.calendario} /> : null}
               {s.recorrido ? <Recorrido hitos={s.recorrido} /> : null}
+              {s.frentes ? <DosFrentes {...s.frentes} /> : null}
+              {s.derechos ? <CartaDerechos derechos={s.derechos} /> : null}
+              {s.intercambio ? <BloqueIntercambio {...s.intercambio} locale={locale} /> : null}
               {s.formas ? <BloqueFormas pasos={s.formas} oscuro={oscuro} /> : null}
               {s.tabla ? <BloqueTabla {...s.tabla} /> : null}
               {s.bullets ? (

@@ -65,11 +65,7 @@
     },
     {
       "id": "como-lo-llevamos",
-      "label": "Com el portem"
-    },
-    {
-      "id": "que-necesitamos",
-      "label": "Què necessitem"
+      "label": "La teva part i la nostra"
     },
     {
       "id": "precio",
@@ -171,81 +167,123 @@
       "h2": "La quota i la sanció es defensen per separat",
       "fondo": "papel",
       "entrada": "Pot ser que la quota estigui ben calculada i tot i així la sanció no sigui procedent. Per això s'analitzen a part i, de vegades, convé acceptar-ne una i recórrer l'altra.",
-      "items": [
-        {
-          "title": "La quota es discuteix amb xifres",
-          "body": "La liquidació corregeix el que havies d'haver pagat. Si l'AEAT ha partit del que li va reportar un exchange, és freqüent que compti com a vendes les transferències entre els teus propis wallets o que valori a zero el cost del que vas comprar. Refer l'operativa redueix la base, i amb ella tot el que es calcula a sobre."
+      "frentes": {
+        "nexo": "Es defensen per separat",
+        "cuota": {
+          "etiqueta": "La quota",
+          "lema": "Es discuteix amb xifres",
+          "flujo": [
+            "Base",
+            "Quota",
+            "Interessos"
+          ],
+          "nota": "La liquidació corregeix el que havies d'haver pagat. Si l'AEAT ha partit del que li va reportar un exchange, és freqüent que compti com a vendes les transferències entre els teus propis wallets o que valori a zero el cost del que vas comprar. Refer l'operativa redueix la base, i amb ella tot el que es calcula a sobre."
         },
-        {
-          "title": "La sanció es discuteix amb la conducta",
-          "body": "Per sancionar, l'Administració ha de motivar que hi va haver culpabilitat, encara que sigui per simple negligència. No n'hi ha prou de constatar que vas declarar de menys. Un acord que descriu el resultat sense raonar la conducta és atacable precisament per això."
-        },
-        {
-          "title": "La interpretació raonable de la norma",
-          "body": "Durant anys, bona part de l'operativa cripto, com les permutes, l'staking, els airdrops o el DeFi, no va tenir un criteri administratiu clar. Si en la data de la teva declaració no n'hi havia, haver aplicat una interpretació raonable no és sancionable per no coincidir amb el criteri d'avui."
-        },
-        {
-          "title": "L'absència d'ocultació",
-          "body": "Operar en plataformes que reporten, moure els diners pel teu banc i no fer servir estructures opaques són fets que pesen en la qualificació de la infracció, i s'aporten."
+        "sancion": {
+          "etiqueta": "La sanció",
+          "lema": "Es discuteix amb la conducta",
+          "intro": "Per sancionar, l'Administració ha de motivar que hi va haver culpabilitat, encara que sigui per simple negligència. No n'hi ha prou de constatar que vas declarar de menys. Un acord que descriu el resultat sense raonar la conducta és atacable precisament per això.",
+          "defensas": [
+            {
+              "titulo": "La interpretació raonable de la norma",
+              "body": "Durant anys, bona part de l'operativa cripto, com les permutes, l'staking, els airdrops o el DeFi, no va tenir un criteri administratiu clar. Si en la data de la teva declaració no n'hi havia, haver aplicat una interpretació raonable no és sancionable per no coincidir amb el criteri d'avui."
+            },
+            {
+              "titulo": "L'absència d'ocultació",
+              "body": "Operar en plataformes que reporten, moure els diners pel teu banc i no fer servir estructures opaques són fets que pesen en la qualificació de la infracció, i s'aporten."
+            }
+          ]
         }
-      ]
+      }
     },
     {
       "id": "derechos",
       "h2": "El que pots exigir durant la inspecció",
       "fondo": "azul",
-      "bullets": [
-        "<strong>Conèixer l'abast:</strong> quins exercicis i conceptes es comproven, i que no s'ampliï sense notificar-t'ho formalment.",
-        "<strong>Comparèixer amb assessor</strong> o mitjançant representant. En un procediment tècnic és l'habitual, i evita que una resposta improvisada acabi recollida en una diligència.",
-        "<strong>No autoinculpar-te</strong> en allò que pugui tenir abast sancionador o penal. És un dret amb matisos, diferent de l'obligació d'aportar la documentació de les teves operacions.",
-        "<strong>Al·legar abans de l'acta</strong>, en el tràmit d'audiència, amb la documentació que consideris.",
-        "<strong>Obtenir còpia</strong> del que consta a l'expedient.",
-        "<strong>Invocar la prescripció:</strong> l'AEAT té quatre anys per liquidar un exercici, comptats des de la fi del termini per declarar-lo, llevat que alguna cosa els hagi interromput.",
-        "<strong>Recórrer</strong> la liquidació i, per separat, la sanció."
-      ]
-    },
-    {
-      "id": "como-lo-llevamos",
-      "h2": "Com el portem",
-      "fondo": "papel",
-      "steps": [
+      "derechos": [
         {
-          "title": "Llegim l'expedient tal com està",
-          "body": "L'abast, els exercicis, la prescripció de cadascun i tot el que ja s'ha aportat. Abans que hi entri un document més."
+          "icono": "alcance",
+          "titulo": "Conèixer l'abast",
+          "body": "Quins exercicis i conceptes es comproven, i que no s'ampliï sense notificar-t'ho formalment."
         },
         {
-          "title": "Reconstruïm l'operativa de tot el període",
-          "body": "Exchanges, wallets i protocols, operació per operació. Aquí sol aparèixer l'origen de la diferència: moviments interns comptats com a vendes, permutes sense declarar o rendiments sense imputar."
+          "icono": "asesor",
+          "titulo": "Anar amb assessor",
+          "body": "Pots comparèixer amb assessor o mitjançant representant. En un procediment tècnic és l'habitual, i evita que una resposta improvisada acabi recollida en una diligència."
         },
         {
-          "title": "Construïm la prova",
-          "body": "Titularitat de les adreces, traçabilitat de wallet a wallet i correspondència amb els extractes bancaris. Si un exchange ha tancat, el rastre on-chain i els moviments en euros supleixen l'històric perdut."
+          "icono": "autoincriminacion",
+          "titulo": "No autoinculpar-te",
+          "body": "En allò que pugui tenir abast sancionador o penal. És un dret amb matisos, diferent de l'obligació d'aportar la documentació de les teves operacions."
         },
         {
-          "title": "Preparem cada compareixença i cada escrit",
-          "body": "Què s'aporta, en quin ordre i amb quina explicació. Abans de presentar res, t'expliquem què se sostindrà i amb quin suport."
+          "icono": "alegar",
+          "titulo": "Al·legar abans de l'acta",
+          "body": "En el tràmit d'audiència, amb la documentació que consideris."
         },
         {
-          "title": "Separem quota i sanció",
-          "body": "Valorem amb tu, amb els dos números al davant, si convé la conformitat, què s'al·lega contra la liquidació i què contra la sanció."
+          "icono": "copia",
+          "titulo": "Obtenir còpia",
+          "body": "Del que consta a l'expedient."
         },
         {
-          "title": "Recorrem si compensa",
-          "body": "Recurs de reposició o reclamació davant el TEAR o el TEAC, segons la quantia i l'estratègia. Si el cost del recurs no compensa el que hi ha en joc, t'ho diem."
+          "icono": "prescripcion",
+          "titulo": "Invocar la prescripció",
+          "body": "L'AEAT té quatre anys per liquidar un exercici, comptats des de la fi del termini per declarar-lo, llevat que alguna cosa els hagi interromput."
+        },
+        {
+          "icono": "recurrir",
+          "titulo": "Recórrer",
+          "body": "La liquidació i, per separat, la sanció."
         }
       ]
     },
     {
-      "id": "que-necesitamos",
-      "h2": "Què necessitem de tu",
+      "id": "como-lo-llevamos",
+      "h2": "La teva part i la nostra",
       "fondo": "blanco",
-      "bullets": [
-        "<strong>Tot el que t'han notificat:</strong> la comunicació d'inici, els requeriments, les diligències signades, la proposta de liquidació i l'acord sancionador, si ja han arribat.",
-        "<strong>Les teves declaracions</strong> dels exercicis inclosos en l'abast.",
-        "<strong>L'històric d'exchanges i wallets</strong> del període: CSV, claus API de només lectura i adreces públiques. Mai claus privades.",
-        "<strong>Extractes bancaris</strong> de totes les entrades i sortides a euros.",
-        "<strong>El que ja hagis aportat</strong> a la inspecció, exactament com ho vas aportar, inclosos els informes generats amb programari."
-      ]
+      "entrada": "La defensa comença amb el que ja tens. Això és el que necessitem i el que en fem.",
+      "intercambio": {
+        "traes": {
+          "titulo": "El que ens portes",
+          "items": [
+            "<strong>Tot el que t'han notificat:</strong> la comunicació d'inici, els requeriments, les diligències signades, la proposta de liquidació i l'acord sancionador, si ja han arribat.",
+            "<strong>Les teves declaracions</strong> dels exercicis inclosos en l'abast.",
+            "<strong>L'històric d'exchanges i wallets</strong> del període: CSV, claus API de només lectura i adreces públiques. Mai claus privades.",
+            "<strong>Extractes bancaris</strong> de totes les entrades i sortides a euros.",
+            "<strong>El que ja hagis aportat</strong> a la inspecció, exactament com ho vas aportar, inclosos els informes generats amb programari."
+          ]
+        },
+        "hacemos": {
+          "titulo": "El que en fem",
+          "pasos": [
+            {
+              "title": "Llegim l'expedient tal com està",
+              "body": "L'abast, els exercicis, la prescripció de cadascun i tot el que ja s'ha aportat. Abans que hi entri un document més."
+            },
+            {
+              "title": "Reconstruïm l'operativa de tot el període",
+              "body": "Exchanges, wallets i protocols, operació per operació. Aquí sol aparèixer l'origen de la diferència: moviments interns comptats com a vendes, permutes sense declarar o rendiments sense imputar."
+            },
+            {
+              "title": "Construïm la prova",
+              "body": "Titularitat de les adreces, traçabilitat de wallet a wallet i correspondència amb els extractes bancaris. Si un exchange ha tancat, el rastre on-chain i els moviments en euros supleixen l'històric perdut."
+            },
+            {
+              "title": "Preparem cada compareixença i cada escrit",
+              "body": "Què s'aporta, en quin ordre i amb quina explicació. Abans de presentar res, t'expliquem què se sostindrà i amb quin suport."
+            },
+            {
+              "title": "Separem quota i sanció",
+              "body": "Valorem amb tu, amb els dos números al davant, si convé la conformitat, què s'al·lega contra la liquidació i què contra la sanció."
+            },
+            {
+              "title": "Recorrem si compensa",
+              "body": "Recurs de reposició o reclamació davant el TEAR o el TEAC, segons la quantia i l'estratègia. Si el cost del recurs no compensa el que hi ha en joc, t'ho diem."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "faq",

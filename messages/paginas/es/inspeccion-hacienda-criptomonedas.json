@@ -65,11 +65,7 @@
     },
     {
       "id": "como-lo-llevamos",
-      "label": "Cómo lo llevamos"
-    },
-    {
-      "id": "que-necesitamos",
-      "label": "Qué necesitamos"
+      "label": "Tu parte y la nuestra"
     },
     {
       "id": "precio",
@@ -171,81 +167,123 @@
       "h2": "La cuota y la sanción se defienden por separado",
       "fondo": "papel",
       "entrada": "Puede que la cuota esté bien calculada y aun así la sanción no proceda. Por eso se analizan aparte y, a veces, conviene aceptar una y recurrir la otra.",
-      "items": [
-        {
-          "title": "La cuota se discute con cifras",
-          "body": "La liquidación corrige lo que debías haber pagado. Si la AEAT ha partido de lo que le reportó un exchange, es frecuente que cuente como ventas las transferencias entre tus propias wallets o que valore a cero el coste de lo que compraste. Rehacer la operativa reduce la base, y con ella todo lo que se calcula encima."
+      "frentes": {
+        "nexo": "Se defienden por separado",
+        "cuota": {
+          "etiqueta": "La cuota",
+          "lema": "Se discute con cifras",
+          "flujo": [
+            "Base",
+            "Cuota",
+            "Intereses"
+          ],
+          "nota": "La liquidación corrige lo que debías haber pagado. Si la AEAT ha partido de lo que le reportó un exchange, es frecuente que cuente como ventas las transferencias entre tus propias wallets o que valore a cero el coste de lo que compraste. Rehacer la operativa reduce la base, y con ella todo lo que se calcula encima."
         },
-        {
-          "title": "La sanción se discute con la conducta",
-          "body": "Para sancionar, la Administración tiene que motivar que hubo culpabilidad, aunque sea por simple negligencia. No basta con constatar que declaraste de menos. Un acuerdo que describe el resultado sin razonar la conducta es atacable precisamente por eso."
-        },
-        {
-          "title": "La interpretación razonable de la norma",
-          "body": "Durante años, buena parte de la operativa cripto, como las permutas, el staking, los airdrops o el DeFi, no tuvo un criterio administrativo claro. Si en la fecha de tu declaración no lo había, haber aplicado una interpretación razonable no es sancionable por no coincidir con el criterio de hoy."
-        },
-        {
-          "title": "La ausencia de ocultación",
-          "body": "Operar en plataformas que reportan, mover el dinero por tu banco y no usar estructuras opacas son hechos que pesan en la calificación de la infracción, y se aportan."
+        "sancion": {
+          "etiqueta": "La sanción",
+          "lema": "Se discute con la conducta",
+          "intro": "Para sancionar, la Administración tiene que motivar que hubo culpabilidad, aunque sea por simple negligencia. No basta con constatar que declaraste de menos. Un acuerdo que describe el resultado sin razonar la conducta es atacable precisamente por eso.",
+          "defensas": [
+            {
+              "titulo": "La interpretación razonable de la norma",
+              "body": "Durante años, buena parte de la operativa cripto, como las permutas, el staking, los airdrops o el DeFi, no tuvo un criterio administrativo claro. Si en la fecha de tu declaración no lo había, haber aplicado una interpretación razonable no es sancionable por no coincidir con el criterio de hoy."
+            },
+            {
+              "titulo": "La ausencia de ocultación",
+              "body": "Operar en plataformas que reportan, mover el dinero por tu banco y no usar estructuras opacas son hechos que pesan en la calificación de la infracción, y se aportan."
+            }
+          ]
         }
-      ]
+      }
     },
     {
       "id": "derechos",
       "h2": "Lo que puedes exigir durante la inspección",
       "fondo": "azul",
-      "bullets": [
-        "<strong>Conocer el alcance:</strong> qué ejercicios y conceptos se comprueban, y que no se amplíe sin notificártelo formalmente.",
-        "<strong>Comparecer con asesor</strong> o mediante representante. En un procedimiento técnico es lo habitual, y evita que una respuesta improvisada acabe recogida en una diligencia.",
-        "<strong>No autoincriminarte</strong> en lo que pueda tener alcance sancionador o penal. Es un derecho con matices, distinto de la obligación de aportar la documentación de tus operaciones.",
-        "<strong>Alegar antes del acta</strong>, en el trámite de audiencia, con la documentación que consideres.",
-        "<strong>Obtener copia</strong> de lo que consta en el expediente.",
-        "<strong>Invocar la prescripción:</strong> la AEAT tiene cuatro años para liquidar un ejercicio, contados desde el fin del plazo para declararlo, salvo que algo los haya interrumpido.",
-        "<strong>Recurrir</strong> la liquidación y, por separado, la sanción."
-      ]
-    },
-    {
-      "id": "como-lo-llevamos",
-      "h2": "Cómo lo llevamos",
-      "fondo": "papel",
-      "steps": [
+      "derechos": [
         {
-          "title": "Leemos el expediente tal como está",
-          "body": "El alcance, los ejercicios, la prescripción de cada uno y todo lo que ya se ha aportado. Antes de que entre un documento más."
+          "icono": "alcance",
+          "titulo": "Conocer el alcance",
+          "body": "Qué ejercicios y conceptos se comprueban, y que no se amplíe sin notificártelo formalmente."
         },
         {
-          "title": "Reconstruimos la operativa de todo el periodo",
-          "body": "Exchanges, wallets y protocolos, operación a operación. Aquí suele aparecer el origen de la diferencia: movimientos internos contados como ventas, permutas sin declarar o rendimientos sin imputar."
+          "icono": "asesor",
+          "titulo": "Ir con asesor",
+          "body": "Puedes comparecer con asesor o mediante representante. En un procedimiento técnico es lo habitual, y evita que una respuesta improvisada acabe recogida en una diligencia."
         },
         {
-          "title": "Construimos la prueba",
-          "body": "Titularidad de las direcciones, trazabilidad de wallet a wallet y correspondencia con los extractos bancarios. Si un exchange ha cerrado, el rastro on-chain y los movimientos en euros suplen el histórico perdido."
+          "icono": "autoincriminacion",
+          "titulo": "No autoincriminarte",
+          "body": "En lo que pueda tener alcance sancionador o penal. Es un derecho con matices, distinto de la obligación de aportar la documentación de tus operaciones."
         },
         {
-          "title": "Preparamos cada comparecencia y cada escrito",
-          "body": "Qué se aporta, en qué orden y con qué explicación. Antes de presentar nada, te explicamos qué se va a sostener y con qué respaldo."
+          "icono": "alegar",
+          "titulo": "Alegar antes del acta",
+          "body": "En el trámite de audiencia, con la documentación que consideres."
         },
         {
-          "title": "Separamos cuota y sanción",
-          "body": "Valoramos contigo, con los dos números delante, si conviene la conformidad, qué se alega contra la liquidación y qué contra la sanción."
+          "icono": "copia",
+          "titulo": "Obtener copia",
+          "body": "De lo que consta en el expediente."
         },
         {
-          "title": "Recurrimos si compensa",
-          "body": "Recurso de reposición o reclamación ante el TEAR o el TEAC, según la cuantía y la estrategia. Si el coste del recurso no compensa lo que hay en juego, te lo decimos."
+          "icono": "prescripcion",
+          "titulo": "Invocar la prescripción",
+          "body": "La AEAT tiene cuatro años para liquidar un ejercicio, contados desde el fin del plazo para declararlo, salvo que algo los haya interrumpido."
+        },
+        {
+          "icono": "recurrir",
+          "titulo": "Recurrir",
+          "body": "La liquidación y, por separado, la sanción."
         }
       ]
     },
     {
-      "id": "que-necesitamos",
-      "h2": "Qué necesitamos de ti",
+      "id": "como-lo-llevamos",
+      "h2": "Tu parte y la nuestra",
       "fondo": "blanco",
-      "bullets": [
-        "<strong>Todo lo notificado:</strong> la comunicación de inicio, los requerimientos, las diligencias firmadas, la propuesta de liquidación y el acuerdo sancionador, si ya han llegado.",
-        "<strong>Tus declaraciones</strong> de los ejercicios incluidos en el alcance.",
-        "<strong>El histórico de exchanges y wallets</strong> del periodo: CSV, claves API de solo lectura y direcciones públicas. Nunca claves privadas.",
-        "<strong>Extractos bancarios</strong> de todas las entradas y salidas a euros.",
-        "<strong>Lo que ya hayas aportado</strong> a la inspección, exactamente como lo aportaste, incluidos los informes generados con software."
-      ]
+      "entrada": "La defensa empieza con lo que ya tienes. Esto es lo que necesitamos y lo que hacemos con ello.",
+      "intercambio": {
+        "traes": {
+          "titulo": "Lo que nos traes",
+          "items": [
+            "<strong>Todo lo notificado:</strong> la comunicación de inicio, los requerimientos, las diligencias firmadas, la propuesta de liquidación y el acuerdo sancionador, si ya han llegado.",
+            "<strong>Tus declaraciones</strong> de los ejercicios incluidos en el alcance.",
+            "<strong>El histórico de exchanges y wallets</strong> del periodo: CSV, claves API de solo lectura y direcciones públicas. Nunca claves privadas.",
+            "<strong>Extractos bancarios</strong> de todas las entradas y salidas a euros.",
+            "<strong>Lo que ya hayas aportado</strong> a la inspección, exactamente como lo aportaste, incluidos los informes generados con software."
+          ]
+        },
+        "hacemos": {
+          "titulo": "Lo que hacemos con ello",
+          "pasos": [
+            {
+              "title": "Leemos el expediente tal como está",
+              "body": "El alcance, los ejercicios, la prescripción de cada uno y todo lo que ya se ha aportado. Antes de que entre un documento más."
+            },
+            {
+              "title": "Reconstruimos la operativa de todo el periodo",
+              "body": "Exchanges, wallets y protocolos, operación a operación. Aquí suele aparecer el origen de la diferencia: movimientos internos contados como ventas, permutas sin declarar o rendimientos sin imputar."
+            },
+            {
+              "title": "Construimos la prueba",
+              "body": "Titularidad de las direcciones, trazabilidad de wallet a wallet y correspondencia con los extractos bancarios. Si un exchange ha cerrado, el rastro on-chain y los movimientos en euros suplen el histórico perdido."
+            },
+            {
+              "title": "Preparamos cada comparecencia y cada escrito",
+              "body": "Qué se aporta, en qué orden y con qué explicación. Antes de presentar nada, te explicamos qué se va a sostener y con qué respaldo."
+            },
+            {
+              "title": "Separamos cuota y sanción",
+              "body": "Valoramos contigo, con los dos números delante, si conviene la conformidad, qué se alega contra la liquidación y qué contra la sanción."
+            },
+            {
+              "title": "Recurrimos si compensa",
+              "body": "Recurso de reposición o reclamación ante el TEAR o el TEAC, según la cuantía y la estrategia. Si el coste del recurso no compensa lo que hay en juego, te lo decimos."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "faq",

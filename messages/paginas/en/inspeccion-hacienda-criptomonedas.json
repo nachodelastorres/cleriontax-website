@@ -65,11 +65,7 @@
     },
     {
       "id": "como-lo-llevamos",
-      "label": "How we handle it"
-    },
-    {
-      "id": "que-necesitamos",
-      "label": "What we need"
+      "label": "Your part and ours"
     },
     {
       "id": "precio",
@@ -171,81 +167,123 @@
       "h2": "The tax and the penalty are defended separately",
       "fondo": "papel",
       "entrada": "The tax may be correctly calculated and the penalty still not be justified. That's why they are analysed separately and, sometimes, it makes sense to accept one and appeal the other.",
-      "items": [
-        {
-          "title": "The tax is disputed with figures",
-          "body": "The assessment corrects what you should have paid. If the AEAT started from what an exchange reported, it often counts transfers between your own wallets as sales or values the cost of what you bought at zero. Rebuilding your activity reduces the base, and with it everything calculated on top."
+      "frentes": {
+        "nexo": "Defended separately",
+        "cuota": {
+          "etiqueta": "The tax due",
+          "lema": "Argued with figures",
+          "flujo": [
+            "Base",
+            "Tax due",
+            "Interest"
+          ],
+          "nota": "The assessment corrects what you should have paid. If the AEAT started from what an exchange reported, it often counts transfers between your own wallets as sales or values the cost of what you bought at zero. Rebuilding your activity reduces the base, and with it everything calculated on top."
         },
-        {
-          "title": "The penalty is disputed on conduct",
-          "body": "To impose a penalty, the tax authority has to show there was fault, even if only simple negligence. It isn't enough to establish that you under-declared. A decision that describes the result without reasoning about conduct can be challenged precisely for that."
-        },
-        {
-          "title": "Reasonable interpretation of the law",
-          "body": "For years, much crypto activity, such as swaps, staking, airdrops or DeFi, had no clear administrative criterion. If there was none on the date of your return, having applied a reasonable interpretation isn't punishable just because it differs from today's criterion."
-        },
-        {
-          "title": "No concealment",
-          "body": "Trading on platforms that report, moving money through your bank and not using opaque structures are facts that weigh in how the offence is classified, and they are put forward."
+        "sancion": {
+          "etiqueta": "The penalty",
+          "lema": "Argued on conduct",
+          "intro": "To impose a penalty, the tax authority has to show there was fault, even if only simple negligence. It isn't enough to establish that you under-declared. A decision that describes the result without reasoning about conduct can be challenged precisely for that.",
+          "defensas": [
+            {
+              "titulo": "Reasonable interpretation of the law",
+              "body": "For years, much crypto activity, such as swaps, staking, airdrops or DeFi, had no clear administrative criterion. If there was none on the date of your return, having applied a reasonable interpretation isn't punishable just because it differs from today's criterion."
+            },
+            {
+              "titulo": "No concealment",
+              "body": "Trading on platforms that report, moving money through your bank and not using opaque structures are facts that weigh in how the offence is classified, and they are put forward."
+            }
+          ]
         }
-      ]
+      }
     },
     {
       "id": "derechos",
       "h2": "What you can demand during the inspection",
       "fondo": "azul",
-      "bullets": [
-        "<strong>To know the scope:</strong> which tax years and items are reviewed, and that it isn't extended without formal notice to you.",
-        "<strong>To attend with an adviser</strong> or through a representative. In a technical procedure that is the norm, and it prevents an improvised answer from ending up in a formal record.",
-        "<strong>Not to incriminate yourself</strong> in matters that may lead to penalties or criminal proceedings. It's a nuanced right, separate from the obligation to provide records of your transactions.",
-        "<strong>To make submissions before the record</strong> is drawn up, at the hearing stage, with whatever documentation you see fit.",
-        "<strong>To obtain a copy</strong> of what is on the file.",
-        "<strong>To invoke the statute of limitations:</strong> the AEAT has four years to assess a tax year, counted from the end of the filing period, unless something has interrupted them.",
-        "<strong>To appeal</strong> the assessment and, separately, the penalty."
-      ]
-    },
-    {
-      "id": "como-lo-llevamos",
-      "h2": "How we handle it",
-      "fondo": "papel",
-      "steps": [
+      "derechos": [
         {
-          "title": "We read the file as it stands",
-          "body": "The scope, the tax years, the limitation period of each and everything already provided. Before one more document goes in."
+          "icono": "alcance",
+          "titulo": "To know the scope",
+          "body": "Which tax years and items are reviewed, and that it isn't extended without formal notice to you."
         },
         {
-          "title": "We rebuild your activity for the whole period",
-          "body": "Exchanges, wallets and protocols, transaction by transaction. This is usually where the source of the difference appears: internal movements counted as sales, undeclared swaps or unreported income."
+          "icono": "asesor",
+          "titulo": "To bring an adviser",
+          "body": "You can attend with an adviser or through a representative. In a technical procedure that is the norm, and it prevents an improvised answer from ending up in a formal record."
         },
         {
-          "title": "We build the evidence",
-          "body": "Ownership of addresses, wallet-to-wallet traceability and matching against bank statements. If an exchange has closed, the on-chain trail and the euro movements make up for the lost history."
+          "icono": "autoincriminacion",
+          "titulo": "Not to incriminate yourself",
+          "body": "In matters that may lead to penalties or criminal proceedings. It's a nuanced right, separate from the obligation to provide records of your transactions."
         },
         {
-          "title": "We prepare every appearance and every submission",
-          "body": "What is provided, in what order and with what explanation. Before anything is filed, we explain what will be argued and what supports it."
+          "icono": "alegar",
+          "titulo": "To make submissions",
+          "body": "Before the record is drawn up, at the hearing stage, with whatever documentation you see fit."
         },
         {
-          "title": "We separate tax and penalty",
-          "body": "With both numbers in front of you, we assess together whether agreement makes sense, what to argue against the assessment and what against the penalty."
+          "icono": "copia",
+          "titulo": "To obtain a copy",
+          "body": "Of what is on the file."
         },
         {
-          "title": "We appeal if it's worth it",
-          "body": "Appeal for reconsideration or a claim before the TEAR or the TEAC, depending on the amount and the strategy. If the cost of appealing doesn't justify what's at stake, we'll tell you."
+          "icono": "prescripcion",
+          "titulo": "To invoke the statute of limitations",
+          "body": "The AEAT has four years to assess a tax year, counted from the end of the filing period, unless something has interrupted them."
+        },
+        {
+          "icono": "recurrir",
+          "titulo": "To appeal",
+          "body": "The assessment and, separately, the penalty."
         }
       ]
     },
     {
-      "id": "que-necesitamos",
-      "h2": "What we need from you",
+      "id": "como-lo-llevamos",
+      "h2": "Your part and ours",
       "fondo": "blanco",
-      "bullets": [
-        "<strong>Everything you've been notified:</strong> the notice of commencement, requests, signed records, the proposed assessment and the penalty decision, if they have arrived.",
-        "<strong>Your tax returns</strong> for the years within the scope.",
-        "<strong>Your exchange and wallet history</strong> for the period: CSV files, read-only API keys and public addresses. Never private keys.",
-        "<strong>Bank statements</strong> for all money moved in and out in euros.",
-        "<strong>Whatever you've already provided</strong> to the inspection, exactly as you provided it, including reports generated with software."
-      ]
+      "entrada": "The defence starts with what you already have. This is what we need and what we do with it.",
+      "intercambio": {
+        "traes": {
+          "titulo": "What you bring us",
+          "items": [
+            "<strong>Everything you've been notified:</strong> the notice of commencement, requests, signed records, the proposed assessment and the penalty decision, if they have arrived.",
+            "<strong>Your tax returns</strong> for the years within the scope.",
+            "<strong>Your exchange and wallet history</strong> for the period: CSV files, read-only API keys and public addresses. Never private keys.",
+            "<strong>Bank statements</strong> for all money moved in and out in euros.",
+            "<strong>Whatever you've already provided</strong> to the inspection, exactly as you provided it, including reports generated with software."
+          ]
+        },
+        "hacemos": {
+          "titulo": "What we do with it",
+          "pasos": [
+            {
+              "title": "We read the file as it stands",
+              "body": "The scope, the tax years, the limitation period of each and everything already provided. Before one more document goes in."
+            },
+            {
+              "title": "We rebuild your activity for the whole period",
+              "body": "Exchanges, wallets and protocols, transaction by transaction. This is usually where the source of the difference appears: internal movements counted as sales, undeclared swaps or unreported income."
+            },
+            {
+              "title": "We build the evidence",
+              "body": "Ownership of addresses, wallet-to-wallet traceability and matching against bank statements. If an exchange has closed, the on-chain trail and the euro movements make up for the lost history."
+            },
+            {
+              "title": "We prepare every appearance and every submission",
+              "body": "What is provided, in what order and with what explanation. Before anything is filed, we explain what will be argued and what supports it."
+            },
+            {
+              "title": "We separate tax and penalty",
+              "body": "With both numbers in front of you, we assess together whether agreement makes sense, what to argue against the assessment and what against the penalty."
+            },
+            {
+              "title": "We appeal if it's worth it",
+              "body": "Appeal for reconsideration or a claim before the TEAR or the TEAC, depending on the amount and the strategy. If the cost of appealing doesn't justify what's at stake, we'll tell you."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "faq",
