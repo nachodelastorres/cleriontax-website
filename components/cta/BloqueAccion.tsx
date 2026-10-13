@@ -44,7 +44,12 @@ export default function BloqueAccion({
     <section
       className={`relative overflow-hidden ${sobreAzul ? "bg-azul" : "bg-papel"} ${className ?? ""}`}
     >
-      {/* §13 — el patrón solo bajo titular y acción, nunca bajo texto de lectura. */}
+      {/*
+        §13 — el patrón cubre todo el fondo y el texto va en una caja de color
+        plano que flota encima, como en la cabecera de página: nunca texto de
+        lectura sobre el patrón, y sin el corte vertical que dejaba un panel
+        prolongado hasta el borde.
+      */}
       {sobreAzul ? (
         <div className="pointer-events-none absolute inset-0 hidden lg:block">
           <Patron version="azul" bloque={96} />
@@ -52,7 +57,11 @@ export default function BloqueAccion({
       ) : null}
 
       <div className="relative mx-auto max-w-5xl px-6">
-        <div className="relative py-14 md:py-16 lg:w-[70%] lg:bg-azul lg:before:absolute lg:before:inset-y-0 lg:before:right-full lg:before:w-screen lg:before:bg-azul">
+        <div
+          className={`relative py-14 md:py-16 ${
+            sobreAzul ? "lg:-mx-12 lg:my-16 lg:w-fit lg:max-w-[52rem] lg:bg-azul lg:px-12 lg:py-12" : ""
+          }`}
+        >
         {temperatura === "urgente" && plazo ? (
           <p className="mb-4 inline-block border-l-2 border-rojo bg-rojo/10 px-3 py-1.5 font-semibold text-dato text-blanco">
             {plazo}
