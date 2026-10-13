@@ -41,8 +41,15 @@ export default function HeroFormulario({
         <Patron version="claro" bloque={104} />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl gap-10 px-6 pb-14 pt-24 md:pb-16 md:pt-28 lg:grid-cols-[minmax(0,1fr)_25rem] lg:items-center lg:gap-14">
-        <div className="border border-niebla bg-blanco p-6 md:p-10 lg:p-12">
+      {/* Sin borrador, la caja de texto va sola y no ocupa todo el ancho. */}
+      <div
+        className={`relative mx-auto grid max-w-6xl gap-10 px-6 pb-14 pt-24 md:pb-16 md:pt-28 lg:items-center lg:gap-14 ${
+          borrador ? "lg:grid-cols-[minmax(0,1fr)_25rem]" : ""
+        }`}
+      >
+        <div
+          className={`border border-niebla bg-blanco p-6 md:p-10 lg:p-12 ${borrador ? "" : "lg:max-w-3xl"}`}
+        >
           {etiqueta ? (
             <span className="text-dato font-semibold uppercase tracking-wide text-rojo">{etiqueta}</span>
           ) : null}

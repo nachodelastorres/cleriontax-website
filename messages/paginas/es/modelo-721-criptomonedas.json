@@ -15,27 +15,6 @@
     "secundaria": {
       "label": "Quién está obligado",
       "href": "#quien-esta-obligado"
-    },
-    "borrador": {
-      "titulo": "Modelo 721 · Ejercicio 2025",
-      "apartado": "Monedas virtuales custodiadas en el extranjero",
-      "filas": [
-        {
-          "etiqueta": "Exchange A · saldo a 31/12",
-          "valor": "31.200,00 €"
-        },
-        {
-          "etiqueta": "Exchange B · saldo a 31/12",
-          "valor": "24.600,00 €"
-        },
-        {
-          "etiqueta": "Total custodiado fuera de España",
-          "valor": "55.800,00 €",
-          "total": true
-        }
-      ],
-      "estado": "Listo para presentar",
-      "nota": "Datos de ejemplo"
     }
   },
   "toc": [

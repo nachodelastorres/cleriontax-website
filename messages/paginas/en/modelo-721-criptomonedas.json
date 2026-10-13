@@ -15,27 +15,6 @@
     "secundaria": {
       "label": "Who has to file",
       "href": "#quien-esta-obligado"
-    },
-    "borrador": {
-      "titulo": "Form 721 · Tax year 2025",
-      "apartado": "Virtual currencies held abroad",
-      "filas": [
-        {
-          "etiqueta": "Exchange A · balance at 31/12",
-          "valor": "€31,200.00"
-        },
-        {
-          "etiqueta": "Exchange B · balance at 31/12",
-          "valor": "€24,600.00"
-        },
-        {
-          "etiqueta": "Total held outside Spain",
-          "valor": "€55,800.00",
-          "total": true
-        }
-      ],
-      "estado": "Ready to file",
-      "nota": "Sample data"
     }
   },
   "toc": [

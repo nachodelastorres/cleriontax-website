@@ -15,27 +15,6 @@
     "secundaria": {
       "label": "Qui està obligat",
       "href": "#quien-esta-obligado"
-    },
-    "borrador": {
-      "titulo": "Model 721 · Exercici 2025",
-      "apartado": "Monedes virtuals custodiades a l’estranger",
-      "filas": [
-        {
-          "etiqueta": "Exchange A · saldo a 31/12",
-          "valor": "31.200,00 €"
-        },
-        {
-          "etiqueta": "Exchange B · saldo a 31/12",
-          "valor": "24.600,00 €"
-        },
-        {
-          "etiqueta": "Total custodiat fora d’Espanya",
-          "valor": "55.800,00 €",
-          "total": true
-        }
-      ],
-      "estado": "A punt per presentar",
-      "nota": "Dades d’exemple"
     }
   },
   "toc": [
