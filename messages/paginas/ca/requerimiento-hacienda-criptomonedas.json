@@ -47,10 +47,6 @@
       "label": "El termini"
     },
     {
-      "id": "antes-de-contestar",
-      "label": "Abans de contestar"
-    },
-    {
       "id": "que-necesitamos",
       "label": "Què necessitem de tu"
     },
@@ -210,41 +206,9 @@
       }
     },
     {
-      "id": "antes-de-contestar",
-      "h2": "Com respondre un requeriment d'Hisenda per criptomonedes",
-      "entrada": "La diferència entre una resposta que tanca l'assumpte i una que l'obre sol ser en el que es fa abans d'escriure.",
-      "contraste": {
-        "antes": "Contestar de pressa",
-        "despues": "Contestar amb les xifres reconstruïdes",
-        "filas": [
-          {
-            "aspecto": "Termini",
-            "antes": "Presentar l'últim dia.",
-            "despues": "Calcular primer la data límit real."
-          },
-          {
-            "aspecto": "Dades",
-            "antes": "Enviar el CSV de l'exchange tal com es descarrega.",
-            "despues": "Reconstruir l'operativa completa de l'exercici requerit."
-          },
-          {
-            "aspecto": "Informe",
-            "antes": "Aportar un informe automàtic sense revisar.",
-            "despues": "Aportar només el que es demana, amb un criteri documentat al darrere."
-          },
-          {
-            "aspecto": "Diferències",
-            "antes": "Explicar la diferència sense poder quantificar-la.",
-            "despues": "Explicar cada diferència amb la seva causa i la seva prova."
-          }
-        ]
-      },
-      "fondo": "blanco"
-    },
-    {
       "id": "que-necesitamos",
       "h2": "Què necessitem de tu",
-      "fondo": "azul",
+      "fondo": "papel",
       "bullets": [
         "<strong>La notificació completa</strong>, amb totes les pàgines i la data de notificació visible.",
         "<strong>La teva declaració de l'exercici requerit</strong>, i les anteriors si n'hi va haver.",

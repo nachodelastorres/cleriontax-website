@@ -47,10 +47,6 @@
       "label": "El plazo"
     },
     {
-      "id": "antes-de-contestar",
-      "label": "Antes de contestar"
-    },
-    {
       "id": "que-necesitamos",
       "label": "Qué necesitamos de ti"
     },
@@ -210,41 +206,9 @@
       }
     },
     {
-      "id": "antes-de-contestar",
-      "h2": "Cómo responder un requerimiento de Hacienda por criptomonedas",
-      "entrada": "La diferencia entre una respuesta que cierra el asunto y una que lo abre suele estar en lo que se hace antes de escribir.",
-      "contraste": {
-        "antes": "Contestar deprisa",
-        "despues": "Contestar con las cifras reconstruidas",
-        "filas": [
-          {
-            "aspecto": "Plazo",
-            "antes": "Presentar el último día.",
-            "despues": "Calcular primero la fecha límite real."
-          },
-          {
-            "aspecto": "Datos",
-            "antes": "Enviar el CSV del exchange tal cual se descarga.",
-            "despues": "Reconstruir la operativa completa del ejercicio requerido."
-          },
-          {
-            "aspecto": "Informe",
-            "antes": "Aportar un informe automático sin revisar.",
-            "despues": "Aportar solo lo que se pide, con un criterio documentado detrás."
-          },
-          {
-            "aspecto": "Diferencias",
-            "antes": "Explicar la diferencia sin poder cuantificarla.",
-            "despues": "Explicar cada diferencia con su causa y su prueba."
-          }
-        ]
-      },
-      "fondo": "blanco"
-    },
-    {
       "id": "que-necesitamos",
       "h2": "Qué necesitamos de ti",
-      "fondo": "azul",
+      "fondo": "papel",
       "bullets": [
         "<strong>La notificación completa</strong>, con todas sus páginas y la fecha de notificación visible.",
         "<strong>Tu declaración del ejercicio requerido</strong>, y las anteriores si las hubo.",

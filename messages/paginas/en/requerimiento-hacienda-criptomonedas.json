@@ -47,10 +47,6 @@
       "label": "The deadline"
     },
     {
-      "id": "antes-de-contestar",
-      "label": "Before you reply"
-    },
-    {
       "id": "que-necesitamos",
       "label": "What we need from you"
     },
@@ -210,41 +206,9 @@
       }
     },
     {
-      "id": "antes-de-contestar",
-      "h2": "How to respond to an AEAT request about crypto",
-      "entrada": "The difference between a reply that closes the matter and one that opens it usually lies in what's done before writing.",
-      "contraste": {
-        "antes": "Replying in a rush",
-        "despues": "Replying with rebuilt figures",
-        "filas": [
-          {
-            "aspecto": "Deadline",
-            "antes": "Filing on the last day.",
-            "despues": "Working out the real deadline first."
-          },
-          {
-            "aspecto": "Data",
-            "antes": "Sending the exchange CSV exactly as downloaded.",
-            "despues": "Rebuilding the full activity for the requested year."
-          },
-          {
-            "aspecto": "Report",
-            "antes": "Submitting an automated report without reviewing it.",
-            "despues": "Submitting only what's requested, with documented criteria behind it."
-          },
-          {
-            "aspecto": "Differences",
-            "antes": "Explaining the difference without being able to quantify it.",
-            "despues": "Explaining each difference with its cause and its evidence."
-          }
-        ]
-      },
-      "fondo": "blanco"
-    },
-    {
       "id": "que-necesitamos",
       "h2": "What we need from you",
-      "fondo": "azul",
+      "fondo": "papel",
       "bullets": [
         "<strong>The full notification</strong>, with all its pages and the notification date visible.",
         "<strong>Your tax return for the requested year</strong>, and earlier ones if any.",
