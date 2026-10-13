@@ -159,12 +159,21 @@ function Pasos({
   numerada?: boolean;
 }) {
   return (
-    <ol className="grid max-w-[76ch] gap-px border border-niebla bg-niebla">
+    // Numerada va abierta, sin recuadro: el número grande ya ordena la lista.
+    <ol
+      className={
+        numerada
+          ? "grid max-w-[76ch] gap-10 md:gap-12"
+          : "grid max-w-[76ch] gap-px border border-niebla bg-niebla"
+      }
+    >
       {items.map((s, i) => (
         <li
           key={i}
-          className={`grid bg-blanco p-6 ${
-            numerada ? "grid-cols-[4.5rem_1fr] gap-4 md:grid-cols-[6rem_1fr] md:p-8" : "grid-cols-[24px_1fr] gap-3"
+          className={`grid ${
+            numerada
+              ? "grid-cols-[4.5rem_1fr] gap-4 md:grid-cols-[6rem_1fr]"
+              : "grid-cols-[24px_1fr] gap-3 bg-blanco p-6"
           }`}
         >
           {numerada ? (
