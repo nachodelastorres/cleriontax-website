@@ -10,9 +10,11 @@ import SimboloAnimado from "@/components/brand/SimboloAnimado";
  * Cleriontax del fondo, así que una banda a media anchura se lee siempre como
  * un rectángulo pegado encima, con un canto que parece un error.
  *
- * Cubriendo toda la cabecera, el patrón sangra por arriba, por la derecha y
- * por abajo —«como superficie completa», §13— y el único borde recto es el del
- * panel de contenido, que sí es deliberado.
+ * Cubriendo toda la cabecera, el patrón sangra por los cuatro lados —«como
+ * superficie completa», §13— y el texto va dentro de una caja de color plano
+ * que flota encima, con patrón a su alrededor. Antes el panel del texto se
+ * prolongaba hasta el borde izquierdo y tapaba dos tercios del patrón, que
+ * quedaba como una franja cortada a la derecha.
  *
  * El texto de lectura va sobre color plano, nunca sobre el patrón (§13).
  */
@@ -45,11 +47,11 @@ export default function HeroPagina({
 
       <div className="relative mx-auto max-w-5xl px-6">
         {/*
-          Panel sólido sobre el patrón. El pseudoelemento lo prolonga hasta el
-          borde izquierdo de la ventana, de modo que sangra por ese lado y solo
-          queda un canto recto: el derecho.
+          Caja sólida sobre el patrón. En pantalla grande se separa del borde
+          de la cabecera para que el patrón la rodee, y el margen negativo
+          compensa su relleno: el texto sigue alineado con el resto de la página.
         */}
-        <div className="relative bg-azul py-20 before:absolute before:inset-y-0 before:right-full before:w-screen before:bg-azul md:py-24 lg:w-[66%] lg:pr-12">
+        <div className="relative bg-azul py-20 md:py-24 lg:-mx-12 lg:my-14 lg:w-fit lg:max-w-[52rem] lg:px-12 lg:py-12">
           <div className="relative grid gap-10 xl:grid-cols-[1fr_auto] xl:items-center">
             <div>
               {etiqueta ? (
