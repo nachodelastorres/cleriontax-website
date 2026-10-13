@@ -2,6 +2,7 @@ import { Angulo, AnguloInverso, Arco, CuartoDeCirculo } from "@/components/brand
 import Patron from "@/components/brand/Patron";
 import TablaDatos, { type FilaDato } from "@/components/brand/TablaDatos";
 import ChipEstado from "@/components/brand/ChipEstado";
+import { Blocks, ChartCandlestick, Store, Wallet } from "lucide-react";
 
 /**
  * Biblioteca de bloques de sección.
@@ -20,6 +21,19 @@ export type FondoSeccion = "blanco" | "papel" | "azul" | "patron";
 
 const FORMAS = { angulo: Angulo, arco: Arco, cuarto: CuartoDeCirculo, inverso: AnguloInverso };
 export type NombreForma = keyof typeof FORMAS;
+
+/**
+ * Iconos para cuando cada tarjeta nombra una cosa concreta —un tipo de fuente,
+ * una plataforma— y no un paso. Ahí las formas del símbolo se confunden con
+ * las de los procesos de otras secciones; un icono dice qué es cada una.
+ */
+const ICONOS = {
+  exchange: ChartCandlestick,
+  wallet: Wallet,
+  defi: Blocks,
+  mercado: Store,
+};
+export type NombreIcono = keyof typeof ICONOS;
 
 /* ---------------------------------------------------------------- Envoltura */
 
@@ -240,7 +254,9 @@ export function BloqueCita({
 /* ------------------------------------------------------------------- Formas */
 
 export interface PasoForma {
-  forma: NombreForma;
+  /** Una de las dos: la forma del símbolo, o un icono descriptivo. */
+  forma?: NombreForma;
+  icono?: NombreIcono;
   titulo: string;
   body: string;
 }
@@ -257,14 +273,24 @@ export function BloqueFormas({ pasos, oscuro }: { pasos: PasoForma[]; oscuro?: b
       }`}
     >
       {pasos.map((p, i) => {
-        const Forma = FORMAS[p.forma];
+        const Icono = p.icono ? ICONOS[p.icono] : null;
+        const Forma = FORMAS[p.forma ?? "angulo"];
         const esCriterio = p.forma === "cuarto";
         return (
           <div key={i} className={`${oscuro ? "bg-azul" : "bg-blanco"} p-7`}>
-            <Forma
-              tam={64}
-              className={esCriterio ? "text-rojo" : oscuro ? "text-blanco" : "text-azul"}
-            />
+            {Icono ? (
+              <Icono
+                size={48}
+                strokeWidth={1.5}
+                aria-hidden="true"
+                className={oscuro ? "text-blanco" : "text-azul"}
+              />
+            ) : (
+              <Forma
+                tam={64}
+                className={esCriterio ? "text-rojo" : oscuro ? "text-blanco" : "text-azul"}
+              />
+            )}
             <h3 className={`mt-6 text-subtitulo ${oscuro ? "text-blanco" : "text-azul"}`}>
               {p.titulo}
             </h3>

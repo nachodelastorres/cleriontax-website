@@ -42,22 +42,22 @@
       "entrada": "El precio y el trabajo dependen de cuántas fuentes hay que reconciliar, no de cuánto hayas ganado. Cada una de estas cuenta como una fuente.",
       "formas": [
         {
-          "forma": "angulo",
+          "icono": "exchange",
           "titulo": "Un exchange centralizado",
           "body": "Binance, Coinbase, Kraken, Bit2Me, Bybit, OKX… Cada cuenta de exchange es una fuente, con su exportación y su formato."
         },
         {
-          "forma": "arco",
+          "icono": "wallet",
           "titulo": "Una wallet propia",
           "body": "MetaMask, Ledger, Phantom, Trust Wallet… Trabajamos con sus direcciones públicas y reconstruimos la actividad on-chain."
         },
         {
-          "forma": "inverso",
+          "icono": "defi",
           "titulo": "Un protocolo DeFi",
           "body": "Staking, liquidity pools, préstamos o farming en protocolos como Uniswap, Aave o Curve, con sus recompensas y sus permutas implícitas."
         },
         {
-          "forma": "cuarto",
+          "icono": "mercado",
           "titulo": "Un broker o un marketplace",
           "body": "Plataformas de acciones o ETF, o mercados de NFT, cuando forman parte de la misma cartera que hay que declarar."
         }

@@ -42,22 +42,22 @@
       "entrada": "Price and workload depend on how many sources need reconciling, not on how much you gained. Each of these counts as one source.",
       "formas": [
         {
-          "forma": "angulo",
+          "icono": "exchange",
           "titulo": "A centralised exchange",
           "body": "Binance, Coinbase, Kraken, Bit2Me, Bybit, OKX… Each exchange account is one source, with its own export and its own format."
         },
         {
-          "forma": "arco",
+          "icono": "wallet",
           "titulo": "A self-custody wallet",
           "body": "MetaMask, Ledger, Phantom, Trust Wallet… We work from the public addresses and rebuild the on-chain activity."
         },
         {
-          "forma": "inverso",
+          "icono": "defi",
           "titulo": "A DeFi protocol",
           "body": "Staking, liquidity pools, lending or farming on protocols such as Uniswap, Aave or Curve, with their rewards and implicit swaps."
         },
         {
-          "forma": "cuarto",
+          "icono": "mercado",
           "titulo": "A broker or marketplace",
           "body": "Stock or ETF platforms, or NFT marketplaces, when they are part of the same portfolio that has to be declared."
         }

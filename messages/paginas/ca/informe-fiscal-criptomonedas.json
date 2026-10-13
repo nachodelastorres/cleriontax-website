@@ -42,22 +42,22 @@
       "entrada": "El preu i la feina depenen de quantes fonts cal reconciliar, no de quant hagis guanyat. Cadascuna d’aquestes compta com una font.",
       "formas": [
         {
-          "forma": "angulo",
+          "icono": "exchange",
           "titulo": "Un exchange centralitzat",
           "body": "Binance, Coinbase, Kraken, Bit2Me, Bybit, OKX… Cada compte d’exchange és una font, amb la seva exportació i el seu format."
         },
         {
-          "forma": "arco",
+          "icono": "wallet",
           "titulo": "Una wallet pròpia",
           "body": "MetaMask, Ledger, Phantom, Trust Wallet… Treballem amb les seves adreces públiques i reconstruïm l’activitat on-chain."
         },
         {
-          "forma": "inverso",
+          "icono": "defi",
           "titulo": "Un protocol DeFi",
           "body": "Staking, liquidity pools, préstecs o farming en protocols com Uniswap, Aave o Curve, amb les seves recompenses i les seves permutes implícites."
         },
         {
-          "forma": "cuarto",
+          "icono": "mercado",
           "titulo": "Un broker o un marketplace",
           "body": "Plataformes d’accions o ETF, o mercats de NFT, quan formen part de la mateixa cartera que cal declarar."
         }
