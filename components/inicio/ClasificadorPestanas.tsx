@@ -9,7 +9,7 @@ import type { Grupo } from "@/lib/paginas";
  * Clasificador por pestañas.
  *
  * Tres pestañas grandes —una por pregunta— y debajo un panel a todo el ancho
- * con los casos de la pregunta abierta, a dos columnas. Cada caso lleva a su
+ * con los casos de la pregunta abierta, todos en una fila. Cada caso lleva a su
  * página de servicio.
  *
  * Los tres paneles están siempre en el HTML, apilados en la misma celda de la
@@ -24,6 +24,14 @@ export interface GrupoClasificador {
   quien: string;
   casos: { slug: string; texto: string; urgente: boolean }[];
 }
+
+// Clases completas para que Tailwind las encuentre al compilar.
+const COLUMNAS: Record<number, string> = {
+  1: "md:grid-cols-1",
+  2: "md:grid-cols-2",
+  3: "md:grid-cols-3",
+  4: "md:grid-cols-4",
+};
 
 interface Props {
   grupos: GrupoClasificador[];
@@ -101,16 +109,14 @@ export default function ClasificadorPestanas({ grupos, inicial, textos }: Props)
               aria-hidden={!abierta}
               className={`[grid-area:1/1] ${abierta ? "" : "invisible"}`}
             >
-              <ul className="grid md:grid-cols-2">
+              {/* Todos los casos de la pregunta en una sola fila: tantas columnas
+                  como casos, para que ningún panel deje una fila a medias. */}
+              <ul className={`grid ${COLUMNAS[g.casos.length] ?? "md:grid-cols-3"}`}>
                 {g.casos.map((s, i) => {
-                  // Con un número impar de casos, el último ocupa la fila entera.
-                  const solo = i === g.casos.length - 1 && i % 2 === 0;
                   return (
                   <li
                     key={s.slug}
-                    className={`border-niebla ${solo ? "md:col-span-2" : i % 2 === 0 ? "md:border-r" : ""} ${
-                      i >= 2 ? "border-t" : i === 1 ? "border-t md:border-t-0" : ""
-                    }`}
+                    className={`border-niebla ${i > 0 ? "border-t md:border-t-0 md:border-l" : ""}`}
                   >
                     <Link
                       href={`/${s.slug}`}
