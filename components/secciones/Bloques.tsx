@@ -2,6 +2,7 @@ import { Angulo, AnguloInverso, Arco, CuartoDeCirculo } from "@/components/brand
 import Patron from "@/components/brand/Patron";
 import TablaDatos, { type FilaDato } from "@/components/brand/TablaDatos";
 import ChipEstado from "@/components/brand/ChipEstado";
+import ButtonLink from "@/components/ui/ButtonLink";
 import { ArrowRight, Blocks, ChartCandlestick, Store, Wallet } from "lucide-react";
 
 /**
@@ -231,6 +232,37 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+/* --------------------------------------------------------------- Derivación */
+
+export interface Derivacion {
+  /** El caso del lector, en forma de pregunta: es el gancho. */
+  pregunta: string;
+  apoyo?: string;
+  accion: string;
+  href: string;
+}
+
+/**
+ * Lleva a la página vecina cuando el lector está en otro caso. Va en una
+ * franja y con botón, no como enlace dentro de una viñeta: es una acción, y
+ * una viñeta más se pierde. El botón es secundario para no competir con la
+ * acción principal de la página.
+ */
+export function BloqueDerivacion({ pregunta, apoyo, accion, href }: Derivacion) {
+  return (
+    <div className="mt-10 flex flex-col gap-6 border border-niebla border-l-4 border-l-rojo bg-blanco px-7 py-7 md:flex-row md:items-center md:justify-between md:gap-10">
+      <div>
+        <p className="text-subtitulo text-azul">{pregunta}</p>
+        {apoyo ? <p className="mt-2 text-nota text-pizarra">{apoyo}</p> : null}
+      </div>
+      <ButtonLink href={href} variant="secundaria" className="flex-none gap-2">
+        {accion}
+        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+      </ButtonLink>
     </div>
   );
 }

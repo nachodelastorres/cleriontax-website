@@ -119,9 +119,12 @@
           }
         ]
       },
-      "bullets": [
-        "Already have a report from a tool that doesn't add up? We cover that in <a href=\"/revisar-informe-koinly\">reviewing your Koinly or CoinTracking report</a>."
-      ]
+      "derivacion": {
+        "pregunta": "Already have a report from a tool that doesn't add up?",
+        "apoyo": "We review it transaction by transaction and tell you what's wrong and how to fix it.",
+        "accion": "Review my Koinly or CoinTracking report",
+        "href": "/revisar-informe-koinly"
+      }
     },
     {
       "id": "como-trabajamos",

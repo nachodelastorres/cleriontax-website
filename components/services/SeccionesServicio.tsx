@@ -6,6 +6,7 @@ import {
   BloqueCronologia,
   BloqueComparativa,
   BloqueContraste,
+  BloqueDerivacion,
   BloqueCita,
   BloqueFormas,
   BloqueTabla,
@@ -14,6 +15,7 @@ import {
   type Hito,
   type Columna,
   type Contraste,
+  type Derivacion,
   type PasoForma,
   type NombreForma,
 } from "@/components/secciones/Bloques";
@@ -46,6 +48,8 @@ export interface Seccion {
   hitos?: Hito[];
   columnas?: Columna[];
   contraste?: Contraste;
+  /** Franja final que lleva a otra página de servicio. */
+  derivacion?: Derivacion;
   formas?: PasoForma[];
   cita?: { texto: string; pie?: string; forma?: NombreForma };
   tabla?: {
@@ -239,6 +243,7 @@ export default function SeccionesServicio({
               {s.items && esFaq ? (
                 <Preguntas items={s.items as { q: string; a: string }[]} locale={locale} />
               ) : null}
+              {s.derivacion ? <BloqueDerivacion {...s.derivacion} /> : null}
             </div>
           </Envoltura>
         );

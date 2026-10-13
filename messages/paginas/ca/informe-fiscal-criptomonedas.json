@@ -119,9 +119,12 @@
           }
         ]
       },
-      "bullets": [
-        "Ja tens un informe d’una eina i no et quadra? Això ho veiem a <a href=\"/revisar-informe-koinly\">revisar el teu informe de Koinly o CoinTracking</a>."
-      ]
+      "derivacion": {
+        "pregunta": "Ja tens un informe d’una eina i no et quadra?",
+        "apoyo": "El revisem operació per operació i et diem què falla i com corregir-ho.",
+        "accion": "Revisar el meu informe de Koinly o CoinTracking",
+        "href": "/revisar-informe-koinly"
+      }
     },
     {
       "id": "como-trabajamos",
