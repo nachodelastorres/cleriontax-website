@@ -1,0 +1,89 @@
+{
+  "seo": {
+    "title": "About us: crypto tax with data engineering | Cleriontax",
+    "description": "Cleriontax is the investment and crypto tax branch of the Benavides firm: data engineering and tax judgement for portfolios a general practice can't reach."
+  },
+  "hero": {
+    "etiqueta": "About us",
+    "h1": "Crypto tax with the precision a general practice can't reach",
+    "subheading": "We are Cleriontax, the branch of the Benavides firm dedicated to the taxation of investments and crypto assets. We combine data engineering and tax judgement so that every figure on your return can be explained.",
+    "cta": {
+      "label": "Tell us about your case",
+      "href": "/contacto"
+    }
+  },
+  "origen": {
+    "etiqueta": "We are part of",
+    "h2": "Born inside the Benavides firm",
+    "parrafos": [
+      "Cleriontax was born inside the Benavides firm to handle what a general practice cannot cover in the depth it deserves: the taxation of investments and crypto assets.",
+      "That kind of taxation calls for a different way of working. Portfolios are spread across exchanges, wallets and protocols; a single person can rack up thousands of transactions a year; and many of the criteria are still being set by the tax authority. A spreadsheet and good intentions are not enough.",
+      "That's why we are a team of our own, backed by Benavides and dedicated to this alone."
+    ]
+  },
+  "duo": {
+    "h2": "Data and tax, in the same team",
+    "entrada": "Almost every mistake in a crypto tax return starts in the data, not in the law. That's why we work on both halves at once.",
+    "datos": {
+      "titulo": "Data engineering",
+      "items": [
+        "We bring exchanges, wallets and protocols together into one history",
+        "We clean, normalise and reconcile every transaction",
+        "We leave a trail from every figure back to its source"
+      ]
+    },
+    "fiscal": {
+      "titulo": "Tax judgement",
+      "items": [
+        "We classify every transaction under Spanish rules",
+        "We apply FIFO and whatever offsets apply",
+        "We document every decision so it can be defended before the tax agency"
+      ]
+    },
+    "resultado": "Figures that can be defended"
+  },
+  "equipo": {
+    "h2": "Who we are",
+    "entrada": "Two people, the two halves of the work. You talk to us directly, from the first message to the filing.",
+    "personas": [
+      {
+        "id": "nacho",
+        "nombre": "Nacho",
+        "rol": "Data and engineering",
+        "body": "Handles the technical side: how each client's data is gathered, cleaned and reconciled until thousands of scattered transactions become a reconciled, traceable portfolio."
+      },
+      {
+        "id": "gonzalo",
+        "nombre": "Gonzalo",
+        "rol": "Tax",
+        "body": "Handles the tax side: what is taxed and how, which criterion applies in each doubtful case, and how it is declared and defended before the Spanish Tax Agency."
+      }
+    ]
+  },
+  "boutique": {
+    "h2": "A boutique firm",
+    "entrada": "Few clients at a time, properly looked after. It's the only way to work the way we think it should be done.",
+    "items": [
+      {
+        "icono": "proactividad",
+        "titulo": "Proactivity",
+        "body": "We don't wait for you to ask: we warn you about deadlines, rule changes and risks in your portfolio before they become a problem."
+      },
+      {
+        "icono": "comunicacion",
+        "titulo": "Constant communication",
+        "body": "You always know where your case stands. You talk to the person handling it, with no middlemen or tickets."
+      },
+      {
+        "icono": "precision",
+        "titulo": "Precision",
+        "body": "Every figure has its transaction and its criterion behind it. We'd rather take one more day than deliver something that can't be explained."
+      }
+    ]
+  },
+  "cierre": {
+    "titulo": "Shall we talk about your case?",
+    "apoyo": "Tell us what you have and what you need. We reply ourselves, not an automated system.",
+    "accion": "Contact us"
+  }
+}

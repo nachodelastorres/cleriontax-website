@@ -10,80 +10,6 @@
     "prices": "Pricing",
     "verTodo": "See pricing"
   },
-  "about": {
-    "title": "Where Traditional Tax Advisory Meets Technological Innovation",
-    "subtitle": "We are the bridge between two worlds: certified tax expertise and next-generation data analysis. Cleriontax combines the best of both to deliver an unprecedented tax service.",
-    "structuredData": {
-      "name": "Cleriontax",
-      "description": "Specialized cryptocurrency tax advisory combining experienced certified tax advisors with advanced data analysis technology",
-      "foundingDate": "2020",
-      "areaServed": "Spain",
-      "knowsAbout": [
-        "Cryptocurrency taxation",
-        "Blockchain data analysis",
-        "Crypto income tax return",
-        "Form 100",
-        "Forms 720 and 721",
-        "Tax planning",
-        "Financial technology"
-      ]
-    },
-    "valuesSection": {
-      "intro1": "At Cleriontax, our specialized cryptocurrency tax advisory is founded on three pillars that distinguish us as leading technological tax advisors in the digital assets sector in Spain.",
-      "intro2": "We combine chartered tax judgement and blockchain data engineering to prepare <strong>crypto tax reports</strong>, <strong>income tax returns with crypto assets</strong> and <strong>form 721</strong>, with the source of every figure documented.",
-      "closingText": "We are chartered tax advisors specialised in crypto assets. We reconcile data from exchanges, wallets and protocols with our own tools, apply the <strong>FIFO rule</strong> and review by hand what software would settle with a default value. The result is an <strong>auditable tax report</strong> that serves for your <strong>income tax return</strong>, <strong>form 721</strong> and, if it comes, the answer to an <strong>AEAT request</strong>."
-    },
-    "hero": {
-      "badge": "Tax Expertise × Technological Innovation",
-      "title": "Where Traditional Tax Advisory Meets Technological Innovation",
-      "subtitle": "We are the bridge between two worlds: certified tax expertise and next-generation data analysis. Cleriontax combines the best of both to deliver an unprecedented tax service.",
-      "cta": "Meet our team",
-      "tagline": "Tax Expertise × Technological Innovation"
-    },
-    "duality": {
-      "title": "The Perfect Combination: Advisory + Technology",
-      "subtitle": "Two teams, one standard: every figure must be explainable",
-      "fiscal": {
-        "title": "Tax Team",
-        "subtitle": "Experience and Regulation",
-        "description": "Licensed tax advisors specialized in digital asset taxation. Deep understanding of AEAT regulations, DGT rulings, and applicable jurisprudence. Always up to date with every regulatory change.",
-        "points": [
-          "Certified licensed tax advisors",
-          "Specialized in crypto assets and digital finance",
-          "Comprehensive knowledge of forms 100, 720, and 721",
-          "Experience in AEAT audits and inquiries",
-          "Ongoing training in crypto tax regulation"
-        ]
-      },
-      "tech": {
-        "title": "Technology Team",
-        "subtitle": "Innovation and Precision",
-        "description": "Data engineers and developers specialized in large-scale blockchain transaction processing. Proprietary algorithms for reconciliation, automated calculations, and cross-data validation.",
-        "points": [
-          "Automated processing of millions of transactions",
-          "Integration with 50+ exchanges and blockchains",
-          "Proprietary duplicate detection algorithms",
-          "Automatic multi-chain reconciliation",
-          "Modern and scalable tech stack"
-        ]
-      }
-    },
-    "values": {
-      "title": "Our Principles",
-      "innovation": {
-        "title": "Constant Innovation",
-        "description": "We invest in technology, training, and methodologies to stay at the forefront of digital tax services."
-      },
-      "precision": {
-        "title": "Absolute precision",
-        "description": "100 % isn’t a goal, it’s the minimum. Every decimal counts when it comes to a tax return."
-      },
-      "partnership": {
-        "title": "True Partnership",
-        "description": "We’re not an external provider. We’re your technological tax partner. We support you every step of the way."
-      }
-    }
-  },
   "contact": {
     "title": "Request your quote with no obligation",
     "subtitle": "Tell us about your case: exchanges you use, transaction volume, and types of assets. We'll send you a personalized quote within a few hours.",
@@ -166,10 +92,6 @@
     "services": {
       "title": "Crypto Tax Services | Crypto Income Tax Return | Cleriontax",
       "description": "Plans starting at €600 for your crypto tax return. IRPF report, form 100, forms 720/721. Trading, staking, DeFi, NFTs. Data analysis + specialized tax advisory for crypto investors in Spain."
-    },
-    "about": {
-      "title": "About Cleriontax | Experts in Crypto Taxation and Data Analysis in Spain",
-      "description": "Boutique firm specialized in data analysis and tax advisory for crypto investors. Team of data analysts + licensed tax advisors. Experience in crypto taxation according to AEAT regulations."
     },
     "contact": {
       "title": "Contact | Crypto Tax Return Quote | Cleriontax",

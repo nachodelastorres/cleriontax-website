@@ -7,7 +7,7 @@
     "h1": "El client és vostre. La feina tècnica la fem nosaltres.",
     "subheading": "Quan a un despatx li arriba una cartera amb milers d'operacions en exchanges, wallets i protocols DeFi, el problema no és fiscal: és de dades. Reconstruïm l'operativa i us lliurem l'informe amb la seva memòria de criteris.",
     "cta": { "label": "Parlar d'una derivació", "href": "/contacto" },
-    "secundaria": { "label": "Veure el mètode", "href": "/sobre-nosotros" }
+    "secundaria": { "label": "Veure el mètode", "href": "/sobre-nosotros#como-trabajamos" }
   },
   "toc": [
     { "id": "cuando", "label": "Quan derivar" },

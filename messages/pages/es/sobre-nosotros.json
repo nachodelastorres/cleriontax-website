@@ -1,0 +1,89 @@
+{
+  "seo": {
+    "title": "Sobre nosotros: fiscalidad cripto con ingeniería de datos | Cleriontax",
+    "description": "Cleriontax es la rama de fiscalidad de inversiones y criptoactivos del despacho Benavides: ingeniería de datos y criterio fiscal para carteras que un despacho generalista no alcanza."
+  },
+  "hero": {
+    "etiqueta": "Sobre nosotros",
+    "h1": "Fiscalidad cripto con la precisión que un despacho generalista no alcanza",
+    "subheading": "Somos Cleriontax, la rama del despacho Benavides dedicada a la fiscalidad de las inversiones y los criptoactivos. Unimos ingeniería de datos y criterio fiscal para que cada cifra de tu declaración se pueda explicar.",
+    "cta": {
+      "label": "Cuéntanos tu caso",
+      "href": "/contacto"
+    }
+  },
+  "origen": {
+    "etiqueta": "Formamos parte de",
+    "h2": "Nacemos dentro del despacho Benavides",
+    "parrafos": [
+      "Cleriontax nace dentro del despacho Benavides para ocuparse de lo que un despacho generalista no puede atender con la profundidad que merece: la fiscalidad de las inversiones y de los criptoactivos.",
+      "Esa fiscalidad pide otra forma de trabajar. Las carteras están repartidas entre exchanges, wallets y protocolos; una sola persona puede acumular miles de operaciones al año; y buena parte de los criterios los está fijando todavía la Administración. Con una hoja de cálculo y buena voluntad no basta.",
+      "Por eso somos un equipo propio, con el respaldo de Benavides y dedicado solo a esto."
+    ]
+  },
+  "duo": {
+    "h2": "Datos y fiscalidad, en el mismo equipo",
+    "entrada": "Casi todos los errores de una declaración cripto empiezan en los datos, no en la ley. Por eso trabajamos las dos mitades a la vez.",
+    "datos": {
+      "titulo": "Ingeniería de datos",
+      "items": [
+        "Reunimos exchanges, wallets y protocolos en un solo histórico",
+        "Limpiamos, normalizamos y reconciliamos cada operación",
+        "Dejamos rastro de cada cifra hasta su origen"
+      ]
+    },
+    "fiscal": {
+      "titulo": "Criterio fiscal",
+      "items": [
+        "Clasificamos cada operación según la norma española",
+        "Aplicamos FIFO y las compensaciones que correspondan",
+        "Documentamos cada decisión para poder defenderla ante Hacienda"
+      ]
+    },
+    "resultado": "Cifras que se pueden defender"
+  },
+  "equipo": {
+    "h2": "Quiénes somos",
+    "entrada": "Dos personas, las dos mitades del trabajo. Hablas con nosotros directamente, del primer mensaje a la presentación.",
+    "personas": [
+      {
+        "id": "nacho",
+        "nombre": "Nacho",
+        "rol": "Datos e ingeniería",
+        "body": "Lleva la parte técnica: cómo se reúnen, limpian y reconcilian los datos de cada cliente hasta convertir miles de operaciones dispersas en una cartera conciliada y trazable."
+      },
+      {
+        "id": "gonzalo",
+        "nombre": "Gonzalo",
+        "rol": "Fiscalidad",
+        "body": "Lleva la parte fiscal: qué tributa y cómo, qué criterio se aplica en cada caso dudoso y cómo se declara y se defiende ante la Agencia Tributaria."
+      }
+    ]
+  },
+  "boutique": {
+    "h2": "Un despacho boutique",
+    "entrada": "Pocos clientes a la vez y bien atendidos. Es la única forma de trabajar como creemos que hay que hacerlo.",
+    "items": [
+      {
+        "icono": "proactividad",
+        "titulo": "Proactividad",
+        "body": "No esperamos a que preguntes: te avisamos de plazos, cambios normativos y riesgos en tu cartera antes de que se conviertan en un problema."
+      },
+      {
+        "icono": "comunicacion",
+        "titulo": "Comunicación constante",
+        "body": "Sabes en todo momento en qué punto está tu caso. Hablas con quien lo lleva, sin intermediarios ni tickets."
+      },
+      {
+        "icono": "precision",
+        "titulo": "Precisión",
+        "body": "Cada cifra tiene detrás su operación y su criterio. Preferimos tardar un día más a entregar algo que no se pueda explicar."
+      }
+    ]
+  },
+  "cierre": {
+    "titulo": "¿Hablamos de tu caso?",
+    "apoyo": "Cuéntanos qué tienes y qué necesitas. Te respondemos nosotros, no un sistema automático.",
+    "accion": "Contactar"
+  }
+}

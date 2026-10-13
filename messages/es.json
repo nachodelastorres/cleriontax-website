@@ -10,80 +10,6 @@
     "prices": "Precios",
     "verTodo": "Ver precios"
   },
-  "about": {
-    "title": "Donde la Asesoría Fiscal Tradicional Encuentra la Innovación Tecnológica",
-    "subtitle": "Somos el puente entre dos mundos: la experiencia fiscal colegiada y el análisis de datos de última generación. Cleriontax combina lo mejor de ambos para ofrecerte un servicio fiscal sin precedentes.",
-    "structuredData": {
-      "name": "Cleriontax",
-      "description": "Asesoría fiscal especializada en criptomonedas que combina experiencia de asesores fiscales colegiados con tecnología de análisis de datos avanzada",
-      "foundingDate": "2020",
-      "areaServed": "España",
-      "knowsAbout": [
-        "Fiscalidad de criptomonedas",
-        "Análisis de datos blockchain",
-        "Declaración IRPF crypto",
-        "Modelo 100",
-        "Modelo 720 y 721",
-        "Planificación fiscal",
-        "Tecnología financiera"
-      ]
-    },
-    "valuesSection": {
-      "intro1": "En Cleriontax, nuestra asesoría fiscal especializada en criptomonedas se fundamenta en tres pilares que nos distinguen como asesores fiscales tecnológicos líderes en el sector de activos digitales en España.",
-      "intro2": "Unimos criterio fiscal colegiado e ingeniería de datos blockchain para preparar informes fiscales de criptomonedas, declaraciones de la renta con criptoactivos y el modelo 721, con el origen de cada cifra documentado.",
-      "closingText": "Somos asesores fiscales colegiados especializados en criptoactivos. Conciliamos los datos de exchanges, wallets y protocolos con herramientas propias, aplicamos el criterio FIFO y revisamos a mano lo que un programa resolvería con un valor por defecto. El resultado es un informe auditable que sirve para la declaración de la renta, el modelo 721 y, si llega, la respuesta a un requerimiento de la AEAT."
-    },
-    "hero": {
-      "badge": "Expertise Fiscal × Innovación Tecnológica",
-      "title": "Donde la Asesoría Fiscal Tradicional Encuentra la Innovación Tecnológica",
-      "subtitle": "Somos el puente entre dos mundos: la experiencia fiscal colegiada y el análisis de datos de última generación. Cleriontax combina lo mejor de ambos para ofrecerte un servicio fiscal sin precedentes.",
-      "cta": "Conoce nuestro equipo",
-      "tagline": "Expertise Fiscal × Innovación Tecnológica"
-    },
-    "duality": {
-      "title": "La Combinación Perfecta: Asesoría + Tecnología",
-      "subtitle": "Dos equipos, una misma exigencia: que cada cifra se pueda explicar",
-      "fiscal": {
-        "title": "Equipo Fiscal",
-        "subtitle": "Experiencia y Normativa",
-        "description": "Asesores fiscales colegiados especializados en fiscalidad de activos digitales. Conocimiento profundo de normativa AEAT, criterios DGT y jurisprudencia aplicable. Actualizados con cada cambio normativo.",
-        "points": [
-          "Asesores fiscales colegiados certificados",
-          "Especialización en criptoactivos y finanzas digitales",
-          "Conocimiento exhaustivo de modelos 100, 720 y 721",
-          "Experiencia en inspecciones y requerimientos AEAT",
-          "Formación continua en normativa fiscal crypto"
-        ]
-      },
-      "tech": {
-        "title": "Equipo Tecnológico",
-        "subtitle": "Innovación y Precisión",
-        "description": "Ingenieros de datos y desarrolladores especializados en procesamiento masivo de transacciones blockchain. Algoritmos propios de conciliación, automatización de cálculos y validación cruzada de datos.",
-        "points": [
-          "Procesamiento automatizado de millones de transacciones",
-          "Integración con 50+ exchanges y blockchains",
-          "Algoritmos propios de detección de duplicados",
-          "Conciliación automática multicadena",
-          "Stack tecnológico moderno y escalable"
-        ]
-      }
-    },
-    "values": {
-      "title": "Nuestros Principios",
-      "innovation": {
-        "title": "Innovación Constante",
-        "description": "Invertimos en tecnología, formación y metodologías para estar siempre a la vanguardia del servicio fiscal digital."
-      },
-      "precision": {
-        "title": "Precisión absoluta",
-        "description": "El 100 % no es una meta, es el mínimo. Cada decimal cuenta cuando hablamos de una declaración."
-      },
-      "partnership": {
-        "title": "Colaboración Real",
-        "description": "No somos un proveedor externo. Somos tu socio fiscal tecnológico. Te acompañamos en cada paso del proceso."
-      }
-    }
-  },
   "contact": {
     "title": "Solicita tu presupuesto sin compromiso",
     "subtitle": "Cuéntanos tu caso: exchanges que usas, volumen de operaciones y tipos de activos. Te enviamos presupuesto personalizado en pocas horas.",
@@ -166,10 +92,6 @@
     "services": {
       "title": "Servicios Fiscales Cripto | Declaración Renta Criptoactivos | Cleriontax",
       "description": "Planes desde 600€ para tu declaración fiscal cripto. Informe IRPF, modelo 100, modelo 720/721. Trading, staking, DeFi, NFTs. Análisis de datos + asesoría fiscal especializada para inversores en criptomonedas en España."
-    },
-    "about": {
-      "title": "Sobre Cleriontax | Expertos en Fiscalidad Cripto y Análisis de Datos España",
-      "description": "Boutique especializada en análisis de datos y asesoría fiscal para inversores cripto. Equipo de analistas de datos + asesores fiscales colegiados. Experiencia en fiscalidad de criptoactivos según normativa AEAT."
     },
     "contact": {
       "title": "Contacto | Presupuesto Declaración Fiscal Cripto | Cleriontax",

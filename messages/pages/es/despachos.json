@@ -7,7 +7,7 @@
     "h1": "El cliente es vuestro. El trabajo técnico lo hacemos nosotros.",
     "subheading": "Cuando a un despacho le entra una cartera con miles de operaciones en exchanges, wallets y protocolos DeFi, el problema no es fiscal: es de datos. Reconstruimos la operativa y os entregamos el informe con su memoria de criterios.",
     "cta": { "label": "Hablar de una derivación", "href": "/contacto" },
-    "secundaria": { "label": "Ver el método", "href": "/sobre-nosotros" }
+    "secundaria": { "label": "Ver el método", "href": "/sobre-nosotros#como-trabajamos" }
   },
   "toc": [
     { "id": "cuando", "label": "Cuándo derivar" },

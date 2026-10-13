@@ -1,0 +1,89 @@
+{
+  "seo": {
+    "title": "Sobre nosaltres: fiscalitat cripto amb enginyeria de dades | Cleriontax",
+    "description": "Cleriontax és la branca de fiscalitat d’inversions i criptoactius del despatx Benavides: enginyeria de dades i criteri fiscal per a carteres que un despatx generalista no abasta."
+  },
+  "hero": {
+    "etiqueta": "Sobre nosaltres",
+    "h1": "Fiscalitat cripto amb la precisió que un despatx generalista no abasta",
+    "subheading": "Som Cleriontax, la branca del despatx Benavides dedicada a la fiscalitat de les inversions i els criptoactius. Unim enginyeria de dades i criteri fiscal perquè cada xifra de la teva declaració es pugui explicar.",
+    "cta": {
+      "label": "Explica’ns el teu cas",
+      "href": "/contacto"
+    }
+  },
+  "origen": {
+    "etiqueta": "Formem part de",
+    "h2": "Neixem dins del despatx Benavides",
+    "parrafos": [
+      "Cleriontax neix dins del despatx Benavides per ocupar-se del que un despatx generalista no pot atendre amb la profunditat que mereix: la fiscalitat de les inversions i dels criptoactius.",
+      "Aquesta fiscalitat demana una altra manera de treballar. Les carteres estan repartides entre exchanges, wallets i protocols; una sola persona pot acumular milers d’operacions l’any; i bona part dels criteris encara els està fixant l’Administració. Amb un full de càlcul i bona voluntat no n’hi ha prou.",
+      "Per això som un equip propi, amb el suport de Benavides i dedicat només a això."
+    ]
+  },
+  "duo": {
+    "h2": "Dades i fiscalitat, al mateix equip",
+    "entrada": "Gairebé tots els errors d’una declaració cripto comencen a les dades, no a la llei. Per això treballem les dues meitats alhora.",
+    "datos": {
+      "titulo": "Enginyeria de dades",
+      "items": [
+        "Reunim exchanges, wallets i protocols en un sol històric",
+        "Netegem, normalitzem i reconciliem cada operació",
+        "Deixem rastre de cada xifra fins al seu origen"
+      ]
+    },
+    "fiscal": {
+      "titulo": "Criteri fiscal",
+      "items": [
+        "Classifiquem cada operació segons la norma espanyola",
+        "Apliquem FIFO i les compensacions que corresponguin",
+        "Documentem cada decisió per poder-la defensar davant d’Hisenda"
+      ]
+    },
+    "resultado": "Xifres que es poden defensar"
+  },
+  "equipo": {
+    "h2": "Qui som",
+    "entrada": "Dues persones, les dues meitats de la feina. Parles amb nosaltres directament, del primer missatge a la presentació.",
+    "personas": [
+      {
+        "id": "nacho",
+        "nombre": "Nacho",
+        "rol": "Dades i enginyeria",
+        "body": "Porta la part tècnica: com es reuneixen, netegen i reconcilien les dades de cada client fins a convertir milers d’operacions disperses en una cartera conciliada i traçable."
+      },
+      {
+        "id": "gonzalo",
+        "nombre": "Gonzalo",
+        "rol": "Fiscalitat",
+        "body": "Porta la part fiscal: què tributa i com, quin criteri s’aplica en cada cas dubtós i com es declara i es defensa davant l’Agència Tributària."
+      }
+    ]
+  },
+  "boutique": {
+    "h2": "Un despatx boutique",
+    "entrada": "Pocs clients alhora i ben atesos. És l’única manera de treballar com creiem que s’ha de fer.",
+    "items": [
+      {
+        "icono": "proactividad",
+        "titulo": "Proactivitat",
+        "body": "No esperem que preguntis: t’avisem de terminis, canvis normatius i riscos a la teva cartera abans que es converteixin en un problema."
+      },
+      {
+        "icono": "comunicacion",
+        "titulo": "Comunicació constant",
+        "body": "Saps en tot moment en quin punt és el teu cas. Parles amb qui el porta, sense intermediaris ni tiquets."
+      },
+      {
+        "icono": "precision",
+        "titulo": "Precisió",
+        "body": "Cada xifra té al darrere la seva operació i el seu criteri. Preferim trigar un dia més que lliurar una cosa que no es pugui explicar."
+      }
+    ]
+  },
+  "cierre": {
+    "titulo": "En parlem?",
+    "apoyo": "Explica’ns què tens i què necessites. Et responem nosaltres, no un sistema automàtic.",
+    "accion": "Contactar"
+  }
+}
