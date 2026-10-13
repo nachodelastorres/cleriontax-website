@@ -1020,7 +1020,7 @@
   "paginas": {
     "nombres": {
       "informe-fiscal-criptomonedas": "Informe fiscal cripto",
-      "revisar-informe-koinly": "Revisar informe de Koinly",
+      "revisar-informe-koinly-cointracking": "Revisar informe de Koinly o CoinTracking",
       "requerimiento-hacienda-criptomonedas": "Requerimiento de Hacienda",
       "inspeccion-hacienda-criptomonedas": "Inspección y sanciones",
       "regularizar-criptomonedas": "Regularizar criptomonedas",
@@ -1029,7 +1029,7 @@
     },
     "casos": {
       "informe-fiscal-criptomonedas": "Tengo miles de operaciones y no sé cuánto he ganado",
-      "revisar-informe-koinly": "Mi informe de Koinly o CoinTracking no cuadra",
+      "revisar-informe-koinly-cointracking": "Mi informe de Koinly o CoinTracking no cuadra",
       "requerimiento-hacienda-criptomonedas": "He recibido una carta o un requerimiento de Hacienda",
       "inspeccion-hacienda-criptomonedas": "Estoy en una inspección o me han sancionado",
       "regularizar-criptomonedas": "No declaré criptomonedas en años anteriores",

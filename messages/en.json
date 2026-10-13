@@ -1020,7 +1020,7 @@
   "paginas": {
     "nombres": {
       "informe-fiscal-criptomonedas": "Crypto tax report",
-      "revisar-informe-koinly": "Koinly report review",
+      "revisar-informe-koinly-cointracking": "Koinly and CoinTracking report review",
       "requerimiento-hacienda-criptomonedas": "Letter from the tax agency",
       "inspeccion-hacienda-criptomonedas": "Inspections and penalties",
       "regularizar-criptomonedas": "Regularise undeclared crypto",
@@ -1029,7 +1029,7 @@
     },
     "casos": {
       "informe-fiscal-criptomonedas": "I have thousands of transactions and don’t know what I’ve made",
-      "revisar-informe-koinly": "My Koinly or CoinTracking report doesn’t add up",
+      "revisar-informe-koinly-cointracking": "My Koinly or CoinTracking report doesn’t add up",
       "requerimiento-hacienda-criptomonedas": "I’ve received a letter or request from the tax agency",
       "inspeccion-hacienda-criptomonedas": "I’m under inspection or I’ve been fined",
       "regularizar-criptomonedas": "I didn’t declare crypto in previous years",

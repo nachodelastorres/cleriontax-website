@@ -1,11 +1,11 @@
 {
-  "title": "Revisar el teu informe de Koinly abans de presentar-lo a Hisenda",
-  "slug": "revisar-informe-koinly",
-  "nav": "Revisar informe de Koinly",
+  "title": "Revisar el teu informe de Koinly o CoinTracking abans de presentar-lo a Hisenda",
+  "slug": "revisar-informe-koinly-cointracking",
+  "nav": "Revisar l’informe de Koinly o CoinTracking",
   "excerpt": "Els errors de Koinly i CoinTracking que més pesen davant d'Hisenda: transferències internes comptades com a vendes, cost d'adquisició zero i spam de tokens. Com es corregeix l'informe abans de presentar-lo.",
   "hero": {
     "etiqueta": "Abans de presentar-lo",
-    "h1": "Errors de Koinly davant d'Hisenda: revisem el teu informe abans que el presentis",
+    "h1": "Errors de Koinly i CoinTracking davant d'Hisenda: revisem el teu informe abans que el presentis",
     "subheading": "Has passat les teves dades per Koinly, CoinTracking o una eina semblant i el guany no s'assembla al que creus que vas guanyar. No cal començar de zero: partim del teu informe, corregim el que el programa va resoldre amb un valor per defecte i t'expliquem cada canvi.",
     "cta": { "label": "Demanar pressupost", "href": "#diagnostico" },
     "secundaria": { "label": "Veure preus", "href": "#precio" }
@@ -23,7 +23,7 @@
   "sections": [
     {
       "id": "por-que-no-cuadra",
-      "h2": "Per què el teu informe de Koinly no quadra amb el que vas guanyar",
+      "h2": "Per què el teu informe de Koinly o CoinTracking no quadra amb el que vas guanyar",
       "fondo": "blanco",
       "body": "L'eina no ha fallat: ha fet el que sap fer. Llegeix els teus CSV i les teves wallets, casa el que pot casar i, quan una operació no es pot resoldre amb certesa, aplica un valor per defecte. Aquest valor poques vegades és el que correspon al teu cas.\n\nEl resultat típic és un guany inflat. No perquè hagis guanyat més, sinó perquè l'informe compta com a vendes moviments que no ho són i valora a zero tokens que sí que van tenir un cost.\n\nTot això té solució mentre l'informe no s'hagi presentat. Un cop a l'AEAT passa a ser la teva declaració, i corregir-lo és una altra feina, més llarga i més delicada."
     },
@@ -93,7 +93,7 @@
     },
     {
       "id": "como-revisamos",
-      "h2": "Com corregim el teu informe de Koinly",
+      "h2": "Com corregim el teu informe de Koinly o CoinTracking",
       "steps": [
         { "title": "Partim del teu informe, no de zero", "body": "Ens envies l'exportació de Koinly o CoinTracking i les fonts que l'alimenten. La ingesta ja està feta: auditem la reconciliació, no refem el que està bé." },
         { "title": "Aïllem les transferències entre comptes teus", "body": "Identifiquem la titularitat de cada adreça de destí i marquem com a interns els moviments que ho són. Aquí sol haver-hi la major part de la diferència." },
@@ -104,7 +104,7 @@
     },
     {
       "id": "alternativa",
-      "h2": "Busques una alternativa a Koinly a Espanya?",
+      "h2": "Busques una alternativa a Koinly o CoinTracking a Espanya?",
       "fondo": "papel",
       "body": "Potser no la necessites. Koinly, CoinTracking i eines semblants són útils per processar volum, i si ja tens les dades carregades, el més ràpid i econòmic sol ser revisar-les, no migrar a una altra eina per tornar-te a trobar les mateixes decisions sense prendre.\n\nSi, en canvi, no has començat, les teves dades estan repartides en moltes fonts o l'informe està tan lluny de la realitat que no val la pena corregir-lo, el que et convé és un informe fet des del principi. És el que fem al nostre informe fiscal de criptomonedes."
     },
@@ -113,11 +113,11 @@
       "h2": "Preguntes freqüents",
       "items": [
         {
-          "q": "Koinly serveix per declarar a Espanya?",
-          "a": "Serveix com a punt de partida: processa les teves operacions i pot calcular amb FIFO, que és el criteri de l'AEAT. El que no pot fer és decidir per tu quins moviments són teus, quin valor tenia un token rebut sense compra o què és spam. Aquestes decisions són les que convé revisar abans de traslladar les xifres a la teva declaració."
+          "q": "Koinly o CoinTracking serveixen per declarar a Espanya?",
+          "a": "Serveixen com a punt de partida: processen les teves operacions i poden calcular amb FIFO, que és el criteri de l'AEAT. El que no poden fer és decidir per tu quins moviments són teus, quin valor tenia un token rebut sense compra o què és spam. Aquestes decisions són les que convé revisar abans de traslladar les xifres a la teva declaració."
         },
         {
-          "q": "I si faig servir CoinTracking o una altra eina?",
+          "q": "I si faig servir una altra eina?",
           "a": "La feina és la mateixa. Revisem el resultat de CoinTracking, Koinly, Accointing o similars, i també fulls de càlcul propis. El que importa no és quin programa va generar l'informe, sinó com va resoldre les situacions dubtoses."
         },
         {
@@ -125,7 +125,7 @@
           "a": "Depèn de quantes fonts de dades alimenten l'informe. Si tot ve d'un sol exchange és el tram «Plataforma única», 250 €; de dos o tres exchanges, «Multiexchange», 350 €; si combines exchanges amb wallets pròpies, DeFi, NFT o accions fins a tres fonts, «Cartera mixta», 450 €; i per sobre d'això, «Cartera complexa», des de 700 €. Tots els imports porten l’IVA inclòs. Et confirmem el tram abans de començar. Tens el detall a la pàgina de preus."
         },
         {
-          "q": "Necessiteu accés al meu compte de Koinly?",
+          "q": "Necessiteu accés al meu compte de Koinly o CoinTracking?",
           "a": "No. N'hi ha prou amb l'exportació del teu informe, els CSV dels teus exchanges, claus API de només lectura si ho prefereixes i les adreces públiques de les teves wallets. Mai claus privades."
         },
         {
@@ -150,15 +150,15 @@
     "button": { "label": "Demanar revisió" }
   },
   "seo": {
-    "title": "Errors de Koinly amb Hisenda: revisem el teu informe | Cleriontax",
+    "title": "Errors de Koinly i CoinTracking amb Hisenda: revisem el teu informe | Cleriontax",
     "description": "El teu informe de Koinly o CoinTracking no quadra? Corregim transferències comptades com a vendes, cost zero i spam abans que el presentis a Hisenda.",
     "keywords": [
       "errors koinly hisenda",
       "revisar informe koinly",
       "corregir informe koinly",
       "koinly espanya",
-      "cointracking espanya",
-      "alternativa koinly espanya",
+      "cointracking espanya", "errors cointracking hisenda", "revisar informe cointracking",
+      "alternativa koinly espanya", "alternativa cointracking espanya",
       "revisar informe fiscal cripto",
       "informe cripto incorrecte hisenda"
     ]

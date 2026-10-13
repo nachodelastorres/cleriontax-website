@@ -46,7 +46,7 @@ const nextConfig = {
         ['situaciones/recurrir-una-sancion', 'inspeccion-hacienda-criptomonedas'],
         ['situaciones/inspeccion-por-criptomonedas', 'inspeccion-hacienda-criptomonedas'],
         ['situaciones/regularizar-anos-anteriores', 'regularizar-criptomonedas'],
-        ['situaciones/errores-en-mi-informe-automatico', 'revisar-informe-koinly'],
+        ['situaciones/errores-en-mi-informe-automatico', 'revisar-informe-koinly-cointracking'],
         ['situaciones/miles-de-transacciones', 'informe-fiscal-criptomonedas'],
         ['situaciones/declarar-criptomonedas', 'declarar-criptomonedas'],
         ['situaciones/modelo-721', 'modelo-721-criptomonedas'],
@@ -56,6 +56,8 @@ const nextConfig = {
         // Páginas internas retiradas
         ['metodo', ''],
         ['muestrario', ''],
+        // La página de revisión nombra las dos herramientas desde octubre de 2026.
+        ['revisar-informe-koinly', 'revisar-informe-koinly-cointracking'],
       ].map(([origen, destino]) => ({
         source: `/:locale(es|en|ca)/${origen}`,
         destination: destino ? `/:locale/${destino}` : '/:locale',

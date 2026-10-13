@@ -1020,7 +1020,7 @@
   "paginas": {
     "nombres": {
       "informe-fiscal-criptomonedas": "Informe fiscal cripto",
-      "revisar-informe-koinly": "Revisar l’informe de Koinly",
+      "revisar-informe-koinly-cointracking": "Revisar l’informe de Koinly o CoinTracking",
       "requerimiento-hacienda-criptomonedas": "Requeriment d’Hisenda",
       "inspeccion-hacienda-criptomonedas": "Inspecció i sancions",
       "regularizar-criptomonedas": "Regularitzar criptomonedes",
@@ -1029,7 +1029,7 @@
     },
     "casos": {
       "informe-fiscal-criptomonedas": "Tinc milers d’operacions i no sé quant he guanyat",
-      "revisar-informe-koinly": "El meu informe de Koinly o CoinTracking no quadra",
+      "revisar-informe-koinly-cointracking": "El meu informe de Koinly o CoinTracking no quadra",
       "requerimiento-hacienda-criptomonedas": "He rebut una carta o un requeriment d’Hisenda",
       "inspeccion-hacienda-criptomonedas": "Estic en una inspecció o m’han sancionat",
       "regularizar-criptomonedas": "No vaig declarar criptomonedes en anys anteriors",

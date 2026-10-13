@@ -19,7 +19,7 @@ export const SERVICIO_POR_CLUSTER: Record<string, string> = {
 /** Artículos cuyo tema pide otra página, por encima de su cluster. */
 const POR_ARTICULO: Record<string, string> = {
   "errores-declarar-criptomonedas": "/regularizar-criptomonedas",
-  "herramientas-rastrear-criptomonedas": "/revisar-informe-koinly",
+  "herramientas-rastrear-criptomonedas": "/revisar-informe-koinly-cointracking",
   "modelos-100-721-714-criptomonedas": "/modelo-721-criptomonedas",
   "modelo-714-criptomonedas-patrimonio": "/modelo-721-criptomonedas",
   "directiva-dac8-criptomonedas-exchanges-hacienda": "/requerimiento-hacienda-criptomonedas",

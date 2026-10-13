@@ -1,11 +1,11 @@
 {
-  "title": "Revisar tu informe de Koinly antes de presentarlo a Hacienda",
-  "slug": "revisar-informe-koinly",
-  "nav": "Revisar informe de Koinly",
+  "title": "Revisar tu informe de Koinly o CoinTracking antes de presentarlo a Hacienda",
+  "slug": "revisar-informe-koinly-cointracking",
+  "nav": "Revisar informe de Koinly o CoinTracking",
   "excerpt": "Los errores de Koinly y CoinTracking que más pesan ante Hacienda: transferencias internas contadas como ventas, coste de adquisición cero y spam de tokens. Cómo se corrige el informe antes de presentarlo.",
   "hero": {
     "etiqueta": "Antes de presentarlo",
-    "h1": "Errores de Koinly ante Hacienda: revisamos tu informe antes de que lo presentes",
+    "h1": "Errores de Koinly y CoinTracking ante Hacienda: revisamos tu informe antes de que lo presentes",
     "subheading": "Has pasado tus datos por Koinly, CoinTracking o una herramienta parecida y la ganancia no se parece a lo que crees que ganaste. No hace falta empezar de cero: partimos de tu informe, corregimos lo que el programa resolvió con un valor por defecto y te explicamos cada cambio.",
     "cta": { "label": "Pedir presupuesto", "href": "#diagnostico" },
     "secundaria": { "label": "Ver precios", "href": "#precio" }
@@ -23,7 +23,7 @@
   "sections": [
     {
       "id": "por-que-no-cuadra",
-      "h2": "Por qué tu informe de Koinly no cuadra con lo que ganaste",
+      "h2": "Por qué tu informe de Koinly o CoinTracking no cuadra con lo que ganaste",
       "fondo": "blanco",
       "body": "La herramienta no ha fallado: ha hecho lo que sabe hacer. Lee tus CSV y tus wallets, casa lo que puede casar y, cuando una operación no se puede resolver con certeza, aplica un valor por defecto. Ese valor rara vez es el que corresponde a tu caso.\n\nEl resultado típico es una ganancia inflada. No porque hayas ganado más, sino porque el informe cuenta como ventas movimientos que no lo son y valora a cero tokens que sí tuvieron un coste.\n\nTodo esto tiene arreglo mientras el informe no se haya presentado. Una vez en la AEAT pasa a ser tu declaración, y corregirlo es otro trabajo, más largo y más delicado."
     },
@@ -90,7 +90,7 @@
     },
     {
       "id": "como-revisamos",
-      "h2": "Cómo corregimos tu informe de Koinly",
+      "h2": "Cómo corregimos tu informe de Koinly o CoinTracking",
       "steps": [
         { "title": "Partimos de tu informe, no de cero", "body": "Nos mandas la exportación de Koinly o CoinTracking y las fuentes que la alimentan. La ingesta ya está hecha: auditamos la reconciliación, no rehacemos lo que está bien." },
         { "title": "Aislamos las transferencias entre cuentas tuyas", "body": "Identificamos la titularidad de cada dirección de destino y marcamos como internos los movimientos que lo son. Aquí suele estar la mayor parte de la diferencia." },
@@ -101,7 +101,7 @@
     },
     {
       "id": "alternativa",
-      "h2": "¿Buscas una alternativa a Koinly en España?",
+      "h2": "¿Buscas una alternativa a Koinly o CoinTracking en España?",
       "fondo": "papel",
       "body": "Quizá no la necesites. Koinly, CoinTracking y herramientas parecidas son útiles para procesar volumen, y si ya tienes tus datos cargados, lo más rápido y barato suele ser revisarlos, no migrar a otra herramienta para volver a encontrarte las mismas decisiones sin tomar.\n\nSi en cambio no has empezado, tus datos están repartidos en muchas fuentes o el informe está tan lejos de la realidad que no merece la pena corregirlo, lo que te conviene es un informe hecho desde el principio. Es lo que hacemos en nuestro informe fiscal de criptomonedas."
     },
@@ -110,11 +110,11 @@
       "h2": "Preguntas frecuentes",
       "items": [
         {
-          "q": "¿Koinly sirve para declarar en España?",
-          "a": "Sirve como punto de partida: procesa tus operaciones y puede calcular con FIFO, que es el criterio de la AEAT. Lo que no puede hacer es decidir por ti qué movimientos son tuyos, qué valor tenía un token recibido sin compra o qué es spam. Esas decisiones son las que conviene revisar antes de trasladar las cifras a tu declaración."
+          "q": "¿Koinly o CoinTracking sirven para declarar en España?",
+          "a": "Sirven como punto de partida: procesan tus operaciones y pueden calcular con FIFO, que es el criterio de la AEAT. Lo que no pueden hacer es decidir por ti qué movimientos son tuyos, qué valor tenía un token recibido sin compra o qué es spam. Esas decisiones son las que conviene revisar antes de trasladar las cifras a tu declaración."
         },
         {
-          "q": "¿Y si uso CoinTracking u otra herramienta?",
+          "q": "¿Y si uso otra herramienta?",
           "a": "El trabajo es el mismo. Revisamos la salida de CoinTracking, Koinly, Accointing o similares, y también hojas de cálculo propias. Lo que importa no es qué programa generó el informe, sino cómo resolvió las situaciones dudosas."
         },
         {
@@ -122,7 +122,7 @@
           "a": "Depende de cuántas fuentes de datos alimentan el informe. Si todo viene de un solo exchange es el tramo «Plataforma única», 250 €; de dos o tres exchanges, «Multiexchange», 350 €; si combinas exchanges con wallets propias, DeFi, NFT o acciones hasta tres fuentes, «Cartera mixta», 450 €; y por encima de eso, «Cartera compleja», desde 700 €. Todos los importes llevan el IVA incluido. Te confirmamos el tramo antes de empezar. Tienes el detalle en la página de precios."
         },
         {
-          "q": "¿Necesitáis acceso a mi cuenta de Koinly?",
+          "q": "¿Necesitáis acceso a mi cuenta de Koinly o CoinTracking?",
           "a": "No. Basta con la exportación de tu informe, los CSV de tus exchanges, claves API de solo lectura si lo prefieres y las direcciones públicas de tus wallets. Nunca claves privadas."
         },
         {
@@ -147,15 +147,15 @@
     "button": { "label": "Pedir revisión" }
   },
   "seo": {
-    "title": "Errores de Koinly con Hacienda: revisamos tu informe | Cleriontax",
+    "title": "Errores de Koinly y CoinTracking con Hacienda: revisamos tu informe | Cleriontax",
     "description": "¿Tu informe de Koinly o CoinTracking no cuadra? Corregimos transferencias contadas como ventas, coste cero y spam antes de que lo presentes a Hacienda.",
     "keywords": [
       "errores koinly hacienda",
       "revisar informe koinly",
       "corregir informe koinly",
       "koinly españa",
-      "cointracking españa",
-      "alternativa koinly españa",
+      "cointracking españa", "errores cointracking hacienda", "revisar informe cointracking",
+      "alternativa koinly españa", "alternativa cointracking españa",
       "revisar informe fiscal cripto",
       "informe cripto incorrecto hacienda"
     ]

@@ -47,7 +47,7 @@ export const PAGINAS: Pagina[] = [
     ],
   },
   {
-    slug: "revisar-informe-koinly",
+    slug: "revisar-informe-koinly-cointracking",
     grupo: "cifra",
     forma: "angulo",
     urgente: false,
