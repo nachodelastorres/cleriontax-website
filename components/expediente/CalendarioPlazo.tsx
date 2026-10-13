@@ -43,17 +43,33 @@ export default function CalendarioPlazo({ dia, dias, fases }: Calendario) {
         </div>
 
         <div className="grid gap-y-2 px-2 py-4" style={rejilla}>
-          {fases.map((f, i) => (
-            <div
-              key={i}
-              className={`flex items-center px-3 py-2 text-nota font-semibold ${
-                f.critico ? "bg-rojo text-blanco" : "bg-azul text-blanco"
-              }`}
-              style={{ gridColumn: `${f.desde + 1} / ${f.hasta + 2}`, gridRow: i + 1 }}
-            >
-              <span className="truncate">{f.titulo}</span>
-            </div>
-          ))}
+          {fases.map((f, i) => {
+            // Una fase de un solo día no cabe en su barra: la etiqueta va fuera,
+            // a la derecha, o a la izquierda si es la última columna.
+            const corta = f.desde === f.hasta;
+            const alFinal = f.hasta === dias;
+            return (
+              <div
+                key={i}
+                className={`relative flex min-h-9 items-center text-nota font-semibold ${
+                  f.critico ? "bg-rojo" : "bg-azul"
+                } ${corta ? "" : "px-3 py-2 text-blanco"}`}
+                style={{ gridColumn: `${f.desde + 1} / ${f.hasta + 2}`, gridRow: i + 1 }}
+              >
+                {corta ? (
+                  <span
+                    className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap ${
+                      alFinal ? "right-full mr-3" : "left-full ml-3"
+                    } ${f.critico ? "text-rojo" : "text-azul"}`}
+                  >
+                    {f.titulo}
+                  </span>
+                ) : (
+                  <span className="leading-tight">{f.titulo}</span>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 
