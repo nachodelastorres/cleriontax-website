@@ -38,21 +38,37 @@ export default function AnioFiscal({ locale, ventanas }: { locale: string; venta
           ))}
         </div>
         <div className="grid gap-y-2 px-2 py-4" style={rejilla}>
-          {ventanas.map((v, i) => (
-            <div
-              key={i}
-              className={`flex min-h-9 items-center px-3 py-2 text-nota font-semibold ${
-                v.critico
-                  ? "bg-rojo text-blanco"
-                  : v.tenue
-                    ? "border border-dashed border-pizarra/50 text-pizarra"
-                    : "bg-azul text-blanco"
-              }`}
-              style={{ gridColumn: `${v.desde} / ${v.hasta + 1}`, gridRow: i + 1 }}
-            >
-              <span className="leading-tight">{v.titulo}</span>
-            </div>
-          ))}
+          {ventanas.map((v, i) => {
+            // Una ventana de un mes no cabe en su barra: la etiqueta va fuera, a
+            // la derecha, o a la izquierda en los dos últimos meses.
+            const corta = v.desde === v.hasta;
+            const alFinal = v.hasta >= 11;
+            return (
+              <div
+                key={i}
+                className={`relative flex min-h-9 items-center text-nota font-semibold ${
+                  v.critico
+                    ? "bg-rojo text-blanco"
+                    : v.tenue
+                      ? "border border-dashed border-pizarra/50 text-pizarra"
+                      : "bg-azul text-blanco"
+                } ${corta ? "" : "px-3 py-2"}`}
+                style={{ gridColumn: `${v.desde} / ${v.hasta + 1}`, gridRow: i + 1 }}
+              >
+                {corta ? (
+                  <span
+                    className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap ${
+                      alFinal ? "right-full mr-3" : "left-full ml-3"
+                    } ${v.critico ? "text-rojo" : "text-azul"}`}
+                  >
+                    {v.titulo}
+                  </span>
+                ) : (
+                  <span className="leading-tight">{v.titulo}</span>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 

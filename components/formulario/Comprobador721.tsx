@@ -45,6 +45,8 @@ export default function Comprobador721({ locale, textos }: { locale: string; tex
     style: "currency",
     currency: "EUR",
     maximumFractionDigits: 0,
+    // Separador de miles también en cifras de cuatro dígitos.
+    ...({ useGrouping: "always" } as unknown as Intl.NumberFormatOptions),
   });
 
   const total = saldos.reduce((s, v) => s + aNumero(v), 0);

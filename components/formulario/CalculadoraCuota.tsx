@@ -43,8 +43,11 @@ export default function CalculadoraCuota({
 }) {
   const [texto, setTexto] = useState(String(inicial));
   const loc = locale === "en" ? "en-IE" : `${locale}-ES`;
-  const euros = new Intl.NumberFormat(loc, { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
-  const euros2 = new Intl.NumberFormat(loc, { style: "currency", currency: "EUR", minimumFractionDigits: 2 });
+  // En español Intl no agrupa las cifras de cuatro dígitos; aquí se quiere
+  // siempre, para que 6.000 € y 50.000 € se lean igual.
+  const miles = { useGrouping: "always" } as unknown as Intl.NumberFormatOptions;
+  const euros = new Intl.NumberFormat(loc, { style: "currency", currency: "EUR", maximumFractionDigits: 0, ...miles });
+  const euros2 = new Intl.NumberFormat(loc, { style: "currency", currency: "EUR", minimumFractionDigits: 2, ...miles });
   const pct = new Intl.NumberFormat(loc, { maximumFractionDigits: 1 });
 
   const ganancia = Math.max(0, Number(texto.replace(/[^\d]/g, "")) || 0);
