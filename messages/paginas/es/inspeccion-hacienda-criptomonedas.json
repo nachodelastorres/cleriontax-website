@@ -18,15 +18,15 @@
     },
     "calculadora": {
       "titulo": "Calcula tu plazo",
-      "tramite": "Qué te han notificado",
+      "tramite": "Qué tienes que presentar",
       "opciones": [
         {
-          "etiqueta": "Acta o propuesta de sanción: alegaciones (15 días hábiles)",
+          "etiqueta": "Alegaciones · 15 días hábiles",
           "tipo": "habiles",
           "cantidad": 15
         },
         {
-          "etiqueta": "Liquidación o sanción: recurso o reclamación (1 mes)",
+          "etiqueta": "Recurso o reclamación · 1 mes",
           "tipo": "meses",
           "cantidad": 1
         }

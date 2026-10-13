@@ -18,15 +18,15 @@
     },
     "calculadora": {
       "titulo": "Calcula el teu termini",
-      "tramite": "Què t’han notificat",
+      "tramite": "Què has de presentar",
       "opciones": [
         {
-          "etiqueta": "Acta o proposta de sanció: al·legacions (15 dies hàbils)",
+          "etiqueta": "Al·legacions · 15 dies hàbils",
           "tipo": "habiles",
           "cantidad": 15
         },
         {
-          "etiqueta": "Liquidació o sanció: recurs o reclamació (1 mes)",
+          "etiqueta": "Recurs o reclamació · 1 mes",
           "tipo": "meses",
           "cantidad": 1
         }

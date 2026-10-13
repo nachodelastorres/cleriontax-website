@@ -18,15 +18,15 @@
     },
     "calculadora": {
       "titulo": "Work out your deadline",
-      "tramite": "What you've been notified of",
+      "tramite": "What you need to file",
       "opciones": [
         {
-          "etiqueta": "Report or proposed penalty: submissions (15 working days)",
+          "etiqueta": "Submissions · 15 working days",
           "tipo": "habiles",
           "cantidad": 15
         },
         {
-          "etiqueta": "Assessment or penalty: appeal or claim (1 month)",
+          "etiqueta": "Appeal or claim · 1 month",
           "tipo": "meses",
           "cantidad": 1
         }
