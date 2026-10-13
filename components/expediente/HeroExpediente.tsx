@@ -4,8 +4,8 @@ import CalculadoraPlazo, { type TextosCalculadora } from "@/components/expedient
 /**
  * Cabecera de las páginas de «¿Cómo lo justifico ante la AEAT?».
  *
- * Se aparta a propósito de la de las páginas de cifra: sin patrón, azul plano
- * de lado a lado y una franja roja arriba, porque aquí hay una fecha corriendo.
+ * Se aparta a propósito de la de las páginas de cifra: sin patrón y en azul
+ * plano de lado a lado, porque aquí hay una fecha corriendo.
  * A la derecha, la calculadora de plazo: lo primero que necesita quien llega
  * con una carta de Hacienda es saber cuántos días le quedan.
  */
@@ -28,9 +28,6 @@ export default function HeroExpediente({
 }) {
   return (
     <section className="relative bg-azul">
-      {/* Franja de plazo. Arriba del todo, bajo el menú fijo. */}
-      <div className="absolute inset-x-0 top-16 h-1.5 bg-rojo" aria-hidden="true" />
-
       <div className="mx-auto grid max-w-6xl gap-12 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-[minmax(0,1fr)_26rem] lg:items-center lg:gap-16">
         <div>
           {etiqueta ? (

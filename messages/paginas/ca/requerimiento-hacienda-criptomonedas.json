@@ -25,7 +25,8 @@
       "quedan": "Et queden {n} dies hàbils",
       "hoy": "Venç avui",
       "vencido": "El termini ja ha vençut. Truca’ns: encara es pot fer molt.",
-      "aviso": "Càlcul orientatiu amb deu dies hàbils i festius nacionals. Mana el que digui la teva carta: els festius autonòmics i locals el poden moure."
+      "aviso": "Càlcul orientatiu amb deu dies hàbils i festius nacionals. Mana el que digui la teva carta: els festius autonòmics i locals el poden moure. Amb terminis molt ajustats o encàrrecs d’última hora, el servei pot tenir un cost més alt.",
+      "urgente": "Amb aquest marge la feina és urgent: pot tenir un cost més alt i te’l confirmem abans de començar."
     }
   },
   "toc": [

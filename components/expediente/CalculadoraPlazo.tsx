@@ -24,8 +24,13 @@ export interface TextosCalculadora {
   quedan: string;
   hoy: string;
   vencido: string;
+  /** Con poco margen: el encargo es urgente y puede costar más. */
+  urgente: string;
   aviso: string;
 }
+
+/** Hábiles restantes a partir de los cuales el encargo se considera urgente. */
+const MARGEN_URGENTE = 3;
 
 /** Festivos nacionales fijos (mes 1-12, día). Semana Santa varía y no entra. */
 const FESTIVOS = [
@@ -118,12 +123,18 @@ export default function CalculadoraPlazo({
     const notificacion = sede ? sumarDias(puesta, 10) : puesta;
     const fin = ultimoDia(notificacion, habiles);
     const hoy = aFecha(aValor(new Date()));
+    const presentar = habilAnterior(fin);
+    const quedan = habilesHasta(hoy, fin);
+    const esHoy = fin.getTime() === hoy.getTime();
     return {
       fin,
-      presentar: habilAnterior(fin),
-      quedan: habilesHasta(hoy, fin),
+      presentar,
+      // Si ese día ya es hoy o pasó, no se promete una fecha imposible.
+      presentarPosible: presentar > hoy,
+      quedan,
       vencido: fin < hoy,
-      esHoy: fin.getTime() === hoy.getTime(),
+      esHoy,
+      urgente: esHoy || quedan <= MARGEN_URGENTE,
     };
   }, [valor, sede, habiles]);
 
@@ -165,10 +176,17 @@ export default function CalculadoraPlazo({
               <p className="mt-2 text-nota font-semibold text-rojo">
                 {calculo.esHoy ? textos.hoy : textos.quedan.replace("{n}", String(calculo.quedan))}
               </p>
-              <p className="mt-4 text-nota text-pizarra">
-                {textos.recomendado}{" "}
-                <span className="font-semibold text-azul">{formato.format(calculo.presentar)}</span>
-              </p>
+              {calculo.presentarPosible ? (
+                <p className="mt-4 text-nota text-pizarra">
+                  {textos.recomendado}{" "}
+                  <span className="font-semibold text-azul">{formato.format(calculo.presentar)}</span>
+                </p>
+              ) : null}
+              {calculo.urgente ? (
+                <p className="mt-4 border-l-2 border-rojo bg-rojo/10 px-3 py-2 text-nota text-azul">
+                  {textos.urgente}
+                </p>
+              ) : null}
             </>
           )
         ) : null}

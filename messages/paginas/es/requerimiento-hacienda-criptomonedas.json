@@ -25,7 +25,8 @@
       "quedan": "Te quedan {n} días hábiles",
       "hoy": "Vence hoy",
       "vencido": "El plazo ya ha vencido. Llámanos: todavía se puede hacer mucho.",
-      "aviso": "Cálculo orientativo con diez días hábiles y festivos nacionales. Manda lo que diga tu carta: los festivos autonómicos y locales pueden moverlo."
+      "aviso": "Cálculo orientativo con diez días hábiles y festivos nacionales. Manda lo que diga tu carta: los festivos autonómicos y locales pueden moverlo. Con plazos muy ajustados o encargos de última hora, el servicio puede tener un coste mayor.",
+      "urgente": "Con este margen el trabajo es urgente: puede tener un coste mayor y te lo confirmamos antes de empezar."
     }
   },
   "toc": [

@@ -25,7 +25,8 @@
       "quedan": "{n} working days left",
       "hoy": "It's due today",
       "vencido": "The deadline has passed. Call us: there is still a lot that can be done.",
-      "aviso": "Rough calculation with ten working days and national holidays. Your letter is what counts: regional and local holidays can shift it."
+      "aviso": "Rough calculation with ten working days and national holidays. Your letter is what counts: regional and local holidays can shift it. Very tight deadlines or last-minute requests may increase the cost of the service.",
+      "urgente": "With this little time the work is urgent: it may cost more, and we confirm the price before we start."
     }
   },
   "toc": [
