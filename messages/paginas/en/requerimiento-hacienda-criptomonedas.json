@@ -1,4 +1,5 @@
 {
+  "plantilla": "expediente",
   "title": "Spanish Tax Agency (AEAT) information request about crypto",
   "slug": "requerimiento-hacienda-criptomonedas",
   "nav": "AEAT information request",
@@ -14,74 +15,188 @@
     "secundaria": {
       "label": "Tell us about your case",
       "href": "#diagnostico"
+    },
+    "calculadora": {
+      "titulo": "Work out your deadline",
+      "fecha": "Date of notification",
+      "sede": "It's in the electronic office and I haven't opened it yet",
+      "resultado": "Your last day to reply",
+      "recomendado": "We would file it on",
+      "quedan": "{n} working days left",
+      "hoy": "It's due today",
+      "vencido": "The deadline has passed. Call us: there is still a lot that can be done.",
+      "aviso": "Rough calculation with ten working days and national holidays. Your letter is what counts: regional and local holidays can shift it."
     }
   },
   "toc": [
-    { "id": "que-ha-pasado", "label": "Why you received it" },
-    { "id": "que-has-recibido", "label": "What you've received" },
-    { "id": "el-plazo", "label": "The deadline" },
-    { "id": "antes-de-contestar", "label": "Before you reply" },
-    { "id": "como-lo-resolvemos", "label": "How we resolve it" },
-    { "id": "que-necesitamos", "label": "What we need from you" },
-    { "id": "que-recibes", "label": "What you receive" },
-    { "id": "precio", "label": "Price" },
-    { "id": "faq", "label": "Frequently asked questions" }
+    {
+      "id": "que-ha-pasado",
+      "label": "Why you received it"
+    },
+    {
+      "id": "anatomia",
+      "label": "The letter"
+    },
+    {
+      "id": "que-has-recibido",
+      "label": "What you've received"
+    },
+    {
+      "id": "el-plazo",
+      "label": "The deadline"
+    },
+    {
+      "id": "antes-de-contestar",
+      "label": "Before you reply"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "What we need from you"
+    },
+    {
+      "id": "que-recibes",
+      "label": "What you receive"
+    },
+    {
+      "id": "precio",
+      "label": "Price"
+    },
+    {
+      "id": "faq",
+      "label": "Frequently asked questions"
+    }
   ],
   "sections": [
     {
       "id": "que-ha-pasado",
       "h2": "Why the Spanish tax authorities are asking about your crypto",
-      "body": "You've received a notification from the Spanish Tax Agency (AEAT), by registered mail or on its online portal, asking for information about your crypto transactions in a specific tax year.\n\nIt doesn't mean you've done anything wrong. It means the AEAT holds a figure that doesn't match your tax return, almost always the volume reported to it by an exchange. That cross-check is now automatic and done at scale.\n\nThere are many legitimate reasons why the two numbers might not match. The most common: transfers between your own wallets, which the report counts as transactions even though you haven't sold anything. Also swaps of one token for another that you didn't know were taxable, or the history of an exchange that closed and from which you can no longer download anything."
+      "body": "You've received a notification from the Spanish Tax Agency (AEAT), by registered mail or on its online portal, asking for information about your crypto transactions in a specific tax year.\n\nIt doesn't mean you've done anything wrong. It means the AEAT holds a figure that doesn't match your tax return, almost always the volume reported to it by an exchange. That cross-check is now automatic and done at scale.\n\nThere are many legitimate reasons why the two numbers might not match. The most common: transfers between your own wallets, which the report counts as transactions even though you haven't sold anything. Also swaps of one token for another that you didn't know were taxable, or the history of an exchange that closed and from which you can no longer download anything.",
+      "fondo": "blanco"
+    },
+    {
+      "id": "anatomia",
+      "h2": "What the letter you received says",
+      "entrada": "A sample notification. These are the five things to check before doing anything.",
+      "carta": {
+        "membrete": "Agencia Tributaria",
+        "etiqueta": "Sample notification",
+        "filas": [
+          {
+            "campo": "Procedure",
+            "valor": "Requerimiento de información (information request)",
+            "titulo": "What has been opened",
+            "nota": "It sets the deadline, the scope and how to reply. Check it first: an information request is not the same as a limited review."
+          },
+          {
+            "campo": "Tax and year",
+            "valor": "IRPF (income tax) · Tax year 2024",
+            "titulo": "Which year it covers",
+            "nota": "Only that year is reviewed, but justifying it needs your history since your first purchase: the cost of what you sold comes from earlier."
+          },
+          {
+            "campo": "Deadline",
+            "valor": "Ten working days from the day after notification",
+            "titulo": "When it starts",
+            "nota": "From notification, not from when you read it. In the electronic office it counts after ten calendar days even if you never logged in."
+          },
+          {
+            "campo": "Documents requested",
+            "valor": "Detail of virtual currency transactions and support for the amounts",
+            "titulo": "What they ask for",
+            "nota": "Provide what is asked for and nothing more, with a documented rationale behind it. What you send stays in the file."
+          },
+          {
+            "campo": "Secure verification code",
+            "valor": "A1B2 C3D4 E5F6 G7H8",
+            "titulo": "Whether it's genuine",
+            "nota": "With that code you can check on the AEAT website that the letter is real. Be wary of emails or texts asking for details or payments."
+          }
+        ]
+      },
+      "fondo": "papel"
     },
     {
       "id": "que-has-recibido",
       "h2": "Information request, limited review or inspection: what you're facing",
       "entrada": "The letter states which procedure has been opened. The deadline, the scope and the way to respond all depend on it.",
-      "fondo": "papel",
-      "bullets": [
-        "<strong>Information request (requerimiento de información):</strong> they're asking for specific data. It's the mildest type and doesn't necessarily mean you're under review. The usual deadline to reply is ten working days from notification.",
-        "<strong>Limited review (comprobación limitada):</strong> this is already a tax management procedure with a defined scope. The authorities review specific items of your return, and it may end with a proposed assessment.",
-        "<strong>Proposed assessment (propuesta de liquidación):</strong> they've already calculated what they believe you owe. Now is the time to submit arguments, with your own figures in front of you.",
-        "<strong>Inspection or penalty proceedings:</strong> these are different procedures, with other deadlines and a different defence. If that's your case, we explain it on our page about tax inspections and penalties for crypto."
-      ]
+      "fondo": "blanco",
+      "escalera": {
+        "extremos": {
+          "leve": "Milder",
+          "grave": "More serious"
+        },
+        "actual": "What this page covers",
+        "niveles": [
+          {
+            "titulo": "Information request (requerimiento de información)",
+            "body": "They're asking for specific data. It's the mildest type and doesn't necessarily mean you're under review. The usual deadline to reply is ten working days from notification.",
+            "aqui": true
+          },
+          {
+            "titulo": "Limited review (comprobación limitada)",
+            "body": "This is already a tax management procedure with a defined scope. The authorities review specific items of your return, and it may end with a proposed assessment."
+          },
+          {
+            "titulo": "Proposed assessment (propuesta de liquidación)",
+            "body": "They've already calculated what they believe you owe. Now is the time to submit arguments, with your own figures in front of you."
+          },
+          {
+            "titulo": "Inspection or penalty proceedings",
+            "body": "These are different procedures, with other deadlines and a different defence. If that's your case, we explain it on our page about tax inspections and penalties for crypto.",
+            "href": "/inspeccion-hacienda-criptomonedas",
+            "enlace": "See inspections and penalties"
+          }
+        ]
+      }
     },
     {
       "id": "el-plazo",
       "h2": "Deadline to reply to an AEAT request, day by day",
       "entrada": "The typical pace of an information request with ten working days. Your exact dates depend on the notification.",
-      "hitos": [
-        {
-          "cuando": "Day 0",
-          "titulo": "Notification",
-          "body": "The deadline starts running. On the online portal, if you don't access it, you are deemed notified ten calendar days after it was made available to you: that is the real day 0."
-        },
-        {
-          "cuando": "Days 1–2",
-          "titulo": "Reading and scope",
-          "body": "Which procedure it is, which tax years it covers and exactly what is being requested. This is when to decide whether to ask for an extension; asking late is useless."
-        },
-        {
-          "cuando": "Days 2–6",
-          "titulo": "Rebuilding your activity",
-          "body": "The long stretch, the one that can't be compressed: consolidating exchanges, wallets and protocols for the year and finding the source of the discrepancy."
-        },
-        {
-          "cuando": "Days 7–8",
-          "titulo": "Quantification and strategy",
-          "body": "Comparison with what was declared, quantification of the difference and a decision on what to submit. You review it before anything is filed."
-        },
-        {
-          "cuando": "Day 9",
-          "titulo": "Filing",
-          "body": "We file with a day to spare. Never on the last day: nobody can fix a portal outage on the deadline."
-        },
-        {
-          "cuando": "Day 10",
-          "titulo": "Deadline expires",
-          "body": "Without a reply, the authorities may impose a penalty for failing to respond and issue an assessment with whatever data they hold.",
-          "critico": true
-        }
-      ]
+      "calendario": {
+        "dia": "Day",
+        "dias": 10,
+        "fases": [
+          {
+            "desde": 0,
+            "hasta": 0,
+            "titulo": "Notification",
+            "body": "The deadline starts running. On the online portal, if you don't access it, you are deemed notified ten calendar days after it was made available to you: that is the real day 0."
+          },
+          {
+            "desde": 1,
+            "hasta": 2,
+            "titulo": "Reading and scope",
+            "body": "Which procedure it is, which tax years it covers and exactly what is being requested. This is when to decide whether to ask for an extension; asking late is useless."
+          },
+          {
+            "desde": 2,
+            "hasta": 6,
+            "titulo": "Rebuilding your activity",
+            "body": "The long stretch, the one that can't be compressed: consolidating exchanges, wallets and protocols for the year and finding the source of the discrepancy."
+          },
+          {
+            "desde": 7,
+            "hasta": 8,
+            "titulo": "Quantification and strategy",
+            "body": "Comparison with what was declared, quantification of the difference and a decision on what to submit. You review it before anything is filed."
+          },
+          {
+            "desde": 9,
+            "hasta": 9,
+            "titulo": "Filing",
+            "body": "We file with a day to spare. Never on the last day: nobody can fix a portal outage on the deadline. After that we deal with any further requests and keep you posted until the file is closed."
+          },
+          {
+            "desde": 10,
+            "hasta": 10,
+            "titulo": "Deadline expires",
+            "body": "Without a reply, the authorities may impose a penalty for failing to respond and issue an assessment with whatever data they hold.",
+            "critico": true
+          }
+        ]
+      },
+      "fondo": "papel"
     },
     {
       "id": "cita",
@@ -97,53 +212,33 @@
       "id": "antes-de-contestar",
       "h2": "How to respond to an AEAT request about crypto",
       "entrada": "The difference between a reply that closes the matter and one that opens it usually lies in what's done before writing.",
-      "columnas": [
-        {
-          "titulo": "Replying in a rush",
-          "items": [
-            "Sending the exchange CSV exactly as downloaded.",
-            "Submitting an automated report without reviewing it.",
-            "Explaining the difference without being able to quantify it.",
-            "Filing on the last day."
-          ]
-        },
-        {
-          "titulo": "Replying with rebuilt figures",
-          "correcta": true,
-          "items": [
-            "Working out the real deadline first.",
-            "Rebuilding the full activity for the requested year.",
-            "Explaining each difference with its cause and its evidence.",
-            "Submitting only what's requested, with documented criteria behind it."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "como-lo-resolvemos",
-      "h2": "How we resolve it",
-      "steps": [
-        {
-          "title": "We read the notification and set the deadline",
-          "body": "Which procedure has been opened, which years it covers and how many working days are really left. With electronic notification, the real date isn't always what it seems."
-        },
-        {
-          "title": "We rebuild your activity for the year",
-          "body": "We consolidate exchanges, wallets and protocols until we have the full history. That's almost always where the source of the discrepancy appears: internal transfers counted as sales, undeclared swaps or unreported income."
-        },
-        {
-          "title": "We quantify the difference and its cause",
-          "body": "We compare your real activity with what you declared and with the AEAT's figure. We separate what's your error, what's incomplete data on the authorities' side and what's interpretation."
-        },
-        {
-          "title": "We prepare the reply with its evidence",
-          "body": "We explain beforehand what will be submitted, with what support and which scenarios open up afterwards, including unfavourable ones. Nothing is filed without you knowing what you're signing."
-        },
-        {
-          "title": "We file on time and follow the case",
-          "body": "We handle any further requests that may arrive and keep you informed of every step until it's closed."
-        }
-      ]
+      "contraste": {
+        "antes": "Replying in a rush",
+        "despues": "Replying with rebuilt figures",
+        "filas": [
+          {
+            "aspecto": "Deadline",
+            "antes": "Filing on the last day.",
+            "despues": "Working out the real deadline first."
+          },
+          {
+            "aspecto": "Data",
+            "antes": "Sending the exchange CSV exactly as downloaded.",
+            "despues": "Rebuilding the full activity for the requested year."
+          },
+          {
+            "aspecto": "Report",
+            "antes": "Submitting an automated report without reviewing it.",
+            "despues": "Submitting only what's requested, with documented criteria behind it."
+          },
+          {
+            "aspecto": "Differences",
+            "antes": "Explaining the difference without being able to quantify it.",
+            "despues": "Explaining each difference with its cause and its evidence."
+          }
+        ]
+      },
+      "fondo": "blanco"
     },
     {
       "id": "que-necesitamos",
@@ -178,7 +273,8 @@
           "title": "The scenario map and your reconciled portfolio",
           "body": "What may happen from here and what each outcome would mean. Your portfolio is left reconciled and ready for the following years."
         }
-      ]
+      ],
+      "fondo": "blanco"
     },
     {
       "id": "faq",
@@ -241,5 +337,24 @@
       "requerimiento hacienda criptomonedas",
       "AEAT limited review crypto"
     ]
+  },
+  "precioFases": {
+    "h2": "How much it costs",
+    "entrada": "Before replying you need the figures. What it costs to rebuild them depends on how many data sources need matching, not on what's being claimed.",
+    "reconstruccion": {
+      "titulo": "Rebuilding your figures",
+      "body": "The cost depends on how many data sources need matching, not on what they are claiming from you."
+    },
+    "contestacion": {
+      "titulo": "Replying to the tax agency",
+      "precio": "Fixed quote",
+      "body": "As soon as we've read the notification we tell you what the reply will cost, before we start and with no surprises.",
+      "incluye": [
+        "The reply and its filing on time",
+        "Supporting documentation, organised and with its rationale",
+        "Follow-up on any further requests"
+      ]
+    },
+    "accion": "Ask for a quote"
   }
 }

@@ -1,4 +1,5 @@
 {
+  "plantilla": "expediente",
   "title": "Requerimiento de Hacienda por criptomonedas",
   "slug": "requerimiento-hacienda-criptomonedas",
   "nav": "Requerimiento de Hacienda",
@@ -14,74 +15,188 @@
     "secundaria": {
       "label": "Cuéntanos tu caso",
       "href": "#diagnostico"
+    },
+    "calculadora": {
+      "titulo": "Calcula tu plazo",
+      "fecha": "Fecha de la notificación",
+      "sede": "Está en la sede electrónica y todavía no la he abierto",
+      "resultado": "Tu último día para contestar",
+      "recomendado": "Nosotros lo presentaríamos el",
+      "quedan": "Te quedan {n} días hábiles",
+      "hoy": "Vence hoy",
+      "vencido": "El plazo ya ha vencido. Llámanos: todavía se puede hacer mucho.",
+      "aviso": "Cálculo orientativo con diez días hábiles y festivos nacionales. Manda lo que diga tu carta: los festivos autonómicos y locales pueden moverlo."
     }
   },
   "toc": [
-    { "id": "que-ha-pasado", "label": "Por qué te ha llegado" },
-    { "id": "que-has-recibido", "label": "Qué has recibido" },
-    { "id": "el-plazo", "label": "El plazo" },
-    { "id": "antes-de-contestar", "label": "Antes de contestar" },
-    { "id": "como-lo-resolvemos", "label": "Cómo lo resolvemos" },
-    { "id": "que-necesitamos", "label": "Qué necesitamos de ti" },
-    { "id": "que-recibes", "label": "Qué recibes" },
-    { "id": "precio", "label": "Precio" },
-    { "id": "faq", "label": "Preguntas frecuentes" }
+    {
+      "id": "que-ha-pasado",
+      "label": "Por qué te ha llegado"
+    },
+    {
+      "id": "anatomia",
+      "label": "La carta"
+    },
+    {
+      "id": "que-has-recibido",
+      "label": "Qué has recibido"
+    },
+    {
+      "id": "el-plazo",
+      "label": "El plazo"
+    },
+    {
+      "id": "antes-de-contestar",
+      "label": "Antes de contestar"
+    },
+    {
+      "id": "que-necesitamos",
+      "label": "Qué necesitamos de ti"
+    },
+    {
+      "id": "que-recibes",
+      "label": "Qué recibes"
+    },
+    {
+      "id": "precio",
+      "label": "Precio"
+    },
+    {
+      "id": "faq",
+      "label": "Preguntas frecuentes"
+    }
   ],
   "sections": [
     {
       "id": "que-ha-pasado",
       "h2": "Por qué Hacienda te reclama información sobre tus criptomonedas",
-      "body": "Te ha llegado una notificación de la Agencia Tributaria, por correo certificado o en la sede electrónica, que pide información sobre tus operaciones con criptomonedas de un ejercicio concreto.\n\nNo significa que hayas hecho algo mal. Significa que la AEAT tiene un dato que no cuadra con tu declaración, casi siempre el volumen que le ha comunicado un exchange. Ese cruce hoy es automático y masivo.\n\nHay muchas razones legítimas para que los dos números no coincidan. La más frecuente: las transferencias entre tus propias wallets, que el reporte cuenta como operaciones aunque no hayas vendido nada. También las permutas de un token por otro que no sabías que tributaban, o el histórico de un exchange que cerró y del que ya no puedes descargar nada."
+      "body": "Te ha llegado una notificación de la Agencia Tributaria, por correo certificado o en la sede electrónica, que pide información sobre tus operaciones con criptomonedas de un ejercicio concreto.\n\nNo significa que hayas hecho algo mal. Significa que la AEAT tiene un dato que no cuadra con tu declaración, casi siempre el volumen que le ha comunicado un exchange. Ese cruce hoy es automático y masivo.\n\nHay muchas razones legítimas para que los dos números no coincidan. La más frecuente: las transferencias entre tus propias wallets, que el reporte cuenta como operaciones aunque no hayas vendido nada. También las permutas de un token por otro que no sabías que tributaban, o el histórico de un exchange que cerró y del que ya no puedes descargar nada.",
+      "fondo": "blanco"
+    },
+    {
+      "id": "anatomia",
+      "h2": "Qué dice la carta que te ha llegado",
+      "entrada": "Una notificación de ejemplo. Estos son los cinco datos que hay que mirar antes de hacer nada.",
+      "carta": {
+        "membrete": "Agencia Tributaria",
+        "etiqueta": "Notificación de ejemplo",
+        "filas": [
+          {
+            "campo": "Procedimiento",
+            "valor": "Requerimiento de información",
+            "titulo": "Qué se ha abierto",
+            "nota": "Decide el plazo, el alcance y cómo se responde. Míralo antes que nada: no es lo mismo un requerimiento que una comprobación limitada."
+          },
+          {
+            "campo": "Concepto y ejercicio",
+            "valor": "IRPF · Ejercicio 2024",
+            "titulo": "A qué año se refiere",
+            "nota": "Solo se revisa ese ejercicio, pero para justificarlo hace falta el histórico desde tu primera compra: el coste de lo que vendiste viene de antes."
+          },
+          {
+            "campo": "Plazo",
+            "valor": "Diez días hábiles desde el día siguiente a la notificación",
+            "titulo": "Desde cuándo cuenta",
+            "nota": "Desde la notificación, no desde que la lees. En la sede electrónica cuenta a los diez días naturales aunque no hayas entrado."
+          },
+          {
+            "campo": "Documentación requerida",
+            "valor": "Detalle de las operaciones con monedas virtuales y justificación de los importes",
+            "titulo": "Qué te piden",
+            "nota": "Aporta lo que se pide y nada más, con un criterio documentado detrás. Lo que envíes se queda en el expediente."
+          },
+          {
+            "campo": "Código seguro de verificación",
+            "valor": "A1B2 C3D4 E5F6 G7H8",
+            "titulo": "Si es auténtica",
+            "nota": "Con ese código compruebas en la sede de la AEAT que la carta es real. Desconfía de correos o SMS que piden datos o pagos."
+          }
+        ]
+      },
+      "fondo": "papel"
     },
     {
       "id": "que-has-recibido",
       "h2": "Requerimiento, comprobación limitada o inspección: qué tienes delante",
       "entrada": "La carta dice qué procedimiento se ha abierto. De eso dependen el plazo, el alcance y la forma de responder.",
-      "fondo": "papel",
-      "bullets": [
-        "<strong>Requerimiento de información:</strong> te piden datos concretos. Es el más leve y no implica necesariamente que te estén comprobando. El plazo habitual para contestar es de diez días hábiles desde la notificación.",
-        "<strong>Comprobación limitada:</strong> ya es un procedimiento de gestión con un alcance acotado. La Administración revisa elementos concretos de tu declaración y puede terminar con una propuesta de liquidación.",
-        "<strong>Propuesta de liquidación:</strong> ya han calculado lo que creen que debes. Aquí toca alegar, y hacerlo con tu propia cuantificación delante.",
-        "<strong>Inspección o expediente sancionador:</strong> son procedimientos distintos, con otros plazos y otra defensa. Si es tu caso, lo explicamos en la página de inspección y sanciones de Hacienda por criptomonedas."
-      ]
+      "fondo": "blanco",
+      "escalera": {
+        "extremos": {
+          "leve": "Más leve",
+          "grave": "Más grave"
+        },
+        "actual": "Lo que trata esta página",
+        "niveles": [
+          {
+            "titulo": "Requerimiento de información",
+            "body": "Te piden datos concretos. Es el más leve y no implica necesariamente que te estén comprobando. El plazo habitual para contestar es de diez días hábiles desde la notificación.",
+            "aqui": true
+          },
+          {
+            "titulo": "Comprobación limitada",
+            "body": "Ya es un procedimiento de gestión con un alcance acotado. La Administración revisa elementos concretos de tu declaración y puede terminar con una propuesta de liquidación."
+          },
+          {
+            "titulo": "Propuesta de liquidación",
+            "body": "Ya han calculado lo que creen que debes. Aquí toca alegar, y hacerlo con tu propia cuantificación delante."
+          },
+          {
+            "titulo": "Inspección o expediente sancionador",
+            "body": "Son procedimientos distintos, con otros plazos y otra defensa. Si es tu caso, lo explicamos en la página de inspección y sanciones de Hacienda por criptomonedas.",
+            "href": "/inspeccion-hacienda-criptomonedas",
+            "enlace": "Ver inspección y sanciones"
+          }
+        ]
+      }
     },
     {
       "id": "el-plazo",
       "h2": "Plazo para responder un requerimiento de Hacienda, día a día",
       "entrada": "El ritmo típico de un requerimiento de información con diez días hábiles. Tus fechas concretas dependen de la notificación.",
-      "hitos": [
-        {
-          "cuando": "Día 0",
-          "titulo": "Notificación",
-          "body": "Empieza a correr el plazo. En la sede electrónica, si no accedes, se entiende notificado a los diez días naturales de ponerse a tu disposición: ese es el día 0 real."
-        },
-        {
-          "cuando": "Días 1–2",
-          "titulo": "Lectura y alcance",
-          "body": "Qué procedimiento es, qué ejercicios abarca y qué se pide exactamente. Aquí se decide si conviene pedir ampliación de plazo; pedirla tarde no sirve."
-        },
-        {
-          "cuando": "Días 2–6",
-          "titulo": "Reconstrucción de la operativa",
-          "body": "El tramo largo, el que no se puede comprimir: consolidar exchanges, wallets y protocolos del ejercicio y localizar el origen de la discrepancia."
-        },
-        {
-          "cuando": "Días 7–8",
-          "titulo": "Cuantificación y estrategia",
-          "body": "Contraste con lo declarado, cuantificación de la diferencia y decisión sobre qué se aporta. Lo revisas antes de que se presente nada."
-        },
-        {
-          "cuando": "Día 9",
-          "titulo": "Presentación",
-          "body": "Se presenta con un día de margen. Nunca el último: una incidencia en la sede el día del vencimiento no la arregla nadie."
-        },
-        {
-          "cuando": "Día 10",
-          "titulo": "Vence el plazo",
-          "body": "Sin respuesta, la Administración puede sancionar por no atender el requerimiento y liquidar con los datos que tenga.",
-          "critico": true
-        }
-      ]
+      "calendario": {
+        "dia": "Día",
+        "dias": 10,
+        "fases": [
+          {
+            "desde": 0,
+            "hasta": 0,
+            "titulo": "Notificación",
+            "body": "Empieza a correr el plazo. En la sede electrónica, si no accedes, se entiende notificado a los diez días naturales de ponerse a tu disposición: ese es el día 0 real."
+          },
+          {
+            "desde": 1,
+            "hasta": 2,
+            "titulo": "Lectura y alcance",
+            "body": "Qué procedimiento es, qué ejercicios abarca y qué se pide exactamente. Aquí se decide si conviene pedir ampliación de plazo; pedirla tarde no sirve."
+          },
+          {
+            "desde": 2,
+            "hasta": 6,
+            "titulo": "Reconstrucción de la operativa",
+            "body": "El tramo largo, el que no se puede comprimir: consolidar exchanges, wallets y protocolos del ejercicio y localizar el origen de la discrepancia."
+          },
+          {
+            "desde": 7,
+            "hasta": 8,
+            "titulo": "Cuantificación y estrategia",
+            "body": "Contraste con lo declarado, cuantificación de la diferencia y decisión sobre qué se aporta. Lo revisas antes de que se presente nada."
+          },
+          {
+            "desde": 9,
+            "hasta": 9,
+            "titulo": "Presentación",
+            "body": "Se presenta con un día de margen. Nunca el último: una incidencia en la sede el día del vencimiento no la arregla nadie. Después atendemos los requerimientos que puedan llegar y te mantenemos al tanto hasta que se cierre el expediente."
+          },
+          {
+            "desde": 10,
+            "hasta": 10,
+            "titulo": "Vence el plazo",
+            "body": "Sin respuesta, la Administración puede sancionar por no atender el requerimiento y liquidar con los datos que tenga.",
+            "critico": true
+          }
+        ]
+      },
+      "fondo": "papel"
     },
     {
       "id": "cita",
@@ -97,53 +212,33 @@
       "id": "antes-de-contestar",
       "h2": "Cómo responder un requerimiento de Hacienda por criptomonedas",
       "entrada": "La diferencia entre una respuesta que cierra el asunto y una que lo abre suele estar en lo que se hace antes de escribir.",
-      "columnas": [
-        {
-          "titulo": "Contestar deprisa",
-          "items": [
-            "Enviar el CSV del exchange tal cual se descarga.",
-            "Aportar un informe automático sin revisar.",
-            "Explicar la diferencia sin poder cuantificarla.",
-            "Presentar el último día."
-          ]
-        },
-        {
-          "titulo": "Contestar con las cifras reconstruidas",
-          "correcta": true,
-          "items": [
-            "Calcular primero la fecha límite real.",
-            "Reconstruir la operativa completa del ejercicio requerido.",
-            "Explicar cada diferencia con su causa y su prueba.",
-            "Aportar solo lo que se pide, con un criterio documentado detrás."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "como-lo-resolvemos",
-      "h2": "Cómo lo resolvemos",
-      "steps": [
-        {
-          "title": "Leemos la notificación y fijamos la fecha límite",
-          "body": "Qué procedimiento se ha abierto, qué ejercicios abarca y cuántos días hábiles quedan de verdad. En notificación electrónica la fecha real no siempre es la que parece."
-        },
-        {
-          "title": "Reconstruimos tu operativa del ejercicio",
-          "body": "Consolidamos exchanges, wallets y protocolos hasta tener el histórico completo. Ahí aparece casi siempre el origen de la discrepancia: movimientos internos contados como ventas, permutas sin declarar o rendimientos sin imputar."
-        },
-        {
-          "title": "Cuantificamos la diferencia y su causa",
-          "body": "Comparamos tu operativa real con lo declarado y con el dato de la AEAT. Separamos qué es un error tuyo, qué es un dato incompleto de la Administración y qué es interpretación."
-        },
-        {
-          "title": "Preparamos la respuesta con su prueba",
-          "body": "Te explicamos antes qué se va a aportar, con qué respaldo y qué escenarios se abren después, también los desfavorables. No se presenta nada sin que sepas qué firmas."
-        },
-        {
-          "title": "Presentamos en plazo y seguimos el expediente",
-          "body": "Atendemos los requerimientos sucesivos que puedan llegar y te mantenemos al tanto de cada movimiento hasta que se cierre."
-        }
-      ]
+      "contraste": {
+        "antes": "Contestar deprisa",
+        "despues": "Contestar con las cifras reconstruidas",
+        "filas": [
+          {
+            "aspecto": "Plazo",
+            "antes": "Presentar el último día.",
+            "despues": "Calcular primero la fecha límite real."
+          },
+          {
+            "aspecto": "Datos",
+            "antes": "Enviar el CSV del exchange tal cual se descarga.",
+            "despues": "Reconstruir la operativa completa del ejercicio requerido."
+          },
+          {
+            "aspecto": "Informe",
+            "antes": "Aportar un informe automático sin revisar.",
+            "despues": "Aportar solo lo que se pide, con un criterio documentado detrás."
+          },
+          {
+            "aspecto": "Diferencias",
+            "antes": "Explicar la diferencia sin poder cuantificarla.",
+            "despues": "Explicar cada diferencia con su causa y su prueba."
+          }
+        ]
+      },
+      "fondo": "blanco"
     },
     {
       "id": "que-necesitamos",
@@ -178,7 +273,8 @@
           "title": "El mapa de escenarios y tu cartera conciliada",
           "body": "Qué puede pasar a partir de aquí y qué implicaría cada salida. La cartera queda conciliada y te sirve para los ejercicios siguientes."
         }
-      ]
+      ],
+      "fondo": "blanco"
     },
     {
       "id": "faq",
@@ -242,5 +338,24 @@
       "requerimiento información criptomonedas",
       "comprobación limitada criptomonedas"
     ]
+  },
+  "precioFases": {
+    "h2": "Cuánto cuesta",
+    "entrada": "Antes de contestar hay que tener las cifras. Lo que cuesta reconstruirlas depende de cuántas fuentes de datos hay que casar, no de lo que te reclamen.",
+    "reconstruccion": {
+      "titulo": "Reconstruir tus cifras",
+      "body": "Lo que cuesta depende de cuántas fuentes de datos hay que casar, no de lo que te reclamen."
+    },
+    "contestacion": {
+      "titulo": "Contestar a Hacienda",
+      "precio": "Presupuesto cerrado",
+      "body": "En cuanto leemos la notificación te decimos qué cuesta la contestación, antes de empezar y sin sorpresas.",
+      "incluye": [
+        "El escrito de contestación y su presentación en plazo",
+        "La documentación de soporte, ordenada y con su criterio",
+        "El seguimiento de los requerimientos que lleguen después"
+      ]
+    },
+    "accion": "Pedir presupuesto"
   }
 }

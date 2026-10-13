@@ -20,6 +20,9 @@ import {
   type NombreForma,
 } from "@/components/secciones/Bloques";
 import type { FilaDato } from "@/components/brand/TablaDatos";
+import AnatomiaCarta, { type Carta } from "@/components/expediente/AnatomiaCarta";
+import EscaleraGravedad, { type Escalera } from "@/components/expediente/EscaleraGravedad";
+import CalendarioPlazo, { type Calendario } from "@/components/expediente/CalendarioPlazo";
 
 /**
  * Renderiza las secciones de una página.
@@ -50,6 +53,10 @@ export interface Seccion {
   hitos?: Hito[];
   columnas?: Columna[];
   contraste?: Contraste;
+  /* Bloques de las páginas de «¿Cómo lo justifico ante la AEAT?». */
+  carta?: Carta;
+  escalera?: Escalera;
+  calendario?: Calendario;
   /** Franja final que lleva a otra página de servicio. */
   derivacion?: Derivacion;
   formas?: PasoForma[];
@@ -264,6 +271,9 @@ export default function SeccionesServicio({
               {s.hitos ? <BloqueCronologia hitos={s.hitos} /> : null}
               {s.columnas ? <BloqueComparativa columnas={s.columnas} locale={locale} /> : null}
               {s.contraste ? <BloqueContraste {...s.contraste} /> : null}
+              {s.carta ? <AnatomiaCarta {...s.carta} /> : null}
+              {s.escalera ? <EscaleraGravedad {...s.escalera} locale={locale} /> : null}
+              {s.calendario ? <CalendarioPlazo {...s.calendario} /> : null}
               {s.formas ? <BloqueFormas pasos={s.formas} oscuro={oscuro} /> : null}
               {s.tabla ? <BloqueTabla {...s.tabla} /> : null}
               {s.bullets ? (

@@ -1,0 +1,180 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+
+/**
+ * Calculadora de plazo — páginas de «¿Cómo lo justifico ante la AEAT?».
+ *
+ * Cuenta días hábiles desde el día siguiente a la notificación, saltando
+ * sábados, domingos y festivos nacionales. En la sede electrónica, si no se ha
+ * abierto, la notificación se da por hecha a los diez días naturales de
+ * ponerse a disposición, y desde ahí empieza a contar.
+ *
+ * Es orientativa y lo dice: los festivos autonómicos y locales no entran, y
+ * manda lo que diga la carta.
+ */
+
+export interface TextosCalculadora {
+  titulo: string;
+  fecha: string;
+  sede: string;
+  resultado: string;
+  recomendado: string;
+  /** Con {n}: días hábiles que quedan. */
+  quedan: string;
+  hoy: string;
+  vencido: string;
+  aviso: string;
+}
+
+/** Festivos nacionales fijos (mes 1-12, día). Semana Santa varía y no entra. */
+const FESTIVOS = [
+  [1, 1],
+  [1, 6],
+  [5, 1],
+  [8, 15],
+  [10, 12],
+  [11, 1],
+  [12, 6],
+  [12, 8],
+  [12, 25],
+];
+
+function esHabil(d: Date) {
+  const dia = d.getDay();
+  if (dia === 0 || dia === 6) return false;
+  return !FESTIVOS.some(([m, n]) => d.getMonth() + 1 === m && d.getDate() === n);
+}
+
+function sumarDias(d: Date, n: number) {
+  const r = new Date(d);
+  r.setDate(r.getDate() + n);
+  return r;
+}
+
+function ultimoDia(notificacion: Date, habiles: number) {
+  let d = notificacion;
+  let contados = 0;
+  while (contados < habiles) {
+    d = sumarDias(d, 1);
+    if (esHabil(d)) contados++;
+  }
+  return d;
+}
+
+function habilAnterior(d: Date) {
+  let r = sumarDias(d, -1);
+  while (!esHabil(r)) r = sumarDias(r, -1);
+  return r;
+}
+
+/** Hábiles entre mañana y `fin`, ambos incluidos. */
+function habilesHasta(hoy: Date, fin: Date) {
+  let n = 0;
+  let d = hoy;
+  while (d < fin) {
+    d = sumarDias(d, 1);
+    if (esHabil(d)) n++;
+  }
+  return n;
+}
+
+function aFecha(valor: string) {
+  const [y, m, d] = valor.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function aValor(d: Date) {
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+export default function CalculadoraPlazo({
+  locale,
+  textos,
+  habiles = 10,
+}: {
+  locale: string;
+  textos: TextosCalculadora;
+  habiles?: number;
+}) {
+  // La fecha de hoy se pone al montar: calculada en el servidor podría ser otra
+  // por la zona horaria y no casaría con lo que pinta el navegador.
+  const [valor, setValor] = useState("");
+  const [sede, setSede] = useState(false);
+  useEffect(() => setValor(aValor(new Date())), []);
+
+  const formato = new Intl.DateTimeFormat(locale === "en" ? "en-GB" : `${locale}-ES`, {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+  const calculo = useMemo(() => {
+    if (!valor) return null;
+    const puesta = aFecha(valor);
+    if (Number.isNaN(puesta.getTime())) return null;
+    const notificacion = sede ? sumarDias(puesta, 10) : puesta;
+    const fin = ultimoDia(notificacion, habiles);
+    const hoy = aFecha(aValor(new Date()));
+    return {
+      fin,
+      presentar: habilAnterior(fin),
+      quedan: habilesHasta(hoy, fin),
+      vencido: fin < hoy,
+      esHoy: fin.getTime() === hoy.getTime(),
+    };
+  }, [valor, sede, habiles]);
+
+  return (
+    <div className="bg-blanco p-6 text-azul md:p-8">
+      <p className="text-subtitulo">{textos.titulo}</p>
+
+      <label className="mt-5 block text-nota text-pizarra" htmlFor="fecha-notificacion">
+        {textos.fecha}
+      </label>
+      <input
+        id="fecha-notificacion"
+        type="date"
+        value={valor}
+        onChange={(e) => setValor(e.target.value)}
+        className="mt-2 h-12 w-full border border-niebla bg-blanco px-3 text-lectura text-azul focus:border-azul focus:outline-none"
+      />
+
+      <label className="mt-4 flex cursor-pointer items-start gap-3 text-nota text-pizarra">
+        <input
+          type="checkbox"
+          checked={sede}
+          onChange={(e) => setSede(e.target.checked)}
+          className="mt-1 h-4 w-4 flex-none accent-rojo"
+        />
+        {textos.sede}
+      </label>
+
+      <div className="mt-6 border-t border-niebla pt-6" aria-live="polite">
+        {calculo ? (
+          calculo.vencido ? (
+            <p className="text-lectura font-semibold text-rojo">{textos.vencido}</p>
+          ) : (
+            <>
+              <p className="text-nota text-pizarra">{textos.resultado}</p>
+              <p className="mt-1 font-dato text-[28px] font-semibold leading-tight tracking-[-0.02em] first-letter:uppercase">
+                {formato.format(calculo.fin)}
+              </p>
+              <p className="mt-2 text-nota font-semibold text-rojo">
+                {calculo.esHoy ? textos.hoy : textos.quedan.replace("{n}", String(calculo.quedan))}
+              </p>
+              <p className="mt-4 text-nota text-pizarra">
+                {textos.recomendado}{" "}
+                <span className="font-semibold text-azul">{formato.format(calculo.presentar)}</span>
+              </p>
+            </>
+          )
+        ) : null}
+      </div>
+
+      <p className="mt-6 text-dato text-pizarra">{textos.aviso}</p>
+    </div>
+  );
+}

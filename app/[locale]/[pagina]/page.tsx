@@ -12,6 +12,9 @@ import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 import { SLUGS_PAGINA, getPagina } from "@/lib/paginas";
 import { TARIFAS } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
+import HeroExpediente from "@/components/expediente/HeroExpediente";
+import PrecioFases, { type TextosPrecioFases } from "@/components/expediente/PrecioFases";
+import type { TextosCalculadora } from "@/components/expediente/CalculadoraPlazo";
 import IndiceServicio from "@/components/services/IndiceServicio";
 import SeccionesServicio, { type Seccion } from "@/components/services/SeccionesServicio";
 import Tarifas from "@/components/precios/Tarifas";
@@ -38,6 +41,12 @@ export async function generateStaticParams() {
 }
 
 interface Contenido {
+  /**
+   * «expediente»: plantilla de las páginas de «¿Cómo lo justifico ante la
+   * AEAT?», con calculadora de plazo y precio en dos partes. Sin ella, la de
+   * siempre.
+   */
+  plantilla?: "expediente";
   title: string;
   excerpt: string;
   hero: {
@@ -46,10 +55,13 @@ interface Contenido {
     subheading: string;
     cta?: { label: string; href: string };
     secundaria?: { label: string; href: string };
+    calculadora?: TextosCalculadora;
   };
   toc: { id: string; label: string }[];
   sections: Seccion[];
   tarifas?: { h2: string; entrada?: string; nota?: string };
+  /** Precio en dos partes, solo en la plantilla expediente. */
+  precioFases?: TextosPrecioFases;
   cierre: { h2: string; body: string; button?: { label: string } };
   seo: { title: string; description: string; keywords?: string[] };
 }
@@ -99,6 +111,7 @@ export default async function PaginaServicio({ params }: Props) {
   const contenido = sections.filter((s) => s.id !== "faq");
   const faq = sections.find((s) => s.id === "faq");
   const conTarifas = meta.tarifas && tarifas;
+  const expediente = datos.plantilla === "expediente";
 
   /* ---------------------------------------------------------- Datos estructurados */
 
@@ -159,20 +172,34 @@ export default async function PaginaServicio({ params }: Props) {
         />
       ))}
 
-      <HeroPagina
-        id={pagina}
-        etiqueta={hero.etiqueta}
-        titulo={hero.h1}
-        entrada={hero.subheading}
-        accion={hero.cta}
-        secundaria={hero.secundaria}
-      />
+      {expediente ? (
+        <HeroExpediente
+          locale={locale}
+          etiqueta={hero.etiqueta}
+          titulo={hero.h1}
+          entrada={hero.subheading}
+          accion={hero.cta}
+          secundaria={hero.secundaria}
+          calculadora={hero.calculadora}
+        />
+      ) : (
+        <HeroPagina
+          id={pagina}
+          etiqueta={hero.etiqueta}
+          titulo={hero.h1}
+          entrada={hero.subheading}
+          accion={hero.cta}
+          secundaria={hero.secundaria}
+        />
+      )}
 
       <IndiceServicio items={toc} />
 
       <SeccionesServicio secciones={contenido} locale={locale} />
 
-      {conTarifas ? (
+      {expediente && datos.precioFases ? (
+        <PrecioFases locale={locale} textos={datos.precioFases} />
+      ) : conTarifas ? (
         <Tarifas
           locale={locale}
           titulo={tarifas.h2}
