@@ -5,6 +5,12 @@
 
 import { WithContext } from 'schema-dts';
 import type { Locale } from './types';
+import { PAGINAS, rutaPagina } from '@/lib/paginas';
+import es from '@/messages/es.json';
+import en from '@/messages/en.json';
+import ca from '@/messages/ca.json';
+
+const NOMBRES = { es: es.paginas.nombres, en: en.paginas.nombres, ca: ca.paginas.nombres };
 
 interface OrganizationSchemaConfig {
   locale: Locale;
@@ -27,27 +33,11 @@ export function generateOrganizationSchema(
     ca: 'Assessoria fiscal especialitzada en criptomonedes, DeFi i carteres complexes. Convertim milers de transaccions d’exchanges, wallets i blockchains en un informe fiscal traçable, amb l’origen i el criteri de cada xifra.'
   };
 
-  // Las cuatro líneas del manual v1.1, §02.
-  const serviceTypes: Record<Locale, string[]> = {
-    es: [
-      'Informe fiscal de criptomonedas',
-      'Declaración de la renta cripto',
-      'Litigación fiscal de criptomonedas',
-      'Asesoría fiscal de criptomonedas'
-    ],
-    en: [
-      'Crypto tax report',
-      'Crypto income tax return',
-      'Crypto tax litigation',
-      'Crypto tax advisory'
-    ],
-    ca: [
-      'Informe fiscal de criptomonedes',
-      'Declaració de la renda cripto',
-      'Litigació fiscal de criptomonedes',
-      'Assessoria fiscal de criptomonedes'
-    ]
-  };
+  // Los siete servicios (lib/paginas.ts), con el nombre del menú y su URL en cada idioma.
+  const servicios = PAGINAS.map((p) => ({
+    nombre: (NOMBRES[locale] as Record<string, string>)[p.slug],
+    url: `${baseUrl}/${locale}${rutaPagina(p.slug, locale)}`,
+  }));
 
   // Knowledge areas - important for SEO
   const knowledgeAreas = [
@@ -117,7 +107,7 @@ export function generateOrganizationSchema(
       name: 'Spain',
       alternateName: 'España'
     },
-    serviceType: serviceTypes[locale],
+    serviceType: servicios.map((x) => x.nombre),
     priceRange: '$$',
     knowsAbout: knowledgeAreas,
     knowsLanguage: [
@@ -150,18 +140,20 @@ export function generateOrganizationSchema(
     //   'https://twitter.com/cleriontax'
     // ],
 
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Benavides Asociados'
+    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: serviceTypes[locale].join(', '),
-      itemListElement: serviceTypes[locale].map((service, index) => ({
+      name: 'Cleriontax',
+      itemListElement: servicios.map((servicio) => ({
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: service,
-          provider: {
-            '@type': 'ProfessionalService',
-            '@id': `${baseUrl}/#organization`
-          }
+          name: servicio.nombre,
+          url: servicio.url,
+          provider: { '@id': `${baseUrl}/#organization` }
         }
       }))
     }

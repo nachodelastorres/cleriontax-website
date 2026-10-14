@@ -98,7 +98,7 @@
         "pregunta": "Encara no has començat o el teu informe és molt lluny de la realitat?",
         "apoyo": "Et convé un informe fet des del principi, amb totes les teves fonts reconciliades.",
         "accion": "Veure l’informe fiscal de criptomonedes",
-        "href": "/informe-fiscal-criptomonedas"
+        "href": "/informe-fiscal-criptomonedes"
       }
     },
     {
@@ -143,7 +143,7 @@
     "button": { "label": "Demanar revisió" }
   },
   "seo": {
-    "title": "Errors de Koinly i CoinTracking amb Hisenda: revisem el teu informe | Cleriontax",
+    "title": "Errors de Koinly i CoinTracking davant Hisenda",
     "description": "El teu informe de Koinly o CoinTracking no quadra? Corregim transferències comptades com a vendes, cost zero i spam abans que el presentis a Hisenda.",
     "keywords": [
       "errors koinly hisenda",

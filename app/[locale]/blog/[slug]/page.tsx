@@ -11,10 +11,9 @@ import BlogContentStorytelling from "@/components/blog/BlogContentStorytelling";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogCard from "@/components/blog/BlogCard";
 import ButtonLink from "@/components/ui/ButtonLink";
-import { Calendar, Clock, Tag, Share2, ArrowLeft, Folder, FileText } from "lucide-react";
+import { Calendar, Clock, Tag, ArrowLeft, Folder, FileText } from "lucide-react";
 import {
   generateBlogBreadcrumbSchema,
-  generatePersonSchema,
   getOrganizationReference
 } from "@/lib/schemas";
 import clustersConfig from "@/messages/blog-posts/clusters-config.json";
@@ -142,13 +141,9 @@ export default async function BlogPostPage({ params }: Props) {
     baseUrl: SITE_URL
   });
 
-  // Person/Author Schema
-  const authorSchema = generatePersonSchema({
-    name: post.author.name,
-    role: post.author.role,
-    avatar: post.author.avatar,
-    baseUrl: SITE_URL
-  });
+  // El autor es la organización: «Equipo Cleriontax» no es una persona y su
+  // foto no existía. Cuando cada artículo tenga firma real, irá aquí un Person.
+  const authorSchema = getOrganizationReference(SITE_URL);
 
   // Enhanced BlogPosting Schema
   const structuredData = {
@@ -160,9 +155,8 @@ export default async function BlogPostPage({ params }: Props) {
     "description": post.excerpt,
     "image": {
       "@type": "ImageObject",
-      "url": post.image.url,
-      "width": post.image.width,
-      "height": post.image.height,
+      // Google exige URL absoluta.
+      "url": post.image.url.startsWith("http") ? post.image.url : `${SITE_URL}${post.image.url}`,
       "caption": post.image.alt
     },
     "datePublished": post.publishedAt,
@@ -195,13 +189,6 @@ export default async function BlogPostPage({ params }: Props) {
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
-      {/* Structured Data - Author */}
-      <script
-        id="author-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
       />
 
       {/* Structured Data - BlogPosting */}
@@ -342,16 +329,16 @@ export default async function BlogPostPage({ params }: Props) {
                     <div className="flex-1">
                       <div className="mb-3">
                         <span className="text-xs font-bold text-azul uppercase tracking-wider">
-                          Cluster Temático
+                          {t('articulo.tema')}
                         </span>
                       </div>
                       <Link
                         href={`/${locale}/blog/tema/${post.cluster}`}
                         className="group inline-block"
                       >
-                        <h3 className="text-2xl font-bold text-azul mb-3 group-hover:text-rojo transition-colors">
+                        <p className="text-2xl font-bold text-azul mb-3 group-hover:text-rojo transition-colors">
                           {clusterName}
-                        </h3>
+                        </p>
                       </Link>
                       <p className="text-pizarra mb-4 leading-relaxed">
                         {clusterDescription}
@@ -367,7 +354,7 @@ export default async function BlogPostPage({ params }: Props) {
                         href={`/${locale}/blog/tema/${post.cluster}`}
                         className="inline-flex items-center gap-2 text-sm font-semibold text-azul hover:text-rojo transition-colors"
                       >
-                        Ver todos los artículos del cluster →
+                        {t('articulo.verTodos')}
                       </Link>
                     </div>
                   </div>
@@ -375,10 +362,10 @@ export default async function BlogPostPage({ params }: Props) {
                   {/* Posts relacionados del cluster */}
                   {clusterRelatedPosts.length > 0 && (
                     <div className="bg-blanco p-8 border border-niebla">
-                      <h4 className="text-lg font-bold text-azul mb-6 flex items-center gap-2">
+                      <p className="text-lg font-bold text-azul mb-6 flex items-center gap-2">
                         <FileText className="w-5 h-5" />
-                        Artículos Relacionados en este Cluster
-                      </h4>
+                        {t('articulo.relacionados')}
+                      </p>
                       <div className="grid grid-cols-1 gap-4">
                         {clusterRelatedPosts.map((relatedPost) => (
                           <Link
@@ -397,15 +384,15 @@ export default async function BlogPostPage({ params }: Props) {
                                 />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <h5 className="font-semibold text-azul group-hover:text-rojo transition-colors line-clamp-2 mb-1">
+                                <p className="font-semibold text-azul group-hover:text-rojo transition-colors line-clamp-2 mb-1">
                                   {relatedPost.title}
-                                </h5>
+                                </p>
                                 <p className="text-xs text-pizarra">
-                                  {new Date(relatedPost.publishedAt).toLocaleDateString('es-ES', {
+                                  {new Date(relatedPost.publishedAt).toLocaleDateString(locale === 'en' ? 'en-GB' : `${locale}-ES`, {
                                     year: 'numeric',
                                     month: 'short',
                                     day: 'numeric'
-                                  })} • {relatedPost.readingTime} min lectura
+                                  })} • {relatedPost.readingTime} {t('articulo.minLectura')}
                                 </p>
                               </div>
                             </div>
@@ -477,27 +464,6 @@ export default async function BlogPostPage({ params }: Props) {
           </Container>
         </section>
 
-        {/* Share Section */}
-        <section className="py-12 bg-papel">
-          <Container>
-            <div className="max-w-4xl mx-auto">
-              <div className="flex items-center justify-between p-6 bg-blanco border border-niebla">
-                <div>
-                  <h3 className="text-lg font-bold text-azul mb-1">
-                    {t('post.shareSection.title')}
-                  </h3>
-                  <p className="text-sm text-pizarra">
-                    {t('post.shareSection.description')}
-                  </p>
-                </div>
-                <button className="flex items-center gap-2 px-6 py-3 bg-rojo text-blanco hover:bg-rojo transition-colors duration-300 font-semibold">
-                  <Share2 className="w-5 h-5" />
-                  {t('post.shareSection.button')}
-                </button>
-              </div>
-            </div>
-          </Container>
-        </section>
       </article>
 
       {/* Related Articles */}
@@ -512,12 +478,12 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="mb-12">
                 <h2 className="text-3xl font-bold text-azul mb-4">
                   {isClusterRelated && clusterName
-                    ? `Más artículos del cluster: ${clusterName}`
+                    ? t('articulo.masDelTema', { tema: clusterName })
                     : t('post.relatedArticles.title')}
                 </h2>
                 <p className="text-lg text-pizarra">
                   {isClusterRelated
-                    ? 'Explora más contenido relacionado dentro de este cluster temático'
+                    ? t('articulo.masDelTemaApoyo')
                     : t('post.relatedArticles.description')}
                 </p>
               </div>

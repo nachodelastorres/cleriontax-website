@@ -34,7 +34,7 @@
   },
   "seo": {
     "home": {
-      "title": "Crypto tax advisory and crypto income tax returns in Spain | Cleriontax",
+      "title": "Crypto tax advisory and tax returns in Spain",
       "description": "Crypto tax reports reviewed transaction by transaction, Spanish income tax returns, form 721 and defence against AEAT requests and inspections."
     },
     "services": {
@@ -42,7 +42,7 @@
       "description": "Plans starting at €600 for your crypto tax return. IRPF report, form 100, forms 720/721. Trading, staking, DeFi, NFTs. Data analysis + specialized tax advisory for crypto investors in Spain."
     },
     "blog": {
-      "title": "Taxation and Investment Blog | Crypto, Stocks, and Data Analysis Guides | Cleriontax",
+      "title": "Crypto tax blog: guides and worked cases",
       "description": "Guides on crypto and investment taxation in Spain with worked numerical examples: personal income tax, forms 100, 714 and 721, the FIFO rule, DeFi, loss offsetting and AEAT rules."
     },
     "site": {
@@ -420,6 +420,14 @@
       "texto": "If the above matches your situation, see how we handle it before deciding anything. Or tell us about it directly, if you prefer.",
       "verServicio": "See how we handle it",
       "contar": "Tell us about your case"
+    },
+    "articulo": {
+      "tema": "Topic",
+      "verTodos": "See all articles on this topic →",
+      "relacionados": "More articles on this topic",
+      "minLectura": "min read",
+      "masDelTema": "More articles on {tema}",
+      "masDelTemaApoyo": "Keep reading on the same topic."
     }
   },
   "blogCTA": {
@@ -489,7 +497,7 @@
       }
     },
     "page": {
-      "title": "Cookie Policy",
+      "title": "Cookie policy",
       "lastUpdated": "Last updated",
       "intro": "At Cleriontax we use cookies and similar technologies to improve your browsing experience, analyze website traffic, and personalize content. This policy explains what cookies are, how we use them, and how you can manage them.",
       "sections": {
@@ -547,7 +555,7 @@
   },
   "privacy": {
     "page": {
-      "title": "Privacy Policy",
+      "title": "Privacy policy",
       "lastUpdated": "Last updated",
       "intro": "At Cleriontax we take the protection of your personal data very seriously. This privacy policy describes how we collect, use, and protect your personal information in accordance with the General Data Protection Regulation (GDPR) and the Spanish Data Protection Law (LOPDGDD).",
       "sections": {
@@ -637,7 +645,7 @@
   },
   "legalNotice": {
     "page": {
-      "title": "Legal Notice",
+      "title": "Legal notice",
       "lastUpdated": "Last updated",
       "intro": "In compliance with Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI-CE), the following general information about this website is provided.",
       "sections": {
@@ -1030,5 +1038,12 @@
     ],
     "cierreTitulo": "Request your fixed quote",
     "cierreTexto": "Tell us which platforms you use and which tax years worry you. We’ll reply with your tier and the delivery time."
+  },
+  "noEncontrada": {
+    "titulo": "This page doesn't exist",
+    "entrada": "The link may be old, or we may have moved the page. These are the places where most people start.",
+    "inicio": "Go to the home page",
+    "blog": "Read the blog",
+    "servicios": "Our services"
   }
 }

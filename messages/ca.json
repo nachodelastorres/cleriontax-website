@@ -34,7 +34,7 @@
   },
   "seo": {
     "home": {
-      "title": "Assessoria fiscal de criptomonedes i declaració de la renda cripto | Cleriontax",
+      "title": "Assessoria fiscal i renda de criptomonedes",
       "description": "Informe fiscal de criptomonedes revisat operació a operació, declaració de la renda cripto, model 721 i defensa davant requeriments i inspeccions de l’AEAT."
     },
     "services": {
@@ -42,7 +42,7 @@
       "description": "Plans des de 600€ per a la teva declaració fiscal cripto. Informe IRPF, model 100, models 720/721. Trading, staking, DeFi, NFTs. Anàlisi de dades + assessoria fiscal especialitzada per a inversors en criptomonedes a Espanya."
     },
     "blog": {
-      "title": "Blog Fiscalitat i Inversió | Guies Crypto, Accions i Anàlisi de Dades | Cleriontax",
+      "title": "Blog de fiscalitat cripto: guies i casos",
       "description": "Guies sobre fiscalitat de criptomonedes i inversions a Espanya amb exemples numèrics resolts: IRPF, models 100, 714 i 721, criteri FIFO, DeFi, compensació de pèrdues i normativa de l’AEAT."
     },
     "site": {
@@ -420,6 +420,14 @@
       "texto": "Si això et sona a la teva situació, mira com ho resolem abans de decidir res. I si prefereixes explicar-ho directament, també.",
       "verServicio": "Veure com ho resolem",
       "contar": "Explica ns el teu cas"
+    },
+    "articulo": {
+      "tema": "Tema",
+      "verTodos": "Veure tots els articles d’aquest tema →",
+      "relacionados": "Més articles d’aquest tema",
+      "minLectura": "min de lectura",
+      "masDelTema": "Més articles sobre {tema}",
+      "masDelTemaApoyo": "Continua llegint sobre el mateix tema."
     }
   },
   "blogCTA": {
@@ -489,7 +497,7 @@
       }
     },
     "page": {
-      "title": "Política de Cookies",
+      "title": "Política de cookies",
       "lastUpdated": "Última actualització",
       "intro": "A Cleriontax utilitzem cookies i tecnologies similars per millorar la teva experiència de navegació, analitzar el trànsit del lloc web i personalitzar el contingut. Aquesta política explica què són les cookies, com les fem servir i com pots gestionar-les.",
       "sections": {
@@ -547,7 +555,7 @@
   },
   "privacy": {
     "page": {
-      "title": "Política de Privadesa",
+      "title": "Política de privadesa",
       "lastUpdated": "Última actualització",
       "intro": "A Cleriontax ens prenem molt seriosament la protecció de les teves dades personals. Aquesta política de privadesa descriu com recopilem, utilitzem i protegim la teva informació personal d'acord amb el Reglament General de Protecció de Dades (RGPD) i la Llei Orgànica de Protecció de Dades i Garantia dels Drets Digitals (LOPDGDD).",
       "sections": {
@@ -637,7 +645,7 @@
   },
   "legalNotice": {
     "page": {
-      "title": "Avís Legal",
+      "title": "Avís legal",
       "lastUpdated": "Última actualització",
       "intro": "En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSI-CE), es faciliten les següents dades d'informació general d'aquest lloc web.",
       "sections": {
@@ -1030,5 +1038,12 @@
     ],
     "cierreTitulo": "Demana el teu pressupost tancat",
     "cierreTexto": "Explica’ns quines plataformes fas servir i quins exercicis et preocupen. Et responem amb el tram que et correspon i el termini de lliurament."
+  },
+  "noEncontrada": {
+    "titulo": "Aquesta pàgina no existeix",
+    "entrada": "Potser l’enllaç és antic o l’hem moguda. Aquests són els llocs per on sol començar la gent.",
+    "inicio": "Anar a l’inici",
+    "blog": "Veure el blog",
+    "servicios": "Els nostres serveis"
   }
 }

@@ -151,7 +151,8 @@ export async function getBlogPostBySlug(slug: string, locale: string = 'es'): Pr
       readingTime: postMetadata.readingTime,
       category: postMetadata.category,
       tags: postMetadata.tags,
-      image: postMetadata.image,
+      // El texto alternativo de la imagen, en el idioma del artículo si lo tiene.
+      image: { ...postMetadata.image, alt: (content as any).imageAlt || postMetadata.image.alt },
       seo: seo,
       featured: postMetadata.featured,
       layoutType: (postMetadata as any).layoutType || 'magazine',

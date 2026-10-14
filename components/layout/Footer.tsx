@@ -45,9 +45,9 @@ export default function Footer() {
 
             {/* Empresa */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.company')}
-              </h3>
+              </p>
               <ul className="space-y-2">
                 {footerLinks.empresa.map((link) => (
                   <li key={link.name}>
@@ -64,9 +64,9 @@ export default function Footer() {
 
             {/* Servicios */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.services')}
-              </h3>
+              </p>
               <ul className="space-y-2">
                 {footerLinks.servicios.map((link) => (
                   <li key={link.name}>
@@ -83,9 +83,9 @@ export default function Footer() {
 
             {/* Legal */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.legal')}
-              </h3>
+              </p>
               <ul className="space-y-2">
                 {footerLinks.legal.map((link) => (
                   <li key={link.name}>
@@ -102,9 +102,9 @@ export default function Footer() {
 
             {/* Contacto */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.contact')}
-              </h3>
+              </p>
               <ul className="space-y-3">
                 <li>
                   <a
