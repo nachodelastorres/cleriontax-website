@@ -1,4 +1,5 @@
 import ButtonLink from "@/components/ui/ButtonLink";
+import SimboloFondo from "@/components/brand/SimboloFondo";
 import CalculadoraPlazo, { type TextosCalculadora } from "@/components/expediente/CalculadoraPlazo";
 
 /**
@@ -28,7 +29,9 @@ export default function HeroExpediente({
 }) {
   return (
     <section className="relative bg-azul">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-[minmax(0,1fr)_26rem] lg:items-center lg:gap-16">
+      <SimboloFondo />
+
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-[minmax(0,1fr)_26rem] lg:items-center lg:gap-16">
         <div>
           {etiqueta ? (
             <span className="inline-flex items-center gap-2 text-dato font-semibold uppercase tracking-wide text-rojo">

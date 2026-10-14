@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import SimboloAnimado from "@/components/brand/SimboloAnimado";
+import SimboloFondo from "@/components/brand/SimboloFondo";
 import ButtonLink from "@/components/ui/ButtonLink";
+import { rutaPagina } from "@/lib/paginas";
 
 /**
  * Cabecera de la home.
@@ -14,10 +16,13 @@ import ButtonLink from "@/components/ui/ButtonLink";
  */
 export default async function HeroInicio({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "inicio.hero" });
+  const senas = t.raw("senas") as { texto: string; slug: string }[];
 
   return (
-    <section className="bg-azul">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-12 lg:items-center lg:gap-12 lg:pb-24">
+    <section className="relative bg-azul">
+      <SimboloFondo />
+
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-14 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-12 lg:items-center lg:gap-12 lg:pb-24">
         <div className="lg:col-span-7">
           {/*
             Por encima de la escala del §11 (52 px): en la home el titular es
@@ -34,14 +39,30 @@ export default async function HeroInicio({ locale }: { locale: string }) {
           </p>
         </div>
 
-        <div className="flex flex-col items-start gap-10 lg:col-span-5 lg:items-center">
-          <SimboloAnimado tam={260} className="order-2 w-full max-w-[140px] text-blanco lg:order-none lg:max-w-[280px]" retraso={160} dispersa />
+        <div className="flex flex-col items-start gap-8 lg:col-span-5 lg:gap-10 lg:items-center">
+          <SimboloAnimado tam={260} className="hidden w-full max-w-[280px] text-blanco lg:block" retraso={160} dispersa />
 
-          <div className="order-1 flex w-full flex-wrap items-center gap-4 lg:order-none lg:justify-center">
+          <div className="flex w-full flex-wrap items-center gap-4 lg:justify-center">
             <ButtonLink href="/contacto" variant="principal" size="lg">
               {t("accion")}
             </ButtonLink>
           </div>
+
+          {/* Solo en móvil: tres señas bajo el botón para que el hero no
+              termine en vacío, enlazadas a su servicio con la keyword como
+              texto. En escritorio ese hueco lo ocupa el símbolo. */}
+          <ul className="w-full border-t border-blanco/20 pt-5 lg:hidden">
+            {senas.map((s) => (
+              <li key={s.slug} className="py-1 text-dato font-semibold uppercase tracking-wide text-niebla">
+                <a
+                  href={`/${locale}${rutaPagina(s.slug, locale)}`}
+                  className="underline-offset-4 transition-colors hover:text-blanco hover:underline"
+                >
+                  {s.texto}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

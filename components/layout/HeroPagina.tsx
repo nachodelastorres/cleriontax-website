@@ -1,6 +1,7 @@
 import Patron from "@/components/brand/Patron";
 import ButtonLink from "@/components/ui/ButtonLink";
 import SimboloAnimado from "@/components/brand/SimboloAnimado";
+import SimboloFondo from "@/components/brand/SimboloFondo";
 
 /**
  * Cabecera de página — §13 y §17.
@@ -45,6 +46,8 @@ export default function HeroPagina({
         <Patron version="azul" bloque={104} />
       </div>
 
+      <SimboloFondo />
+
       <div className="relative mx-auto max-w-5xl px-6">
         {/*
           Caja sólida sobre el patrón. En pantalla grande se separa del borde
@@ -53,7 +56,7 @@ export default function HeroPagina({
           Arriba el margen suma los 64 px del menú fijo, que tapa el principio
           de la cabecera: así se ve el mismo patrón encima que debajo.
         */}
-        <div className="relative bg-azul py-20 md:py-24 lg:-mx-12 lg:mb-14 lg:mt-[7.5rem] lg:w-fit lg:max-w-[52rem] lg:px-12 lg:py-12">
+        <div className="relative py-20 md:py-24 lg:-mx-12 lg:mb-14 lg:bg-azul lg:mt-[7.5rem] lg:w-fit lg:max-w-[52rem] lg:px-12 lg:py-12">
           <div className="relative grid grid-cols-1 gap-10 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-center">
             <div>
               {etiqueta ? (

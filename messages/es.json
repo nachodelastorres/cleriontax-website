@@ -704,7 +704,12 @@
     "hero": {
       "titulo": "Asesoría fiscal de criptomonedas y declaración de la renta cripto",
       "entrada": "Un informe automático es el punto de partida, nunca el entregable. Reconciliamos tus exchanges, wallets y protocolos, revisamos a mano lo que un programa resolvería con un valor por defecto y dejamos escrito de dónde sale cada cifra.",
-      "accion": "Empezar el diagnóstico"
+      "accion": "Empezar el diagnóstico",
+      "senas": [
+        { "texto": "Informe fiscal cripto", "slug": "informe-fiscal-criptomonedas" },
+        { "texto": "Regularización de criptomonedas", "slug": "regularizar-criptomonedas" },
+        { "texto": "Inspecciones y requerimientos de la AEAT", "slug": "requerimiento-hacienda-criptomonedas" }
+      ]
     },
     "clasificador": {
       "titulo": "¿Cuál de estas situaciones se parece a la tuya?",

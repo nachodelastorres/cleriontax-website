@@ -78,9 +78,9 @@ export default function BarraAccion({
                 href={WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center gap-2 border-2 border-blanco px-5 font-semibold text-blanco transition-colors hover:bg-blanco hover:text-azul"
+                className="inline-flex h-11 items-center justify-center gap-2 px-3 font-semibold text-blanco transition-transform duration-200 hover:scale-105"
               >
-                <IconoWhatsApp className="h-5 w-5" />
+                <IconoWhatsApp className="h-7 w-7" />
                 WhatsApp
               </a>
             </>
@@ -105,10 +105,10 @@ export default function BarraAccion({
                 href={WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center gap-2 border-2 border-blanco px-5 font-semibold text-blanco transition-colors hover:bg-blanco hover:text-azul"
+                className="inline-flex h-11 items-center justify-center gap-2 px-3 font-semibold text-blanco transition-transform duration-200 hover:scale-105"
                 aria-label={t("escribirWhatsapp")}
               >
-                <IconoWhatsApp className="h-5 w-5" />
+                <IconoWhatsApp className="h-7 w-7" />
                 <span className="hidden sm:inline">WhatsApp</span>
               </a>
             </>
