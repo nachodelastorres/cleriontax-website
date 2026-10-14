@@ -70,6 +70,7 @@ function foto(id: string) {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) return {};
   return metaPagina({ locale, ruta: "/sobre-nosotros", titulo: datos.seo.title, descripcion: datos.seo.description });
@@ -86,6 +87,7 @@ function Etiqueta({ children, claro = false }: { children: React.ReactNode; clar
 
 export default async function SobreNosotrosPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) notFound();

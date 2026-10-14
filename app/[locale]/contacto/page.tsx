@@ -52,6 +52,7 @@ async function cargar(locale: string): Promise<Contenido | null> {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) return {};
   return metaPagina({ locale, ruta: "/contacto", titulo: datos.seo.title, descripcion: datos.seo.description });
@@ -65,6 +66,7 @@ function IconoCanal({ tipo }: { tipo: TipoCanal }) {
 
 export default async function ContactoPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) notFound();

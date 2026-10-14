@@ -20,12 +20,14 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "precios" });
   return metaPagina({ locale, ruta: "/precios", titulo: t("seoTitulo"), descripcion: t("seoDescripcion") });
 }
 
 export default async function PreciosPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "precios" });
   const tTarifas = await getTranslations({ locale, namespace: "tarifas" });

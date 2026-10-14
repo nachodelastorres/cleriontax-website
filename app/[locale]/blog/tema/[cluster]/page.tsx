@@ -32,6 +32,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale, cluster } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
 
   const clusterData = clustersConfig.clusters.find(c => c.id === cluster);
   if (!clusterData) return {};
@@ -46,6 +47,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function ClusterPage({ params }: Props) {
   const { locale, cluster } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'blog.clusterPage' });
 

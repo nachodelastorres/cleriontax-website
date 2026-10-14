@@ -10,6 +10,7 @@ const SLUG = 'despachos';
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const datos = await cargarPagina(locale, SLUG);
   if (!datos) return {};
   const seo = (datos as any).seo ?? {};
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function Pagina({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
   const datos = await cargarPagina(locale, SLUG);
   const t = await getTranslations({ locale, namespace: 'paginas' });

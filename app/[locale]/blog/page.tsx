@@ -18,12 +18,14 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'seo.blog' });
   return metaPagina({ locale, ruta: '/blog', titulo: t('title'), descripcion: t('description') });
 }
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'blog' });
 
@@ -32,6 +34,7 @@ export default async function BlogPage({ params }: Props) {
 
   // Obtener el último post publicado
   const latestPost = allPosts[0];
+  const fecha = locale === 'en' ? 'en-GB' : `${locale}-ES`;
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema({
@@ -139,7 +142,7 @@ export default async function BlogPage({ params }: Props) {
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         <span>
-                          {new Date(latestPost.publishedAt).toLocaleDateString('es-ES', {
+                          {new Date(latestPost.publishedAt).toLocaleDateString(fecha, {
                             year: 'numeric',
                             month: 'long',
                             day: 'numeric'
@@ -247,7 +250,7 @@ export default async function BlogPage({ params }: Props) {
                           <div className="flex items-center gap-2 mt-2 text-xs text-pizarra">
                             <Calendar className="w-3 h-3" />
                             <span>
-                              {new Date(latestClusterPost.publishedAt).toLocaleDateString('es-ES', {
+                              {new Date(latestClusterPost.publishedAt).toLocaleDateString(fecha, {
                                 day: 'numeric',
                                 month: 'short'
                               })}
@@ -318,6 +321,31 @@ export default async function BlogPage({ params }: Props) {
       </section>
 
       {/* CTA Section */}
+      {/*
+        Todos los artículos, en una lista compacta. Las secciones por tema solo
+        enseñan los más recientes: así cada artículo recibe un enlace desde aquí.
+      */}
+      <section id="todos" className="py-16 md:py-20 bg-blanco">
+        <Container>
+          <h2 className="text-seccion text-azul">{t('allArticles.title')}</h2>
+          <ul className="mt-8 grid border-t border-niebla md:grid-cols-2 md:gap-x-10">
+            {allPosts.map((post) => (
+              <li key={post.slug} className="border-b border-niebla">
+                <Link
+                  href={`/${locale}/blog/${post.slug}`}
+                  className="group flex items-baseline justify-between gap-4 py-4"
+                >
+                  <span className="text-lectura font-semibold text-azul group-hover:text-rojo">{post.title}</span>
+                  <time dateTime={post.publishedAt} className="flex-none text-dato text-pizarra">
+                    {new Date(post.publishedAt).toLocaleDateString(fecha, { year: 'numeric', month: 'short' })}
+                  </time>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
       <section className="py-16 bg-papel">
         <Container>
           <div className="max-w-3xl mx-auto text-center">

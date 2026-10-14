@@ -116,8 +116,8 @@ export default function Navbar() {
                   aria-hidden="true"
                 />
               </button>
-              {serviciosOpen && (
-                <div id="menu-servicios" className="absolute left-0 top-full z-50 pt-4">
+              {/* Siempre en el HTML, oculto con CSS: así los rastreadores ven los enlaces. */}
+              <div id="menu-servicios" className={`absolute left-0 top-full z-50 pt-4 ${serviciosOpen ? "" : "hidden"}`}>
                   <div className="grid w-[640px] grid-cols-3 gap-px border border-niebla bg-niebla">
                     {GRUPOS.map((g) => (
                       <div key={g} className="bg-blanco p-5">
@@ -140,7 +140,6 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
-              )}
             </div>
             {navigation.map((item) => (
               <Link

@@ -41,6 +41,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
 
   // Respaldo del sitio: solo se usa donde la página no define su propia
   // metadata. Va traducido, igual que el resto (§19).
@@ -81,6 +82,7 @@ export default async function LocaleLayout({
 }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
 
   // Validar que el locale es válido
   if (!(locales as readonly string[]).includes(locale)) {
@@ -88,7 +90,22 @@ export default async function LocaleLayout({
   }
 
   // Obtener mensajes para el idioma actual
-  const messages = await getMessages({ locale });
+  const todos = await getMessages({ locale });
+  /*
+   * Al navegador solo van las traducciones que usan componentes de cliente.
+   * Antes viajaba el fichero entero (~55 KB) en cada página. Los textos largos
+   * de las páginas legales los pasa cada una a su componente.
+   */
+  const messages = {
+    blog: todos.blog,
+    common: todos.common,
+    diagnostico: todos.diagnostico,
+    finalCTA: todos.finalCTA,
+    footer: todos.footer,
+    nav: todos.nav,
+    paginas: todos.paginas,
+    cookies: { banner: (todos.cookies as Record<string, unknown>).banner },
+  };
 
   // Generate structured data schemas
   const organizationSchema = generateOrganizationSchema({

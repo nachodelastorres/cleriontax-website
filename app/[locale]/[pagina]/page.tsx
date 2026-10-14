@@ -88,6 +88,7 @@ async function cargar(locale: string, slug: string): Promise<Contenido | null> {
 export async function generateMetadata({ params }: Props) {
   const { locale, pagina: slugUrl } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const meta = paginaPorSlug(slugUrl, locale);
   if (!meta) return {};
   const datos = await cargar(locale, meta.slug);
@@ -103,6 +104,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function PaginaServicio({ params }: Props) {
   const { locale, pagina: slugUrl } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
 
   // El slug de la URL es el del idioma; el interno (`pagina`) es el español.

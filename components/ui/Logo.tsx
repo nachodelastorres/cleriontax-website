@@ -52,7 +52,7 @@ export default function Logo({
   const defaultHeight = type === 'full' ? 40 : type === 'cropped' ? 32 : 40;
 
   const logo = (
-    <Image
+    <Image unoptimized
       src={logoSrc}
       alt="Cleriontax"
       width={width || defaultWidth}

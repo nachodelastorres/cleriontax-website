@@ -50,6 +50,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
+  setRequestLocale(locale);
   const post = await getBlogPostBySlug(slug, locale);
 
   if (!post) {
@@ -93,6 +94,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   setRequestLocale(locale);
 
   const post = await getBlogPostBySlug(slug, locale);
