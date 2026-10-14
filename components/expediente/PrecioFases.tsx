@@ -7,7 +7,7 @@ import { TARIFAS } from "@/lib/tarifas";
  * Precio de las páginas de «¿Cómo lo justifico ante la AEAT?».
  *
  * Aquí no se cobra una cosa sino dos, y se enseñan como dos partes seguidas:
- * reconstruir las cifras, con los tramos de siempre, y contestar a Hacienda,
+ * reconstruir las cifras, con los tramos más el suplemento por plazo, y contestar a Hacienda,
  * con presupuesto cerrado en cuanto se lee la notificación. Los importes salen
  * de `lib/tarifas.ts`, como en el resto de la web.
  */
@@ -46,7 +46,7 @@ export default async function PrecioFases({
       <Cabecera titulo={textos.h2} entrada={textos.entrada} />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-stretch">
-        {/* Reconstruir: los tramos de siempre. */}
+        {/* Reconstruir: los tramos, con el suplemento por plazo. */}
         <div className="border border-niebla bg-blanco p-7 md:p-8">
           <h3 className="text-subtitulo text-azul">{textos.reconstruccion.titulo}</h3>
           <p className="mt-2 text-nota text-pizarra">{textos.reconstruccion.body}</p>

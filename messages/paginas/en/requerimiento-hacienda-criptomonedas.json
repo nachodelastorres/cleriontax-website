@@ -271,7 +271,7 @@
         },
         {
           "q": "How much does it cost to reply to a request?",
-          "a": "Rebuilding your figures follows our tiers: Single platform, €400, if all your activity is on one exchange; Multi-exchange, €500, with two or three exchanges; Mixed portfolio, €600, if you combine exchanges with wallets, DeFi, NFTs or stocks across up to three sources; and Complex portfolio, from €850. All prices include VAT. The reply to the AEAT is quoted separately once we've read the notification. You'll find the details on our pricing page."
+          "a": "Rebuilding your figures follows our tiers with €150 more in each, because there is a deadline running and your case jumps the queue: Single platform, €400, if all your activity is on one exchange; Multi-exchange, €500, with two or three exchanges; Mixed portfolio, €600, if you combine exchanges with wallets, DeFi, NFTs or stocks across up to three sources; and Complex portfolio, from €850. All prices include VAT. The reply to the AEAT is quoted separately once we've read the notification. Our pricing page shows the tiers without a deadline, €150 lower."
         }
       ]
     }
@@ -308,7 +308,7 @@
     "entrada": "Before replying you need the figures. What it costs to rebuild them depends on how many data sources need matching, not on what's being claimed.",
     "reconstruccion": {
       "titulo": "Rebuilding your figures",
-      "body": "The cost depends on how many data sources need matching, not on what they are claiming from you.",
+      "body": "The cost depends on how many data sources need matching, not on what they are claiming from you. Each tier is €150 more than a report with no deadline: with an open request, your case jumps the queue and is worked against the tax agency’s date.",
       "nota": "Replying to the tax agency is not included in these prices: it is quoted separately."
     },
     "contestacion": {
