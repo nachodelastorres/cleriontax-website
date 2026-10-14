@@ -184,7 +184,7 @@ export default function CalculadoraPlazo({
             id="tramite"
             value={elegido}
             onChange={(e) => setElegido(Number(e.target.value))}
-            className="mt-2 h-12 w-full border border-niebla bg-blanco px-3 text-nota text-azul focus:border-azul focus:outline-none"
+            className="mt-2 h-12 w-full border border-niebla bg-blanco px-3 text-base text-azul focus:border-azul focus:outline-none md:text-nota"
           >
             {textos.opciones.map((o, i) => (
               <option key={i} value={i}>

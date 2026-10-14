@@ -99,7 +99,7 @@ export default async function PreciosPage({ params }: Props) {
 
       <SeccionesServicio secciones={secciones} locale={locale} />
 
-      <section id="diagnostico" className="scroll-mt-20 bg-papel py-14 md:py-16">
+      <section id="diagnostico" className="scroll-mt-32 bg-papel py-14 md:py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-8">
             <h2 className="text-seccion text-azul">{t("cierreTitulo")}</h2>

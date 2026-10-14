@@ -234,7 +234,7 @@ export default async function PaginaServicio({ params }: Props) {
       {faq ? <SeccionesServicio secciones={[{ ...faq, fondo: faq.fondo ?? "blanco" }]} locale={locale} /> : null}
 
       {/* El presupuesto se pide aquí mismo, con el caso ya identificado. */}
-      <section id="diagnostico" className="scroll-mt-20 bg-papel py-14 md:py-16">
+      <section id="diagnostico" className="scroll-mt-32 bg-papel py-14 md:py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-8">
             <h2 className="text-seccion text-azul">{cierre.h2}</h2>

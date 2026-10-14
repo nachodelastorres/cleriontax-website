@@ -134,11 +134,8 @@ export function generateOrganizationSchema(
     //   reviewCount: '0'
     // },
 
-    // Prepared for social media profiles when available
-    // sameAs: [
-    //   'https://linkedin.com/company/cleriontax',
-    //   'https://twitter.com/cleriontax'
-    // ],
+    // Perfiles de la empresa: los mismos que enlaza el pie.
+    sameAs: ['https://www.linkedin.com/company/cleriontax'],
 
     parentOrganization: {
       '@type': 'Organization',

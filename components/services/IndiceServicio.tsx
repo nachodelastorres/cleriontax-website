@@ -40,7 +40,7 @@ export default function IndiceServicio({ items }: IndiceServicioProps) {
   return (
     <nav
       aria-label="Contenido de la página"
-      className="sticky top-0 z-20 border-b border-niebla bg-blanco"
+      className="sticky top-16 z-20 border-b border-niebla bg-blanco"
     >
       <div className="mx-auto max-w-5xl px-6">
         <ul className="scrollbar-hide flex gap-1 overflow-x-auto py-2">
@@ -51,7 +51,7 @@ export default function IndiceServicio({ items }: IndiceServicioProps) {
                 <a
                   href={`#${item.id}`}
                   aria-current={esActivo ? "true" : undefined}
-                  className={`inline-block whitespace-nowrap px-3 py-1.5 text-nota transition-colors ${
+                  className={`inline-block whitespace-nowrap px-3 py-2.5 text-nota transition-colors ${
                     esActivo
                       ? "font-semibold text-rojo"
                       : "text-pizarra hover:text-azul"

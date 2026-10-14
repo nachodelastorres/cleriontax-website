@@ -135,7 +135,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
       </section>
 
       {/* De dónde venimos: el despacho Benavides, con su logo. */}
-      <section id="origen" className="scroll-mt-20 bg-azul">
+      <section id="origen" className="scroll-mt-32 bg-azul">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:py-20 lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-16">
           <div>
             <Etiqueta claro>{origen.etiqueta}</Etiqueta>
@@ -163,7 +163,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
       </section>
 
       {/* Las personas, como en una revista: retrato grande y texto, alternando. */}
-      <section id="equipo" className="scroll-mt-20 bg-blanco">
+      <section id="equipo" className="scroll-mt-32 bg-blanco">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <Etiqueta>{equipo.etiqueta}</Etiqueta>
           <h2 className="mt-4 max-w-[22ch] text-seccion text-azul">{equipo.h2}</h2>
@@ -174,14 +174,14 @@ export default async function SobreNosotrosPage({ params }: Props) {
               const derecha = i % 2 === 1;
               return (
                 <article key={p.id} className="grid items-center gap-8 md:grid-cols-2 md:gap-14">
-                  <div className={`relative aspect-[4/5] overflow-hidden bg-azul ${derecha ? "md:order-2" : ""}`}>
+                  <div className={`relative aspect-square w-40 overflow-hidden bg-azul md:aspect-[4/5] md:w-auto ${derecha ? "md:order-2" : ""}`}>
                     {src ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={src} alt={p.nombre} className="absolute inset-0 h-full w-full object-cover" />
                     ) : (
                       // Marcador hasta que llegue la foto: la inicial, enorme.
                       <span
-                        className="absolute inset-0 flex items-center justify-center font-dato text-[200px] font-semibold leading-none text-blanco/90"
+                        className="absolute inset-0 flex items-center justify-center font-dato text-[96px] font-semibold leading-none text-blanco/90 md:text-[200px]"
                         aria-hidden="true"
                       >
                         {p.nombre.charAt(0)}
@@ -207,7 +207,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
       </section>
 
       {/* Cómo trabajamos: los principios, y una conversación que los enseña. */}
-      <section id="como-trabajamos" className="scroll-mt-20 bg-papel">
+      <section id="como-trabajamos" className="scroll-mt-32 bg-papel">
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-16 md:py-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center">
           <div>
             <Etiqueta>{trato.etiqueta}</Etiqueta>

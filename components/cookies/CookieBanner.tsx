@@ -154,14 +154,14 @@ export default function CookieBanner() {
 
   // Main Banner
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] border-t border-niebla bg-blanco p-4 sm:p-6">
+    <div className="fixed bottom-0 left-0 right-0 z-[100] border-t border-niebla bg-blanco p-3 sm:p-6">
       <div className="mx-auto max-w-6xl">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex items-start gap-3 lg:flex-1">
-            <Cookie className="mt-0.5 h-6 w-6 flex-shrink-0 text-azul" />
+            <Cookie className="mt-0.5 hidden h-6 w-6 flex-shrink-0 text-azul sm:block" />
             <div>
-              <h2 className="mb-1 font-semibold text-azul">{t('title')}</h2>
-              <p className="text-sm text-pizarra">
+              <h2 className="mb-1 hidden font-semibold text-azul sm:block">{t('title')}</h2>
+              <p className="text-xs text-pizarra sm:text-sm">
                 {t('description')}{' '}
                 <Link href="/cookies" className="text-azul underline hover:text-azul">
                   {t('learnMore')}
@@ -170,10 +170,10 @@ export default function CookieBanner() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center lg:flex-shrink-0">
+          <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center lg:flex-shrink-0">
             <button
               onClick={openSettings}
-              className="flex items-center justify-center gap-2 border border-niebla px-4 py-2.5 text-sm font-medium text-pizarra transition-colors hover:bg-papel"
+              className="order-last col-span-2 flex items-center justify-center gap-2 py-1 text-xs font-medium text-pizarra underline underline-offset-2 transition-colors hover:bg-papel sm:order-none sm:col-auto sm:border sm:border-niebla sm:px-4 sm:py-2.5 sm:text-sm sm:no-underline"
             >
               <Settings className="h-4 w-4" />
               {t('settings')}

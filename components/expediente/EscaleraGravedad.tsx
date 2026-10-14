@@ -27,6 +27,7 @@ export interface Escalera {
 }
 
 const ALTURAS = ["h-6", "h-10", "h-14", "h-20", "h-24"];
+const ANCHOS = ["w-1/4", "w-1/2", "w-3/4", "w-full", "w-full"];
 
 export default function EscaleraGravedad({
   extremos,
@@ -40,10 +41,18 @@ export default function EscaleraGravedad({
         {niveles.map((n, i) => (
           <li key={i} className="flex flex-col bg-blanco p-6">
             {/* El peldaño: crece con la gravedad. */}
-            <div className="flex h-24 items-end" aria-hidden="true">
+            <div className="hidden h-24 items-end md:flex" aria-hidden="true">
               <div
                 className={`w-full ${ALTURAS[Math.min(i, ALTURAS.length - 1)]} ${
                   n.aqui || n.acento ? "bg-rojo" : "bg-azul/15"
+                }`}
+              />
+            </div>
+            {/* En móvil, apiladas, la gravedad se lee en el ancho de la barra. */}
+            <div className="h-2 md:hidden" aria-hidden="true">
+              <div
+                className={`h-2 ${ANCHOS[Math.min(i, ANCHOS.length - 1)]} ${
+                  n.aqui || n.acento ? "bg-rojo" : "bg-azul/20"
                 }`}
               />
             </div>

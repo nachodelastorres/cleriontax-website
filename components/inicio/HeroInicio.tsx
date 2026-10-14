@@ -35,9 +35,9 @@ export default async function HeroInicio({ locale }: { locale: string }) {
         </div>
 
         <div className="flex flex-col items-start gap-10 lg:col-span-5 lg:items-center">
-          <SimboloAnimado tam={260} className="w-full max-w-[280px] text-blanco" retraso={160} dispersa />
+          <SimboloAnimado tam={260} className="order-2 w-full max-w-[140px] text-blanco lg:order-none lg:max-w-[280px]" retraso={160} dispersa />
 
-          <div className="flex w-full flex-wrap items-center gap-4 lg:justify-center">
+          <div className="order-1 flex w-full flex-wrap items-center gap-4 lg:order-none lg:justify-center">
             <ButtonLink href="/contacto" variant="principal" size="lg">
               {t("accion")}
             </ButtonLink>

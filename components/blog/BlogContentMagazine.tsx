@@ -252,7 +252,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             th({ children, ...props }) {
               return (
-                <th className="px-6 py-4 text-left font-bold text-blanco text-sm uppercase tracking-wider" {...props}>
+                <th className="px-3 py-3 text-left font-bold text-blanco text-sm uppercase tracking-wider md:px-6 md:py-4" {...props}>
                   {children}
                 </th>
               );
@@ -260,7 +260,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
 
             td({ children, ...props }) {
               return (
-                <td className="px-6 py-4 text-pizarra border-b border-niebla" {...props}>
+                <td className="px-3 py-3 text-pizarra border-b border-niebla md:px-6 md:py-4" {...props}>
                   {children}
                 </td>
               );
@@ -277,7 +277,7 @@ export default function BlogContentMagazine({ content, metadata, tagTranslations
             // Pre blocks con estilo mejorado
             pre({ children, ...props }: any) {
               return (
-                <pre className="bg-azul text-papel p-6 overflow-x-auto my-8 border border-azul/50" {...props}>
+                <pre className="bg-azul text-papel p-4 md:p-6 overflow-x-auto whitespace-pre-wrap break-words md:whitespace-pre my-8 border border-azul/50" {...props}>
                   {children}
                 </pre>
               );

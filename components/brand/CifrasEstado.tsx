@@ -34,12 +34,12 @@ export default function CifrasEstado({ cifras, oscuro = false, className }: Cifr
       className={`grid grid-cols-2 gap-px ${oscuro ? "bg-blanco/15" : "bg-niebla"} ${className ?? ""}`}
     >
       {cifras.map((c) => (
-        <div key={c.etiqueta} className={`relative px-5 py-4 ${oscuro ? "bg-azul" : "bg-blanco"}`}>
+        <div key={c.etiqueta} className={`relative min-w-0 px-4 py-4 sm:px-5 ${oscuro ? "bg-azul" : "bg-blanco"}`}>
           {c.acento ? (
             <span className="absolute inset-x-0 top-0 h-[3px] bg-rojo" aria-hidden="true" />
           ) : null}
           <dd
-            className={`m-0 font-dato text-[34px] leading-none tabular-nums ${
+            className={`m-0 font-dato text-[28px] leading-none tabular-nums sm:text-[34px] ${
               oscuro ? "text-blanco" : "text-azul"
             }`}
           >

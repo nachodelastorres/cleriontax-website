@@ -109,7 +109,7 @@ export default async function PaginaContenido({
       <SeccionesServicio secciones={sections} />
 
       {cierre ? (
-        <section id="cierre" className="scroll-mt-20 bg-papel py-14 md:py-16">
+        <section id="cierre" className="scroll-mt-32 bg-papel py-14 md:py-16">
           <div className="mx-auto max-w-5xl px-6">
             <div className="mb-8 grid grid-cols-[44px_1fr] gap-3">
               <span className="pt-2 font-semibold text-dato text-rojo">&rarr;</span>

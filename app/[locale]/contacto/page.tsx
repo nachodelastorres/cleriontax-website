@@ -105,13 +105,13 @@ export default async function ContactoPage({ params }: Props) {
                 <a
                   href={ENLACES[c.tipo]}
                   {...(c.tipo === "whatsapp" ? { target: "_blank", rel: "noopener noreferrer nofollow" } : {})}
-                  className="group grid grid-cols-[2.75rem_1fr_auto] items-center gap-x-5 gap-y-1 py-6 transition-colors duration-200 hover:bg-papel md:grid-cols-[3.5rem_12rem_1fr_auto] md:px-4"
+                  className="group grid grid-cols-[2.75rem_minmax(0,1fr)_auto] items-center gap-x-4 sm:gap-x-5 gap-y-1 py-6 transition-colors duration-200 hover:bg-papel md:grid-cols-[3.5rem_12rem_1fr_auto] md:px-4"
                 >
                   <IconoCanal tipo={c.tipo} />
                   <span className="text-dato font-semibold uppercase tracking-wide text-pizarra md:order-none">
                     {c.etiqueta}
                   </span>
-                  <span className="col-span-1 col-start-2 text-[24px] font-semibold leading-tight tracking-[-0.02em] text-azul md:col-auto md:text-[32px]">
+                  <span className="col-span-1 col-start-2 break-words text-[20px] font-semibold leading-tight tracking-[-0.02em] text-azul sm:text-[24px] md:col-auto md:text-[32px]">
                     {c.valor}
                     <span className="mt-1 block text-nota font-normal tracking-normal text-pizarra md:hidden">
                       {c.nota}
@@ -136,7 +136,7 @@ export default async function ContactoPage({ params }: Props) {
       </section>
 
       {/* El formulario y lo que pasa después. */}
-      <section id="diagnostico" className="scroll-mt-20 bg-papel">
+      <section id="diagnostico" className="scroll-mt-32 bg-papel">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:py-24 lg:grid-cols-[minmax(0,7fr)_minmax(0,4fr)] lg:gap-16">
           <div>
             <h2 className="text-seccion text-azul">{formulario.h2}</h2>

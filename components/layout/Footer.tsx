@@ -31,7 +31,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-niebla bg-azul">
+    <footer className="border-t border-niebla bg-azul pb-20 md:pb-0">
       <Container>
         <div className="py-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
@@ -48,12 +48,12 @@ export default function Footer() {
               <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.company')}
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-0.5">
                 {footerLinks.empresa.map((link) => (
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-niebla transition-colors hover:text-blanco"
+                      className="inline-block py-1.5 text-sm text-niebla transition-colors hover:text-blanco"
                     >
                       {link.name}
                     </Link>
@@ -67,12 +67,12 @@ export default function Footer() {
               <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.services')}
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-0.5">
                 {footerLinks.servicios.map((link) => (
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-niebla transition-colors hover:text-blanco"
+                      className="inline-block py-1.5 text-sm text-niebla transition-colors hover:text-blanco"
                     >
                       {link.name}
                     </Link>
@@ -86,12 +86,12 @@ export default function Footer() {
               <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blanco">
                 {t('sections.legal')}
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-0.5">
                 {footerLinks.legal.map((link) => (
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-niebla transition-colors hover:text-blanco"
+                      className="inline-block py-1.5 text-sm text-niebla transition-colors hover:text-blanco"
                     >
                       {link.name}
                     </Link>

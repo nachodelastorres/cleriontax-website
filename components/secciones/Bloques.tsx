@@ -68,7 +68,7 @@ export function Envoltura({
     fondo === "papel" ? "bg-papel" : oscuro ? "bg-azul" : "bg-blanco";
 
   return (
-    <section id={id} className={`relative overflow-hidden scroll-mt-20 ${clases}`}>
+    <section id={id} className={`relative overflow-hidden scroll-mt-32 ${clases}`}>
       {fondo === "patron" ? (
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/3 lg:block">
           <Patron version="azul" bloque={64} />
@@ -165,7 +165,7 @@ export function BloqueCronologia({ hitos }: { hitos: Hito[] }) {
   return (
     <ol className="relative grid gap-px border border-niebla bg-niebla">
       {hitos.map((h, i) => (
-        <li key={i} className="grid grid-cols-[110px_1fr] gap-4 bg-blanco p-6 md:grid-cols-[150px_1fr] md:p-7">
+        <li key={i} className="grid grid-cols-1 gap-2 bg-blanco p-6 sm:grid-cols-[110px_1fr] sm:gap-4 md:grid-cols-[150px_1fr] md:p-7">
           <div className="flex items-start gap-3">
             <span
               className={`mt-1.5 h-2.5 w-2.5 flex-none ${h.critico ? "bg-rojo" : "bg-niebla"}`}
@@ -229,7 +229,9 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
             </span>
 
             <span className="text-nota text-azul">
-              <span className="sr-only">{antes}: </span>
+              <span className="mb-1 block w-fit bg-ambar-revision/15 px-2 py-0.5 text-dato font-semibold text-azul md:sr-only">
+                {antes}
+              </span>
               {f.antes}
             </span>
 
@@ -240,7 +242,9 @@ export function BloqueContraste({ antes, despues, filas }: Contraste) {
             />
 
             <span className="text-nota text-azul">
-              <span className="sr-only">{despues}: </span>
+              <span className="mb-1 block w-fit bg-verde-conciliado/10 px-2 py-0.5 text-dato font-semibold text-azul md:sr-only">
+                {despues}
+              </span>
               {f.despues}
             </span>
           </li>
