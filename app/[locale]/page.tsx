@@ -70,8 +70,8 @@ export default async function Home({ params }: Props) {
       <HeroInicio locale={locale} />
       <ElijeTuCaso locale={locale} />
       <Perfiles locale={locale} />
-      <Tarifas locale={locale} fondo="blanco" resumida />
       <MetodoDiagrama locale={locale} />
+      <Tarifas locale={locale} fondo="papel" resumida />
       <InformeEjemplo locale={locale} />
       <PreguntasInicio locale={locale} />
       <UltimasPublicaciones locale={locale} />
