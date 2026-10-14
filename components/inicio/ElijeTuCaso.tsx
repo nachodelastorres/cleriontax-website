@@ -46,7 +46,7 @@ export default async function ElijeTuCaso({ locale }: { locale: string }) {
 
         <div className="mt-6 flex flex-wrap items-center justify-end gap-x-6 gap-y-2">
           <a
-            href={`/${locale}/contacto`}
+            href={`/${locale}${rutaPagina("contacto", locale)}`}
             className="inline-flex items-center gap-2 text-nota font-semibold text-rojo underline-offset-4 hover:underline"
           >
             {t("clasificador.otraCosa")}

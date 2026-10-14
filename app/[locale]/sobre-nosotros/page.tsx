@@ -7,6 +7,7 @@ import SimboloAnimado from "@/components/brand/SimboloAnimado";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { rutaPagina, rutasPagina } from "@/lib/paginas";
 import { metaPagina, recortar } from "@/lib/seo";
 
 /**
@@ -73,7 +74,7 @@ export async function generateMetadata({ params }: Props) {
   setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) return {};
-  return metaPagina({ locale, ruta: "/sobre-nosotros", titulo: datos.seo.title, descripcion: datos.seo.description });
+  return metaPagina({ locale, ruta: rutasPagina("sobre-nosotros"), titulo: datos.seo.title, descripcion: datos.seo.description });
 }
 
 /** Etiqueta pequeña sobre cada titular. */
@@ -95,7 +96,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
 
   const breadcrumb = generateBreadcrumbSchema({
     locale: locale as Locale,
-    path: `/${locale}/sobre-nosotros`,
+    path: `/${locale}${rutaPagina("sobre-nosotros", locale)}`,
     baseUrl: SITE_URL,
   });
   const esquema = {
@@ -103,7 +104,7 @@ export default async function SobreNosotrosPage({ params }: Props) {
     "@type": "AboutPage",
     name: datos.seo.title,
     description: datos.seo.description,
-    url: canonicalFor(locale as Locale, "/sobre-nosotros"),
+    url: canonicalFor(locale as Locale, rutaPagina("sobre-nosotros", locale)),
     breadcrumb,
     mainEntity: getOrganizationReference(SITE_URL),
   };

@@ -8,6 +8,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
 import { GRUPOS, porGrupo, rutaPagina } from "@/lib/paginas";
+import { traducirRuta } from "@/lib/rutas";
 
 const PAGINAS_POR_GRUPO = porGrupo();
 export default function Navbar() {
@@ -80,7 +81,7 @@ export default function Navbar() {
     { code: 'ca', name: tCommon('languages.ca') },
   ];
   const switchLanguage = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
+    router.replace(traducirRuta(pathname, locale, newLocale), { locale: newLocale });
     setLangMenuOpen(false);
   };
   return (

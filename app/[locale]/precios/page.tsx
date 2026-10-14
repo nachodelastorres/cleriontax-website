@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { rutaPagina, rutasPagina } from "@/lib/paginas";
 import { TARIFAS } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
 import Tarifas from "@/components/precios/Tarifas";
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   setRequestLocale(locale);
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "precios" });
-  return metaPagina({ locale, ruta: "/precios", titulo: t("seoTitulo"), descripcion: t("seoDescripcion") });
+  return metaPagina({ locale, ruta: rutasPagina("precios"), titulo: t("seoTitulo"), descripcion: t("seoDescripcion") });
 }
 
 export default async function PreciosPage({ params }: Props) {
@@ -31,7 +32,7 @@ export default async function PreciosPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "precios" });
   const tTarifas = await getTranslations({ locale, namespace: "tarifas" });
-  const url = canonicalFor(locale as Locale, "/precios");
+  const url = canonicalFor(locale as Locale, rutaPagina("precios", locale));
 
   const faq = t.raw("faq") as { q: string; a: string }[];
 
@@ -54,7 +55,7 @@ export default async function PreciosPage({ params }: Props) {
 
   const breadcrumb = generateBreadcrumbSchema({
     locale: locale as Locale,
-    path: `/${locale}/precios`,
+    path: `/${locale}${rutaPagina("precios", locale)}`,
     customLabels: { precios: t("etiqueta") },
     baseUrl: SITE_URL,
   });

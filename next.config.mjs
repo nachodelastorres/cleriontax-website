@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import createNextIntlPlugin from 'next-intl/plugin';
@@ -66,8 +66,6 @@ const nextConfig = {
       ['blog/clusters', 'blog'],
       // La página de revisión nombra las dos herramientas desde octubre de 2026.
       ['revisar-informe-koinly', 'revisar-informe-koinly-cointracking'],
-      // El slug real de contacto
-      ['contact', 'contacto'],
     ];
 
     const reglas = [];
@@ -90,11 +88,28 @@ const nextConfig = {
     }
 
     // Las URLs publicadas sin idioma van directas al español, sin pasar por el middleware.
-    for (const [origen, d] of antiguas.filter(([o]) => o.startsWith('servicios') || o === 'contact')) {
+    for (const [origen, d] of antiguas.filter(([o]) => o.startsWith('servicios'))) {
       reglas.push({ source: `/${origen}`, destination: destino(d, 'es'), permanent: true });
     }
+    reglas.push({ source: '/contact', destination: '/es/contacto', permanent: true });
 
     return reglas;
+  },
+
+  /*
+   * Las páginas fijas (precios, contacto…) tienen carpeta propia con el nombre
+   * en español; su slug en inglés y catalán se sirve desde esa carpeta. La
+   * redirección de arriba lleva el slug español a este, así que no hay dos URLs.
+   */
+  async rewrites() {
+    const reglas = [];
+    for (const [slug, slugs] of Object.entries(RUTAS)) {
+      if (!existsSync(new URL(`./app/[locale]/${slug}/page.tsx`, import.meta.url))) continue;
+      for (const [l, local] of Object.entries(slugs)) {
+        if (local !== slug) reglas.push({ source: `/${l}/${local}`, destination: `/${l}/${slug}` });
+      }
+    }
+    return { beforeFiles: reglas };
   },
 
   async headers() {

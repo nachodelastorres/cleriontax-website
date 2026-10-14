@@ -45,17 +45,17 @@ export function generateWebSiteSchema(
     ],
     en: [
       { name: 'Home', url: `${baseUrl}/en` },
-      { name: 'Prices', url: `${baseUrl}/en/precios` },
+      { name: 'Prices', url: `${baseUrl}/en/pricing` },
       { name: 'Blog', url: `${baseUrl}/en/blog` },
-      { name: 'About Us', url: `${baseUrl}/en/sobre-nosotros` },
-      { name: 'Contact', url: `${baseUrl}/en/contacto` }
+      { name: 'About Us', url: `${baseUrl}/en/about-us` },
+      { name: 'Contact', url: `${baseUrl}/en/contact` }
     ],
     ca: [
       { name: 'Inici', url: `${baseUrl}/ca` },
-      { name: 'Preus', url: `${baseUrl}/ca/precios` },
+      { name: 'Preus', url: `${baseUrl}/ca/preus` },
       { name: 'Blog', url: `${baseUrl}/ca/blog` },
-      { name: 'Sobre Nosaltres', url: `${baseUrl}/ca/sobre-nosotros` },
-      { name: 'Contacte', url: `${baseUrl}/ca/contacto` }
+      { name: 'Sobre Nosaltres', url: `${baseUrl}/ca/sobre-nosaltres` },
+      { name: 'Contacte', url: `${baseUrl}/ca/contacte` }
     ]
   };
 

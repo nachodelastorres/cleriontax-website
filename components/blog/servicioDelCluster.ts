@@ -1,4 +1,4 @@
-import { paginaPorSlug, rutaPagina } from "@/lib/paginas";
+import { rutaPagina } from "@/lib/paginas";
 
 /**
  * A qué página de servicio lleva cada cluster del blog.
@@ -33,6 +33,6 @@ export function servicioSugerido(slug: string, cluster?: string, locale = "es"):
     POR_ARTICULO[slug] ??
     (cluster ? SERVICIO_POR_CLUSTER[cluster] : undefined) ??
     "/precios";
-  // Las páginas de servicio tienen el slug traducido; /precios no.
-  return paginaPorSlug(ruta.slice(1), "es") ? rutaPagina(ruta.slice(1), locale) : ruta;
+  // Todas tienen el slug traducido, también /precios.
+  return rutaPagina(ruta.slice(1), locale);
 }

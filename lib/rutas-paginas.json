@@ -33,5 +33,25 @@
     "es": "modelo-721-criptomonedas",
     "en": "form-721-crypto-spain",
     "ca": "model-721-criptomonedes"
+  },
+  "precios": {
+    "es": "precios",
+    "en": "pricing",
+    "ca": "preus"
+  },
+  "contacto": {
+    "es": "contacto",
+    "en": "contact",
+    "ca": "contacte"
+  },
+  "sobre-nosotros": {
+    "es": "sobre-nosotros",
+    "en": "about-us",
+    "ca": "sobre-nosaltres"
+  },
+  "despachos": {
+    "es": "despachos",
+    "en": "for-advisory-firms",
+    "ca": "despatxos"
   }
 }

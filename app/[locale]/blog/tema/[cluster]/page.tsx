@@ -11,6 +11,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 import { metaPagina, recortar } from "@/lib/seo";
+import { rutaPagina } from "@/lib/paginas";
 
 type Props = {
   params: Promise<{ locale: string; cluster: string }>;
@@ -341,7 +342,7 @@ export default async function ClusterPage({ params }: Props) {
               {t('cta.description', { clusterName: clusterName.toLowerCase() })}
             </p>
             <Link
-              href={`/${locale}/contacto`}
+              href={`/${locale}${rutaPagina("contacto", locale)}`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-rojo text-blanco hover:bg-rojo transition-colors font-semibold text-lg"
             >
               {t('cta.button')}

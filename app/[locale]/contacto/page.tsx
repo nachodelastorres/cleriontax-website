@@ -7,6 +7,7 @@ import IconoWhatsApp from "@/components/brand/IconoWhatsApp";
 import FormularioDiagnostico from "@/components/cta/FormularioDiagnostico";
 import { generateBreadcrumbSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { rutaPagina, rutasPagina } from "@/lib/paginas";
 import { metaPagina, recortar } from "@/lib/seo";
 
 /**
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: Props) {
   setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) return {};
-  return metaPagina({ locale, ruta: "/contacto", titulo: datos.seo.title, descripcion: datos.seo.description });
+  return metaPagina({ locale, ruta: rutasPagina("contacto"), titulo: datos.seo.title, descripcion: datos.seo.description });
 }
 
 function IconoCanal({ tipo }: { tipo: TipoCanal }) {
@@ -74,7 +75,7 @@ export default async function ContactoPage({ params }: Props) {
 
   const breadcrumb = generateBreadcrumbSchema({
     locale: locale as Locale,
-    path: `/${locale}/contacto`,
+    path: `/${locale}${rutaPagina("contacto", locale)}`,
     baseUrl: SITE_URL,
   });
   const esquema = {
@@ -82,7 +83,7 @@ export default async function ContactoPage({ params }: Props) {
     "@type": "ContactPage",
     name: datos.seo.title,
     description: datos.seo.description,
-    url: canonicalFor(locale as Locale, "/contacto"),
+    url: canonicalFor(locale as Locale, rutaPagina("contacto", locale)),
     breadcrumb,
     mainEntity: { "@type": "ProfessionalService", "@id": `${SITE_URL}/#organization` },
   };

@@ -95,7 +95,7 @@ export function generateCleriontaxTeamSchema(baseUrl = 'https://www.cleriontax.c
     name: 'Equipo Cleriontax',
     role: 'Tax Advisory & Data Analysis Team',
     description: 'Equipo de asesores fiscales y analistas de datos especializados en criptomonedas, DeFi y fiscalidad de inversiones en España.',
-    url: `${baseUrl}/sobre-nosotros`,
+    url: `${baseUrl}/es/sobre-nosotros`,
     baseUrl
   });
 }

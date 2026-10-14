@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Angulo } from "@/components/brand/Formas";
 import { Cabecera, Envoltura, type FondoSeccion } from "@/components/secciones/Bloques";
 import { TARIFAS } from "@/lib/tarifas";
+import { rutaPagina } from "@/lib/paginas";
 
 /**
  * Los cuatro tramos de precio.
@@ -101,7 +102,7 @@ export default async function Tarifas({
 
       <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3">
         <a
-          href={resumida ? `/${locale}/contacto` : "#diagnostico"}
+          href={resumida ? `/${locale}${rutaPagina("contacto", locale)}` : "#diagnostico"}
           className="inline-flex items-center gap-2 text-nota font-semibold text-rojo underline-offset-4 hover:underline"
         >
           {t("accion")}

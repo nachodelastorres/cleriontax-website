@@ -43,14 +43,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urls: MetadataRoute.Sitemap = [];
 
   const estaticas = ['', '/precios', '/despachos', '/sobre-nosotros', '/contacto', '/blog'];
+  // Las páginas fijas también tienen el slug traducido (la home y el blog, no).
+  const local = (pagina: string, l: Locale) => (pagina ? rutaPagina(pagina.slice(1), l) : '');
   for (const locale of LOCALES) {
     for (const pagina of estaticas) {
       urls.push({
-        url: `${SITE_URL}/${locale}${pagina}`,
+        url: `${SITE_URL}/${locale}${local(pagina, locale)}`,
         lastModified: new Date(ACTUALIZADO[pagina]),
         changeFrequency: pagina === '/blog' ? 'weekly' : 'monthly',
         priority: pagina === '' ? 1.0 : pagina === '/blog' ? 0.9 : 0.8,
-        alternates: idiomas(() => pagina),
+        alternates: idiomas((l) => local(pagina, l)),
       });
     }
   }
