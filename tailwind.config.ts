@@ -19,6 +19,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Flujo de datos en la figura del método: los guiones avanzan hacia el símbolo.
+      // Se repite cada 8 unidades de pathLength (dasharray 2 6), sin salto.
+      keyframes: {
+        flujo: { to: { strokeDashoffset: "-8" } },
+      },
+      animation: {
+        flujo: "flujo 1.2s linear infinite",
+      },
       colors: {
         // ---- Colores de marca (§10) ----
         azul: "#050A30", // Azul Cleriontax — 40 % de la superficie

@@ -740,21 +740,41 @@
       }
     },
     "metodo": {
-      "titulo": "D’exchange, wallet i protocol a un sol informe",
-      "entrada": "Un informe automàtic és el punt de partida, mai el lliurament. Unim totes les teves fonts, descartem el soroll, conciliem el que es repeteix i revisem a mà el que un programa resoldria amb un valor per defecte.",
-      "fuentes": "El que ens arriba",
-      "conciliacion": "Conciliació",
-      "resultado": "El que queda",
-      "operaciones": "operacions",
-      "filas": {
-        "recibidas": "Operacions rebudes",
-        "spam": "Spam i tokens sense valor",
-        "duplicados": "Duplicats entre fonts",
-        "internas": "Transferències entre les teves wallets",
-        "fiscales": "Operacions amb efecte fiscal",
-        "manual": "Revisades a mà"
+      "titulo": "Totes les teves fonts, un sol informe fiscal",
+      "intro": [
+        "Preparem l’informe fiscal de les teves criptomonedes a partir de totes les teves fonts de dades. Importem l’historial de cada exchange, com Binance, Coinbase o Kraken; el de les teves wallets, com MetaMask o Ledger; i les adreces públiques a Bitcoin, Ethereum, Solana o qualsevol altra xarxa, incloses les operacions en protocols DeFi com Uniswap o Aave.",
+        "Després reconstruïm la teva cartera operació a operació. Identifiquem els traspassos entre les teves pròpies wallets, eliminem duplicats i tokens d’spam, assignem el valor en euros de cada moviment i calculem els guanys i les pèrdues amb el mètode FIFO que aplica Hisenda. El que un programa resoldria amb un valor per defecte ho revisa a mà un assessor.",
+        "El resultat és un únic informe, traçable línia a línia, amb les xifres a punt per a la teva declaració de la renda (model 100) i, si et correspon, per al model 721 i el 714."
+      ],
+      "grupos": {
+        "exchanges": "Exchanges",
+        "wallets": "Wallets",
+        "blockchains": "Blockchains",
+        "defi": "DeFi i protocols"
       },
-      "nota": "Dades d’exemple: cartera fictícia d’un sol exercici."
+      "conciliacion": "Conciliació",
+      "pasos": [
+        "Unifiquem totes les fonts",
+        "Traiem spam, duplicats i traspassos entre les teves wallets",
+        "Revisem a mà el que no quadra"
+      ],
+      "informe": {
+        "titulo": "Informe fiscal",
+        "subtitulo": "Un únic document, traçable",
+        "filas": [
+          "Guanys i pèrdues patrimonials",
+          "Rendiments de staking i lending",
+          "Saldos a 31 de desembre"
+        ],
+        "listo": "A punt per presentar",
+        "modelos": [
+          "Model 100",
+          "Model 721",
+          "Model 714"
+        ]
+      },
+      "mas": "I qualsevol altra font: exportacions CSV, connexions per API o adreces públiques de qualsevol xarxa.",
+      "nota": "Els logotips pertanyen als seus titulars i es mostren com a exemple de fonts amb què treballem."
     },
     "informe": {
       "titulo": "Un informe que se sosté davant l’AEAT",

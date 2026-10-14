@@ -5,15 +5,17 @@ import TablaDatos from "@/components/brand/TablaDatos";
 import CifrasEstado from "@/components/brand/CifrasEstado";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { formatearNumero } from "@/lib/format";
-import { FISCALES, REVISADAS_A_MANO } from "@/components/inicio/MetodoDiagrama";
+
+/** Recuentos de la cartera de ejemplo: operaciones con efecto fiscal y, de ellas, las revisadas a mano. */
+const FISCALES = 60762;
+const REVISADAS_A_MANO = 37;
 
 /**
  * El entregable como prueba — plan, fase 05: «la tabla real como prueba, con
  * datos ficticios y su nota».
  *
- * La tabla reproduce la del manual (§17, «Informe») y los recuentos de los
- * chips son los mismos de la figura del método: es la misma cartera de
- * ejemplo vista en dos momentos.
+ * La tabla reproduce la del manual (§17, «Informe»), con una cartera de
+ * ejemplo.
  */
 export default async function InformeEjemplo({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "inicio.informe" });

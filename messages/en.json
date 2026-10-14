@@ -740,21 +740,41 @@
       }
     },
     "metodo": {
-      "titulo": "From exchange, wallet and protocol to a single report",
-      "entrada": "An automated report is the starting point, never the deliverable. We bring all your sources together, discard the noise, reconcile what’s duplicated and review by hand what software would settle with a default value.",
-      "fuentes": "What comes in",
-      "conciliacion": "Reconciliation",
-      "resultado": "What remains",
-      "operaciones": "transactions",
-      "filas": {
-        "recibidas": "Transactions received",
-        "spam": "Spam and worthless tokens",
-        "duplicados": "Duplicates across sources",
-        "internas": "Transfers between your wallets",
-        "fiscales": "Taxable transactions",
-        "manual": "Reviewed by hand"
+      "titulo": "All your sources, one tax report",
+      "intro": [
+        "We prepare your crypto tax report from all your data sources. We import the history of every exchange, such as Binance, Coinbase or Kraken; of your wallets, such as MetaMask or Ledger; and public addresses on Bitcoin, Ethereum, Solana or any other network, including transactions on DeFi protocols such as Uniswap or Aave.",
+        "Then we rebuild your portfolio transaction by transaction. We identify transfers between your own wallets, remove duplicates and spam tokens, assign the euro value of every movement and calculate gains and losses with the FIFO method applied by the Spanish Tax Agency. Whatever software would settle with a default value is reviewed by hand by an advisor.",
+        "The result is a single report, traceable line by line, with the figures ready for your income tax return (Form 100) and, where applicable, for Form 721 and Form 714."
+      ],
+      "grupos": {
+        "exchanges": "Exchanges",
+        "wallets": "Wallets",
+        "blockchains": "Blockchains",
+        "defi": "DeFi and protocols"
       },
-      "nota": "Sample data: a fictitious single-year portfolio."
+      "conciliacion": "Reconciliation",
+      "pasos": [
+        "We bring every source together",
+        "We remove spam, duplicates and transfers between your wallets",
+        "We review by hand whatever doesn’t add up"
+      ],
+      "informe": {
+        "titulo": "Tax report",
+        "subtitulo": "One traceable document",
+        "filas": [
+          "Capital gains and losses",
+          "Staking and lending income",
+          "Balances at 31 December"
+        ],
+        "listo": "Ready to file",
+        "modelos": [
+          "Form 100",
+          "Form 721",
+          "Form 714"
+        ]
+      },
+      "mas": "And any other source: CSV exports, API connections or public addresses on any network.",
+      "nota": "Logos belong to their owners and are shown as examples of the sources we work with."
     },
     "informe": {
       "titulo": "A report that stands up to the AEAT",

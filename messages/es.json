@@ -740,21 +740,41 @@
       }
     },
     "metodo": {
-      "titulo": "De exchange, wallet y protocolo a un solo informe",
-      "entrada": "Un informe automático es el punto de partida, nunca el entregable. Unimos todas tus fuentes, descartamos el ruido, conciliamos lo que se repite y revisamos a mano lo que un programa resolvería con un valor por defecto.",
-      "fuentes": "Lo que nos llega",
-      "conciliacion": "Conciliación",
-      "resultado": "Lo que queda",
-      "operaciones": "operaciones",
-      "filas": {
-        "recibidas": "Operaciones recibidas",
-        "spam": "Spam y tokens sin valor",
-        "duplicados": "Duplicados entre fuentes",
-        "internas": "Transferencias entre tus wallets",
-        "fiscales": "Operaciones con efecto fiscal",
-        "manual": "Revisadas a mano"
+      "titulo": "Todas tus fuentes, un solo informe fiscal",
+      "intro": [
+        "Preparamos el informe fiscal de tus criptomonedas a partir de todas tus fuentes de datos. Importamos el historial de cada exchange, como Binance, Coinbase o Kraken; el de tus wallets, como MetaMask o Ledger; y las direcciones públicas en Bitcoin, Ethereum, Solana o cualquier otra red, incluidas las operaciones en protocolos DeFi como Uniswap o Aave.",
+        "Después reconstruimos tu cartera operación a operación. Identificamos los traspasos entre tus propias wallets, eliminamos duplicados y tokens de spam, asignamos el valor en euros de cada movimiento y calculamos las ganancias y pérdidas con el método FIFO que aplica Hacienda. Lo que un programa resolvería con un valor por defecto lo revisa a mano un asesor.",
+        "El resultado es un único informe, trazable línea a línea, con las cifras listas para tu declaración de la renta (modelo 100) y, si te corresponde, para el modelo 721 y el 714."
+      ],
+      "grupos": {
+        "exchanges": "Exchanges",
+        "wallets": "Wallets",
+        "blockchains": "Blockchains",
+        "defi": "DeFi y protocolos"
       },
-      "nota": "Datos de ejemplo: cartera ficticia de un solo ejercicio."
+      "conciliacion": "Conciliación",
+      "pasos": [
+        "Unificamos todas las fuentes",
+        "Quitamos spam, duplicados y traspasos entre tus wallets",
+        "Revisamos a mano lo que no cuadra"
+      ],
+      "informe": {
+        "titulo": "Informe fiscal",
+        "subtitulo": "Un único documento, trazable",
+        "filas": [
+          "Ganancias y pérdidas patrimoniales",
+          "Rendimientos de staking y lending",
+          "Saldos a 31 de diciembre"
+        ],
+        "listo": "Listo para presentar",
+        "modelos": [
+          "Modelo 100",
+          "Modelo 721",
+          "Modelo 714"
+        ]
+      },
+      "mas": "Y cualquier otra fuente: exportaciones CSV, conexiones por API o direcciones públicas de cualquier red.",
+      "nota": "Los logotipos pertenecen a sus titulares y se muestran como ejemplo de fuentes con las que trabajamos."
     },
     "informe": {
       "titulo": "Un informe que se sostiene ante la AEAT",
