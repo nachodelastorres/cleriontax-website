@@ -4,7 +4,7 @@ import { Cabecera } from "@/components/secciones/Bloques";
 import ClasificadorPestanas, {
   type GrupoClasificador,
 } from "@/components/inicio/ClasificadorPestanas";
-import { GRUPOS, porGrupo } from "@/lib/paginas";
+import { GRUPOS, porGrupo, rutaPagina } from "@/lib/paginas";
 
 /**
  * El clasificador — las tres preguntas y, debajo de cada una, los casos que
@@ -24,6 +24,7 @@ export default async function ElijeTuCaso({ locale }: { locale: string }) {
     quien: tPag(`grupos.${g}.quien`),
     casos: grupos[g].map((p) => ({
       slug: p.slug,
+      href: rutaPagina(p.slug, locale),
       texto: tPag(`casos.${p.slug}`),
       urgente: p.urgente,
     })),

@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
@@ -10,6 +10,7 @@ import BlogCard from "@/components/blog/BlogCard";
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { metaPagina, recortar } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string; cluster: string }>;
@@ -30,38 +31,22 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale, cluster } = await params;
+  setRequestLocale(locale);
 
   const clusterData = clustersConfig.clusters.find(c => c.id === cluster);
+  if (!clusterData) return {};
 
-  if (!clusterData) {
-    return {
-      title: 'Cluster no encontrado',
-      description: 'El cluster solicitado no existe',
-    };
-  }
-
-  const clusterName = clusterData.name[locale as Locale];
-  const clusterDescription = clusterData.description[locale as Locale];
-  const clusterKeywords = clusterData.keywords[locale as Locale];
-  const clusterPath = `/blog/tema/${cluster}`;
-
-  return {
-    title: `${clusterName} - Blog Cleriontax`,
-    description: clusterDescription,
-    keywords: clusterKeywords.join(', '),
-    alternates: getAlternates(locale as Locale, clusterPath),
-    openGraph: {
-      title: `${clusterName} - Blog Cleriontax`,
-      description: clusterDescription,
-      type: 'website',
-      locale: locale,
-      url: canonicalFor(locale as Locale, clusterPath),
-    },
-  };
+  return metaPagina({
+    locale,
+    ruta: `/blog/tema/${cluster}`,
+    titulo: clusterData.name[locale as Locale],
+    descripcion: recortar(clusterData.description[locale as Locale]),
+  });
 }
 
 export default async function ClusterPage({ params }: Props) {
   const { locale, cluster } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'blog.clusterPage' });
 
   // Buscar cluster

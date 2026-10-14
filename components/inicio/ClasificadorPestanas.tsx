@@ -22,7 +22,7 @@ export interface GrupoClasificador {
   id: Grupo;
   titulo: string;
   quien: string;
-  casos: { slug: string; texto: string; urgente: boolean }[];
+  casos: { slug: string; href: string; texto: string; urgente: boolean }[];
 }
 
 // Clases completas para que Tailwind las encuentre al compilar.
@@ -122,7 +122,7 @@ export default function ClasificadorPestanas({ grupos, inicial, textos }: Props)
                     className={`border-niebla ${i > 0 ? "border-t md:border-t-0 md:border-l" : ""}`}
                   >
                     <Link
-                      href={`/${s.slug}`}
+                      href={s.href}
                       tabIndex={abierta ? undefined : -1}
                       className="group flex h-full flex-col justify-between gap-4 p-6 transition-colors duration-200 hover:bg-papel md:p-7"
                     >

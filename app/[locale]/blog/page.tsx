@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAllBlogPostsWithContent } from "@/lib/blog";
 import Container from "@/components/ui/Container";
 import BlogHero from "@/components/blog/BlogHero";
@@ -9,6 +9,7 @@ import clustersConfig from "@/messages/blog-posts/clusters-config.json";
 import metadata from "@/messages/blog-posts/metadata.json";
 import Image from "next/image";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { metaPagina, recortar } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,25 +17,14 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'seo.blog' });
-
-  return {
-    title: t('title'),
-    description: t('description'),
-    keywords: 'blog fiscalidad criptomonedas, noticias cripto España, guías fiscales crypto, impuestos bitcoin, declaración criptoactivos, AEAT criptomonedas, asesoría fiscal blockchain, actualidad normativa cripto',
-    alternates: getAlternates(locale as Locale, '/blog'),
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      type: 'website',
-      locale: locale,
-      url: canonicalFor(locale as Locale, '/blog'),
-    },
-  };
+  return metaPagina({ locale, ruta: '/blog', titulo: t('title'), descripcion: t('description') });
 }
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'blog' });
 
   // Cargar todos los posts con su contenido en el idioma actual

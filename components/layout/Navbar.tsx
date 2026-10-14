@@ -7,7 +7,7 @@ import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import ButtonLink from "@/components/ui/ButtonLink";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
-import { GRUPOS, porGrupo } from "@/lib/paginas";
+import { GRUPOS, porGrupo, rutaPagina } from "@/lib/paginas";
 
 const PAGINAS_POR_GRUPO = porGrupo();
 export default function Navbar() {
@@ -128,7 +128,7 @@ export default function Navbar() {
                           {PAGINAS_POR_GRUPO[g].map((p) => (
                             <li key={p.slug}>
                               <Link
-                                href={`/${p.slug}`}
+                                href={rutaPagina(p.slug, locale)}
                                 className="block py-1 text-sm font-medium text-azul transition-colors hover:text-rojo"
                               >
                                 {tPag(`nombres.${p.slug}`)}
@@ -242,7 +242,7 @@ export default function Navbar() {
                           {PAGINAS_POR_GRUPO[g].map((p) => (
                             <li key={p.slug}>
                               <Link
-                                href={`/${p.slug}`}
+                                href={rutaPagina(p.slug, locale)}
                                 className="block py-1.5 pl-3 text-base text-azul hover:text-rojo"
                                 onClick={() => setMobileMenuOpen(false)}
                               >

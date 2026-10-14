@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import { promises as fs } from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
@@ -6,6 +7,7 @@ import IconoWhatsApp from "@/components/brand/IconoWhatsApp";
 import FormularioDiagnostico from "@/components/cta/FormularioDiagnostico";
 import { generateBreadcrumbSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { metaPagina, recortar } from "@/lib/seo";
 
 /**
  * Contacto.
@@ -49,20 +51,10 @@ async function cargar(locale: string): Promise<Contenido | null> {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) return {};
-  return {
-    title: datos.seo.title,
-    description: datos.seo.description,
-    alternates: getAlternates(locale as Locale, "/contacto"),
-    openGraph: {
-      title: datos.seo.title,
-      description: datos.seo.description,
-      type: "website",
-      locale,
-      url: canonicalFor(locale as Locale, "/contacto"),
-    },
-  };
+  return metaPagina({ locale, ruta: "/contacto", titulo: datos.seo.title, descripcion: datos.seo.description });
 }
 
 function IconoCanal({ tipo }: { tipo: TipoCanal }) {
@@ -73,6 +65,7 @@ function IconoCanal({ tipo }: { tipo: TipoCanal }) {
 
 export default async function ContactoPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) notFound();
   const { hero, canales, horario, formulario, despues } = datos;

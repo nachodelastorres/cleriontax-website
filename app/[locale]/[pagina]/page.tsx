@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { promises as fs } from "fs";
 import path from "path";
@@ -9,7 +9,7 @@ import {
   generateDetailedServiceSchema,
 } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
-import { SLUGS_PAGINA, getPagina } from "@/lib/paginas";
+import { PAGINAS, paginaPorSlug, rutaPagina, rutasPagina, slugLocal } from "@/lib/paginas";
 import { TARIFAS } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
 import HeroExpediente from "@/components/expediente/HeroExpediente";
@@ -24,6 +24,7 @@ import FormularioDiagnostico from "@/components/cta/FormularioDiagnostico";
 import BarraAccion from "@/components/cta/BarraAccion";
 import BloqueAccion from "@/components/cta/BloqueAccion";
 import RelacionadosPagina from "@/components/paginas/RelacionadosPagina";
+import { metaPagina, recortar } from "@/lib/seo";
 
 /**
  * Las páginas de servicio, una por intención de búsqueda (ver lib/paginas.ts).
@@ -38,8 +39,9 @@ type Props = { params: Promise<{ locale: string; pagina: string }> };
 // Cualquier otro primer segmento es un 404, no una página vacía.
 export const dynamicParams = false;
 
-export async function generateStaticParams() {
-  return SLUGS_PAGINA.map((pagina) => ({ pagina }));
+// Cada idioma con su slug: /es/declarar-criptomonedas, /en/declare-crypto-taxes-spain…
+export async function generateStaticParams({ params }: { params: { locale: string } }) {
+  return PAGINAS.map((p) => ({ pagina: slugLocal(p.slug, params.locale) }));
 }
 
 interface Contenido {
@@ -77,41 +79,43 @@ async function cargar(locale: string, slug: string): Promise<Contenido | null> {
     const ruta = path.join(process.cwd(), "messages", "paginas", locale, `${slug}.json`);
     return JSON.parse(await fs.readFile(ruta, "utf-8"));
   } catch {
-    return locale !== "es" ? cargar("es", slug) : null;
+    // Sin el contenido en este idioma no se sirve el español con canonical
+    // ajeno: la página no existe.
+    return null;
   }
 }
 
 export async function generateMetadata({ params }: Props) {
-  const { locale, pagina } = await params;
-  const datos = await cargar(locale, pagina);
+  const { locale, pagina: slugUrl } = await params;
+  setRequestLocale(locale);
+  const meta = paginaPorSlug(slugUrl, locale);
+  if (!meta) return {};
+  const datos = await cargar(locale, meta.slug);
   if (!datos) return {};
-
-  const ruta = `/${pagina}`;
-  return {
-    title: datos.seo.title,
-    description: datos.seo.description,
+  return metaPagina({
+    locale,
+    ruta: rutasPagina(meta.slug),
+    titulo: datos.seo.title,
+    descripcion: datos.seo.description,
     keywords: datos.seo.keywords,
-    alternates: getAlternates(locale as Locale, ruta),
-    openGraph: {
-      title: datos.seo.title,
-      description: datos.seo.description,
-      type: "website",
-      locale,
-      url: canonicalFor(locale as Locale, ruta),
-    },
-  };
+  });
 }
 
 export default async function PaginaServicio({ params }: Props) {
-  const { locale, pagina } = await params;
+  const { locale, pagina: slugUrl } = await params;
+  setRequestLocale(locale);
 
-  const meta = getPagina(pagina);
+  // El slug de la URL es el del idioma; el interno (`pagina`) es el español.
+  const meta = paginaPorSlug(slugUrl, locale);
+  if (!meta) notFound();
+  const pagina = meta.slug;
+  const ruta = rutaPagina(pagina, locale);
   const datos = await cargar(locale, pagina);
   if (!meta || !datos) notFound();
 
   const t = await getTranslations({ locale, namespace: "paginas" });
   const nombre = t(`nombres.${pagina}`);
-  const url = canonicalFor(locale as Locale, `/${pagina}`);
+  const url = canonicalFor(locale as Locale, ruta);
   const { hero, toc, sections, tarifas, cierre } = datos;
 
   const contenido = sections.filter((s) => s.id !== "faq");
@@ -123,8 +127,8 @@ export default async function PaginaServicio({ params }: Props) {
 
   const breadcrumb = generateBreadcrumbSchema({
     locale: locale as Locale,
-    path: `/${locale}/${pagina}`,
-    customLabels: { [pagina]: nombre },
+    path: `/${locale}${ruta}`,
+    customLabels: { [slugUrl]: nombre },
     baseUrl: SITE_URL,
   });
 

@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { getBlogPostBySlug } from "@/lib/blog";
-import { PAGINAS, type Pagina } from "@/lib/paginas";
+import { PAGINAS, rutaPagina, type Pagina } from "@/lib/paginas";
 import type { Locale } from "@/lib/site";
 
 /**
@@ -45,7 +45,7 @@ export default async function RelacionadosPagina({
               {hermanas.map((p) => (
                 <li key={p.slug} className="bg-papel">
                   <Link
-                    href={`/${p.slug}`}
+                    href={rutaPagina(p.slug, locale)}
                     className="group flex items-center justify-between gap-4 py-3"
                   >
                     <span className="text-lectura text-azul group-hover:text-rojo">

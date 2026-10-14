@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import HeroInicio from "@/components/inicio/HeroInicio";
 import ElijeTuCaso from "@/components/inicio/ElijeTuCaso";
 import Perfiles from "@/components/inicio/Perfiles";
@@ -10,6 +10,7 @@ import UltimasPublicaciones from "@/components/inicio/UltimasPublicaciones";
 import BloqueAccion from "@/components/cta/BloqueAccion";
 import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { metaPagina, recortar } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -17,20 +18,9 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'seo.home' });
-
-  return {
-    title: t('title'),
-    description: t('description'),
-    alternates: getAlternates(locale as Locale),
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      type: 'website',
-      locale: locale,
-      url: canonicalFor(locale as Locale),
-    },
-  };
+  return metaPagina({ locale, titulo: t('title'), descripcion: t('description') });
 }
 
 /**
@@ -43,6 +33,7 @@ export async function generateMetadata({ params }: Props) {
  */
 export default async function Home({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'seo.home' });
   const tCierre = await getTranslations({ locale, namespace: 'inicio.cierre' });
 

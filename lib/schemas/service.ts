@@ -22,10 +22,13 @@ interface ServiceSchemaConfig {
  * Service type mapping for better SEO
  */
 const serviceTypeCategories: Record<string, string> = {
-  'informe-fiscal-criptomonedas': 'Financial Data Reconciliation Service',
+  'informe-fiscal-criptomonedas': 'Cryptocurrency Tax Report',
+  'revisar-informe-koinly-cointracking': 'Crypto Tax Report Review',
+  'requerimiento-hacienda-criptomonedas': 'Tax Authority Request Response',
+  'inspeccion-hacienda-criptomonedas': 'Tax Audit Defense',
+  'regularizar-criptomonedas': 'Tax Regularization',
   'declarar-criptomonedas': 'Tax Preparation Service',
-  'litigacion-fiscal-criptomonedas': 'Tax Litigation Service',
-  'asesoria-fiscal-criptomonedas': 'Tax Advisory Service'
+  'modelo-721-criptomonedas': 'Foreign Crypto Assets Information Return'
 };
 
 /**
@@ -84,32 +87,9 @@ export function generateServiceSchema(
       }
     },
 
-    // Offer information without specific pricing
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      availabilityStarts: '2024-01-01',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        priceCurrency: 'EUR',
-        price: '0',
-        valueAddedTaxIncluded: true
-      },
-      description: availabilityText[locale],
-      itemOffered: {
-        '@type': 'Service',
-        name: serviceName
-      }
-    },
-
-    termsOfService: `${baseUrl}/${locale}/legal`,
-
-    // Service features/benefits
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: serviceName,
-      itemListElement: []
-    }
+    // Sin «offers» aquí: un precio 0 decía que el servicio era gratis. La
+    // página añade un AggregateOffer real solo cuando se cotiza por tramos.
+    termsOfService: `${baseUrl}/${locale}/aviso-legal`,
   };
 
   if (image) {

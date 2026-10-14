@@ -147,7 +147,19 @@ export function alternatesFor(path?: string): Record<Locale | 'x-default', strin
  * @param path - Ruta relativa (sin locale)
  * @returns Objeto alternates con canonical y languages
  */
-export function getAlternates(locale: Locale, path?: string) {
+export function getAlternates(locale: Locale, path?: string | Record<Locale, string>) {
+  // Ruta distinta por idioma: las páginas de servicio tienen el slug traducido.
+  if (path && typeof path === 'object') {
+    return {
+      canonical: canonicalFor(locale, path[locale]),
+      languages: {
+        es: canonicalFor('es', path.es),
+        en: canonicalFor('en', path.en),
+        ca: canonicalFor('ca', path.ca),
+        'x-default': canonicalFor('es', path.es),
+      },
+    };
+  }
   return {
     canonical: canonicalFor(locale, path),
     languages: alternatesFor(path),

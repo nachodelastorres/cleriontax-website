@@ -1,5 +1,6 @@
+import { metaPagina } from "@/lib/seo";
 import { notFound } from "next/navigation";
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from "next/image";
 import Link from "next/link";
 import { getBlogPostBySlug, getAllBlogPosts, getAllBlogPostsWithContent } from "@/lib/blog";
@@ -49,6 +50,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   const post = await getBlogPostBySlug(slug, locale);
 
   if (!post) {
@@ -64,55 +66,35 @@ export async function generateMetadata({ params }: Props) {
     };
   }
 
-  const postUrl = canonicalFor(locale as Locale, `/blog/${slug}`);
-
-  // IMPORTANTE: Siempre usar el slug español para hreflang (requisito SEO)
-  const spanishSlug = post.slugTranslations.es;
+  // Las tres versiones del artículo comparten slug (el español): es el que se enruta.
+  const base = metaPagina({
+    locale,
+    ruta: `/blog/${post.slugTranslations.es}`,
+    titulo: post.seo.metaTitle,
+    descripcion: post.seo.metaDescription,
+    keywords: post.seo.keywords,
+    // Sin medidas: las declaradas en los datos no eran las reales.
+    imagen: { url: post.seo.ogImage || post.image.url, alt: post.image.alt },
+    tipo: 'article',
+  });
 
   return {
-    title: post.seo.metaTitle,
-    description: post.seo.metaDescription,
-    keywords: post.seo.keywords.join(', '),
-    authors: [{ name: post.author.name }],
-    alternates: {
-      canonical: postUrl,
-      languages: {
-        'es': canonicalFor('es', `/blog/${spanishSlug}`),
-        'en': canonicalFor('en', `/blog/${spanishSlug}`),
-        'ca': canonicalFor('ca', `/blog/${spanishSlug}`),
-        'x-default': canonicalFor('es', `/blog/${spanishSlug}`),
-      },
-    },
+    ...base,
+    authors: [{ name: 'Cleriontax' }],
     openGraph: {
-      title: post.seo.metaTitle,
-      description: post.seo.metaDescription,
+      ...(base.openGraph as object),
       type: 'article',
-      locale: locale,
-      url: postUrl,
-      images: [
-        {
-          url: post.seo.ogImage || post.image.url,
-          width: 1200,
-          height: 630,
-          alt: post.image.alt,
-        },
-      ],
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt || post.publishedAt,
-      authors: [post.author.name],
+      authors: ['Cleriontax'],
       tags: post.tags,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.seo.metaTitle,
-      description: post.seo.metaDescription,
-      images: [post.seo.ogImage || post.image.url],
     },
   };
 }
 
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
 
   const post = await getBlogPostBySlug(slug, locale);
   const t = await getTranslations({ locale, namespace: 'blog' });
@@ -331,7 +313,6 @@ export default async function BlogPostPage({ params }: Props) {
                   quality={90}
                   priority
                 />
-                <div className="absolute inset-0 bg-papel" />
               </div>
             </div>
           </Container>
@@ -573,7 +554,7 @@ export default async function BlogPostPage({ params }: Props) {
         temperatura="templado"
         titulo={t("ctaFrio.titulo")}
         apoyo={t("ctaFrio.texto")}
-        accion={{ texto: t("ctaFrio.verServicio"), href: servicioSugerido(slug, post.cluster) }}
+        accion={{ texto: t("ctaFrio.verServicio"), href: servicioSugerido(slug, post.cluster, locale) }}
         secundaria={{ texto: t("ctaFrio.contar"), href: "/contacto" }}
       />
     </>

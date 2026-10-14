@@ -1,4 +1,5 @@
 import type { NombreForma } from "@/components/secciones/Bloques";
+import RUTAS from "./rutas-paginas.json";
 
 /**
  * Las páginas de servicio — una por intención de búsqueda.
@@ -141,4 +142,33 @@ export function porGrupo(): Record<Grupo, Pagina[]> {
     aeat: PAGINAS.filter((p) => p.grupo === "aeat"),
     declarar: PAGINAS.filter((p) => p.grupo === "declarar"),
   };
+}
+
+/* ------------------------------------------------------- Slugs por idioma */
+
+type Idioma = "es" | "en" | "ca";
+
+/**
+ * Cada página tiene su slug en cada idioma (`rutas-paginas.json`, que también
+ * lee next.config.mjs para las redirecciones). `slug` es el identificador
+ * interno y coincide con el español; los contenidos se guardan con él.
+ */
+export function slugLocal(slugEs: string, locale: string): string {
+  const rutas = (RUTAS as Record<string, Record<Idioma, string>>)[slugEs];
+  return rutas?.[locale as Idioma] ?? slugEs;
+}
+
+/** La ruta de una página en un idioma, sin el prefijo del idioma. */
+export function rutaPagina(slugEs: string, locale: string): string {
+  return `/${slugLocal(slugEs, locale)}`;
+}
+
+/** Las rutas de una página en los tres idiomas, para hreflang. */
+export function rutasPagina(slugEs: string): Record<Idioma, string> {
+  return { es: rutaPagina(slugEs, "es"), en: rutaPagina(slugEs, "en"), ca: rutaPagina(slugEs, "ca") };
+}
+
+/** La página a la que corresponde un slug en un idioma concreto. */
+export function paginaPorSlug(slug: string, locale: string): Pagina | undefined {
+  return PAGINAS.find((p) => slugLocal(p.slug, locale) === slug);
 }

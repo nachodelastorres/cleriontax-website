@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Mail, Phone, Linkedin } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
-import { PAGINAS } from "@/lib/paginas";
+import { PAGINAS, rutaPagina } from "@/lib/paginas";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,7 +22,7 @@ export default function Footer() {
       { name: t('links.blog'), href: '/blog' },
       { name: t('links.contact'), href: '/contacto' },
     ],
-    servicios: PAGINAS.map((p) => ({ name: tPag(p.slug), href: `/${p.slug}` })),
+    servicios: PAGINAS.map((p) => ({ name: tPag(p.slug), href: rutaPagina(p.slug, locale) })),
     legal: [
       { name: t('links.privacy'), href: '/privacidad' },
       { name: t('links.legal'), href: '/aviso-legal' },

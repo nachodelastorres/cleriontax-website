@@ -1,0 +1,37 @@
+{
+  "informe-fiscal-criptomonedas": {
+    "es": "informe-fiscal-criptomonedas",
+    "en": "crypto-tax-report-spain",
+    "ca": "informe-fiscal-criptomonedes"
+  },
+  "revisar-informe-koinly-cointracking": {
+    "es": "revisar-informe-koinly-cointracking",
+    "en": "koinly-cointracking-report-review",
+    "ca": "revisar-informe-koinly-cointracking"
+  },
+  "requerimiento-hacienda-criptomonedas": {
+    "es": "requerimiento-hacienda-criptomonedas",
+    "en": "tax-agency-request-crypto",
+    "ca": "requeriment-hisenda-criptomonedes"
+  },
+  "inspeccion-hacienda-criptomonedas": {
+    "es": "inspeccion-hacienda-criptomonedas",
+    "en": "tax-inspection-crypto-spain",
+    "ca": "inspeccio-hisenda-criptomonedes"
+  },
+  "regularizar-criptomonedas": {
+    "es": "regularizar-criptomonedas",
+    "en": "regularise-crypto-taxes-spain",
+    "ca": "regularitzar-criptomonedes"
+  },
+  "declarar-criptomonedas": {
+    "es": "declarar-criptomonedas",
+    "en": "declare-crypto-taxes-spain",
+    "ca": "declarar-criptomonedes"
+  },
+  "modelo-721-criptomonedas": {
+    "es": "modelo-721-criptomonedas",
+    "en": "form-721-crypto-spain",
+    "ca": "model-721-criptomonedes"
+  }
+}

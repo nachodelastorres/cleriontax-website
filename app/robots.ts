@@ -7,7 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/', '/_next/', '/private/'],
+        // Nunca /_next/: ahí están el CSS, el JS y las imágenes optimizadas
+        // que Google necesita para renderizar la página y rastrear sus imágenes.
+        disallow: ['/api/'],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

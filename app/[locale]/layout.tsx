@@ -1,7 +1,8 @@
+import { OG_IMAGEN, ogLocale, sinMarca } from "@/lib/seo";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CookieConsentWrapper from "@/components/cookies/CookieConsentWrapper";
@@ -39,6 +40,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
 
   // Respaldo del sitio: solo se usa donde la página no define su propia
   // metadata. Va traducido, igual que el resto (§19).
@@ -46,7 +48,8 @@ export async function generateMetadata({ params }: Props) {
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: t('title'),
+    // La marca la añade la plantilla: cada página pone su título sin ella.
+    title: { default: sinMarca(t('title')), template: '%s | Cleriontax' },
     description: t('description'),
     keywords: t.raw('keywords') as string[],
     authors: [{ name: 'Cleriontax' }],
@@ -61,17 +64,12 @@ export async function generateMetadata({ params }: Props) {
       title: t('title'),
       description: t('description'),
       type: 'website',
-      locale: locale,
+      locale: ogLocale(locale as Locale),
       url: `${SITE_URL}/${locale}`,
-      images: [
-        {
-          url: '/images/logos/logo_fondo_blanco.png',
-          width: 1200,
-          height: 630,
-          alt: 'Cleriontax',
-        },
-      ],
+      siteName: 'Cleriontax',
+      images: [OG_IMAGEN],
     },
+    twitter: { card: 'summary_large_image', images: [OG_IMAGEN.url] },
     // NOTA: No definir alternates aquí - cada página los define individualmente
     // para evitar duplicación de hreflang
   };
@@ -82,6 +80,7 @@ export default async function LocaleLayout({
   params
 }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
 
   // Validar que el locale es válido
   if (!(locales as readonly string[]).includes(locale)) {

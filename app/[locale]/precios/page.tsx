@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 import { TARIFAS } from "@/lib/tarifas";
@@ -7,6 +7,7 @@ import Tarifas from "@/components/precios/Tarifas";
 import SeccionesServicio, { type Seccion } from "@/components/services/SeccionesServicio";
 import FormularioDiagnostico from "@/components/cta/FormularioDiagnostico";
 import BarraAccion from "@/components/cta/BarraAccion";
+import { metaPagina, recortar } from "@/lib/seo";
 
 /**
  * Precios — ataca «precio asesor fiscal criptomonedas» y «cuánto cuesta
@@ -18,24 +19,14 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "precios" });
-
-  return {
-    title: t("seoTitulo"),
-    description: t("seoDescripcion"),
-    alternates: getAlternates(locale as Locale, "/precios"),
-    openGraph: {
-      title: t("seoTitulo"),
-      description: t("seoDescripcion"),
-      type: "website",
-      locale,
-      url: canonicalFor(locale as Locale, "/precios"),
-    },
-  };
+  return metaPagina({ locale, ruta: "/precios", titulo: t("seoTitulo"), descripcion: t("seoDescripcion") });
 }
 
 export default async function PreciosPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "precios" });
   const tTarifas = await getTranslations({ locale, namespace: "tarifas" });
   const url = canonicalFor(locale as Locale, "/precios");

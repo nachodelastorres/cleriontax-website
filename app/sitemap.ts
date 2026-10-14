@@ -1,148 +1,113 @@
 import { MetadataRoute } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
 import clustersConfig from '@/messages/blog-posts/clusters-config.json';
-import { SITE_URL, LOCALES } from '@/lib/site';
-import { PAGINAS } from '@/lib/paginas';
+import { SITE_URL, LOCALES, type Locale } from '@/lib/site';
+import { PAGINAS, rutaPagina } from '@/lib/paginas';
+
+/**
+ * Sitemap.
+ *
+ * La fecha de modificación es la del contenido, no la del despliegue: con
+ * `new Date()` todas las URLs cambiaban en cada deploy y Google deja de fiarse
+ * del dato. Cuando se edite una página, se actualiza aquí su fecha.
+ *
+ * Cada URL lleva sus alternativas de idioma con x-default (español). Las
+ * páginas de servicio tienen el slug traducido.
+ */
+
+const ACTUALIZADO: Record<string, string> = {
+  '': '2026-10-14',
+  '/precios': '2026-10-14',
+  '/despachos': '2026-10-14',
+  '/sobre-nosotros': '2026-10-14',
+  '/contacto': '2026-10-14',
+  '/blog': '2026-10-14',
+  servicios: '2026-10-14',
+  clusters: '2026-10-14',
+  legales: '2026-09-15',
+};
+
+/** Alternativas de idioma de una URL, con x-default al español. */
+function idiomas(ruta: (locale: Locale) => string) {
+  return {
+    languages: {
+      es: `${SITE_URL}/es${ruta('es')}`,
+      en: `${SITE_URL}/en${ruta('en')}`,
+      ca: `${SITE_URL}/ca${ruta('ca')}`,
+      'x-default': `${SITE_URL}/es${ruta('es')}`,
+    },
+  };
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = SITE_URL;
-  const locales = LOCALES;
+  const urls: MetadataRoute.Sitemap = [];
 
-  // Obtener todos los posts del blog
-  const blogPosts = getAllBlogPosts();
-
-  // Clusters temáticos
-  const clusterSlugs = clustersConfig.clusters.map(c => c.id);
-
-  // Páginas estáticas principales
-  const staticPages = [
-    '',
-    '/precios',
-    '/despachos',
-    '/sobre-nosotros',
-    '/contacto',
-    '/blog',
-    '/blog/clusters',
-  ];
-
-  // Páginas legales: se indexan, pero con prioridad baja.
-  const legalPages = ['/aviso-legal', '/privacidad', '/cookies'];
-
-  // Generar URLs para todas las páginas estáticas en todos los idiomas
-  const staticUrls: MetadataRoute.Sitemap = [];
-
-  locales.forEach(locale => {
-    staticPages.forEach(page => {
-      staticUrls.push({
-        url: `${baseUrl}/${locale}${page}`,
-        lastModified: new Date(),
-        changeFrequency: page === '/blog' ? 'weekly' : 'monthly',
-        priority: page === '' ? 1.0 : page === '/blog' ? 0.9 : 0.8,
-        alternates: {
-          languages: {
-            es: `${baseUrl}/es${page}`,
-            en: `${baseUrl}/en${page}`,
-            ca: `${baseUrl}/ca${page}`,
-          },
-        },
+  const estaticas = ['', '/precios', '/despachos', '/sobre-nosotros', '/contacto', '/blog'];
+  for (const locale of LOCALES) {
+    for (const pagina of estaticas) {
+      urls.push({
+        url: `${SITE_URL}/${locale}${pagina}`,
+        lastModified: new Date(ACTUALIZADO[pagina]),
+        changeFrequency: pagina === '/blog' ? 'weekly' : 'monthly',
+        priority: pagina === '' ? 1.0 : pagina === '/blog' ? 0.9 : 0.8,
+        alternates: idiomas(() => pagina),
       });
-    });
-  });
+    }
+  }
 
-  const legalUrls: MetadataRoute.Sitemap = [];
-
-  locales.forEach(locale => {
-    legalPages.forEach(page => {
-      legalUrls.push({
-        url: `${baseUrl}/${locale}${page}`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.3,
-        alternates: {
-          languages: {
-            es: `${baseUrl}/es${page}`,
-            en: `${baseUrl}/en${page}`,
-            ca: `${baseUrl}/ca${page}`,
-          },
-        },
-      });
-    });
-  });
-
-  /*
-   * Las páginas de servicio: una por intención de búsqueda, en la raíz. Son
-   * las de más valor después de la home.
-   */
-  const paginaUrls: MetadataRoute.Sitemap = [];
-
-  locales.forEach(locale => {
-    PAGINAS.forEach(pagina => {
-      paginaUrls.push({
-        url: `${baseUrl}/${locale}/${pagina.slug}`,
-        lastModified: new Date(),
+  // Páginas de servicio: una por intención de búsqueda, con el slug de cada idioma.
+  for (const locale of LOCALES) {
+    for (const pagina of PAGINAS) {
+      urls.push({
+        url: `${SITE_URL}/${locale}${rutaPagina(pagina.slug, locale)}`,
+        lastModified: new Date(ACTUALIZADO.servicios),
         changeFrequency: 'monthly',
         priority: 0.9,
-        alternates: {
-          languages: {
-            es: `${baseUrl}/es/${pagina.slug}`,
-            en: `${baseUrl}/en/${pagina.slug}`,
-            ca: `${baseUrl}/ca/${pagina.slug}`,
-          },
-        },
+        alternates: idiomas((l) => rutaPagina(pagina.slug, l)),
       });
-    });
-  });
+    }
+  }
 
-  // Generar URLs para todos los posts del blog en todos los idiomas
-  // IMPORTANTE: Siempre usar el slug español para todas las URLs (requisito SEO)
-  const blogUrls: MetadataRoute.Sitemap = [];
+  // Temas del blog.
+  for (const locale of LOCALES) {
+    for (const cluster of clustersConfig.clusters) {
+      const ruta = `/blog/tema/${cluster.id}`;
+      urls.push({
+        url: `${SITE_URL}/${locale}${ruta}`,
+        lastModified: new Date(ACTUALIZADO.clusters),
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        alternates: idiomas(() => ruta),
+      });
+    }
+  }
 
-  blogPosts.forEach(post => {
-    const spanishSlug = post.slugTranslations.es;
-
-    locales.forEach(locale => {
-      blogUrls.push({
-        url: `${baseUrl}/${locale}/blog/${spanishSlug}`,
+  // Artículos: las tres versiones comparten el slug español, que es el que se enruta.
+  for (const post of getAllBlogPosts()) {
+    const ruta = `/blog/${post.slugTranslations.es}`;
+    for (const locale of LOCALES) {
+      urls.push({
+        url: `${SITE_URL}/${locale}${ruta}`,
         lastModified: new Date(post.updatedAt || post.publishedAt),
         changeFrequency: 'monthly',
-        priority: post.featured ? 0.9 : 0.7,
-        alternates: {
-          languages: {
-            es: `${baseUrl}/es/blog/${spanishSlug}`,
-            en: `${baseUrl}/en/blog/${spanishSlug}`,
-            ca: `${baseUrl}/ca/blog/${spanishSlug}`,
-          },
-        },
+        priority: post.featured ? 0.8 : 0.7,
+        alternates: idiomas(() => ruta),
       });
-    });
-  });
+    }
+  }
 
-  // Generar URLs para todos los clusters temáticos en todos los idiomas
-  const clusterUrls: MetadataRoute.Sitemap = [];
-
-  locales.forEach(locale => {
-    clusterSlugs.forEach(slug => {
-      clusterUrls.push({
-        url: `${baseUrl}/${locale}/blog/tema/${slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.85,
-        alternates: {
-          languages: {
-            es: `${baseUrl}/es/blog/tema/${slug}`,
-            en: `${baseUrl}/en/blog/tema/${slug}`,
-            ca: `${baseUrl}/ca/blog/tema/${slug}`,
-          },
-        },
+  // Páginas legales: se indexan, con prioridad baja.
+  for (const locale of LOCALES) {
+    for (const pagina of ['/aviso-legal', '/privacidad', '/cookies']) {
+      urls.push({
+        url: `${SITE_URL}/${locale}${pagina}`,
+        lastModified: new Date(ACTUALIZADO.legales),
+        changeFrequency: 'yearly',
+        priority: 0.3,
+        alternates: idiomas(() => pagina),
       });
-    });
-  });
+    }
+  }
 
-  return [
-    ...staticUrls,
-    ...paginaUrls,
-    ...clusterUrls,
-    ...blogUrls,
-    ...legalUrls,
-  ];
+  return urls;
 }

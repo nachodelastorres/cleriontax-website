@@ -1,3 +1,5 @@
+import { paginaPorSlug, rutaPagina } from "@/lib/paginas";
+
 /**
  * A qué página de servicio lleva cada cluster del blog.
  *
@@ -26,10 +28,11 @@ const POR_ARTICULO: Record<string, string> = {
   "dac8-guia-practica-inversores-cripto": "/requerimiento-hacienda-criptomonedas",
 };
 
-export function servicioSugerido(slug: string, cluster?: string): string {
-  return (
+export function servicioSugerido(slug: string, cluster?: string, locale = "es"): string {
+  const ruta =
     POR_ARTICULO[slug] ??
     (cluster ? SERVICIO_POR_CLUSTER[cluster] : undefined) ??
-    "/precios"
-  );
+    "/precios";
+  // Las páginas de servicio tienen el slug traducido; /precios no.
+  return paginaPorSlug(ruta.slice(1), "es") ? rutaPagina(ruta.slice(1), locale) : ruta;
 }

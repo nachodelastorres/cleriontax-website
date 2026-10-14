@@ -5,8 +5,14 @@ import { notFound } from 'next/navigation';
 // Re-export locales and Locale type for use in other files
 export { locales, type Locale };
 
-export default getRequestConfig(async ({ locale }) => {
-  // Validate that the incoming `locale` parameter is valid
+/*
+ * next-intl 4: el idioma llega en `requestLocale`, que lee el que cada página
+ * fija con setRequestLocale. El antiguo `locale` llegaba vacío y todo lo que
+ * se generaba en el servidor sin idioma explícito —los enlaces de `Link`, por
+ * ejemplo— caía al español: las páginas en inglés y catalán enlazaban a /es.
+ */
+export default getRequestConfig(async ({ requestLocale }) => {
+  const locale = await requestLocale;
   if (!locale || !locales.includes(locale as Locale)) {
     return {
       locale: defaultLocale,

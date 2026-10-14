@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import { promises as fs, existsSync } from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
@@ -6,6 +7,7 @@ import SimboloAnimado from "@/components/brand/SimboloAnimado";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { generateBreadcrumbSchema, getOrganizationReference } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
+import { metaPagina, recortar } from "@/lib/seo";
 
 /**
  * Sobre nosotros.
@@ -67,20 +69,10 @@ function foto(id: string) {
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) return {};
-  return {
-    title: datos.seo.title,
-    description: datos.seo.description,
-    alternates: getAlternates(locale as Locale, "/sobre-nosotros"),
-    openGraph: {
-      title: datos.seo.title,
-      description: datos.seo.description,
-      type: "website",
-      locale,
-      url: canonicalFor(locale as Locale, "/sobre-nosotros"),
-    },
-  };
+  return metaPagina({ locale, ruta: "/sobre-nosotros", titulo: datos.seo.title, descripcion: datos.seo.description });
 }
 
 /** Etiqueta pequeña sobre cada titular. */
@@ -94,6 +86,7 @@ function Etiqueta({ children, claro = false }: { children: React.ReactNode; clar
 
 export default async function SobreNosotrosPage({ params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const datos = await cargar(locale);
   if (!datos) notFound();
   const { hero, origen, equipo, trato, cierre } = datos;
