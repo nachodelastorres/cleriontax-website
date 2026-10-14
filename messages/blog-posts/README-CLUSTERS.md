@@ -201,7 +201,7 @@ a USDT. No has vendido a euros, solo has pasado a una moneda estable...
 **Operación**: BTC → USDT es una permuta entre dos criptomonedas que genera
 hecho imponible.
 
-**Tributación**: Ganancia patrimonial en base del ahorro (19%-28%).
+**Tributación**: Ganancia patrimonial en base del ahorro (19%-30%).
 
 **Ejemplo de cálculo**:
 Compra: 1 BTC a 30.000€
