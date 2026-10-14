@@ -43,7 +43,7 @@
     },
     "blog": {
       "title": "Blog de fiscalitat cripto: guies i casos",
-      "description": "Guies sobre fiscalitat de criptomonedes i inversions a Espanya amb exemples numèrics resolts: IRPF, models 100, 714 i 721, criteri FIFO, DeFi, compensació de pèrdues i normativa de l’AEAT."
+      "description": "Guies de fiscalitat de criptomonedes a Espanya amb exemples resolts: IRPF, models 100, 714 i 721, FIFO, DeFi i compensació de pèrdues."
     },
     "site": {
       "title": "Cleriontax · Assessoria fiscal de criptomonedes",
@@ -993,7 +993,7 @@
   },
   "precios": {
     "seoTitulo": "Preu assessor fiscal de criptomonedes | Cleriontax",
-    "seoDescripcion": "Quant costa declarar criptomonedes amb un assessor fiscal: trams tancats des de 250 €, IVA inclòs, segons les fonts de dades de la teva cartera. Sense sorpreses.",
+    "seoDescripcion": "Quant costa declarar criptomonedes amb un assessor fiscal: trams tancats des de 250 €, IVA inclòs, segons les fonts de dades de la teva cartera.",
     "etiqueta": "Preus",
     "titulo": "Quant costa un assessor fiscal de criptomonedes",
     "entrada": "Quatre trams tancats segons la complexitat de la teva cartera. Et confirmem el teu tan bon punt veiem les teves dades, abans de començar a treballar.",

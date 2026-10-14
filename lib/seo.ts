@@ -28,6 +28,9 @@ export function ogLocale(locale: Locale) {
 }
 
 /** Quita la marca de un título escrito a mano: la pone la plantilla. */
+/** Lo que añade la plantilla del layout (`%s | Cleriontax`). */
+const MARCA_TITULO = " | Cleriontax";
+
 export function sinMarca(titulo: string) {
   return titulo.replace(/\s*[|\-–—]\s*(Blog\s+)?Cleriontax\s*$/i, "").trim();
 }
@@ -65,7 +68,8 @@ export function metaPagina({
   const img = { ...imagen, url: imagen.url.startsWith("http") ? imagen.url : `${SITE_URL}${imagen.url}` };
 
   return {
-    title: limpio,
+    // Google corta hacia los 60 caracteres: si con « | Cleriontax» no cabe, va sin marca.
+    title: limpio.length + MARCA_TITULO.length > 60 ? { absolute: limpio } : limpio,
     description: descripcion,
     ...(keywords ? { keywords } : {}),
     alternates,

@@ -35,7 +35,7 @@
   "seo": {
     "home": {
       "title": "Asesoría fiscal cripto y renta de criptomonedas",
-      "description": "Informe fiscal de criptomonedas revisado operación a operación, declaración de la renta cripto, modelo 721 y defensa ante requerimientos e inspecciones de la AEAT."
+      "description": "Informe fiscal de criptomonedas revisado operación a operación, renta cripto, modelo 721 y defensa ante requerimientos e inspecciones de la AEAT."
     },
     "services": {
       "title": "Servicios Fiscales Cripto | Declaración Renta Criptoactivos | Cleriontax",
@@ -43,7 +43,7 @@
     },
     "blog": {
       "title": "Blog de fiscalidad cripto: guías y casos",
-      "description": "Guías sobre fiscalidad de criptomonedas e inversiones en España con ejemplos numéricos resueltos: IRPF, modelos 100, 714 y 721, criterio FIFO, DeFi, compensación de pérdidas y normativa de la AEAT."
+      "description": "Guías de fiscalidad de criptomonedas en España con ejemplos resueltos: IRPF, modelos 100, 714 y 721, FIFO, DeFi y compensación de pérdidas."
     },
     "site": {
       "title": "Cleriontax · Asesoría fiscal de criptomonedas",
@@ -993,7 +993,7 @@
   },
   "precios": {
     "seoTitulo": "Precio asesor fiscal de criptomonedas | Cleriontax",
-    "seoDescripcion": "Cuánto cuesta declarar criptomonedas con un asesor fiscal: tramos cerrados desde 250 €, IVA incluido, según las fuentes de datos de tu cartera. Sin sorpresas a mitad.",
+    "seoDescripcion": "Cuánto cuesta declarar criptomonedas con un asesor fiscal: tramos cerrados desde 250 €, IVA incluido, según las fuentes de datos de tu cartera.",
     "etiqueta": "Precios",
     "titulo": "Cuánto cuesta un asesor fiscal de criptomonedas",
     "entrada": "Cuatro tramos cerrados según la complejidad de tu cartera. Te confirmamos el tuyo en cuanto vemos tus datos, antes de empezar a trabajar.",

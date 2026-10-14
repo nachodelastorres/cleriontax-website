@@ -43,7 +43,7 @@
     },
     "blog": {
       "title": "Crypto tax blog: guides and worked cases",
-      "description": "Guides on crypto and investment taxation in Spain with worked numerical examples: personal income tax, forms 100, 714 and 721, the FIFO rule, DeFi, loss offsetting and AEAT rules."
+      "description": "Guides to crypto taxation in Spain with worked examples: income tax, forms 100, 714 and 721, the FIFO rule, DeFi and offsetting losses."
     },
     "site": {
       "title": "Cleriontax · Crypto tax advisory in Spain",
@@ -993,7 +993,7 @@
   },
   "precios": {
     "seoTitulo": "Crypto tax advisor pricing in Spain | Cleriontax",
-    "seoDescripcion": "How much it costs to declare crypto with a tax advisor in Spain: fixed tiers from €250, VAT included, based on your portfolio’s data sources. No surprises halfway.",
+    "seoDescripcion": "How much it costs to declare crypto with a tax advisor in Spain: fixed tiers from €250, VAT included, based on your portfolio’s data sources.",
     "etiqueta": "Pricing",
     "titulo": "How much a crypto tax advisor costs",
     "entrada": "Four fixed tiers based on how complex your portfolio is. We confirm yours as soon as we see your data, before any work starts.",
