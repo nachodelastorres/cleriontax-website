@@ -8,7 +8,8 @@
     "requestQuote": "Request a quote",
     "openMenu": "Open menu",
     "prices": "Pricing",
-    "verTodo": "See pricing"
+    "verTodo": "See pricing",
+    "closeMenu": "Close menu"
   },
   "footer": {
     "description": "Boutique firm specializing in data analysis and tax advisory for crypto assets and global investments.",

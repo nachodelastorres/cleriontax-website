@@ -57,7 +57,17 @@ export default function Navbar() {
   }, [serviciosOpen]);
   useEffect(() => {
     setServiciosOpen(false);
+    setMobileMenuOpen(false);
   }, [pathname]);
+  // Con el menú móvil abierto, la página de detrás no se desplaza.
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const previo = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previo;
+    };
+  }, [mobileMenuOpen]);
   const navigation = [
     { name: t('prices'), href: '/precios' },
     { name: t('blog'), href: '/blog' },
@@ -187,10 +197,12 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden"
+            className="-mr-2.5 p-2.5 md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="menu-movil"
           >
-            <span className="sr-only">{t('openMenu')}</span>
+            <span className="sr-only">{mobileMenuOpen ? t('closeMenu') : t('openMenu')}</span>
             {mobileMenuOpen ? (
               <X className="h-6 w-6 text-azul" />
             ) : (
@@ -202,7 +214,8 @@ export default function Navbar() {
       {/* Mobile menu */}
         {mobileMenuOpen && (
           <div
-            className="overflow-hidden border-t border-niebla bg-blanco md:hidden"
+            id="menu-movil"
+            className="max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain border-t border-niebla bg-blanco md:hidden"
           >
             <Container>
               <div className="space-y-1 py-4">

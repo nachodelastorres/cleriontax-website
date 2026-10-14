@@ -17,7 +17,7 @@ export default async function HeroInicio({ locale }: { locale: string }) {
 
   return (
     <section className="bg-azul">
-      <div className="mx-auto grid max-w-6xl gap-14 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-12 lg:items-center lg:gap-12 lg:pb-24">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-12 lg:items-center lg:gap-12 lg:pb-24">
         <div className="lg:col-span-7">
           {/*
             Por encima de la escala del §11 (52 px): en la home el titular es
@@ -25,7 +25,7 @@ export default async function HeroInicio({ locale }: { locale: string }) {
           */}
           {/* Un peso por debajo del 800 de la escala: a este tamaño el 800
               se empasta y el 700 respira. */}
-          <h1 className="max-w-[17ch] text-hero font-bold text-blanco md:text-[60px] md:leading-[60px] lg:text-[68px] lg:leading-[68px] lg:tracking-[-0.045em]">
+          <h1 className="max-w-[17ch] break-words text-hero font-bold text-blanco md:text-[60px] md:leading-[60px] lg:text-[68px] lg:leading-[68px] lg:tracking-[-0.045em]">
             {t("titulo")}
           </h1>
 

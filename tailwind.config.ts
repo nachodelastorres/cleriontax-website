@@ -41,7 +41,8 @@ const config: Config = {
       // ---- Escala tipográfica (§11) ----
       // Titulares con interletrado negativo; texto de lectura a 17/27.
       fontSize: {
-        hero: ["52px", { lineHeight: "55px", letterSpacing: "-0.04em", fontWeight: "800" }],
+        // Fluido: a 52 px fijos, «criptomonedas» no cabe en un móvil y ensancha la página.
+        hero: ["clamp(34px, 8.6vw, 52px)", { lineHeight: "1.06", letterSpacing: "-0.04em", fontWeight: "800" }],
         seccion: ["33px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }],
         subtitulo: ["21px", { lineHeight: "28px", letterSpacing: "-0.02em", fontWeight: "600" }],
         lectura: ["17px", { lineHeight: "27px" }],

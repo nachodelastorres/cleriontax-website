@@ -43,7 +43,7 @@ export default function HeroFormulario({
 
       {/* Sin borrador, la caja de texto va sola y no ocupa todo el ancho. */}
       <div
-        className={`relative mx-auto grid max-w-6xl gap-10 px-6 pb-14 pt-24 md:pb-16 md:pt-28 lg:items-center lg:gap-14 ${
+        className={`relative mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 pb-14 pt-24 md:pb-16 md:pt-28 lg:items-center lg:gap-14 ${
           borrador ? "lg:grid-cols-[minmax(0,1fr)_25rem]" : ""
         }`}
       >
@@ -53,7 +53,7 @@ export default function HeroFormulario({
           {etiqueta ? (
             <span className="text-dato font-semibold uppercase tracking-wide text-rojo">{etiqueta}</span>
           ) : null}
-          <h1 className="mt-5 max-w-[20ch] text-hero text-azul">{titulo}</h1>
+          <h1 className="mt-5 max-w-[20ch] break-words text-hero text-azul">{titulo}</h1>
           <p className="mt-6 max-w-[60ch] text-lectura text-pizarra">{entrada}</p>
 
           {accion ? (

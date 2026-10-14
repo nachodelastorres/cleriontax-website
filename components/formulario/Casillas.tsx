@@ -38,14 +38,20 @@ function Casilla({ marcada, etiqueta }: { marcada: boolean; etiqueta: string }) 
 }
 
 export default function Casillas({ pregunta, opciones, filas }: TextosCasillas) {
-  const columnas = "grid-cols-[minmax(0,1fr)_repeat(3,4.5rem)] md:grid-cols-[minmax(0,1fr)_repeat(3,6rem)]";
+  // En pantalla ancha, columnas de impreso. En móvil no caben tres columnas
+  // junto al texto: el caso va a todo el ancho y las casillas debajo, cada
+  // una con su etiqueta.
+  const columnas = "md:grid-cols-[minmax(0,1fr)_repeat(3,6rem)]";
   return (
     <div className="border border-niebla bg-blanco">
-      {/* Cabecera del impreso: la pregunta y las tres columnas. */}
+      {/* Cabecera del impreso: la pregunta y, en pantalla ancha, las tres columnas. */}
       <div className={`grid ${columnas} items-end border-b-4 border-azul px-5 py-4 md:px-7`}>
         <p className="text-subtitulo text-azul">{pregunta}</p>
         {ORDEN.map((v) => (
-          <p key={v} className="text-center text-dato font-semibold uppercase tracking-wide text-pizarra">
+          <p
+            key={v}
+            className="hidden text-center text-dato font-semibold uppercase tracking-wide text-pizarra md:block"
+          >
             {opciones[v]}
           </p>
         ))}
@@ -55,19 +61,25 @@ export default function Casillas({ pregunta, opciones, filas }: TextosCasillas) 
         {filas.map((f, i) => (
           <li
             key={f.caso}
-            className={`grid ${columnas} items-center px-5 py-5 md:px-7 ${
+            className={`grid grid-cols-1 gap-4 px-5 py-5 md:items-center md:gap-0 md:px-7 ${columnas} ${
               i > 0 ? "border-t border-dashed border-niebla" : ""
             }`}
           >
-            <div className="pr-4">
+            <div className="md:pr-4">
               <p className="text-lectura font-semibold text-azul">{f.caso}</p>
               <p className="mt-1 max-w-[60ch] text-nota text-pizarra">{f.body}</p>
             </div>
-            {ORDEN.map((v) => (
-              <div key={v} className="flex justify-center">
-                <Casilla marcada={f.veredicto === v} etiqueta={opciones[v]} />
-              </div>
-            ))}
+            {/* md:contents: en pantalla ancha las casillas pasan a ser celdas de la rejilla. */}
+            <div className="flex gap-6 md:contents">
+              {ORDEN.map((v) => (
+                <div key={v} className="flex items-center gap-2 md:justify-center">
+                  <Casilla marcada={f.veredicto === v} etiqueta={opciones[v]} />
+                  <span className="text-dato font-semibold uppercase tracking-wide text-pizarra md:hidden">
+                    {opciones[v]}
+                  </span>
+                </div>
+              ))}
+            </div>
           </li>
         ))}
       </ul>

@@ -8,7 +8,8 @@
     "requestQuote": "Sol·licita pressupost",
     "openMenu": "Obrir menú",
     "prices": "Preus",
-    "verTodo": "Veure preus"
+    "verTodo": "Veure preus",
+    "closeMenu": "Tancar el menú"
   },
   "footer": {
     "description": "Firma boutique d'anàlisi de dades i assessoria fiscal especialitzada en criptoactius i inversions globals.",

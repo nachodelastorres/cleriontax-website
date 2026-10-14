@@ -8,7 +8,8 @@
     "requestQuote": "Solicitar presupuesto",
     "openMenu": "Abrir menú",
     "prices": "Precios",
-    "verTodo": "Ver precios"
+    "verTodo": "Ver precios",
+    "closeMenu": "Cerrar menú"
   },
   "footer": {
     "description": "Firma boutique de análisis de datos y asesoría fiscal especializada en criptoactivos e inversiones globales.",

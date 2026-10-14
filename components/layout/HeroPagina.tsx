@@ -54,13 +54,13 @@ export default function HeroPagina({
           de la cabecera: así se ve el mismo patrón encima que debajo.
         */}
         <div className="relative bg-azul py-20 md:py-24 lg:-mx-12 lg:mb-14 lg:mt-[7.5rem] lg:w-fit lg:max-w-[52rem] lg:px-12 lg:py-12">
-          <div className="relative grid gap-10 xl:grid-cols-[1fr_auto] xl:items-center">
+          <div className="relative grid grid-cols-1 gap-10 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-center">
             <div>
               {etiqueta ? (
                 <span className="font-semibold text-dato text-rojo">{etiqueta}</span>
               ) : null}
 
-              <h1 className="mt-5 max-w-[18ch] text-hero text-blanco">{titulo}</h1>
+              <h1 className="mt-5 max-w-[18ch] break-words text-hero text-blanco">{titulo}</h1>
               <p className="mt-6 max-w-[62ch] text-lectura text-niebla">{entrada}</p>
 
               {accion ? (
