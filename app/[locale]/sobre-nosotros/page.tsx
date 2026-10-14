@@ -86,6 +86,27 @@ function Etiqueta({ children, claro = false }: { children: React.ReactNode; clar
   );
 }
 
+const BENAVIDES_URL = "https://benavidesasociados.com/";
+
+/** Enlaza cada mención del despacho Benavides a su web. */
+function conEnlaceBenavides(texto: string) {
+  return texto.split(/(Benavides)/).map((trozo, i) =>
+    trozo === "Benavides" ? (
+      <a
+        key={i}
+        href={BENAVIDES_URL}
+        target="_blank"
+        rel="noopener"
+        className="underline decoration-1 underline-offset-4 transition-opacity hover:opacity-75"
+      >
+        {trozo}
+      </a>
+    ) : (
+      trozo
+    ),
+  );
+}
+
 export default async function SobreNosotrosPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -123,14 +144,14 @@ export default async function SobreNosotrosPage({ params }: Props) {
               <h1 className="mt-6 max-w-[17ch] text-[40px] font-extrabold leading-[1.04] tracking-[-0.04em] text-azul md:text-[64px]">
                 {hero.h1}
               </h1>
-              <p className="mt-8 max-w-[58ch] text-lectura text-pizarra">{hero.subheading}</p>
+              <p className="mt-8 max-w-[58ch] text-lectura text-pizarra">{conEnlaceBenavides(hero.subheading)}</p>
             </div>
             <SimboloAnimado tam={280} dispersa className="hidden text-azul lg:block" retraso={200} />
           </div>
           <ul className="mt-14 flex flex-wrap gap-x-8 gap-y-2 border-t border-niebla pt-5">
             {hero.meta.map((m) => (
               <li key={m} className="text-dato font-semibold uppercase tracking-wide text-pizarra">
-                {m}
+                {conEnlaceBenavides(m)}
               </li>
             ))}
           </ul>
@@ -142,22 +163,29 @@ export default async function SobreNosotrosPage({ params }: Props) {
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:py-20 lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-16">
           <div>
             <Etiqueta claro>{origen.etiqueta}</Etiqueta>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logos/Logo_Benavides_Negativo_Tagline.svg"
-              alt="Benavides"
-              className="mt-5 w-56 max-w-full"
-            />
+            <a
+              href={BENAVIDES_URL}
+              target="_blank"
+              rel="noopener"
+              className="mt-5 block w-56 max-w-full transition-opacity hover:opacity-80"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logos/Logo_Benavides_Negativo_Tagline.svg"
+                alt="Benavides"
+                className="w-full"
+              />
+            </a>
           </div>
           <div>
-            <h2 className="text-seccion text-blanco">{origen.h2}</h2>
+            <h2 className="text-seccion text-blanco">{conEnlaceBenavides(origen.h2)}</h2>
             <div className="mt-6 max-w-[68ch] space-y-4">
               {origen.parrafos.map((p, i) => (
                 <p
                   key={i}
                   className={`text-lectura ${i === origen.parrafos.length - 1 ? "text-blanco" : "text-niebla"}`}
                 >
-                  {p}
+                  {conEnlaceBenavides(p)}
                 </p>
               ))}
             </div>
