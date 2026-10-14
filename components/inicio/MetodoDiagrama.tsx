@@ -30,9 +30,8 @@ const RECIBIDAS = FUENTES.reduce((suma, f) => suma + f.n, 0); // 102.691
 const SPAM = 38900;
 const DUPLICADOS = 611;
 const INTERNAS = 2418;
-const FISCALES = RECIBIDAS - SPAM - DUPLICADOS - INTERNAS; // 60.762
+export const FISCALES = RECIBIDAS - SPAM - DUPLICADOS - INTERNAS; // 60.762
 export const REVISADAS_A_MANO = 37;
-export const CONCILIADAS = FISCALES - REVISADAS_A_MANO;
 
 /**
  * Longitud de cada barra. Escala de raíz cuadrada: con escala lineal, Uniswap

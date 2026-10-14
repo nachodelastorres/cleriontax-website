@@ -778,8 +778,8 @@
       "pie": "Sample data. FIFO criterion. Every line links to its transaction detail.",
       "vistaPreviaEtiqueta": "Preview.",
       "vistaPrevia": "This is the results page: a summary of what you file, which is what you ultimately need to know. Behind it come the pages that reconstruct, transaction by transaction, how each figure is reached; long, but written so that anyone reviewing them can follow, starting with the tax authority.",
-      "chipConciliado": "reconciled",
-      "chipRevision": "reviewed by hand",
+      "chipConciliado": "taxable transactions",
+      "chipRevision": "of which reviewed by hand",
       "accion": "See the tax report"
     },
     "faq": {

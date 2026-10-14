@@ -778,8 +778,8 @@
       "pie": "Dades d’exemple. Criteri FIFO. Cada línia enllaça amb el seu detall d’operacions.",
       "vistaPreviaEtiqueta": "Vista prèvia.",
       "vistaPrevia": "Això és la pàgina de resultats: el resum del que declararàs, que és al capdavall el que necessites saber. Al darrere hi ha les pàgines que reconstrueixen, operació a operació, com s’arriba fins a cada xifra; extenses, però escrites perquè les pugui seguir qualsevol que les revisi, començant per l’AEAT.",
-      "chipConciliado": "conciliades",
-      "chipRevision": "revisades a mà",
+      "chipConciliado": "operacions amb efecte fiscal",
+      "chipRevision": "d'aquestes, revisades a mà",
       "accion": "Veure l’informe fiscal"
     },
     "faq": {

@@ -778,8 +778,8 @@
       "pie": "Datos de ejemplo. Criterio FIFO. Cada línea enlaza con su detalle de operaciones.",
       "vistaPreviaEtiqueta": "Vista previa.",
       "vistaPrevia": "Esto es la página de resultados: el resumen de lo que vas a declarar, que es al final lo que necesitas saber. Detrás van las páginas que reconstruyen, operación a operación, cómo se llega hasta cada cifra; extensas, pero escritas para que las siga cualquiera que las revise, empezando por la AEAT.",
-      "chipConciliado": "conciliadas",
-      "chipRevision": "revisadas a mano",
+      "chipConciliado": "operaciones con efecto fiscal",
+      "chipRevision": "de ellas, revisadas a mano",
       "accion": "Ver el informe fiscal"
     },
     "faq": {

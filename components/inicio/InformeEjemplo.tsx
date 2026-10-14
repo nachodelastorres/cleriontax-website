@@ -5,7 +5,7 @@ import TablaDatos from "@/components/brand/TablaDatos";
 import CifrasEstado from "@/components/brand/CifrasEstado";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { formatearNumero } from "@/lib/format";
-import { CONCILIADAS, REVISADAS_A_MANO } from "@/components/inicio/MetodoDiagrama";
+import { FISCALES, REVISADAS_A_MANO } from "@/components/inicio/MetodoDiagrama";
 
 /**
  * El entregable como prueba — plan, fase 05: «la tabla real como prueba, con
@@ -52,7 +52,7 @@ export default async function InformeEjemplo({ locale }: { locale: string }) {
             <CifrasEstado
               className="mb-7 border border-niebla"
               cifras={[
-                { valor: formatearNumero(CONCILIADAS), etiqueta: t("chipConciliado") },
+                { valor: formatearNumero(FISCALES), etiqueta: t("chipConciliado") },
                 { valor: formatearNumero(REVISADAS_A_MANO), etiqueta: t("chipRevision"), acento: true },
               ]}
             />
