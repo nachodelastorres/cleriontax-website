@@ -64,7 +64,8 @@ export function generateOrganizationSchema(
     '@type': 'ProfessionalService',
     '@id': `${baseUrl}/#organization`,
     name: 'Cleriontax',
-    legalName: 'Cleriontax',
+    legalName: 'Pantalán Analytica, ESPJ',
+    taxID: 'E26845693',
     description: descriptions[locale],
     url: `${baseUrl}/${locale}`,
     logo: {
@@ -124,6 +125,10 @@ export function generateOrganizationSchema(
     // Additional properties for better rich snippets
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'C/ Cecil Metel, 29',
+      postalCode: '07460',
+      addressLocality: 'Pollença',
+      addressRegion: 'Illes Balears',
       addressCountry: 'ES'
     },
 

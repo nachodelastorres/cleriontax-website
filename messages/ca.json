@@ -563,10 +563,10 @@
           "title": "Responsable del tractament",
           "content": "El responsable del tractament de les teves dades personals és:",
           "details": {
-            "company": "Cleriontax",
-            "address": "[Adreça per confirmar]",
+            "company": "Pantalán Analytica, ESPJ (Cleriontax)",
+            "address": "C/ Cecil Metel, 29, 07460 Pollença (Illes Balears)",
             "email": "info@cleriontax.com",
-            "cif": "[CIF per confirmar]"
+            "cif": "CIF: E26845693"
           }
         },
         "dataCollected": {
@@ -653,9 +653,9 @@
           "title": "Dades identificatives",
           "content": "En compliment del deure d'informació establert a l'article 10 de la LSSI-CE, es faciliten les següents dades:",
           "details": {
-            "owner": "Titular del lloc web: Cleriontax",
-            "cif": "CIF: [Per confirmar]",
-            "address": "Domicili social: [Per confirmar]",
+            "owner": "Titular del lloc web: Pantalán Analytica, ESPJ, que opera amb la marca Cleriontax",
+            "cif": "CIF: E26845693",
+            "address": "Domicili: C/ Cecil Metel, 29, 07460 Pollença (Illes Balears)",
             "email": "Correu electrònic: info@cleriontax.com",
             "activity": "Activitat: Assessoria fiscal especialitzada en criptoactius i anàlisi de dades financeres"
           }
@@ -690,7 +690,7 @@
         },
         "jurisdiction": {
           "title": "Legislació aplicable i jurisdicció",
-          "content": "Les presents condicions es regeixen per la legislació espanyola. Per a qualsevol controvèrsia que pogués derivar-se de l'accés o ús d'aquest lloc web, les parts se sotmeten als Jutjats i Tribunals de [Ciutat per confirmar], amb renúncia expressa a qualsevol altre fur que pogués correspondre'ls."
+          "content": "Les presents condicions es regeixen per la legislació espanyola. Per a qualsevol controvèrsia que pogués derivar-se de l'accés o ús d'aquest lloc web, les parts se sotmeten als Jutjats i Tribunals que resultin competents d'acord amb la normativa aplicable. Quan l'usuari tingui la condició de consumidor, seran competents els del seu domicili."
         },
         "contact": {
           "title": "Contacte",

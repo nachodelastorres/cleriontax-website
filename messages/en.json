@@ -563,10 +563,10 @@
           "title": "Data controller",
           "content": "The data controller for your personal data is:",
           "details": {
-            "company": "Cleriontax",
-            "address": "[Address to be confirmed]",
+            "company": "Pantalán Analytica, ESPJ (Cleriontax)",
+            "address": "C/ Cecil Metel, 29, 07460 Pollença (Illes Balears), Spain",
             "email": "info@cleriontax.com",
-            "cif": "[Tax ID to be confirmed]"
+            "cif": "Tax ID (CIF): E26845693"
           }
         },
         "dataCollected": {
@@ -653,9 +653,9 @@
           "title": "Identification data",
           "content": "In compliance with the duty of information established in Article 10 of the LSSI-CE, the following data is provided:",
           "details": {
-            "owner": "Website owner: Cleriontax",
-            "cif": "Tax ID: [To be confirmed]",
-            "address": "Registered address: [To be confirmed]",
+            "owner": "Website owner: Pantalán Analytica, ESPJ, trading as Cleriontax",
+            "cif": "Tax ID (CIF): E26845693",
+            "address": "Address: C/ Cecil Metel, 29, 07460 Pollença (Illes Balears), Spain",
             "email": "Email: info@cleriontax.com",
             "activity": "Activity: Tax advisory specialized in crypto assets and financial data analysis"
           }
@@ -690,7 +690,7 @@
         },
         "jurisdiction": {
           "title": "Applicable law and jurisdiction",
-          "content": "These terms are governed by Spanish law. For any dispute that may arise from access to or use of this website, the parties submit to the Courts and Tribunals of [City to be confirmed], with express waiver of any other jurisdiction that may apply."
+          "content": "These terms are governed by Spanish law. For any dispute that may arise from access to or use of this website, the parties submit to the courts that have jurisdiction under applicable law. Where the user is a consumer, the courts of the user's place of residence shall have jurisdiction."
         },
         "contact": {
           "title": "Contact",

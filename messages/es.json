@@ -563,10 +563,10 @@
           "title": "Responsable del tratamiento",
           "content": "El responsable del tratamiento de tus datos personales es:",
           "details": {
-            "company": "Cleriontax",
-            "address": "[Dirección por confirmar]",
+            "company": "Pantalán Analytica, ESPJ (Cleriontax)",
+            "address": "C/ Cecil Metel, 29, 07460 Pollença (Illes Balears)",
             "email": "info@cleriontax.com",
-            "cif": "[CIF por confirmar]"
+            "cif": "CIF: E26845693"
           }
         },
         "dataCollected": {
@@ -653,9 +653,9 @@
           "title": "Datos identificativos",
           "content": "En cumplimiento del deber de información establecido en el artículo 10 de la LSSI-CE, se facilitan los siguientes datos:",
           "details": {
-            "owner": "Titular del sitio web: Cleriontax",
-            "cif": "CIF: [Por confirmar]",
-            "address": "Domicilio social: [Por confirmar]",
+            "owner": "Titular del sitio web: Pantalán Analytica, ESPJ, que opera bajo la marca Cleriontax",
+            "cif": "CIF: E26845693",
+            "address": "Domicilio: C/ Cecil Metel, 29, 07460 Pollença (Illes Balears)",
             "email": "Correo electrónico: info@cleriontax.com",
             "activity": "Actividad: Asesoría fiscal especializada en criptoactivos y análisis de datos financieros"
           }
@@ -690,7 +690,7 @@
         },
         "jurisdiction": {
           "title": "Legislación aplicable y jurisdicción",
-          "content": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, las partes se someten a los Juzgados y Tribunales de [Ciudad por confirmar], con renuncia expresa a cualquier otro fuero que pudiera corresponderles."
+          "content": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, las partes se someten a los Juzgados y Tribunales que resulten competentes conforme a la normativa aplicable. Cuando el usuario tenga la condición de consumidor, serán competentes los de su domicilio."
         },
         "contact": {
           "title": "Contacto",
