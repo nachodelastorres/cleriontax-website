@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Angulo } from "@/components/brand/Formas";
 import { Cabecera, Envoltura, type FondoSeccion } from "@/components/secciones/Bloques";
-import { TARIFAS } from "@/lib/tarifas";
+import { TARIFAS, PRECIO_RENTA } from "@/lib/tarifas";
 import { rutaPagina } from "@/lib/paginas";
 
 /**
@@ -14,6 +14,10 @@ import { rutaPagina } from "@/lib/paginas";
  * propia página de precios. Los importes salen de `lib/tarifas.ts`; los textos,
  * del namespace `tarifas`, salvo el titular y la entradilla, que cada página
  * puede ajustar a su caso.
+ *
+ * Bajo las tarjetas va la elección de cómo terminar: llevar las cifras al
+ * asesor de siempre (incluido) o que presentemos la renta (aparte). La renta
+ * no entra nunca en el tramo, y se cuenta como opción, no como exclusión.
  */
 export default async function Tarifas({
   locale,
@@ -79,6 +83,37 @@ export default async function Tarifas({
       </ul>
 
       {nota ? <p className="mt-6 max-w-[72ch] text-nota text-pizarra">{nota}</p> : null}
+
+      {resumida ? (
+        <p className="mt-6 max-w-[72ch] text-nota text-pizarra">
+          {t("renta.linea", { precio: formato.format(PRECIO_RENTA) })}
+        </p>
+      ) : (
+        <div className="mt-12">
+          <h3 className="text-subtitulo text-azul">{t("renta.titulo")}</h3>
+          <p className="mt-3 max-w-[72ch] text-lectura text-pizarra">{t("renta.entrada")}</p>
+          <div className="mt-6 grid gap-px border border-niebla bg-niebla md:grid-cols-2">
+            <div className="flex flex-col bg-blanco p-7">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h4 className="text-subtitulo text-azul">{t("renta.asesor.titulo")}</h4>
+                <p className="text-nota font-semibold text-pizarra">{t("renta.asesor.precio")}</p>
+              </div>
+              <p className="mt-4 text-lectura text-pizarra">{t("renta.asesor.body")}</p>
+            </div>
+            <div className="flex flex-col border-t-4 border-rojo bg-blanco p-7 md:border-t-0 md:border-l-4">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h4 className="text-subtitulo text-azul">{t("renta.nosotros.titulo")}</h4>
+                <p className="font-dato tabular-nums text-[28px] leading-none tracking-[-0.02em] text-azul">
+                  +{formato.format(PRECIO_RENTA)}
+                </p>
+              </div>
+              <p className="mt-2 text-dato text-pizarra">{t("renta.nosotros.unidad")}</p>
+              <p className="mt-4 text-lectura text-pizarra">{t("renta.nosotros.body")}</p>
+              <p className="mt-4 text-nota text-pizarra">{t("renta.nosotros.nota")}</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {resumida ? null : (
         <div className="mt-10 grid gap-10 md:grid-cols-[3fr_2fr]">

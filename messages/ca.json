@@ -971,12 +971,28 @@
       "Guanys i pèrdues calculats amb FIFO, el criteri que aplica l’AEAT",
       "Informe amb el detall operació per operació que hi ha darrere de cada xifra",
       "Memòria de criteris: què es va decidir en cada punt dubtós i per què",
-      "Les xifres a punt per traslladar a la teva declaració"
+      "Les xifres a punt per a la teva declaració, la presentis amb el teu assessor o amb nosaltres"
     ],
     "fuenteTitulo": "Què compta com a font de dades",
     "fuenteTexto": "Cada exchange, cada wallet pròpia, cada protocol DeFi i cada bròquer és una font. Tres exchanges són tres fonts; un exchange, una MetaMask i un bròquer d’accions, també.",
     "accion": "Demanar pressupost tancat",
     "verPrecios": "Veure preus i què inclou cada tram",
+    "renta": {
+      "titulo": "Amb les teves xifres a punt, tries com acabar",
+      "entrada": "Els trams cobreixen la conciliació i l’informe. La declaració de la renda la pots presentar amb el teu assessor de sempre o encarregar-nos-la a nosaltres.",
+      "asesor": {
+        "titulo": "Les portes al teu assessor",
+        "precio": "Inclòs en el tram",
+        "body": "Reps l’informe amb les xifres exactes que van a la teva declaració i la traçabilitat operació per operació que les justifica. El teu assessor de sempre només les ha de traslladar."
+      },
+      "nosotros": {
+        "titulo": "Presentem la teva renda",
+        "unidad": "IVA inclòs, per declaració",
+        "body": "La declaració completa, no només la part cripto: treball, immobles, deduccions… Una sola mà per a tot i sense traslladar xifres d’un lloc a un altre.",
+        "nota": "Una declaració conjunta compta com una. Cobreix la majoria de casos; si tens activitat econòmica o una situació especial, t’ho confirmem abans de començar."
+      },
+      "linea": "I si vols, presentem també la teva renda completa, no només la part cripto, per {precio} més per declaració."
+    },
     "items": {
       "plataforma": {
         "nombre": "Plataforma única",
@@ -1012,7 +1028,7 @@
       },
       {
         "title": "Model 721",
-        "body": "La declaració informativa de criptomonedes a l’estranger es pressuposta segons el nombre de custodis i saldos que calgui informar."
+        "body": "La declaració informativa de criptomonedes a l’estranger costa 450 €, IVA inclòs, per exercici. No segueix els trams perquè informa de saldos, no concilia operacions."
       },
       {
         "title": "Assessorament continuat",
@@ -1047,6 +1063,10 @@
       {
         "q": "El preu depèn del que hagi guanyat?",
         "a": "No. Cobrem per la feina de conciliació, no pel resultat. Una cartera amb pèrdues porta la mateixa feina que una amb guanys, i sovint és la que més interessa documentar bé."
+      },
+      {
+        "q": "Presenteu vosaltres la declaració de la renda?",
+        "a": "Si vols, sí. Els trams cobreixen la conciliació i l’informe; presentar la renda és opcional i costa 150 € més per declaració, IVA inclòs, i una conjunta compta com una. Presentem la declaració completa, no només la part cripto, i cobreix la majoria de casos: si tens activitat econòmica o una situació especial, t’ho confirmem abans. Si prefereixes continuar amb el teu assessor de sempre, et donem les xifres i la traçabilitat que les justifica perquè només les hagi de traslladar."
       },
       {
         "q": "I si en veure les meves dades la cartera és més complexa del que pensava?",

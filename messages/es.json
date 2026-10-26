@@ -971,12 +971,28 @@
       "Ganancias y pérdidas calculadas con FIFO, el criterio que aplica la AEAT",
       "Informe con el detalle operación a operación que hay detrás de cada cifra",
       "Memoria de criterios: qué se decidió en cada punto dudoso y por qué",
-      "Las cifras listas para trasladar a tu declaración"
+      "Las cifras listas para tu declaración, la presentes con tu asesor o con nosotros"
     ],
     "fuenteTitulo": "Qué cuenta como fuente de datos",
     "fuenteTexto": "Cada exchange, cada wallet propia, cada protocolo DeFi y cada bróker es una fuente. Tres exchanges son tres fuentes; un exchange, una MetaMask y un bróker de acciones, también.",
     "accion": "Pedir presupuesto cerrado",
     "verPrecios": "Ver precios y qué incluye cada tramo",
+    "renta": {
+      "titulo": "Con tus cifras listas, eliges cómo terminar",
+      "entrada": "Los tramos cubren la reconciliación y el informe. La declaración de la renta la puedes presentar con tu asesor de siempre o encargárnosla a nosotros.",
+      "asesor": {
+        "titulo": "Las llevas a tu asesor",
+        "precio": "Incluido en el tramo",
+        "body": "Recibes el informe con las cifras exactas que van en tu declaración y la trazabilidad operación a operación que las justifica. Tu asesor de siempre solo tiene que trasladarlas."
+      },
+      "nosotros": {
+        "titulo": "Presentamos tu renta",
+        "unidad": "IVA incluido, por declaración",
+        "body": "La declaración completa, no solo la parte cripto: trabajo, inmuebles, deducciones… Una sola mano para todo y sin trasladar cifras de un sitio a otro.",
+        "nota": "Una declaración conjunta cuenta como una. Cubre la mayoría de casos; si tienes actividad económica o una situación especial, te lo confirmamos antes de empezar."
+      },
+      "linea": "Y si quieres, presentamos también tu renta completa, no solo la parte cripto, por {precio} más por declaración."
+    },
     "items": {
       "plataforma": {
         "nombre": "Plataforma única",
@@ -1012,7 +1028,7 @@
       },
       {
         "title": "Modelo 721",
-        "body": "La declaración informativa de criptomonedas en el extranjero se presupuesta según el número de custodios y saldos que haya que informar."
+        "body": "La declaración informativa de criptomonedas en el extranjero cuesta 450 €, IVA incluido, por ejercicio. No sigue los tramos porque informa de saldos, no reconcilia operaciones."
       },
       {
         "title": "Asesoría continuada",
@@ -1047,6 +1063,10 @@
       {
         "q": "¿El precio depende de lo que haya ganado?",
         "a": "No. Cobramos por el trabajo de reconciliación, no por el resultado. Una cartera con pérdidas lleva el mismo trabajo que una con ganancias, y a menudo es la que más interesa documentar bien."
+      },
+      {
+        "q": "¿Presentáis vosotros la declaración de la renta?",
+        "a": "Si quieres, sí. Los tramos cubren la reconciliación y el informe; presentar la renta es opcional y cuesta 150 € más por declaración, IVA incluido, y una conjunta cuenta como una. Presentamos la declaración completa, no solo la parte cripto, y cubre la mayoría de casos: si tienes actividad económica o una situación especial, te lo confirmamos antes. Si prefieres seguir con tu asesor de siempre, te damos las cifras y la trazabilidad que las justifica para que solo tenga que trasladarlas."
       },
       {
         "q": "¿Y si al ver mis datos la cartera es más compleja de lo que pensaba?",

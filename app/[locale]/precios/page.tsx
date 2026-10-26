@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 import { rutaPagina, rutasPagina } from "@/lib/paginas";
-import { TARIFAS } from "@/lib/tarifas";
+import { TARIFAS, PRECIO_RENTA } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
 import Tarifas from "@/components/precios/Tarifas";
 import SeccionesServicio, { type Seccion } from "@/components/services/SeccionesServicio";
@@ -65,16 +65,24 @@ export default async function PreciosPage({ params }: Props) {
     "@type": "OfferCatalog",
     name: t("titulo"),
     url,
-    itemListElement: TARIFAS.map((tarifa) => ({
-      "@type": "Offer",
-      name: tTarifas(`items.${tarifa.id}.nombre`),
-      description: tTarifas(`items.${tarifa.id}.para`),
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        priceCurrency: "EUR",
-        ...(tarifa.desde ? { minPrice: tarifa.precio } : { price: tarifa.precio }),
+    itemListElement: [
+      ...TARIFAS.map((tarifa) => ({
+        "@type": "Offer",
+        name: tTarifas(`items.${tarifa.id}.nombre`),
+        description: tTarifas(`items.${tarifa.id}.para`),
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          priceCurrency: "EUR",
+          ...(tarifa.desde ? { minPrice: tarifa.precio } : { price: tarifa.precio }),
+        },
+      })),
+      {
+        "@type": "Offer",
+        name: tTarifas("renta.nosotros.titulo"),
+        description: tTarifas("renta.nosotros.body"),
+        priceSpecification: { "@type": "PriceSpecification", priceCurrency: "EUR", price: PRECIO_RENTA },
       },
-    })),
+    ],
   };
 
   const faqSchema = generateFAQSchema({ locale: locale as Locale, items: faq, url });

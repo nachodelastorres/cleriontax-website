@@ -971,12 +971,28 @@
       "Gains and losses calculated with FIFO, the method the AEAT applies",
       "A report with the transaction-by-transaction detail behind every figure",
       "A criteria memo: what was decided on each grey area and why",
-      "Figures ready to carry over to your tax return"
+      "Figures ready for your tax return, whether your adviser files it or we do"
     ],
     "fuenteTitulo": "What counts as a data source",
     "fuenteTexto": "Each exchange, each self-custody wallet, each DeFi protocol and each broker is one source. Three exchanges are three sources; so are one exchange, one MetaMask and one stock broker.",
     "accion": "Request a fixed quote",
     "verPrecios": "See pricing and what each tier includes",
+    "renta": {
+      "titulo": "With your figures ready, you choose how to finish",
+      "entrada": "The tiers cover the reconciliation and the report. Your income tax return can be filed by your usual adviser or by us.",
+      "asesor": {
+        "titulo": "Take them to your adviser",
+        "precio": "Included in the tier",
+        "body": "You get the report with the exact figures that go on your return and the transaction-by-transaction trail behind them. Your usual adviser only has to carry them over."
+      },
+      "nosotros": {
+        "titulo": "We file your return",
+        "unidad": "VAT included, per return",
+        "body": "The complete return, not just the crypto part: employment, property, deductions… One pair of hands for everything, with no figures to copy from one place to another.",
+        "nota": "A joint return counts as one. It covers most cases; if you have business income or a special situation, we confirm it before we start."
+      },
+      "linea": "And if you like, we also file your complete income tax return, not just the crypto part, for {precio} more per return."
+    },
     "items": {
       "plataforma": {
         "nombre": "Single platform",
@@ -1012,7 +1028,7 @@
       },
       {
         "title": "Form 721",
-        "body": "The informative return for crypto held abroad is quoted based on the number of custodians and balances to report."
+        "body": "The informative return for crypto held abroad costs €450, VAT included, per tax year. It does not follow the tiers because it reports balances rather than reconciling transactions."
       },
       {
         "title": "Ongoing advice",
@@ -1047,6 +1063,10 @@
       {
         "q": "Does the price depend on how much I made?",
         "a": "No. We charge for the reconciliation work, not the result. A portfolio with losses takes the same work as one with gains, and it’s often the one most worth documenting properly."
+      },
+      {
+        "q": "Do you file the income tax return?",
+        "a": "If you like, yes. The tiers cover the reconciliation and the report; filing the return is optional and costs €150 more per return, VAT included, with a joint return counting as one. We file the complete return, not just the crypto part, and it covers most cases: if you have business income or a special situation, we confirm it first. If you prefer to stay with your usual adviser, we give you the figures and the trail behind them so they only have to carry them over."
       },
       {
         "q": "What if my portfolio turns out to be more complex than I thought?",
