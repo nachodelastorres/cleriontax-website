@@ -43,6 +43,10 @@
       "label": "Com ho fem"
     },
     {
+      "id": "precio",
+      "label": "Preu"
+    },
+    {
       "id": "faq",
       "label": "Preguntes freqüents"
     }
@@ -212,7 +216,7 @@
         },
         {
           "q": "Quant costa que us n’encarregueu del model 721?",
-          "a": "El 721 es pressuposta tancat tan bon punt veiem les teves plataformes i els teus saldos, perquè la feina depèn de quants custodis hi ha i de com de complet és l’historial. Si a més necessites conciliar la teva operativa per a la renda, s’apliquen els trams de la nostra pàgina de preus: Plataforma única, Multiexchange, Cartera mixta o Cartera complexa, segons les teves fonts de dades."
+          "a": "Costa 450 €, IVA inclòs, per exercici: comprovem si hi estàs obligat, valorem cada saldo, identifiquem els custodis, el presentem i et deixem el suport de cada xifra. Si a més necessites conciliar la teva operativa per a la renda, s’apliquen els trams de la nostra pàgina de preus: Plataforma única, Multiexchange, Cartera mixta o Cartera complexa, segons les teves fonts de dades."
         }
       ]
     }
@@ -237,5 +241,22 @@
       "model 720 criptomonedes",
       "modelo 721 criptomonedas"
     ]
+  },
+  "precioUnico": {
+    "fondo": "blanco",
+    "h2": "Quant costa presentar el model 721",
+    "entrada": "El 721 no es cotitza per trams: informa de saldos, no exigeix conciliar la teva operativa. Per això té un preu fix, tant si tens un custodi com si en tens diversos.",
+    "nombre": "Model 721",
+    "unidad": "IVA inclòs, per exercici",
+    "incluyeTitulo": "Què inclou",
+    "incluye": [
+      "Comprovar si hi estàs obligat i de quins exercicis",
+      "La valoració de cada saldo a 31 de desembre",
+      "La identificació de cada custodi a l’estranger",
+      "La presentació telemàtica dins de termini",
+      "L’arxiu amb com s’ha arribat a cada xifra, per si el model es revisa"
+    ],
+    "nota": "Si a més necessites conciliar la teva operativa per a la renda, això segueix els trams de la nostra pàgina de preus.",
+    "accion": "Demanar que el preparem"
   }
 }

@@ -43,6 +43,10 @@
       "label": "How we do it"
     },
     {
+      "id": "precio",
+      "label": "Price"
+    },
+    {
       "id": "faq",
       "label": "Frequently asked questions"
     }
@@ -212,7 +216,7 @@
         },
         {
           "q": "How much does it cost for you to handle my form 721?",
-          "a": "Form 721 is quoted as a fixed price once we see your platforms and balances, because the work depends on how many custodians there are and how complete the history is. If you also need your activity reconciled for your income tax return, the tiers on our pricing page apply: Single platform, Multi-exchange, Mixed portfolio or Complex portfolio, depending on your data sources."
+          "a": "It costs €450, VAT included, per tax year: we check whether you must file, value each balance, identify the custodians, file it and leave you the backing for every figure. If you also need your activity reconciled for your income tax return, the tiers on our pricing page apply: Single platform, Multi-exchange, Mixed portfolio or Complex portfolio, depending on your data sources."
         }
       ]
     }
@@ -237,5 +241,22 @@
       "form 720 crypto",
       "modelo 721 criptomonedas"
     ]
+  },
+  "precioUnico": {
+    "fondo": "blanco",
+    "h2": "How much it costs to file form 721",
+    "entrada": "Form 721 is not priced by tiers: it reports balances and does not require reconciling your activity. That is why it has a fixed price, whether you have one custodian or several.",
+    "nombre": "Form 721",
+    "unidad": "VAT included, per tax year",
+    "incluyeTitulo": "What it includes",
+    "incluye": [
+      "Checking whether you must file and for which years",
+      "Valuing each balance at 31 December",
+      "Identifying each custodian abroad",
+      "Electronic filing within the deadline",
+      "A file showing how every figure was reached, in case the return is reviewed"
+    ],
+    "nota": "If you also need your activity reconciled for your income tax return, that follows the tiers on our pricing page.",
+    "accion": "Ask us to prepare it"
   }
 }

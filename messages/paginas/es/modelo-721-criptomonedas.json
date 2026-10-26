@@ -43,6 +43,10 @@
       "label": "Cómo lo hacemos"
     },
     {
+      "id": "precio",
+      "label": "Precio"
+    },
+    {
       "id": "faq",
       "label": "Preguntas frecuentes"
     }
@@ -212,7 +216,7 @@
         },
         {
           "q": "¿Cuánto cuesta que me ayudéis con el modelo 721?",
-          "a": "El 721 se presupuesta cerrado en cuanto vemos tus plataformas y tus saldos, porque el trabajo depende de cuántos custodios hay y de cómo de completo está el histórico. Si además necesitas reconciliar tu operativa para la renta, se aplican los tramos de nuestra página de precios: Plataforma única, Multiexchange, Cartera mixta o Cartera compleja, según tus fuentes de datos."
+          "a": "Cuesta 450 €, IVA incluido, por ejercicio: comprobamos si estás obligado, valoramos cada saldo, identificamos los custodios, lo presentamos y te dejamos el respaldo de cada cifra. Si además necesitas reconciliar tu operativa para la renta, se aplican los tramos de nuestra página de precios: Plataforma única, Multiexchange, Cartera mixta o Cartera compleja, según tus fuentes de datos."
         }
       ]
     }
@@ -237,5 +241,22 @@
       "modelo 720 criptomonedas",
       "modelo 721 vs 720"
     ]
+  },
+  "precioUnico": {
+    "fondo": "blanco",
+    "h2": "Cuánto cuesta presentar el modelo 721",
+    "entrada": "El 721 no se cotiza por tramos: informa de saldos, no exige reconciliar tu operativa. Por eso tiene un precio fijo, igual tengas uno o varios custodios.",
+    "nombre": "Modelo 721",
+    "unidad": "IVA incluido, por ejercicio",
+    "incluyeTitulo": "Qué incluye",
+    "incluye": [
+      "Comprobar si estás obligado y de qué ejercicios",
+      "La valoración de cada saldo a 31 de diciembre",
+      "La identificación de cada custodio en el extranjero",
+      "La presentación telemática dentro de plazo",
+      "El archivo con cómo se llegó a cada cifra, por si el modelo se revisa"
+    ],
+    "nota": "Si además necesitas reconciliar tu operativa para la renta, eso sigue los tramos de nuestra página de precios.",
+    "accion": "Pedir que lo preparemos"
   }
 }

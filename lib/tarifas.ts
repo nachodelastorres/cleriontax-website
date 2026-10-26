@@ -20,3 +20,15 @@ export const TARIFAS: Tarifa[] = [
   { id: "mixta", precio: 450 },
   { id: "compleja", precio: 700, desde: true },
 ];
+
+/**
+ * Modelo 721, por ejercicio. No sigue los tramos: informa de saldos, no exige
+ * reconciliar la operativa.
+ */
+export const PRECIO_721 = 450;
+
+/**
+ * Presentar la renta completa (no solo la parte cripto), por declaración; una
+ * conjunta cuenta como una. Nunca va dentro de los tramos: es opcional.
+ */
+export const PRECIO_RENTA = 150;

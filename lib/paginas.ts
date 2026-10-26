@@ -118,7 +118,7 @@ export const PAGINAS: Pagina[] = [
     grupo: "declarar",
     forma: "inverso",
     urgente: false,
-    // La 721 informa de saldos, no exige reconciliar: se presupuesta aparte.
+    // La 721 informa de saldos, no exige reconciliar: precio fijo (PRECIO_721).
     tarifas: false,
     articulos: [
       "modelos-100-721-714-criptomonedas",
