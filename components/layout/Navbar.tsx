@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from 'next-intl';
-import { Menu, X, Languages, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import IconoWhatsApp from "@/components/brand/IconoWhatsApp";
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import ButtonLink from "@/components/ui/ButtonLink";
@@ -11,6 +11,20 @@ import { GRUPOS, porGrupo, rutaPagina } from "@/lib/paginas";
 import { traducirRuta } from "@/lib/rutas";
 
 const PAGINAS_POR_GRUPO = porGrupo();
+
+/** Bandera redonda del idioma (public/images/icons/idiomas). */
+function Bandera({ code, size = 20 }: { code: string; size?: number }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={`/images/icons/idiomas/${code}.svg`}
+      alt=""
+      width={size}
+      height={size}
+      className="flex-none"
+    />
+  );
+}
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
@@ -155,24 +169,26 @@ export default function Navbar() {
             <div className="relative" ref={langMenuRef}>
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center space-x-1 text-sm font-medium text-azul transition-colors hover:text-pizarra"
-                aria-label="Select language"
+                className="flex items-center gap-1 text-azul transition-colors hover:text-pizarra"
+                aria-label={`${tCommon("language")}: ${languages.find((l) => l.code === locale)?.name}`}
+                aria-expanded={langMenuOpen}
               >
-                <Languages className="h-4 w-4" />
-                <span>{locale.toUpperCase()}</span>
+                <Bandera code={locale} size={22} />
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${langMenuOpen ? "rotate-180" : ""}`} aria-hidden="true" />
               </button>
                 {langMenuOpen && (
                   <div
-                    className="absolute right-0 mt-2 w-32 border border-niebla bg-blanco z-50"
+                    className="absolute right-0 mt-2 w-36 border border-niebla bg-blanco z-50"
                   >
                     {languages.map((lang) => (
                       <button
                         key={lang.code}
                         onClick={() => switchLanguage(lang.code)}
-                        className={`block w-full px-4 py-2 text-left text-sm hover:bg-niebla/10 transition-colors ${
+                        className={`flex w-full items-center gap-2.5 px-4 py-2 text-left text-sm hover:bg-niebla/10 transition-colors ${
  locale === lang.code ? 'bg-azul/10 text-azul font-medium' : 'text-pizarra'
  }`}
                       >
+                        <Bandera code={lang.code} size={18} />
                         {lang.name}
                       </button>
                     ))}
@@ -277,10 +293,11 @@ export default function Navbar() {
                         switchLanguage(lang.code);
                         setMobileMenuOpen(false);
                       }}
-                      className={`block w-full px-3 py-2 text-left text-base font-medium hover:bg-niebla/10 transition-colors ${
+                      className={`flex w-full items-center gap-3 px-3 py-2 text-left text-base font-medium hover:bg-niebla/10 transition-colors ${
  locale === lang.code ? 'text-azul bg-azul/10' : 'text-pizarra'
  }`}
                     >
+                      <Bandera code={lang.code} />
                       {lang.name}
                     </button>
                   ))}
