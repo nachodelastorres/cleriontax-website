@@ -276,11 +276,6 @@
       ]
     }
   ],
-  "tarifas": {
-    "h2": "Cuánto cuesta",
-    "entrada": "Antes de contestar hay que tener las cifras. Lo que cuesta reconstruirlas depende de cuántas fuentes de datos hay que casar, no de lo que te reclamen.",
-    "nota": "La reconstrucción de tus cifras sigue estos tramos. La contestación y la representación ante la AEAT se presupuestan aparte, en cuanto hemos leído la notificación."
-  },
   "cierre": {
     "h2": "El plazo no espera",
     "body": "Si tienes la notificación delante, lo más útil que puedes hacer ahora es contarnos la fecha y qué te piden. En cinco minutos sabes qué procedimiento es, cuántos días hábiles te quedan de verdad y qué hay que reunir.",

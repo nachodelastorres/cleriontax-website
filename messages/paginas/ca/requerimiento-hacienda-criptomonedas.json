@@ -276,11 +276,6 @@
       ]
     }
   ],
-  "tarifas": {
-    "h2": "Quant costa",
-    "entrada": "Abans de contestar cal tenir les xifres. El que costa reconstruir-les depèn de quantes fonts de dades cal casar, no del que et reclamin.",
-    "nota": "La reconstrucció de les teves xifres segueix aquests trams. La contestació i la representació davant l'AEAT es pressuposten a part, tan bon punt hem llegit la notificació."
-  },
   "cierre": {
     "h2": "El termini no espera",
     "body": "Si tens la notificació al davant, el més útil que pots fer ara és dir-nos la data i què et demanen. En cinc minuts saps quin procediment és, quants dies hàbils et queden de debò i què cal reunir.",

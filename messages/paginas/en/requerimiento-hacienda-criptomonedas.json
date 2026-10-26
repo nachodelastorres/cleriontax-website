@@ -276,11 +276,6 @@
       ]
     }
   ],
-  "tarifas": {
-    "h2": "How much it costs",
-    "entrada": "Before replying you need the figures. What it costs to rebuild them depends on how many data sources need matching, not on what's being claimed.",
-    "nota": "Rebuilding your figures follows these tiers. The reply and representation before the AEAT are quoted separately, once we've read the notification."
-  },
   "cierre": {
     "h2": "The deadline won't wait",
     "body": "If you have the notification in front of you, the most useful thing you can do now is tell us the date and what they're asking for. In five minutes you'll know which procedure it is, how many working days you really have left and what needs to be gathered.",

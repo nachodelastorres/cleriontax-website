@@ -343,11 +343,6 @@
       ]
     }
   ],
-  "tarifas": {
-    "h2": "El que costa reconstruir les teves xifres",
-    "entrada": "La base de qualsevol defensa és l'operativa refeta. El preu depèn de quantes fonts de dades cal reconciliar, no del que hi hagi en joc a l'expedient.",
-    "nota": "La reconstrucció segueix aquests trams. La feina de defensa (compareixences, al·legacions, recursos i reclamacions) es pressuposta a part tan bon punt veiem l'expedient."
-  },
   "cierre": {
     "h2": "No aportis res més sense revisar-ho",
     "body": "Explica'ns en quin punt és el procediment, quins exercicis abasta i què has aportat ja. El primer que farem és revisar l'expedient tal com està i dir-te quin termini tens. Si el termini apreta, truca'ns al +34 663 482 301.",

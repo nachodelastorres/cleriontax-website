@@ -10,7 +10,7 @@ import {
 } from "@/lib/schemas";
 import { SITE_URL, getAlternates, canonicalFor, type Locale } from "@/lib/site";
 import { PAGINAS, paginaPorSlug, rutaPagina, rutasPagina, slugLocal } from "@/lib/paginas";
-import { TARIFAS } from "@/lib/tarifas";
+import { TARIFAS, PRECIO_721 } from "@/lib/tarifas";
 import HeroPagina from "@/components/layout/HeroPagina";
 import HeroExpediente from "@/components/expediente/HeroExpediente";
 import HeroFormulario, { type Borrador } from "@/components/formulario/HeroFormulario";
@@ -20,6 +20,7 @@ import type { TextosCalculadora } from "@/components/expediente/CalculadoraPlazo
 import IndiceServicio from "@/components/services/IndiceServicio";
 import SeccionesServicio, { type Seccion } from "@/components/services/SeccionesServicio";
 import Tarifas from "@/components/precios/Tarifas";
+import PrecioUnico, { type TextosPrecioUnico } from "@/components/precios/PrecioUnico";
 import FormularioDiagnostico from "@/components/cta/FormularioDiagnostico";
 import BarraAccion from "@/components/cta/BarraAccion";
 import BloqueAccion from "@/components/cta/BloqueAccion";
@@ -70,6 +71,8 @@ interface Contenido {
   precioFases?: TextosPrecioFases;
   /** Sin tabla de precios: presupuesto cerrado a medida (inspección). */
   presupuesto?: TextosPresupuesto;
+  /** Precio fijo fuera de los tramos (modelo 721). */
+  precioUnico?: TextosPrecioUnico;
   cierre: { h2: string; body: string; button?: { label: string } };
   seo: { title: string; description: string; keywords?: string[] };
 }
@@ -122,7 +125,8 @@ export default async function PaginaServicio({ params }: Props) {
 
   const contenido = sections.filter((s) => s.id !== "faq");
   const faq = sections.find((s) => s.id === "faq");
-  const conTarifas = meta.tarifas && tarifas;
+  // Requerimiento se cotiza por tramos aunque los enseñe con PrecioFases.
+  const conTarifas = meta.tarifas && (tarifas || datos.precioFases);
   const expediente = datos.plantilla === "expediente";
 
   /* ---------------------------------------------------------- Datos estructurados */
@@ -151,6 +155,14 @@ export default async function PaginaServicio({ params }: Props) {
         Math.min(...TARIFAS.map((x) => x.precio)) +
         (expediente ? datos.precioFases?.suplemento ?? 0 : 0),
       offerCount: TARIFAS.length,
+    };
+  }
+
+  if (datos.precioUnico) {
+    servicio.offers = {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      price: PRECIO_721,
     };
   }
 
@@ -224,7 +236,9 @@ export default async function PaginaServicio({ params }: Props) {
         <PresupuestoMedida textos={datos.presupuesto} />
       ) : expediente && datos.precioFases ? (
         <PrecioFases locale={locale} textos={datos.precioFases} />
-      ) : conTarifas ? (
+      ) : datos.precioUnico ? (
+        <PrecioUnico locale={locale} precio={PRECIO_721} textos={datos.precioUnico} />
+      ) : meta.tarifas && tarifas ? (
         <Tarifas
           locale={locale}
           titulo={tarifas.h2}
