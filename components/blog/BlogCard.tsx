@@ -47,7 +47,6 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
             sizes={featured ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}
             quality={85}
           />
-          <div className="absolute inset-0 bg-papel" />
           <div className="absolute inset-0 bg-azul/55 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
           {/* Category badge */}
