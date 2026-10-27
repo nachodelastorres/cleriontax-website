@@ -415,6 +415,15 @@
       }
     },
     "notaLegal": "La informació publicada per Cleriontax té caràcter divulgatiu i no constitueix assessorament fiscal personalitzat ni assessorament d inversió. Cada situació requereix una anàlisi individual.",
+    "avisoCsv": {
+      "linea": "Prefereixes no barallar-te amb el CSV? Et preparem l’informe fiscal amb preu tancat des de {precio}.",
+      "lineaAccion": "Demanar pressupost",
+      "titulo": "Ja tens el CSV de {plataforma}?",
+      "texto": "Envia’ns-el i el convertim en les xifres de la teva declaració: compres, vendes, permutes, transferències i comissions casades amb FIFO, amb la traçabilitat operació per operació que justifica cada número. El portes al teu assessor o el presentem nosaltres.",
+      "precio": "Preu tancat des de {precio}, IVA inclòs, segons quantes fonts de dades tinguis.",
+      "accion": "Demanar pressupost tancat",
+      "verPrecios": "Veure preus"
+    },
     "ctaFrio": {
       "titulo": "El teu cas s assembla a això?",
       "texto": "Si això et sona a la teva situació, mira com ho resolem abans de decidir res. I si prefereixes explicar-ho directament, també.",

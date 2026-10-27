@@ -20,6 +20,7 @@ import clustersConfig from "@/messages/blog-posts/clusters-config.json";
 import NotaLegal from "@/components/blog/NotaLegal";
 import BloqueAccion from "@/components/cta/BloqueAccion";
 import { servicioSugerido } from "@/components/blog/servicioDelCluster";
+import { AvisoCsvBloque, AvisoCsvLinea, PLATAFORMA_CSV } from "@/components/blog/AvisoCsv";
 import { SITE_URL, canonicalFor, type Locale } from "@/lib/site";
 
 type Props = {
@@ -109,6 +110,9 @@ export default async function BlogPostPage({ params }: Props) {
   if (slug !== post.slugTranslations.es) {
     notFound();
   }
+
+  // Tutoriales de exportar historiales: llevan el aviso del informe fiscal.
+  const plataformaCsv = PLATAFORMA_CSV[slug];
 
   // Cargar posts relacionados con contenido
   const allPostsWithContent = await getAllBlogPostsWithContent(locale);
@@ -444,6 +448,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                   {/* Main Content */}
                   <div className="lg:col-span-8">
+                    {plataformaCsv ? <AvisoCsvLinea locale={locale} /> : null}
                     <BlogContentMagazine
                       content={post.content}
                       metadata={{
@@ -454,6 +459,7 @@ export default async function BlogPostPage({ params }: Props) {
                       }}
                       tagTranslations={t.raw('tagTranslations') as Record<string, string>}
                     />
+                    {plataformaCsv ? <AvisoCsvBloque locale={locale} plataforma={plataformaCsv} /> : null}
                   </div>
 
                   {/* Table of Contents Sidebar - Hidden on mobile */}

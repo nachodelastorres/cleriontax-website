@@ -415,6 +415,15 @@
       }
     },
     "notaLegal": "The information published by Cleriontax is for general guidance only and does not constitute personalised tax advice or investment advice. Every situation requires individual analysis.",
+    "avisoCsv": {
+      "linea": "Rather not wrestle with the CSV? We prepare your tax report at a fixed price from {precio}.",
+      "lineaAccion": "Get a quote",
+      "titulo": "Already have your {plataforma} CSV?",
+      "texto": "Send it to us and we turn it into the figures for your Spanish tax return: buys, sells, swaps, transfers and fees matched with FIFO, with the transaction-by-transaction trail that backs every number. Take it to your adviser or let us file it.",
+      "precio": "Fixed price from {precio}, VAT included, depending on how many data sources you have.",
+      "accion": "Get a fixed quote",
+      "verPrecios": "See pricing"
+    },
     "ctaFrio": {
       "titulo": "Does this sound like your case?",
       "texto": "If the above matches your situation, see how we handle it before deciding anything. Or tell us about it directly, if you prefer.",
