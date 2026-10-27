@@ -83,7 +83,7 @@ export const PAGINAS: Pagina[] = [
     articulos: [
       "como-documentar-transacciones-defi-hacienda",
       "errores-declarar-criptomonedas",
-      "dac8-guia-practica-inversores-cripto",
+      "directiva-dac8-criptomonedas-exchanges-hacienda",
     ],
   },
   {

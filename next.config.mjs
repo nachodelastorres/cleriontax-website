@@ -68,10 +68,28 @@ const nextConfig = {
       ['revisar-informe-koinly', 'revisar-informe-koinly-cointracking'],
     ];
 
+    /*
+     * Artículos retirados en octubre de 2026 porque competían con una página
+     * de servicio (o con otro artículo) por la misma búsqueda. Cada uno va a
+     * la página que se queda con esa búsqueda.
+     */
+    const blogRetirados = [
+      [{ es: 'modelo-721-criptomonedas', en: 'model-721-cryptocurrencies', ca: 'model-721-criptomonedes' }, 'modelo-721-criptomonedas'],
+      [{ es: 'inspeccion-hacienda-criptomonedas', en: 'tax-authority-crypto-audit-spain', ca: 'inspeccio-hisenda-criptomonedes' }, 'inspeccion-hacienda-criptomonedas'],
+      [{ es: 'como-declarar-criptomonedas-renta-2025', en: 'how-to-declare-cryptocurrencies-tax-return-2025', ca: 'com-declarar-criptomonedes-renda-2025' }, 'declarar-criptomonedas'],
+      [{ es: 'dac8-guia-practica-inversores-cripto', en: 'dac8-practical-guide-crypto-investors', ca: 'dac8-guia-practica-inversors-cripto' }, 'blog/directiva-dac8-criptomonedas-exchanges-hacienda'],
+    ];
+
     const reglas = [];
     for (const l of idiomas) {
       for (const [origen, d] of antiguas) {
         reglas.push({ source: `/${l}/${origen}`, destination: destino(d, l), permanent: true });
+      }
+      // El blog acepta el slug de cualquier idioma, así que se cubren los tres.
+      for (const [slugs, d] of blogRetirados) {
+        for (const s of new Set(Object.values(slugs))) {
+          reglas.push({ source: `/${l}/blog/${s}`, destination: destino(d, l), permanent: true });
+        }
       }
       /*
        * Cada página de servicio tiene un slug por idioma. Un slug de otro

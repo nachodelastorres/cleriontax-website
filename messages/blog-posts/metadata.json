@@ -65,9 +65,7 @@
       "layoutType": "magazine",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "criptomonedas-nomadas-digitales-residencia-fiscal-espana",
-        "como-declarar-criptomonedas-renta-2025",
-        "inspeccion-hacienda-criptomonedas"
+        "criptomonedas-nomadas-digitales-residencia-fiscal-espana"
       ],
       "aiOptimized": true
     },
@@ -137,8 +135,7 @@
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
         "tributacion-derivados-cripto-futuros-perpetuos",
-        "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "modelo-721-criptomonedas"
+        "guia-completa-declaracion-fiscal-criptomonedas-2025"
       ],
       "aiOptimized": true
     },
@@ -353,80 +350,7 @@
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
         "modelo-714-criptomonedas-patrimonio",
-        "modelo-721-criptomonedas",
         "modelos-100-721-714-criptomonedas"
-      ],
-      "aiOptimized": true
-    },
-    {
-      "id": "inspeccion-hacienda-criptomonedas",
-      "slugTranslations": {
-        "es": "inspeccion-hacienda-criptomonedas",
-        "en": "tax-authority-crypto-audit-spain",
-        "ca": "inspeccio-hisenda-criptomonedes"
-      },
-      "author": {
-        "name": "Equipo Cleriontax",
-        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
-        "avatar": "/images/team/cleriontax-team.jpg"
-      },
-      "publishedAt": "2026-02-16T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
-      "readingTime": 18,
-      "category": "Fiscalidad e Inversión",
-      "tags": [
-        "Inspección Hacienda",
-        "AEAT",
-        "Auditoría Fiscal",
-        "Requerimiento Criptomonedas",
-        "Sanciones Fiscales",
-        "Derechos Contribuyente",
-        "Comprobación Limitada",
-        "DAC8",
-        "Prescripción Fiscal",
-        "Regularización Voluntaria",
-        "Cruce Datos AEAT",
-        "Documentación Fiscal",
-        "Declaración Complementaria",
-        "Procedimiento Inspector"
-      ],
-      "image": {
-        "url": "/images/illustrations/blog/inspeccion-hacienda-por-criptomonedas-aeat-dac8-derechos.webp",
-        "alt": "Inspección de Hacienda por criptomonedas - Guía completa sobre procedimientos de la AEAT, derechos del contribuyente y cómo prepararse ante una inspección fiscal crypto",
-        "width": 1200,
-        "height": 630
-      },
-      "seo": {
-        "metaTitle": "Inspección por criptomonedas: fases, plazos y derechos",
-        "metaDescription": "Qué ocurre en una inspección de Hacienda por criptomonedas: cómo cruza datos la AEAT, fases y plazos del procedimiento, tus derechos y cómo prepararte.",
-        "keywords": [
-          "inspección hacienda criptomonedas",
-          "AEAT criptomonedas inspección",
-          "requerimiento hacienda crypto",
-          "sanción criptomonedas España",
-          "auditoría fiscal criptomonedas",
-          "derechos contribuyente inspección",
-          "comprobación limitada crypto",
-          "cruce datos AEAT exchanges",
-          "prescripción fiscal criptomonedas",
-          "regularización voluntaria crypto",
-          "declaración complementaria criptomonedas",
-          "multa hacienda bitcoin",
-          "inspección fiscal DeFi",
-          "DAC8 inspección criptomonedas"
-        ],
-        "ogImage": "/images/illustrations/blog/inspeccion-hacienda-por-criptomonedas-aeat-dac8-derechos.webp",
-        "ogImageAlt": "Inspección de Hacienda por criptomonedas - Guía completa sobre procedimientos de la AEAT, derechos del contribuyente y cómo prepararse ante una inspección fiscal crypto",
-        "ogImageWidth": 1200,
-        "ogImageHeight": 630
-      },
-      "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "errores-declarar-criptomonedas",
-        "modelos-100-721-714-criptomonedas",
-        "directiva-dac8-criptomonedas-exchanges-hacienda"
       ],
       "aiOptimized": true
     },
@@ -567,9 +491,7 @@
       "layoutType": "magazine",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "modelos-100-721-714-criptomonedas",
-        "modelo-721-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025"
+        "modelos-100-721-714-criptomonedas"
       ],
       "aiOptimized": true
     },
@@ -1086,74 +1008,6 @@
       "aiOptimized": true
     },
     {
-      "id": "dac8-guia-practica-inversores-cripto",
-      "slugTranslations": {
-        "es": "dac8-guia-practica-inversores-cripto",
-        "en": "dac8-practical-guide-crypto-investors",
-        "ca": "dac8-guia-practica-inversors-cripto"
-      },
-      "author": {
-        "name": "Equipo Cleriontax",
-        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
-        "avatar": "/images/team/cleriontax-team.jpg"
-      },
-      "publishedAt": "2025-12-10T12:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
-      "readingTime": 12,
-      "category": "Guías Prácticas Específicas",
-      "tags": [
-        "DAC8",
-        "Guía Práctica",
-        "Inversores Cripto",
-        "Cumplimiento Fiscal",
-        "Exchanges",
-        "AEAT",
-        "Obligaciones Fiscales",
-        "Declaración Renta",
-        "FIFO",
-        "Trazabilidad",
-        "Regulación Cripto",
-        "Fiscalidad UE"
-      ],
-      "image": {
-        "url": "/images/illustrations/blog/dac8-normativa-regulacion-europea.webp",
-        "alt": "DAC8 para inversores cripto - Guía práctica sobre qué cambia con la nueva normativa europea y cómo cumplir sin errores",
-        "width": 1200,
-        "height": 630
-      },
-      "seo": {
-        "metaTitle": "DAC8 para inversores cripto: qué hacer y qué revisar",
-        "metaDescription": "DAC8 para el inversor: qué revisar en tu historial, qué corregir y qué pasos dar para que tu declaración cuadre con lo que informa tu exchange.",
-        "keywords": [
-          "DAC8 inversores",
-          "DAC8 criptomonedas obligaciones",
-          "impacto DAC8 usuarios cripto",
-          "fiscalidad criptomonedas DAC8",
-          "datos que reportan exchanges DAC8",
-          "cómo prepararse DAC8",
-          "guía práctica DAC8",
-          "nueva normativa criptomonedas UE",
-          "obligaciones fiscales cripto 2025",
-          "cumplir DAC8",
-          "riesgos DAC8 AEAT",
-          "qué deben hacer los inversores con DAC8"
-        ],
-        "ogImage": "/images/illustrations/blog/dac8-normativa-regulacion-europea.webp",
-        "ogImageAlt": "DAC8 para inversores cripto - Guía práctica sobre qué cambia con la nueva normativa europea y cómo cumplir sin errores",
-        "ogImageWidth": 1200,
-        "ogImageHeight": 630
-      },
-      "featured": true,
-      "layoutType": "magazine",
-      "cluster": "guias-practicas-especificas",
-      "relatedPosts": [
-        "directiva-dac8-criptomonedas-exchanges-hacienda",
-        "limpiar-datasets-cripto-antes-declarar",
-        "errores-declarar-criptomonedas"
-      ],
-      "aiOptimized": true
-    },
-    {
       "id": "directiva-dac8-criptomonedas-exchanges-hacienda",
       "slugTranslations": {
         "es": "directiva-dac8-criptomonedas-exchanges-hacienda",
@@ -1220,7 +1074,6 @@
       "layoutType": "magazine",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "modelo-721-criptomonedas",
         "modelos-100-721-714-criptomonedas",
         "limpiar-datasets-cripto-antes-declarar"
       ],
@@ -1439,8 +1292,7 @@
       "cluster": "guias-practicas-especificas",
       "relatedPosts": [
         "herramientas-rastrear-criptomonedas",
-        "clasificar-operaciones-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025"
+        "clasificar-operaciones-criptomonedas"
       ],
       "aiOptimized": true
     },
@@ -1723,8 +1575,6 @@
       "layoutType": "minimal",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "modelo-721-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025",
         "guia-completa-declaracion-fiscal-criptomonedas-2025"
       ],
       "aiOptimized": true
@@ -1857,7 +1707,6 @@
       "layoutType": "magazine",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "como-declarar-criptomonedas-renta-2025",
         "modelos-100-721-714-criptomonedas",
         "errores-declarar-criptomonedas"
       ],
@@ -1924,71 +1773,8 @@
       "layoutType": "magazine",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "como-declarar-criptomonedas-renta-2025",
         "modelos-100-721-714-criptomonedas",
         "guia-completa-declaracion-fiscal-criptomonedas-2025"
-      ],
-      "aiOptimized": true
-    },
-    {
-      "id": "modelo-721-criptomonedas",
-      "slugTranslations": {
-        "es": "modelo-721-criptomonedas",
-        "en": "model-721-cryptocurrencies",
-        "ca": "model-721-criptomonedes"
-      },
-      "author": {
-        "name": "Equipo Cleriontax",
-        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
-        "avatar": "/images/team/cleriontax-team.jpg"
-      },
-      "publishedAt": "2025-10-22T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
-      "readingTime": 12,
-      "category": "Fiscalidad e Inversión",
-      "tags": [
-        "Modelo 721",
-        "Criptomonedas Extranjero",
-        "DeFi",
-        "AEAT",
-        "Obligaciones Fiscales",
-        "Declaración Internacional",
-        "Exchanges Extranjeros",
-        "Wallets No Custodiales",
-        "Transparencia Fiscal",
-        "Sanciones Hacienda"
-      ],
-      "image": {
-        "url": "/images/illustrations/blog/blockchain-criptomonedas-impuesto.webp",
-        "alt": "Modelo 721 para declarar criptomonedas en el extranjero y DeFi - Guía completa sobre obligaciones fiscales internacionales ante la AEAT",
-        "width": 1200,
-        "height": 630
-      },
-      "seo": {
-        "metaTitle": "Modelo 721: qué es, quién lo presenta y cómo se rellena",
-        "metaDescription": "Qué es el modelo 721, quién está obligado a presentarlo, cuándo se supera el umbral de 50.000 €, plazos, cómo se rellena y qué pasa con DeFi y wallets.",
-        "keywords": [
-          "modelo 721 criptomonedas",
-          "declarar criptomonedas extranjero",
-          "obligaciones fiscales crypto AEAT",
-          "fiscalidad criptomonedas España",
-          "modelo 721 AEAT",
-          "declarar DeFi Hacienda",
-          "exchanges extranjeros fiscalidad",
-          "wallets no custodiales declaración"
-        ],
-        "ogImage": "/images/illustrations/blog/blockchain-criptomonedas-impuesto.webp",
-        "ogImageAlt": "Modelo 721 para declarar criptomonedas en el extranjero y DeFi - Guía completa sobre obligaciones fiscales internacionales ante la AEAT",
-        "ogImageWidth": 1200,
-        "ogImageHeight": 630
-      },
-      "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "modelos-100-721-714-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025",
-        "fiscalidad-defi-espana"
       ],
       "aiOptimized": true
     },
@@ -2107,8 +1893,7 @@
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
         "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "modelos-100-721-714-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025"
+        "modelos-100-721-714-criptomonedas"
       ],
       "aiOptimized": true
     },
@@ -2165,68 +1950,7 @@
       "layoutType": "minimal",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "modelo-721-criptomonedas",
-        "clasificar-operaciones-criptomonedas",
-        "como-declarar-criptomonedas-renta-2025"
-      ],
-      "aiOptimized": true
-    },
-    {
-      "id": "como-declarar-criptomonedas-renta-2025",
-      "slugTranslations": {
-        "es": "como-declarar-criptomonedas-renta-2025",
-        "en": "how-to-declare-cryptocurrencies-tax-return-2025",
-        "ca": "com-declarar-criptomonedes-renda-2025"
-      },
-      "author": {
-        "name": "Equipo Cleriontax",
-        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
-        "avatar": "/images/team/cleriontax-team.jpg"
-      },
-      "publishedAt": "2025-10-01T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
-      "readingTime": 8,
-      "category": "Fiscalidad e Inversión",
-      "tags": [
-        "Declaración Renta",
-        "Fiscalidad Crypto",
-        "AEAT",
-        "Modelo 100",
-        "FIFO",
-        "Ganancias Patrimoniales",
-        "Staking",
-        "Modelo 721",
-        "Impuestos Criptomonedas"
-      ],
-      "image": {
-        "url": "/images/illustrations/blog/declaracion-renta-criptomonedas.webp",
-        "alt": "Cómo declarar criptomonedas en la renta - Guía paso a paso para la declaración IRPF de Bitcoin, Ethereum y otras criptomonedas ante la AEAT",
-        "width": 1200,
-        "height": 630
-      },
-      "seo": {
-        "metaTitle": "Cómo declarar criptomonedas en la renta paso a paso",
-        "metaDescription": "Guía paso a paso para declarar criptomonedas en la renta: qué operaciones tributan, cómo calcular la ganancia con FIFO, dónde se declara y errores típicos.",
-        "keywords": [
-          "declarar criptomonedas AEAT",
-          "renta 2025 criptomonedas",
-          "fiscalidad crypto España",
-          "impuesto criptomonedas",
-          "cómo declarar cripto AEAT",
-          "informes fiscales criptomonedas"
-        ],
-        "ogImage": "/images/illustrations/blog/declaracion-renta-criptomonedas.webp",
-        "ogImageAlt": "Cómo declarar criptomonedas en la renta - Guía paso a paso para la declaración IRPF de Bitcoin, Ethereum y otras criptomonedas ante la AEAT",
-        "ogImageWidth": 1200,
-        "ogImageHeight": 630
-      },
-      "featured": true,
-      "layoutType": "magazine",
-      "cluster": "fiscalidad-criptomonedas",
-      "relatedPosts": [
-        "guia-completa-declaracion-fiscal-criptomonedas-2025",
-        "modelos-100-721-714-criptomonedas",
-        "errores-declarar-criptomonedas"
+        "clasificar-operaciones-criptomonedas"
       ],
       "aiOptimized": true
     },
@@ -2292,7 +2016,6 @@
       "layoutType": "magazine",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
-        "como-declarar-criptomonedas-renta-2025",
         "modelos-100-721-714-criptomonedas",
         "clasificar-operaciones-criptomonedas"
       ],

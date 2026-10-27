@@ -25,7 +25,6 @@ const POR_ARTICULO: Record<string, string> = {
   "modelos-100-721-714-criptomonedas": "/modelo-721-criptomonedas",
   "modelo-714-criptomonedas-patrimonio": "/modelo-721-criptomonedas",
   "directiva-dac8-criptomonedas-exchanges-hacienda": "/requerimiento-hacienda-criptomonedas",
-  "dac8-guia-practica-inversores-cripto": "/requerimiento-hacienda-criptomonedas",
 };
 
 export function servicioSugerido(slug: string, cluster?: string, locale = "es"): string {
