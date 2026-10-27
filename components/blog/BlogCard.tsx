@@ -49,22 +49,18 @@ export default function BlogCard({ post, index = 0, featured = false }: BlogCard
           />
           <div className="absolute inset-0 bg-azul/55 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-          {/* Category badge */}
-          <div className="absolute top-4 left-4 z-10">
+          {/* Categoría y destacado en una sola fila: si no caben, el segundo baja en vez de montarse. */}
+          <div className="absolute inset-x-4 top-4 z-10 flex flex-wrap items-start gap-2">
             <span className="px-4 py-1.5 bg-rojo text-blanco text-xs font-bold uppercase tracking-wide">
               {translatedCategory}
             </span>
-          </div>
-
-          {/* Featured badge */}
-          {post.featured && (
-            <div className="absolute top-4 right-4 z-10">
-              <span className="px-4 py-1.5 bg-azul text-blanco text-xs font-bold uppercase tracking-wide flex items-center gap-1.5">
+            {post.featured && (
+              <span className="ml-auto px-4 py-1.5 bg-azul text-blanco text-xs font-bold uppercase tracking-wide flex items-center gap-1.5">
                 <span className="w-2 h-2 bg-blanco"></span>
                 {t('featured.badge')}
               </span>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* Content */}
