@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import SimboloAnimado from "@/components/brand/SimboloAnimado";
 import SimboloFondo from "@/components/brand/SimboloFondo";
@@ -20,6 +21,23 @@ export default async function HeroInicio({ locale }: { locale: string }) {
 
   return (
     <section className="relative bg-azul">
+      {/*
+        Onda de fondo, tenue y volteada: la parte más densa queda a la derecha,
+        detrás del símbolo, y bajo el titular solo pasa la cola fina. Es una
+        banda anclada abajo, no un fondo a sangre: en móvil, a sangre, se
+        ampliaba hasta un trozo borroso. Allí va más ancha que la pantalla para
+        que se vea la parte con más dibujo; `sizes` pide la resolución real.
+      */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+        <Image
+          src="/images/illustrations/banner-hero.webp"
+          alt=""
+          width={2000}
+          height={667}
+          sizes="(max-width: 1023px) 230vw, 130vw"
+          className="absolute bottom-0 right-0 h-auto w-[230%] max-w-none -scale-x-100 opacity-40 lg:w-[130%] lg:opacity-30"
+        />
+      </div>
       <SimboloFondo />
 
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-14 px-6 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-12 lg:items-center lg:gap-12 lg:pb-24">
