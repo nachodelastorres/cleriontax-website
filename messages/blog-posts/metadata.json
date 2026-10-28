@@ -1224,7 +1224,7 @@
         "height": 630
       },
       "seo": {
-        "metaTitle": "Directiva DAC8: qué datos cripto envían los exchanges",
+        "metaTitle": "DAC8: qué datos de tus criptomonedas recibe Hacienda",
         "metaDescription": "Cómo funciona la Directiva DAC8: qué proveedores cripto están obligados, qué datos de clientes y operaciones enviarán a Hacienda y desde cuándo.",
         "keywords": [
           "DAC8 criptomonedas",
@@ -1441,9 +1441,12 @@
         "height": 630
       },
       "seo": {
-        "metaTitle": "Exportar historial de Binance en CSV para la renta",
-        "metaDescription": "Cómo descargar bien tu historial de Binance en CSV: trades, conversiones, staking, earn y depósitos, sin huecos, para preparar la declaración de la renta.",
+        "metaTitle": "Extracto de Binance para Hacienda: exportar el CSV",
+        "metaDescription": "Cómo descargar tu historial de Binance en CSV para Hacienda antes de cerrar la cuenta: trades, conversiones, staking, earn y depósitos, sin huecos.",
         "keywords": [
+          "extracto binance hacienda",
+          "descargar csv binance",
+          "extracto binance para hacienda",
           "binance csv",
           "exportar binance",
           "historial binance",
@@ -1456,9 +1459,7 @@
           "binance declaración renta",
           "binance modelo 100",
           "historial completo binance",
-          "binance csv español",
-          "exportar staking binance",
-          "binance earn history"
+          "binance csv español"
         ],
         "ogImage": "/images/illustrations/blog/bitcoin-asesor-fiscal.webp",
         "ogImageAlt": "Cómo exportar historial de Binance correctamente - Guía completa paso a paso para obtener tus datos CSV y preparar la declaración fiscal ante la AEAT",
