@@ -1721,7 +1721,7 @@
         "avatar": "/images/team/cleriontax-team.jpg"
       },
       "publishedAt": "2025-10-30T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
+      "updatedAt": "2026-10-28T09:00:00Z",
       "readingTime": 14,
       "category": "Fiscalidad e Inversión",
       "tags": [
@@ -1745,20 +1745,23 @@
         "height": 630
       },
       "seo": {
-        "metaTitle": "Minería de criptomonedas: fiscalidad, IAE y autónomos",
-        "metaDescription": "Cómo tributa la minería de criptomonedas en España: cuándo darte de alta como autónomo, epígrafe IAE, modelo 130, gastos deducibles y venta de lo minado.",
+        "metaTitle": "Minería de criptomonedas y Hacienda: cómo tributa",
+        "metaDescription": "¿Es legal minar en España y cómo tributa ante Hacienda? Alta como autónomo, epígrafe IAE, IVA no sujeto, modelo 130, gastos deducibles y venta de lo minado.",
         "keywords": [
-          "fiscalidad mining España",
+          "minería criptomonedas hacienda",
+          "es legal minar criptomonedas en españa",
+          "minar criptomonedas hacienda",
+          "fiscalidad minería criptomonedas",
           "minería criptomonedas autónomo",
           "IAE minería crypto",
           "tributación minado bitcoin",
+          "modelo 130 minería",
+          "fiscalidad mining España",
           "mining criptomonedas impuestos",
           "alta autónomo minería crypto",
           "modelo 130 mining",
           "deducciones minería bitcoin",
-          "RETA minero criptomonedas",
-          "actividad económica mining",
-          "declarar minería AEAT"
+          "RETA minero criptomonedas"
         ],
         "ogImage": "/images/illustrations/blog/patrimonio-crypto-acciones.webp",
         "ogImageAlt": "Minería de criptomonedas en España - Guía completa sobre fiscalidad, IAE y obligaciones como autónomo ante la AEAT",
