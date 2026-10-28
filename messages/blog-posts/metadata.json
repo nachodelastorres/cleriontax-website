@@ -1,6 +1,67 @@
 {
   "posts": [
     {
+      "id": "binance-hacienda-declarar",
+      "slugTranslations": {
+        "es": "binance-hacienda-declarar",
+        "en": "binance-spanish-tax-agency",
+        "ca": "binance-hisenda-declarar"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-10-28T09:00:00Z",
+      "readingTime": 9,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Binance",
+        "Hacienda",
+        "AEAT",
+        "MiCA",
+        "DAC8",
+        "Modelo 721",
+        "FIFO",
+        "Declaración Renta",
+        "Exchanges"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/inspeccion-hacienda-por-criptomonedas-aeat-dac8-derechos.webp",
+        "alt": "Binance y Hacienda: qué información recibe la AEAT de tus operaciones en Binance y cómo declararlas",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Binance y Hacienda: qué informa y cómo declararlo",
+        "metaDescription": "Qué datos de Binance tiene Hacienda (modelos 172 y 173), qué pasa tras su salida de España por MiCA y cómo declarar ventas, permutas y retiradas.",
+        "keywords": [
+          "binance hacienda",
+          "binance informa a hacienda",
+          "binance y hacienda",
+          "binance tax españa",
+          "declarar binance",
+          "sacar dinero de binance hacienda",
+          "binance españa hacienda",
+          "binance mica españa",
+          "modelo 173 binance"
+        ],
+        "ogImage": "/images/illustrations/blog/inspeccion-hacienda-por-criptomonedas-aeat-dac8-derechos.webp",
+        "ogImageAlt": "Binance y Hacienda: qué información recibe la AEAT de tus operaciones en Binance y cómo declararlas",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": false,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "como-exportar-historial-binance-correctamente",
+        "directiva-dac8-criptomonedas-exchanges-hacienda",
+        "errores-declarar-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "autonomos-criptomonedas-facturar-iva-tributar",
       "slugTranslations": {
         "es": "autonomos-criptomonedas-facturar-iva-tributar",
@@ -1236,7 +1297,7 @@
         "avatar": "/images/team/cleriontax-team.jpg"
       },
       "publishedAt": "2025-11-26T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
+      "updatedAt": "2026-10-28T09:00:00Z",
       "readingTime": 18,
       "category": "Guías Prácticas Específicas",
       "tags": [
@@ -1291,6 +1352,7 @@
       "layoutType": "magazine",
       "cluster": "guias-practicas-especificas",
       "relatedPosts": [
+        "binance-hacienda-declarar",
         "herramientas-rastrear-criptomonedas",
         "clasificar-operaciones-criptomonedas"
       ],
