@@ -35,7 +35,7 @@
   "seo": {
     "home": {
       "title": "Asesoría fiscal cripto y renta de criptomonedas",
-      "description": "Informe fiscal de criptomonedas revisado operación a operación, renta cripto, modelo 721 y defensa ante requerimientos e inspecciones de la AEAT."
+      "description": "Asesor y gestor fiscal de criptomonedas: informe revisado operación a operación, renta cripto, modelo 721 y defensa ante requerimientos de la AEAT."
     },
     "services": {
       "title": "Servicios Fiscales Cripto | Declaración Renta Criptoactivos | Cleriontax",
@@ -712,7 +712,7 @@
   "inicio": {
     "hero": {
       "titulo": "Asesoría fiscal de criptomonedas y declaración de la renta cripto",
-      "entrada": "Un informe automático es el punto de partida, nunca el entregable. Reconciliamos tus exchanges, wallets y protocolos, revisamos a mano lo que un programa resolvería con un valor por defecto y dejamos escrito de dónde sale cada cifra.",
+      "entrada": "Somos tu asesor y gestor fiscal de criptomonedas. Un informe automático es el punto de partida, nunca el entregable: reconciliamos tus exchanges, wallets y protocolos, revisamos a mano lo que un programa resolvería con un valor por defecto y dejamos escrito de dónde sale cada cifra.",
       "accion": "Empezar el diagnóstico",
       "senas": [
         { "texto": "Informe fiscal cripto", "slug": "informe-fiscal-criptomonedas" },
@@ -820,6 +820,10 @@
       "titulo": "Lo que más nos preguntan",
       "items": [
         {
+          "q": "¿Sois asesores o gestores de criptomonedas?",
+          "a": "Las dos cosas, según lo que necesites. Como asesores fiscales especializados en criptomonedas reconstruimos tu operativa, decidimos el criterio en cada punto dudoso y te acompañamos ante la AEAT si llega un requerimiento. Como gestoría, presentamos tu declaración de la renta completa, no solo la parte cripto, por 150 € más por declaración. Y si ya tienes gestor, le damos las cifras listas y su justificación para que solo tenga que trasladarlas."
+        },
+        {
           "q": "¿Tengo que declarar mis criptomonedas aunque no las haya pasado a euros?",
           "a": "Sí, si has cambiado unas por otras. Convertir BTC en USDT, por ejemplo, es una permuta y genera una ganancia o pérdida patrimonial aunque no retires nada a euros. Si solo compraste y mantienes, eso no tributa en el IRPF, pero puede haber obligaciones informativas: el modelo 721 si a 31 de diciembre tienes más de 50.000 € en criptomonedas custodiadas fuera de España, y el modelo 714 si estás obligado al impuesto sobre el patrimonio."
         },
@@ -834,6 +838,10 @@
         {
           "q": "¿Por qué no me basta con Koinly o CoinTracking?",
           "a": "Porque un programa no decide: aplica un valor por defecto. Cuenta como ventas las transferencias entre tus propias wallets, deja compras sin coste de adquisición o valora como reales tokens que son spam. Son buenas herramientas para empezar. Nosotros partimos de su salida o de los datos en bruto, revisamos operación a operación y dejamos escrito el criterio de cada cifra."
+        },
+        {
+          "q": "¿Puedo hacer una consulta fiscal sobre criptomonedas sin encargar el informe?",
+          "a": "Sí. Cuéntanos tu caso en el diagnóstico y te respondemos qué tipo de trabajo necesita y cuánto cuesta, antes de comprometerte a nada. Las consultas puntuales o recurrentes, como planificar una venta importante o resolver dudas sobre un protocolo, se presupuestan a medida."
         },
         {
           "q": "¿Qué necesitáis de mí y cuánto se tarda?",

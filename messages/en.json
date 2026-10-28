@@ -35,7 +35,7 @@
   "seo": {
     "home": {
       "title": "Crypto tax advisory and tax returns in Spain",
-      "description": "Crypto tax reports reviewed transaction by transaction, Spanish income tax returns, form 721 and defence against AEAT requests and inspections."
+      "description": "Crypto tax adviser and preparer in Spain: reports reviewed transaction by transaction, income tax returns, form 721 and defence before the AEAT."
     },
     "services": {
       "title": "Crypto Tax Services | Crypto Income Tax Return | Cleriontax",
@@ -712,7 +712,7 @@
   "inicio": {
     "hero": {
       "titulo": "Crypto tax advisory and crypto income tax returns in Spain",
-      "entrada": "An automated report is the starting point, never the deliverable. We reconcile your exchanges, wallets and protocols, review by hand what software would settle with a default value, and write down where every figure comes from.",
+      "entrada": "Your crypto tax adviser and tax preparer in Spain. An automated report is the starting point, never the deliverable: we reconcile your exchanges, wallets and protocols, review by hand what software would settle with a default value, and write down where every figure comes from.",
       "accion": "Start the diagnosis",
       "senas": [
         { "texto": "Crypto tax report", "slug": "informe-fiscal-criptomonedas" },
@@ -820,6 +820,10 @@
       "titulo": "What we get asked most",
       "items": [
         {
+          "q": "Are you crypto tax advisers or tax preparers?",
+          "a": "Both, depending on what you need. As tax advisers specialising in crypto we rebuild your activity, decide the criterion at every doubtful point and stand with you before the Spanish tax agency if a request arrives. As a tax preparer, we file your complete income tax return, not just the crypto part, for €150 more per return. And if you already have an adviser, we give them the figures ready to use and the reasoning behind them so they only have to carry them over."
+        },
+        {
           "q": "Do I have to declare my crypto if I haven’t cashed out to euros?",
           "a": "Yes, if you’ve swapped one for another. Converting BTC into USDT, for example, is an exchange of assets and produces a capital gain or loss even if you never withdraw euros. If you only bought and hold, that isn’t taxed in income tax, but there may be reporting obligations: form 721 if on 31 December you hold more than 50.000 € in crypto with custodians outside Spain, and form 714 if you are liable for wealth tax."
         },
@@ -834,6 +838,10 @@
         {
           "q": "Why isn’t Koinly or CoinTracking enough?",
           "a": "Because software doesn’t decide: it applies a default. It counts transfers between your own wallets as sales, leaves purchases without an acquisition cost or values spam tokens as if they were real. They are good tools to start with. We start from their output or from the raw data, review transaction by transaction and write down the criterion behind each figure."
+        },
+        {
+          "q": "Can I get a crypto tax consultation without ordering the report?",
+          "a": "Yes. Tell us about your case in the assessment form and we will tell you what kind of work it needs and what it costs, before you commit to anything. One-off or recurring consultations, such as planning a large sale or questions about a protocol, are quoted individually."
         },
         {
           "q": "What do you need from me and how long does it take?",
