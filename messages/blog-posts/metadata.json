@@ -1,6 +1,123 @@
 {
   "posts": [
     {
+      "id": "coinbase-hacienda-declarar",
+      "slugTranslations": {
+        "es": "coinbase-hacienda-declarar",
+        "en": "coinbase-spanish-tax-agency",
+        "ca": "coinbase-hisenda-declarar"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-10-28T10:00:00Z",
+      "readingTime": 8,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Coinbase",
+        "Hacienda",
+        "AEAT",
+        "Modelo 721",
+        "DAC8",
+        "MiCA",
+        "Staking",
+        "FIFO",
+        "Exchanges"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/blockchain-criptomonedas-impuesto.webp",
+        "alt": "Coinbase y Hacienda: qué sabe la AEAT de tus operaciones en Coinbase y cuándo toca el modelo 721",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Coinbase y Hacienda: modelo 721 y qué sabe la AEAT",
+        "metaDescription": "Qué sabe Hacienda de tus operaciones en Coinbase, cuándo sus saldos cuentan para el modelo 721 y cómo declarar ventas, permutas y recompensas de staking.",
+        "keywords": [
+          "coinbase hacienda",
+          "coinbase informa a hacienda",
+          "coinbase modelo 721",
+          "coinbase españa hacienda",
+          "declarar coinbase",
+          "coinbase dac8",
+          "coinbase renta"
+        ],
+        "ogImage": "/images/illustrations/blog/blockchain-criptomonedas-impuesto.webp",
+        "ogImageAlt": "Coinbase y Hacienda: qué sabe la AEAT de tus operaciones en Coinbase y cuándo toca el modelo 721",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": false,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "binance-hacienda-declarar",
+        "trust-wallet-hacienda",
+        "modelos-100-721-714-criptomonedas"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "trust-wallet-hacienda",
+      "slugTranslations": {
+        "es": "trust-wallet-hacienda",
+        "en": "trust-wallet-spanish-tax-agency",
+        "ca": "trust-wallet-hisenda"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-10-28T10:00:00Z",
+      "readingTime": 7,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Trust Wallet",
+        "Wallets",
+        "Hacienda",
+        "Modelo 721",
+        "Modelo 714",
+        "Staking",
+        "Airdrops",
+        "DeFi",
+        "FIFO"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/dac8-normativa-regulacion-europea.webp",
+        "alt": "Trust Wallet y Hacienda: qué declarar si guardas tus criptomonedas en una wallet de autocustodia",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Trust Wallet y Hacienda: qué tienes que declarar",
+        "metaDescription": "¿Trust Wallet informa a Hacienda? Por qué la autocustodia queda fuera del modelo 721, qué swaps, staking y airdrops tributan y cómo declararlos en la renta.",
+        "keywords": [
+          "trust wallet hacienda",
+          "trust wallet declarar",
+          "wallet propia hacienda",
+          "autocustodia modelo 721",
+          "hacienda puede ver mi wallet",
+          "declarar wallet criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/dac8-normativa-regulacion-europea.webp",
+        "ogImageAlt": "Trust Wallet y Hacienda: qué declarar si guardas tus criptomonedas en una wallet de autocustodia",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": false,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "binance-hacienda-declarar",
+        "coinbase-hacienda-declarar",
+        "fiscalidad-defi-espana"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "binance-hacienda-declarar",
       "slugTranslations": {
         "es": "binance-hacienda-declarar",
@@ -56,8 +173,8 @@
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
         "como-exportar-historial-binance-correctamente",
-        "directiva-dac8-criptomonedas-exchanges-hacienda",
-        "errores-declarar-criptomonedas"
+        "coinbase-hacienda-declarar",
+        "trust-wallet-hacienda"
       ],
       "aiOptimized": true
     },

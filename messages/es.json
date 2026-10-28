@@ -126,6 +126,8 @@
       }
     },
     "tagTranslations": {
+      "Coinbase": "Coinbase",
+      "Trust Wallet": "Trust Wallet",
       "Modelo 721": "Modelo 721",
       "Criptomonedas Extranjero": "Criptomonedas Extranjero",
       "DeFi": "DeFi",
