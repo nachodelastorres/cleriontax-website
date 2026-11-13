@@ -14,8 +14,10 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import { Calendar, Clock, Tag, ArrowLeft, Folder, FileText } from "lucide-react";
 import {
   generateBlogBreadcrumbSchema,
+  generateFAQSchema,
   getOrganizationReference
 } from "@/lib/schemas";
+import { preguntasDelArticulo } from "@/lib/blog-faq";
 import clustersConfig from "@/messages/blog-posts/clusters-config.json";
 import NotaLegal from "@/components/blog/NotaLegal";
 import BloqueAccion from "@/components/cta/BloqueAccion";
@@ -188,8 +190,23 @@ export default async function BlogPostPage({ params }: Props) {
     "url": postUrl
   };
 
+  // FAQPage desde el bloque de preguntas frecuentes que el artículo ya muestra.
+  const faqSchema = generateFAQSchema({
+    locale: locale as Locale,
+    items: preguntasDelArticulo(post.content),
+    url: postUrl,
+  });
+
   return (
     <>
+      {faqSchema && (
+        <script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       {/* Structured Data - Breadcrumb */}
       <script
         id="breadcrumb-schema"
