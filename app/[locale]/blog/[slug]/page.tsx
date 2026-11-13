@@ -11,7 +11,7 @@ import BlogContentStorytelling from "@/components/blog/BlogContentStorytelling";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogCard from "@/components/blog/BlogCard";
 import ButtonLink from "@/components/ui/ButtonLink";
-import { Calendar, Clock, Tag, ArrowLeft, Folder, FileText } from "lucide-react";
+import { Calendar, Clock, Tag, ArrowLeft, Folder } from "lucide-react";
 import {
   generateBlogBreadcrumbSchema,
   generateFAQSchema,
@@ -328,108 +328,6 @@ export default async function BlogPostPage({ params }: Props) {
           </Container>
         </section>
 
-        {/* Cluster Section - Inicio del artículo */}
-        {post.cluster && (() => {
-          const cluster = clustersConfig.clusters.find(c => c.id === post.cluster);
-          if (!cluster) return null;
-
-          const clusterName = cluster.name[locale as 'es' | 'en' | 'ca'];
-          const clusterDescription = cluster.description[locale as 'es' | 'en' | 'ca'];
-          const clusterKeywords = cluster.keywords[locale as 'es' | 'en' | 'ca'].slice(0, 6);
-
-          // Obtener posts relacionados del mismo cluster
-          const clusterRelatedPosts = relatedPosts.slice(0, 5);
-
-          return (
-            <section className="py-12 bg-papel">
-              <Container>
-                <div className="max-w-4xl mx-auto">
-                  {/* Header del cluster */}
-                  <div className="flex items-start gap-4 p-8 bg-blanco border-2 border-niebla mb-8">
-                    <div className="p-4 bg-azul">
-                      <Folder className="w-8 h-8 text-blanco" />
-                    </div>
-                    <div className="flex-1">
-                      <div className="mb-3">
-                        <span className="text-xs font-bold text-azul uppercase tracking-wider">
-                          {t('articulo.tema')}
-                        </span>
-                      </div>
-                      <Link
-                        href={`/${locale}/blog/tema/${post.cluster}`}
-                        className="group inline-block"
-                      >
-                        <p className="text-2xl font-bold text-azul mb-3 group-hover:text-rojo transition-colors">
-                          {clusterName}
-                        </p>
-                      </Link>
-                      <p className="text-pizarra mb-4 leading-relaxed">
-                        {clusterDescription}
-                      </p>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {clusterKeywords.map((keyword, idx) => (
-                          <span key={idx} className="px-3 py-1.5 text-xs font-semibold bg-papel text-azul hover:bg-niebla transition-colors">
-                            {keyword}
-                          </span>
-                        ))}
-                      </div>
-                      <Link
-                        href={`/${locale}/blog/tema/${post.cluster}`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-azul hover:text-rojo transition-colors"
-                      >
-                        {t('articulo.verTodos')}
-                      </Link>
-                    </div>
-                  </div>
-
-                  {/* Posts relacionados del cluster */}
-                  {clusterRelatedPosts.length > 0 && (
-                    <div className="bg-blanco p-8 border border-niebla">
-                      <p className="text-lg font-bold text-azul mb-6 flex items-center gap-2">
-                        <FileText className="w-5 h-5" />
-                        {t('articulo.relacionados')}
-                      </p>
-                      <div className="grid grid-cols-1 gap-4">
-                        {clusterRelatedPosts.map((relatedPost) => (
-                          <Link
-                            key={relatedPost.slug}
-                            href={`/${locale}/blog/${relatedPost.slug}`}
-                            className="group p-4 border border-niebla hover:border-azul transition-all duration-300"
-                          >
-                            <div className="flex items-start gap-4">
-                              <div className="flex-shrink-0 w-16 h-16 relative overflow-hidden">
-                                <Image
-                                  src={relatedPost.image.url}
-                                  alt={relatedPost.title}
-                                  fill
-                                  className="object-cover"
-                                  sizes="64px"
-                                />
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <p className="font-semibold text-azul group-hover:text-rojo transition-colors line-clamp-2 mb-1">
-                                  {relatedPost.title}
-                                </p>
-                                <p className="text-xs text-pizarra">
-                                  {new Date(relatedPost.publishedAt).toLocaleDateString(locale === 'en' ? 'en-GB' : `${locale}-ES`, {
-                                    year: 'numeric',
-                                    month: 'short',
-                                    day: 'numeric'
-                                  })} • {relatedPost.readingTime} {t('articulo.minLectura')}
-                                </p>
-                              </div>
-                            </div>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </Container>
-            </section>
-          );
-        })()}
-
         {/* Article Content with Table of Contents */}
         <section className="py-16 bg-blanco">
           <Container>
@@ -490,6 +388,66 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
 
       </article>
+
+    {/*
+      Tema del artículo. Va después del texto, no antes: arriba obligaba a
+      bajar demasiado para empezar a leer.
+    */}
+      {post.cluster && (() => {
+        const cluster = clustersConfig.clusters.find(c => c.id === post.cluster);
+        if (!cluster) return null;
+
+        const clusterName = cluster.name[locale as 'es' | 'en' | 'ca'];
+        const clusterDescription = cluster.description[locale as 'es' | 'en' | 'ca'];
+        const clusterKeywords = cluster.keywords[locale as 'es' | 'en' | 'ca'].slice(0, 6);
+
+        return (
+          <section className="pt-4 pb-0 bg-blanco">
+            <Container>
+              <div className="max-w-4xl mx-auto">
+                {/* Header del cluster */}
+                <div className="flex items-start gap-4 p-8 bg-papel border border-niebla">
+                  <div className="p-4 bg-azul">
+                    <Folder className="w-8 h-8 text-blanco" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="mb-3">
+                      <span className="text-xs font-bold text-azul uppercase tracking-wider">
+                        {t('articulo.tema')}
+                      </span>
+                    </div>
+                    <Link
+                      href={`/${locale}/blog/tema/${post.cluster}`}
+                      className="group inline-block"
+                    >
+                      <p className="text-2xl font-bold text-azul mb-3 group-hover:text-rojo transition-colors">
+                        {clusterName}
+                      </p>
+                    </Link>
+                    <p className="text-pizarra mb-4 leading-relaxed">
+                      {clusterDescription}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {clusterKeywords.map((keyword, idx) => (
+                        <span key={idx} className="px-3 py-1.5 text-xs font-semibold bg-papel text-azul hover:bg-niebla transition-colors">
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+                    <Link
+                      href={`/${locale}/blog/tema/${post.cluster}`}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-azul hover:text-rojo transition-colors"
+                    >
+                      {t('articulo.verTodos')}
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+            </Container>
+          </section>
+        );
+      })()}
 
       {/* Related Articles */}
       {relatedPosts.length > 0 && (() => {
