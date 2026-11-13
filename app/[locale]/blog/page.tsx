@@ -33,8 +33,8 @@ export default async function BlogPage({ params }: Props) {
   // Cargar todos los posts con su contenido en el idioma actual
   const allPosts = await getAllBlogPostsWithContent(locale);
 
-  // Obtener el último post publicado
-  const latestPost = allPosts[0];
+  // Los últimos publicados, del más reciente al más antiguo (ya vienen ordenados).
+  const latestPosts = allPosts.slice(0, 6);
   const fecha = locale === 'en' ? 'en-GB' : `${locale}-ES`;
 
   // Breadcrumb Schema
@@ -96,70 +96,64 @@ export default async function BlogPage({ params }: Props) {
 
       <BlogHero locale={locale} postsCount={allPosts.length} categoriesCount={activeClusters} />
 
-      {/* Latest Post Featured */}
-      {latestPost && (
-        <section className="py-12 bg-blanco border-b border-niebla">
+      {/* Últimos artículos: los más recientes, uno por fila y por fecha. */}
+      {latestPosts.length > 0 && (
+        <section className="py-12 md:py-16 bg-blanco border-b border-niebla">
           <Container>
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <div className="mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-azul mb-2">
-                  {t('latestPost.title')}
+                  {t('latestPost.listTitle')}
                 </h2>
                 <p className="text-pizarra">
                   {t('latestPost.subtitle')}
                 </p>
               </div>
 
-              <Link
-                href={`/${locale}/blog/${latestPost.slug}`}
-                className="group block"
-              >
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-papel border-2 border-papel hover:border-azul transition-all duration-300">
-                  {/* Image */}
-                  <div className="relative aspect-video overflow-hidden">
-                    <Image
-                      src={latestPost.image.url}
-                      alt={latestPost.image.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex flex-col justify-center">
-                    <div className="mb-4">
-                      <span className="inline-block px-3 py-1 bg-rojo text-blanco text-xs font-bold uppercase tracking-wide">
-                        {t(`categoryTranslations.${latestPost.category}`, { default: latestPost.category })}
-                      </span>
-                    </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-azul mb-4 group-hover:text-rojo transition-colors">
-                      {latestPost.title}
-                    </h3>
-                    <p className="text-pizarra mb-6 line-clamp-3">
-                      {latestPost.excerpt}
-                    </p>
-                    <div className="flex items-center gap-4 text-sm text-pizarra mb-6">
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        <span>
-                          {new Date(latestPost.publishedAt).toLocaleDateString(fecha, {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                        </span>
+              <ul className="divide-y divide-niebla border-y border-niebla">
+                {latestPosts.map((post) => (
+                  <li key={post.slug}>
+                    <Link
+                      href={`/${locale}/blog/${post.slug}`}
+                      className="group grid grid-cols-[88px_1fr] sm:grid-cols-[160px_1fr] gap-4 sm:gap-6 py-6"
+                    >
+                      <div className="relative aspect-square sm:aspect-video overflow-hidden">
+                        <Image
+                          src={post.image.url}
+                          alt={post.image.alt}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 88px, 160px"
+                        />
                       </div>
-                      <div>•</div>
-                      <span>{latestPost.readingTime} {t('latestPost.readingTime')}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-azul font-semibold group-hover:gap-4 transition-all">
-                      <span>{t('latestPost.readFullArticle')}</span>
-                      <ArrowRight className="w-5 h-5" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                      <div className="min-w-0 flex flex-col justify-center">
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-2 text-xs text-pizarra">
+                          <span className="font-bold uppercase tracking-wide text-rojo">
+                            {t(`categoryTranslations.${post.category}`, { default: post.category })}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Calendar className="w-3.5 h-3.5" />
+                            <time dateTime={post.publishedAt}>
+                              {new Date(post.publishedAt).toLocaleDateString(fecha, {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                              })}
+                            </time>
+                          </span>
+                          <span>{post.readingTime} {t('latestPost.readingTime')}</span>
+                        </div>
+                        <h3 className="text-lg md:text-xl font-bold text-azul leading-snug group-hover:text-rojo transition-colors line-clamp-2">
+                          {post.title}
+                        </h3>
+                        <p className="hidden sm:block mt-2 text-sm text-pizarra line-clamp-2">
+                          {post.excerpt}
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </Container>
         </section>

@@ -364,6 +364,7 @@
     },
     "latestPost": {
       "title": "Latest Published Article",
+      "listTitle": "Latest articles",
       "subtitle": "The most recent on cryptocurrency taxation in Spain",
       "readFullArticle": "Read full article",
       "readingTime": "min read"

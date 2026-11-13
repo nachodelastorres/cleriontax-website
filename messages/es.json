@@ -364,6 +364,7 @@
     },
     "latestPost": {
       "title": "Último Artículo Publicado",
+      "listTitle": "Últimos artículos publicados",
       "subtitle": "Lo más reciente sobre fiscalidad de criptomonedas en España",
       "readFullArticle": "Leer artículo completo",
       "readingTime": "min lectura"

@@ -364,6 +364,7 @@
     },
     "latestPost": {
       "title": "Últim Article Publicat",
+      "listTitle": "Últims articles publicats",
       "subtitle": "El més recent sobre fiscalitat de criptomonedes a Espanya",
       "readFullArticle": "Llegir article complet",
       "readingTime": "min lectura"
