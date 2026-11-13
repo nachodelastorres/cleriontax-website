@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { after, NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { ZodError } from "zod";
 import {
@@ -8,6 +8,7 @@ import {
   SITUACIONES_AEAT,
   VOLUMENES,
 } from "@/lib/validations";
+import { crearLead, type Lead } from "@/lib/airtable";
 
 // Configure nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -53,6 +54,8 @@ export async function POST(request: NextRequest) {
     let asunto: string;
     let cuerpo: string;
     let replyTo: string;
+    let lead: Lead;
+    const pagina = request.headers.get("referer") ?? undefined;
 
     if (esDiagnostico) {
       const datos = diagnosticoServerSchema.parse({
@@ -68,6 +71,21 @@ export async function POST(request: NextRequest) {
       });
 
       const urgente = URGENTES.has(datos.situacionAeat);
+      lead = {
+        tipo: "Diagnóstico",
+        nombre: datos.name,
+        email: datos.email,
+        telefono: datos.phone,
+        mensaje: datos.message,
+        llegaDesde: datos.situacion,
+        volumen: etiqueta(VOLUMENES, datos.volumen),
+        plataformas: datos.plataformas,
+        ejercicios: datos.ejercicios,
+        situacionAeat: etiqueta(SITUACIONES_AEAT, datos.situacionAeat),
+        urgente,
+        pagina,
+        adjunto: file?.name,
+      };
       replyTo = datos.email;
       asunto = `${urgente ? "[PLAZO] " : ""}Diagnóstico de ${datos.name}${
         datos.situacion ? ` · ${datos.situacion}` : ""
@@ -128,6 +146,16 @@ export async function POST(request: NextRequest) {
         message: texto("message"),
       });
 
+      lead = {
+        tipo: "Contacto",
+        nombre: datos.name,
+        email: datos.email,
+        telefono: datos.phone,
+        mensaje: datos.message,
+        urgente: false,
+        pagina,
+        adjunto: file?.name,
+      };
       replyTo = datos.email;
       asunto = `Nueva consulta de ${datos.name}`;
 
@@ -161,6 +189,12 @@ export async function POST(request: NextRequest) {
           </p>
         </div>`;
     }
+
+    // El alta en Airtable corre después de responder y no depende del correo:
+    // si falla, queda en los logs de Vercel y el lead sigue llegando por email.
+    after(() =>
+      crearLead(lead).catch((e) => console.error("Error creando el lead en Airtable:", e))
+    );
 
     const attachments: { filename: string; content: Buffer; contentType: string }[] = [];
     if (file) {
