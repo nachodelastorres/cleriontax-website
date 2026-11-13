@@ -1,6 +1,184 @@
 {
   "posts": [
     {
+      "id": "coste-adquisicion-criptomonedas-sin-datos",
+      "slugTranslations": {
+        "es": "coste-adquisicion-criptomonedas-sin-datos",
+        "en": "crypto-cost-basis-missing-purchase-price",
+        "ca": "cost-adquisicio-criptomonedes-sense-dades"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-11-13T09:00:00Z",
+      "readingTime": 8,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "FIFO",
+        "Ganancias Patrimoniales",
+        "Pérdidas Patrimoniales",
+        "Valoración Criptomonedas",
+        "Pruebas Fiscales",
+        "Documentación Fiscal",
+        "Staking",
+        "Airdrops",
+        "Koinly",
+        "CoinTracking",
+        "Regularización Voluntaria"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/fifo-aeat-crypto.webp",
+        "alt": "Cómo reconstruir el coste de adquisición de criptomonedas cuando falta el precio de compra",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Coste de adquisición de criptomonedas sin datos: qué hacer",
+        "metaDescription": "Sin precio de compra, Hacienda trata como ganancia todo lo que cobras al vender. Cuándo falta el coste, cómo reconstruirlo y qué hacer si ya declaraste.",
+        "keywords": [
+          "coste de adquisición criptomonedas",
+          "no tengo precio de compra criptomonedas",
+          "exchange cerrado historial",
+          "coste cero airdrop staking",
+          "valor de adquisición criptomonedas hacienda",
+          "justificar compra criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/fifo-aeat-crypto.webp",
+        "ogImageAlt": "Cómo reconstruir el coste de adquisición de criptomonedas cuando falta el precio de compra",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": false,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "exportar-historial-criptomonedas-csv-hacienda",
+        "perdidas-criptomonedas-compensar-declaracion",
+        "guia-completa-declaracion-fiscal-criptomonedas-2025"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "gestor-criptomonedas",
+      "slugTranslations": {
+        "es": "gestor-criptomonedas",
+        "en": "crypto-tax-manager-spain",
+        "ca": "gestor-criptomonedes"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-11-13T09:00:00Z",
+      "readingTime": 8,
+      "category": "Fiscalidad e Inversión",
+      "tags": [
+        "Asesoría Fiscal",
+        "Portfolio Tracking",
+        "Herramientas Crypto",
+        "Koinly",
+        "CoinTracking",
+        "Declaración Renta",
+        "Errores Fiscales",
+        "Hacienda"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/bitcoin-asesor-fiscal.webp",
+        "alt": "Gestor de criptomonedas: diferencias entre una app de cartera, una gestoría y un especialista fiscal cripto",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Gestor de criptomonedas: app, gestoría o especialista",
+        "metaDescription": "Un gestor de criptomonedas puede ser una app, tu gestoría o un especialista fiscal. Qué hace cada uno, dónde falla ante Hacienda y cuánto cuesta.",
+        "keywords": [
+          "gestor de criptomonedas",
+          "gestor criptomonedas",
+          "gestoría criptomonedas",
+          "gestoria declaracion renta criptomonedas",
+          "quién me hace la declaración de criptomonedas",
+          "gestor renta criptomonedas"
+        ],
+        "ogImage": "/images/illustrations/blog/bitcoin-asesor-fiscal.webp",
+        "ogImageAlt": "Gestor de criptomonedas: diferencias entre una app de cartera, una gestoría y un especialista fiscal cripto",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": false,
+      "layoutType": "magazine",
+      "cluster": "fiscalidad-criptomonedas",
+      "relatedPosts": [
+        "herramientas-rastrear-criptomonedas",
+        "errores-declarar-criptomonedas",
+        "coste-adquisicion-criptomonedas-sin-datos"
+      ],
+      "aiOptimized": true
+    },
+    {
+      "id": "exportar-historial-criptomonedas-csv-hacienda",
+      "slugTranslations": {
+        "es": "exportar-historial-criptomonedas-csv-hacienda",
+        "en": "export-crypto-transaction-history-csv-tax",
+        "ca": "exportar-historial-criptomonedes-csv-hisenda"
+      },
+      "author": {
+        "name": "Equipo Cleriontax",
+        "role": "Expertos en Fiscalidad Crypto y Análisis de Datos",
+        "avatar": "/images/team/cleriontax-team.jpg"
+      },
+      "publishedAt": "2026-11-13T09:00:00Z",
+      "readingTime": 10,
+      "category": "Guías Prácticas Específicas",
+      "tags": [
+        "Exportar Historial",
+        "CSV",
+        "Historial Transacciones",
+        "Binance",
+        "Bybit",
+        "Kraken",
+        "Coinbase",
+        "Metamask",
+        "Ledger",
+        "Trust Wallet",
+        "FIFO",
+        "Hacienda"
+      ],
+      "image": {
+        "url": "/images/illustrations/blog/analisis-datos-cripto-para-declaracion-renta.webp",
+        "alt": "Cómo exportar el historial de exchanges y wallets de criptomonedas en CSV para la declaración ante Hacienda",
+        "width": 1200,
+        "height": 630
+      },
+      "seo": {
+        "metaTitle": "Exportar historial de criptomonedas en CSV para Hacienda",
+        "metaDescription": "Qué exportar de cada exchange y wallet, dónde está la descarga en Binance, Bybit, Kraken y Coinbase y qué comprobar antes de enviar tus CSV a un asesor.",
+        "keywords": [
+          "exportar historial criptomonedas csv",
+          "descargar historial transacciones wallet",
+          "csv criptomonedas hacienda",
+          "historial exchange declaración renta",
+          "exportar csv binance bybit kraken",
+          "historial metamask ledger hacienda"
+        ],
+        "ogImage": "/images/illustrations/blog/analisis-datos-cripto-para-declaracion-renta.webp",
+        "ogImageAlt": "Cómo exportar el historial de exchanges y wallets de criptomonedas en CSV para la declaración ante Hacienda",
+        "ogImageWidth": 1200,
+        "ogImageHeight": 630
+      },
+      "featured": true,
+      "layoutType": "magazine",
+      "cluster": "guias-practicas-especificas",
+      "relatedPosts": [
+        "como-exportar-historial-binance-correctamente",
+        "como-obtener-csv-kraken-tributacion",
+        "coste-adquisicion-criptomonedas-sin-datos"
+      ],
+      "aiOptimized": true
+    },
+    {
       "id": "coinbase-hacienda-declarar",
       "slugTranslations": {
         "es": "coinbase-hacienda-declarar",
@@ -1706,8 +1884,8 @@
         "avatar": "/images/team/cleriontax-team.jpg"
       },
       "publishedAt": "2025-11-05T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
-      "readingTime": 15,
+      "updatedAt": "2026-11-13T09:00:00Z",
+      "readingTime": 10,
       "category": "Fiscalidad e Inversión",
       "tags": [
         "Modelo 100",
@@ -1715,39 +1893,35 @@
         "Modelo 714",
         "AEAT",
         "Declaración IRPF",
-        "Criptomonedas Extranjero",
         "Obligaciones Fiscales",
         "Sanciones Hacienda",
         "Ganancias Patrimoniales",
-        "Patrimonio en el Extranjero",
         "Fiscalidad Internacional",
-        "Informes Fiscales"
+        "Informes Fiscales",
+        "DAC8"
       ],
       "image": {
         "url": "/images/illustrations/blog/declaracion-renta-acciones.webp",
-        "alt": "Modelos 100, 721 y 714 para declarar criptomonedas en España - Guía completa sobre obligaciones fiscales ante la AEAT",
+        "alt": "Qué modelos de Hacienda afectan a las criptomonedas: renta, 721, Patrimonio, 172, 173 y DAC8",
         "width": 1200,
         "height": 630
       },
       "seo": {
-        "metaTitle": "Modelos 100, 721 y 714 para criptomonedas: diferencias",
-        "metaDescription": "Qué se declara en cada modelo: renta (100), bienes en el extranjero (721) y patrimonio (714). Plazos, umbrales y sanciones por no presentar.",
+        "metaTitle": "Qué modelos de Hacienda afectan a las criptomonedas",
+        "metaDescription": "Renta (100), 721, Patrimonio (714) y lo que informan los exchanges en los modelos 172 y 173 y con la DAC8. Quién presenta cada uno, plazos y sanciones.",
         "keywords": [
-          "modelo 721 AEAT",
+          "modelo criptomonedas",
+          "modelos hacienda criptomonedas",
+          "modelo 721 criptomonedas",
           "modelo 100 criptomonedas",
-          "modelo 714 patrimonio extranjero",
-          "declarar criptomonedas extranjero",
-          "modelo 721 criptomonedas 2025",
-          "obligaciones fiscales crypto España",
+          "modelo 714 criptomonedas",
+          "modelo 172 173 criptomonedas",
           "sanciones modelo 721",
-          "IRPF criptomonedas",
-          "declaración patrimonio extranjero crypto",
-          "diferencias modelo 100 721 714",
-          "cuándo presentar modelo 721",
-          "multas no presentar modelo 721 AEAT"
+          "dac8 criptomonedas",
+          "plazos modelo 721 2027"
         ],
         "ogImage": "/images/illustrations/blog/declaracion-renta-acciones.webp",
-        "ogImageAlt": "Modelos 100, 721 y 714 para declarar criptomonedas en España - Guía completa sobre obligaciones fiscales ante la AEAT",
+        "ogImageAlt": "Qué modelos de Hacienda afectan a las criptomonedas: renta, 721, Patrimonio, 172, 173 y DAC8",
         "ogImageWidth": 1200,
         "ogImageHeight": 630
       },
@@ -1755,6 +1929,8 @@
       "layoutType": "minimal",
       "cluster": "fiscalidad-criptomonedas",
       "relatedPosts": [
+        "modelo-714-criptomonedas-patrimonio",
+        "directiva-dac8-criptomonedas-exchanges-hacienda",
         "guia-completa-declaracion-fiscal-criptomonedas-2025"
       ],
       "aiOptimized": true
@@ -1839,7 +2015,7 @@
         "avatar": "/images/team/cleriontax-team.jpg"
       },
       "publishedAt": "2025-10-30T09:00:00Z",
-      "updatedAt": "2026-10-28T09:00:00Z",
+      "updatedAt": "2026-11-13T09:00:00Z",
       "readingTime": 14,
       "category": "Fiscalidad e Inversión",
       "tags": [
@@ -1863,8 +2039,8 @@
         "height": 630
       },
       "seo": {
-        "metaTitle": "Minería de criptomonedas y Hacienda: cómo tributa",
-        "metaDescription": "¿Es legal minar en España y cómo tributa ante Hacienda? Alta como autónomo, epígrafe IAE, IVA no sujeto, modelo 130, gastos deducibles y venta de lo minado.",
+        "metaTitle": "Minar criptomonedas y Hacienda: cómo tributa la minería",
+        "metaDescription": "¿Es legal minar en España y cómo tributa ante Hacienda? Alta como autónomo, epígrafe del IAE, IVA no sujeto, modelo 130, gastos y venta de lo minado.",
         "keywords": [
           "minería criptomonedas hacienda",
           "es legal minar criptomonedas en españa",
@@ -2150,7 +2326,7 @@
         "avatar": "/images/team/cleriontax-team.jpg"
       },
       "publishedAt": "2025-10-05T09:00:00Z",
-      "updatedAt": "2026-10-14T09:00:00Z",
+      "updatedAt": "2026-11-13T09:00:00Z",
       "readingTime": 10,
       "category": "Fiscalidad e Inversión",
       "tags": [
@@ -2174,7 +2350,7 @@
       },
       "seo": {
         "metaTitle": "Fiscalidad de criptomonedas en España: guía práctica",
-        "metaDescription": "Cómo tributan tus criptomonedas en España: método FIFO, modelos 100, 720 y 721, compensación de pérdidas, NFTs y casos prácticos resueltos paso a paso.",
+        "metaDescription": "Cómo tributan tus criptomonedas en España: método FIFO, modelos 100 y 721, compensación de pérdidas, NFTs y casos prácticos resueltos paso a paso.",
         "keywords": [
           "declaración fiscal criptomonedas 2025",
           "fiscalidad crypto inversiones",

@@ -33,7 +33,7 @@
       "entrada": "No són errors de l'eina, sinó situacions que cap eina no pot decidir sola. Són les que revisem primer.",
       "bullets": [
         "<strong>Transferències entre els teus comptes comptades com a vendes:</strong> mous fons de l'exchange a la teva wallet freda i, si el programa no reconeix les dues adreces com a teves, ho registra com una disposició. És la font més gran de guany fictici.",
-        "<strong>Cost d'adquisició zero:</strong> tokens rebuts per staking, airdrops, forks o recompenses de liquiditat sense valor d'entrada. Quan els vens, tota la contraprestació apareix com a guany.",
+        "<strong>Cost d'adquisició zero:</strong> tokens rebuts per staking, airdrops, forks o recompenses de liquiditat sense valor d'entrada. Quan els vens, tota la contraprestació apareix com a guany. T’expliquem com es reconstrueix a <a href=\"/blog/coste-adquisicion-criptomonedas-sin-datos\">què fer si no tens el cost d’adquisició</a>.",
         "<strong>Mètode de càlcul diferent del que aplica l'AEAT:</strong> Hisenda calcula amb FIFO per a cada criptoactiu. Convé comprovar que la configuració de l'informe és aquesta i no una altra.",
         "<strong>DeFi sense classificar:</strong> dipòsits en pools, préstecs, wraps i bridges que el programa no sap interpretar i deixa com a entrades o sortides soltes.",
         "<strong>Spam de tokens tractat com a ingrés:</strong> en xarxes com Solana o BSC poden ser milers de registres brossa que embruten tot el resultat.",

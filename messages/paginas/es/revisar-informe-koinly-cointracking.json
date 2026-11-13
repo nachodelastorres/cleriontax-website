@@ -33,7 +33,7 @@
       "entrada": "No son fallos de la herramienta, sino situaciones que ninguna herramienta puede decidir sola. Son las que revisamos primero.",
       "bullets": [
         "<strong>Transferencias entre tus cuentas contadas como ventas:</strong> mueves fondos del exchange a tu wallet fría y, si el programa no reconoce las dos direcciones como tuyas, lo registra como una disposición. Es la mayor fuente de ganancia ficticia.",
-        "<strong>Coste de adquisición cero:</strong> tokens recibidos por staking, airdrops, forks o recompensas de liquidez sin valor de entrada. Al venderlos, toda la contraprestación aparece como ganancia.",
+        "<strong>Coste de adquisición cero:</strong> tokens recibidos por staking, airdrops, forks o recompensas de liquidez sin valor de entrada. Al venderlos, toda la contraprestación aparece como ganancia. Te explicamos cómo se reconstruye en <a href=\"/blog/coste-adquisicion-criptomonedas-sin-datos\">qué hacer si no tienes el coste de adquisición</a>.",
         "<strong>Método de cálculo distinto del que aplica la AEAT:</strong> Hacienda calcula con FIFO por cada criptoactivo. Conviene comprobar que la configuración del informe es esa y no otra.",
         "<strong>DeFi sin clasificar:</strong> depósitos en pools, préstamos, wraps y bridges que el programa no sabe interpretar y deja como entradas o salidas sueltas.",
         "<strong>Spam de tokens tratado como ingreso:</strong> en redes como Solana o BSC pueden ser miles de registros basura que ensucian el resultado entero.",

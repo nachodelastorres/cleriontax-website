@@ -33,7 +33,7 @@
       "entrada": "They aren't bugs in the tool, but situations no tool can decide on its own. They're what we check first.",
       "bullets": [
         "<strong>Transfers between your own accounts counted as sales:</strong> you move funds from the exchange to your cold wallet and, if the software doesn't recognise both addresses as yours, it records a disposal. It's the biggest source of phantom gains.",
-        "<strong>Zero acquisition cost:</strong> tokens received from staking, airdrops, forks or liquidity rewards with no entry value. When you sell them, the entire proceeds show up as gain.",
+        "<strong>Zero acquisition cost:</strong> tokens received from staking, airdrops, forks or liquidity rewards with no entry value. When you sell them, the entire proceeds show up as gain. We explain how to rebuild it in <a href=\"/blog/coste-adquisicion-criptomonedas-sin-datos\">what to do when the cost basis is missing</a>.",
         "<strong>A calculation method other than the one the AEAT applies:</strong> the Spanish tax agency calculates with FIFO for each crypto-asset. It's worth checking that the report is configured that way and not another.",
         "<strong>Unclassified DeFi:</strong> pool deposits, loans, wraps and bridges the software can't interpret and leaves as loose inflows or outflows.",
         "<strong>Token spam treated as income:</strong> on networks like Solana or BSC there can be thousands of junk records polluting the whole result.",
